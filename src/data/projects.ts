@@ -96,6 +96,24 @@ export const projects: Project[] = [
     image: "https://images.unsplash.com/photo-1586528116311-ad8ed7c1590a?q=80&w=2070&auto=format&fit=crop",
     heroImage: "https://images.unsplash.com/photo-1586528116311-ad8ed7c1590a?q=80&w=2070&auto=format&fit=crop",
     gallery: []
+  },
+  {
+    id: 7,
+    slug: "cch-club-house",
+    title: "CCH Club House",
+    category: "Branding & Web Development",
+    description: "A luxury digital platform and branding system developed for CCH Club House, combining bespoke typography, interactive design, and premium visuals.",
+    client: "CCH Group",
+    duration: "8 Weeks",
+    services: "Visual Identity, UI/UX Design, Next.js Development",
+    image: "/CCH/1.png",
+    heroImage: "/CCH/1.png",
+    gallery: [
+      "/CCH/Grid-08_02.png",
+      "/CCH/Grid-08_03.png",
+      "/CCH/Grid-08_04.png",
+      "/CCH/Grid-08_05.png"
+    ]
   }
 ];
 
