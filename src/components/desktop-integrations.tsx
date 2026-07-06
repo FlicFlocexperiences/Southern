@@ -10,7 +10,7 @@ const desktopLogos = [
   "/integrations/zapier.png",
   "/integrations/openai.png",
   "/integrations/meta.png",
-  "/tik-tok_1.svg",
+  "/integrations/tik-tok_1.svg",
   // Row 2 (6)
   "/integrations/razorpay.png",
   "/integrations/sheets.png",
@@ -23,12 +23,12 @@ const desktopLogos = [
   "/integrations/whatsapp.png",
   "/integrations/linkedin.png",
   "/integrations/sparkle.png",
-  "/Cursor.svg",
+  "/integrations/cursor.png",
   // Row 4 (4)
   "/integrations/zoho.png",
   "/integrations/wati.png",
   "/integrations/github.png",
-  "/figma_1.svg",
+  "/integrations/figma_1.svg",
 ];
 
 const HexagonSvg = () => (
