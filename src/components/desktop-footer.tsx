@@ -1,9 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import { articles } from "@/data/articles";
 
 export const DesktopFooter = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <footer className="w-full bg-gradient-to-b from-[#fffff0] to-[#ff5100] pt-10 pb-6 px-8 lg:px-[90px] relative z-10 overflow-hidden flex flex-col" style={{ zoom: 0.8 }}>
       
@@ -119,11 +121,50 @@ export const DesktopFooter = () => {
       </div>
 
       {/* Bottom Row: Explore More */}
-      <div className="flex items-center w-full gap-8">
-        <p className="text-[24px] lg:text-[28px] text-black font-semibold shrink-0">
-          Explore More
-        </p>
-        <div className="h-px bg-black/20 w-full" />
+      <div className="flex flex-col w-full gap-6 mt-6">
+        <button 
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex items-center w-full gap-8 cursor-pointer outline-none border-none bg-transparent text-left group"
+        >
+          <span className="text-[24px] lg:text-[28px] text-black font-semibold shrink-0 flex items-center gap-3 group-hover:text-white transition-colors duration-300">
+            Explore More
+            <svg 
+              className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-180 text-white' : 'text-black group-hover:text-white'}`}
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2.5" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+            </svg>
+          </span>
+          <div className="h-px bg-black/20 w-full group-hover:bg-white/40 transition-colors duration-300" />
+        </button>
+
+        {/* Dropdown Grid Container */}
+        <div className={`grid grid-cols-1 md:grid-cols-3 gap-y-6 gap-x-12 overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[500px] opacity-100 py-6' : 'max-h-0 opacity-0 py-0'}`}>
+          {articles.map((article) => (
+            <Link 
+              key={article.slug}
+              href={`/explore-more/${article.slug}`}
+              className="flex flex-col gap-2 p-6 rounded-[20px] bg-white/5 border border-white/10 hover:bg-white/15 hover:border-white/20 transition-all duration-300 group/item"
+            >
+              <h4 className="text-[20px] lg:text-[22px] font-medium text-black group-hover/item:text-white transition-colors duration-300 leading-tight">
+                {article.title}
+              </h4>
+              <p className="text-[14px] lg:text-[15px] text-black/60 group-hover/item:text-white/70 transition-colors duration-300 font-light font-sans line-clamp-2">
+                {article.excerpt}
+              </p>
+              <span className="text-[14px] font-semibold text-[#ff5100] group-hover/item:text-white flex items-center gap-1.5 mt-auto pt-2">
+                Read Article
+                <svg className="w-4 h-4 transform group-hover/item:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                </svg>
+              </span>
+            </Link>
+          ))}
+        </div>
       </div>
 
     </footer>

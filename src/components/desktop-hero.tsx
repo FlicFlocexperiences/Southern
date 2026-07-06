@@ -106,8 +106,8 @@ export const DesktopHero = () => {
 
       {/* Logo Ticker */}
       <div className="w-full relative overflow-hidden pb-6 pt-4 z-10">
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#fffff0] to-transparent z-20 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#fffff0] to-transparent z-20 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-32   to-transparent z-20 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-32   to-transparent z-20 pointer-events-none" />
         <div className="animate-logo-slide flex items-center w-max">
           {Array.from({ length: 30 }).map((_, index) => {
             const logoIndex = (index % 15) + 1;

@@ -10,7 +10,7 @@ const desktopLogos = [
   "/integrations/zapier.png",
   "/integrations/openai.png",
   "/integrations/meta.png",
-  "/integrations/tiktok.png",
+  "/tik-tok 1.svg",
   // Row 2 (6)
   "/integrations/razorpay.png",
   "/integrations/sheets.png",
@@ -23,12 +23,12 @@ const desktopLogos = [
   "/integrations/whatsapp.png",
   "/integrations/linkedin.png",
   "/integrations/sparkle.png",
-  "/integrations/cursor.png",
+  "/Cursor.svg",
   // Row 4 (4)
   "/integrations/zoho.png",
   "/integrations/wati.png",
   "/integrations/github.png",
-  "/integrations/figma.png",
+  "/figma 1.svg",
 ];
 
 const HexagonSvg = () => (
@@ -52,7 +52,12 @@ const HexagonSvg = () => (
 );
 
 const HexagonTile = ({ src, hasLogo }: { src?: string | null; hasLogo?: boolean }) => {
-  const isBlackBg = src && (src.includes('tiktok') || src.includes('cursor') || src.includes('figma'));
+  const isBlackBg = src && (
+    src.toLowerCase().includes('tiktok') || 
+    src.toLowerCase().includes('tik-tok') || 
+    src.toLowerCase().includes('cursor') || 
+    src.toLowerCase().includes('figma')
+  );
   return (
     <div className="relative group w-[100px] h-[110px] md:w-[130px] md:h-[143px] flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
       <div className={`absolute inset-0 transition-opacity duration-500 ${hasLogo ? 'opacity-100' : 'opacity-40 group-hover:opacity-60'}`}>

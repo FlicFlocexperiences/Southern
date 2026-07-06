@@ -24,10 +24,10 @@ const logos = [
   "/integrations/zoho.png",
   "/integrations/gemini.png",
   // Row 5
-  "/integrations/tiktok.png",
+  "/tik-tok 1.svg",
   "/integrations/snapchat.png",
-  "/integrations/cursor.png",
-  "/integrations/figma.png",
+  "/Cursor.svg",
+  "/figma 1.svg",
 ];
 
 const HexagonSvg = () => (
@@ -51,7 +51,12 @@ const HexagonSvg = () => (
 );
 
 const HexagonTile = ({ src, hasLogo }: { src?: string | null; hasLogo?: boolean }) => {
-  const isBlackBg = src && (src.includes('tiktok') || src.includes('cursor') || src.includes('figma'));
+  const isBlackBg = src && (
+    src.toLowerCase().includes('tiktok') || 
+    src.toLowerCase().includes('tik-tok') || 
+    src.toLowerCase().includes('cursor') || 
+    src.toLowerCase().includes('figma')
+  );
   return (
     <div className="relative group w-[74px] h-[80px] flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:-translate-y-1">
       <HexagonSvg />

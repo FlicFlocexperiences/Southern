@@ -1,9 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import { articles } from "@/data/articles";
 
 export const MobileFooter = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <footer className="w-full bg-gradient-to-b from-[#fffff0] to-[#ff5100] px-5 pt-5 pb-4 flex flex-col relative overflow-hidden" style={{ zoom: 0.8 }}>
       
@@ -74,10 +76,51 @@ export const MobileFooter = () => {
         </Link>
       </div>
 
-      {/* Footer Bottom */}
-      <div className="flex items-center gap-6 mt-4 w-full pl-2">
-        <span className="text-[25px] font-semibold text-black whitespace-nowrap">Explore More</span>
-        <div className="flex-1 h-[1px] bg-[#b03000]/60 mt-1"></div>
+      {/* Footer Bottom: Explore More */}
+      <div className="flex flex-col gap-4 mt-6 w-full pl-2">
+        <button 
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex items-center gap-6 w-full cursor-pointer outline-none border-none bg-transparent text-left group"
+        >
+          <span className="text-[25px] font-semibold text-black whitespace-nowrap flex items-center gap-2 group-hover:text-white transition-colors duration-300">
+            Explore More
+            <svg 
+              className={`w-5 h-5 transition-transform duration-300 ${isOpen ? 'rotate-180 text-white' : 'text-black group-hover:text-white'}`}
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2.5" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+            </svg>
+          </span>
+          <div className="flex-1 h-[1px] bg-[#b03000]/60 mt-1" />
+        </button>
+
+        {/* Dropdown Container (Mobile) */}
+        <div className={`flex flex-col gap-4 overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[800px] opacity-100 py-3' : 'max-h-0 opacity-0 py-0'}`}>
+          {articles.map((article) => (
+            <Link 
+              key={article.slug}
+              href={`/explore-more/${article.slug}`}
+              className="flex flex-col gap-1 p-4 rounded-[16px] bg-white/5 border border-white/10 hover:bg-white/15 transition-all duration-300"
+            >
+              <h4 className="text-[18px] font-medium text-black leading-tight">
+                {article.title}
+              </h4>
+              <p className="text-[13px] text-black/60 font-light font-sans line-clamp-2">
+                {article.excerpt}
+              </p>
+              <span className="text-[13px] font-semibold text-[#b03000] flex items-center gap-1 mt-1">
+                Read Article
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                </svg>
+              </span>
+            </Link>
+          ))}
+        </div>
       </div>
     </footer>
   );
