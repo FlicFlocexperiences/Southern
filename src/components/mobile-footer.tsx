@@ -30,6 +30,28 @@ export const MobileFooter = () => {
 
 
 
+      {/* Navigation */}
+      <div className="flex flex-col items-end text-right mb-6 pr-2">
+        <p className="text-[25px] text-black/65 mb-4 font-sans">Navigation</p>
+        <nav className="flex flex-col items-end gap-3">
+          <Link href="/" className="text-[16px] text-black leading-none font-sans hover:-translate-x-2 transition-transform duration-300 w-fit">
+            Home
+          </Link>
+          <Link href="/about" className="text-[16px] text-black leading-none font-sans hover:-translate-x-2 transition-transform duration-300 w-fit">
+            About Us
+          </Link>
+          <Link href="/services" className="text-[16px] text-black leading-none font-sans hover:-translate-x-2 transition-transform duration-300 w-fit">
+            Services
+          </Link>
+          <Link href="/projects" className="text-[16px] text-black leading-none font-sans hover:-translate-x-2 transition-transform duration-300 w-fit">
+            Projects
+          </Link>
+          <Link href="/blogs" className="text-[16px] text-black leading-none font-sans hover:-translate-x-2 transition-transform duration-300 w-fit">
+            Blogs
+          </Link>
+        </nav>
+      </div>
+
       {/* Social */}
       <div className="flex flex-col items-end text-right mb-6 pr-2">
         <p className="text-[25px] text-black/65 mb-4 font-sans">Social</p>

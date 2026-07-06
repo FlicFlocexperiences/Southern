@@ -41,6 +41,43 @@ export const DesktopFooter = () => {
         {/* Right: Lists */}
         <div className="flex gap-16 lg:gap-32 text-right">
 
+          {/* Navigation */}
+          <div className="flex flex-col items-end">
+            <p className="text-[18px] lg:text-[24px] text-black/65 mb-6">Navigation</p>
+            <nav className="flex flex-col gap-4">
+              <Link 
+                href="/" 
+                className="text-[28px] lg:text-[36px] text-black font-normal hover:text-white transition-colors duration-300"
+              >
+                Home
+              </Link>
+              <Link 
+                href="/about" 
+                className="text-[28px] lg:text-[36px] text-black font-normal hover:text-white transition-colors duration-300"
+              >
+                About Us
+              </Link>
+              <Link 
+                href="/services" 
+                className="text-[28px] lg:text-[36px] text-black font-normal hover:text-white transition-colors duration-300"
+              >
+                Services
+              </Link>
+              <Link 
+                href="/projects" 
+                className="text-[28px] lg:text-[36px] text-black font-normal hover:text-white transition-colors duration-300"
+              >
+                Projects
+              </Link>
+              <Link 
+                href="/blogs" 
+                className="text-[28px] lg:text-[36px] text-black font-normal hover:text-white transition-colors duration-300"
+              >
+                Blogs
+              </Link>
+            </nav>
+          </div>
+
           {/* Legal */}
           <div className="flex flex-col items-end">
             <p className="text-[18px] lg:text-[24px] text-black/65 mb-6">Legal</p>
