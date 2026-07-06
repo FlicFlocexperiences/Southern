@@ -142,8 +142,7 @@ export const DesktopFooter = () => {
           <div className="h-px bg-black/20 w-full group-hover:bg-white/40 transition-colors duration-300" />
         </button>
 
-        {/* Dropdown Grid Container */}
-        <div className={`grid grid-cols-1 md:grid-cols-3 gap-y-6 gap-x-12 overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[500px] opacity-100 py-6' : 'max-h-0 opacity-0 py-0'}`}>
+        <div className={`grid grid-cols-1 md:grid-cols-3 gap-y-6 gap-x-12 overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[1200px] opacity-100 py-6' : 'max-h-0 opacity-0 py-0'}`}>
           {articles.map((article) => (
             <Link 
               key={article.slug}

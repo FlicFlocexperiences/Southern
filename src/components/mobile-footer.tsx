@@ -98,8 +98,7 @@ export const MobileFooter = () => {
           <div className="flex-1 h-[1px] bg-[#b03000]/60 mt-1" />
         </button>
 
-        {/* Dropdown Container (Mobile) */}
-        <div className={`flex flex-col gap-4 overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[800px] opacity-100 py-3' : 'max-h-0 opacity-0 py-0'}`}>
+        <div className={`flex flex-col gap-4 overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[3000px] opacity-100 py-3' : 'max-h-0 opacity-0 py-0'}`}>
           {articles.map((article) => (
             <Link 
               key={article.slug}
