@@ -14,6 +14,7 @@ export function MobileNav() {
     { name: "HOME", href: "/" },
     { name: "ABOUT US", href: "/about" },
     { name: "SERVICES", href: "/services" },
+    { name: "PROJECTS", href: "/projects" },
     { name: "BLOGS", href: "/blogs" },
     { name: "CONTACT US", href: "/contact" },
   ];

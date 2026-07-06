@@ -5,14 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 const TeamCard = ({ name, role1, role2, image, linkedinUrl, heightClass = "h-[320px] lg:h-[350px]", imageClassName = "" }: { name: string, role1: string, role2?: string, image: string, linkedinUrl?: string, heightClass?: string, imageClassName?: string }) => (
-  <div className={`bg-gradient-to-b from-white via-white to-[#ff7333] rounded-[20px] ${heightClass} w-full relative overflow-hidden flex flex-col justify-end group shrink-0 cursor-pointer`}>
+  <div className={`bg-gradient-to-b from-white via-white to-[#ffd1b8] rounded-[20px] ${heightClass} w-full relative overflow-hidden flex flex-col justify-end group shrink-0 cursor-pointer shadow-[0_10px_30px_rgba(0,0,0,0.1),inset_0_2px_4px_rgba(255,255,255,0.6)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.25),inset_0_2px_4px_rgba(255,255,255,0.8)] hover:-translate-y-3 transition-all duration-[600ms] ease-[cubic-bezier(0.23,1,0.32,1)] border border-black/5`}>
     <img 
       src={image} 
       alt={name} 
-      className={`absolute inset-0 w-full h-full object-cover object-top grayscale transition-transform duration-700 group-hover:scale-105 ${imageClassName}`} 
+      className={`absolute inset-0 w-full h-full object-cover object-top grayscale transition-transform duration-[800ms] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-110 ${imageClassName}`} 
     />
-    {/* Softer orange gradient overlay */}
-    <div className="absolute inset-x-0 bottom-0 h-[50%] bg-gradient-to-t from-[#ff6a1a]/95 via-[#ff6a1a]/60 to-transparent pointer-events-none transition-opacity duration-300" />
+    {/* Very soft peach/orange gradient overlay matching the uploaded shading */}
+    <div className="absolute inset-x-0 bottom-0 h-[60%] bg-gradient-to-t from-[#ffd1b8] via-[#ffe4d6]/90 to-transparent pointer-events-none transition-opacity duration-300" />
     
     {/* LinkedIn Icon on Hover */}
     <a 
@@ -28,9 +28,9 @@ const TeamCard = ({ name, role1, role2, image, linkedinUrl, heightClass = "h-[32
     </a>
 
     <div className="relative z-10 p-6 lg:p-8 w-full transition-transform duration-500 group-hover:translate-y-[-4px]">
-      <h4 className="text-white text-[28px] lg:text-[32px] font-medium leading-tight mb-1 drop-shadow-sm">{name}</h4>
-      <p className="text-white opacity-95 text-[16px] lg:text-[18px] leading-snug">{role1}</p>
-      {role2 && <p className="text-white opacity-90 text-[13px] lg:text-[14px] leading-snug">{role2}</p>}
+      <h4 className="text-[#0f0f0f] text-[28px] lg:text-[32px] font-medium leading-tight mb-1">{name}</h4>
+      <p className="text-[#0f0f0f]/80 text-[16px] lg:text-[18px] leading-snug">{role1}</p>
+      {role2 && <p className="text-[#0f0f0f]/70 text-[13px] lg:text-[14px] leading-snug">{role2}</p>}
     </div>
   </div>
 );

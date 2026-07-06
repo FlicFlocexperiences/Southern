@@ -27,13 +27,6 @@ export const DesktopServicesPage = () => {
       image: "/services/photography.png"
     },
     {
-      title: "Website Development",
-      description: "We create responsive, high-converting websites optimized for user experience and modern design.",
-      timeline: "4-5 Weeks",
-      deliverables: "Responsive Sites • Landing Pages",
-      image: "/services/website-development.png"
-    },
-    {
       title: "Performance Marketing",
       description: "We drive measurable growth and high-quality leads through targeted, data-driven ad campaigns.",
       timeline: "2-3 Weeks",

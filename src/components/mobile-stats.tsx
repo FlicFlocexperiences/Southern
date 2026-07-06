@@ -19,7 +19,7 @@ export function MobileStats() {
         {/* Counters Row */}
         <div className="flex flex-row justify-between items-start gap-1">
           <div className="flex flex-col items-center text-center w-1/4 px-1">
-            <span className="text-[18px] sm:text-[20px] font-semibold text-[#30261C] font-sans"><CountUp to={400} suffix="+" /></span>
+            <span className="text-[18px] sm:text-[20px] font-semibold text-[#30261C] font-sans"><CountUp to={1500} suffix="+" /></span>
             <span className="text-[10px] sm:text-[12px] leading-tight text-[#30261C]/75 font-sans mt-1">Projects Delivered</span>
           </div>
           
@@ -34,7 +34,7 @@ export function MobileStats() {
           </div>
           
           <div className="flex flex-col items-center text-center w-1/4 px-1">
-            <span className="text-[18px] sm:text-[20px] font-semibold text-[#30261C] font-sans"><CountUp to={6} suffix="+" /></span>
+            <span className="text-[18px] sm:text-[20px] font-semibold text-[#30261C] font-sans"><CountUp to={8} suffix="+" /></span>
             <span className="text-[10px] sm:text-[12px] leading-tight text-[#30261C]/75 font-sans mt-1">Years Experience</span>
           </div>
         </div>

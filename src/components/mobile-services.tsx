@@ -21,10 +21,10 @@ const ArrowRightUpIcon = () => (
 const services = [
   {
     num: "01",
-    title: "Website/App Revamp",
-    desc: "We modernize your existing site/app with improved functionality, faster load speeds, and fresh aesthetics.",
-    time: "2 - 4 weeks",
-    icon: <img src="/74c0af15118c1b2a2c39e1511c12af1dfd68bbda.svg" alt="Website/App Revamp" className="w-[45px] h-[45px] object-contain" />
+    title: "Website and App Development",
+    desc: "We build and modernize websites and apps with improved functionality, faster load speeds, and fresh aesthetics.",
+    time: "1 - 4 weeks",
+    icon: <img src="/74c0af15118c1b2a2c39e1511c12af1dfd68bbda.svg" alt="Website and App Development" className="w-[45px] h-[45px] object-contain" />
   },
   {
     num: "02",
@@ -60,13 +60,6 @@ const services = [
     desc: "Create high-quality visual content that captures attention, builds trust, and drives engagement.",
     time: "1 - 3 weeks",
     icon: <img src="/00cd375964412dedc26595d780eebba9baf9a5c4.svg" alt="Photography & Videography" className="w-[45px] h-[45px] object-contain" />
-  },
-  {
-    num: "07",
-    title: "Website Development",
-    desc: "We create responsive, high-converting websites optimized for user experience and modern design.",
-    time: "4 - 5 weeks",
-    icon: <img src="/6c4032a099bc8802dd11f6cbf1a0ab68c82963a0.svg" alt="Website Development" className="w-[45px] h-[45px] object-contain" />
   }
 ];
 

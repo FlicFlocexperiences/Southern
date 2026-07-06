@@ -5,10 +5,10 @@ import { CountUp } from "@/components/count-up";
 
 export const DesktopStats = () => {
   const stats = [
-    { value: "400+", label: "Projects Delivered" },
+    { value: "1500+", label: "Projects Delivered" },
     { value: "95%", label: "Client Retention" },
     { value: "20+", label: "Industry Specialists" },
-    { value: "6+", label: "Years Experience" },
+    { value: "8+", label: "Years Experience" },
   ];
 
   return (
