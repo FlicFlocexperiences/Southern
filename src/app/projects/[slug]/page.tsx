@@ -11,8 +11,6 @@ import path from "path";
 // Helper function to read project images from local folders or fallback to database gallery
 function getProjectImages(slug: string, fallbackGallery: string[]): string[] {
   const folderName = 
-    slug === "cch-club-house" ? "CCH" : 
-    (slug === "cedar" || slug === "cedar-anem") ? "Cedar" : 
     slug === "health" ? "Health/GRID 13" : 
     slug === "chavelle" ? "Chavelle/Grid 08" : 
     slug === "lotd" ? "LOTD/Grid 01" :

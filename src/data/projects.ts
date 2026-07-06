@@ -15,56 +15,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: 1,
-    slug: "cch-club-house",
-    title: "CCH Club House",
-    category: "Website development",
-    description: "A luxury digital platform and branding system developed for CCH Club House, combining bespoke typography, interactive design, and premium visuals.",
-    client: "CCH Group",
-    duration: "8 Weeks",
-    services: "Visual Identity, UI/UX Design, Next.js Development",
-    image: "/CCH/1.png",
-    heroImage: "/CCH/1.png",
-    gallery: [
-      "/CCH/Grid-08_02.png",
-      "/CCH/Grid-08_03.png",
-      "/CCH/Grid-08_04.png",
-      "/CCH/Grid-08_05.png",
-      "/CCH/Grid-08_06.png",
-      "/CCH/Grid-08_07.png",
-      "/CCH/Grid-08_08.png",
-      "/CCH/Grid-08_09.png",
-      "/CCH/Grid-08_10.png",
-      "/CCH/Grid-08_11.png",
-      "/CCH/Grid-08_12.png"
-    ]
-  },
-  {
-    id: 2,
-    slug: "cedar",
-    title: "Cedar Anem",
-    category: "Branding",
-    description: "A luxury digital platform and branding system developed for Cedar Anem, combining bespoke typography, interactive design, and premium visuals.",
-    client: "Cedar Group",
-    duration: "10 Weeks",
-    services: "Visual Identity, UI/UX Design, Development",
-    image: "/Cedar/1 (1).png",
-    heroImage: "/Cedar/1 (1).png",
-    gallery: [
-      "/Cedar/1 (2).png",
-      "/Cedar/1 (3).png",
-      "/Cedar/1 (4).png",
-      "/Cedar/1 (5).png",
-      "/Cedar/1 (6).png",
-      "/Cedar/1 (7).png",
-      "/Cedar/1 (8).png",
-      "/Cedar/1 (9).png",
-      "/Cedar/1 (10).png",
-      "/Cedar/1 (11).png",
-      "/Cedar/1 (12).png"
-    ]
-  },
-  {
     id: 3,
     slug: "health",
     title: "Health",
