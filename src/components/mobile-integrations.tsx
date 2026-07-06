@@ -24,10 +24,10 @@ const logos = [
   "/integrations/zoho.png",
   "/integrations/gemini.png",
   // Row 5
-  "/integrations/tik-tok_1.svg",
+  "/tik-tok_1.svg",
   "/integrations/snapchat.png",
-  "/integrations/Cursor.svg",
-  "/integrations/figma_1.svg",
+  "/Cursor.svg",
+  "/figma_1.svg",
 ];
 
 const HexagonSvg = () => (
