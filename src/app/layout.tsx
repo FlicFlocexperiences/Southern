@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   description: "Southern Marketing - Big ideas deserve better than average.",
 };
 
+import { AuthProvider } from "@/components/AuthProvider";
 import { WhatsappWidget } from "@/components/whatsapp-widget";
 
 export default function RootLayout({
@@ -37,8 +38,10 @@ export default function RootLayout({
       className={`${onestSans.variable} ${geistMono.variable} ${playball.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {children}
-        <WhatsappWidget />
+        <AuthProvider>
+          {children}
+          <WhatsappWidget />
+        </AuthProvider>
       </body>
     </html>
   );

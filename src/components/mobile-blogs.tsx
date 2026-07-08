@@ -2,13 +2,10 @@
 
 import React from "react";
 import Link from "next/link";
-import { blogs } from "@/data/blogs";
+import { BlogItem } from "./desktop-blogs";
 
-export const MobileBlogs = () => {
-  const blogsData = blogs.map((blog) => ({
-    ...blog,
-    date: blog.publishedAt
-  }));
+export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
+  const blogsData = blogs;
 
   return (
     <div className="w-full relative bg-[#fffff0] pt-16 pb-16 overflow-hidden">
