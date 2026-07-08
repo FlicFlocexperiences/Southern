@@ -70,7 +70,7 @@ export const MobileCaseStudies = () => {
         </div>
 
         {/* Explore Projects Button */}
-        <Link href="/contact" className="pointer-events-auto">
+        <Link href="/projects" className="pointer-events-auto">
           <button 
             className="flex items-center justify-center gap-2.5 w-[200px] h-[52px] rounded-full bg-gradient-to-r from-[#ff5100] to-[#ff7300] shadow-[0_4px_14px_rgba(255,81,0,0.4)] hover:shadow-[0_8px_24px_rgba(255,81,0,0.6)] hover:-translate-y-1 transition-all duration-300 group cursor-pointer"
             aria-label="Explore Projects"

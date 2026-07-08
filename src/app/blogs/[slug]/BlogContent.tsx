@@ -3,10 +3,10 @@
 import React, { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Article } from "@/data/articles";
+import { Blog } from "@/data/blogs";
 
-interface ArticleContentProps {
-  article: Article;
+interface BlogContentProps {
+  blog: Blog;
 }
 
 const parseInlineMarkdown = (text: string) => {
@@ -23,9 +23,7 @@ const parseInlineMarkdown = (text: string) => {
   });
 };
 
-export const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
-  const pathname = usePathname();
-  const isBlog = pathname?.startsWith("/blogs");
+export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
   const [currentUrl, setCurrentUrl] = useState("");
   const [activeId, setActiveId] = useState("");
   const mobileSliderRef = useRef<HTMLDivElement>(null);
@@ -62,7 +60,7 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
 
   // Parse sections (h3 headers) for TOC
   const sections = useMemo(() => {
-    return article.content
+    return blog.content
       .split("\n")
       .filter((line) => line.trim().startsWith("###"))
       .map((line) => {
@@ -73,7 +71,7 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
           .replace(/\s+/g, "-");
         return { id, title: text };
       });
-  }, [article.content]);
+  }, [blog.content]);
 
   // Track active section on scroll
   useEffect(() => {
@@ -96,7 +94,7 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
   }, [sections]);
 
   const handleShare = (platform: string) => {
-    const title = article.title;
+    const title = blog.title;
     let shareUrl = "";
 
     switch (platform) {
@@ -199,16 +197,16 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
         <div className="max-w-[1000px] relative z-10">
           <div className="inline-flex items-center gap-1.5 text-[11px] md:text-[12px] uppercase tracking-[0.2em] text-[#ff5100] font-bold mb-4">
             <span>[</span>
-            <span>Insight & Strategy</span>
+            <span>{blog.category}</span>
             <span>]</span>
           </div>
           
           <h1 className="text-[36px] sm:text-[48px] md:text-[60px] lg:text-[70px] font-extrabold leading-[1.1] text-white tracking-tight mb-6">
-            {article.title}
+            {blog.title}
           </h1>
 
           <div className="flex items-center gap-4 text-white/50 text-[14px] md:text-[16px] font-light">
-            <span>Published: {article.publishedAt}</span>
+            <span>Published: {blog.publishedAt}</span>
             <span>•</span>
             <span>5 min read</span>
           </div>
@@ -235,7 +233,7 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
                     document.getElementById(sec.id)?.scrollIntoView({ behavior: "smooth" });
                     setActiveId(sec.id);
                   }}
-                  className={`text-[14px] font-medium leading-[1.4] transition-all duration-300 border-l-2 pl-3 ${
+                  className={`text-[14px] font-medium leading-[1.4] transition-all duration-300 border-l-2 pl-3 text-left ${
                     isActive
                       ? "text-[#ff5100] border-[#ff5100] font-semibold"
                       : "text-[#30261C]/50 border-transparent hover:text-[#30261C]"
@@ -254,17 +252,15 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
           <div className="flex items-center gap-2 mb-8 text-[13px] md:text-[14px] font-regular text-[#30261C]/55">
             <Link href="/" className="hover:text-[#ff5100] transition-colors">Home</Link>
             <span>/</span>
-            <Link href={isBlog ? "/blogs" : "/projects"} className="hover:text-[#ff5100] transition-colors">
-              {isBlog ? "Blogs" : "Projects"}
-            </Link>
+            <Link href="/blogs" className="hover:text-[#ff5100] transition-colors">Blogs</Link>
             <span>/</span>
-            <span className="text-[#30261C] font-regular truncate max-w-[200px] md:max-w-xs">{article.title}</span>
+            <span className="text-[#30261C] font-regular truncate max-w-[200px] md:max-w-xs">{blog.title}</span>
           </div>
 
           {/* Mobile Table of Contents Slider */}
           {sections.length > 0 && (
             <div className="lg:hidden w-full mb-8">
-              <h4 className="text-[12px] font-bold uppercase tracking-[0.2em] text-[#30261C]/60 mb-3 font-sans">
+              <h4 className="text-[12px] font-bold uppercase tracking-[0.2em] text-[#30261C]/60 mb-3 font-sans text-left">
                 On This Page
               </h4>
               <div
@@ -306,13 +302,13 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
 
           {/* Article Box */}
           <article className="w-full bg-white/40 border border-[#30261C]/10 rounded-[28px] p-6 md:p-10 lg:p-12 shadow-[0_4px_30px_rgba(0,0,0,0.02)] backdrop-blur-sm">
-            <div className="prose max-w-none text-[#30261C] font-sans">
-              {renderContent(article.content)}
+            <div className="prose max-w-none text-[#30261C] font-sans text-left">
+              {renderContent(blog.content)}
             </div>
 
             {/* Share Post */}
             <div className="border-t border-[#30261C]/10 mt-12 pt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-              <span className="text-[14px] md:text-[16px] font-regular text-[#30261C]/70">
+              <span className="text-[14px] md:text-[16px] font-regular text-[#30261C]/70 text-left">
                 Share this insight:
               </span>
               <div className="flex items-center gap-3">
@@ -352,7 +348,7 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
         <aside className="w-full lg:sticky lg:top-28 space-y-6">
           
           {/* Company Bio Card */}
-          <div className="bg-[#ff5100] rounded-[24px] p-6 text-white shadow-[0_12px_24px_rgba(255,81,0,0.15)] border border-[#ff5100]/25 relative overflow-hidden group">
+          <div className="bg-[#ff5100] rounded-[24px] p-6 text-white shadow-[0_12px_24px_rgba(255,81,0,0.15)] border border-[#ff5100]/25 relative overflow-hidden group text-left">
             <div className="absolute top-[-20%] right-[-10%] w-[50%] aspect-square rounded-full bg-white/10 blur-[30px] pointer-events-none" />
             <h3 className="text-[18px] font-bold mb-3 uppercase tracking-wide">
               Southern Edge Marketing
@@ -369,7 +365,7 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
           </div>
 
           {/* Need Marketing Help Card */}
-          <div className="bg-white/40 border border-[#30261C]/10 rounded-[24px] p-6 shadow-[0_4px_30px_rgba(0,0,0,0.02)] backdrop-blur-sm">
+          <div className="bg-white/40 border border-[#30261C]/10 rounded-[24px] p-6 shadow-[0_4px_30px_rgba(0,0,0,0.02)] backdrop-blur-sm text-left">
             <h3 className="text-[18px] font-bold text-[#30261C] mb-3 uppercase tracking-wide">
               Start Your Digital Journey
             </h3>

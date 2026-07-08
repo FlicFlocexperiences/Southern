@@ -95,7 +95,7 @@ export const DesktopServicesPage = () => {
                 {service.tags.map((tag, tagIndex) => (
                   <span 
                     key={tagIndex} 
-                    className="px-4 py-2 bg-[#FF5100] border border-white/10 rounded-xl text-white/90 text-[14px] md:text-[15px] font-medium transition-colors hover:bg-[#ff5100]/20 hover:border-[#ff5100]/30 cursor-default"
+                    className="px-4 py-2 bg-[#FF5100] border border-white/10 rounded-xl text-white/90 text-[14px] md:text-[15px] font-medium  cursor-default"
                   >
                     {tag}
                   </span>

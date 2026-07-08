@@ -102,7 +102,7 @@ export const MobileServicesPage = () => {
               {service.tags.map((tag, tagIndex) => (
                 <span 
                   key={tagIndex} 
-                  className="px-3 py-1.5 bg-[#1c1c1c] border border-white/10 rounded-lg text-white/90 text-[13px] font-medium"
+                  className="px-3 py-1.5 bg-[#FF5100] border border-white/10 rounded-lg text-white/90 text-[13px] font-medium"
                 >
                   {tag}
                 </span>

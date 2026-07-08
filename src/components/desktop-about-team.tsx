@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
@@ -82,16 +83,22 @@ export const DesktopAboutTeam = () => {
         {/* Right Column */}
         <div className="flex flex-col gap-6 lg:col-span-2">
           {/* Card 3: Ready to grow */}
-          <div className="bg-[#ff5100] rounded-[20px] w-full flex flex-col justify-center p-6 lg:p-8 text-white shrink-0 h-auto lg:h-[240px]">
-            <h3 className="text-[28px] lg:text-[32px] font-medium leading-tight mb-3">READY TO GROW?</h3>
-            <p className="text-[18px] lg:text-[21px] font-normal leading-tight mb-8 opacity-95 max-w-[90%]">
-              Bring your vision to life with creative strategies, stunning design, and technology built for real business results.
-            </p>
-            <div className="w-full h-[2px] bg-white mb-6 opacity-80" />
-            <div className="w-[41px] h-[41px] bg-white rounded-full flex items-center justify-center shrink-0 cursor-pointer hover:scale-110 transition-transform">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff5100" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
+          <div className="bg-[#ff5100] rounded-[20px] w-full flex flex-col justify-between p-6 lg:p-8 text-white shrink-0 h-auto lg:h-[240px]">
+            <div>
+              <h3 className="text-[28px] lg:text-[32px] font-bold leading-tight mb-2 uppercase">READY TO GROW?</h3>
+              <p className="text-[15px] lg:text-[16px] font-normal leading-snug opacity-95 max-w-[95%]">
+                Bring your vision to life with creative strategies, stunning design, and technology built for real business results.
+              </p>
+            </div>
+            
+            <div className="flex flex-col gap-4">
+              <div className="w-full h-px " />
+              <Link href="/contact" className="w-fit">
+                <button className="bg-white text-[#ff5100] rounded-full py-2.5 px-6 flex items-center justify-center gap-2 hover:scale-[1.03] active:scale-[0.97] transition-all duration-300 shadow-md cursor-pointer">
+                  <div className="w-2 h-2 rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
+                  <span className="font-bold text-[15px] tracking-wide whitespace-nowrap">Start Now</span>
+                </button>
+              </Link>
             </div>
           </div>
           
