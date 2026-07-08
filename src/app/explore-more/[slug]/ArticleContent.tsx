@@ -372,7 +372,6 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
               Get in touch with our team to discuss custom Next.js engineering, Shopify architectures, or modern digital strategies.
             </p>
             <div className="flex flex-col gap-3">
-              
               <Link
                 href="/contact"
                 className="w-full border border-[#30261C]/15 hover:bg-white text-[#30261C] text-center py-3 rounded-xl font-bold text-[14px] md:text-[15px] transition-all duration-300"
