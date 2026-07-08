@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function AboutPageHero() {
   return (
-    <section className="w-full min-h-[90vh] pt-36 pb-20 md:pt-56 md:pb-32 lg:pt-64 lg:pb-40 px-4 flex justify-center relative overflow-hidden">
+    <section className="w-full min-h-[70vh] pt-36 pb-20 md:pt-56 md:pb-32 lg:pt-64 lg:pb-40 px-4 flex justify-center relative overflow-hidden">
       {/* Background Video */}
       <video
         autoPlay
