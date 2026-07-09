@@ -2,12 +2,17 @@
 
 import React from "react";
 import Link from "next/link";
-import { blogs } from "@/data/blogs";
+export interface BlogItem {
+  title: string;
+  category: string;
+  slug: string;
+  image: string;
+  date: string;
+}
 
-export const DesktopBlogs = () => {
+export const DesktopBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
   const blogsData = blogs.map((blog, index) => ({
     ...blog,
-    date: blog.publishedAt,
     isFeatured: index === 0
   }));
 
