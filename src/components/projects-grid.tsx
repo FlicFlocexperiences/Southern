@@ -6,6 +6,7 @@ import { projects } from "@/data/projects";
 
 const categories = [
   "All",
+<<<<<<< HEAD
   "Website Development",
   "Photography & Videography",
   "Shopify Development",
@@ -13,85 +14,100 @@ const categories = [
   "Branding",
   "SEO",
   "Social Media Management"
+=======
+  "Websites",
+  "Shopify Stores",
+  "Photoshoots",
+  "Branding"
+>>>>>>> 7221075c0e395920d79a3133477b5c5363a9cb80
 ];
+
+const mapCategory = (dbCategory: string): string => {
+  switch (dbCategory) {
+    case "Website development":
+    case "Meta Ads":
+      return "Websites";
+    case "Shopify stores":
+      return "Shopify Stores";
+    case "Photoshoot":
+      return "Photoshoots";
+    case "Branding":
+      return "Branding";
+    default:
+      return dbCategory;
+  }
+};
 
 export const ProjectsGrid = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [isOpen, setIsOpen] = useState(false);
 
   const filteredProjects = selectedCategory === "All"
     ? projects
+<<<<<<< HEAD
     : projects.filter(p => p.category.toLowerCase() === selectedCategory.toLowerCase());
+=======
+    : projects.filter(p => mapCategory(p.category) === selectedCategory);
+>>>>>>> 7221075c0e395920d79a3133477b5c5363a9cb80
 
   return (
-    <section className="w-full bg-[#fffff0] px-6 lg:px-[90px] py-16 lg:py-24">
-      {/* Dropdown Filter Button Container */}
-      <div className="relative mb-16 z-50 flex items-center">
-        {/* Backdrop for closing dropdown when clicking outside */}
-        {isOpen && (
-          <div 
-            className="fixed inset-0 z-40 cursor-default" 
-            onClick={() => setIsOpen(false)}
-          />
-        )}
-        
-        <div className="relative z-50 flex items-center gap-3">
-          {/* Pill Button (Category Label) */}
-          <button 
-            onClick={() => setIsOpen(!isOpen)}
-            className="px-8 py-3 bg-gradient-to-r from-[#ff5100] to-[#e04400] text-white font-medium text-[16px] rounded-full shadow-[0_8px_25px_-5px_rgba(255,81,0,0.45)] hover:shadow-[0_12px_30px_-5px_rgba(255,81,0,0.6)] transition-all duration-300 min-w-[120px] text-center cursor-pointer hover:scale-[1.02] active:scale-[0.98] outline-none border-none"
-          >
-            {selectedCategory}
-          </button>
-          
-          {/* Circular Arrow Button */}
-          <button 
-            onClick={() => setIsOpen(!isOpen)}
-            className="w-12 h-12 flex items-center justify-center bg-gradient-to-r from-[#ff5100] to-[#e04400] text-white rounded-full shadow-[0_8px_25px_-5px_rgba(255,81,0,0.45)] hover:shadow-[0_12px_30px_-5px_rgba(255,81,0,0.6)] transition-all duration-300 cursor-pointer hover:scale-[1.02] active:scale-[0.98] outline-none border-none"
-          >
-            <svg 
-              className={`w-5 h-5 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2.5" 
-              viewBox="0 0 24 24" 
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"></path>
-            </svg>
-          </button>
+    <section className="w-full bg-[#fffff0] px-6 md:px-10 lg:px-[90px] pt-32 md:pt-36 lg:pt-40 pb-16 md:pb-24 max-w-[1440px] mx-auto">
+      {/* Top tag: [ OUR WORK ] */}
+      <div className="flex items-center gap-1 text-[11px] md:text-[13px] tracking-[0.2em] font-bold">
+        <span className="text-[#ff5100] font-sans">[</span>
+        <span className="text-[#30261C] uppercase font-sans">OUR WORK</span>
+        <span className="text-[#ff5100] font-sans">]</span>
+      </div>
 
-          {/* Dropdown Menu */}
-          {isOpen && (
-            <div className="absolute left-0 top-full mt-3 w-64 bg-white/95 backdrop-blur-xl border border-white/50 rounded-[24px] shadow-[0_20px_50px_rgba(0,0,0,0.15)] py-3 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => {
-                    setSelectedCategory(cat);
-                    setIsOpen(false);
-                  }}
-                  className={`w-full text-left px-6 py-3.5 text-[15px] transition-colors duration-200 first:rounded-t-[20px] last:rounded-b-[20px] cursor-pointer outline-none border-none ${
-                    selectedCategory === cat 
-                      ? 'text-[#ff5100] bg-[#ff5100]/5 font-semibold' 
-                      : 'text-[#30261c]/80 hover:bg-[#30261c]/5 hover:text-[#30261c]'
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
+      {/* Horizontal Line Divider */}
+      <div className="w-full h-px bg-[#30261C]/15 my-5 md:my-6" />
+
+      {/* Heading: PROJECTS */}
+      <h1 className="text-[54px] sm:text-[72px] md:text-[90px] lg:text-[110px] xl:text-[130px] font-extrabold leading-[1] text-[#30261C] uppercase tracking-tighter mb-8 md:mb-12">
+        PROJECTS
+      </h1>
+
+      {/* Filter Row with Dot Indicators */}
+      <div className="flex flex-wrap items-center gap-x-6 sm:gap-x-8 gap-y-3 mb-12 md:mb-16">
+        {categories.map((category) => {
+          const isActive = selectedCategory === category;
+          return (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className="flex items-center gap-2 text-[14px] md:text-[16px] transition-all cursor-pointer select-none border-none outline-none bg-transparent py-1"
+            >
+              {/* Dot */}
+              <span
+                className={`w-[8px] h-[8px] md:w-[10px] md:h-[10px] rounded-full transition-colors duration-300 ${
+                  isActive ? "bg-[#ff5100]" : "bg-[#30261C]/30"
+                }`}
+              />
+              {/* Text */}
+              <span
+                className={`transition-colors duration-300 font-medium ${
+                  isActive ? "text-[#30261C] font-semibold" : "text-[#30261C]/50 hover:text-[#30261C]"
+                }`}
+              >
+                {category}
+              </span>
+            </button>
+          );
+        })}
       </div>
 
       {/* Grid Container */}
+<<<<<<< HEAD
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-y-12">
         {filteredProjects.map((project, index) => {
+=======
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-12 gap-y-12 md:gap-y-20">
+        {filteredProjects.map((project) => {
+>>>>>>> 7221075c0e395920d79a3133477b5c5363a9cb80
           return (
             <Link 
               href={`/projects/${project.slug}`}
               key={project.id} 
+<<<<<<< HEAD
               className="group flex flex-col w-full cursor-pointer bg-white border border-[#eaeaea] p-4 lg:p-5 rounded-[28px] lg:rounded-[32px] shadow-[0_4px_25px_rgba(0,0,0,0.015)] transition-all duration-300 hover:shadow-[0_16px_35px_rgba(0,0,0,0.045)] hover:border-neutral-200"
             >
               {/* Image Container with Inset padding and rounded corners */}
@@ -132,6 +148,26 @@ export const ProjectsGrid = () => {
                   </div>
                 </div>
               </div>
+=======
+              className="group flex flex-col w-full cursor-pointer"
+            >
+              {/* Image Container */}
+              <div className="w-full aspect-[4/3] rounded-[24px] lg:rounded-[32px] overflow-hidden bg-[#30261c]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+                
+                {/* Overlay on hover */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
+              </div>
+              
+              {/* Centered capitalized title */}
+              <h3 className="text-center text-[18px] md:text-[22px] lg:text-[24px] font-bold text-[#30261C] uppercase mt-5 tracking-wide group-hover:text-[#ff5100] transition-colors duration-300">
+                {project.title}
+              </h3>
+>>>>>>> 7221075c0e395920d79a3133477b5c5363a9cb80
             </Link>
           );
         })}

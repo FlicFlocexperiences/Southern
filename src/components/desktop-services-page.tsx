@@ -1,139 +1,79 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
+import { services } from "@/data/services";
 
 export const DesktopServicesPage = () => {
-  const services = [
-    {
-      title: "Website Revamp",
-      description: "We modernize your existing site with improved functionality, faster load speeds, and fresh aesthetics.",
-      timeline: "2-3 Weeks",
-      deliverables: "Redesign • Optimization",
-      image: "/services/website-revamp.png"
-    },
-    {
-      title: "Branding & Creative Strategy",
-      description: "Create memorable brand identities, impactful visuals, and consistent messaging that drive growth.",
-      timeline: "2 – 4 Weeks",
-      deliverables: "Brand Identity • Brand Guidelines",
-      image: "/services/branding.png"
-    },
-    {
-      title: "Photography & Videography",
-      description: "Create high-quality visual content that captures attention, builds trust, and drives engagement.",
-      timeline: "1 – 3 Weeks",
-      deliverables: "High-Res Photos • Promo Videos",
-      image: "/services/photography.png"
-    },
-    {
-      title: "Performance Marketing",
-      description: "We drive measurable growth and high-quality leads through targeted, data-driven ad campaigns.",
-      timeline: "2-3 Weeks",
-      deliverables: "Ad Campaigns • Analytics Reports",
-      image: "/services/performance-marketing.png"
-    },
-    {
-      title: "SEO",
-      description: "We boost your search rankings and drive consistent organic traffic with proven strategies.",
-      timeline: "3-4 Weeks",
-      deliverables: "Keyword Strategy • Traffic Growth",
-      image: "/services/seo.png"
-    },
-    {
-      title: "Application Development",
-      description: "We engineer robust, intuitive mobile and web applications tailored to your business goals.",
-      timeline: "5-6 Weeks",
-      deliverables: "iOS/Android Apps • Web Apps",
-      image: "/services/app-development.png"
-    },
-    {
-      title: "Social Media Management",
-      description: "We build vibrant online communities through engaging content and strategic brand storytelling.",
-      timeline: "1-2 Weeks",
-      deliverables: "Content Calendar • Community Engagement",
-      image: "/services/social-media.png"
-    }
-  ];
-
   return (
-    <section className="w-full bg-[#fffff0] pb-20 pt-0 px-8 lg:px-[90px] flex flex-col relative z-10 overflow-hidden">
+    <section className="w-full bg-[#fffff0] pb-10 pt-0 px-8 lg:px-[90px] flex flex-col relative z-10 overflow-hidden">
       
       {/* Top Section: Title */}
-      <div className="flex flex-col w-full mb-16 lg:mb-24 items-center relative pt-16 gap-8 md:gap-10">
+      <div className="flex flex-col w-full mb-16 lg:mb-20 items-start relative pt-32 lg:pt-36 gap-6 md:gap-8 max-w-[1280px] mx-auto">
+        {/* Tagline */}
+        <div className="text-[14px] md:text-[16px] font-semibold tracking-wider flex items-center">
+          <span className="text-[#ff5100]">[</span>
+          <span className="text-black mx-2">WHAT WE DO</span>
+          <span className="text-[#ff5100]">]</span>
+        </div>
 
-        
-        <div className="w-full h-px bg-black/10 relative" />
-        
-        <h2 className="text-[50px] md:text-[80px] lg:text-[130px] font-semibold text-black text-center w-full leading-[1.1] lg:leading-[130px] tracking-tight px-4 mt-12 lg:mt-16">
-          SERVICES & EXPERTISE
-        </h2>
+        {/* Horizontal Line */}
+        <div className="w-full h-px bg-black/10" />
+
+        {/* Main Heading */}
+        <h1 className="text-[50px] md:text-[80px] lg:text-[100px] font-bold text-black leading-none tracking-tight">
+          SERVICES
+        </h1>
       </div>
 
-      {/* Bottom Section: Services List */}
-      <div className="w-full flex flex-col relative z-10 gap-16 lg:gap-24">
+      {/* Services Cards List */}
+      <div className="w-full max-w-[1280px] mx-auto flex flex-col gap-8 md:gap-10 pb-20">
         {services.map((service, index) => (
-          <div key={index} className="flex flex-col relative w-full pt-10">
-            {/* Top border */}
-            <div className="absolute top-0 left-0 w-full h-px bg-black/10" />
-
-            <div className="flex flex-col xl:flex-row items-start w-full gap-8 xl:gap-12 py-8">
-              {/* Left Column: Title */}
-              <div className="w-full xl:w-[20%] shrink-0">
-                <h3 className="text-[20px] xl:text-[24px] font-normal text-[#0f0f0f]">
+          <Link
+            href={`/services/${service.slug}`}
+            key={index} 
+            className="block w-full bg-[#ffffff] rounded-[24px] md:rounded-[32px] p-8 md:p-12 lg:p-16 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12 relative overflow-hidden transition-all duration-300 hover:shadow-2xl hover:scale-[1.01] border-2 border-orange-600/40 cursor-pointer"
+          >
+            {/* Left Content */}
+            <div className="w-full md:w-[60%] flex flex-col h-full justify-between items-start">
+              <div>
+                <h3 className="text-black text-[28px] md:text-[36px] font-bold tracking-tight mb-4 md:mb-6">
                   {service.title}
                 </h3>
-              </div>
-
-              {/* Middle Column: Image */}
-              <div className="w-full xl:flex-1 h-[420px] rounded-[15px] overflow-hidden bg-[#e4e4e4] shrink-0 relative">
-                <img 
-                  src={service.image} 
-                  alt={service.title} 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              {/* Right Column: Details */}
-              <div className="w-full xl:w-[30%] flex flex-col pt-4">
-                <p className="text-[16px] xl:text-[18px] leading-[1.5] text-[#828282] mb-12 text-left">
-                  {service.description}
+                <p className="text-black/60 text-[16px] md:text-[18px] leading-relaxed mb-4 text-justify">
+                  {service.description1}
                 </p>
+                <p className="text-black/60 text-[16px] md:text-[18px] leading-relaxed mb-6 md:mb-8 text-justify">
+                  {service.description2}
+                </p>
+              </div>
 
-                <div className="w-full h-px bg-black/10 mb-8" />
-
-                <div className="flex justify-between items-center w-full mb-6">
-                  <span className="text-[14px] xl:text-[16px] text-[#0f0f0f] font-medium">Timeline</span>
-                  <div className="text-right">
-                    <span className="text-[14px] xl:text-[16px] text-[#828282] font-normal">{service.timeline} </span>
-                    <span className="text-[12px] xl:text-[13px] text-[#828282] font-normal">(Approximately)</span>
-                  </div>
-                </div>
-
-                <div className="flex justify-between items-center w-full mb-12">
-                  <span className="text-[14px] xl:text-[16px] text-[#0f0f0f] font-medium">Deliverables</span>
-                  <span className="text-[14px] xl:text-[16px] text-[#828282] font-normal text-right">
-                    {service.deliverables}
+              {/* Tag Pills */}
+              <div className="flex flex-wrap gap-2 md:gap-3 mt-auto">
+                {service.tags.map((tag, tagIndex) => (
+                  <span 
+                    key={tagIndex} 
+                    className="px-4 py-2 bg-[#FF5100] border border-white/10 rounded-xl text-white/90 text-[14px] md:text-[15px] font-medium cursor-default"
+                  >
+                    {tag}
                   </span>
-                </div>
-
-                <div className="flex justify-between items-center w-full mt-auto">
-                  <Link href="/contact">
-                    <button className="bg-[#ff5100] text-white px-6 py-2.5 rounded-full font-medium text-[14px] xl:text-[16px] shadow-[inset_0px_-3px_13.8px_0px_rgba(232,232,232,0.76),inset_0px_4px_13.8px_0px_rgba(232,232,232,0.76)] flex items-center justify-center gap-[6px] hover:opacity-90 transition-opacity whitespace-nowrap">
-                      <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
-                      <span>Start Now</span>
-                    </button>
-                  </Link>
-                  <span className="text-[13px] xl:text-[14px] text-black/55 font-normal ml-6 whitespace-nowrap">
-                    T&C Apply
-                  </span>
-                </div>
+                ))}
               </div>
             </div>
-          </div>
+
+            {/* Right Image */}
+            <div className="w-full md:w-[35%] flex items-center justify-center shrink-0 min-h-[220px] md:min-h-0 relative select-none">
+              <img 
+                src={service.image} 
+                alt={service.title} 
+                className="w-[200px] h-[200px] md:w-[260px] md:h-[260px] lg:w-[320px] lg:h-[320px] object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+          </Link>
         ))}
       </div>
 
     </section>
   );
 };
+
+

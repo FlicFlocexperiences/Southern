@@ -33,6 +33,7 @@ export const MobileFooter = () => {
     <footer className="w-full bg-[#000000] text-[#a3a3a3] px-6 pt-12 pb-8 flex flex-col relative overflow-hidden font-sans" style={{ zoom: 0.8 }}>
       
       {/* Brand & Intro */}
+<<<<<<< HEAD
       <div className="flex flex-col gap-4 mb-8">
         <Link href="/" className="inline-block w-fit">
           <div className="flex items-end select-none">
@@ -42,6 +43,71 @@ export const MobileFooter = () => {
               <span className="text-[7.5px] tracking-[0.18em] text-white/50 uppercase leading-none font-bold mt-1">digital agency</span>
             </div>
           </div>
+=======
+      <div className="flex flex-col gap-3 mb-6">
+        <h2 className="text-[56px] leading-[0.95] font-bold text-black flex flex-col tracking-tight">
+          <span className="text-[#ff5100]">SOUTHERN</span>
+          <span>MARKETING</span>
+        </h2>
+        <p className="text-[18px] leading-[1.4] text-black/75 mt-3 pr-4 font-sans">
+          Building brands, websites, and growth strategies that help ambitious businesses stand out, scale faster, and stay ahead in a digital-first world.
+        </p>
+      </div>
+
+      {/* Email Callout */}
+      <div className="flex flex-col items-start text-right mb-6 pr-2">
+        <p className="text-[16px] font-medium text-black/65 mb-1 font-sans">
+          Let's Build Something Great
+        </p>
+        <a href="mailto:info@southernedgemarketing.com" className="text-[17px] text-black leading-none font-sans hover:text-white transition-colors duration-300">
+          info@southernedgemarketing.com
+        </a>
+      </div>
+
+
+
+      {/* Navigation */}
+      <div className="flex flex-col items-start text-right mb-6 pr-2">
+        <p className="text-[25px] text-black/65 mb-4 font-sans">Navigation</p>
+        <nav className="flex flex-col items-start gap-3">
+          <Link href="/" className="text-[16px] text-black leading-none font-sans hover:-translate-x-2 transition-transform duration-300 w-fit">
+            Home
+          </Link>
+          <Link href="/about" className="text-[16px] text-black leading-none font-sans hover:-translate-x-2 transition-transform duration-300 w-fit">
+            About Us
+          </Link>
+          <Link href="/services" className="text-[16px] text-black leading-none font-sans hover:-translate-x-2 transition-transform duration-300 w-fit">
+            Services
+          </Link>
+          <Link href="/projects" className="text-[16px] text-black leading-none font-sans hover:-translate-x-2 transition-transform duration-300 w-fit">
+            Projects
+          </Link>
+          <Link href="/blogs" className="text-[16px] text-black leading-none font-sans hover:-translate-x-2 transition-transform duration-300 w-fit">
+            Blogs
+          </Link>
+        </nav>
+      </div>
+
+      {/* Social */}
+      <div className="flex flex-col items-start text-right mb-6 pr-2">
+        <p className="text-[25px] text-black/65 mb-4 font-sans">Social</p>
+        <nav className="flex flex-col items-start  gap-3">
+          {["Instagram", "LinkedIn", "X"].map((item) => (
+            <a key={item} href="/contact" className="text-[16px] text-black leading-none font-sans hover:-translate-x-2 transition-transform duration-300 w-fit">
+              {item}
+            </a>
+          ))}
+        </nav>
+      </div>
+
+      {/* Legal Links Row */}
+      <div className="flex flex-row items-start gap-6 mt-8 mb-4 w-full pl-1">
+        <Link href="/terms" className="text-[16px] text-black leading-none font-sans hover:underline">
+          Terms & Conditions
+        </Link>
+        <Link href="/privacy" className="text-[16px] text-black leading-none font-sans hover:underline">
+          Privacy Policy
+>>>>>>> 7221075c0e395920d79a3133477b5c5363a9cb80
         </Link>
         <p className="text-[16px] leading-relaxed text-white/70">
           The revenue growth agency. <br />

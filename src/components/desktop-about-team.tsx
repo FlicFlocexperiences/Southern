@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
@@ -82,16 +83,37 @@ export const DesktopAboutTeam = () => {
         {/* Right Column */}
         <div className="flex flex-col gap-6 lg:col-span-2">
           {/* Card 3: Ready to grow */}
-          <div className="bg-[#ff5100] rounded-[20px] w-full flex flex-col justify-center p-6 lg:p-8 text-white shrink-0 h-auto lg:h-[240px]">
-            <h3 className="text-[28px] lg:text-[32px] font-medium leading-tight mb-3">READY TO GROW?</h3>
-            <p className="text-[18px] lg:text-[21px] font-normal leading-tight mb-8 opacity-95 max-w-[90%]">
-              Bring your vision to life with creative strategies, stunning design, and technology built for real business results.
-            </p>
-            <div className="w-full h-[2px] bg-white mb-6 opacity-80" />
-            <div className="w-[41px] h-[41px] bg-white rounded-full flex items-center justify-center shrink-0 cursor-pointer hover:scale-110 transition-transform">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff5100" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
+          <div className="bg-[#ff5100] rounded-[20px] w-full flex flex-col justify-between p-6 lg:p-8 text-white shrink-0 h-auto lg:h-[240px]">
+            <div>
+              <h3 className="text-[28px] lg:text-[32px] font-bold leading-tight mb-2 uppercase">READY TO GROW?</h3>
+              <p className="text-[15px] lg:text-[16px] font-normal leading-snug opacity-95 max-w-[95%]">
+                Bring your vision to life with creative strategies, stunning design, and technology built for real business results.
+              </p>
+            </div>
+            
+            <div className="flex flex-col gap-4">
+              <div className="w-full h-px " />
+              <Link href="/contact" className="w-fit">
+                <button 
+                  className="relative w-[200px] h-[58px] rounded-full bg-white/20 overflow-hidden shadow-[0px_4px_12px_rgba(0,0,0,0.15)] hover:shadow-[0px_6px_16px_rgba(0,0,0,0.25)] transition-shadow group cursor-pointer border border-white/20"
+                  aria-label="Start Now"
+                >
+                  {/* Inner Left Pill with right shadow */}
+                  <div className="absolute left-[0px] top-0 w-[140px] h-[58px] rounded-full bg-white drop-shadow-[2px_0px_4px_rgba(0,0,0,0.15)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+                    <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
+                    <span className="font-semibold text-[14px] text-[#ff5100] tracking-wide whitespace-nowrap">
+                      Start Now
+                    </span>
+                  </div>
+                  
+                  {/* Right Arrow Icon */}
+                  <div className="absolute right-[20px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
+                    <svg className="w-[18px] h-[18px] text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                    </svg>
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
           

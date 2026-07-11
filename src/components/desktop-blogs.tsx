@@ -1,24 +1,20 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
+export interface BlogItem {
+  title: string;
+  category: string;
+  slug: string;
+  image: string;
+  date: string;
+}
 
-export const DesktopBlogs = () => {
-  const blogs = [
-    {
-      category: "DESIGN",
-      title: "The Importance of Mobile-First Design in 2005",
-      date: "Feb 26, 2001",
-      image: "/photoshoot.jpg",
-      isFeatured: true
-    },
-    ...Array(4).fill(null).map(() => ({
-      category: "DESIGN",
-      title: "The Importance of Mobile-First Design in 2005",
-      date: "Feb 26, 2001",
-      image: "/photoshoot.jpg",
-      isFeatured: false
-    }))
-  ];
+export const DesktopBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
+  const blogsData = blogs.map((blog, index) => ({
+    ...blog,
+    isFeatured: index === 0
+  }));
 
   return (
     <section className="w-full bg-[#fffff0] pb-32 pt-0 px-8 lg:px-[90px] flex flex-col relative z-10 overflow-hidden">
@@ -26,22 +22,23 @@ export const DesktopBlogs = () => {
       {/* Top Section: Title */}
       <div className="flex flex-col w-full mb-16 lg:mb-24 items-center relative pt-16 gap-8 md:gap-10">
         <div className="w-full h-px bg-black/10 relative" />
-        <h2 className="text-[50px] md:text-[80px] lg:text-[130px] font-semibold text-black text-center w-full leading-[1.1] lg:leading-[130px] tracking-tight px-4 mt-12 lg:mt-16">
+        <h2 className="text-[50px] md:text-[80px] lg:text-[110px] font-semibold text-black text-center w-full leading-[1.1] lg:leading-[130px] tracking-tight px-4 mt-12 lg:mt-16">
           BLOGS & ARTICLES
         </h2>
       </div>
 
       {/* Blogs Grid */}
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10 mb-16">
-        {blogs.map((blog, index) => (
-          <div 
+        {blogsData.map((blog, index) => (
+          <Link 
             key={index} 
+            href={`/blogs/${blog.slug}`}
             className={`bg-white rounded-[15px] w-full p-8 lg:p-10 flex relative group cursor-pointer hover:shadow-[0_15px_40px_rgb(0,0,0,0.08)] transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] border border-black/5 ${blog.isFeatured ? 'md:col-span-2 flex-row items-center justify-between h-[400px] xl:h-[480px]' : 'col-span-1 flex-col justify-between h-[400px] xl:h-[480px]'}`}
           >
             {blog.isFeatured ? (
               // Featured Layout (Spans 2 columns)
               <>
-                <div className="flex flex-col h-full justify-between w-[50%] z-10 py-2">
+                <div className="flex flex-col h-full justify-between w-[50%] z-10 py-2 text-left">
                   <div className="flex flex-col gap-4">
                     <span className="font-semibold text-[18px] xl:text-[20px] tracking-[2px] uppercase text-black transition-colors duration-500 group-hover:text-[#ff5100]">
                       {blog.category}
@@ -69,7 +66,7 @@ export const DesktopBlogs = () => {
               // Standard Layout (1 column)
               <>
                 {/* Top Section */}
-                <div className="flex flex-col gap-3 z-10 py-2">
+                <div className="flex flex-col gap-3 z-10 py-2 text-left">
                   <span className="font-semibold text-[18px] xl:text-[20px] tracking-[2px] uppercase text-black transition-colors duration-500 group-hover:text-[#ff5100]">
                     {blog.category}
                   </span>
@@ -79,7 +76,7 @@ export const DesktopBlogs = () => {
                 </div>
 
                 {/* Bottom Section */}
-                <div className="flex justify-between items-end mt-auto z-10 w-full relative">
+                <div className="flex justify-between items-end mt-auto z-10 w-full relative text-left">
                   <span className="text-[24px] xl:text-[28px] text-black/65 whitespace-nowrap pb-4">
                     {blog.date}
                   </span>
@@ -96,17 +93,11 @@ export const DesktopBlogs = () => {
                 </div>
               </>
             )}
-          </div>
+          </Link>
         ))}
-      </div>
-
-      {/* Load More Button */}
-      <div className="w-full flex justify-center mt-4">
-        <button className="bg-[#ff5100] text-white font-medium text-[18px] xl:text-[20px] px-10 py-4 rounded-[82px] hover:bg-[#ff5100]/90 transition-colors duration-300 shadow-[0_4px_14px_rgba(255,81,0,0.4)] hover:shadow-[0_6px_20px_rgba(255,81,0,0.6)] transform hover:-translate-y-1">
-          Load More
-        </button>
       </div>
 
     </section>
   );
 };
+
