@@ -6,11 +6,13 @@ import { projects } from "@/data/projects";
 
 const categories = [
   "All",
-  "Website development",
+  "Website Development",
+  "Photography & Videography",
+  "Shopify Development",
+  "App Development",
   "Branding",
-  "Photoshoot",
-  "Shopify stores",
-  "Meta Ads"
+  "SEO",
+  "Social Media Management"
 ];
 
 export const ProjectsGrid = () => {
@@ -19,7 +21,7 @@ export const ProjectsGrid = () => {
 
   const filteredProjects = selectedCategory === "All"
     ? projects
-    : projects.filter(p => p.category === selectedCategory);
+    : projects.filter(p => p.category.toLowerCase() === selectedCategory.toLowerCase());
 
   return (
     <section className="w-full bg-[#fffff0] px-6 lg:px-[90px] py-16 lg:py-24">
@@ -84,36 +86,51 @@ export const ProjectsGrid = () => {
       </div>
 
       {/* Grid Container */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-x-12 lg:gap-y-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-y-12">
         {filteredProjects.map((project, index) => {
-          // Add a slight top margin to the second column on larger screens to create a staggered masonry feel
-          const isEven = index % 2 !== 0;
           return (
             <Link 
               href={`/projects/${project.slug}`}
               key={project.id} 
-              className={`group flex flex-col w-full cursor-pointer ${isEven ? 'md:mt-16' : ''}`}
+              className="group flex flex-col w-full cursor-pointer bg-white border border-[#eaeaea] p-4 lg:p-5 rounded-[28px] lg:rounded-[32px] shadow-[0_4px_25px_rgba(0,0,0,0.015)] transition-all duration-300 hover:shadow-[0_16px_35px_rgba(0,0,0,0.045)] hover:border-neutral-200"
             >
-              {/* Image Container with Overflow Hidden for the scale effect */}
-              <div className="w-full aspect-[4/3] rounded-[20px] overflow-hidden mb-6 bg-[#30261c]/5 shadow-[0_4px_30px_rgba(0,0,0,0.03)] relative">
+              {/* Image Container with Inset padding and rounded corners */}
+              <div className="w-full aspect-[4/3] rounded-[20px] lg:rounded-[24px] overflow-hidden mb-6 bg-neutral-50 relative">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-105"
                 />
                 
-                {/* Optional dark overlay on hover for extra premium feel */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 ease-in-out"></div>
+                {/* Subtle dark overlay on hover */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/[0.01] transition-colors duration-500 ease-in-out"></div>
               </div>
               
               {/* Text Meta Container */}
-              <div className="flex flex-col gap-1 px-2">
-                <h3 className="text-[22px] lg:text-[26px] font-medium text-[#30261C] group-hover:text-[#ff5100] transition-colors duration-300">
+              <div className="flex flex-col gap-4 px-1 pb-1">
+                <h3 className="text-[24px] lg:text-[28px] font-bold text-[#0f0f0f] leading-none transition-colors duration-300">
                   {project.title}
                 </h3>
-                <p className="text-[15px] lg:text-[17px] text-[#30261C]/60 font-light">
-                  {project.category}
-                </p>
+                
+                {/* Details Row: Category on left, Location & Year & Arrow on right */}
+                <div className="flex justify-between items-center text-[12px] lg:text-[13px] font-sans text-neutral-400 font-semibold tracking-wider uppercase mt-1">
+                  <span>
+                    {project.category}
+                  </span>
+                  
+                  <div className="flex items-center gap-2.5">
+                    <span>
+                      DUBAI • 2025
+                    </span>
+                    
+                    {/* Circle Arrow Button */}
+                    <div className="w-9 h-9 rounded-full bg-black flex items-center justify-center text-white shrink-0 group-hover:bg-[#ff5100] group-hover:scale-105 transition-all duration-300">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
               </div>
             </Link>
           );
