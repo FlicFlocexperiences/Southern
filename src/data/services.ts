@@ -1,8 +1,12 @@
 export interface Service {
   slug: string;
   title: string;
+  tagline?: string;
   description1: string;
   description2: string;
+  callout?: string;
+  statValue?: string;
+  statLabel?: string;
   tags: string[];
   image: string;
   content: string; // Markdown content
@@ -10,48 +14,15 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    slug: "ui-ux-design",
-    title: "Ui/UX Design",
-    description1: "We craft digital experiences that are intuitive, beautiful, and user-centric.",
-    description2: "By focusing on user behavior, wireframing, and interactive prototyping, we turn complex ideas into clear and engaging user interfaces.",
-    tags: ["User Experience", "User Interface", "Figma", "Prototyping", "Wireframing"],
-    image: "/services/branding.png",
-    content: `Navigating the Modern Digital Experience
-In today's competitive digital landscape, exceptional user experience is no longer optional. Businesses need intuitive interfaces, research-driven design, and seamless digital journeys that improve engagement, conversions, and customer satisfaction. Our UI/UX design services help startups, SMEs, and enterprises transform ideas into delightful digital products through strategy, research, wireframing, prototyping, visual design, usability testing, and design systems.
-
-### What is UI/UX Design?
-UI (User Interface) Design focuses on the visual appearance of digital products, while UX (User Experience) Design focuses on usability, accessibility, and the complete customer journey. Together they ensure products are attractive, intuitive, and business-driven.
-
-### Our Comprehensive UI/UX Services
-- UX Research and Discovery
-- User Personas & Journey Mapping
-- Information Architecture
-- Wireframing & Interactive Prototypes
-- Mobile App UI Design
-- Website UI Design
-- SaaS Dashboard Design
-- Design Systems
-- Usability Testing
-- Product Redesign
-
-### Our Process
-- Discovery & Business Analysis
-- UX Research & Wireframes
-- High-Fidelity UI Design & Prototype
-- Developer Handoff & Design QA
-
-### Why Choose Us?
-We combine business strategy, UX psychology, modern design systems, and scalable workflows to build products that are visually appealing and conversion-focused. Every project emphasizes accessibility, responsiveness, performance, and consistency.
-
-### Client Success Story
-A SaaS startup improved user activation by redesigning onboarding, simplifying navigation, and introducing a scalable design system. The result was higher engagement, improved retention, and faster product adoption.`
-  },
-  {
     slug: "web-development",
-    title: "Web Development",
-    description1: "We build fast, secure, and fully responsive websites tailored to your business goals.",
-    description2: "Using modern architectures and clean code standards, we ensure your site is optimized for performance, scalability, and seamless user experiences.",
-    tags: ["Next.js", "React.js", "Tailwind CSS", "APIs", "Performance"],
+    title: "Website Platforms",
+    tagline: "Convert, not just impress.",
+    description1: "High-performance websites engineered to turn visitors into customers. We combine editorial craft with conversion science to build digital experiences that compound in value.",
+    description2: "Using modern frameworks like Next.js and React, we ensure your store or landing page is lightning-fast, fully responsive, and optimized to capture every possible lead.",
+    callout: "The foundation of every growth system. Without a website that converts, every other channel is pouring water into a leaky bucket.",
+    statValue: "3.2x",
+    statLabel: "AVG. CONVERSION IMPROVEMENT",
+    tags: ["UX Design", "Development", "CRO", "CMS"],
     image: "/services/website-development.png",
     content: `Building High-Performance Digital Experiences
 A modern website is the foundation of a successful online presence. Our web development services focus on speed, scalability, security, responsive design, and conversion optimization. We build websites that not only look exceptional but also drive measurable business growth.
@@ -60,25 +31,12 @@ A modern website is the foundation of a successful online presence. Our web deve
 Web development involves designing, building, maintaining, and optimizing websites and web applications. It includes frontend development, backend development, databases, APIs, cloud deployment, and continuous performance improvements.
 
 ### Our Comprehensive Web Development Services
-- Business Websites
-- Corporate Websites
-- Landing Pages
-- Custom Web Applications
-- Ecommerce Development
-- CMS Development
-- API Integration
-- Dashboard Development
-- Website Maintenance
-- Performance Optimization
-
-### Technologies We Use
-HTML5, CSS3, JavaScript, TypeScript, React, Next.js, Node.js, Express.js, PHP, Laravel, Shopify, WordPress, MongoDB, MySQL, PostgreSQL, Firebase, AWS, Vercel, Git, and REST APIs.
-
-### Our Development Process
-- Discovery & Requirement Analysis
-- UI Implementation & Backend Development
-- Testing, Security & Performance Optimization
-- Deployment, Maintenance & Continuous Support
+- Business Websites & Corporate Portals
+- High-Converting Landing Pages
+- Custom Web Applications & SaaS Dashboards
+- Ecommerce Frontend Solutions
+- CMS Setup & Management
+- Third-Party API Integration
 
 ### Why Choose Us?
 We build SEO-friendly, mobile-responsive, secure, and lightning-fast websites using modern development practices. Our focus is on scalability, clean architecture, excellent user experience, and long-term business growth.
@@ -87,98 +45,48 @@ We build SEO-friendly, mobile-responsive, secure, and lightning-fast websites us
 An ecommerce company migrated to a custom Next.js platform, reducing page load time by over 60% while improving search visibility and increasing online sales through a better shopping experience.`
   },
   {
-    slug: "performance-marketing",
-    title: "Performance Marketing",
-    description1: "We run highly targeted, data-driven ad campaigns that maximize conversion rates and scale business growth.",
-    description2: "From audience research to ongoing optimization, we focus on measurable results and maximizing return on investment.",
-    tags: ["Google Ads", "Meta Ads", "A/B Testing", "Targeting", "ROI"],
-    image: "/services/performance-marketing.png",
-    content: `Driving Measurable Business Growth
-Performance marketing focuses on measurable results through paid advertising, audience targeting, conversion optimization, and continuous campaign improvements. We help brands maximize return on ad spend while generating qualified leads and sales.
+    slug: "branding",
+    title: "Branding & Strategy",
+    tagline: "Define your voice, claim your space.",
+    description1: "We build cohesive, memorable identities that stand out in crowded markets. We combine strategic positioning with visual storytelling to define who you are and why you matter.",
+    description2: "From logo marks to comprehensive style guides, we establish a distinct design system that builds trust and drives immediate recognition across all touchpoints.",
+    callout: "Your brand is not just what you say. It is the lasting imprint you leave on your audience's mind.",
+    statValue: "84%",
+    statLabel: "INCREASE IN BRAND RECALL",
+    tags: ["Brand Identity", "Brand Strategy", "Typography", "Visual System"],
+    image: "/services/branding.png",
+    content: `Crafting Memorable Brand Identities
+In a world full of noise, a strong brand is your greatest asset. We help companies find their voice, construct visual consistency, and develop identities that resonate deeply with their target market.
 
-### What is Performance Marketing?
-Performance marketing is a data-driven digital marketing approach where campaigns are optimized based on measurable KPIs such as leads, sales, conversions, ROAS, CAC, and customer lifetime value.
+### Core Branding Capabilities
+- Brand Audits & Competitive Positioning
+- Logo Design & Iconography
+- Typography & Complete Color Systems
+- Interactive Brand Guideline Handbooks
+- Packaging & Collateral Material
 
-### Our Performance Marketing Services
-- Google Ads
-- Meta Ads (Facebook & Instagram)
-- LinkedIn Ads
-- YouTube Advertising
-- Conversion Rate Optimization
-- Landing Page Optimization
-- Retargeting Campaigns
-- Ecommerce Advertising
-- Analytics & Reporting
+### The Branding Process
+We start with deep research into your history, values, and competition. Next, we explore design directions, iterating closely with your team. Finally, we output a robust package of guidelines, assets, and design files.
 
-### Platforms & Tools
-Google Ads, Meta Ads Manager, LinkedIn Campaign Manager, Google Analytics 4, Google Tag Manager, Search Console, Hotjar, Microsoft Clarity, Merchant Center, and Looker Studio.
-
-### Our Process
-- Business & Audience Research
-- Campaign Strategy & Creative Planning
-- Launch, Optimization & A/B Testing
-- Reporting, Scaling & Continuous Improvement
-
-### Why Choose Us?
-We build highly targeted campaigns backed by analytics, creative testing, and conversion optimization to maximize ROI while minimizing wasted ad spend.
-
-### Client Success Story
-A D2C ecommerce brand increased online revenue by improving campaign targeting, optimizing product feeds, and implementing retargeting strategies that significantly boosted ROAS.`
-  },
-  {
-    slug: "seo",
-    title: "SEO",
-    description1: "We optimize your website's search engine visibility to drive consistent, high-intent organic traffic.",
-    description2: "Through comprehensive keyword research, on-page optimization, and technical audits, we build sustainable rankings.",
-    tags: ["On-Page SEO", "Technical SEO", "Keywords", "Link Building", "Rankings"],
-    image: "/services/seo.png",
-    content: `Achieving Sustainable Organic Growth
-Search Engine Optimization (SEO) helps businesses increase visibility, attract qualified traffic, and generate long-term growth through higher rankings on search engines. Our SEO strategies combine technical expertise, content optimization, and authority building to deliver measurable results.
-
-### What is SEO?
-SEO is the process of optimizing websites so they rank higher on search engines like Google. It includes technical SEO, keyword research, on-page optimization, content strategy, link building, and performance improvements.
-
-### Our Comprehensive SEO Services
-- SEO Audits
-- Keyword Research
-- On-Page SEO
-- Technical SEO
-- Local SEO
-- Ecommerce SEO
-- Content Strategy
-- Link Building
-- SEO Reporting & Analytics
-
-### Tools & Technologies
-Google Search Console, Google Analytics 4, Ahrefs, SEMrush, Screaming Frog, PageSpeed Insights, GTmetrix, Google Business Profile, Bing Webmaster Tools, and Looker Studio.
-
-### Our SEO Process
-- Website Audit & Competitor Analysis
-- Keyword & Content Strategy
-- Technical & On-Page Optimization
-- Monitoring, Reporting & Continuous Growth
-
-### Why Choose Us?
-Our SEO campaigns are focused on sustainable rankings, improved user experience, technical excellence, and content that aligns with search intent to generate consistent organic leads.
-
-### Client Success Story
-A B2B software company doubled its organic traffic within months through technical optimization, strategic content creation, and authority-building campaigns, resulting in increased qualified inquiries.`
+### Why Strategic Branding Matters
+A brand is more than a logo; it is the sum of all customer experiences. Consistent branding across channels increases customer loyalty, supports premium pricing, and creates a clear identity that team members and customers advocate for.`
   },
   {
     slug: "shopify-development",
     title: "Shopify Development",
-    description1: "We build fully customized, conversion-focused e-commerce stores designed to scale with your sales.",
-    description2: "From storefront setup to liquid customization and seamless checkout optimization, we cover every aspect of e-commerce.",
-    tags: ["Shopify", "Liquid Templates", "Custom Checkout", "Integrations", "E-commerce"],
+    tagline: "Scale your store, not your stress.",
+    description1: "Fully customized, conversion-focused e-commerce storefronts designed to scale with your sales. We build on liquid and headless APIs to make checkout frictionless and fast.",
+    description2: "From storefront setup to liquid customization and seamless checkout optimization, we cover every aspect of e-commerce architecture.",
+    callout: "E-commerce is a game of margins and milliseconds. We optimize both to maximize your customer lifetime value.",
+    statValue: "42%",
+    statLabel: "BOOST IN CONVERSION RATE",
+    tags: ["Shopify Plus", "Liquid Coding", "API Integration", "Checkout Optim."],
     image: "/services/website-revamp.png",
     content: `Building High-Converting Shopify Stores
 Shopify is one of the world's leading ecommerce platforms. We create fast, scalable, and conversion-focused Shopify stores that help brands establish a strong online presence, improve customer experience, and increase sales.
 
-### What is Shopify Development?
-Shopify development involves designing, developing, customizing, and optimizing ecommerce stores using Shopify's ecosystem. It includes theme development, custom functionality, app integrations, payment gateways, and ongoing store optimization.
-
 ### Our Comprehensive Shopify Services
-- Custom Shopify Store Development
+- Custom Shopify Store Development & Design
 - Shopify Theme Design
 - Shopify Theme Customization
 - Shopify Plus Development
@@ -206,15 +114,16 @@ A fashion retailer migrated to Shopify with a fully customized storefront, impro
   {
     slug: "app-development",
     title: "App Development",
-    description1: "We engineer robust, high-performance mobile applications that deliver native-like user experiences.",
+    tagline: "Native experiences, global reach.",
+    description1: "We engineer robust, high-performance mobile applications that deliver native-like user experiences on iOS and Android. Connected to secure, scalable backend APIs.",
     description2: "Whether iOS or Android, we develop seamless frontend interfaces connected to reliable, scalable backends.",
-    tags: ["React Native", "iOS Apps", "Android Apps", "APIs", "App Store"],
+    callout: "A great mobile app turns occasional buyers into highly engaged, loyal members of your ecosystem.",
+    statValue: "4.8★",
+    statLabel: "AVERAGE APP STORE RATING",
+    tags: ["React Native", "iOS & Android", "API Architecture", "Cloud Scaling"],
     image: "/services/app-development.png",
     content: `Building Powerful Mobile Applications
 Mobile applications have become an essential part of digital transformation. We develop scalable, secure, and user-friendly Android, iOS, and cross-platform applications that help businesses engage customers, streamline operations, and accelerate growth.
-
-### What is App Development?
-App development is the process of designing, developing, testing, deploying, and maintaining mobile applications. It combines user experience, backend architecture, APIs, cloud infrastructure, and security to create high-performing digital products.
 
 ### Our Comprehensive App Development Services
 - Android App Development
@@ -242,6 +151,87 @@ We build secure, scalable, and performance-driven mobile applications with intui
 ### Client Success Story
 A logistics company launched a custom mobile application that automated field operations, improved delivery tracking, and significantly increased operational efficiency.`
   },
+  {
+    slug: "seo",
+    title: "SEO Solutions",
+    tagline: "Own the search, capture the intent.",
+    description1: "We optimize your website's search visibility to drive consistent, high-intent organic traffic that converts without recurring advertising spend.",
+    description2: "Through comprehensive keyword research, technical site audits, page-speed tuning, and authority building, we construct sustainable search rankings.",
+    callout: "Ranking #1 is cool, but ranking for the queries that actually make money is where real growth happens.",
+    statValue: "150%",
+    statLabel: "GROWTH IN ORGANIC SESSIONS",
+    tags: ["Technical SEO", "Keyword Strategy", "Content Audits", "Link Building"],
+    image: "/services/seo.png",
+    content: `Achieving Sustainable Organic Growth
+Search Engine Optimization (SEO) helps businesses increase visibility, attract qualified traffic, and generate long-term growth through higher rankings on search engines. Our SEO strategies combine technical expertise, content optimization, and authority building to deliver measurable results.
+
+### Our Comprehensive SEO Services
+- SEO Audits & Competitor Mapping
+- Strategic Keyword Research & Competitor Analysis
+- On-Page SEO & Content Strategy
+- Technical SEO & Site Architecture Tuning
+- Ethical Link Building & Authority Elevation
+
+### Our SEO Process
+- Website Audit & Competitor Analysis
+- Keyword & Content Strategy
+- Technical & On-Page Optimization
+- Monitoring, Reporting & Continuous Growth
+
+### Client Success Story
+A B2B software company doubled its organic traffic within months through technical optimization, strategic content creation, and authority-building campaigns, resulting in increased qualified inquiries.`
+  },
+  {
+    slug: "performance-marketing",
+    title: "Performance Marketing",
+    tagline: "Precision spending, measurable return.",
+    description1: "We run data-driven, highly optimized ad campaigns across Google and Meta to scale your acquisition pipeline with predictable customer acquisition costs.",
+    description2: "From audience research to ongoing optimization, we focus on measurable results and maximizing return on investment.",
+    callout: "Ad budgets are easy to spend but hard to return. We design funnels that turn clicks into profitable scale.",
+    statValue: "4.5x",
+    statLabel: "AVERAGE RETURN ON AD SPEND",
+    tags: ["Meta Ads", "Google Ads/PMax", "Funnel Optim.", "Audience Scaling"],
+    image: "/services/performance-marketing.png",
+    content: `Driving Measurable Business Growth
+Performance marketing focuses on measurable results through paid advertising, audience targeting, conversion optimization, and continuous campaign improvements. We help brands maximize return on ad spend while generating qualified leads and sales.
+
+### Our Performance Marketing Services
+- Google Search, Display & Performance Max Ads
+- Meta Ads (Facebook & Instagram campaigns)
+- LinkedIn Ads for B2B Lead Generation
+- Conversion Rate Optimization & Landing Page Tuning
+- Advanced Analytics Setup & ROI Dashboards
+
+### Why Choose Us?
+We build highly targeted campaigns backed by analytics, creative testing, and conversion optimization to maximize ROI while minimizing wasted ad spend.
+
+### Client Success Story
+A D2C ecommerce brand increased online revenue by improving campaign targeting, optimizing product feeds, and implementing retargeting strategies that significantly boosted ROAS.`
+  },
+  {
+    slug: "social-media-management",
+    title: "Social Media Management",
+    tagline: "Be talked about, not just scrolled past.",
+    description1: "We create high-engagement content strategies that build active communities and transform passive followers into active brand advocates.",
+    description2: "By combining trend analysis, native video production, and active community outreach, we amplify your brand's cultural relevance.",
+    callout: "Attention is the currency of the digital age. We build content that makes your brand the center of attention.",
+    statValue: "6.8x",
+    statLabel: "INCREASE IN SOCIAL ENGAGEMENT",
+    tags: ["Content Creation", "Community Mgmt", "Short-Form Video", "Influencer Collab"],
+    image: "/services/social-media.png",
+    content: `Building Communities and Cultural Relevance
+Social media is more than broadcasting messages; it is an active dialogue with your audience. We help businesses manage their profiles, create dynamic media assets, and foster active discussions.
+
+### Our Social Media Services
+- Content Creation & Copywriting
+- Short-form Video Production (TikTok, Instagram Reels, YouTube Shorts)
+- Community Management & Direct Audience Engagement
+- Influencer Partnerships & Advocacy Campaigns
+- Social Listening & Sentiment Auditing
+
+### Strategic Impact of Social Media
+A strong social channel generates trust, provides instant feedback channels, builds brand equity, and serves as an organic acquisition driver. By staying on top of platform trends, we ensure your brand remains relevant, engaging, and top-of-mind.`
+  }
 ];
 
 export const getServiceBySlug = (slug: string) => {

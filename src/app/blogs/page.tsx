@@ -31,7 +31,8 @@ export default async function BlogsPage() {
       const data = doc.data();
       return {
         title: data.title || "Untitled",
-        category: "MARKETING", // Default category for now
+        category: data.category || "Article",
+        excerpt: data.excerpt || data.description || "",
         slug: data.slug || doc.id,
         image: data.image || "/photoshoot.jpg", // Default image if missing
         date: data.date || new Date().toISOString().split('T')[0],
