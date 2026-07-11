@@ -6,7 +6,6 @@ import { projects } from "@/data/projects";
 
 const categories = [
   "All",
-<<<<<<< HEAD
   "Website Development",
   "Photography & Videography",
   "Shopify Development",
@@ -14,12 +13,6 @@ const categories = [
   "Branding",
   "SEO",
   "Social Media Management"
-=======
-  "Websites",
-  "Shopify Stores",
-  "Photoshoots",
-  "Branding"
->>>>>>> 7221075c0e395920d79a3133477b5c5363a9cb80
 ];
 
 const mapCategory = (dbCategory: string): string => {
@@ -43,11 +36,7 @@ export const ProjectsGrid = () => {
 
   const filteredProjects = selectedCategory === "All"
     ? projects
-<<<<<<< HEAD
     : projects.filter(p => p.category.toLowerCase() === selectedCategory.toLowerCase());
-=======
-    : projects.filter(p => mapCategory(p.category) === selectedCategory);
->>>>>>> 7221075c0e395920d79a3133477b5c5363a9cb80
 
   return (
     <section className="w-full bg-[#fffff0] px-6 md:px-10 lg:px-[90px] pt-32 md:pt-36 lg:pt-40 pb-16 md:pb-24 max-w-[1440px] mx-auto">
@@ -96,18 +85,12 @@ export const ProjectsGrid = () => {
       </div>
 
       {/* Grid Container */}
-<<<<<<< HEAD
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-y-12">
         {filteredProjects.map((project, index) => {
-=======
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-12 gap-y-12 md:gap-y-20">
-        {filteredProjects.map((project) => {
->>>>>>> 7221075c0e395920d79a3133477b5c5363a9cb80
           return (
             <Link 
               href={`/projects/${project.slug}`}
               key={project.id} 
-<<<<<<< HEAD
               className="group flex flex-col w-full cursor-pointer bg-white border border-[#eaeaea] p-4 lg:p-5 rounded-[28px] lg:rounded-[32px] shadow-[0_4px_25px_rgba(0,0,0,0.015)] transition-all duration-300 hover:shadow-[0_16px_35px_rgba(0,0,0,0.045)] hover:border-neutral-200"
             >
               {/* Image Container with Inset padding and rounded corners */}
@@ -148,26 +131,6 @@ export const ProjectsGrid = () => {
                   </div>
                 </div>
               </div>
-=======
-              className="group flex flex-col w-full cursor-pointer"
-            >
-              {/* Image Container */}
-              <div className="w-full aspect-[4/3] rounded-[24px] lg:rounded-[32px] overflow-hidden bg-[#30261c]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                />
-                
-                {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-              </div>
-              
-              {/* Centered capitalized title */}
-              <h3 className="text-center text-[18px] md:text-[22px] lg:text-[24px] font-bold text-[#30261C] uppercase mt-5 tracking-wide group-hover:text-[#ff5100] transition-colors duration-300">
-                {project.title}
-              </h3>
->>>>>>> 7221075c0e395920d79a3133477b5c5363a9cb80
             </Link>
           );
         })}

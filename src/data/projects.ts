@@ -265,11 +265,7 @@ export const projects: Project[] = [
     id: 3,
     slug: "health",
     title: "Health",
-<<<<<<< HEAD
     category: "Photography & Videography",
-=======
-    category: "Photoshoot",
->>>>>>> 7221075c0e395920d79a3133477b5c5363a9cb80
     description: "An advanced digital healthcare ecosystem designed for patient care and seamless health management.",
     client: "Health Labs",
     duration: "12 Weeks",
@@ -296,11 +292,7 @@ export const projects: Project[] = [
     id: 4,
     slug: "chavelle",
     title: "Chavelle",
-<<<<<<< HEAD
     category: "Photography & Videography",
-=======
-    category: "Photoshoot",
->>>>>>> 7221075c0e395920d79a3133477b5c5363a9cb80
     description: "A premium e-commerce and visual branding platform crafted for Chavelle's luxury line.",
     client: "Chavelle Group",
     duration: "8 Weeks",
@@ -319,11 +311,7 @@ export const projects: Project[] = [
     id: 5,
     slug: "lotd",
     title: "LOTD",
-<<<<<<< HEAD
     category: "Photography & Videography",
-=======
-    category: "Photoshoot",
->>>>>>> 7221075c0e395920d79a3133477b5c5363a9cb80
     description: "An immersive digital showcase and creative experience designed for LOTD.",
     client: "LOTD Group",
     duration: "6 Weeks",
@@ -344,11 +332,7 @@ export const projects: Project[] = [
     id: 6,
     slug: "lynx",
     title: "LYNX",
-<<<<<<< HEAD
     category: "Photography & Videography",
-=======
-    category: "Photoshoot",
->>>>>>> 7221075c0e395920d79a3133477b5c5363a9cb80
     description: "A high-performance technical identity and web showcase built for LYNX.",
     client: "LYNX Inc",
     duration: "8 Weeks",
@@ -365,11 +349,7 @@ export const projects: Project[] = [
     id: 7,
     slug: "mr-pronto",
     title: "Mr Pronto",
-<<<<<<< HEAD
     category: "Photography & Videography",
-=======
-    category: "Photoshoot",
->>>>>>> 7221075c0e395920d79a3133477b5c5363a9cb80
     description: "A vibrant branding and digital identity design suite for Mr Pronto's quick-service restaurants.",
     client: "Mr Pronto",
     duration: "4 Weeks",
@@ -388,11 +368,7 @@ export const projects: Project[] = [
     id: 8,
     slug: "rise",
     title: "Rise",
-<<<<<<< HEAD
     category: "Photography & Videography",
-=======
-    category: "Photoshoot",
->>>>>>> 7221075c0e395920d79a3133477b5c5363a9cb80
     description: "A creative web interface and strategy focused on brand growth and dynamic presentation.",
     client: "Rise Inc.",
     duration: "6 Weeks",
