@@ -89,7 +89,7 @@ export const MobileServicesPage = () => {
           <Link
             href={`/services/${service.slug}`}
             key={index} 
-            className="group block w-full bg-[#ffffff] rounded-[24px] p-6 flex flex-col gap-5 relative overflow-hidden border border-black/5 cursor-pointer shadow-[0_4px_20px_rgba(0,0,0,0.015)]"
+            className="group block w-full bg-orange-500/5 rounded-[24px] p-6 flex flex-col gap-5 relative overflow-hidden border border-black/5 cursor-pointer shadow-[0_4px_20px_rgba(0,0,0,0.015)]"
           >
             {/* Top Row: Index/Dot on left, Stat on right */}
             <div className="flex justify-between items-start w-full">

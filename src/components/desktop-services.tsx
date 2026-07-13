@@ -3,12 +3,6 @@
 import React from "react";
 
 // Icons
-const ClockIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-black/40 shrink-0">
-    <circle cx="12" cy="12" r="10" />
-    <polyline points="12 6 12 12 16 14" />
-  </svg>
-);
 
 const ArrowRightUpIcon = () => (
   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ff5100" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:rotate-45 transition-transform duration-300">
@@ -123,13 +117,7 @@ export const DesktopServices = () => {
                 <div className="flex flex-col flex-1 py-2">
                   <h3 className="text-[28px] font-medium text-black mb-3 leading-tight">{service.title}</h3>
                   <p className="text-[20px] text-black/60 leading-[1.4] mb-6 pr-4">{service.desc}</p>
-                  
-                  <div className="flex items-center gap-2">
-                    <ClockIcon />
-                    <p className="text-[18px] text-black/60 flex items-center">
-                      {service.time} <span className="text-[14px] ml-1">(Approximately)</span>
-                    </p>
-                  </div>
+
                 </div>
 
               </div>

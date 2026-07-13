@@ -92,7 +92,7 @@ export const DesktopServicesPage = () => {
           <Link
             href={`/services/${service.slug}`}
             key={index} 
-            className="group block w-full bg-[#ffffff] rounded-[24px] md:rounded-[32px] p-8 md:p-12 lg:p-14 flex flex-col md:flex-row justify-between items-stretch gap-8 md:gap-12 relative overflow-hidden transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.06)] hover:scale-[1.005] border border-black/5 cursor-pointer"
+            className="group block w-full bg-orange-500/5 rounded-[24px] md:rounded-[32px] p-8 md:p-12 lg:p-14 flex flex-col md:flex-row justify-between items-stretch gap-8 md:gap-12 relative overflow-hidden transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.06)] hover:scale-[1.005] border border-black/5 cursor-pointer"
           >
             {/* 1. Left Column: Index indicator */}
             <div className="flex flex-col items-start gap-1.5 shrink-0 pt-2">

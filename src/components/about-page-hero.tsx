@@ -19,7 +19,7 @@ export function AboutPageHero() {
       
       <div className="max-w-[1200px] w-full flex flex-col items-start relative z-10">
         <h1 className="text-[40px] sm:text-[55px] md:text-[75px] leading-[1.1] md:leading-[1.05] font-semibold tracking-[-0.02em] text-[#0f0f0f] w-full max-w-[1100px]">
-          We shape <span className="font-[family-name:var(--font-playball)] font-normal text-[45px] sm:text-[65px] md:text-[85px] inline-block text-[#0f0f0f] align-baseline px-2">Brands</span><br className="hidden sm:block" />
+          We shape Brands
           <span className="inline-block mt-2">that build lasting connections</span>
         </h1>
         
