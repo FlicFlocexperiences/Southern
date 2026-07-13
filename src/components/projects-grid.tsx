@@ -1,42 +1,72 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { projects } from "@/data/projects";
+import { motion, AnimatePresence } from "framer-motion";
 
 const categories = [
   "All",
   "Website Development",
-  "Photography & Videography",
   "Shopify Development",
-  "App Development",
+  "Photography & Videography",
   "Branding",
+  "App Development",
   "SEO",
   "Social Media Management"
 ];
 
-const mapCategory = (dbCategory: string): string => {
-  switch (dbCategory) {
-    case "Website development":
-    case "Meta Ads":
-      return "Websites";
-    case "Shopify stores":
-      return "Shopify Stores";
-    case "Photoshoot":
-      return "Photoshoots";
-    case "Branding":
-      return "Branding";
-    default:
-      return dbCategory;
+const getNormalizedCategory = (category: string): string => {
+  const cat = category.toLowerCase().trim();
+  if (cat.includes("website") || cat.includes("web development") || cat.includes("web design")) {
+    return "Website Development";
   }
+  if (cat.includes("shopify")) {
+    return "Shopify Development";
+  }
+  if (cat.includes("photography") || cat.includes("videography") || cat.includes("photoshoot")) {
+    return "Photography & Videography";
+  }
+  if (cat.includes("app development")) {
+    return "App Development";
+  }
+  if (cat.includes("branding")) {
+    return "Branding";
+  }
+  if (cat.includes("seo")) {
+    return "SEO";
+  }
+  if (cat.includes("social media")) {
+    return "Social Media Management";
+  }
+  return category;
 };
 
 export const ProjectsGrid = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const getCategoryCount = (category: string) => {
+    if (category === "All") return projects.length;
+    return projects.filter(p => getNormalizedCategory(p.category) === category).length;
+  };
 
   const filteredProjects = selectedCategory === "All"
     ? projects
-    : projects.filter(p => p.category.toLowerCase() === selectedCategory.toLowerCase());
+    : projects.filter(p => getNormalizedCategory(p.category) === selectedCategory);
 
   return (
     <section className="w-full bg-[#fffff0] px-6 md:px-10 lg:px-[90px] pt-32 md:pt-36 lg:pt-40 pb-16 md:pb-24 max-w-[1440px] mx-auto">
@@ -55,33 +85,81 @@ export const ProjectsGrid = () => {
         PROJECTS
       </h1>
 
-      {/* Filter Row with Dot Indicators */}
-      <div className="flex flex-wrap items-center gap-x-6 sm:gap-x-8 gap-y-3 mb-12 md:mb-16">
-        {categories.map((category) => {
-          const isActive = selectedCategory === category;
-          return (
-            <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              className="flex items-center gap-2 text-[14px] md:text-[16px] transition-all cursor-pointer select-none border-none outline-none bg-transparent py-1"
+      {/* Filter Dropdown Container */}
+      <div ref={dropdownRef} className="relative z-50 mb-12 md:mb-16">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex items-center justify-between w-full sm:w-[340px] px-6 py-4 bg-white border border-[#30261C]/15 rounded-full text-[#30261C] text-[15px] md:text-[16px] font-bold tracking-wide shadow-sm hover:border-[#ff5100] transition-all duration-300 focus:outline-none cursor-pointer group"
+        >
+          <span className="flex items-center gap-3">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#ff5100] animate-pulse" />
+            <span className="text-[#30261C]/50 text-[13px] uppercase tracking-wider font-semibold">Filter:</span>
+            <span className="text-[#30261C]">{selectedCategory}</span>
+          </span>
+          <div className="flex items-center gap-2">
+            <span className="text-[12px] font-semibold bg-[#30261C]/5 text-[#30261C]/60 px-2 py-0.5 rounded-full">
+              {getCategoryCount(selectedCategory)}
+            </span>
+            <svg
+              className={`w-5 h-5 text-[#30261C]/40 transition-transform duration-300 group-hover:text-[#ff5100] ${
+                isOpen ? "rotate-180" : ""
+              }`}
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              viewBox="0 0 24 24"
             >
-              {/* Dot */}
-              <span
-                className={`w-[8px] h-[8px] md:w-[10px] md:h-[10px] rounded-full transition-colors duration-300 ${
-                  isActive ? "bg-[#ff5100]" : "bg-[#30261C]/30"
-                }`}
-              />
-              {/* Text */}
-              <span
-                className={`transition-colors duration-300 font-medium ${
-                  isActive ? "text-[#30261C] font-semibold" : "text-[#30261C]/50 hover:text-[#30261C]"
-                }`}
-              >
-                {category}
-              </span>
-            </button>
-          );
-        })}
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </div>
+        </button>
+
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -10, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -10, scale: 0.95 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+              className="absolute left-0 mt-3 w-full sm:w-[340px] bg-white border border-[#30261C]/15 rounded-[24px] shadow-[0_16px_40px_rgba(48,38,28,0.12)] z-50 overflow-hidden py-3"
+            >
+              <div className="max-h-[300px] overflow-y-auto pr-1 scrollbar-thin">
+                {categories.map((category) => {
+                  const isActive = selectedCategory === category;
+                  const count = getCategoryCount(category);
+                  return (
+                    <button
+                      key={category}
+                      onClick={() => {
+                        setSelectedCategory(category);
+                        setIsOpen(false);
+                      }}
+                      className="flex items-center justify-between w-full px-5 py-3 text-left transition-colors duration-200 hover:bg-[#30261C]/5 cursor-pointer"
+                    >
+                      <div className="flex items-center gap-3">
+                        <span
+                          className={`w-2 h-2 rounded-full transition-colors duration-200 ${
+                            isActive ? "bg-[#ff5100]" : "bg-transparent"
+                          }`}
+                        />
+                        <span
+                          className={`text-[15px] font-medium transition-colors duration-200 ${
+                            isActive ? "text-[#30261C] font-semibold" : "text-[#30261C]/60 hover:text-[#30261C]"
+                          }`}
+                        >
+                          {category}
+                        </span>
+                      </div>
+                      <span className="text-[12px] font-semibold font-sans px-2 py-0.5 rounded-full bg-[#30261C]/5 text-[#30261C]/40">
+                        {count}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       {/* Grid Container */}
@@ -90,7 +168,7 @@ export const ProjectsGrid = () => {
           return (
             <Link 
               href={`/projects/${project.slug}`}
-              key={project.id} 
+              key={`${project.id}-${project.slug}-${index}`} 
               className="group flex flex-col w-full cursor-pointer bg-white border border-[#eaeaea] p-4 lg:p-5 rounded-[28px] lg:rounded-[32px] shadow-[0_4px_25px_rgba(0,0,0,0.015)] transition-all duration-300 hover:shadow-[0_16px_35px_rgba(0,0,0,0.045)] hover:border-neutral-200"
             >
               {/* Image Container with Inset padding and rounded corners */}

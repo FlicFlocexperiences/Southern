@@ -178,10 +178,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
   // Gather images from the local folder or fallback to the gallery array
   const galleryImages = getProjectImages(slug, project.gallery);
-  const bentoImages = [...galleryImages];
-  while (bentoImages.length < 7) {
-    bentoImages.push(project.heroImage || project.image);
-  }
 
   return (
     <div className="w-full min-h-screen bg-[#fffff0]">
@@ -190,133 +186,118 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
       <main className="w-full pt-32 lg:pt-48 px-6 lg:px-[90px] pb-24">
         {/* Massive Title */}
-        <h1 className="text-[50px] lg:text-[110px] xl:text-[130px] font-medium leading-[1] text-[#30261C] uppercase tracking-tighter mb-12 lg:mb-24">
+        <h1 className="text-[50px] lg:text-[110px] xl:text-[130px] font-medium leading-[1] text-[#30261C] uppercase tracking-tighter mb-8 lg:mb-12">
           {project.title}
         </h1>
 
-        {/* Two-Column Details Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-16 lg:mb-32">
-          {/* Left Column: Description & Links */}
-          <div className="lg:col-span-7 xl:col-span-8 flex flex-col justify-between">
-            <p className="text-[22px] lg:text-[28px] xl:text-[34px] leading-[1.3] text-[#30261C]/80 font-light mb-12">
-              {project.description}
-            </p>
+        {/* Visit Website Button */}
+        {project.websiteUrl && (
+          <div className="mb-12">
+            <a 
+              href={project.websiteUrl} 
+              target="_blank" 
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#30261C] hover:bg-[#ff5100] text-white rounded-full transition-all duration-300 font-semibold text-[15px] tracking-wide shadow-md hover:shadow-lg active:scale-[0.98]"
+            >
+              VISIT WEBSITE <span className="text-[18px]">↗</span>
+            </a>
+          </div>
+        )}
 
-            <div className="flex items-center gap-6">
-              {project.websiteUrl && (
-                <a 
-                  href={project.websiteUrl} 
-                  target="_blank" 
-                  rel="noreferrer"
-                  className="px-8 py-3 bg-[#30261C]/50 hover:bg-[#30261C] text-white rounded-full transition-colors font-medium text-[14px] tracking-wide"
-                >
-                  VISIT WEBSITE
-                </a>
-              )}
-              <a 
-                href="#approach" 
-                className="flex items-center gap-2 text-[#30261C]/60 hover:text-[#ff5100] transition-colors text-[14px] font-medium tracking-wide uppercase"
-              >
-                OUR APPROACH <span className="text-[18px]">↗</span>
-              </a>
+        {/* Hero Image */}
+        <div className="w-full aspect-[16/9] md:h-[600px] md:aspect-auto rounded-[24px] lg:rounded-[36px] overflow-hidden mb-16 lg:mb-24 bg-[#30261C]/5 relative shadow-md">
+          <img 
+            src={project.heroImage || project.image} 
+            alt={`${project.title} Hero`} 
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* 4-5 Headings Content Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-20 lg:mb-28">
+          {/* Main Content Columns */}
+          <div className="lg:col-span-8 space-y-16">
+            {/* Heading 1: Overview */}
+            <div className="border-t border-[#30261C]/15 pt-8">
+              <h2 className="text-[24px] lg:text-[32px] font-semibold text-[#30261C] uppercase tracking-tight mb-4">
+                01 / Project Overview
+              </h2>
+              <p className="text-[18px] lg:text-[22px] leading-[1.6] text-[#30261C]/80 font-light">
+                {project.description}
+              </p>
+            </div>
+
+            {/* Heading 2: Scope & Services */}
+            <div className="border-t border-[#30261C]/15 pt-8">
+              <h2 className="text-[24px] lg:text-[32px] font-semibold text-[#30261C] uppercase tracking-tight mb-4">
+                02 / Scope & Services
+              </h2>
+              <p className="text-[18px] lg:text-[22px] leading-[1.6] text-[#30261C]/80 font-light">
+                For {project.title}, our design and development teams collaborated to deliver standard-setting digital solutions. The core deliverables included: <span className="font-normal text-[#30261C]">{project.services}</span>. Every element was crafted to align with the brand's primary values and target audience requirements.
+              </p>
+            </div>
+
+            {/* Heading 3: Strategy & Execution */}
+            <div className="border-t border-[#30261C]/15 pt-8" id="approach">
+              <h2 className="text-[24px] lg:text-[32px] font-semibold text-[#30261C] uppercase tracking-tight mb-4">
+                03 / Strategy & Execution
+              </h2>
+              <p className="text-[18px] lg:text-[22px] leading-[1.6] text-[#30261C]/80 font-light">
+                {getProjectExecutionText(slug, project.title, project.category)}
+              </p>
+            </div>
+
+            {/* Heading 4: Impact & After Effect */}
+            <div className="border-t border-[#30261C]/15 pt-8">
+              <h2 className="text-[24px] lg:text-[32px] font-semibold text-[#30261C] uppercase tracking-tight mb-4">
+                04 / Results & Impact
+              </h2>
+              <p className="text-[18px] lg:text-[22px] leading-[1.6] text-[#30261C]/80 font-light">
+                {getProjectAfterEffectText(slug, project.title, project.category)}
+              </p>
             </div>
           </div>
 
-          {/* Right Column: Meta Info */}
-          <div className="lg:col-span-5 xl:col-span-4 flex flex-col pt-2 lg:pt-0">
-            <div className="flex flex-col border-t border-[#30261C]/10 py-5">
-              <span className="text-[11px] text-[#30261C]/40 uppercase tracking-widest mb-1">DURATION</span>
-              <span className="text-[16px] text-[#30261C]">{project.duration}</span>
-            </div>
-            <div className="flex flex-col border-t border-[#30261C]/10 py-5">
-              <span className="text-[11px] text-[#30261C]/40 uppercase tracking-widest mb-1">CLIENT</span>
-              <span className="text-[16px] text-[#30261C]">{project.client}</span>
-            </div>
-            <div className="flex flex-col border-t border-[#30261C]/10 py-5">
-              <span className="text-[11px] text-[#30261C]/40 uppercase tracking-widest mb-1">SERVICES</span>
-              <span className="text-[16px] text-[#30261C]">{project.services}</span>
+          {/* Heading 5: Project Specifications / Metadata Column */}
+          <div className="lg:col-span-4">
+            <div className="lg:sticky lg:top-36 border-t border-[#30261C]/15 lg:border-t-0 pt-8 lg:pt-0">
+              <div className="bg-[#30261C]/5 rounded-[24px] p-8 border border-[#30261C]/10">
+                <h2 className="text-[20px] font-semibold text-[#30261C] uppercase tracking-tight mb-6">
+                  05 / Project Specs
+                </h2>
+                
+                <div className="space-y-6">
+                  <div className="flex flex-col border-b border-[#30261C]/10 pb-4">
+                    <span className="text-[11px] text-[#30261C]/40 uppercase tracking-widest mb-1">Client</span>
+                    <span className="text-[16px] font-medium text-[#30261C]">{project.client}</span>
+                  </div>
+                  <div className="flex flex-col border-b border-[#30261C]/10 pb-4">
+                    <span className="text-[11px] text-[#30261C]/40 uppercase tracking-widest mb-1">Duration</span>
+                    <span className="text-[16px] font-medium text-[#30261C]">{project.duration}</span>
+                  </div>
+                  <div className="flex flex-col border-b border-[#30261C]/10 pb-4">
+                    <span className="text-[11px] text-[#30261C]/40 uppercase tracking-widest mb-1">Category</span>
+                    <span className="text-[16px] font-medium text-[#30261C]">{project.category}</span>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-[11px] text-[#30261C]/40 uppercase tracking-widest mb-1">Services</span>
+                    <span className="text-[16px] font-medium text-[#30261C]">{project.services}</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Bento Grid Image Gallery */}
-        <div className="w-full mb-24">
-          <h2 className="text-[28px] lg:text-[42px] font-medium text-[#30261C] mb-8 lg:mb-12 uppercase tracking-tight">
-            Project Gallery
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 w-full">
-            {/* Slot 1: Top Full-Width Image */}
-            <div className="col-span-1 md:col-span-4 h-[250px] md:h-[450px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-              <img 
-                src={bentoImages[0]} 
-                alt={`${project.title} Gallery 1`} 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-            </div>
-
-            {/* Slot 2: Middle Left Medium-Large (spans 2 rows) */}
-            <div className="col-span-1 md:col-span-2 md:row-span-2 h-[250px] md:h-full min-h-[250px] md:min-h-[360px] lg:min-h-[464px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-              <img 
-                src={bentoImages[1]} 
-                alt={`${project.title} Gallery 2`} 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-            </div>
-
-            {/* Slot 3: Middle Right Small 1 */}
-            <div className="col-span-1 md:col-span-1 h-[170px] md:h-[170px] lg:h-[330px] rounded-[24px] lg:rounded-[28px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-              <img 
-                src={bentoImages[2]} 
-                alt={`${project.title} Gallery 3`} 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-            </div>
-
-            {/* Slot 4: Middle Right Small 2 */}
-            <div className="col-span-1 md:col-span-1 h-[170px] md:h-[170px] lg:h-[330px] rounded-[24px] lg:rounded-[28px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-              <img 
-                src={bentoImages[3]} 
-                alt={`${project.title} Gallery 4`} 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-            </div>
-
-            {/* Slot 5: Middle Right Small 3 */}
-            <div className="col-span-1 md:col-span-1 h-[170px] md:h-[170px] lg:h-[330px] rounded-[24px] lg:rounded-[28px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-              <img 
-                src={bentoImages[4]} 
-                alt={`${project.title} Gallery 5`} 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-            </div>
-
-            {/* Slot 6: Middle Right Small 4 */}
-            <div className="col-span-1 md:col-span-1 h-[170px] md:h-[170px] lg:h-[330px] rounded-[24px] lg:rounded-[28px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-              <img 
-                src={bentoImages[5]} 
-                alt={`${project.title} Gallery 6`} 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-            </div>
-
-            {/* Slot 7: Bottom Full-Width Image */}
-            <div className="col-span-1 md:col-span-4 h-[250px] md:h-[450px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-              <img 
-                src={bentoImages[6]} 
-                alt={`${project.title} Gallery 7`} 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-            </div>
+        {/* Horizontal Carousel of 3:4 for images */}
+        {galleryImages.length > 0 && (
+          <div className="w-full mt-16 lg:mt-24 border-t border-[#30261C]/15 pt-12">
+            <h2 className="text-[28px] lg:text-[42px] font-medium text-[#30261C] mb-8 lg:mb-12 uppercase tracking-tight">
+              Project Gallery
+            </h2>
+            <ProjectGallerySlider images={galleryImages} />
           </div>
-        </div>
+        )}
       </main>
 
       <div style={{ zoom: 0.8 }}><Cta /></div>
