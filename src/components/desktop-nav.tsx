@@ -25,7 +25,7 @@ export const DesktopNav = () => {
   ];
 
   return (
-    <div className="absolute top-0 left-0 right-0 z-50 w-full px-6 md:px-10 py-4 flex flex-col gap-3 max-w-[1280px] mx-auto" style={{ zoom: 0.8 }}>
+    <div className="absolute top-4 left-0 right-0 z-50 w-full px-6 md:px-10 py-4 flex flex-col gap-3 max-w-[1280px] mx-auto" style={{ zoom: 0.8 }}>
 
 
       {/* Main Navbar */}

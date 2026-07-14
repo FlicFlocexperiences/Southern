@@ -31,7 +31,7 @@ export const DesktopFooter = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <footer className="w-full bg-[#30261c] text-[#ffffff] pt-20 pb-12 px-8 lg:px-[90px] relative z-10 overflow-hidden flex flex-col font-sans" style={{ zoom: 0.8 }}>
+    <footer className="w-full bg-[#30261c] text-[#ffffff] pt-16 pb-12 px-8 lg:px-[90px] relative z-10 overflow-hidden flex flex-col font-sans" style={{ zoom: 0.8 }}>
       <div className="w-full max-w-[1840px] mx-auto flex flex-col">
         
         {/* 6-Column Grid */}

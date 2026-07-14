@@ -45,7 +45,7 @@ export const DesktopFaq = () => {
   };
 
   return (
-    <section className="w-full bg-[#fffff0] pt-24 pb-10 px-8 lg:px-[90px] flex flex-col items-center relative z-10" style={{ zoom: 0.75 }}>
+    <section className="w-full bg-[#fffff0] pt-22 pb-22 px-8 lg:px-[90px] flex flex-col items-center relative z-10" style={{ zoom: 0.75 }}>
       
       {/* Top Header */}
       <div className="flex flex-col items-center mb-16 w-full">
