@@ -179,6 +179,10 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   // Gather images from the local folder or fallback to the gallery array
   const galleryImages = getProjectImages(slug, project.gallery);
 
+  const isPhotographyVideography = 
+    project.category.toLowerCase().includes("photography") || 
+    project.category.toLowerCase().includes("videography");
+
   return (
     <div className="w-full min-h-screen bg-[#fffff0]">
       <div className="block md:hidden"><MobileNav /></div>
@@ -212,14 +216,20 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           })()}
         </div>
 
-        {/* Hero Image */}
-        <div className="w-full aspect-[12/8] md:h-[800px] md:aspect-auto rounded-[24px] lg:rounded-[36px] overflow-hidden mb-16 lg:mb-24 bg-[#30261C]/5 relative shadow-md">
-          <img 
-            src={project.heroImage || project.image} 
-            alt={`${project.title} Hero`} 
-            className="w-full h-full object-cover"
-          />
-        </div>
+        {/* Hero Image / Animated Carousel */}
+        {isPhotographyVideography ? (
+          <div className="w-full mb-16 lg:mb-24">
+            <ProjectGallerySlider images={galleryImages} />
+          </div>
+        ) : (
+          <div className="w-full aspect-[12/8] md:h-[800px] md:aspect-auto rounded-[24px] lg:rounded-[36px] overflow-hidden mb-16 lg:mb-24 bg-[#30261C]/5 relative shadow-md">
+            <img 
+              src={project.heroImage || project.image} 
+              alt={`${project.title} Hero`} 
+              className="w-full h-full object-cover"
+            />
+          </div>
+        )}
 
         {/* 4-5 Headings Content Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-20 lg:mb-28">
@@ -298,7 +308,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         </div>
 
         {/* Horizontal Carousel of 3:4 for images */}
-        {galleryImages.length > 0 && (
+        {!isPhotographyVideography && galleryImages.length > 0 && (
           <div className="w-full mt-16 lg:mt-24 border-t border-[#30261C]/15 pt-12">
             <h2 className="text-[28px] lg:text-[42px] font-medium text-[#30261C] mb-8 lg:mb-12 uppercase tracking-tight">
               Project Gallery
