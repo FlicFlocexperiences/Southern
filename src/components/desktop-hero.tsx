@@ -39,7 +39,7 @@ export const DesktopHero = () => {
             <p className="font-semibold text-[20px] lg:text-[28px] xl:text-[32px] tracking-wide mb-4 text-black uppercase">
               More than just digital
             </p>
-            <h1 className="font-extrabold text-[48px] lg:text-[64px] xl:text-[76px] leading-[1.05] tracking-tight text-black flex flex-col uppercase">
+            <h1 className="font-semibold text-[48px] lg:text-[64px] xl:text-[76px] leading-[1.05] tracking-tight text-black flex flex-col uppercase">
               <span className="text-[#ff5100] mb-1">We turn</span>
               <span>Attention into action</span>
             </h1>

@@ -81,7 +81,7 @@ export const ProjectsGrid = () => {
       <div className="w-full h-px bg-[#30261C]/15 my-5 md:my-6" />
 
       {/* Heading: PROJECTS */}
-      <h1 className="text-[54px] sm:text-[72px] md:text-[90px] lg:text-[110px] xl:text-[130px] font-extrabold leading-[1] text-[#30261C] uppercase tracking-tighter mb-8 md:mb-12">
+      <h1 className="text-[54px] sm:text-[72px] md:text-[90px] lg:text-[80px] xl:text-[80px] font-semibold leading-[1] text-[#30261C] uppercase tracking-tighter mb-8 md:mb-12">
         PROJECTS
       </h1>
 
