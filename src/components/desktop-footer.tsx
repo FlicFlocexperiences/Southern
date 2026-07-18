@@ -6,7 +6,7 @@ import Image from "next/image";
 import { articles } from "@/data/articles";
 import { services } from "@/data/services";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faFacebookF, faLinkedinIn, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faFacebookF, faLinkedinIn, faYoutube, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 // Local SVGs for pixel-perfect vector representation without extra deps
@@ -59,18 +59,33 @@ export const DesktopFooter = () => {
             </div>
             
             {/* Social Icons */}
-            <div className="flex items-center gap-3 mt-4">
-              <a href="https://www.instagram.com/southernedgemarketing?igsh=MXF2bTlpNHZpbzlt&utm_source=qr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
-                <FontAwesomeIcon icon={faInstagram} className="w-4 h-4" />
+            <div className="flex items-center gap-3.5 mt-2">
+              <a 
+                href="https://www.linkedin.com/company/southernedgemarketing/?viewAsMember=true" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300 hover:scale-105"
+              >
+                <FontAwesomeIcon icon={faLinkedinIn} className="w-[18px] h-[18px]" />
               </a>
-              <a href="https://www.facebook.com/profile.php?id=61590949122507" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
-                <FontAwesomeIcon icon={faFacebookF} className="w-4 h-4" />
+              <a 
+                href="https://x.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300 hover:scale-105"
+              >
+                <FontAwesomeIcon icon={faXTwitter} className="w-[18px] h-[18px]" />
               </a>
-              <a href="https://www.linkedin.com/company/southernedgemarketing/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
-                <FontAwesomeIcon icon={faLinkedinIn} className="w-4 h-4" />
+              <a 
+                href="https://www.instagram.com/southernedgemarketing?igsh=MXF2bTlpNHZpbzlt&utm_source=qr" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300 hover:scale-105"
+              >
+                <FontAwesomeIcon icon={faInstagram} className="w-[18px] h-[18px]" />
               </a>
-              
             </div>
+            
           </div>
 
           {/* Column 2: Capabilities (Span 3) */}
@@ -104,9 +119,9 @@ export const DesktopFooter = () => {
             <h3 className="text-[22px] font-bold text-white tracking-wide">Company</h3>
             <ul className="flex flex-col gap-3 text-[18px]">
               <li><Link href="/about" className="hover:text-white transition-colors duration-300">About Us</Link></li>
+              <li><Link href="/services" className="hover:text-white transition-colors duration-300">Services</Link></li>
               <li><Link href="/projects" className="hover:text-white transition-colors duration-300">Projects</Link></li>
-              <li><Link href="/blogs" className="hover:text-white transition-colors duration-300">Services</Link></li>
-              <li><Link href="/contact" className="hover:text-white transition-colors duration-300">Blogs</Link></li>
+              <li><Link href="/blogs" className="hover:text-white transition-colors duration-300">Blogs</Link></li>
             </ul>
           </div>
 

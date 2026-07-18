@@ -128,7 +128,7 @@ export const MobileCaseStudies = () => {
           >
             {/* Inner Left Pill with right shadow */}
             <div className="absolute left-[0px] top-0 w-[180px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
-              <span className="font-semibold text-[13px] text-white tracking-tight uppercase whitespace-nowrap pt-0.5">
+              <span className="font-medium text-[12px] text-white tracking-tight uppercase whitespace-nowrap pt-0.5">
                 Explore More Projects
               </span>
             </div>

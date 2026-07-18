@@ -188,7 +188,7 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
   return (
     <div className="w-full">
       {/* Hero Header with Premium Dark / Orange Gradient */}
-      <div className="w-full relative overflow-hidden bg-gradient-to-br from-[#1b1a15] to-[#2c1d10] py-20 lg:py-32 px-6 lg:px-[90px] rounded-[36px] mb-12 shadow-[0_20px_50px_rgba(0,0,0,0.15)] border border-[#ff5100]/10 flex flex-col md:flex-row items-center justify-between gap-12">
+      <div className="w-full relative overflow-hidden bg-gradient-to-br from-[#1b1a15] to-[#2c1d10] py-10 lg:py-32 px-6 lg:px-[90px] rounded-[36px] mb-12 shadow-[0_20px_50px_rgba(0,0,0,0.15)] border border-[#ff5100]/10 flex flex-col items-start">
         {/* Glow Effects */}
         <div className="absolute top-[-20%] left-[-10%] w-[50%] aspect-square rounded-full bg-[#ff5100]/10 blur-[120px] pointer-events-none" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] aspect-square rounded-full bg-[#ff5100]/5 blur-[100px] pointer-events-none" />
@@ -206,17 +206,6 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
 
           
         </div>
-
-        {/* Right side image */}
-        {service.image && (
-          <div className="relative z-10 flex shrink-0 w-full md:w-[350px] lg:w-[450px] items-center justify-center select-none mt-8 md:mt-0">
-            <img 
-              src={service.image} 
-              alt={service.title} 
-              className="w-[200px] md:w-[300px] lg:w-[380px] object-contain drop-shadow-[0_20px_50px_rgba(255,81,0,0.15)] transition-transform duration-700 hover:scale-105"
-            />
-          </div>
-        )}
       </div>
 
       {/* Main Grid Layout */}

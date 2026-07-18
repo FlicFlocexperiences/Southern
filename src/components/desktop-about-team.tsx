@@ -95,7 +95,7 @@ export const DesktopAboutTeam = () => {
               <div className="w-full h-px " />
               <Link href="/contact" className="w-fit">
                 <button 
-                  className="relative w-[200px] h-[58px] rounded-full bg-white/20 overflow-hidden shadow-[0px_4px_12px_rgba(0,0,0,0.15)] hover:shadow-[0px_6px_16px_rgba(0,0,0,0.25)] transition-shadow group cursor-pointer border border-white/20"
+                  className="relative w-[200px] h-[58px] rounded-full bg-white overflow-hidden shadow-[0px_4px_12px_rgba(0,0,0,0.15)] hover:shadow-[0px_6px_16px_rgba(0,0,0,0.25)] transition-shadow group cursor-pointer border border-white/20"
                   aria-label="Start Now"
                 >
                   {/* Inner Left Pill with right shadow */}
@@ -108,7 +108,7 @@ export const DesktopAboutTeam = () => {
                   
                   {/* Right Arrow Icon */}
                   <div className="absolute right-[20px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
-                    <svg className="w-[18px] h-[18px] text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-[18px] h-[18px] text-[#ff5100]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                     </svg>
                   </div>

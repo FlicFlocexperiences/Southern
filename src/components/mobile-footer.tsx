@@ -6,7 +6,7 @@ import Image from "next/image";
 import { articles } from "@/data/articles";
 import { services } from "@/data/services";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faFacebookF, faLinkedinIn, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faFacebookF, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 // Local SVGs for pixel-perfect vector representation without extra deps
@@ -46,22 +46,19 @@ export const MobileFooter = () => {
         </Link>
         <p className="text-[16px] leading-relaxed text-white/70">
           The revenue growth agency. <br />
-          Dubai, Manchester & Miami.
+          Dubai, Delhi.
         </p>
         
         {/* Social Icons */}
         <div className="flex items-center gap-3 mt-2">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
+          <a href="https://www.instagram.com/southernedgemarketing?igsh=MXF2bTlpNHZpbzlt&utm_source=qr" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
             <FontAwesomeIcon icon={faInstagram} className="w-3.5 h-3.5" />
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
+          <a href="https://www.facebook.com/profile.php?id=61590949122507" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
             <FontAwesomeIcon icon={faFacebookF} className="w-3.5 h-3.5" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
+          <a href="https://www.linkedin.com/company/southernedgemarketing/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
             <FontAwesomeIcon icon={faLinkedinIn} className="w-3.5 h-3.5" />
-          </a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
-            <FontAwesomeIcon icon={faYoutube} className="w-3.5 h-3.5" />
           </a>
         </div>
       </div>
@@ -87,9 +84,9 @@ export const MobileFooter = () => {
           <h3 className="text-[16px] font-bold text-white tracking-wide">Company</h3>
           <ul className="flex flex-col gap-2.5">
             <li><Link href="/about" className="hover:text-white transition-colors duration-300">About Us</Link></li>
+            <li><Link href="/services" className="hover:text-white transition-colors duration-300">Services</Link></li>
             <li><Link href="/projects" className="hover:text-white transition-colors duration-300">Projects</Link></li>
-            <li><Link href="/blogs" className="hover:text-white transition-colors duration-300">Services</Link></li>
-            <li><Link href="/contact" className="hover:text-white transition-colors duration-300">Blogs</Link></li>
+            <li><Link href="/blogs" className="hover:text-white transition-colors duration-300">Blogs</Link></li>
           </ul>
         </div>
 
@@ -124,17 +121,14 @@ export const MobileFooter = () => {
         
         {/* Social Icons inside Contact Column */}
         <div className="flex items-center gap-3 mt-2">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
+          <a href="https://www.instagram.com/southernedgemarketing?igsh=MXF2bTlpNHZpbzlt&utm_source=qr" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
             <FontAwesomeIcon icon={faInstagram} className="w-3.5 h-3.5" />
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
+          <a href="https://www.facebook.com/profile.php?id=61590949122507" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
             <FontAwesomeIcon icon={faFacebookF} className="w-3.5 h-3.5" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
+          <a href="https://www.linkedin.com/company/southernedgemarketing/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
             <FontAwesomeIcon icon={faLinkedinIn} className="w-3.5 h-3.5" />
-          </a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300">
-            <FontAwesomeIcon icon={faYoutube} className="w-3.5 h-3.5" />
           </a>
         </div>
       </div>
