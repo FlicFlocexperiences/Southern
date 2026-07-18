@@ -12,33 +12,49 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ slug, title, category, duration, image }) => {
+  const isPhotography = category.toLowerCase().includes("photography") || category.toLowerCase().includes("videography");
   return (
     <Link 
       href={`/projects/${slug}`}
-      className="group flex flex-col w-full cursor-pointer"
+      className="group flex flex-col w-full cursor-pointer bg-white border border-[#eaeaea] p-4 lg:p-5 rounded-[28px] lg:rounded-[32px] shadow-[0_4px_25px_rgba(0,0,0,0.015)] transition-all duration-300 hover:shadow-[0_16px_35px_rgba(0,0,0,0.045)] hover:border-neutral-200"
     >
-      {/* Image Container with rounded corners */}
-      <div className="w-full aspect-[3/2] rounded-[16px] md:rounded-[24px] overflow-hidden mb-5 bg-[#eaeaea] relative">
+      {/* Image Container with Inset padding and rounded corners */}
+      <div className={`w-full aspect-[4/3] rounded-[20px] lg:rounded-[24px] overflow-hidden mb-6 bg-neutral-50 relative ${isPhotography ? "flex items-center justify-center p-4" : ""}`}>
         <img 
           src={image} 
           alt={title}
-          className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.03]"
+          className={`transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-105 ${
+            isPhotography 
+              ? "max-w-full max-h-full w-auto h-auto object-contain" 
+              : "w-full h-full object-cover"
+          }`}
         />
         
-        {/* Category Pill Overlay on Bottom Right */}
-        <div className="absolute bottom-4 right-4 md:bottom-5 md:right-5 px-3 py-1.5 rounded-full bg-[#1b1b1b]/35 border border-white/10 text-white text-[9px] md:text-[10px] font-bold tracking-widest uppercase">
-          {category}
-        </div>
+        {/* Subtle dark overlay on hover */}
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/[0.01] transition-colors duration-500 ease-in-out"></div>
       </div>
       
-      {/* Text Details below the image */}
-      <div className="flex flex-col gap-1 px-1 pb-4">
-        <span className="text-[12px] md:text-[13px] font-semibold text-[#30261C]/50 font-sans tracking-wide">
-          {duration}
-        </span>
-        <h3 className="text-[20px] md:text-[24px] font-bold text-[#30261C] tracking-tight uppercase leading-none">
+      {/* Text Meta Container */}
+      <div className="flex flex-col gap-1">
+        <h3 className="text-[24px] lg:text-[28px] font-bold text-[#0f0f0f] leading-none transition-colors duration-300">
           {title}
         </h3>
+        
+        {/* Details Row: Category on left, Location & Year & Arrow on right */}
+        <div className="flex justify-between items-center text-[12px] lg:text-[13px] font-sans text-neutral-400 font-semibold tracking-wider uppercase mt-1">
+          <span>
+            {category}
+          </span>
+          
+          <div className="flex items-center gap-2.5">
+            {/* Circle Arrow Button */}
+            <div className="w-11 h-11 rounded-full bg-[#ff5100] flex items-center justify-center text-white shrink-0 group-hover:scale-105 transition-all duration-300">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </Link>
   );
@@ -95,28 +111,11 @@ export const MobileCaseStudies = () => {
       </div>
 
       {/* Grid of Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
-        {/* Row 1 */}
-        <div className="pb-8 border-b border-[#30261C]/15 md:border-b-0">
-          <ProjectCard {...selectedProjects[0]} />
-        </div>
-        <div className="pb-8 border-b border-[#30261C]/15 md:border-b-0">
-          <ProjectCard {...selectedProjects[1]} />
-        </div>
-
-        {/* Row 1 Divider for Desktop */}
-        <div className="hidden md:block col-span-2 h-px bg-[#30261C]/15 -mt-6 mb-2" />
-
-        {/* Row 2 */}
-        <div className="pb-8 border-b border-[#30261C]/15 md:border-b-0">
-          <ProjectCard {...selectedProjects[2]} />
-        </div>
-        <div className="pb-8 border-b border-[#30261C]/15 md:border-b-0">
-          <ProjectCard {...selectedProjects[3]} />
-        </div>
-
-        {/* Row 2 Divider for Desktop */}
-        <div className="hidden md:block col-span-2 h-px bg-[#30261C]/15 -mt-6 mb-2" />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-y-12">
+        <ProjectCard {...selectedProjects[0]} />
+        <ProjectCard {...selectedProjects[1]} />
+        <ProjectCard {...selectedProjects[2]} />
+        <ProjectCard {...selectedProjects[3]} />
       </div>
 
       {/* Explore More Projects Button */}

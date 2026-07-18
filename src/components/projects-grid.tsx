@@ -166,6 +166,7 @@ export const ProjectsGrid = () => {
       {/* Grid Container */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-y-12">
         {filteredProjects.map((project, index) => {
+          const isPhotography = project.category.toLowerCase().includes("photography") || project.category.toLowerCase().includes("videography");
           return (
             <Link 
               href={`/projects/${project.slug}`}
@@ -173,11 +174,15 @@ export const ProjectsGrid = () => {
               className="group flex flex-col w-full cursor-pointer bg-white border border-[#eaeaea] p-4 lg:p-5 rounded-[28px] lg:rounded-[32px] shadow-[0_4px_25px_rgba(0,0,0,0.015)] transition-all duration-300 hover:shadow-[0_16px_35px_rgba(0,0,0,0.045)] hover:border-neutral-200"
             >
               {/* Image Container with Inset padding and rounded corners */}
-              <div className="w-full aspect-[4/3] rounded-[20px] lg:rounded-[24px] overflow-hidden mb-6 bg-neutral-50 relative">
+              <div className={`w-full aspect-[4/3] rounded-[20px] lg:rounded-[24px] overflow-hidden mb-6 bg-neutral-50 relative ${isPhotography ? "flex items-center justify-center p-4" : ""}`}>
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-105"
+                  className={`transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-105 ${
+                    isPhotography 
+                      ? "max-w-full max-h-full w-auto h-auto object-contain" 
+                      : "w-full h-full object-cover"
+                  }`}
                 />
                 
                 {/* Subtle dark overlay on hover */}
@@ -185,7 +190,7 @@ export const ProjectsGrid = () => {
               </div>
               
               {/* Text Meta Container */}
-              <div className="flex flex-col gap-4 px-1 pb-1">
+              <div className="flex flex-col gap-1">
                 <h3 className="text-[24px] lg:text-[28px] font-bold text-[#0f0f0f] leading-none transition-colors duration-300">
                   {project.title}
                 </h3>
@@ -197,13 +202,9 @@ export const ProjectsGrid = () => {
                   </span>
                   
                   <div className="flex items-center gap-2.5">
-                    <span>
-                      DUBAI • 2025
-                    </span>
-                    
                     {/* Circle Arrow Button */}
-                    <div className="w-9 h-9 rounded-full bg-black flex items-center justify-center text-white shrink-0 group-hover:bg-[#ff5100] group-hover:scale-105 transition-all duration-300">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <div className="w-11 h-11 rounded-full bg-[#ff5100] flex items-center justify-center text-white shrink-0 group-hover:scale-105 transition-all duration-300">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path>
                       </svg>
                     </div>
