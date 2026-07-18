@@ -13,8 +13,8 @@ import { Cta } from "@/components/cta";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services | Southern Marketing",
-  description: "Explore the services we offer at Southern Marketing.",
+  title: "Our Services | Web, Branding, SEO, Ads & App Development | Southern Edge Marketing",
+  description: "Six capabilities, one growth system: website platforms, branding, Shopify development, app development, SEO, performance marketing, and social media management — built to compound.",
 };
 
 export default function ServicesPage() {

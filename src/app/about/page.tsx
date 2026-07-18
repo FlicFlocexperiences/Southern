@@ -13,8 +13,8 @@ import { Cta } from "@/components/cta";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Southern Marketing",
-  description: "Learn more about Southern Marketing and our team.",
+  title: "About Southern Edge Marketing | Our Story & Approach",
+  description: "We're more than just digital. Meet the team behind Southern Edge Marketing and see how we build brands that grow, not just campaigns that run.",
 };
 
 export default function About() {

@@ -9,8 +9,8 @@ import { ContactUsWidget } from "@/components/contact-forms";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Southern Marketing",
-  description: "Get in touch with Southern Marketing for your next project.",
+  title: "Contact Southern Edge Marketing | Let's Impress You",
+  description: "Ready to grow? Get in touch with Southern Edge Marketing for a free consultation on strategy, design, and marketing that drives results.",
 };
 
 const ArrowUpRight = () => (
