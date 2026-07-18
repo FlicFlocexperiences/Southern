@@ -83,7 +83,7 @@ export const DesktopAboutTeam = () => {
         {/* Right Column */}
         <div className="flex flex-col gap-6 lg:col-span-2">
           {/* Card 3: Ready to grow */}
-          <div className="bg-[#ff5100] rounded-[20px] w-full flex flex-col justify-between p-6 lg:p-8 text-white shrink-0 h-auto lg:h-[240px]">
+          <div className="bg-white rounded-[20px] w-full flex flex-col justify-between p-6 lg:p-8 text-[#ff5100] shrink-0 h-auto lg:h-[240px] shadow-xl">
             <div>
               <h3 className="text-[28px] lg:text-[32px] font-bold leading-tight mb-2 uppercase">READY TO GROW?</h3>
               <p className="text-[15px] lg:text-[16px] font-normal leading-snug opacity-95 max-w-[95%]">
@@ -95,13 +95,13 @@ export const DesktopAboutTeam = () => {
               <div className="w-full h-px " />
               <Link href="/contact" className="w-fit">
                 <button 
-                  className="relative w-[200px] h-[58px] rounded-full bg-white overflow-hidden shadow-[0px_4px_12px_rgba(0,0,0,0.15)] hover:shadow-[0px_6px_16px_rgba(0,0,0,0.25)] transition-shadow group cursor-pointer border border-white/20"
+                  className="relative w-[200px] h-[58px] rounded-full bg-[#ff5100] overflow-hidden shadow-[0px_4px_12px_rgba(0,0,0,0.15)] hover:shadow-[0px_6px_16px_rgba(0,0,0,0.25)] transition-shadow group cursor-pointer border border-white/20"
                   aria-label="Start Now"
                 >
                   {/* Inner Left Pill with right shadow */}
-                  <div className="absolute left-[0px] top-0 w-[140px] h-[58px] rounded-full bg-white drop-shadow-[2px_0px_4px_rgba(0,0,0,0.15)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+                  <div className="absolute left-[0px] top-0 w-[140px] h-[58px] rounded-full bg-[#ff5100] drop-shadow-[2px_0px_4px_rgba(0,0,0,0.15)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
                     <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
-                    <span className="font-semibold text-[14px] text-[#ff5100] tracking-wide whitespace-nowrap">
+                    <span className="font-semibold text-[14px] text-white tracking-wide whitespace-nowrap">
                       Start Now
                     </span>
                   </div>

@@ -52,15 +52,14 @@ export function MobileNav() {
         </button>
       </div>
 
-      {/* Overlay Wrapper (Animates height from 0 to full to create the reveal effect) */}
       <div 
         className={`absolute top-0 left-0 w-full bg-[#ff5100] z-[60] overflow-hidden rounded-b-[40px] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
           isOpen ? "shadow-2xl pointer-events-auto" : "pointer-events-none"
         }`}
-        style={{ height: isOpen ? '425px' : '0px' }}
+        style={{ height: isOpen ? '480px' : '0px' }}
       >
         {/* Inner Content - Fixed height prevents squishing during height transition */}
-        <div className="w-full relative" style={{ height: '425px' }}>
+        <div className="w-full relative" style={{ height: '480px' }}>
           {/* White Header (perfectly overlays the base header) */}
           <div className="h-[68px] w-full flex items-center justify-between px-8 md:px-10 absolute top-0 left-0 z-50">
             <Link href="/" onClick={() => setIsOpen(false)}>
@@ -91,7 +90,7 @@ export function MobileNav() {
           </div>
 
           {/* Links Section */}
-          <div className="absolute top-24 right-4 flex flex-col items-end gap-6 font-medium text-xl text-white">
+          <div className="absolute top-20 right-4 flex flex-col items-end gap-5 font-medium text-xl text-white">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
