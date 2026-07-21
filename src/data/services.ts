@@ -1,7 +1,10 @@
 export interface Service {
   slug: string;
   title: string;
+  h1Title?: string;
   tagline?: string;
+  metaTitle?: string;
+  metaDescription?: string;
   description1: string;
   description2: string;
   callout?: string;
@@ -16,7 +19,10 @@ export const services: Service[] = [
   {
     slug: "web-development",
     title: "Website Platforms",
+    h1Title: "Website Development Services That Turn Visitors Into Customers",
     tagline: "Convert, not just impress.",
+    metaTitle: "Website Development Company | High-Converting Business Websites | Southern Edge Marketing",
+    metaDescription: "Build high-performance websites designed for conversions. Southern Edge Marketing creates SEO-friendly, responsive websites that generate leads, increase sales, and grow businesses.",
     description1: "High-performance websites engineered to turn visitors into customers. We combine editorial craft with conversion science to build digital experiences that compound in value.",
     description2: "Using modern frameworks like Next.js and React, we ensure your store or landing page is lightning-fast, fully responsive, and optimized to capture every possible lead.",
     callout: "The foundation of every growth system — without a website that converts, every other channel is pouring water into a leaky bucket.",
@@ -24,30 +30,69 @@ export const services: Service[] = [
     statLabel: "AVG. CONVERSION IMPROVEMENT",
     tags: ["UX Design", "Development", "CRO", "CMS"],
     image: "/services/website-development.png",
-    content: `Building High-Performance Digital Experiences
-A modern website is the foundation of a successful online presence. Our web development services focus on speed, scalability, security, responsive design, and conversion optimization. We build websites that not only look exceptional but also drive measurable business growth.
+    content: `### Introduction
+Your website is your business's most valuable digital asset. It should do more than look beautiful—it should generate leads, build trust, and convert visitors into paying customers.
 
-### What is Web Development?
-Web development involves designing, building, maintaining, and optimizing websites and web applications. It includes frontend development, backend development, databases, APIs, cloud deployment, and continuous performance improvements.
+At Southern Edge Marketing, we create custom websites focused on user experience, speed, SEO, and conversion optimization. Every website is strategically designed to support long-term business growth while providing a seamless experience across desktop, tablet, and mobile devices.
 
-### Our Comprehensive Web Development Services
-- Business Websites & Corporate Portals
-- High-Converting Landing Pages
-- Custom Web Applications & SaaS Dashboards
-- Ecommerce Frontend Solutions
-- CMS Setup & Management
-- Third-Party API Integration
+Whether you need a corporate website, landing page, or complete business platform, our team builds websites engineered for measurable results.
 
-### Why Choose Us?
-We build SEO-friendly, mobile-responsive, secure, and lightning-fast websites using modern development practices. Our focus is on scalability, clean architecture, excellent user experience, and long-term business growth.
+### What We Offer
+- Custom Website Design
+- Responsive Development
+- Landing Pages
+- CMS Development
+- WordPress Development
+- Webflow Development
+- Headless Websites
+- Conversion Optimization
+- Technical SEO Setup
+- Website Maintenance
 
-### Client Success Story
-An ecommerce company migrated to a custom Next.js platform, reducing page load time by over 60% while improving search visibility and increasing online sales through a better shopping experience.`
+### Why Choose Us
+- Mobile-first design
+- Lightning-fast performance
+- SEO-ready architecture
+- Conversion-focused layouts
+- Clean scalable code
+- Secure development standards
+
+### Our Process
+- **01. Discovery** — Understanding your business goals and audience.
+- **02. UX Strategy** — Creating user journeys focused on conversions.
+- **03. UI Design** — Building visually engaging interfaces.
+- **04. Development** — Modern, optimized coding practices.
+- **05. QA Testing** — Performance, security and responsiveness testing.
+- **06. Launch & Growth** — Monitoring performance and continuous improvements.
+
+### Industries We Serve
+- Healthcare
+- Law Firms
+- SaaS
+- Real Estate
+- Education
+- Ecommerce
+- Finance
+- Startups
+
+### Related Solutions
+Continue improving your online presence with our:
+- [SEO Solutions](/services/seo)
+- [Branding & Strategy](/services/branding)
+- [Performance Marketing](/services/performance-marketing)
+- [Shopify Development](/services/shopify-development)
+
+### Frequently Asked Questions
+- **How long does website development take?** Most projects are completed within 4–8 weeks depending on complexity.
+- **Do you redesign existing websites?** Yes. We modernize outdated websites while improving speed, SEO, and conversions.`
   },
   {
     slug: "branding",
     title: "Branding & Strategy",
+    h1Title: "Branding & Strategy That Makes Your Business Memorable",
     tagline: "Define your voice, claim your space.",
+    metaTitle: "Branding & Strategy Agency | Build Memorable Brands | Southern Edge Marketing",
+    metaDescription: "Strong brands create trust before the first conversation begins. Southern Edge Marketing combines research, positioning, messaging, and visual identity to build memorable brands.",
     description1: "We build cohesive, memorable identities that stand out in crowded markets, combining strategic positioning with visual storytelling to define who you are and why you matter.",
     description2: "From logo marks to comprehensive style guides, we establish a distinct design system that builds trust and drives immediate recognition across all touchpoints.",
     callout: "Your brand isn't just what you say — it's the lasting imprint you leave on your audience's mind.",
@@ -55,26 +100,53 @@ An ecommerce company migrated to a custom Next.js platform, reducing page load t
     statLabel: "INCREASE IN BRAND RECALL",
     tags: ["Brand Identity", "Brand Strategy", "Typography", "Visual System"],
     image: "/services/branding.png",
-    content: `Crafting Memorable Brand Identities
-In a world full of noise, a strong brand is your greatest asset. We help companies find their voice, construct visual consistency, and develop identities that resonate deeply with their target market.
+    content: `### Introduction
+Strong brands create trust before the first conversation begins.
 
-### Core Branding Capabilities
-- Brand Audits & Competitive Positioning
-- Logo Design & Iconography
-- Typography & Complete Color Systems
-- Interactive Brand Guideline Handbooks
-- Packaging & Collateral Material
+Our branding strategy combines research, positioning, messaging, and visual identity to help businesses stand out in competitive markets. We develop brands that not only look exceptional but communicate value clearly and consistently.
 
-### The Branding Process
-We start with deep research into your history, values, and competition. Next, we explore design directions, iterating closely with your team. Finally, we output a robust package of guidelines, assets, and design files.
+### Services
+- Brand Identity Design
+- Logo Systems
+- Brand Strategy
+- Visual Identity
+- Brand Messaging
+- Typography Systems
+- Color Systems
+- Brand Guidelines
 
-### Why Strategic Branding Matters
-A brand is more than a logo; it is the sum of all customer experiences. Consistent branding across channels increases customer loyalty, supports premium pricing, and creates a clear identity that team members and customers advocate for.`
+### Benefits
+- Strong market positioning
+- Higher customer trust
+- Better recognition
+- Consistent communication
+- Premium perception
+
+### Our Process
+- **01. Research** — In-depth discovery into your business, vision, and core values.
+- **02. Competitor Analysis** — Auditing market dynamics and positioning opportunities.
+- **03. Brand Positioning** — Crafting your unique value proposition and messaging pillar.
+- **04. Identity Design** — Building logos, visual systems, and typography palettes.
+- **05. Brand Guidelines** — Documenting design rules for absolute consistency.
+- **06. Launch** — Executing a seamless brand rollout across all digital and print touchpoints.
+
+### Related Solutions
+Strengthen your brand with:
+- [Website Development](/services/web-development)
+- [Social Media Management](/services/social-media-management)
+- [SEO Solutions](/services/seo)
+- [Performance Marketing](/services/performance-marketing)
+
+### Frequently Asked Questions
+- **Why is branding important?** Branding creates recognition, trust, and customer loyalty while differentiating your business from competitors.`
   },
   {
     slug: "shopify-development",
     title: "Shopify Development",
+    h1Title: "Custom Shopify Development for Growing Ecommerce Brands",
     tagline: "Scale your store, not your stress.",
+    metaTitle: "Shopify Development Company | Custom Shopify Stores | Southern Edge Marketing",
+    metaDescription: "Build high-converting custom Shopify stores. Southern Edge Marketing creates fast, scalable Shopify and Shopify Plus e-commerce platforms designed for growth.",
     description1: "Fully customized, conversion-focused e-commerce storefronts designed to scale with your sales. We build on Liquid and headless APIs to make checkout frictionless and fast.",
     description2: "From storefront setup to liquid customization and seamless checkout optimization, we cover every aspect of e-commerce architecture.",
     callout: "E-commerce is a game of margins and milliseconds, and we optimize both to maximize customer lifetime value.",
@@ -82,158 +154,237 @@ A brand is more than a logo; it is the sum of all customer experiences. Consiste
     statLabel: "BOOST IN CONVERSION RATE",
     tags: ["Shopify Plus", "Liquid Coding", "API Integration", "Checkout Optim."],
     image: "/services/website-revamp.png",
-    content: `Building High-Converting Shopify Stores
-Shopify is one of the world's leading ecommerce platforms. We create fast, scalable, and conversion-focused Shopify stores that help brands establish a strong online presence, improve customer experience, and increase sales.
+    content: `### Introduction
+Your Shopify store should do more than display products—it should maximize revenue.
 
-### Our Comprehensive Shopify Services
-- Custom Shopify Store Development & Design
-- Shopify Theme Design
-- Shopify Theme Customization
-- Shopify Plus Development
-- Store Migration
+We build custom Shopify stores optimized for conversions, speed, user experience, and scalability.
+
+### Services
+- Shopify Store Setup
+- Custom Theme Development
+- Shopify Plus
+- Liquid Development
 - App Integration
-- Payment Gateway Integration
-- CRO & Speed Optimization
-- Store Maintenance
+- Checkout Optimization
+- Store Migration
+- Speed Optimization
 
-### Technologies & Tools
-Shopify, Liquid, HTML5, CSS3, JavaScript, Shopify CLI, GraphQL APIs, Shopify Plus, Klaviyo, Judge.me, Recharge, PageFly, Google Analytics 4, Google Tag Manager, and Meta Pixel.
+### Benefits
+- Faster stores
+- Better checkout experience
+- Higher conversions
+- Improved customer retention
+- Scalable ecommerce architecture
 
-### Our Development Process
-- Business Discovery & Planning
-- UI/UX Design & Theme Development
-- Product Setup, Integrations & Testing
-- Launch, Optimization & Ongoing Support
+### Our Process
+- **01. Strategy** — E-commerce auditing, UX mapping, and growth planning.
+- **02. Store Design** — Crafting high-converting, brand-aligned store layouts.
+- **03. Development** — Custom Liquid themes, app integrations, and custom APIs.
+- **04. Testing** — Cross-device, checkout, speed, and QA validation.
+- **05. Launch** — Zero-downtime deployment and catalog migration.
+- **06. Optimization** — Continuous CRO, speed tuning, and retention campaigns.
 
-### Why Choose Us?
-We develop high-performing Shopify stores with clean code, responsive design, optimized checkout experiences, advanced integrations, and scalable architecture to maximize ecommerce growth.
+### Related Solutions
+Grow your Shopify business using:
+- [SEO Solutions](/services/seo)
+- [Performance Marketing](/services/performance-marketing)
+- [Branding & Strategy](/services/branding)
 
-### Client Success Story
-A fashion retailer migrated to Shopify with a fully customized storefront, improving page speed, customer engagement, and online revenue through an optimized shopping experience.`
+### Frequently Asked Questions
+- **Can you redesign an existing Shopify store?** Absolutely. We improve UX, speed, branding, and conversion rates.`
   },
   {
     slug: "app-development",
     title: "App Development",
+    h1Title: "Custom Mobile App Development Services",
     tagline: "Native experiences, global reach.",
-    description1: "We engineer robust, high-performance mobile applications that deliver native-like user experiences on iOS and Android, connected to secure, scalable backend APIs.",
-    description2: "Whether iOS or Android, we develop seamless frontend interfaces connected to reliable, scalable backends.",
+    metaTitle: "Mobile App Development Company | Android & iOS Apps",
+    metaDescription: "Build mobile experiences your users actually enjoy. We create scalable Android and iOS applications focused on usability, performance, and business growth.",
+    description1: "Build mobile experiences your users actually enjoy.",
+    description2: "We create scalable Android and iOS applications focused on usability, performance, and business growth.",
     callout: "A great mobile app turns occasional buyers into highly engaged, loyal members of your ecosystem.",
     statValue: "4.8★",
     statLabel: "AVERAGE APP STORE RATING",
     tags: ["React Native", "iOS & Android", "API Architecture", "Cloud Scaling"],
     image: "/services/app-development.png",
-    content: `Building Powerful Mobile Applications
-Mobile applications have become an essential part of digital transformation. We develop scalable, secure, and user-friendly Android, iOS, and cross-platform applications that help businesses engage customers, streamline operations, and accelerate growth.
+    content: `### Introduction
+Build mobile experiences your users actually enjoy.
 
-### Our Comprehensive App Development Services
-- Android App Development
-- iOS App Development
-- Cross-Platform Apps
-- Flutter Development
-- React Native Development
-- UI/UX Design for Mobile Apps
-- Backend & API Development
-- App Maintenance & Support
-- App Store Deployment
+We create scalable Android and iOS applications focused on usability, performance, and business growth.
 
-### Technologies & Platforms
-Flutter, React Native, Kotlin, Swift, Java, Firebase, Node.js, REST APIs, GraphQL, AWS, Google Cloud, MongoDB, PostgreSQL, Figma, Git, and CI/CD pipelines.
+### Services
+- Android Apps
+- iOS Apps
+- React Native
+- Flutter
+- Backend APIs
+- Cloud Integration
+- UI/UX Design
+- App Maintenance
 
-### Our Development Process
-- Product Discovery & Strategy
-- UI/UX Design & Prototyping
-- Development, Testing & QA
-- Deployment, Monitoring & Continuous Improvement
+### Benefits
+- Cross-platform development
+- High performance
+- Secure architecture
+- Scalable infrastructure
 
-### Why Choose Us?
-We build secure, scalable, and performance-driven mobile applications with intuitive user experiences, modern architecture, and long-term technical support to help businesses grow.
+### Related Solutions
+Need a complete digital ecosystem? Explore:
+- [Website Development](/services/web-development)
+- [Branding](/services/branding)
+- [Performance Marketing](/services/performance-marketing)
 
-### Client Success Story
-A logistics company launched a custom mobile application that automated field operations, improved delivery tracking, and significantly increased operational efficiency.`
+### Frequently Asked Questions
+- **Which platform should I choose?** It depends on your audience, budget, and business goals. We help determine the best solution.`
   },
   {
     slug: "seo",
     title: "SEO Solutions",
+    h1Title: "SEO Services That Drive Sustainable Organic Growth",
     tagline: "Own the search, capture the intent.",
-    description1: "We optimize your website's search visibility to drive consistent, high-intent organic traffic that converts without recurring advertising spend.",
-    description2: "Through comprehensive keyword research, technical site audits, page-speed tuning, and authority building, we construct sustainable search rankings.",
+    metaTitle: "Professional SEO Services | Grow Organic Traffic | Southern Edge Marketing",
+    metaDescription: "SEO is more than rankings—it’s about attracting the right audience and converting them into customers. We provide technical SEO, content optimization, keyword strategy, and authority building.",
+    description1: "SEO is more than rankings—it’s about attracting the right audience and converting them into customers.",
+    description2: "We provide technical SEO, content optimization, keyword strategy, and authority building to improve visibility and increase qualified traffic.",
     callout: "Ranking #1 is cool, but ranking for the queries that actually make money is where real growth happens.",
     statValue: "150%",
     statLabel: "GROWTH IN ORGANIC SESSIONS",
     tags: ["Technical SEO", "Keyword Strategy", "Content Audits", "Link Building"],
     image: "/services/seo.png",
-    content: `Achieving Sustainable Organic Growth
-Search Engine Optimization (SEO) helps businesses increase visibility, attract qualified traffic, and generate long-term growth through higher rankings on search engines. Our SEO strategies combine technical expertise, content optimization, and authority building to deliver measurable results.
+    content: `### Introduction
+SEO is more than rankings—it’s about attracting the right audience and converting them into customers.
 
-### Our Comprehensive SEO Services
-- SEO Audits & Competitor Mapping
-- Strategic Keyword Research & Competitor Analysis
-- On-Page SEO & Content Strategy
-- Technical SEO & Site Architecture Tuning
-- Ethical Link Building & Authority Elevation
+We provide technical SEO, content optimization, keyword strategy, and authority building to improve visibility and increase qualified traffic.
 
-### Our SEO Process
-- Website Audit & Competitor Analysis
-- Keyword & Content Strategy
-- Technical & On-Page Optimization
-- Monitoring, Reporting & Continuous Growth
+### Services
+- Technical SEO
+- On-page SEO
+- Off-page SEO
+- Keyword Research
+- Content Strategy
+- Link Building
+- Local SEO
+- SEO Audits
 
-### Client Success Story
-A B2B software company doubled its organic traffic within months through technical optimization, strategic content creation, and authority-building campaigns, resulting in increased qualified inquiries.`
+### Benefits
+- Higher Google rankings
+- More qualified traffic
+- Better ROI
+- Long-term growth
+- Increased authority
+
+### Related Solutions
+Improve results with:
+- [Website Development](/services/web-development)
+- [Performance Marketing](/services/performance-marketing)
+- [Branding](/services/branding)
+
+### Frequently Asked Questions
+- **How long does SEO take?** Most businesses begin seeing measurable improvements within 3–6 months.`
   },
   {
     slug: "performance-marketing",
     title: "Performance Marketing",
+    h1Title: "Performance Marketing Focused on Measurable ROI",
     tagline: "Precision spending, measurable return.",
-    description1: "We run data-driven, highly optimized ad campaigns across Google and Meta to scale your acquisition pipeline with predictable customer acquisition costs.",
-    description2: "From audience research to ongoing optimization, we focus on measurable results and maximizing return on investment.",
+    metaTitle: "Performance Marketing Agency | Google & Meta Ads",
+    metaDescription: "Every advertising dollar should generate measurable business growth. We manage paid advertising campaigns across Google, Meta, LinkedIn, and other digital platforms while continuously optimizing for lower acquisition costs and higher returns.",
+    description1: "Every advertising dollar should generate measurable business growth.",
+    description2: "We manage paid advertising campaigns across Google, Meta, LinkedIn, and other digital platforms while continuously optimizing for lower acquisition costs and higher returns.",
     callout: "Ad budgets are easy to spend but hard to return — we design funnels that turn clicks into profitable scale.",
     statValue: "4.5x",
     statLabel: "AVERAGE RETURN ON AD SPEND",
     tags: ["Meta Ads", "Google Ads/PMax", "Funnel Optim.", "Audience Scaling"],
     image: "/services/performance-marketing.png",
-    content: `Driving Measurable Business Growth
-Performance marketing focuses on measurable results through paid advertising, audience targeting, conversion optimization, and continuous campaign improvements. We help brands maximize return on ad spend while generating qualified leads and sales.
+    content: `### Introduction
+Every advertising dollar should generate measurable business growth.
 
-### Our Performance Marketing Services
-- Google Search, Display & Performance Max Ads
-- Meta Ads (Facebook & Instagram campaigns)
-- LinkedIn Ads for B2B Lead Generation
-- Conversion Rate Optimization & Landing Page Tuning
-- Advanced Analytics Setup & ROI Dashboards
+We manage paid advertising campaigns across Google, Meta, LinkedIn, and other digital platforms while continuously optimizing for lower acquisition costs and higher returns.
 
-### Why Choose Us?
-We build highly targeted campaigns backed by analytics, creative testing, and conversion optimization to maximize ROI while minimizing wasted ad spend.
+### Services
+- Google Ads
+- Meta Ads
+- LinkedIn Ads
+- Remarketing
+- Conversion Tracking
+- Landing Pages
+- Funnel Optimization
+- Campaign Management
 
-### Client Success Story
-A D2C ecommerce brand increased online revenue by improving campaign targeting, optimizing product feeds, and implementing retargeting strategies that significantly boosted ROAS.`
+### Benefits
+- Lower CPA
+- Higher ROAS
+- Better conversions
+- Accurate reporting
+
+### Related Solutions
+Pair paid advertising with:
+- [Website Development](/services/web-development)
+- [SEO Solutions](/services/seo)
+- [Branding](/services/branding)
+- [Shopify Development](/services/shopify-development)
+
+### Frequently Asked Questions
+- **Do you manage existing ad accounts?** Yes. We can audit, optimize, or fully manage your campaigns.`
   },
   {
     slug: "social-media-management",
     title: "Social Media Management",
+    h1Title: "Social Media Management That Builds Communities",
     tagline: "Be talked about, not just scrolled past.",
-    description1: "We create high-engagement content strategies that build active communities and transform passive followers into active brand advocates.",
-    description2: "By combining trend analysis, native video production, and active community outreach, we amplify your brand's cultural relevance.",
+    metaTitle: "Social Media Management Services | Build Your Brand Online",
+    metaDescription: "Social media isn't just about posting content—it's about building meaningful relationships with your audience. We develop data-driven social media strategies that increase brand awareness, engagement, and customer loyalty.",
+    description1: "Social media isn't just about posting content—it's about building meaningful relationships with your audience.",
+    description2: "We develop data-driven social media strategies that increase brand awareness, engagement, and customer loyalty across today's most influential platforms.",
     callout: "Attention is the currency of the digital age — we build content that makes your brand the center of attention.",
     statValue: "6.8x",
     statLabel: "INCREASE IN SOCIAL ENGAGEMENT",
     tags: ["Content Creation", "Community Mgmt", "Short-Form Video", "Influencer Collab"],
     image: "/services/social-media.png",
-    content: `Building Communities and Cultural Relevance
-Social media is more than broadcasting messages; it is an active dialogue with your audience. We help businesses manage their profiles, create dynamic media assets, and foster active discussions.
+    content: `### Introduction
+Social media isn't just about posting content—it's about building meaningful relationships with your audience.
 
-### Our Social Media Services
-- Content Creation & Copywriting
-- Short-form Video Production (TikTok, Instagram Reels, YouTube Shorts)
-- Community Management & Direct Audience Engagement
-- Influencer Partnerships & Advocacy Campaigns
-- Social Listening & Sentiment Auditing
+We develop data-driven social media strategies that increase brand awareness, engagement, and customer loyalty across today's most influential platforms.
 
-### Strategic Impact of Social Media
-A strong social channel generates trust, provides instant feedback channels, builds brand equity, and serves as an organic acquisition driver. By staying on top of platform trends, we ensure your brand remains relevant, engaging, and top-of-mind.`
+### Services
+- Content Strategy
+- Content Creation
+- Social Media Design
+- Community Management
+- Reels & Short Videos
+- Influencer Campaigns
+- Social Advertising
+- Monthly Analytics
+
+### Benefits
+- Increased engagement
+- Better brand awareness
+- Stronger customer relationships
+- Consistent online presence
+
+### Process
+- **01. Research** — Understanding your audience, competitors, and channel opportunities.
+- **02. Content Planning** — Structuring themes, calendars, and platform distribution tactics.
+- **03. Creative Production** — Designing high-converting graphics, reels, and video assets.
+- **04. Publishing** — Managing schedule, optimal post times, and captions across platforms.
+- **05. Community Management** — Engaging with followers, comments, and direct messages in real time.
+- **06. Monthly Optimization** — Analyzing performance data and tuning strategy for compound growth.
+
+### Related Solutions
+Combine social growth with:
+- [Branding & Strategy](/services/branding)
+- [Performance Marketing](/services/performance-marketing)
+- [Website Development](/services/web-development)
+- [SEO Solutions](/services/seo)
+
+### Frequently Asked Questions
+- **Which social platforms do you manage?** We manage Instagram, Facebook, LinkedIn, X, TikTok, Pinterest, and YouTube depending on your business goals.`
   }
 ];
 
 export const getServiceBySlug = (slug: string) => {
+  if (slug === "website-development") return services.find((service) => service.slug === "web-development");
+  if (slug === "branding-strategy") return services.find((service) => service.slug === "branding");
+  if (slug === "seo-services") return services.find((service) => service.slug === "seo");
   return services.find((service) => service.slug === slug);
 };

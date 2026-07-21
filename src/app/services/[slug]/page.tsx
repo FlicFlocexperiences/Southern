@@ -11,9 +11,13 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
 export function generateStaticParams() {
-  return services.map((service) => ({
+  const params = services.map((service) => ({
     slug: service.slug,
   }));
+  params.push({ slug: "website-development" });
+  params.push({ slug: "branding-strategy" });
+  params.push({ slug: "seo-services" });
+  return params;
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -21,8 +25,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const service = getServiceBySlug(slug);
   if (!service) return {};
   return {
-    title: `${service.title} | Southern Edge Marketing`,
-    description: service.description1,
+    title: service.metaTitle || `${service.title} | Southern Edge Marketing`,
+    description: service.metaDescription || service.description1,
   };
 }
 

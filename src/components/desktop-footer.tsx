@@ -69,12 +69,13 @@ export const DesktopFooter = () => {
                 <FontAwesomeIcon icon={faLinkedinIn} className="w-[18px] h-[18px]" />
               </a>
               <a 
-                href="https://x.com" 
+                href="https://www.facebook.com/southernedgemarketing" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-full border border-white/20 hover:border-white/50 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300 hover:scale-105"
+                aria-label="Facebook"
               >
-                <FontAwesomeIcon icon={faXTwitter} className="w-[18px] h-[18px]" />
+                <FontAwesomeIcon icon={faFacebookF} className="w-[18px] h-[18px]" />
               </a>
               <a 
                 href="https://www.instagram.com/southernedgemarketing?igsh=MXF2bTlpNHZpbzlt&utm_source=qr" 

@@ -191,35 +191,57 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
 
   return (
     <div className="w-full bg-[#f2decc] min-h-screen pb-16">
-      {/* Clean Top Header matching Terms/Privacy reference design */}
-      <div className="w-full max-w-[1440px] mx-auto px-6 lg:px-12 pt-8 pb-4 flex flex-col items-start text-left">
-        <Link 
-          href="/" 
-          className="inline-flex items-center gap-2 text-[12px] md:text-[13px] font-bold tracking-widest text-[#de5e18] hover:text-black uppercase transition-colors mb-6"
-        >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
-          </svg>
-          BACK TO HOME
-        </Link>
+      {/* Top Hero Section */}
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 pt-6 pb-2">
+        {/* Mobile & Desktop Dark Hero Card */}
+        <div className="w-full bg-[#432d1c] text-white rounded-[28px] p-6 sm:p-10 lg:p-14 mb-6 shadow-lg relative overflow-hidden text-center flex flex-col items-center">
+          <div className="text-[11px] sm:text-[12px] tracking-[0.2em] font-bold text-[#de5e18] uppercase mb-3">
+            [ SERVICE ]
+          </div>
 
-        <div className="text-[12px] md:text-[13px] tracking-[0.2em] font-bold text-[#de5e18] uppercase mb-2">
-          [ SERVICE ]
+          <h1 className="text-[28px] sm:text-[42px] md:text-[54px] lg:text-[64px] font-extrabold leading-[1.1] tracking-tight mb-4 max-w-[900px] text-white">
+            {service.h1Title || service.title}
+          </h1>
+
+          <p className="text-[14px] sm:text-[16px] text-white/70 max-w-[650px] leading-relaxed mb-6 font-light">
+            {service.description1 || service.metaDescription || "Engineered to convert visitors into customers, not just look good. High-performance, mobile-first growth systems."}
+          </p>
+
+          <Link href="/contact" className="inline-block">
+            <button 
+              className="relative w-[260px] sm:w-[280px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
+              aria-label="Request Consultation"
+            >
+              {/* Inner Left Pill with right shadow */}
+              <div className="absolute left-0 top-0 w-[195px] sm:w-[215px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+                <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
+                <span className="font-medium text-[15px] sm:text-[16px] text-white tracking-tight whitespace-nowrap">
+                  Request Consultation
+                </span>
+              </div>
+              
+              {/* Right Arrow Icon */}
+              <div className="absolute right-[20px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
+                <svg className="w-[20px] h-[20px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                </svg>
+              </div>
+            </button>
+          </Link>
         </div>
 
-        <h1 className="text-[38px] sm:text-[52px] md:text-[64px] lg:text-[72px] font-extrabold text-[#0f0f0f] leading-[1.05] tracking-tight mb-4 max-w-[1000px]">
-          {service.title}
-        </h1>
-
-        <p className="text-[14px] md:text-[16px] text-black/60 font-medium">
-          Effective for all clients and visitors of Southern Edge Marketing.
-        </p>
-
-        <hr className="w-full border-t border-black/10 mt-8 mb-6" />
+        {/* Breadcrumb Navigation */}
+        <div className="flex items-center gap-2 text-[13px] sm:text-[14px] text-black/60 font-medium mb-6 px-1">
+          <Link href="/" className="hover:text-[#de5e18] transition-colors">Home</Link>
+          <span>/</span>
+          <Link href="/services" className="hover:text-[#de5e18] transition-colors">Services</Link>
+          <span>/</span>
+          <span className="text-[#de5e18] font-semibold truncate max-w-[200px] sm:max-w-none">{service.title}</span>
+        </div>
       </div>
 
       {/* Main Grid Layout */}
-      <div className="grid grid-cols-1 lg:grid-cols-[240px_1fr_280px] gap-8 xl:gap-12 items-start max-w-[1440px] mx-auto px-6 lg:px-12">
+      <div className="grid grid-cols-1 lg:grid-cols-[240px_1fr_280px] gap-8 xl:gap-12 items-start max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
         
         {/* Left Sidebar - Table of Contents */}
         <aside className="hidden lg:block sticky top-28 w-full pr-4">
@@ -253,22 +275,19 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
 
         {/* Middle Column - Content */}
         <div className="w-full min-w-0">
-          {/* Mobile Table of Contents Slider */}
+          {/* Mobile Horizontal Tabs Bar (Matching reference image) */}
           {sections.length > 0 && (
-            <div className="lg:hidden w-full mb-8">
-              <h4 className="text-[12px] font-bold uppercase tracking-[0.2em] text-black/60 mb-3 font-sans text-left">
-                TABLE OF CONTENTS
-              </h4>
+            <div className="lg:hidden w-full border-b border-black/10 mb-8 bg-[#f2decc]/90 sticky top-0 z-30 backdrop-blur-md">
               <div
                 ref={mobileSliderRef}
                 onMouseDown={handleMobileMouseDown}
                 onMouseLeave={handleMobileMouseLeave}
                 onMouseUp={handleMobileMouseUp}
                 onMouseMove={handleMobileMouseMove}
-                className="w-full overflow-x-auto flex gap-3 pb-3 cursor-grab active:cursor-grabbing select-none scrollbar-none scroll-smooth"
+                className="w-full overflow-x-auto flex gap-6 px-2 py-3 cursor-grab active:cursor-grabbing select-none scrollbar-none scroll-smooth"
                 style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
               >
-                {sections.map((sec, idx) => {
+                {sections.map((sec) => {
                   const isActive = activeId === sec.id;
                   return (
                     <a
@@ -282,13 +301,13 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
                           setActiveId(sec.id);
                         }
                       }}
-                      className={`shrink-0 px-5 py-2.5 rounded-full text-[13px] font-bold transition-all duration-300 ${
+                      className={`shrink-0 text-[14px] font-bold pb-2 transition-all border-b-2 whitespace-nowrap ${
                         isActive
-                          ? "bg-[#de5e18] text-white shadow-[0_4px_15px_rgba(222,94,24,0.25)] border border-transparent"
-                          : "bg-white border border-black/15 text-black hover:bg-neutral-50"
+                          ? "text-[#de5e18] border-[#de5e18]"
+                          : "text-black/50 border-transparent hover:text-black"
                       }`}
                     >
-                      {idx + 1}. {sec.title}
+                      {sec.title}
                     </a>
                   );
                 })}

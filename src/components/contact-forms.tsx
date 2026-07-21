@@ -23,9 +23,9 @@ const LinkedinIcon = () => (
   </svg>
 );
 
-const XIcon = () => (
-  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M4 4l16 16M4 20L20 4" />
+const FacebookIcon = () => (
+  <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
   </svg>
 );
 
@@ -84,9 +84,9 @@ export const ContactUsWidget = () => {
   const { handleSubmit, loading, success, error } = useContactForm();
 
   return (
-    <div className="w-full max-w-[1400px] mx-auto rounded-[32px] border-8 border-[#efeee9] bg-white p-4 md:p-6 flex flex-col md:flex-row gap-6 shadow-[0_12px_40px_rgba(0,0,0,0.03)] font-sans text-left">
+    <div className="w-full max-w-[1400px] mx-auto rounded-[32px] border-4 border-[#432d1c]/10 bg-white p-4 md:p-6 flex flex-col md:flex-row gap-6 shadow-[0_12px_40px_rgba(0,0,0,0.03)] font-sans text-left">
       {/* Left Box: Form Container */}
-      <div className="flex-1 bg-[#f4f3ef] rounded-[24px] p-6 md:p-8 flex flex-col">
+      <div className="flex-1 bg-[#f2decc]/30 rounded-[24px] p-6 md:p-8 flex flex-col">
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           
           {success && <p className="text-[#de5e18] font-medium text-[16px] mb-2">Thank you! We have received your message.</p>}
@@ -99,7 +99,7 @@ export const ContactUsWidget = () => {
               name="name" 
               required 
               placeholder="Enter your full name" 
-              className="w-full bg-white rounded-xl px-4 py-3.5 outline-none text-[16px] text-black border border-black/5 focus:border-[#e21b70]/40 focus:ring-1 focus:ring-[#e21b70]/40 transition-all placeholder:text-black/35" 
+              className="w-full bg-white rounded-xl px-4 py-3.5 outline-none text-[16px] text-black border border-black/10 focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] transition-all placeholder:text-black/35" 
             />
           </div>
 
@@ -111,7 +111,7 @@ export const ContactUsWidget = () => {
                 <input 
                   name="code"
                   list="country-codes-widget" 
-                  className="w-full bg-white rounded-xl px-3 py-3.5 outline-none text-[16px] text-black border border-black/5 focus:border-[#e21b70]/40 focus:ring-1 focus:ring-[#e21b70]/40 transition-all placeholder:text-black/35 cursor-pointer text-center" 
+                  className="w-full bg-white rounded-xl px-3 py-3.5 outline-none text-[16px] text-black border border-black/10 focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] transition-all placeholder:text-black/35 cursor-pointer text-center" 
                   placeholder="+Code"
                   required
                 />
@@ -125,7 +125,7 @@ export const ContactUsWidget = () => {
                 name="phone" 
                 required 
                 placeholder="Enter your phone number" 
-                className="flex-1 bg-white rounded-xl px-4 py-3.5 outline-none text-[16px] text-black border border-black/5 focus:border-[#e21b70]/40 focus:ring-1 focus:ring-[#e21b70]/40 transition-all placeholder:text-black/35" 
+                className="flex-1 bg-white rounded-xl px-4 py-3.5 outline-none text-[16px] text-black border border-black/10 focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] transition-all placeholder:text-black/35" 
               />
             </div>
           </div>
@@ -138,7 +138,7 @@ export const ContactUsWidget = () => {
               type="email" 
               required 
               placeholder="Enter your email" 
-              className="w-full bg-white rounded-xl px-4 py-3.5 outline-none text-[16px] text-black border border-black/5 focus:border-[#e21b70]/40 focus:ring-1 focus:ring-[#e21b70]/40 transition-all placeholder:text-black/35" 
+              className="w-full bg-white rounded-xl px-4 py-3.5 outline-none text-[16px] text-black border border-black/10 focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] transition-all placeholder:text-black/35" 
             />
           </div>
 
@@ -149,7 +149,7 @@ export const ContactUsWidget = () => {
               <select 
                 name="service" 
                 required 
-                className="w-full bg-white rounded-xl px-4 py-3.5 outline-none text-[16px] text-black border border-black/5 focus:border-[#e21b70]/40 focus:ring-1 focus:ring-[#e21b70]/40 transition-all cursor-pointer appearance-none" 
+                className="w-full bg-white rounded-xl px-4 py-3.5 outline-none text-[16px] text-black border border-black/10 focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] transition-all cursor-pointer appearance-none" 
                 defaultValue=""
               >
                 <option value="" disabled>Select a service</option>
@@ -176,7 +176,7 @@ export const ContactUsWidget = () => {
               name="projectDetails" 
               required 
               placeholder="Message goes here..." 
-              className="w-full bg-white rounded-xl px-4 py-3.5 outline-none text-[16px] text-black border border-black/5 focus:border-[#e21b70]/40 focus:ring-1 focus:ring-[#e21b70]/40 transition-all placeholder:text-black/35 h-[100px] resize-none" 
+              className="w-full bg-white rounded-xl px-4 py-3.5 outline-none text-[16px] text-black border border-black/10 focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] transition-all placeholder:text-black/35 h-[100px] resize-none" 
             />
           </div>
 
@@ -184,7 +184,7 @@ export const ContactUsWidget = () => {
           <button 
             disabled={loading} 
             type="submit" 
-            className="w-full py-4 rounded-full text-white font-bold text-[18px] tracking-wide bg-[#de5e18] active:scale-[0.99] transition-all cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed mt-2"
+            className="w-full py-4 rounded-full text-white font-bold text-[18px] tracking-wide bg-[#de5e18] hover:bg-[#c44e0e] active:scale-[0.99] transition-all cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed mt-2 shadow-[0_6px_16px_rgba(222,94,24,0.3)] hover:shadow-[0_8px_20px_rgba(222,94,24,0.45)]"
           >
             {loading ? "Submitting..." : "Submit"}
           </button>
@@ -192,10 +192,10 @@ export const ContactUsWidget = () => {
       </div>
 
       {/* Right Box: Info Callout Container */}
-      <div className="w-full md:w-[450px] bg-white border-2 border-dashed border-[#4d0e13] rounded-[24px] p-6 md:p-8 flex flex-col justify-between items-center text-center relative min-h-[460px] shrink-0">
+      <div className="w-full md:w-[450px] bg-white border-2 border-dashed border-[#de5e18]/30 rounded-[24px] p-6 md:p-8 flex flex-col justify-between items-center text-center relative min-h-[460px] shrink-0">
         {/* Brand Logo Circle */}
         <div className="absolute top-6 left-6 w-[76px] h-[76px] rounded-full border border-black/5 bg-[#ffffff] flex items-center justify-center p-2.5 shadow-l">
-          <img src="/sem_color.svg" alt="Southern Edge Marketing" className="max-h-full max-w-full object-contain" />
+          <img src="/layer-MC0.svg" alt="Southern Edge Marketing" className="max-h-full max-w-full object-contain" />
         </div>
 
         {/* Floating Time Badge */}
@@ -213,7 +213,7 @@ export const ContactUsWidget = () => {
           {/* Email Us Button */}
           <a 
             href="mailto:info@southernedgemarketing.com" 
-            className="w-full max-w-[260px] py-3.5 rounded-full text-white font-bold text-[16px] tracking-wide bg-[#de5e18] active:scale-[0.99] transition-all text-center block"
+            className="w-full max-w-[260px] py-3.5 rounded-full text-white font-bold text-[16px] tracking-wide bg-[#de5e18] active:scale-[0.99] transition-all text-center block shadow-[0_6px_16px_rgba(222,94,24,0.3)] hover:shadow-[0_8px_20px_rgba(222,94,24,0.45)]"
           >
             Email Us
           </a>
@@ -221,7 +221,7 @@ export const ContactUsWidget = () => {
           {/* Phone Link */}
           <p className="text-[14px] text-black/50 mt-5">
             or call us at 
-            <a href="tel:+919899238237" className="font-bold text-black hover:text-[#e21b70] transition-colors ml-1.5 whitespace-nowrap">
+            <a href="tel:+919899238237" className="font-bold text-black hover:text-[#de5e18] transition-colors ml-1.5 whitespace-nowrap">
               +91 98992 38237
             </a>
           </p>
@@ -229,14 +229,32 @@ export const ContactUsWidget = () => {
 
         {/* Social Icons at the bottom */}
         <div className="flex items-center gap-6 mt-6 pt-4 border-t border-black/5 w-full justify-center">
-          <a href="/contact" className="text-black/40 hover:text-[#e21b70] transition-all" aria-label="Instagram">
-            <InstagramIcon />
-          </a>
-          <a href="/contact" className="text-black/40 hover:text-[#e21b70] transition-all" aria-label="LinkedIn">
+          <a 
+            href="https://www.linkedin.com/company/southernedgemarketing/?viewAsMember=true" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-black/50 hover:text-[#de5e18] transition-all transform hover:scale-110" 
+            aria-label="LinkedIn"
+          >
             <LinkedinIcon />
           </a>
-          <a href="/contact" className="text-black/40 hover:text-[#e21b70] transition-all" aria-label="Twitter/X">
-            <XIcon />
+          <a 
+            href="https://www.facebook.com/southernedgemarketing" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-black/50 hover:text-[#de5e18] transition-all transform hover:scale-110" 
+            aria-label="Facebook"
+          >
+            <FacebookIcon />
+          </a>
+          <a 
+            href="https://www.instagram.com/southernedgemarketing?igsh=MXF2bTlpNHZpbzlt&utm_source=qr" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-black/50 hover:text-[#de5e18] transition-all transform hover:scale-110" 
+            aria-label="Instagram"
+          >
+            <InstagramIcon />
           </a>
         </div>
       </div>
