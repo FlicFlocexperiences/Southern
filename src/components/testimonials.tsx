@@ -57,14 +57,14 @@ export const Testimonials = () => {
   const current = testimonials[currentIndex];
 
   return (
-    <section className="w-full bg-[#fffff0] py-16 md:py-24 px-6 md:px-10 lg:px-[90px] flex flex-col items-center relative z-10">
+    <section className="w-full bg-[#f2decc] py-16 md:py-24 px-6 md:px-10 lg:px-[90px] flex flex-col items-center relative z-10">
       <div className="w-full max-w-[1280px] flex flex-col items-center">
         
         {/* Section Pill Label */}
         <p className="font-medium text-[20px] lg:text-[24px] mb-4 tracking-wide text-center">
-          <span className="text-[#ff5100]">[</span>
+          <span className="text-[#de5e18]">[</span>
           <span className="text-black mx-2 uppercase">TESTIMONIALS</span>
-          <span className="text-[#ff5100]">]</span>
+          <span className="text-[#de5e18]">]</span>
         </p>
 
         {/* Section Heading */}
@@ -111,7 +111,7 @@ export const Testimonials = () => {
             <div className="flex items-center gap-4">
               <button 
                 onClick={prev}
-                className="w-[46px] h-[46px] md:w-[50px] md:h-[50px] rounded-full border border-black/15 flex items-center justify-center text-black hover:bg-[#ff5100] hover:border-[#ff5100] hover:text-white transition-all duration-300 cursor-pointer shadow-sm active:scale-95"
+                className="w-[46px] h-[46px] md:w-[50px] md:h-[50px] rounded-full border border-black/15 flex items-center justify-center text-black hover:bg-[#de5e18] hover:border-[#de5e18] hover:text-white transition-all duration-300 cursor-pointer shadow-sm active:scale-95"
                 aria-label="Previous Testimonial"
               >
                 <ArrowLeftIcon />
@@ -119,7 +119,7 @@ export const Testimonials = () => {
 
               <button 
                 onClick={next}
-                className="w-[46px] h-[46px] md:w-[50px] md:h-[50px] rounded-full border border-black/15 flex items-center justify-center text-black hover:bg-[#ff5100] hover:border-[#ff5100] hover:text-white transition-all duration-300 cursor-pointer shadow-sm active:scale-95"
+                className="w-[46px] h-[46px] md:w-[50px] md:h-[50px] rounded-full border border-black/15 flex items-center justify-center text-black hover:bg-[#de5e18] hover:border-[#de5e18] hover:text-white transition-all duration-300 cursor-pointer shadow-sm active:scale-95"
                 aria-label="Next Testimonial"
               >
                 <ArrowRightIcon />

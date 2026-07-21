@@ -31,7 +31,7 @@ export const DesktopMarquee = () => {
   const multipliedOrangeItems = [...orangeStripItems, ...orangeStripItems, ...orangeStripItems, ...orangeStripItems];
 
   return (
-    <section className="w-full bg-[#fffff0] h-[500px] relative flex items-center justify-center overflow-hidden z-10 mt-[44px] mb-16">
+    <section className="w-full bg-[#f2decc] h-[500px] relative flex items-center justify-center overflow-hidden z-10 mt-[44px] mb-16">
       
       <style>{`
         @keyframes marquee {
@@ -66,7 +66,7 @@ export const DesktopMarquee = () => {
 
       {/* Foreground Orange Strip (4.6deg) */}
       <div 
-        className="absolute w-[120%] bg-[#ff5100] shadow-[0px_10px_30px_rgba(0,0,0,0.4)] py-5 z-10 flex whitespace-nowrap"
+        className="absolute w-[120%] bg-[#de5e18] shadow-[0px_10px_30px_rgba(0,0,0,0.4)] py-5 z-10 flex whitespace-nowrap"
         style={{ transform: "rotate(4.6deg)" }}
       >
         <div 

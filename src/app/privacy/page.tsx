@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicy() {
   return (
-    <div className="w-full bg-[#fffff0] min-h-screen flex flex-col">
+    <div className="w-full bg-[#f2decc] min-h-screen flex flex-col">
       <div className="hidden md:block">
         <DesktopNav />
       </div>
@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
       </div>
 
       <main className="flex-grow pt-32 pb-16 px-5 md:px-20 max-w-5xl mx-auto w-full">
-        <h4 className="text-[#ff5100] text-sm font-semibold tracking-wider uppercase mb-2">Compliance & Legal</h4>
+        <h4 className="text-[#de5e18] text-sm font-semibold tracking-wider uppercase mb-2">Compliance & Legal</h4>
         <h1 className="text-4xl md:text-5xl font-bold text-[#0f0f0f] mb-6">Privacy Policy</h1>
         
         <p className="text-lg text-[#828282] mb-12">

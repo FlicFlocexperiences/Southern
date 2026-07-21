@@ -52,7 +52,7 @@ export const DesktopBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
   }, [remainingBlogs, activeFilter, sortBy]);
 
   return (
-    <section className="w-full bg-[#fffff0] pb-32 pt-0 px-8 lg:px-[90px] flex flex-col relative z-10 overflow-hidden">
+    <section className="w-full bg-[#f2decc] pb-32 pt-0 px-8 lg:px-[90px] flex flex-col relative z-10 overflow-hidden">
       
       {/* Hero Section: Two-Column Layout */}
       <div className="flex flex-col lg:flex-row w-full gap-12 lg:gap-16 pt-32 lg:pt-36 mb-16 max-w-[1280px] mx-auto items-start">
@@ -84,7 +84,7 @@ Explore articles on UI/UX design, modern web development, branding, performance,
               />
             </div>
             {/* Featured Title */}
-            <h3 className="font-semibold text-[22px] md:text-[26px] leading-[1.25] text-black mt-6 mb-3 transition-colors duration-300 group-hover:text-[#ff5100]">
+            <h3 className="font-semibold text-[22px] md:text-[26px] leading-[1.25] text-black mt-6 mb-3 transition-colors duration-300 group-hover:text-[#de5e18]">
               {featuredBlog.title}
             </h3>
             {/* Featured Date */}
@@ -168,7 +168,7 @@ Explore articles on UI/UX design, modern web development, branding, performance,
               </div>
 
               {/* Title */}
-              <h3 className="font-semibold text-[18px] md:text-[21px] leading-[1.3] text-black transition-colors duration-300 group-hover:text-[#ff5100]">
+              <h3 className="font-semibold text-[18px] md:text-[21px] leading-[1.3] text-black transition-colors duration-300 group-hover:text-[#de5e18]">
                 {blog.title}
               </h3>
             </Link>

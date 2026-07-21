@@ -196,14 +196,14 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     project.category.toLowerCase().includes("videography");
 
   return (
-    <div className="w-full min-h-screen bg-[#fffff0]">
+    <div className="w-full min-h-screen bg-[#f2decc]">
       <div className="block md:hidden"><MobileNav /></div>
       <div className="hidden md:block"><DesktopNav /></div>
 
       <main className="w-full pt-32 lg:pt-48 px-6 lg:px-[90px] pb-24">
         {/* Header Title & Visit Website Button */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8 lg:mb-12 border-b border-[#30261C]/10 pb-6 lg:pb-8">
-          <h1 className="text-[30px] lg:text-[50px] xl:text-[60px] font-medium leading-[1] text-[#30261C] uppercase tracking-tighter">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8 lg:mb-12 border-b border-[#432d1c]/10 pb-6 lg:pb-8">
+          <h1 className="text-[30px] lg:text-[50px] xl:text-[60px] font-medium leading-[1] text-[#432d1c] uppercase tracking-tighter">
             {project.title}
           </h1>
 
@@ -219,11 +219,11 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                     rel="noreferrer"
                   >
                     <button 
-                      className="relative w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] overflow-hidden shadow-[0px_6px_16px_rgba(255,81,0,0.35)] hover:shadow-[0px_8px_20px_rgba(255,81,0,0.5)] transition-shadow group cursor-pointer"
+                      className="relative w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
                       aria-label="Visit Website"
                     >
                       {/* Inner Left Pill with right shadow */}
-                      <div className="absolute left-[0px] top-0 w-[165px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+                      <div className="absolute left-[0px] top-0 w-[165px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
                         <span className="font-semibold text-[13px] text-white tracking-tight uppercase whitespace-nowrap pt-0.5">
                           Visit Website
                         </span>
@@ -250,7 +250,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             <ProjectGallerySlider images={galleryImages} />
           </div>
         ) : (
-          <div className="w-full aspect-[12/8] md:h-[800px] md:aspect-auto rounded-[24px] lg:rounded-[36px] overflow-hidden mb-16 lg:mb-24 bg-[#30261C]/5 relative shadow-md">
+          <div className="w-full aspect-[12/8] md:h-[800px] md:aspect-auto rounded-[24px] lg:rounded-[36px] overflow-hidden mb-16 lg:mb-24 bg-[#432d1c]/5 relative shadow-md">
             <img 
               src={project.heroImage || project.image} 
               alt={`${project.title} Hero`} 
@@ -264,41 +264,41 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           {/* Main Content Columns */}
           <div className="lg:col-span-8 space-y-16">
             {/* Heading 1: Overview */}
-            <div className="border-t border-[#30261C]/15 pt-8">
-              <h2 className="text-[24px] lg:text-[32px] font-semibold text-[#30261C] uppercase tracking-tight mb-4">
+            <div className="border-t border-[#432d1c]/15 pt-8">
+              <h2 className="text-[24px] lg:text-[32px] font-semibold text-[#432d1c] uppercase tracking-tight mb-4">
                 01 / Project Overview
               </h2>
-              <p className="text-[18px] lg:text-[22px] leading-[1.6] text-[#30261C]/80 font-light">
+              <p className="text-[18px] lg:text-[22px] leading-[1.6] text-[#432d1c]/80 font-light">
                 {project.description}
               </p>
             </div>
 
             {/* Heading 2: Scope & Services */}
-            <div className="border-t border-[#30261C]/15 pt-8">
-              <h2 className="text-[24px] lg:text-[32px] font-semibold text-[#30261C] uppercase tracking-tight mb-4">
+            <div className="border-t border-[#432d1c]/15 pt-8">
+              <h2 className="text-[24px] lg:text-[32px] font-semibold text-[#432d1c] uppercase tracking-tight mb-4">
                 02 / Scope & Services
               </h2>
-              <p className="text-[18px] lg:text-[22px] leading-[1.6] text-[#30261C]/80 font-light">
-                For {project.title}, our design and development teams collaborated to deliver standard-setting digital solutions. The core deliverables included: <span className="font-normal text-[#30261C]">{project.services}</span>. Every element was crafted to align with the brand's primary values and target audience requirements.
+              <p className="text-[18px] lg:text-[22px] leading-[1.6] text-[#432d1c]/80 font-light">
+                For {project.title}, our design and development teams collaborated to deliver standard-setting digital solutions. The core deliverables included: <span className="font-normal text-[#432d1c]">{project.services}</span>. Every element was crafted to align with the brand's primary values and target audience requirements.
               </p>
             </div>
 
             {/* Heading 3: Strategy & Execution */}
-            <div className="border-t border-[#30261C]/15 pt-8" id="approach">
-              <h2 className="text-[24px] lg:text-[32px] font-semibold text-[#30261C] uppercase tracking-tight mb-4">
+            <div className="border-t border-[#432d1c]/15 pt-8" id="approach">
+              <h2 className="text-[24px] lg:text-[32px] font-semibold text-[#432d1c] uppercase tracking-tight mb-4">
                 03 / Strategy & Execution
               </h2>
-              <p className="text-[18px] lg:text-[22px] leading-[1.6] text-[#30261C]/80 font-light">
+              <p className="text-[18px] lg:text-[22px] leading-[1.6] text-[#432d1c]/80 font-light">
                 {getProjectExecutionText(slug, project.title, project.category)}
               </p>
             </div>
 
             {/* Heading 4: Impact & After Effect */}
-            <div className="border-t border-[#30261C]/15 pt-8">
-              <h2 className="text-[24px] lg:text-[32px] font-semibold text-[#30261C] uppercase tracking-tight mb-4">
+            <div className="border-t border-[#432d1c]/15 pt-8">
+              <h2 className="text-[24px] lg:text-[32px] font-semibold text-[#432d1c] uppercase tracking-tight mb-4">
                 04 / Results & Impact
               </h2>
-              <p className="text-[18px] lg:text-[22px] leading-[1.6] text-[#30261C]/80 font-light">
+              <p className="text-[18px] lg:text-[22px] leading-[1.6] text-[#432d1c]/80 font-light">
                 {getProjectAfterEffectText(slug, project.title, project.category)}
               </p>
             </div>
@@ -306,28 +306,28 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
           {/* Heading 5: Project Specifications / Metadata Column */}
           <div className="lg:col-span-4">
-            <div className="lg:sticky lg:top-36 border-t border-[#30261C]/15 lg:border-t-0 pt-8 lg:pt-0">
-              <div className="bg-[#30261C]/5 rounded-[24px] p-8 border border-[#30261C]/10">
-                <h2 className="text-[20px] font-semibold text-[#30261C] uppercase tracking-tight mb-6">
+            <div className="lg:sticky lg:top-36 border-t border-[#432d1c]/15 lg:border-t-0 pt-8 lg:pt-0">
+              <div className="bg-[#432d1c]/5 rounded-[24px] p-8 border border-[#432d1c]/10">
+                <h2 className="text-[20px] font-semibold text-[#432d1c] uppercase tracking-tight mb-6">
                   05 / Project Specs
                 </h2>
                 
                 <div className="space-y-6">
-                  <div className="flex flex-col border-b border-[#30261C]/10 pb-4">
-                    <span className="text-[11px] text-[#30261C]/40 uppercase tracking-widest mb-1">Client</span>
-                    <span className="text-[16px] font-medium text-[#30261C]">{project.client}</span>
+                  <div className="flex flex-col border-b border-[#432d1c]/10 pb-4">
+                    <span className="text-[11px] text-[#432d1c]/40 uppercase tracking-widest mb-1">Client</span>
+                    <span className="text-[16px] font-medium text-[#432d1c]">{project.client}</span>
                   </div>
-                  <div className="flex flex-col border-b border-[#30261C]/10 pb-4">
-                    <span className="text-[11px] text-[#30261C]/40 uppercase tracking-widest mb-1">Duration</span>
-                    <span className="text-[16px] font-medium text-[#30261C]">{project.duration}</span>
+                  <div className="flex flex-col border-b border-[#432d1c]/10 pb-4">
+                    <span className="text-[11px] text-[#432d1c]/40 uppercase tracking-widest mb-1">Duration</span>
+                    <span className="text-[16px] font-medium text-[#432d1c]">{project.duration}</span>
                   </div>
-                  <div className="flex flex-col border-b border-[#30261C]/10 pb-4">
-                    <span className="text-[11px] text-[#30261C]/40 uppercase tracking-widest mb-1">Category</span>
-                    <span className="text-[16px] font-medium text-[#30261C]">{project.category}</span>
+                  <div className="flex flex-col border-b border-[#432d1c]/10 pb-4">
+                    <span className="text-[11px] text-[#432d1c]/40 uppercase tracking-widest mb-1">Category</span>
+                    <span className="text-[16px] font-medium text-[#432d1c]">{project.category}</span>
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-[11px] text-[#30261C]/40 uppercase tracking-widest mb-1">Services</span>
-                    <span className="text-[16px] font-medium text-[#30261C]">{project.services}</span>
+                    <span className="text-[11px] text-[#432d1c]/40 uppercase tracking-widest mb-1">Services</span>
+                    <span className="text-[16px] font-medium text-[#432d1c]">{project.services}</span>
                   </div>
                 </div>
               </div>
@@ -337,8 +337,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
         {/* Horizontal Carousel of 3:4 for images */}
         {!isPhotographyVideography && galleryImages.length > 0 && (
-          <div className="w-full mt-16 lg:mt-24 border-t border-[#30261C]/15 pt-12">
-            <h2 className="text-[28px] lg:text-[42px] font-medium text-[#30261C] mb-8 lg:mb-12 uppercase tracking-tight">
+          <div className="w-full mt-16 lg:mt-24 border-t border-[#432d1c]/15 pt-12">
+            <h2 className="text-[28px] lg:text-[42px] font-medium text-[#432d1c] mb-8 lg:mb-12 uppercase tracking-tight">
               Project Gallery
             </h2>
             <ProjectGallerySlider images={galleryImages} />

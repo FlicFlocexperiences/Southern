@@ -35,10 +35,10 @@ export const DesktopComparison = () => {
     "Basic support"
   ];
 
-  const highlightClass = `transition-colors duration-300 ${isOn ? 'text-[#ff5100]' : 'text-gray-500'}`;
+  const highlightClass = `transition-colors duration-300 ${isOn ? 'text-[#de5e18]' : 'text-gray-500'}`;
 
   return (
-    <section className="w-full bg-[#fffff0] py-24 px-8 lg:px-[90px] flex flex-col items-start relative z-10">
+    <section className="w-full bg-[#f2decc] py-24 px-8 lg:px-[90px] flex flex-col items-start relative z-10">
       
       {/* Intro Text */}
       <div className="max-w-[1200px] mb-20">
@@ -55,7 +55,7 @@ export const DesktopComparison = () => {
           <div className="relative inline-flex items-center mx-2">
             <button 
               onClick={() => setIsOn(!isOn)}
-              className={`relative w-[84px] h-[46px] rounded-full p-[3px] flex items-center shadow-inner cursor-pointer transition-colors duration-300 ${isOn ? 'bg-[#ff5100] hover:bg-[#e64a00]' : 'bg-gray-400 hover:bg-gray-500'}`}
+              className={`relative w-[84px] h-[46px] rounded-full p-[3px] flex items-center shadow-inner cursor-pointer transition-colors duration-300 ${isOn ? 'bg-[#de5e18] hover:bg-[#e64a00]' : 'bg-gray-400 hover:bg-gray-500'}`}
               aria-label="Toggle comparison"
             >
               <div className={`w-[40px] h-[40px] bg-white rounded-full shadow-sm transition-transform duration-300 ${isOn ? 'translate-x-[38px]' : 'translate-x-[0px]'}`}></div>
@@ -90,7 +90,7 @@ export const DesktopComparison = () => {
         {/* Right Side: Southern Marketing */}
         <div className={`w-1/2 relative flex flex-col overflow-hidden rounded-[15px] m-1 my-1 shadow-xl transition-colors duration-300 ${isOn ? 'bg-black text-white' : 'bg-white text-black'}`}>
           {/* Subtle Orange Glow inside black card */}
-          <div className={`absolute -bottom-[30%] -right-[10%] w-[80%] h-[80%] rounded-full mix-blend-screen filter blur-[120px] opacity-60 pointer-events-none transition-all duration-300 ${isOn ? 'bg-[#ff5100]' : 'opacity-0'}`}></div>
+          <div className={`absolute -bottom-[30%] -right-[10%] w-[80%] h-[80%] rounded-full mix-blend-screen filter blur-[120px] opacity-60 pointer-events-none transition-all duration-300 ${isOn ? 'bg-[#de5e18]' : 'opacity-0'}`}></div>
           
           <div className="relative z-10 p-9 lg:p-13 xl:p-15 flex flex-col h-full">
             <h3 className="text-[32px] xl:text-[35px] font-medium mb-6">

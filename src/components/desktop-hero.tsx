@@ -6,7 +6,7 @@ import ColorBends from "./ColorBends";
 
 export const DesktopHero = () => {
   return (
-    <div className="w-full flex flex-col bg-[#fffff0]">
+    <div className="w-full flex flex-col bg-[#f2decc]">
       {/* Hero Content Full Screen Wrapper */}
       <div className="w-full relative flex flex-col items-center min-h-screen pt-[245px] pb-16 overflow-hidden">
         {/* Background ColorBends */}
@@ -30,8 +30,8 @@ export const DesktopHero = () => {
         </div>
 
         {/* Background blurred elements */}
-        <div className="absolute bg-[#ff5100]/20 blur-[100px] h-[400px] left-[-100px] top-[30%] w-[400px] rounded-full pointer-events-none" />
-        <div className="absolute bg-[#ff5100]/20 blur-[100px] h-[400px] right-[-100px] top-[10%] w-[400px] rounded-full pointer-events-none" />
+        <div className="absolute bg-[#de5e18]/20 blur-[100px] h-[400px] left-[-100px] top-[30%] w-[400px] rounded-full pointer-events-none" />
+        <div className="absolute bg-[#de5e18]/20 blur-[100px] h-[400px] right-[-100px] top-[10%] w-[400px] rounded-full pointer-events-none" />
 
         <div className="flex-1 flex flex-col items-center justify-center w-full z-10">
           {/* Hero Text */}
@@ -40,7 +40,7 @@ export const DesktopHero = () => {
               More than just digital
             </p>
             <h1 className="font-semibold text-[48px] lg:text-[64px] xl:text-[76px] leading-[1.05] tracking-tight text-black flex flex-col uppercase">
-              <span className="text-[#ff5100] mb-1">We turn</span>
+              <span className="text-[#de5e18] mb-1">We turn</span>
               <span>Attention into action</span>
             </h1>
           </div>
@@ -49,11 +49,11 @@ export const DesktopHero = () => {
           <div className="mt-14">
             <Link href="/contact">
               <button 
-                className="relative w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] overflow-hidden shadow-[0px_6px_16px_rgba(255,81,0,0.35)] hover:shadow-[0px_8px_20px_rgba(255,81,0,0.5)] transition-shadow group cursor-pointer"
+                className="relative w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
                 aria-label="Start Growing"
               >
                 {/* Inner Left Pill with right shadow */}
-                <div className="absolute left-[0px] top-0 w-[157px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+                <div className="absolute left-[0px] top-0 w-[157px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
                   <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
                   <span className="font-medium text-[18px] text-white tracking-tight whitespace-nowrap">
                     Start Growing
@@ -75,7 +75,7 @@ export const DesktopHero = () => {
         <div className="w-full px-8 md:px-12 mt-16 flex items-end justify-between z-10">
           {/* Left side text */}
           <div className="flex items-start gap-3 max-w-[420px]">
-            <svg className="w-6 h-6 text-[#ff5100] shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6 text-[#de5e18] shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
             </svg>
             <p className="text-[14px] xl:text-[16px] font-medium text-black/70 leading-[1.3]">

@@ -27,14 +27,14 @@ const steps = [
 
 export const HowWeWork = () => {
   return (
-    <section className="w-full bg-[#fffff0] py-16 md:py-24 px-6 md:px-10 lg:px-[90px] flex flex-col items-center relative z-10">
+    <section className="w-full bg-[#f2decc] py-16 md:py-24 px-6 md:px-10 lg:px-[90px] flex flex-col items-center relative z-10">
       <div className="w-full max-w-[1480px] flex flex-col items-start">
         
         {/* Section Pill */}
         <p className="font-medium text-[18px] md:text-[22px] mb-4 tracking-wide">
-          <span className="text-[#ff5100]">[</span>
+          <span className="text-[#de5e18]">[</span>
           <span className="text-black mx-2 uppercase font-semibold">HOW WE WORK</span>
-          <span className="text-[#ff5100]">]</span>
+          <span className="text-[#de5e18]">]</span>
         </p>
 
         {/* Section Heading */}
@@ -52,10 +52,10 @@ export const HowWeWork = () => {
               <div>
                 {/* Step Number Badge */}
                 <div className="flex items-center justify-between mb-8">
-                  <span className="text-[36px] font-bold text-[#ff5100] tracking-tighter">
+                  <span className="text-[36px] font-bold text-[#de5e18] tracking-tighter">
                     {step.num}
                   </span>
-                  <div className="w-2.5 h-2.5 rounded-full bg-[#ff5100]/30 group-hover:bg-[#ff5100] transition-colors duration-300" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-[#de5e18]/30 group-hover:bg-[#de5e18] transition-colors duration-300" />
                 </div>
 
                 <h3 className="text-[22px] md:text-[24px] font-bold text-[#0f0f0f] mb-3 leading-snug">

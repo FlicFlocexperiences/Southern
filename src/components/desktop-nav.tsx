@@ -29,7 +29,7 @@ export const DesktopNav = () => {
 
 
       {/* Main Navbar */}
-      <nav className="w-full h-[68px] bg-[#ff5100] rounded-full flex items-center justify-between px-6 relative overflow-hidden shadow-sm">
+      <nav className="w-full h-[68px] bg-[#de5e18] rounded-full flex items-center justify-between px-6 relative overflow-hidden shadow-sm">
         {/* Logo */}
         <div className="flex items-center shrink-0">
           <Link href="/">
@@ -75,7 +75,7 @@ export const DesktopNav = () => {
             </span>
           </div>
           <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center relative overflow-hidden group-hover:rotate-45 transition-transform duration-300 shadow-inner">
-             <div className="absolute inset-0 bg-gradient-to-r from-[#ffa479] to-[#ff5100]" />
+             <div className="absolute inset-0 bg-gradient-to-r from-[#ffa479] to-[#de5e18]" />
              <div className="relative z-10 text-white">
                <ArrowRightIcon />
              </div>

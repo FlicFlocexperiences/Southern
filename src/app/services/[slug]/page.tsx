@@ -35,7 +35,7 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
   }
 
   return (
-    <div className="w-full min-h-screen bg-[#fffff0]">
+    <div className="w-full min-h-screen bg-[#f2decc]">
       {/* Navigation Headers */}
       <div className="block md:hidden"><MobileNav /></div>
       <div className="hidden md:block"><DesktopNav /></div>

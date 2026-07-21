@@ -125,7 +125,7 @@ export const ProjectGallerySlider: React.FC<ProjectGallerySliderProps> = ({ imag
       <div className="w-full flex justify-end items-center gap-3 mb-6 md:mb-8">
         <button
           onClick={() => scroll("left")}
-          className="w-12 h-12 rounded-full bg-[#ff5100] text-white flex items-center justify-center cursor-pointer hover:bg-[#e04400] transition-colors border-none outline-none shadow-sm active:scale-95"
+          className="w-12 h-12 rounded-full bg-[#de5e18] text-white flex items-center justify-center cursor-pointer hover:bg-[#e04400] transition-colors border-none outline-none shadow-sm active:scale-95"
           aria-label="Scroll left"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -134,7 +134,7 @@ export const ProjectGallerySlider: React.FC<ProjectGallerySliderProps> = ({ imag
         </button>
         <button
           onClick={() => scroll("right")}
-          className="w-12 h-12 rounded-full bg-[#ff5100] text-white flex items-center justify-center cursor-pointer hover:bg-[#e04400] transition-colors border-none outline-none shadow-sm active:scale-95"
+          className="w-12 h-12 rounded-full bg-[#de5e18] text-white flex items-center justify-center cursor-pointer hover:bg-[#e04400] transition-colors border-none outline-none shadow-sm active:scale-95"
           aria-label="Scroll right"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -158,7 +158,7 @@ export const ProjectGallerySlider: React.FC<ProjectGallerySliderProps> = ({ imag
         {displayedImages.map((image, index) => (
           <div
             key={index}
-            className="snap-start shrink-0 w-[260px] sm:w-[320px] md:w-[400px] aspect-[3/4] rounded-[20px] md:rounded-[28px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group"
+            className="snap-start shrink-0 w-[260px] sm:w-[320px] md:w-[400px] aspect-[3/4] rounded-[20px] md:rounded-[28px] overflow-hidden bg-[#432d1c]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group"
           >
             <img
               src={image}

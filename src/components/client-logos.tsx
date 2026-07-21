@@ -5,8 +5,8 @@ import React from "react";
 export const DesktopClientLogos = () => {
   return (
     <div className="w-full relative overflow-hidden py-28 z-10">
-      <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#fffff0] to-transparent z-20 pointer-events-none" />
-      <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#fffff0] to-transparent z-20 pointer-events-none" />
+      <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#f2decc] to-transparent z-20 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#f2decc] to-transparent z-20 pointer-events-none" />
       <div className="animate-logo-slide flex items-center w-max">
         {Array.from({ length: 30 }).map((_, index) => {
           const logoIndex = (index % 15) + 1;
@@ -28,8 +28,8 @@ export const DesktopClientLogos = () => {
 export const MobileClientLogos = () => {
   return (
     <div className="w-full relative overflow-hidden py-16 z-10">
-      <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-[#fffff0] to-transparent z-20 pointer-events-none" />
-      <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-[#fffff0] to-transparent z-20 pointer-events-none" />
+      <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-[#f2decc] to-transparent z-20 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-[#f2decc] to-transparent z-20 pointer-events-none" />
       <div className="animate-logo-slide flex items-center w-max">
         {Array.from({ length: 30 }).map((_, index) => {
           const logoIndex = (index % 15) + 1;

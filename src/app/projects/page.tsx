@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <div className="w-full min-h-screen bg-[#fffff0]">
+    <div className="w-full min-h-screen bg-[#f2decc]">
       {/* Navigation */}
       <div className="block md:hidden"><MobileNav /></div>
       <div className="hidden md:block"><DesktopNav /></div>

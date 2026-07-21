@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 const ArrowUpRight = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ff5100" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#de5e18" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M7 17L17 7M17 17V7H7" />
   </svg>
 );
@@ -35,16 +35,16 @@ export default function Contact() {
   return (
     <>
       {/* Mobile Version */}
-      <div className="md:hidden w-full bg-[#fffff0]">
+      <div className="md:hidden w-full bg-[#f2decc]">
         <MobileNav />
         <div style={{ zoom: 0.8 }}>
           {/* Mobile Contact Hero */}
           <section className="w-full px-5 pt-28 pb-8 flex flex-col items-start relative z-10">
             <div className="flex flex-col items-start mb-8 w-full">
               <p className="font-medium text-[20px] mb-4 tracking-wide">
-                <span className="text-[#ff5100]">[</span>
+                <span className="text-[#de5e18]">[</span>
                 <span className="text-black mx-2 uppercase tracking-[-0.6px]">Let's Connect</span>
-                <span className="text-[#ff5100]">]</span>
+                <span className="text-[#de5e18]">]</span>
               </p>
               
               <div className="w-full h-px bg-black/10 mb-4" />
@@ -76,11 +76,11 @@ export default function Contact() {
               Trusted by many
             </p>
             <div className="w-full flex items-center justify-between relative overflow-hidden h-[100px]">
-              <span className="text-[#ff5100] text-[75px] font-medium absolute left-0 z-30 leading-none -top-2 bg-[#fffff0] pr-2 pointer-events-none">[</span>
+              <span className="text-[#de5e18] text-[75px] font-medium absolute left-0 z-30 leading-none -top-2 bg-[#f2decc] pr-2 pointer-events-none">[</span>
               
               <div className="w-full relative overflow-hidden h-full z-10 pl-[30px] pr-[30px]">
-                <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-[#fffff0] to-transparent z-20 pointer-events-none" />
-                <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-[#fffff0] to-transparent z-20 pointer-events-none" />
+                <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-[#f2decc] to-transparent z-20 pointer-events-none" />
+                <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-[#f2decc] to-transparent z-20 pointer-events-none" />
                 
                 <div className="animate-logo-slide flex items-center w-max h-full">
                   {Array.from({ length: 30 }).map((_, index) => {
@@ -98,7 +98,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <span className="text-[#ff5100] text-[75px] font-medium absolute right-0 z-30 leading-none -top-2 bg-[#fffff0] pl-2 pointer-events-none">]</span>
+              <span className="text-[#de5e18] text-[75px] font-medium absolute right-0 z-30 leading-none -top-2 bg-[#f2decc] pl-2 pointer-events-none">]</span>
             </div>
           </section>
           */}
@@ -108,16 +108,16 @@ export default function Contact() {
       </div>
 
       {/* Desktop Version */}
-      <div className="hidden md:block w-full min-h-screen bg-[#fffff0]">
+      <div className="hidden md:block w-full min-h-screen bg-[#f2decc]">
         <DesktopNav />
         <div style={{ zoom: 0.8 }}>
           {/* Contact Us Hero Section */}
           <section className="w-full px-8 lg:px-[90px] pt-32 pb-10 flex flex-col items-start relative z-10 max-w-8xl mx-auto min-h-[calc(100vh-100px)]">
             <div className="flex flex-col items-start mb-12 w-full">
               <p className="font-medium text-[24px] mb-6 tracking-wide">
-                <span className="text-[#ff5100]">[</span>
+                <span className="text-[#de5e18]">[</span>
                 <span className="text-black mx-2 uppercase">Let's Connect</span>
-                <span className="text-[#ff5100]">]</span>
+                <span className="text-[#de5e18]">]</span>
               </p>
               
               {/* Subtle divider line */}
@@ -140,11 +140,11 @@ export default function Contact() {
               Trusted by many
             </p>
             <div className="w-full flex items-center justify-between relative overflow-hidden h-[100px] lg:h-[120px]">
-              <span className="text-[#ff5100] text-[80px] lg:text-[96px] font-medium absolute left-0 z-30 leading-none -top-4 bg-[#fffff0] pr-4 pointer-events-none">[</span>
+              <span className="text-[#de5e18] text-[80px] lg:text-[96px] font-medium absolute left-0 z-30 leading-none -top-4 bg-[#f2decc] pr-4 pointer-events-none">[</span>
               
               <div className="w-full relative overflow-hidden h-full z-10 pl-[50px] pr-[50px]">
-                <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#fffff0] to-transparent z-20 pointer-events-none" />
-                <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#fffff0] to-transparent z-20 pointer-events-none" />
+                <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#f2decc] to-transparent z-20 pointer-events-none" />
+                <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#f2decc] to-transparent z-20 pointer-events-none" />
                 
                 <div className="animate-logo-slide flex items-center w-max h-full">
                   {Array.from({ length: 30 }).map((_, index) => {
@@ -162,7 +162,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <span className="text-[#ff5100] text-[80px] lg:text-[96px] font-medium absolute right-0 z-30 leading-none -top-4 bg-[#fffff0] pl-4 pointer-events-none">]</span>
+              <span className="text-[#de5e18] text-[80px] lg:text-[96px] font-medium absolute right-0 z-30 leading-none -top-4 bg-[#f2decc] pl-4 pointer-events-none">]</span>
             </div>
           </section>
           */}

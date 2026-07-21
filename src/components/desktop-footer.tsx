@@ -31,7 +31,7 @@ export const DesktopFooter = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <footer className="w-full bg-[#30261c] text-[#ffffff] pt-16 pb-12 px-8 lg:px-[90px] relative z-10 overflow-hidden flex flex-col font-sans" style={{ zoom: 0.8 }}>
+    <footer className="w-full bg-[#432d1c] text-[#ffffff] pt-16 pb-12 px-8 lg:px-[90px] relative z-10 overflow-hidden flex flex-col font-sans" style={{ zoom: 0.8 }}>
       <div className="w-full max-w-[1840px] mx-auto flex flex-col">
         
         {/* 6-Column Grid */}
@@ -168,7 +168,7 @@ export const DesktopFooter = () => {
             <span className="text-[24px] lg:text-[28px] text-white/70 font-semibold shrink-0 flex items-center gap-3 group-hover:text-white transition-colors duration-300">
               Explore More
               <svg 
-                className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#ff5100]' : 'text-white/50 group-hover:text-white'}`}
+                className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#de5e18]' : 'text-white/50 group-hover:text-white'}`}
                 fill="none" 
                 stroke="currentColor" 
                 strokeWidth="2.5" 
@@ -188,13 +188,13 @@ export const DesktopFooter = () => {
                 href={`/explore-more/${article.slug}`}
                 className="flex flex-col gap-2 p-6 rounded-[20px] bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 group/item"
               >
-                <h4 className="text-[20px] lg:text-[22px] font-medium text-white group-hover/item:text-[#ff5100] transition-colors duration-300 leading-tight">
+                <h4 className="text-[20px] lg:text-[22px] font-medium text-white group-hover/item:text-[#de5e18] transition-colors duration-300 leading-tight">
                   {article.title}
                 </h4>
                 <p className="text-[14px] lg:text-[15px] text-white/60 group-hover/item:text-white/80 transition-colors duration-300 font-light font-sans line-clamp-2">
                   {article.excerpt}
                 </p>
-                <span className="text-[14px] font-semibold text-[#ff5100] group-hover/item:text-white flex items-center gap-1.5 mt-auto pt-2">
+                <span className="text-[14px] font-semibold text-[#de5e18] group-hover/item:text-white flex items-center gap-1.5 mt-auto pt-2">
                   Read Article
                   <svg className="w-4 h-4 transform group-hover/item:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>

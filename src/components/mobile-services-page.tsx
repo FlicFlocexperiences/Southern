@@ -6,7 +6,7 @@ import { CountUp } from "@/components/count-up";
 
 export const MobileServicesPage = () => {
   return (
-    <div className="w-full relative bg-[#fffff0] pt-24 pb-8 overflow-hidden">
+    <div className="w-full relative bg-[#f2decc] pt-24 pb-8 overflow-hidden">
       {/* Header Section */}
       <div className="flex flex-col w-full px-6 items-start gap-6 z-10 relative mb-12">
         {/* Breadcrumbs */}
@@ -15,7 +15,7 @@ export const MobileServicesPage = () => {
         {/* Main Heading */}
         <h1 className="text-[38px] leading-[1.1] font-bold text-black tracking-tight mt-2">
           Six capabilities.<br />
-          <span className="text-[#ff5100]">One system.</span>
+          <span className="text-[#de5e18]">One system.</span>
         </h1>
 
         {/* Paragraph & CTA Button */}
@@ -25,11 +25,11 @@ export const MobileServicesPage = () => {
           </p>
           <Link href="/contact" className="w-full">
             <button 
-              className="w-full relative h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] overflow-hidden shadow-[0px_6px_16px_rgba(255,81,0,0.35)] group cursor-pointer"
+              className="w-full relative h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] group cursor-pointer"
               aria-label="Book a strategy call"
             >
               {/* Inner Left Pill with right shadow */}
-              <div className="absolute left-[0px] top-0 w-[calc(100%-60px)] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+              <div className="absolute left-[0px] top-0 w-[calc(100%-60px)] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
                 <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
                 <span className="font-medium text-[16px] md:text-[18px] text-white tracking-tight whitespace-nowrap">
                   Book a strategy call
@@ -95,7 +95,7 @@ export const MobileServicesPage = () => {
             <div className="flex justify-between items-start w-full">
               {/* Index */}
               <div className="flex items-center gap-2">
-                <span className="text-[18px] font-medium text-[#ff5100]">
+                <span className="text-[18px] font-medium text-[#de5e18]">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 
@@ -121,7 +121,7 @@ export const MobileServicesPage = () => {
                   {service.title}
                 </h3>
                 {service.tagline && (
-                  <span className="text-[#ff5100] italic text-[14px] font-normal">
+                  <span className="text-[#de5e18] italic text-[14px] font-normal">
                     {service.tagline}
                   </span>
                 )}
@@ -133,8 +133,8 @@ export const MobileServicesPage = () => {
 
               {/* Callout */}
               {service.callout && (
-                <div className="flex items-stretch border-l-[3px] border-[#ff5100]/40 pl-3 mt-1">
-                  <p className="text-[#ff5100]/70 text-[13px] italic leading-relaxed text-justify">
+                <div className="flex items-stretch border-l-[3px] border-[#de5e18]/40 pl-3 mt-1">
+                  <p className="text-[#de5e18]/70 text-[13px] italic leading-relaxed text-justify">
                     {service.callout}
                   </p>
                 </div>
@@ -156,7 +156,7 @@ export const MobileServicesPage = () => {
               </div>
               
               {/* Arrow */}
-              <div className="w-[42px] h-[42px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] text-white flex items-center justify-center shadow-[0px_3px_8px_rgba(255,81,0,0.2)] transition-all duration-300 group-hover:scale-105 shrink-0">
+              <div className="w-[42px] h-[42px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] text-white flex items-center justify-center shadow-[0px_3px_8px_rgba(222,94,24,0.2)] transition-all duration-300 group-hover:scale-105 shrink-0">
                 <svg 
                   className="w-5 h-5" 
                   fill="none" 

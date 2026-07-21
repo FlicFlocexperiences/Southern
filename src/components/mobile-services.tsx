@@ -5,7 +5,7 @@ import React from "react";
 // Icons
 
 const ArrowRightUpIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff5100" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:rotate-45 transition-transform duration-300">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#de5e18" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:rotate-45 transition-transform duration-300">
     <line x1="7" y1="17" x2="17" y2="7" />
     <polyline points="7 7 17 7 17 17" />
   </svg>
@@ -66,15 +66,15 @@ const services = [
 
 export const MobileServices = () => {
   return (
-    <div className="w-full relative bg-[#fffff0] pt-16 pb-16 overflow-hidden">
+    <div className="w-full relative bg-[#f2decc] pt-16 pb-16 overflow-hidden">
       <div className="px-5 relative z-10 flex flex-col">
         
         {/* Top Header Section */}
         <div className="flex flex-col items-start mb-16 relative z-10">
           <p className="font-medium text-[20px] mb-6 tracking-wide">
-            <span className="text-[#ff5100]">[</span>
+            <span className="text-[#de5e18]">[</span>
             <span className="text-black mx-2">SERVICES</span>
-            <span className="text-[#ff5100]">]</span>
+            <span className="text-[#de5e18]">]</span>
           </p>
           
           <h2 className="text-[60px] font-bold text-black leading-[0.9] tracking-tight mb-6">
@@ -86,13 +86,13 @@ export const MobileServices = () => {
           </p>
 
           <div className="flex items-center gap-4">
-            <a href="/contact" className="w-[60px] h-[60px] rounded-full border border-black/20 flex items-center justify-center hover:bg-[#ff5100]/5 transition-colors group shrink-0">
+            <a href="/contact" className="w-[60px] h-[60px] rounded-full border border-black/20 flex items-center justify-center hover:bg-[#de5e18]/5 transition-colors group shrink-0">
               <ArrowRightUpIcon />
             </a>
             <div className="flex flex-col gap-0.5">
               <p className="text-[16px] text-black font-medium leading-tight">Let's build something</p>
               <p className="text-[16px] text-black font-medium leading-tight">great together.</p>
-              <a href="/contact" className="text-[#ff5100] text-[16px] font-bold tracking-wide mt-0.5 hover:opacity-80 transition-opacity flex items-center gap-2">
+              <a href="/contact" className="text-[#de5e18] text-[16px] font-bold tracking-wide mt-0.5 hover:opacity-80 transition-opacity flex items-center gap-2">
                 <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
                 GET IN TOUCH
               </a>
@@ -109,7 +109,7 @@ export const MobileServices = () => {
                 {/* Header Row: Number, Divider, Icon */}
                 <div className="flex items-center gap-4 mb-6 h-[72px]">
                   <span className="text-[72px] sm:text-[80px] font-medium leading-[0.8] tracking-tighter text-black flex items-center h-full">{service.num}</span>
-                  <div className="w-[2px] h-full bg-[#ff5100]"></div>
+                  <div className="w-[2px] h-full bg-[#de5e18]"></div>
                   
                   <div className="w-[72px] h-[72px] rounded-full border-[2px] border-black flex items-center justify-center shrink-0">
                     {service.icon}

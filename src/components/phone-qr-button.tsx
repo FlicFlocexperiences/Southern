@@ -38,7 +38,7 @@ export function PhoneQrButton({ phoneNumber, className }: PhoneQrButtonProps) {
           onClick={handleClose}
         >
           <div
-            className="bg-[#fffff0] rounded-[32px] p-8 max-w-[360px] w-full mx-4 relative flex flex-col items-center shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-black/10 transition-all duration-300"
+            className="bg-[#f2decc] rounded-[32px] p-8 max-w-[360px] w-full mx-4 relative flex flex-col items-center shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-black/10 transition-all duration-300"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
@@ -75,7 +75,7 @@ export function PhoneQrButton({ phoneNumber, className }: PhoneQrButtonProps) {
             {/* Phone Number Link */}
             <a
               href={telUrl}
-              className="text-[20px] font-bold text-[#ff5100] hover:opacity-80 transition-opacity tracking-wide mb-1"
+              className="text-[20px] font-bold text-[#de5e18] hover:opacity-80 transition-opacity tracking-wide mb-1"
             >
               {phoneNumber}
             </a>

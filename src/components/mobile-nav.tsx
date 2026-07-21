@@ -41,19 +41,19 @@ export function MobileNav() {
           onClick={() => setIsOpen(true)}
           aria-label="Open Menu"
         >
-          <p className="font-bold text-[15px] tracking-widest text-[#ff5100] pointer-events-none">
+          <p className="font-bold text-[15px] tracking-widest text-[#de5e18] pointer-events-none">
             MENU
           </p>
           {/* Burger Icon */}
           <div className="flex flex-col gap-[4px] w-8 pointer-events-none">
-            <div className="h-[2px] w-full bg-[#ff5100]" />
-            <div className="h-[2px] w-3/4 self-end bg-[#ff5100] transition-all group-hover:w-full" />
+            <div className="h-[2px] w-full bg-[#de5e18]" />
+            <div className="h-[2px] w-3/4 self-end bg-[#de5e18] transition-all group-hover:w-full" />
           </div>
         </button>
       </div>
 
       <div 
-        className={`absolute top-0 left-0 w-full bg-[#ff5100] z-[60] overflow-hidden rounded-b-[40px] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+        className={`absolute top-0 left-0 w-full bg-[#de5e18] z-[60] overflow-hidden rounded-b-[40px] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
           isOpen ? "shadow-2xl pointer-events-auto" : "pointer-events-none"
         }`}
         style={{ height: isOpen ? '480px' : '0px' }}

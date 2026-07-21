@@ -23,7 +23,7 @@ const FaqItem = ({ question, answer }: { question: string, answer: string }) => 
           {question}
         </p>
         <div 
-          className={`shrink-0 w-[42px] h-[42px] rounded-full bg-[#ff5100] flex items-center justify-center transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+          className={`shrink-0 w-[42px] h-[42px] rounded-full bg-[#de5e18] flex items-center justify-center transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
           style={{
             boxShadow: "0px 10px 16px rgba(0,0,0,0.15), inset 0px 4px 6px rgba(255,255,255,0.4)"
           }}
@@ -35,7 +35,7 @@ const FaqItem = ({ question, answer }: { question: string, answer: string }) => 
       <div 
         className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-[300px] opacity-100 pb-2 mt-2' : 'max-h-0 opacity-0'}`}
       >
-        <div className="bg-[#ff5100] rounded-[16px] p-5 mb-2">
+        <div className="bg-[#de5e18] rounded-[16px] p-5 mb-2">
           <p className="text-white text-[16px] leading-relaxed">
             {answer}
           </p>
@@ -66,13 +66,13 @@ export const MobileFaq = () => {
   ];
 
   return (
-    <div className="w-full bg-[#fffff0] px-5 pt-16 pb-16 relative flex flex-col items-center" style={{ zoom: 1.08 }}>
+    <div className="w-full bg-[#f2decc] px-5 pt-16 pb-16 relative flex flex-col items-center" style={{ zoom: 1.08 }}>
       
       {/* Header */}
       <p className="text-[18px] font-medium tracking-wide mb-4 text-center">
-        <span className="text-[#ff5100]">[</span>
+        <span className="text-[#de5e18]">[</span>
         <span className="text-black mx-1">FAQ</span>
-        <span className="text-[#ff5100]">]</span>
+        <span className="text-[#de5e18]">]</span>
       </p>
       
       <div className="w-full max-w-[360px] h-[1px] bg-gray-200 mb-6"></div>

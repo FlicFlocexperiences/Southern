@@ -55,7 +55,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ slug, title, category, durati
           
           <div className="flex items-center gap-2.5">
             {/* Circle Arrow Button */}
-            <div className="w-11 h-11 rounded-full bg-[#ff5100] flex items-center justify-center text-white shrink-0 group-hover:scale-105 transition-all duration-300">
+            <div className="w-11 h-11 rounded-full bg-[#de5e18] flex items-center justify-center text-white shrink-0 group-hover:scale-105 transition-all duration-300">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path>
               </svg>
@@ -104,13 +104,13 @@ export const MobileCaseStudies = () => {
   ];
 
   return (
-    <section className="w-full bg-[#fffff0] px-6 md:px-10 lg:px-[90px] py-16 md:py-24 max-w-[1440px] mx-auto">
+    <section className="w-full bg-[#f2decc] px-6 md:px-10 lg:px-[90px] py-16 md:py-24 max-w-[1440px] mx-auto">
       {/* Top Header */}
       <div className="flex flex-col items-center mb-16 w-full">
         <p className="font-medium text-[20px] lg:text-[24px] mb-8 tracking-wide">
-          <span className="text-[#ff5100]">[</span>
+          <span className="text-[#de5e18]">[</span>
           <span className="text-black mx-2">PROJECTS</span>
-          <span className="text-[#ff5100]">]</span>
+          <span className="text-[#de5e18]">]</span>
         </p>
         
         {/* Subtle divider line across the screen */}
@@ -133,11 +133,11 @@ export const MobileCaseStudies = () => {
       <div className="w-full flex justify-center mt-12 md:mt-16">
         <Link href="/projects">
           <button 
-            className="relative w-[240px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] overflow-hidden shadow-[0px_6px_16px_rgba(255,81,0,0.35)] hover:shadow-[0px_8px_20px_rgba(255,81,0,0.5)] transition-shadow group cursor-pointer"
+            className="relative w-[240px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
             aria-label="Explore more projects"
           >
             {/* Inner Left Pill with right shadow */}
-            <div className="absolute left-[0px] top-0 w-[180px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+            <div className="absolute left-[0px] top-0 w-[180px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
               <span className="font-medium text-[12px] text-white tracking-tight uppercase whitespace-nowrap pt-0.5">
                 Explore More Projects
               </span>

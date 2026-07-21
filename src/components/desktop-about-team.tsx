@@ -25,7 +25,7 @@ const TeamCard = ({ name, role1, role2, image, linkedinUrl, heightClass = "h-[32
         if (!linkedinUrl) e.preventDefault();
       }}
     >
-      <FontAwesomeIcon icon={faLinkedinIn} className="text-[#ff5100] text-[20px]" />
+      <FontAwesomeIcon icon={faLinkedinIn} className="text-[#de5e18] text-[20px]" />
     </a>
 
     <div className="relative z-10 p-6 lg:p-8 w-full transition-transform duration-500 group-hover:translate-y-[-4px]">
@@ -38,13 +38,13 @@ const TeamCard = ({ name, role1, role2, image, linkedinUrl, heightClass = "h-[32
 
 export const DesktopAboutTeam = () => {
   return (
-    <section className="w-full max-w-[1280px] mx-auto px-6 md:px-10 pt-10 pb-20 bg-[#fffff0]">
+    <section className="w-full max-w-[1280px] mx-auto px-6 md:px-10 pt-10 pb-20 bg-[#f2decc]">
       {/* Header */}
       <div className="w-full flex flex-col items-start">
         <p className="font-medium text-[24px] lg:text-[21px] text-black uppercase tracking-tight">
-          <span className="text-[#ff5100]">[</span>
+          <span className="text-[#de5e18]">[</span>
           <span className="mx-3 tracking-[-0.48px]">Team</span>
-          <span className="text-[#ff5100]">]</span>
+          <span className="text-[#de5e18]">]</span>
         </p>
         
         <div className="w-full h-[2px] bg-black/10 mt-[28px] mb-[28px]" />
@@ -84,7 +84,7 @@ export const DesktopAboutTeam = () => {
         {/* Right Column */}
         <div className="flex flex-col gap-6 lg:col-span-2">
           {/* Card 3: Ready to grow */}
-          <div className="bg-white rounded-[20px] w-full flex flex-col justify-between p-6 lg:p-8 text-[#ff5100] shrink-0 h-auto lg:h-[240px] shadow-xl">
+          <div className="bg-white rounded-[20px] w-full flex flex-col justify-between p-6 lg:p-8 text-[#de5e18] shrink-0 h-auto lg:h-[240px] shadow-xl">
             <div>
               <h3 className="text-[28px] lg:text-[32px] font-bold leading-tight mb-2 uppercase">READY TO GROW?</h3>
               <p className="text-[15px] lg:text-[16px] font-normal leading-snug opacity-95 max-w-[95%]">
@@ -96,11 +96,11 @@ export const DesktopAboutTeam = () => {
               <div className="w-full h-px " />
               <Link href="/contact" className="w-fit">
                 <button 
-                  className="relative w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] overflow-hidden shadow-[0px_6px_16px_rgba(255,81,0,0.35)] hover:shadow-[0px_8px_20px_rgba(255,81,0,0.5)] transition-shadow group cursor-pointer"
+                  className="relative w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
                   aria-label="Start Now"
                 >
                   {/* Inner Left Pill with right shadow */}
-                  <div className="absolute left-[0px] top-0 w-[157px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+                  <div className="absolute left-[0px] top-0 w-[157px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
                     <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
                     <span className="font-semibold text-[18px] text-white tracking-wide whitespace-nowrap">
                       Start Now

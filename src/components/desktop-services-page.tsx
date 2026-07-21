@@ -6,7 +6,7 @@ import { CountUp } from "@/components/count-up";
 
 export const DesktopServicesPage = () => {
   return (
-    <section className="w-full bg-[#fffff0] pb-10 pt-0 px-8 lg:px-[90px] flex flex-col relative z-10 overflow-hidden">
+    <section className="w-full bg-[#f2decc] pb-10 pt-0 px-8 lg:px-[90px] flex flex-col relative z-10 overflow-hidden">
       
       {/* Top Section: Title & Breadcrumbs */}
       <div className="flex flex-col w-full mb-16 lg:mb-20 items-start relative pt-32 lg:pt-36 gap-6 md:gap-8 max-w-[1280px] mx-auto">
@@ -16,7 +16,7 @@ export const DesktopServicesPage = () => {
         {/* Main Heading */}
         <h1 className="text-[56px] md:text-[80px] lg:text-[85px] font-medium text-black leading-[1.05] tracking-tight">
           Six capabilities.<br />
-          <span className="text-[#ff5100]">One system.</span>
+          <span className="text-[#de5e18]">One system.</span>
         </h1>
 
         {/* Sub-heading & CTA Button */}
@@ -26,11 +26,11 @@ export const DesktopServicesPage = () => {
           </p>
           <Link href="/contact" className="shrink-0 mt-4 md:mt-0">
             <button 
-              className="relative w-[280px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] overflow-hidden shadow-[0px_6px_16px_rgba(255,81,0,0.35)] hover:shadow-[0px_8px_20px_rgba(255,81,0,0.5)] transition-shadow group cursor-pointer"
+              className="relative w-[280px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
               aria-label="Book a strategy call"
             >
               {/* Inner Left Pill with right shadow */}
-              <div className="absolute left-[0px] top-0 w-[215px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+              <div className="absolute left-[0px] top-0 w-[215px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
                 <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
                 <span className="font-medium text-[16px] md:text-[18px] text-white tracking-tight whitespace-nowrap">
                   Book a strategy call
@@ -96,7 +96,7 @@ export const DesktopServicesPage = () => {
           >
             {/* 1. Left Column: Index indicator */}
             <div className="flex flex-col items-start gap-1.5 shrink-0 pt-2">
-              <span className="text-[20px] md:text-[24px] font-medium text-[#ff5100] leading-none">
+              <span className="text-[20px] md:text-[24px] font-medium text-[#de5e18] leading-none">
                 {String(index + 1).padStart(2, "0")}
               </span>
               
@@ -111,7 +111,7 @@ export const DesktopServicesPage = () => {
                     {service.title}
                   </h3>
                   {service.tagline && (
-                    <span className="text-[#ff5100] italic text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-none">
+                    <span className="text-[#de5e18] italic text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-none">
                       {service.tagline}
                     </span>
                   )}
@@ -124,8 +124,8 @@ export const DesktopServicesPage = () => {
 
                 {/* Callout */}
                 {service.callout && (
-                  <div className="flex items-stretch border-l-[3px] border-[#ff5100]/40 pl-4 mb-8 max-w-[700px]">
-                    <p className="text-[#ff5100]/70 text-[14px] md:text-[16px] italic leading-relaxed">
+                  <div className="flex items-stretch border-l-[3px] border-[#de5e18]/40 pl-4 mb-8 max-w-[700px]">
+                    <p className="text-[#de5e18]/70 text-[14px] md:text-[16px] italic leading-relaxed">
                       {service.callout}
                     </p>
                   </div>
@@ -160,7 +160,7 @@ export const DesktopServicesPage = () => {
               )}
               
               {/* Arrow Button */}
-              <div className="w-[50px] h-[50px] md:w-[54px] md:h-[54px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] text-white flex items-center justify-center shadow-[0px_4px_12px_rgba(255,81,0,0.25)] transition-all duration-300 group-hover:scale-105 shrink-0 mt-8">
+              <div className="w-[50px] h-[50px] md:w-[54px] md:h-[54px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] text-white flex items-center justify-center shadow-[0px_4px_12px_rgba(222,94,24,0.25)] transition-all duration-300 group-hover:scale-105 shrink-0 mt-8">
                 <svg 
                   className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" 
                   fill="none" 

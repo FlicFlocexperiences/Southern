@@ -27,14 +27,14 @@ const whyUsPoints = [
 
 export const WhyUs = () => {
   return (
-    <section className="w-full bg-[#fffff0] py-16 md:py-24 px-6 md:px-10 lg:px-[90px] flex flex-col items-center relative z-10">
+    <section className="w-full bg-[#f2decc] py-16 md:py-24 px-6 md:px-10 lg:px-[90px] flex flex-col items-center relative z-10">
       <div className="w-full max-w-[1480px] flex flex-col items-start">
         
         {/* Section Pill */}
         <p className="font-medium text-[18px] md:text-[22px] mb-4 tracking-wide">
-          <span className="text-[#ff5100]">[</span>
+          <span className="text-[#de5e18]">[</span>
           <span className="text-black mx-2 uppercase font-semibold">WHY SOUTHERN EDGE</span>
-          <span className="text-[#ff5100]">]</span>
+          <span className="text-[#de5e18]">]</span>
         </p>
 
         {/* Section Heading */}

@@ -44,7 +44,7 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
   }, [remainingBlogs, activeFilter, sortBy]);
 
   return (
-    <div className="w-full relative bg-[#fffff0] pt-24 pb-16 overflow-hidden">
+    <div className="w-full relative bg-[#f2decc] pt-24 pb-16 overflow-hidden">
       
       {/* Hero Section */}
       <div className="flex flex-col items-start w-full px-6 gap-6 mb-10 z-10 relative">

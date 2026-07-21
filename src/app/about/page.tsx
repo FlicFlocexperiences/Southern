@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <div className="w-full bg-[#fffff0] min-h-screen flex flex-col">
+    <div className="w-full bg-[#f2decc] min-h-screen flex flex-col">
       <div className="hidden md:block">
         <DesktopNav />
       </div>

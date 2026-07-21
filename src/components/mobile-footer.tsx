@@ -31,7 +31,7 @@ export const MobileFooter = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <footer className="w-full bg-[#30261c] text-[#a3a3a3] px-6 pt-12 pb-8 flex flex-col relative overflow-hidden font-sans" style={{ zoom: 0.8 }}>
+    <footer className="w-full bg-[#432d1c] text-[#a3a3a3] px-6 pt-12 pb-8 flex flex-col relative overflow-hidden font-sans" style={{ zoom: 0.8 }}>
       
       {/* Brand & Intro */}
       <div className="flex flex-col gap-4 mb-8">
@@ -156,7 +156,7 @@ export const MobileFooter = () => {
           <span className="text-[20px] font-semibold text-white/75 whitespace-nowrap flex items-center gap-2 group-hover:text-white transition-colors duration-300">
             Explore More
             <svg 
-              className={`w-5 h-5 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#ff5100]' : 'text-white/50'}`}
+              className={`w-5 h-5 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#de5e18]' : 'text-white/50'}`}
               fill="none" 
               stroke="currentColor" 
               strokeWidth="2.5" 
@@ -182,7 +182,7 @@ export const MobileFooter = () => {
               <p className="text-[13px] text-white/60 font-light font-sans line-clamp-2">
                 {article.excerpt}
               </p>
-              <span className="text-[13px] font-semibold text-[#ff5100] flex items-center gap-1 mt-1">
+              <span className="text-[13px] font-semibold text-[#de5e18] flex items-center gap-1 mt-1">
                 Read Article
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>

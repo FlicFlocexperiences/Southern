@@ -14,7 +14,7 @@ const parseInlineMarkdown = (text: string) => {
   return parts.map((part, index) => {
     if (index % 2 === 1) {
       return (
-        <strong key={index} className="font-bold text-[#30261C]">
+        <strong key={index} className="font-bold text-[#432d1c]">
           {part}
         </strong>
       );
@@ -118,13 +118,14 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
     const elements: React.ReactNode[] = [];
     let currentList: string[] = [];
     let currentParagraph: string[] = [];
+    let sectionCounter = 0;
 
     const flushParagraph = (key: string | number) => {
       if (currentParagraph.length > 0) {
         elements.push(
           <p
             key={`p-${key}`}
-            className="text-[16px] md:text-[18px] leading-[1.7] text-[#30261C]/85 mb-6 font-normal font-sans"
+            className="text-[16px] md:text-[18px] leading-[1.7] text-[#432d1c]/85 mb-6 font-normal font-sans"
           >
             {parseInlineMarkdown(currentParagraph.join(" "))}
           </p>
@@ -136,7 +137,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
     const flushList = (key: string | number) => {
       if (currentList.length > 0) {
         elements.push(
-          <ul key={`ul-${key}`} className="list-disc pl-6 mb-6 text-[#30261C]/80 space-y-2 text-[16px] md:text-[18px] font-normal font-sans">
+          <ul key={`ul-${key}`} className="list-disc pl-6 mb-6 text-[#432d1c]/80 space-y-2 text-[16px] md:text-[18px] font-normal font-sans">
             {currentList.map((item, idx) => (
               <li key={idx}>{parseInlineMarkdown(item)}</li>
             ))}
@@ -158,13 +159,16 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
           .toLowerCase()
           .replace(/[^\w\s-]/g, "")
           .replace(/\s+/g, "-");
+        sectionCounter++;
+        const numStr = String(sectionCounter).padStart(2, "0");
         elements.push(
           <h3
             key={`h3-${index}`}
             id={id}
-            className="text-[22px] md:text-[26px] font-bold text-[#30261C] mt-8 mb-4 font-sans scroll-mt-28"
+            className="text-[22px] md:text-[28px] font-bold text-[#0f0f0f] mt-10 mb-4 font-sans scroll-mt-28 flex items-center gap-3"
           >
-            {text}
+            <span className="text-[#de5e18] font-mono">// {numStr}</span>
+            <span>{text}</span>
           </h3>
         );
       } else if (trimmed.startsWith("-")) {
@@ -187,42 +191,44 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
   };
 
   return (
-    <div className="w-full">
-      {/* Hero Header with Premium Dark / Orange Gradient */}
-      <div className="w-full relative overflow-hidden bg-gradient-to-br from-[#1b1a15] to-[#2c1d10] py-20 lg:py-32 px-6 lg:px-[90px] rounded-[36px] mb-12 shadow-[0_20px_50px_rgba(0,0,0,0.15)] border border-[#ff5100]/10">
-        {/* Glow Effects */}
-        <div className="absolute top-[-20%] left-[-10%] w-[50%] aspect-square rounded-full bg-[#ff5100]/10 blur-[120px] pointer-events-none" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] aspect-square rounded-full bg-[#ff5100]/5 blur-[100px] pointer-events-none" />
+    <div className="w-full bg-[#f2decc] min-h-screen pb-16">
+      {/* Clean Top Header matching Terms/Privacy reference design */}
+      <div className="w-full max-w-[1440px] mx-auto px-6 lg:px-12 pt-8 pb-4 flex flex-col items-start text-left">
+        <Link 
+          href="/" 
+          className="inline-flex items-center gap-2 text-[12px] md:text-[13px] font-bold tracking-widest text-[#de5e18] hover:text-black uppercase transition-colors mb-6"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+          </svg>
+          BACK TO HOME
+        </Link>
 
-        <div className="max-w-[1000px] relative z-10">
-          <div className="inline-flex items-center gap-1.5 text-[11px] md:text-[12px] uppercase tracking-[0.2em] text-[#ff5100] font-bold mb-4">
-            <span>[</span>
-            <span>{blog.category}</span>
-            <span>]</span>
-          </div>
-          
-          <h1 className="text-[36px] sm:text-[48px] md:text-[60px] lg:text-[70px] font-extrabold leading-[1.1] text-white tracking-tight mb-6">
-            {blog.title}
-          </h1>
-
-          <div className="flex items-center gap-4 text-white/50 text-[14px] md:text-[16px] font-light">
-            <span>Published: {blog.publishedAt}</span>
-            <span>•</span>
-            <span>5 min read</span>
-          </div>
+        <div className="text-[12px] md:text-[13px] tracking-[0.2em] font-bold text-[#de5e18] uppercase mb-2">
+          [ {blog.category || "BLOG"} ]
         </div>
+
+        <h1 className="text-[38px] sm:text-[52px] md:text-[64px] lg:text-[72px] font-extrabold text-[#0f0f0f] leading-[1.05] tracking-tight mb-4 max-w-[1000px]">
+          {blog.title}
+        </h1>
+
+        <p className="text-[14px] md:text-[16px] text-black/60 font-medium">
+          Published: {blog.publishedAt || "March 2026"} • 5 min read
+        </p>
+
+        <hr className="w-full border-t border-black/10 mt-8 mb-6" />
       </div>
 
       {/* Main Grid Layout */}
-      <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr_280px] gap-8 xl:gap-12 items-start max-w-[1440px] mx-auto px-1">
+      <div className="grid grid-cols-1 lg:grid-cols-[240px_1fr_280px] gap-8 xl:gap-12 items-start max-w-[1440px] mx-auto px-6 lg:px-12">
         
         {/* Left Sidebar - Table of Contents */}
-        <aside className="hidden lg:block sticky top-28 w-full border-r border-[#30261C]/5 pr-4">
-          <h4 className="text-[11px] font-medium uppercase tracking-[0.2em] text-[#30261C]/40 mb-6 font-sans">
-            ON THIS PAGE
+        <aside className="hidden lg:block sticky top-28 w-full pr-4">
+          <h4 className="text-[11px] font-bold uppercase tracking-[0.2em] text-black/40 mb-6 font-sans text-left">
+            TABLE OF CONTENTS
           </h4>
-          <nav className="flex flex-col gap-3">
-            {sections.map((sec) => {
+          <nav className="flex flex-col gap-2">
+            {sections.map((sec, idx) => {
               const isActive = activeId === sec.id;
               return (
                 <a
@@ -233,13 +239,13 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
                     document.getElementById(sec.id)?.scrollIntoView({ behavior: "smooth" });
                     setActiveId(sec.id);
                   }}
-                  className={`text-[14px] font-medium leading-[1.4] transition-all duration-300 border-l-2 pl-3 text-left ${
+                  className={`text-[14px] font-medium leading-[1.4] transition-all duration-200 border-l-2 pl-3 py-1.5 text-left ${
                     isActive
-                      ? "text-[#ff5100] border-[#ff5100] font-semibold"
-                      : "text-[#30261C]/50 border-transparent hover:text-[#30261C]"
+                      ? "text-[#de5e18] border-[#de5e18] font-semibold bg-[#de5e18]/5 rounded-r-md"
+                      : "text-black/60 border-transparent hover:text-black"
                   }`}
                 >
-                  {sec.title}
+                  {idx + 1}. {sec.title}
                 </a>
               );
             })}
@@ -248,20 +254,11 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
 
         {/* Middle Column - Content */}
         <div className="w-full min-w-0">
-          {/* Breadcrumb Navigation */}
-          <div className="flex items-center gap-2 mb-8 text-[13px] md:text-[14px] font-regular text-[#30261C]/55">
-            <Link href="/" className="hover:text-[#ff5100] transition-colors">Home</Link>
-            <span>/</span>
-            <Link href="/blogs" className="hover:text-[#ff5100] transition-colors">Blogs</Link>
-            <span>/</span>
-            <span className="text-[#30261C] font-regular truncate max-w-[200px] md:max-w-xs">{blog.title}</span>
-          </div>
-
           {/* Mobile Table of Contents Slider */}
           {sections.length > 0 && (
             <div className="lg:hidden w-full mb-8">
-              <h4 className="text-[12px] font-bold uppercase tracking-[0.2em] text-[#30261C]/60 mb-3 font-sans text-left">
-                On This Page
+              <h4 className="text-[12px] font-bold uppercase tracking-[0.2em] text-black/60 mb-3 font-sans text-left">
+                TABLE OF CONTENTS
               </h4>
               <div
                 ref={mobileSliderRef}
@@ -272,7 +269,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
                 className="w-full overflow-x-auto flex gap-3 pb-3 cursor-grab active:cursor-grabbing select-none scrollbar-none scroll-smooth"
                 style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
               >
-                {sections.map((sec) => {
+                {sections.map((sec, idx) => {
                   const isActive = activeId === sec.id;
                   return (
                     <a
@@ -288,11 +285,11 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
                       }}
                       className={`shrink-0 px-5 py-2.5 rounded-full text-[13px] font-bold transition-all duration-300 ${
                         isActive
-                          ? "bg-[#ff5100] text-white shadow-[0_4px_15px_rgba(255,81,0,0.25)] border border-transparent"
-                          : "bg-white/40 border border-[#30261C]/15 text-[#30261C] hover:bg-white/60"
+                          ? "bg-[#de5e18] text-white shadow-[0_4px_15px_rgba(222,94,24,0.25)] border border-transparent"
+                          : "bg-white border border-black/15 text-black hover:bg-neutral-50"
                       }`}
                     >
-                      {sec.title}
+                      {idx + 1}. {sec.title}
                     </a>
                   );
                 })}
@@ -301,20 +298,20 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
           )}
 
           {/* Article Box */}
-          <article className="w-full bg-white/40 border border-[#30261C]/10 rounded-[28px] p-6 md:p-10 lg:p-12 shadow-[0_4px_30px_rgba(0,0,0,0.02)] backdrop-blur-sm">
-            <div className="prose max-w-none text-[#30261C] font-sans text-left">
+          <article className="w-full bg-white border border-black/8 rounded-[28px] p-6 md:p-10 lg:p-12 shadow-[0_4px_30px_rgba(0,0,0,0.015)]">
+            <div className="prose max-w-none text-[#432d1c] font-sans text-left">
               {renderContent(blog.content)}
             </div>
 
             {/* Share Post */}
-            <div className="border-t border-[#30261C]/10 mt-12 pt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-              <span className="text-[14px] md:text-[16px] font-regular text-[#30261C]/70 text-left">
-                Share this insight:
+            <div className="border-t border-black/10 mt-12 pt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <span className="text-[14px] md:text-[16px] font-regular text-black/70 text-left">
+                Share this post:
               </span>
               <div className="flex items-center gap-3">
                 <button
                   onClick={() => handleShare("facebook")}
-                  className="flex items-center justify-center w-10 h-10 rounded-full border border-[#30261C]/15 hover:border-[#ff5100] text-[#30261C] hover:text-[#ff5100] transition-all duration-300"
+                  className="flex items-center justify-center w-10 h-10 rounded-full border border-black/15 hover:border-[#de5e18] text-black hover:text-[#de5e18] transition-all duration-300"
                   aria-label="Share on Facebook"
                 >
                   <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -323,7 +320,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
                 </button>
                 <button
                   onClick={() => handleShare("twitter")}
-                  className="flex items-center justify-center w-10 h-10 rounded-full border border-[#30261C]/15 hover:border-[#ff5100] text-[#30261C] hover:text-[#ff5100] transition-all duration-300"
+                  className="flex items-center justify-center w-10 h-10 rounded-full border border-black/15 hover:border-[#de5e18] text-black hover:text-[#de5e18] transition-all duration-300"
                   aria-label="Share on Twitter"
                 >
                   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -332,7 +329,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
                 </button>
                 <button
                   onClick={() => handleShare("linkedin")}
-                  className="flex items-center justify-center w-10 h-10 rounded-full border border-[#30261C]/15 hover:border-[#ff5100] text-[#30261C] hover:text-[#ff5100] transition-all duration-300"
+                  className="flex items-center justify-center w-10 h-10 rounded-full border border-black/15 hover:border-[#de5e18] text-black hover:text-[#de5e18] transition-all duration-300"
                   aria-label="Share on LinkedIn"
                 >
                   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -348,7 +345,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
         <aside className="w-full lg:sticky lg:top-28 space-y-6">
           
           {/* Company Bio Card */}
-          <div className="bg-[#ff5100] rounded-[24px] p-6 text-white shadow-[0_12px_24px_rgba(255,81,0,0.15)] border border-[#ff5100]/25 relative overflow-hidden group text-left">
+          <div className="bg-[#de5e18] rounded-[24px] p-6 text-white shadow-[0_12px_24px_rgba(222,94,24,0.15)] border border-[#de5e18]/25 relative overflow-hidden group text-left">
             <div className="absolute top-[-20%] right-[-10%] w-[50%] aspect-square rounded-full bg-white/10 blur-[30px] pointer-events-none" />
             <h3 className="text-[18px] font-bold mb-3 uppercase tracking-wide">
               Southern Edge Marketing
@@ -365,30 +362,30 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
           </div>
 
           {/* Need Marketing Help Card */}
-          <div className="bg-white/40 border border-[#30261C]/10 rounded-[24px] p-6 shadow-[0_4px_30px_rgba(0,0,0,0.02)] backdrop-blur-sm text-left">
-            <h3 className="text-[18px] font-bold text-[#30261C] mb-3 uppercase tracking-wide">
+          <div className="bg-white border border-black/10 rounded-[24px] p-6 shadow-[0_4px_30px_rgba(0,0,0,0.02)] text-left">
+            <h3 className="text-[18px] font-bold text-black mb-3 uppercase tracking-wide">
               Start Your Digital Journey
             </h3>
-            <p className="text-[14px] text-[#30261C]/75 leading-relaxed mb-6 font-light">
+            <p className="text-[14px] text-black/75 leading-relaxed mb-6 font-light">
               Get in touch with our team to discuss custom Next.js engineering, Shopify architectures, or modern digital strategies.
             </p>
             <div className="flex flex-col gap-3">
               <Link href="/contact" className="w-full">
                 <button 
-                  className="relative w-full h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] overflow-hidden shadow-[0px_6px_16px_rgba(255,81,0,0.35)] hover:shadow-[0px_8px_20px_rgba(255,81,0,0.5)] transition-shadow group cursor-pointer"
+                  className="relative w-full h-[58px] sm:h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
                   aria-label="Request Consultation"
                 >
                   {/* Inner Left Pill with right shadow */}
-                  <div className="absolute left-[0px] top-0 w-[calc(100%-60px)] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+                  <div className="absolute left-0 top-0 w-[calc(100%-45px)] h-full rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-2 transform group-hover:translate-x-[3px] transition-transform duration-300 z-10 px-2 sm:px-3">
                     <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
-                    <span className="font-medium text-[15px] sm:text-[16px] text-white tracking-tight whitespace-nowrap">
+                    <span className="font-medium text-[13px] sm:text-[14px] lg:text-[15px] text-white tracking-tight whitespace-nowrap">
                       Request Consultation
                     </span>
                   </div>
                   
                   {/* Right Arrow Icon */}
-                  <div className="absolute right-[22px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
-                    <svg className="w-[21px] h-[21px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <div className="absolute right-[14px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
+                    <svg className="w-[18px] h-[18px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                     </svg>
                   </div>

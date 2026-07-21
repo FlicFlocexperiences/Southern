@@ -27,14 +27,14 @@ export function MobileHero() {
       </div>
 
       {/* Background blurred elements (as seen in the design code) */}
-      <div className="absolute bg-[#ff5100]/20 blur-[60px] h-[200px] left-0 top-[60%] w-[100px] rounded-full pointer-events-none" />
-      <div className="absolute bg-[#ff5100]/20 blur-[60px] h-[200px] right-0 top-[20%] w-[100px] rounded-full pointer-events-none" />
+      <div className="absolute bg-[#de5e18]/20 blur-[60px] h-[200px] left-0 top-[60%] w-[100px] rounded-full pointer-events-none" />
+      <div className="absolute bg-[#de5e18]/20 blur-[60px] h-[200px] right-0 top-[20%] w-[100px] rounded-full pointer-events-none" />
 
       {/* Hero Text */}
       <div className="flex flex-col items-center text-center px-4 mt-6 w-full max-w-sm mx-auto z-10 text-black">
         <p className="font-semibold text-base tracking-wide mb-3 text-black">MORE THAN JUST DIGITAL</p>
         <h1 className="font-extrabold text-[32px] leading-[1.1] tracking-tight text-black">
-          <span className="text-[#ff5100] block mb-1">WE TURN</span>
+          <span className="text-[#de5e18] block mb-1">WE TURN</span>
           <span className="block">ATTENTION</span>
           <span className="block">INTO ACTION</span>
         </h1>
@@ -44,11 +44,11 @@ export function MobileHero() {
       <div className="mt-6 z-10">
         <Link href="/contact" className="relative z-20">
           <button 
-            className="relative w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] overflow-hidden shadow-[0px_6px_16px_rgba(255,81,0,0.35)] group cursor-pointer"
+            className="relative w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] group cursor-pointer"
             aria-label="Start Growing"
           >
             {/* Inner Left Pill */}
-            <div className="absolute left-[0px] top-0 w-[157px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] z-10">
+            <div className="absolute left-[0px] top-0 w-[157px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] z-10">
               <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
               <span className="font-medium text-[18px] text-white tracking-tight whitespace-nowrap">
                 Start Growing
@@ -69,7 +69,7 @@ export function MobileHero() {
       <div className="w-full px-6 mt-8 flex flex-col gap-5 z-10">
         {/* Left side text */}
         <div className="flex items-start gap-2 max-w-[280px]">
-          <svg className="w-6 h-6 text-[#ff5100] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6 text-[#de5e18] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
           </svg>
           <p className="text-[14px] font-medium text-black leading-snug">

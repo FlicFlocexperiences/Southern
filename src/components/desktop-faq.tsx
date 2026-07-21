@@ -45,14 +45,14 @@ export const DesktopFaq = () => {
   };
 
   return (
-    <section className="w-full bg-[#fffff0] pt-22 pb-22 px-8 lg:px-[90px] flex flex-col items-center relative z-10" style={{ zoom: 0.75 }}>
+    <section className="w-full bg-[#f2decc] pt-22 pb-22 px-8 lg:px-[90px] flex flex-col items-center relative z-10" style={{ zoom: 0.75 }}>
       
       {/* Top Header */}
       <div className="flex flex-col items-center mb-16 w-full">
         <p className="font-medium text-[20px] lg:text-[24px] mb-8 tracking-wide">
-          <span className="text-[#ff5100]">[</span>
+          <span className="text-[#de5e18]">[</span>
           <span className="text-black mx-2">FAQ</span>
-          <span className="text-[#ff5100]">]</span>
+          <span className="text-[#de5e18]">]</span>
         </p>
         
         {/* Subtle divider line across the screen */}
@@ -71,7 +71,7 @@ export const DesktopFaq = () => {
           return (
             <div 
               key={index} 
-              className={`w-full bg-[#fffff0] rounded-[35px] border border-transparent transition-all duration-300 ${isOpen ? 'shadow-[0px_10px_30px_rgba(0,0,0,0.05)] border-black/5 pb-6' : 'hover:bg-black/[0.02]'}`}
+              className={`w-full bg-[#f2decc] rounded-[35px] border border-transparent transition-all duration-300 ${isOpen ? 'shadow-[0px_10px_30px_rgba(0,0,0,0.05)] border-black/5 pb-6' : 'hover:bg-black/[0.02]'}`}
             >
               <button 
                 onClick={() => toggleFaq(index)}
@@ -83,7 +83,7 @@ export const DesktopFaq = () => {
                 </span>
                 
                 {/* Arrow Button */}
-                <div className="w-[45px] h-[45px] lg:w-[50px] lg:h-[50px] rounded-full bg-[#ff5100] flex items-center justify-center shrink-0 shadow-[0_8px_16px_rgba(255,81,0,0.4)]">
+                <div className="w-[45px] h-[45px] lg:w-[50px] lg:h-[50px] rounded-full bg-[#de5e18] flex items-center justify-center shrink-0 shadow-[0_8px_16px_rgba(222,94,24,0.4)]">
                   <ArrowDownIcon isOpen={isOpen} />
                 </div>
               </button>
@@ -92,7 +92,7 @@ export const DesktopFaq = () => {
               <div 
                 className={`overflow-hidden transition-all duration-300 px-6 lg:px-10 ${isOpen ? 'max-h-[300px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}
               >
-                <div className="bg-[#ff5100] rounded-[20px] p-6 mb-6">
+                <div className="bg-[#de5e18] rounded-[20px] p-6 mb-6">
                   <p className="text-[18px] lg:text-[20px] text-white font-normal leading-[1.5]">
                     {faq.answer}
                   </p>

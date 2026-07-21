@@ -890,7 +890,7 @@ const BlogsDashboard = () => {
     };
 
     return (
-        <div className="w-full min-h-full bg-[#fffff0] text-black font-sans rounded-3xl p-6 md:p-8">
+        <div className="w-full min-h-full bg-[#f2decc] text-black font-sans rounded-3xl p-6 md:p-8">
             <AnimatePresence>
                 {!showBlogForm ? (
                     <motion.div
@@ -903,7 +903,7 @@ const BlogsDashboard = () => {
                         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-b border-black/20 pb-5 bg-white p-6 rounded-2xl shadow-none">
                             <div>
                                 <h1 className="text-2xl font-black text-black tracking-tight flex items-center gap-2">
-                                    <span className="text-[#ff5100]">📝</span>
+                                    <span className="text-[#de5e18]">📝</span>
                                     <span>Curated Blog Dashboard</span>
                                 </h1>
                                 <p className="text-black/40 text-xs mt-1 font-semibold">
@@ -926,7 +926,7 @@ const BlogsDashboard = () => {
                                     }
                                     setShowBlogForm(true);
                                 }}
-                                className="bg-[#ff5100] hover:bg-[#d94400] text-white px-5 py-3 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-none"
+                                className="bg-[#de5e18] hover:bg-[#d94400] text-white px-5 py-3 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-none"
                             >
                                 <FontAwesomeIcon icon={faPlus} />
                                 <span>Write Blog Post</span>
@@ -937,7 +937,7 @@ const BlogsDashboard = () => {
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                             <div className="bg-white p-5 rounded-2xl border border-black/10 shadow-none">
                                 <span className="text-black/40 text-[10px] font-bold uppercase tracking-wider">Total Published Blogs</span>
-                                <p className="text-3xl font-black text-[#ff5100] mt-1">{blogs.length}</p>
+                                <p className="text-3xl font-black text-[#de5e18] mt-1">{blogs.length}</p>
                             </div>
                             <div className="bg-white p-5 rounded-2xl border border-black/10 shadow-none">
                                 <span className="text-black/40 text-[10px] font-bold uppercase tracking-wider">TOC & SEO Enriched</span>
@@ -976,7 +976,7 @@ const BlogsDashboard = () => {
                                 <div className="overflow-x-auto">
                                     <table className="w-full text-left border-collapse">
                                         <thead>
-                                            <tr className="bg-[#fffff0] border-b border-black/10">
+                                            <tr className="bg-[#f2decc] border-b border-black/10">
                                                 <th className="p-4 text-xs font-bold text-black/40 uppercase">Banner</th>
                                                 <th className="p-4 text-xs font-bold text-black/40 uppercase">Title & Details</th>
                                                 <th className="p-4 text-xs font-bold text-black/40 uppercase">Slug / Link</th>
@@ -986,7 +986,7 @@ const BlogsDashboard = () => {
                                         </thead>
                                         <tbody className="divide-y divide-black/10">
                                             {currentBlogs.map((blog) => (
-                                                <tr key={blog.id} className="hover:bg-[#fffff0]/50 transition-colors">
+                                                <tr key={blog.id} className="hover:bg-[#f2decc]/50 transition-colors">
                                                     <td className="p-4">
                                                         <img
                                                             src={blog.image || "/logo_qa.png"}
@@ -995,7 +995,7 @@ const BlogsDashboard = () => {
                                                         />
                                                     </td>
                                                     <td className="p-4 max-w-xs">
-                                                        <span className="font-extrabold text-black text-xs sm:text-sm line-clamp-1 hover:text-[#ff5100] transition-colors">
+                                                        <span className="font-extrabold text-black text-xs sm:text-sm line-clamp-1 hover:text-[#de5e18] transition-colors">
                                                             {blog.title}
                                                         </span>
                                                         <div className="flex gap-2 items-center text-[10px] text-black/40 font-semibold mt-1">
@@ -1014,7 +1014,7 @@ const BlogsDashboard = () => {
                                                             <span className="px-2 py-0.5 bg-blue-50 border border-blue-200/50 rounded-md text-[10px] font-extrabold text-blue-700">
                                                                 {blog.faqs?.length || 0} FAQs
                                                             </span>
-                                                            <span className="px-2 py-0.5 bg-[#ff5100]/5 border border-[#ff5100]/20 rounded-md text-[10px] font-extrabold text-[#ff5100]">
+                                                            <span className="px-2 py-0.5 bg-[#de5e18]/5 border border-[#de5e18]/20 rounded-md text-[10px] font-extrabold text-[#de5e18]">
                                                                 {blog.reviews?.length || 0} Reviews
                                                             </span>
                                                         </div>
@@ -1023,7 +1023,7 @@ const BlogsDashboard = () => {
                                                         <div className="flex items-center justify-end gap-2">
                                                             <button
                                                                 onClick={() => handleEdit(blog)}
-                                                                className="w-8 h-8 rounded-lg hover:bg-black/5 border border-black/15 flex items-center justify-center text-black/60 hover:text-[#ff5100] transition-colors cursor-pointer"
+                                                                className="w-8 h-8 rounded-lg hover:bg-black/5 border border-black/15 flex items-center justify-center text-black/60 hover:text-[#de5e18] transition-colors cursor-pointer"
                                                                 title="Edit post"
                                                             >
                                                                 <FontAwesomeIcon icon={faEdit} className="text-xs" />
@@ -1045,7 +1045,7 @@ const BlogsDashboard = () => {
 
                                 {/* Pagination */}
                                 {totalPages > 1 && (
-                                    <div className="flex items-center justify-between p-4 border-t border-black/10 bg-[#fffff0]/50">
+                                    <div className="flex items-center justify-between p-4 border-t border-black/10 bg-[#f2decc]/50">
                                         <span className="text-xs text-black/40 font-semibold">
                                             Page {currentPage} of {totalPages}
                                         </span>
@@ -1084,7 +1084,7 @@ const BlogsDashboard = () => {
                                 <button
                                     type="button"
                                     onClick={handleCancelForm}
-                                    className="w-10 h-10 rounded-full border border-black/20 flex items-center justify-center hover:bg-[#fffff0] text-black/40 hover:text-black/80 transition-colors cursor-pointer"
+                                    className="w-10 h-10 rounded-full border border-black/20 flex items-center justify-center hover:bg-[#f2decc] text-black/40 hover:text-black/80 transition-colors cursor-pointer"
                                 >
                                     <FontAwesomeIcon icon={faArrowLeft} className="text-sm" />
                                 </button>
@@ -1128,7 +1128,7 @@ const BlogsDashboard = () => {
 
                                 <div className="flex items-center justify-between mb-4">
                                     <div className="flex items-center gap-2">
-                                        <span className="flex items-center justify-center w-7 h-7 rounded-lg bg-[#ff5100]/10 text-[#ff5100] text-xs font-bold animate-pulse">✨</span>
+                                        <span className="flex items-center justify-center w-7 h-7 rounded-lg bg-[#de5e18]/10 text-[#de5e18] text-xs font-bold animate-pulse">✨</span>
                                         <div>
                                             <h3 className="text-black text-sm font-bold uppercase tracking-wider">
                                                 AI Writeup Auto-Generator (ChatGPT)
@@ -1146,7 +1146,7 @@ const BlogsDashboard = () => {
                                         onChange={(e) => setPrimaryKeyword(e.target.value)}
                                         rows={5}
                                         placeholder="Enter primary keyword, draft notes, or transcripts for the legal blog here..."
-                                        className="w-full p-4 bg-white border border-black/20 focus:border-[#ff5100] focus:ring-2 focus:ring-[#ff5100]/20 rounded-xl text-xs text-black focus:outline-none placeholder-black/40 shadow-none transition-all"
+                                        className="w-full p-4 bg-white border border-black/20 focus:border-[#de5e18] focus:ring-2 focus:ring-[#de5e18]/20 rounded-xl text-xs text-black focus:outline-none placeholder-black/40 shadow-none transition-all"
                                         disabled={isGenerating}
                                     />
 
@@ -1168,7 +1168,7 @@ const BlogsDashboard = () => {
                                             disabled={isGenerating || !primaryKeyword.trim()}
                                             whileHover={{ scale: 1.02 }}
                                             whileTap={{ scale: 0.98 }}
-                                            className="px-5 py-2.5 bg-gradient-to-r from-[#ff5100] to-[#ff5100] hover:from-[#d94400] hover:to-[#d94400] text-white disabled:opacity-40 rounded-xl font-bold text-xs shadow-none hover:shadow transition-all cursor-pointer flex items-center gap-1.5"
+                                            className="px-5 py-2.5 bg-gradient-to-r from-[#de5e18] to-[#de5e18] hover:from-[#d94400] hover:to-[#d94400] text-white disabled:opacity-40 rounded-xl font-bold text-xs shadow-none hover:shadow transition-all cursor-pointer flex items-center gap-1.5"
                                         >
                                             {isGenerating ? (
                                                 <>
@@ -1198,7 +1198,7 @@ const BlogsDashboard = () => {
                                     value={newBlog.title}
                                     onChange={handleInputChange}
                                     placeholder="e.g. Defeating Bank Harassment & Debt Settlement"
-                                    className="p-3.5 border border-black/20 rounded-xl focus:border-[#ff5100] focus:ring-1 focus:ring-[#ff5100] focus:outline-none text-xs sm:text-sm font-semibold text-black/80 bg-white"
+                                    className="p-3.5 border border-black/20 rounded-xl focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] focus:outline-none text-xs sm:text-sm font-semibold text-black/80 bg-white"
                                 />
                             </div>
 
@@ -1211,7 +1211,7 @@ const BlogsDashboard = () => {
                                     value={newBlog.subtitle}
                                     onChange={handleInputChange}
                                     placeholder="e.g. A comprehensive guide on debtor legal rights and RBI OTS principles"
-                                    className="p-3.5 border border-black/20 rounded-xl focus:border-[#ff5100] focus:ring-1 focus:ring-[#ff5100] focus:outline-none text-xs sm:text-sm font-semibold text-black/80 bg-white"
+                                    className="p-3.5 border border-black/20 rounded-xl focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] focus:outline-none text-xs sm:text-sm font-semibold text-black/80 bg-white"
                                 />
                             </div>
 
@@ -1228,7 +1228,7 @@ const BlogsDashboard = () => {
                                     value={newBlog.slug}
                                     onChange={handleInputChange}
                                     placeholder="e.g. defeating-bank-harassment"
-                                    className="p-3.5 border border-black/20 rounded-xl focus:border-[#ff5100] focus:ring-1 focus:ring-[#ff5100] focus:outline-none text-xs sm:text-sm font-semibold text-black/80 bg-white font-mono"
+                                    className="p-3.5 border border-black/20 rounded-xl focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] focus:outline-none text-xs sm:text-sm font-semibold text-black/80 bg-white font-mono"
                                 />
                             </div>
 
@@ -1241,7 +1241,7 @@ const BlogsDashboard = () => {
                                     required
                                     value={newBlog.date}
                                     onChange={handleInputChange}
-                                    className="p-3.5 border border-black/20 rounded-xl focus:border-[#ff5100] focus:ring-1 focus:ring-[#ff5100] focus:outline-none text-xs sm:text-sm font-semibold text-black/80 bg-white"
+                                    className="p-3.5 border border-black/20 rounded-xl focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] focus:outline-none text-xs sm:text-sm font-semibold text-black/80 bg-white"
                                 />
                             </div>
 
@@ -1252,7 +1252,7 @@ const BlogsDashboard = () => {
                                     name="author"
                                     value={newBlog.author}
                                     onChange={handleInputChange}
-                                    className="p-3.5 border border-black/20 rounded-xl focus:border-[#ff5100] focus:ring-1 focus:ring-[#ff5100] focus:outline-none text-xs sm:text-sm font-semibold text-black/80 bg-white"
+                                    className="p-3.5 border border-black/20 rounded-xl focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] focus:outline-none text-xs sm:text-sm font-semibold text-black/80 bg-white"
                                 >
                                     <option value="Southern Marketing Team">Southern Marketing Team</option>
                                     <option value="Content Marketing Team">Content Marketing Team</option>
@@ -1269,13 +1269,13 @@ const BlogsDashboard = () => {
                                         value={imagePrompt}
                                         onChange={(e) => setImagePrompt(e.target.value)}
                                         placeholder="e.g. A professional legal illustration..."
-                                        className="p-3.5 border border-black/20 rounded-xl focus:border-[#ff5100] focus:ring-1 focus:ring-[#ff5100] focus:outline-none text-xs sm:text-sm font-semibold text-black/80 bg-white flex-1"
+                                        className="p-3.5 border border-black/20 rounded-xl focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] focus:outline-none text-xs sm:text-sm font-semibold text-black/80 bg-white flex-1"
                                     />
                                     <button
                                         type="button"
                                         onClick={handleGenerateImage}
                                         disabled={isGeneratingImage || !imagePrompt.trim()}
-                                        className="px-4 py-3 bg-[#ff5100]/5 hover:bg-[#ff5100]/10 border border-[#ff5100]/30 text-[#ff5100] rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer disabled:opacity-50"
+                                        className="px-4 py-3 bg-[#de5e18]/5 hover:bg-[#de5e18]/10 border border-[#de5e18]/30 text-[#de5e18] rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer disabled:opacity-50"
                                     >
                                         <span>{isGeneratingImage ? '💫 Generating...' : '✨ Generate AI'}</span>
                                     </button>
@@ -1292,7 +1292,7 @@ const BlogsDashboard = () => {
                                         value={newBlog.image}
                                         onChange={handleInputChange}
                                         placeholder="URL of the uploaded image..."
-                                        className="p-3.5 border border-black/20 rounded-xl focus:border-[#ff5100] focus:ring-1 focus:ring-[#ff5100] focus:outline-none text-xs sm:text-sm font-semibold text-black/80 bg-white flex-1"
+                                        className="p-3.5 border border-black/20 rounded-xl focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] focus:outline-none text-xs sm:text-sm font-semibold text-black/80 bg-white flex-1"
                                     />
                                     <input
                                         type="file"
@@ -1315,8 +1315,8 @@ const BlogsDashboard = () => {
 
                         {/* Generated Image Preview Block */}
                         {generatedImageUrl && (
-                            <div className="p-4 bg-[#ff5100]/5/50 rounded-2xl border border-amber-200 flex flex-col items-center gap-3">
-                                <span className="text-[10px] text-[#ff5100] font-bold uppercase tracking-wider">AI Generated Image</span>
+                            <div className="p-4 bg-[#de5e18]/5/50 rounded-2xl border border-amber-200 flex flex-col items-center gap-3">
+                                <span className="text-[10px] text-[#de5e18] font-bold uppercase tracking-wider">AI Generated Image</span>
                                 <img
                                     src={generatedImageUrl}
                                     alt="generated preview"
@@ -1326,7 +1326,7 @@ const BlogsDashboard = () => {
                                     type="button"
                                     onClick={handleUploadGeneratedImage}
                                     disabled={isUploadingGenerated}
-                                    className="px-4 py-2 bg-[#ff5100] text-white rounded-lg text-xs font-bold hover:bg-[#d94400] transition-colors disabled:opacity-50"
+                                    className="px-4 py-2 bg-[#de5e18] text-white rounded-lg text-xs font-bold hover:bg-[#d94400] transition-colors disabled:opacity-50"
                                 >
                                     {isUploadingGenerated ? 'Uploading to Firebase...' : 'Upload this to Firebase & Use as Cover'}
                                 </button>
@@ -1335,7 +1335,7 @@ const BlogsDashboard = () => {
 
                         {/* Image Preview Block */}
                         {imagePreview && !generatedImageUrl && (
-                            <div className="p-4 bg-[#fffff0] rounded-2xl border border-black/15 flex flex-col items-center gap-2">
+                            <div className="p-4 bg-[#f2decc] rounded-2xl border border-black/15 flex flex-col items-center gap-2">
                                 <span className="text-[10px] text-black/40 font-bold uppercase tracking-wider">Cover Image Preview</span>
                                 <img
                                     src={imagePreview}
@@ -1355,9 +1355,9 @@ const BlogsDashboard = () => {
                         </div>
 
                         {/* SEO Meta Tags Accordion */}
-                        <div className="p-5 border border-black/15 rounded-2xl bg-[#fffff0]/50 flex flex-col gap-4">
+                        <div className="p-5 border border-black/15 rounded-2xl bg-[#f2decc]/50 flex flex-col gap-4">
                             <h3 className="text-xs font-black text-black uppercase tracking-widest flex items-center gap-1.5">
-                                <FontAwesomeIcon icon={faInfoCircle} className="text-[#ff5100]" />
+                                <FontAwesomeIcon icon={faInfoCircle} className="text-[#de5e18]" />
                                 <span>Google Search SEO Configuration</span>
                             </h3>
 
@@ -1370,7 +1370,7 @@ const BlogsDashboard = () => {
                                         value={newBlog.metaTitle}
                                         onChange={handleInputChange}
                                         placeholder="Defaults to post title if left blank"
-                                        className="p-3 border border-black/20 rounded-lg focus:border-[#ff5100] focus:ring-1 focus:ring-[#ff5100] focus:outline-none text-xs font-semibold text-black/80 bg-white"
+                                        className="p-3 border border-black/20 rounded-lg focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] focus:outline-none text-xs font-semibold text-black/80 bg-white"
                                     />
                                 </div>
                                 <div className="flex flex-col gap-1.5">
@@ -1381,14 +1381,14 @@ const BlogsDashboard = () => {
                                         value={newBlog.metaDescription}
                                         onChange={handleInputChange}
                                         placeholder="Short description for Google snippet"
-                                        className="p-3 border border-black/20 rounded-lg focus:border-[#ff5100] focus:ring-1 focus:ring-[#ff5100] focus:outline-none text-xs font-semibold text-black/80 bg-white"
+                                        className="p-3 border border-black/20 rounded-lg focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] focus:outline-none text-xs font-semibold text-black/80 bg-white"
                                     />
                                 </div>
                             </div>
                         </div>
 
                         {/* FAQ Subcollection Section */}
-                        <div className="p-6 border border-black/15 rounded-3xl bg-[#fffff0]/30 flex flex-col gap-6">
+                        <div className="p-6 border border-black/15 rounded-3xl bg-[#f2decc]/30 flex flex-col gap-6">
                             <div className="flex justify-between items-center border-b border-black/10 pb-3">
                                 <h3 className="text-xs font-black text-black uppercase tracking-widest flex items-center gap-1.5">
                                     <FontAwesomeIcon icon={faFileAlt} className="text-blue-700" />
@@ -1413,7 +1413,7 @@ const BlogsDashboard = () => {
                                             <button
                                                 type="button"
                                                 onClick={() => removeFaq(idx)}
-                                                className="absolute top-2 right-2 w-6 h-6 rounded-full bg-[#fffff0] border border-black/10 flex items-center justify-center text-black/40 hover:text-red-500 cursor-pointer"
+                                                className="absolute top-2 right-2 w-6 h-6 rounded-full bg-[#f2decc] border border-black/10 flex items-center justify-center text-black/40 hover:text-red-500 cursor-pointer"
                                             >
                                                 <FontAwesomeIcon icon={faTimes} className="text-[10px]" />
                                             </button>
@@ -1424,7 +1424,7 @@ const BlogsDashboard = () => {
                                                     required
                                                     value={faq.question}
                                                     onChange={(e) => handleFaqChange(idx, 'question', e.target.value)}
-                                                    className="p-3 border border-black/20 rounded-lg focus:border-blue-500 focus:outline-none text-xs font-bold text-black bg-[#fffff0]/50"
+                                                    className="p-3 border border-black/20 rounded-lg focus:border-blue-500 focus:outline-none text-xs font-bold text-black bg-[#f2decc]/50"
                                                 />
                                                 <textarea
                                                     placeholder="Detailed Answer..."
@@ -1432,7 +1432,7 @@ const BlogsDashboard = () => {
                                                     rows={2}
                                                     value={faq.answer}
                                                     onChange={(e) => handleFaqChange(idx, 'answer', e.target.value)}
-                                                    className="p-3 border border-black/20 rounded-lg focus:border-blue-500 focus:outline-none text-xs text-black/60 bg-[#fffff0]/50"
+                                                    className="p-3 border border-black/20 rounded-lg focus:border-blue-500 focus:outline-none text-xs text-black/60 bg-[#f2decc]/50"
                                                 />
                                             </div>
                                         </div>
@@ -1442,7 +1442,7 @@ const BlogsDashboard = () => {
                         </div>
 
                         {/* Review Subcollection Section */}
-                        <div className="p-6 border border-black/15 rounded-3xl bg-[#fffff0]/30 flex flex-col gap-6">
+                        <div className="p-6 border border-black/15 rounded-3xl bg-[#f2decc]/30 flex flex-col gap-6">
                             <div className="flex justify-between items-center border-b border-black/10 pb-3">
                                 <h3 className="text-xs font-black text-black uppercase tracking-widest flex items-center gap-1.5">
                                     <FontAwesomeIcon icon={faStar} className="text-amber-500" />
@@ -1467,7 +1467,7 @@ const BlogsDashboard = () => {
                                             <button
                                                 type="button"
                                                 onClick={() => removeReview(idx)}
-                                                className="absolute top-2 right-2 w-6 h-6 rounded-full bg-[#fffff0] border border-black/10 flex items-center justify-center text-black/40 hover:text-red-500 cursor-pointer"
+                                                className="absolute top-2 right-2 w-6 h-6 rounded-full bg-[#f2decc] border border-black/10 flex items-center justify-center text-black/40 hover:text-red-500 cursor-pointer"
                                             >
                                                 <FontAwesomeIcon icon={faTimes} className="text-[10px]" />
                                             </button>
@@ -1478,7 +1478,7 @@ const BlogsDashboard = () => {
                                                     required
                                                     value={review.name}
                                                     onChange={(e) => handleReviewChange(idx, 'name', e.target.value)}
-                                                    className="p-3 border border-black/20 rounded-lg focus:border-amber-500 focus:outline-none text-xs font-bold text-black bg-[#fffff0]/50"
+                                                    className="p-3 border border-black/20 rounded-lg focus:border-amber-500 focus:outline-none text-xs font-bold text-black bg-[#f2decc]/50"
                                                 />
                                                 <div className="flex items-center gap-2">
                                                     <span className="text-xs text-black/60">Rating:</span>
@@ -1489,7 +1489,7 @@ const BlogsDashboard = () => {
                                                         required
                                                         value={review.rating}
                                                         onChange={(e) => handleReviewChange(idx, 'rating', parseInt(e.target.value))}
-                                                        className="p-2 border border-black/20 rounded-lg focus:border-amber-500 focus:outline-none text-xs text-black bg-[#fffff0]/50 w-20"
+                                                        className="p-2 border border-black/20 rounded-lg focus:border-amber-500 focus:outline-none text-xs text-black bg-[#f2decc]/50 w-20"
                                                     />
                                                 </div>
                                                 <textarea
@@ -1498,7 +1498,7 @@ const BlogsDashboard = () => {
                                                     rows={2}
                                                     value={review.review}
                                                     onChange={(e) => handleReviewChange(idx, 'review', e.target.value)}
-                                                    className="p-3 border border-black/20 rounded-lg focus:border-amber-500 focus:outline-none text-xs text-black/60 bg-[#fffff0]/50 md:col-span-2"
+                                                    className="p-3 border border-black/20 rounded-lg focus:border-amber-500 focus:outline-none text-xs text-black/60 bg-[#f2decc]/50 md:col-span-2"
                                                 />
                                             </div>
                                         </div>
@@ -1512,14 +1512,14 @@ const BlogsDashboard = () => {
                             <button
                                 type="button"
                                 onClick={handleCancelForm}
-                                className="px-6 py-3 rounded-xl border border-black/20 text-black/60 hover:bg-[#fffff0] text-sm font-bold transition-colors cursor-pointer"
+                                className="px-6 py-3 rounded-xl border border-black/20 text-black/60 hover:bg-[#f2decc] text-sm font-bold transition-colors cursor-pointer"
                             >
                                 Cancel
                             </button>
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className="px-8 py-3 bg-[#ff5100] hover:bg-[#d94400] text-white rounded-xl text-sm font-bold shadow-none transition-colors cursor-pointer flex items-center gap-2 disabled:opacity-60"
+                                className="px-8 py-3 bg-[#de5e18] hover:bg-[#d94400] text-white rounded-xl text-sm font-bold shadow-none transition-colors cursor-pointer flex items-center gap-2 disabled:opacity-60"
                             >
                                 {isSubmitting ? (
                                     <>

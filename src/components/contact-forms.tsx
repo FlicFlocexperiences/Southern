@@ -89,7 +89,7 @@ export const ContactUsWidget = () => {
       <div className="flex-1 bg-[#f4f3ef] rounded-[24px] p-6 md:p-8 flex flex-col">
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           
-          {success && <p className="text-[#ff5100] font-medium text-[16px] mb-2">Thank you! We have received your message.</p>}
+          {success && <p className="text-[#de5e18] font-medium text-[16px] mb-2">Thank you! We have received your message.</p>}
           {error && <p className="text-red-600 font-medium text-[16px] mb-2">{error}</p>}
           
           {/* Name Field */}
@@ -184,7 +184,7 @@ export const ContactUsWidget = () => {
           <button 
             disabled={loading} 
             type="submit" 
-            className="w-full py-4 rounded-full text-white font-bold text-[18px] tracking-wide bg-[#ff5100] active:scale-[0.99] transition-all cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed mt-2"
+            className="w-full py-4 rounded-full text-white font-bold text-[18px] tracking-wide bg-[#de5e18] active:scale-[0.99] transition-all cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed mt-2"
           >
             {loading ? "Submitting..." : "Submit"}
           </button>
@@ -213,7 +213,7 @@ export const ContactUsWidget = () => {
           {/* Email Us Button */}
           <a 
             href="mailto:info@southernedgemarketing.com" 
-            className="w-full max-w-[260px] py-3.5 rounded-full text-white font-bold text-[16px] tracking-wide bg-[#ff5100] active:scale-[0.99] transition-all text-center block"
+            className="w-full max-w-[260px] py-3.5 rounded-full text-white font-bold text-[16px] tracking-wide bg-[#de5e18] active:scale-[0.99] transition-all text-center block"
           >
             Email Us
           </a>

@@ -90,13 +90,13 @@ export const DesktopIntegrations = () => {
   let currentLogoIndex = 0;
 
   return (
-    <section className="w-full bg-[#fffff0] relative flex flex-col items-center rounded-t-[45px] overflow-hidden -mt-8 pt-8 z-20 shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
+    <section className="w-full bg-[#f2decc] relative flex flex-col items-center rounded-t-[45px] overflow-hidden -mt-8 pt-8 z-20 shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
       
       {/* Background Graphic Blend */}
       <div className="w-full absolute top-0 left-0 h-[800px] pointer-events-none overflow-hidden">
          <img src="/bggradi.png" alt="Background gradient" className="absolute top-0 left-0 w-full h-full object-cover object-top" />
          {/* Overlay to ensure smooth fade into the background color at the bottom */}
-         <div className="absolute inset-0 bg-gradient-to-t from-[#fffff0] via-[#fffff0]/50 to-transparent" />
+         <div className="absolute inset-0 bg-gradient-to-t from-[#f2decc] via-[#f2decc]/50 to-transparent" />
       </div>
 
       <div className="w-full relative flex justify-center pt-20 pb-12 z-10">

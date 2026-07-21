@@ -13,7 +13,7 @@ const GreenCrossIcon = () => (
 
 const MissionCard = ({ isMobile = false }) => (
   <div className={`bg-[#111111] rounded-[24px] p-8 md:p-10 flex flex-col justify-center relative overflow-hidden shadow-sm h-full ${!isMobile ? 'min-h-[220px]' : ''}`}>
-    <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a] via-[#30261c] to-[#111111] pointer-events-none" />
+    <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a] via-[#432d1c] to-[#111111] pointer-events-none" />
     <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-gradient-to-bl from-white/5 to-transparent rounded-full blur-3xl pointer-events-none" />
     
     <div className="relative z-10">
@@ -87,11 +87,11 @@ const WhatWeDoCard = ({ isMobile = false }) => (
 
       <Link href="/contact" className="mt-auto">
         <button 
-          className="relative w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] overflow-hidden shadow-[0px_6px_16px_rgba(255,81,0,0.35)] hover:shadow-[0px_8px_20px_rgba(255,81,0,0.5)] transition-shadow group cursor-pointer"
+          className="relative w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
           aria-label="Start Growing"
         >
           {/* Inner Left Pill with right shadow */}
-          <div className="absolute left-[0px] top-0 w-[157px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+          <div className="absolute left-[0px] top-0 w-[157px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
             <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
             <span className="font-medium text-[18px] text-white tracking-tight whitespace-nowrap">
               Start Growing
@@ -124,7 +124,7 @@ export const AboutBento = () => {
   };
 
   return (
-    <section className="w-full max-w-[1280px] mx-auto px-0 md:px-10 py-8 md:py-16 bg-[#fffff0] overflow-hidden">
+    <section className="w-full max-w-[1280px] mx-auto px-0 md:px-10 py-8 md:py-16 bg-[#f2decc] overflow-hidden">
       
       {/* Desktop Layout (CSS Grid) */}
       <div className="hidden md:grid grid-cols-1 xl:grid-cols-3 gap-6 w-full px-4 md:px-0">
@@ -168,7 +168,7 @@ export const AboutBento = () => {
           {[0, 1, 2, 3].map((i) => (
             <div 
               key={i} 
-              className={`w-2 h-2 rounded-full transition-colors duration-300 ${i === index ? 'bg-[#ff5100]' : 'bg-gray-300'}`}
+              className={`w-2 h-2 rounded-full transition-colors duration-300 ${i === index ? 'bg-[#de5e18]' : 'bg-gray-300'}`}
             />
           ))}
         </div>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const Cta = () => {
   return (
-    <div className="w-full px-4 md:px-[60px] py-10 md:py-20 flex justify-center bg-[#fffff0]">
+    <div className="w-full px-4 md:px-[60px] py-10 md:py-20 flex justify-center bg-[#f2decc]">
       <div className="relative w-full max-w-[1568px]">
         {/* Outer wrapper that provides the 20px padding and gray border/inset shadow effect */}
         <div className="w-full h-full relative rounded-[25px] md:rounded-[45px] p-[10px] md:p-[20px] shadow-[0px_15px_60px_-15px_rgba(0,0,0,0.1)]">
@@ -17,7 +17,7 @@ export const Cta = () => {
             {/* Background Decorations */}
             <div className="absolute inset-0 pointer-events-none hidden md:block overflow-hidden rounded-[25px]">
               {/* Added impactful gradient from bottom right */}
-              <div className="absolute bottom-0 right-0 w-[1200px] h-[1200px] bg-[radial-gradient(circle_at_bottom_right,_rgba(255,81,0,0.35)_0%,_rgba(255,81,0,0.15)_30%,_transparent_70%)] pointer-events-none z-0 translate-x-[20%] translate-y-[20%]" />
+              <div className="absolute bottom-0 right-0 w-[1200px] h-[1200px] bg-[radial-gradient(circle_at_bottom_right,_rgba(222,94,24,0.35)_0%,_rgba(222,94,24,0.15)_30%,_transparent_70%)] pointer-events-none z-0 translate-x-[20%] translate-y-[20%]" />
               
               <div className="absolute h-[543px] w-[1188px] left-[calc(100%-449px)] top-[229px] z-10">
                 <img alt="" className="block max-w-none size-full" src="/assets/vector9.svg" />
@@ -88,11 +88,11 @@ export const Cta = () => {
                   
                   <Link href="/contact" className="w-full mt-2">
                     <button 
-                      className="relative w-full h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] overflow-hidden shadow-[0px_6px_16px_rgba(255,81,0,0.35)] hover:shadow-[0px_8px_20px_rgba(255,81,0,0.5)] transition-shadow group cursor-pointer"
+                      className="relative w-full h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
                       aria-label="Start Now"
                     >
                       {/* Inner Left Pill with right shadow */}
-                      <div className="absolute left-[0px] top-0 w-[calc(100%-60px)] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+                      <div className="absolute left-[0px] top-0 w-[calc(100%-60px)] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
                         <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
                         <span className="font-medium text-[18px] md:text-[20px] text-white tracking-tight whitespace-nowrap">
                           Start Now

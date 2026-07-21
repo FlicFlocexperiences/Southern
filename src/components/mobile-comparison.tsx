@@ -17,10 +17,10 @@ const CheckIcon = () => (
 export const MobileComparison = () => {
   const [isOn, setIsOn] = useState(true);
 
-  const highlightClass = `font-medium transition-colors duration-300 ${isOn ? 'text-[#ff5100]' : 'text-gray-500'}`;
+  const highlightClass = `font-medium transition-colors duration-300 ${isOn ? 'text-[#de5e18]' : 'text-gray-500'}`;
 
   return (
-    <div className="w-full px-5 py-12 relative bg-[#fffff0]">
+    <div className="w-full px-5 py-12 relative bg-[#f2decc]">
       {/* Intro Text Block 1 */}
       <p className="text-[26px] leading-[34px] font-sans font-normal text-black mb-6">
         We know choosing the right{" "}
@@ -39,7 +39,7 @@ export const MobileComparison = () => {
         <span className="inline-flex items-center mx-1 align-middle translate-y-[-2px]">
           <button 
             onClick={() => setIsOn(!isOn)}
-            className={`relative w-[76px] h-[38px] rounded-full overflow-hidden block transition-colors duration-300 ${isOn ? 'bg-[#ff5100]' : 'bg-gray-400'}`}
+            className={`relative w-[76px] h-[38px] rounded-full overflow-hidden block transition-colors duration-300 ${isOn ? 'bg-[#de5e18]' : 'bg-gray-400'}`}
             aria-label="Toggle comparison"
           >
             <span className={`absolute top-[4px] left-0 w-[30px] h-[30px] bg-white rounded-full block shadow-sm transition-transform duration-300 ${isOn ? 'translate-x-[42px]' : 'translate-x-[4px]'}`}></span>
@@ -88,7 +88,7 @@ export const MobileComparison = () => {
         {/* Southern Marketing Card */}
         <div className={`relative p-6 pt-8 pb-10 rounded-t-[20px] -mt-4 shadow-[0_-4px_10px_rgba(0,0,0,0.1)] transition-colors duration-300 ${isOn ? 'bg-[#0F0F0F] text-white' : 'bg-white text-black'}`}>
           {/* Glow effect at bottom */}
-          <div className={`absolute -bottom-24 -right-24 w-[350px] h-[350px] blur-[80px] rounded-full pointer-events-none transition-all duration-300 ${isOn ? 'bg-[#ff5100] opacity-[0.35]' : 'opacity-0'}`}></div>
+          <div className={`absolute -bottom-24 -right-24 w-[350px] h-[350px] blur-[80px] rounded-full pointer-events-none transition-all duration-300 ${isOn ? 'bg-[#de5e18] opacity-[0.35]' : 'opacity-0'}`}></div>
           
           <div className="relative z-10">
             <h3 className="text-[28px] font-medium mb-4">Southern Edge Marketing</h3>
