@@ -91,7 +91,7 @@ export const MobileComparison = () => {
           <div className={`absolute -bottom-24 -right-24 w-[350px] h-[350px] blur-[80px] rounded-full pointer-events-none transition-all duration-300 ${isOn ? 'bg-[#ff5100] opacity-[0.35]' : 'opacity-0'}`}></div>
           
           <div className="relative z-10">
-            <h3 className="text-[28px] font-medium mb-4">Southern Marketing</h3>
+            <h3 className="text-[28px] font-medium mb-4">Southern Edge Marketing</h3>
             <div className={`w-full h-[1px] mb-6 transition-colors duration-300 ${isOn ? 'bg-white/30' : 'bg-gray-300'}`}></div>
             
             <ul className="flex flex-col gap-5">

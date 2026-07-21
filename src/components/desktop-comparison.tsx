@@ -94,7 +94,7 @@ export const DesktopComparison = () => {
           
           <div className="relative z-10 p-9 lg:p-13 xl:p-15 flex flex-col h-full">
             <h3 className="text-[32px] xl:text-[35px] font-medium mb-6">
-              Southern Marketing
+              Southern Edge Marketing
             </h3>
             <div className={`w-full h-px mb-10 transition-colors duration-300 ${isOn ? 'bg-white/20' : 'bg-black/10'}`}></div>
             

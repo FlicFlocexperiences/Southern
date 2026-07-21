@@ -24,19 +24,19 @@ export const DesktopFaq = () => {
   const faqs = [
     {
       question: "Who do you usually work with?",
-      answer: "We work with forward-thinking businesses, from ambitious startups to established enterprises, looking to scale their digital presence and drive measurable results."
+      answer: "We work with small and growing businesses across India — from D2C and e-commerce brands to F&B, retail, and professional services — who want marketing that's tied to real business outcomes, not just impressions."
     },
     {
       question: "How much does a new website cost?",
-      answer: "Project costs vary based on scope, features, and complexity. We offer customized quotes after understanding your specific needs and business goals."
+      answer: "Every project is scoped around what your business actually needs, from a lean landing page to a full custom build. Reach out for a free quote based on your goals and timeline."
     },
     {
       question: "Do you offer ongoing support?",
-      answer: "Yes, we provide dedicated maintenance, updates, and optimization services to ensure your digital assets continue performing at their best over time."
+      answer: "Yes — we don't disappear after launch. We offer ongoing maintenance, content, and performance support so your website and campaigns keep improving after go-live."
     },
     {
       question: "How long does it take to see results?",
-      answer: "While some technical optimizations show immediate impact, organic growth and comprehensive marketing strategies typically take 3-6 months to yield significant results."
+      answer: "It depends on the channel: website and brand work show up immediately, SEO typically builds momentum over 3–6 months, and paid ads/social can show early signals within the first few weeks."
     }
   ];
 

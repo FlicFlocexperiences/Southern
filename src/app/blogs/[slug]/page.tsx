@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   
   if (!blog) return {};
   return {
-    title: `${blog.title} | Southern Marketing`,
+    title: `${blog.title} | Southern Edge Marketing`,
     description: blog.excerpt,
   };
 }

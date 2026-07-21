@@ -368,11 +368,26 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
               Get in touch with our team to discuss custom Next.js engineering, Shopify architectures, or modern digital strategies.
             </p>
             <div className="flex flex-col gap-3">
-              <Link
-                href="/contact"
-                className="w-full border border-[#30261C]/15 hover:bg-white text-[#30261C] text-center py-3 rounded-xl font-bold text-[14px] md:text-[15px] transition-all duration-300"
-              >
-                Request Consultation
+              <Link href="/contact" className="w-full">
+                <button 
+                  className="relative w-full h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] overflow-hidden shadow-[0px_6px_16px_rgba(255,81,0,0.35)] hover:shadow-[0px_8px_20px_rgba(255,81,0,0.5)] transition-shadow group cursor-pointer"
+                  aria-label="Request Consultation"
+                >
+                  {/* Inner Left Pill with right shadow */}
+                  <div className="absolute left-[0px] top-0 w-[calc(100%-60px)] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#ff5100] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+                    <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
+                    <span className="font-medium text-[15px] sm:text-[16px] text-white tracking-tight whitespace-nowrap">
+                      Request Consultation
+                    </span>
+                  </div>
+                  
+                  {/* Right Arrow Icon */}
+                  <div className="absolute right-[22px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
+                    <svg className="w-[21px] h-[21px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                    </svg>
+                  </div>
+                </button>
               </Link>
             </div>
           </div>

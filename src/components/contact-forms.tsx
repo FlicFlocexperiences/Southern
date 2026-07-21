@@ -222,7 +222,7 @@ export const ContactUsWidget = () => {
           <p className="text-[14px] text-black/50 mt-5">
             or call us at 
             <a href="tel:+919899238237" className="font-bold text-black hover:text-[#e21b70] transition-colors ml-1.5 whitespace-nowrap">
-              +91 xxxxx xxxxx
+              +91 98992 38237
             </a>
           </p>
         </div>

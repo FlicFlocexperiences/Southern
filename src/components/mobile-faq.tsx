@@ -49,15 +49,19 @@ export const MobileFaq = () => {
   const faqs = [
     {
       question: "Who do you usually work with?",
-      answer: "We work with ambitious brands and businesses looking to scale their digital presence through strategic design and marketing."
+      answer: "We work with small and growing businesses across India — from D2C and e-commerce brands to F&B, retail, and professional services — who want marketing that's tied to real business outcomes, not just impressions."
     },
     {
-      question: "How long does a project take?",
-      answer: "Most website projects take 4-8 weeks from kickoff to launch, depending on complexity and features required."
+      question: "How much does a new website cost?",
+      answer: "Every project is scoped around what your business actually needs, from a lean landing page to a full custom build. Reach out for a free quote based on your goals and timeline."
     },
     {
       question: "Do you offer ongoing support?",
-      answer: "Yes, we offer monthly retainers for SEO, marketing, and website maintenance to ensure your continued growth."
+      answer: "Yes — we don't disappear after launch. We offer ongoing maintenance, content, and performance support so your website and campaigns keep improving after go-live."
+    },
+    {
+      question: "How long does it take to see results?",
+      answer: "It depends on the channel: website and brand work show up immediately, SEO typically builds momentum over 3–6 months, and paid ads/social can show early signals within the first few weeks."
     }
   ];
 

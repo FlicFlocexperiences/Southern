@@ -5,8 +5,8 @@ import { MobileFooter } from "@/components/mobile-footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Design N Code",
-  description: "Learn how Design N Code collects, manages, processes, and protects your corporate data inputs.",
+  title: "Privacy Policy | Southern Edge Marketing",
+  description: "Learn how Southern Edge Marketing collects, manages, processes, and protects your data.",
 };
 
 export default function PrivacyPolicy() {

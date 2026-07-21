@@ -161,6 +161,18 @@ function getProjectAfterEffectText(slug: string, title: string, category: string
   }
 }
 
+import { Metadata } from "next";
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
+  if (!project) return {};
+  return {
+    title: `${project.title} | Southern Edge Marketing`,
+    description: project.description || `${project.title} case study by Southern Edge Marketing.`,
+  };
+}
+
 // Make it dynamic by defining generateStaticParams
 export function generateStaticParams() {
   return projects.map((project) => ({

@@ -68,12 +68,12 @@ export function MobileHero() {
       {/* Info Text & Ratings (Bottom Section) */}
       <div className="w-full px-6 mt-8 flex flex-col gap-5 z-10">
         {/* Left side text */}
-        <div className="flex items-start gap-2 max-w-[220px]">
+        <div className="flex items-start gap-2 max-w-[280px]">
           <svg className="w-6 h-6 text-[#ff5100] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
           </svg>
-          <p className="text-[15px] font-medium text-black leading-snug">
-            Strategy, design, development, and marketing that actually drives business.
+          <p className="text-[14px] font-medium text-black leading-snug">
+            Strategy, design, development, and marketing that actually drives business — not just vanity metrics.
           </p>
         </div>
 
@@ -91,8 +91,8 @@ export function MobileHero() {
               <span className="font-semibold">5.0</span> <span>rating</span>
             </p>
           </div>
-          <p className="text-[15px] text-black">
-            Helped over <span className="font-semibold">100+ businesses</span>
+          <p className="text-[14px] text-black">
+            Helped over <span className="font-semibold">100+ businesses grow across India</span>
           </p>
         </div>
       </div>

@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const service = getServiceBySlug(slug);
   if (!service) return {};
   return {
-    title: `${service.title} | Southern Marketing`,
+    title: `${service.title} | Southern Edge Marketing`,
     description: service.description1,
   };
 }

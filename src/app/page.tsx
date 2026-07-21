@@ -22,6 +22,9 @@ import { DesktopMarquee } from "@/components/desktop-marquee";
 import { DesktopFooter } from "@/components/desktop-footer";
 
 import { Cta } from "@/components/cta";
+import { Testimonials } from "@/components/testimonials";
+import { WhyUs } from "@/components/why-us";
+import { HowWeWork } from "@/components/how-we-work";
 
 import { Metadata } from "next";
 
@@ -44,6 +47,9 @@ export default function Home() {
           <MobileComparison />
           <MobileCaseStudies />
           <MobileServices />
+          <WhyUs />
+          <HowWeWork />
+          <Testimonials />
           <Cta />
           <MobileFaq />
           <MobileFooter />
@@ -61,6 +67,9 @@ export default function Home() {
           <DesktopComparison />
           <DesktopCaseStudies />
           <DesktopServices />
+          <WhyUs />
+          <HowWeWork />
+          <Testimonials />
           <Cta />
           <DesktopFaq />
           <DesktopMarquee />

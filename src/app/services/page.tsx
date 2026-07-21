@@ -9,6 +9,7 @@ import { DesktopFaq } from "@/components/desktop-faq";
 import { DesktopFooter } from "@/components/desktop-footer";
 
 import { Cta } from "@/components/cta";
+import { Testimonials } from "@/components/testimonials";
 
 import { Metadata } from "next";
 
@@ -24,7 +25,10 @@ export default function ServicesPage() {
       <div className="block md:hidden w-full min-h-screen bg-[#fffff0]">
         <MobileNav />
         <MobileServicesPage />
-        <div style={{ zoom: 0.8 }}><Cta /></div>
+        <div style={{ zoom: 0.8 }}>
+          <Testimonials />
+          <Cta />
+        </div>
         <div style={{ zoom: 0.8 }}>
           <MobileFaq />
           <MobileFooter />
@@ -35,7 +39,10 @@ export default function ServicesPage() {
       <div className="hidden md:block w-full min-h-screen bg-[#fffff0]">
         <DesktopNav />
         <DesktopServicesPage />
-        <div style={{ zoom: 0.8 }}><Cta /></div>
+        <div style={{ zoom: 0.8 }}>
+          <Testimonials />
+          <Cta />
+        </div>
         <div style={{ zoom: 0.8 }}>
           <DesktopFaq />
           <DesktopFooter />

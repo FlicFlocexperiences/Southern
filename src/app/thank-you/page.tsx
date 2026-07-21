@@ -6,7 +6,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Thank You | Southern Marketing",
+  title: "Thank You | Southern Edge Marketing",
   description: "Thank you for getting in touch with us.",
 };
 

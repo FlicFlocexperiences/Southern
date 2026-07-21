@@ -9,7 +9,7 @@ import { MobileFaq } from "@/components/mobile-faq";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects | Southern Marketing",
+  title: "Projects | Southern Edge Marketing",
   description: "Explore our latest web development, branding, and design projects.",
 };
 

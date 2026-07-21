@@ -34,7 +34,7 @@ export const DesktopNav = () => {
         <div className="flex items-center shrink-0">
           <Link href="/">
             <Image
-              src="/SEM.svg"
+              src="/layer-MC0.svg"
               alt="SEM Logo"
               width={50}
               height={50}

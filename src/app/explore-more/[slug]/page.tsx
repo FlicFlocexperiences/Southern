@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const article = getArticleBySlug(slug);
   if (!article) return {};
   return {
-    title: `${article.title} | Southern Marketing`,
+    title: `${article.title} | Southern Edge Marketing`,
     description: article.excerpt,
   };
 }

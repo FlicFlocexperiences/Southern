@@ -13,8 +13,8 @@ import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 
 export const metadata: Metadata = {
-  title: "Blogs | Southern Marketing",
-  description: "Read our latest articles and insights at Southern Marketing.",
+  title: "Blogs | Southern Edge Marketing",
+  description: "Read our latest articles and insights at Southern Edge Marketing.",
 };
 
 export const dynamic = 'force-dynamic'; // Ensures this page is server-rendered dynamically

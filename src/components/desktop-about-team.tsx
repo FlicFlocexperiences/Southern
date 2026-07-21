@@ -54,7 +54,7 @@ export const DesktopAboutTeam = () => {
             MEET THE CREW
           </h2>
           <p className="text-[20px] lg:text-[21px] font-normal leading-snug text-black/65 max-w-[800px]">
-            Working directly with people fuels my creativity and pushes me to achieve remarkable experiences for the end user. Partners.
+            Our team of strategists, developers, and designers works directly with you to craft digital experiences that build trust and drive measurable growth across India and Dubai.
           </p>
         </div>
       </div>
@@ -67,13 +67,14 @@ export const DesktopAboutTeam = () => {
           <TeamCard 
             name="Ameet Nangia" 
             role1="Founder" 
-            role2="Digital/Performance Marketer" 
+            role2="Driving performance marketing and brand growth strategies." 
             image="/assets/team/ameet.png"
             linkedinUrl="https://linkedin.com/"
           />
           <TeamCard 
             name="Ankita Malik" 
             role1="Website Developer" 
+            role2="Building high-converting, scalable web applications."
             image="/assets/team/ankita.png"
             linkedinUrl="https://linkedin.com/"
             imageClassName="scale-[1.3] group-hover:!scale-[1.35] origin-bottom"
@@ -122,6 +123,7 @@ export const DesktopAboutTeam = () => {
             <TeamCard 
               name="Bhavya Jain" 
               role1="Software Developer" 
+              role2="Engineering full-stack web and mobile software solutions."
               image="/assets/team/bhavya.png"
               linkedinUrl="https://linkedin.com/"
               heightClass="h-[320px] lg:h-full lg:min-h-[460px]"
@@ -129,6 +131,7 @@ export const DesktopAboutTeam = () => {
             <TeamCard 
               name="Zaib" 
               role1="UX/UI Designer" 
+              role2="Designing intuitive, user-centered digital interfaces."
               image="/assets/team/zaib.png"
               linkedinUrl="https://linkedin.com/"
               heightClass="h-[320px] lg:h-full lg:min-h-[460px]"

@@ -10,6 +10,7 @@ export function AboutPageHero() {
         loop
         muted
         playsInline
+        preload="metadata"
         className="absolute inset-0 w-full h-full object-cover z-0"
       >
         <source src="/hero.mp4" type="video/mp4" />
@@ -30,7 +31,7 @@ export function AboutPageHero() {
             </svg>
           </div>
           <p className="text-[18px] md:text-[20px] leading-[1.5] text-[#0f0f0f]">
-            We craft brands and digital experiences that build trust, inspire growth, and leave a lasting impact.
+            We craft brands and digital experiences that build trust, inspire growth, and leave a lasting impact — for businesses across India and the UAE.
           </p>
         </div>
 

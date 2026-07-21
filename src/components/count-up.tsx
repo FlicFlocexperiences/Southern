@@ -61,13 +61,18 @@ export function CountUp({
     return padded + finalSuffix;
   };
 
-  const [displayValue, setDisplayValue] = useState(getFormattedValue(from));
+  const [displayValue, setDisplayValue] = useState(getFormattedValue(targetNumber));
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
-    if (isInView) {
-      motionValue.set(targetNumber);
+    if (isInView && !hasAnimated) {
+      setHasAnimated(true);
+      motionValue.set(from);
+      requestAnimationFrame(() => {
+        motionValue.set(targetNumber);
+      });
     }
-  }, [isInView, motionValue, targetNumber]);
+  }, [isInView, hasAnimated, motionValue, from, targetNumber]);
 
   useEffect(() => {
     return springValue.on("change", (latest) => {

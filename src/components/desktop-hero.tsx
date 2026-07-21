@@ -74,12 +74,12 @@ export const DesktopHero = () => {
         {/* Info Text & Ratings (Bottom Section) */}
         <div className="w-full px-8 md:px-12 mt-16 flex items-end justify-between z-10">
           {/* Left side text */}
-          <div className="flex items-start gap-3 max-w-[300px]">
+          <div className="flex items-start gap-3 max-w-[420px]">
             <svg className="w-6 h-6 text-[#ff5100] shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
             </svg>
-            <p className="text-[14px] xl:text-[18px] font-medium text-black/70 leading-[1.3]">
-              Strategy, design, development, and marketing that actually drives business.
+            <p className="text-[14px] xl:text-[16px] font-medium text-black/70 leading-[1.3]">
+              Strategy, design, development, and marketing that actually drives business — not just vanity metrics. Southern Edge Marketing helps brands in India get seen, get remembered, and get chosen.
             </p>
           </div>
 
@@ -98,7 +98,7 @@ export const DesktopHero = () => {
               </p>
             </div>
             <p className="text-[14px] xl:text-[18px] text-black/70 font-sans">
-              Helped over <span className="font-semibold text-black">100+ businesses</span>
+              Helped over <span className="font-semibold text-black">100+ businesses grow across India</span>
             </p>
           </div>
         </div>

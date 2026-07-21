@@ -9,9 +9,10 @@ interface ProjectCardProps {
   category: string;
   duration: string;
   image: string;
+  result?: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ slug, title, category, duration, image }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ slug, title, category, duration, image, result }) => {
   const isPhotography = category.toLowerCase().includes("photography") || category.toLowerCase().includes("videography");
   return (
     <Link 
@@ -35,10 +36,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ slug, title, category, durati
       </div>
       
       {/* Text Meta Container */}
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-2">
         <h3 className="text-[24px] lg:text-[28px] font-bold text-[#0f0f0f] leading-none transition-colors duration-300">
           {title}
         </h3>
+        
+        {result && (
+          <p className="text-[13px] lg:text-[14px] text-black/75 leading-relaxed font-normal">
+            {result}
+          </p>
+        )}
         
         {/* Details Row: Category on left, Location & Year & Arrow on right */}
         <div className="flex justify-between items-center text-[12px] lg:text-[13px] font-sans text-neutral-400 font-semibold tracking-wider uppercase mt-1">
@@ -67,28 +74,32 @@ export const DesktopCaseStudies = () => {
       title: "AMA Legal Solutions",
       category: "Website Development",
       duration: "6 weeks",
-      image: "/project/AMA.svg"
+      image: "/project/AMA.svg",
+      result: "40% reduction in onboarding times & 25% increase in operational efficiency."
     },
     {
       slug: "the-fat-cookie",
       title: "The Fat Cookie",
       category: "Shopify",
       duration: "8 weeks",
-      image: "/project/The_fat_cookie.svg"
+      image: "/project/The_fat_cookie.svg",
+      result: "Custom Shopify storefront engineered for high conversion rates and frictionless checkout."
     },
     {
       slug: "sage-perfume",
       title: "Sage Perfume",
       category: "Photography",
       duration: "5 weeks",
-      image: "/SAGE_Perfumes/1.jpg"
+      image: "/SAGE_Perfumes/1.jpg",
+      result: "Luxury editorial fragrance photography elevating brand perception and social engagement."
     },
     {
       slug: "jsv",
       title: "JSV Branding",
       category: "Branding",
       duration: "6 weeks",
-      image: "/JSV/5.jpg"
+      image: "/JSV/5.jpg",
+      result: "Comprehensive brand identity system built for scalable visual positioning."
     }
   ];
 

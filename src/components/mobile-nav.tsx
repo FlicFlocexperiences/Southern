@@ -27,7 +27,7 @@ export function MobileNav() {
         {/* Logo */}
         <Link href="/">
           <Image
-            src="/sem_color.svg"
+            src="/layer-MC0.svg"
             alt="SEM Logo"
             width={42}
             height={42}
@@ -64,7 +64,7 @@ export function MobileNav() {
           <div className="h-[68px] w-full flex items-center justify-between px-8 md:px-10 absolute top-0 left-0 z-50">
             <Link href="/" onClick={() => setIsOpen(false)}>
               <Image
-                src="/SEM LOGO.svg"
+                src="/layer-MC0.svg"
                 alt="SEM Logo"
                 width={36}
                 height={36}
