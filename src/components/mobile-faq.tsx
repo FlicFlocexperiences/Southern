@@ -66,7 +66,7 @@ export const MobileFaq = () => {
   ];
 
   return (
-    <div className="w-full bg-[#f2decc] px-5 pt-16 pb-16 relative flex flex-col items-center" style={{ zoom: 1.08 }}>
+    <div className="w-full bg-[#f2decc] px-5 pt-16 pb-16 relative flex flex-col items-center">
       
       {/* Header */}
       <p className="text-[18px] font-medium tracking-wide mb-4 text-center">

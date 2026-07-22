@@ -159,6 +159,7 @@ export const ContactUsWidget = () => {
                 <option value="digital-marketing">Digital Marketing</option>
                 <option value="seo">SEO</option>
                 <option value="social-media">Social Media Management</option>
+                <option value="performance-marketing">Performance Marketing</option>
                 <option value="other">Other</option>
               </select>
               <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-black/35">

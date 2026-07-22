@@ -21,7 +21,7 @@ export function MobileNav() {
   ];
 
   return (
-    <div className="w-full relative z-[100]" style={{ zoom: 0.8 }}>
+    <div className="w-full relative z-[100]">
       {/* Base Navbar (Always visible at the bottom layer) */}
       <div className="h-[68px] w-full flex items-center justify-between px-8 md:px-10 absolute top-0 left-0 z-40 bg-[rgba(255,255,240,0.1)]">
         {/* Logo */}

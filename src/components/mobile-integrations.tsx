@@ -88,11 +88,11 @@ export function MobileIntegrations() {
   let currentLogoIndex = 0;
 
   return (
-    <section className="w-full bg-[#f2decc] relative overflow-hidden flex flex-col items-center">
+    <section className="w-full min-h-screen bg-[#f2decc] relative overflow-hidden flex flex-col justify-center items-center py-12">
       
       {/* Honeycombs Section with Background */}
       <div 
-        className="w-full relative flex justify-center pt-16 pb-10"
+        className="w-full relative flex justify-center pt-8 pb-6"
         style={{ background: "url('/bggrad.png') lightgray 50% / cover no-repeat" }}
       >
         {/* Bottom Fade Overlay to blend image smoothly into the bg color below */}
@@ -131,7 +131,7 @@ export function MobileIntegrations() {
       </div>
 
       {/* Text Details */}
-      <div className="max-w-[440px] mx-auto relative z-20 w-full flex flex-col items-center pb-16 pt-4">
+      <div className="max-w-[440px] mx-auto relative z-20 w-full flex flex-col items-center pb-8 pt-2">
         <div className="text-center flex flex-col items-center">
           <h2 className="flex flex-col gap-0 uppercase text-center font-sans tracking-tight">
             <span className="text-[28px] leading-[1.1] font-semibold text-[#A1A1A1]">

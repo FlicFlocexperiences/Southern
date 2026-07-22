@@ -2,33 +2,12 @@
 
 import React from "react";
 import Link from "next/link";
-import ColorBends from "./ColorBends";
 
 export const DesktopHero = () => {
   return (
     <div className="w-full flex flex-col bg-[#f2decc]">
       {/* Hero Content Full Screen Wrapper */}
-      <div className="w-full relative flex flex-col items-center min-h-screen pt-[245px] pb-16 overflow-hidden">
-        {/* Background ColorBends */}
-        <div className="absolute inset-0 z-0 w-full h-full">
-          <ColorBends
-            rotation={90}
-            speed={0.7}
-            colors={["#e25309"]}
-            transparent
-            autoRotate={0}
-            scale={1}
-            frequency={1}
-            warpStrength={0.98}
-            mouseInfluence={1}
-            parallax={0.5}
-            noise={0.15}
-            iterations={1}
-            intensity={1.2}
-            bandWidth={10.5}
-          />
-        </div>
-
+      <div className="w-full relative flex flex-col items-center h-screen pt-[140px] pb-12 overflow-hidden">
         {/* Background blurred elements */}
         <div className="absolute bg-[#de5e18]/20 blur-[100px] h-[400px] left-[-100px] top-[30%] w-[400px] rounded-full pointer-events-none" />
         <div className="absolute bg-[#de5e18]/20 blur-[100px] h-[400px] right-[-100px] top-[10%] w-[400px] rounded-full pointer-events-none" />
@@ -72,7 +51,7 @@ export const DesktopHero = () => {
         </div>
 
         {/* Info Text & Ratings (Bottom Section) */}
-        <div className="w-full px-8 md:px-12 mt-16 flex items-end justify-between z-10">
+        <div className="w-full px-8 md:px-12 mt-auto flex items-end justify-between z-10">
           {/* Left side text */}
           <div className="flex items-start gap-3 max-w-[420px]">
             <svg className="w-6 h-6 text-[#de5e18] shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">

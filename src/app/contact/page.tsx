@@ -37,7 +37,7 @@ export default function Contact() {
       {/* Mobile Version */}
       <div className="md:hidden w-full bg-[#f2decc]">
         <MobileNav />
-        <div style={{ zoom: 0.8 }}>
+        <div className="w-full">
           {/* Mobile Contact Hero */}
           <section className="w-full px-5 pt-28 pb-8 flex flex-col items-start relative z-10">
             <div className="flex flex-col items-start mb-8 w-full">

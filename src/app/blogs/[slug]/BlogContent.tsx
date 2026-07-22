@@ -210,13 +210,13 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
           <Link href="/contact" className="inline-block">
             <button 
               className="relative w-[260px] sm:w-[280px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
-              aria-label="Request Consultation"
+              aria-label="For Consultation"
             >
               {/* Inner Left Pill with right shadow */}
               <div className="absolute left-0 top-0 w-[195px] sm:w-[215px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
                 <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
                 <span className="font-medium text-[15px] sm:text-[16px] text-white tracking-tight whitespace-nowrap">
-                  Request Consultation
+                  For Consultation
                 </span>
               </div>
               
@@ -370,11 +370,26 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
             <p className="text-[14px] text-white/90 leading-relaxed mb-6 font-light">
               We design, build, and optimize high-converting digital storefronts, corporate portals, and brand systems for ambitious companies.
             </p>
-            <Link
-              href="/about"
-              className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-white border-b border-white/50 hover:border-white transition-all pb-0.5"
-            >
-              Learn about us ↗
+            <Link href="/about" className="inline-block mt-4">
+              <button 
+                className="relative w-[222px] h-[63px] rounded-full bg-white overflow-hidden shadow-[0px_6px_16px_rgba(0,0,0,0.1)] hover:shadow-[0px_8px_20px_rgba(0,0,0,0.15)] transition-shadow group cursor-pointer"
+                aria-label="Learn about us"
+              >
+                {/* Inner Left Pill with right shadow */}
+                <div className="absolute left-[0px] top-0 w-[157px] h-[63px] rounded-full bg-white drop-shadow-[4px_0px_6px_rgba(0,0,0,0.1)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+                  <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
+                  <span className="font-medium text-[16px] text-black tracking-tight whitespace-nowrap">
+                    Learn about us
+                  </span>
+                </div>
+                
+                {/* Right Arrow Icon */}
+                <div className="absolute right-[24px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
+                  <svg className="w-[21px] h-[21px] text-black" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>
+                </div>
+              </button>
             </Link>
           </div>
 
@@ -390,12 +405,12 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
               <Link href="/contact" className="w-full">
                 <button 
                   className="relative w-full h-[58px] sm:h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
-                  aria-label="Request Consultation"
+                  aria-label="For Consultation"
                 >
                   <div className="absolute left-0 top-0 w-[calc(100%-45px)] h-full rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-2 transform group-hover:translate-x-[3px] transition-transform duration-300 z-10 px-2 sm:px-3">
                     <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
                     <span className="font-medium text-[13px] sm:text-[14px] lg:text-[15px] text-white tracking-tight whitespace-nowrap">
-                      Request Consultation
+                      For Consultation
                     </span>
                   </div>
                   

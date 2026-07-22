@@ -31,7 +31,7 @@ export const MobileFooter = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <footer className="w-full bg-[#432d1c] text-[#a3a3a3] px-6 pt-12 pb-8 flex flex-col relative overflow-hidden font-sans" style={{ zoom: 0.8 }}>
+    <footer className="w-full bg-[#432d1c] text-[#a3a3a3] px-6 pt-12 pb-8 flex flex-col relative overflow-hidden font-sans">
       
       {/* Brand & Intro */}
       <div className="flex flex-col gap-4 mb-8">

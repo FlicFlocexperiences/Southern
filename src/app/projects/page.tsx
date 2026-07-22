@@ -26,12 +26,12 @@ export default function ProjectsPage() {
       </main>
 
       {/* Footer & CTA */}
-      <div style={{ zoom: 0.8 }}><Cta /></div>
+      <div className="md:[zoom:0.8]"><Cta /></div>
       <div className="hidden md:block" style={{ zoom: 0.8 }}>
         <DesktopFaq />
         <DesktopFooter />
       </div>
-      <div className="md:hidden" style={{ zoom: 0.8 }}>
+      <div className="md:hidden">
         <MobileFaq />
         <MobileFooter />
       </div>

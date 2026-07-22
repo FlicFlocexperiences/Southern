@@ -48,8 +48,8 @@ export default async function BlogsPage() {
       <div className="block md:hidden w-full min-h-screen bg-[#f2decc]">
         <MobileNav />
         <MobileBlogs blogs={fetchedBlogs} />
-        <div style={{ zoom: 0.8 }}><Cta /></div>
-        <div style={{ zoom: 0.8 }}><MobileFooter /></div>
+        <div><Cta /></div>
+        <div><MobileFooter /></div>
       </div>
 
       {/* Desktop Version - Visible only on desktop screens (>= 768px) */}

@@ -34,7 +34,7 @@ export default function About() {
         <DesktopAboutTeam />
       </main>
 
-      <div style={{ zoom: 0.8 }}>
+      <div className="md:[zoom:0.8]">
         <Cta />
       </div>
 
@@ -42,7 +42,7 @@ export default function About() {
         <DesktopFaq />
         <DesktopFooter />
       </div>
-      <div className="md:hidden" style={{ zoom: 0.8 }}>
+      <div className="md:hidden">
         <MobileFaq />
         <MobileFooter />
       </div>

@@ -40,20 +40,18 @@ export default function Home() {
       <div className="block md:hidden w-full min-h-screen bg-[#f2decc]">
         <MobileNav />
         <MobileHero />
-        <div style={{ zoom: 0.8 }}>
-          <MobileIntegrations />
-          <MobileClientLogos />
-          <MobileStats />
-          <MobileComparison />
-          <MobileCaseStudies />
-          <MobileServices />
-          <WhyUs />
-          <HowWeWork />
-          <Testimonials />
-          <Cta />
-          <MobileFaq />
-          <MobileFooter />
-        </div>
+        <MobileIntegrations />
+        <MobileClientLogos />
+        <MobileStats />
+        <MobileComparison />
+        <MobileCaseStudies />
+        <MobileServices />
+        <WhyUs />
+        <HowWeWork />
+        <Testimonials />
+        <Cta />
+        <MobileFaq />
+        <MobileFooter />
       </div>
 
       {/* Desktop Version - Visible only on desktop screens (>= 768px) */}

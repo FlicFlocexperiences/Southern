@@ -70,8 +70,8 @@ export default async function BlogSlugPage({ params }: { params: Promise<{ slug:
       </main>
 
       {/* CTA and Footers */}
-      <div style={{ zoom: 0.8 }}><Cta /></div>
-      <div style={{ zoom: 0.8 }}>
+      <div className="md:[zoom:0.8]"><Cta /></div>
+      <div className="md:[zoom:0.8]">
         <div className="block md:hidden"><MobileFooter /></div>
         <div className="hidden md:block"><DesktopFooter /></div>
       </div>

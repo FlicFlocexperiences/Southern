@@ -25,14 +25,10 @@ export default function ServicesPage() {
       <div className="block md:hidden w-full min-h-screen bg-[#f2decc]">
         <MobileNav />
         <MobileServicesPage />
-        <div style={{ zoom: 0.8 }}>
-          <Testimonials />
-          <Cta />
-        </div>
-        <div style={{ zoom: 0.8 }}>
-          <MobileFaq />
-          <MobileFooter />
-        </div>
+        <Testimonials />
+        <Cta />
+        <MobileFaq />
+        <MobileFooter />
       </div>
 
       {/* Desktop Version - Visible only on desktop screens (>= 768px) */}
