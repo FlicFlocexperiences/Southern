@@ -13,7 +13,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ slug, title, category, duration, image, result }) => {
-  const isPhotography = category.toLowerCase().includes("photography") || category.toLowerCase().includes("videography");
+  const isPhotography = false;
   return (
     <Link 
       href={`/projects/${slug}`}

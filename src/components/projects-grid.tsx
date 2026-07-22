@@ -166,7 +166,7 @@ export const ProjectsGrid = () => {
       {/* Grid Container */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-y-12">
         {filteredProjects.map((project, index) => {
-          const isPhotography = project.category.toLowerCase().includes("photography") || project.category.toLowerCase().includes("videography");
+          const isPhotography = false;
           return (
             <Link 
               href={`/projects/${project.slug}`}
