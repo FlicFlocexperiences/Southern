@@ -88,9 +88,9 @@ export const DesktopCaseStudies = () => {
     {
       slug: "sage-perfume",
       title: "Sage Perfume",
-      category: "Photography",
+      category: "Photography & Videography",
       duration: "5 weeks",
-      image: "/SAGE_Perfumes/1.jpg",
+      image: "/Sage.jpeg",
       result: "Luxury editorial fragrance photography elevating brand perception and social engagement."
     },
     {
