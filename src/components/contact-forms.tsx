@@ -125,7 +125,7 @@ export const ContactUsWidget = () => {
                 name="phone" 
                 required 
                 placeholder="Enter your phone number" 
-                className="flex-1 bg-white rounded-xl px-4 py-3.5 outline-none text-[16px] text-black border border-black/10 focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] transition-all placeholder:text-black/35" 
+                className="flex-1 min-w-0 w-full bg-white rounded-xl px-4 py-3.5 outline-none text-[16px] text-black border border-black/10 focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] transition-all placeholder:text-black/35" 
               />
             </div>
           </div>
@@ -181,25 +181,41 @@ export const ContactUsWidget = () => {
           </div>
 
           {/* Submit Button */}
-          <button 
-            disabled={loading} 
-            type="submit" 
-            className="w-full py-4 rounded-full text-white font-bold text-[18px] tracking-wide bg-[#de5e18] hover:bg-[#c44e0e] active:scale-[0.99] transition-all cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed mt-2 shadow-[0_6px_16px_rgba(222,94,24,0.3)] hover:shadow-[0_8px_20px_rgba(222,94,24,0.45)]"
-          >
-            {loading ? "Submitting..." : "Submit"}
-          </button>
+          <div className="mt-4 flex justify-center w-full">
+            <button 
+              disabled={loading} 
+              type="submit" 
+              className="relative w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-all group cursor-pointer disabled:opacity-75 disabled:cursor-not-allowed"
+              aria-label="Submit Form"
+            >
+              {/* Inner Left Pill with right shadow */}
+              <div className="absolute left-[0px] top-0 w-[157px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+                <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
+                <span className="font-medium text-[18px] text-white tracking-tight whitespace-nowrap">
+                  {loading ? "Submitting..." : "Submit"}
+                </span>
+              </div>
+              
+              {/* Right Arrow Icon */}
+              <div className="absolute right-[24px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
+                <svg className="w-[21px] h-[21px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                </svg>
+              </div>
+            </button>
+          </div>
         </form>
       </div>
 
       {/* Right Box: Info Callout Container */}
       <div className="w-full md:w-[450px] bg-white border-2 border-dashed border-[#de5e18]/30 rounded-[24px] p-6 md:p-8 flex flex-col justify-between items-center text-center relative min-h-[460px] shrink-0">
         {/* Brand Logo Circle */}
-        <div className="absolute top-6 left-6 w-[76px] h-[76px] rounded-full border border-black/5 bg-[#ffffff] flex items-center justify-center p-2.5 shadow-l">
+        <div className="absolute top-6 left-6 w-[48px] h-[48px] md:w-[76px] md:h-[76px] rounded-full border border-black/5 bg-[#ffffff] flex items-center justify-center p-1.5 md:p-2.5 shadow-l">
           <img src="/layer-MC0.svg" alt="Southern Edge Marketing" className="max-h-full max-w-full object-contain" />
         </div>
 
         {/* Floating Time Badge */}
-        <div className="absolute top-6 right-6 bg-[#f4f3ef] text-black/60 px-6 py-3 rounded-full text-[16px] font-bold tracking-tight">
+        <div className="absolute top-6 right-6 bg-[#f4f3ef] text-black/60 px-4 py-2 md:px-6 md:py-3 rounded-full text-[14px] md:text-[16px] font-bold tracking-tight">
           Approximately 30-min.
         </div>
 
@@ -211,12 +227,28 @@ export const ContactUsWidget = () => {
           </p>
 
           {/* Email Us Button */}
-          <a 
-            href="mailto:info@southernedgemarketing.com" 
-            className="w-full max-w-[260px] py-3.5 rounded-full text-white font-bold text-[16px] tracking-wide bg-[#de5e18] active:scale-[0.99] transition-all text-center block shadow-[0_6px_16px_rgba(222,94,24,0.3)] hover:shadow-[0_8px_20px_rgba(222,94,24,0.45)]"
-          >
-            Email Us
-          </a>
+          <div className="w-full flex justify-center mt-2">
+            <a 
+              href="mailto:info@southernedgemarketing.com" 
+              className="relative block w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-all group cursor-pointer"
+              aria-label="Email Us"
+            >
+              {/* Inner Left Pill with right shadow */}
+              <div className="absolute left-[0px] top-0 w-[157px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+                <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
+                <span className="font-medium text-[18px] text-white tracking-tight whitespace-nowrap">
+                  Email Us
+                </span>
+              </div>
+              
+              {/* Right Arrow Icon */}
+              <div className="absolute right-[24px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
+                <svg className="w-[21px] h-[21px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                </svg>
+              </div>
+            </a>
+          </div>
 
           {/* Phone Link */}
           <p className="text-[14px] text-black/50 mt-5">
