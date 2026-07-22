@@ -39,7 +39,7 @@ export function AboutIntro() {
 
             {/* Body paragraph */}
             <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#4a4a4a] mt-6 md:mt-8">
-              We partner with brands to create impactful digital experiences that drive measurable results — from website development and performance marketing to social media management, SEO, branding, and video & photography production. Whether you're a growing D2C brand or an established business ready to scale, we provide end-to-end marketing solutions tailored to your goals.
+              We partner with brands to create impactful digital experiences that drive measurable results, from website development and performance marketing to social media management, SEO, branding, and video & photography production. Whether you're a growing D2C brand or an established business ready to scale, we provide end-to-end marketing solutions tailored to your goals.
             </p>
           </div>
         </div>

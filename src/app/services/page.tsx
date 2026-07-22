@@ -15,7 +15,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Our Services | Web, Branding, SEO, Ads & App Development | Southern Edge Marketing",
-  description: "Six capabilities, one growth system: website platforms, branding, Shopify development, app development, SEO, performance marketing, and social media management — built to compound.",
+  description: "Six capabilities, one growth system: website platforms, branding, Shopify development, app development, SEO, performance marketing, and social media management, built to compound.",
 };
 
 export default function ServicesPage() {

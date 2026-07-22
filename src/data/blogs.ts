@@ -48,7 +48,7 @@ Different colors evoke different emotions:
 Contrast is essential for readability. Text must contrast sufficiently with the background (WCAG AA standards) to ensure it is legible for users with visual impairments.
 
 ### 3. Designing a Palette
-A typical layout uses a 60-30-10 color rule: 60% dominant color (neutral background), 30% secondary color (headers, cards), and 10% accent color (buttons, highlights).`
+A typical layout uses a 60/30/10 color rule: 60% dominant color (neutral background), 30% secondary color (headers, cards), and 10% accent color (buttons, highlights).`
   },
   {
     slug: "how-ux-writing-shapes-user-behavior",

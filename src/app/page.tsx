@@ -29,7 +29,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Southern Edge Marketing | Digital Marketing Agency in Delhi, India",
-  description: "Southern Edge Marketing turns attention into action — strategy, design, development, and marketing that actually drives business. Trusted by 100+ businesses across India. 5.0 rated.",
+  description: "Southern Edge Marketing turns attention into action, strategy, design, development, and marketing that actually drives business. Trusted by 100+ businesses across India. 5.0 rated.",
 };
 
 export default function Home() {

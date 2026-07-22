@@ -1,84 +1,9 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 
 export const DesktopHero = () => {
-  const [stickersState, setStickersState] = useState<{
-    src: string;
-    x: number;
-    y: number;
-    visible: boolean;
-  }[]>([]);
-  const [windowSize, setWindowSize] = useState({ width: 1200, height: 800 });
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setWindowSize({ width: window.innerWidth, height: window.innerHeight });
-      const handleResize = () => {
-        setWindowSize({ width: window.innerWidth, height: window.innerHeight });
-      };
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
-    }
-  }, []);
-
-  const stickerAssets = [
-    { src: "/New%20folder%20(2)/app-development.png" },
-    { src: "/New%20folder%20(2)/app-settings.png" },
-    { src: "/New%20folder%20(2)/branding.png" },
-    { src: "/New%20folder%20(2)/bullhorn.png" },
-    { src: "/New%20folder%20(2)/search-engine-optimization.png" },
-    { src: "/New%20folder%20(2)/ux-design.png" }
-  ];
-
-  const possiblePositions = [
-    { x: 10, y: 15 },
-    { x: 22, y: 28 },
-    { x: 8, y: 48 },
-    { x: 75, y: 12 },
-    { x: 88, y: 32 },
-    { x: 72, y: 50 },
-    { x: 15, y: 68 },
-    { x: 28, y: 82 },
-    { x: 8, y: 85 },
-    { x: 78, y: 68 },
-    { x: 88, y: 82 },
-    { x: 72, y: 88 }
-  ];
-
-  useEffect(() => {
-    const shuffleAndSet = () => {
-      // Fade out
-      setStickersState(prev => prev.map(s => ({ ...s, visible: false })));
-
-      // Shuffle and fade in new positions after 300ms fadeout transition
-      setTimeout(() => {
-        const shuffledPositions = [...possiblePositions].sort(() => 0.5 - Math.random());
-        const newState = stickerAssets.map((asset, i) => {
-          const pos = shuffledPositions[i] || { x: 50, y: 50 };
-          return {
-            src: asset.src,
-            x: pos.x,
-            y: pos.y,
-            visible: true
-          };
-        });
-        setStickersState(newState);
-      }, 300);
-    };
-
-    shuffleAndSet();
-    const interval = setInterval(shuffleAndSet, 1600); // 1.6s cycle (0.3s fadeout + 0.3s fadein + 1.0s display)
-    return () => clearInterval(interval);
-  }, []);
-
-  const snapToGrid = (percent: number, maxDimension: number) => {
-    const pixelVal = (maxDimension * percent) / 100;
-    // Align exactly in the middle of a 45px grid cell (+ 22.5px offset)
-    return Math.floor(pixelVal / 45) * 45 + 22.5;
-  };
-
   return (
     <div className="w-full flex flex-col bg-[#f2decc] mb-5">
       {/* Hero Content Full Screen Wrapper */}
@@ -94,46 +19,6 @@ export const DesktopHero = () => {
                backgroundSize: '100% 100%, 45px 45px, 45px 45px',
              }} 
         />
-
-        {/* Sticker Animations */}
-        {stickersState.map((sticker, idx) => {
-          const leftPx = snapToGrid(sticker.x, windowSize.width);
-          const topPx = snapToGrid(sticker.y, windowSize.height);
-          
-          return (
-            <div
-              key={idx}
-              className="absolute pointer-events-none z-0 flex items-center justify-center"
-              style={{
-                left: `${leftPx}px`,
-                top: `${topPx}px`,
-                opacity: sticker.visible ? 0.4 : 0,
-                transform: `translate(-50%, -50%) scale(${sticker.visible ? 1 : 0.8})`,
-                 transition: "opacity 300ms ease-in-out, transform 300ms ease-in-out, filter 300ms ease-in-out",
-              }}
-            >
-              <img
-                src={sticker.src}
-                alt="Graffiti sticker"
-                className="w-[36px] h-[36px] object-contain select-none animate-sticker-glow"
-              />
-            </div>
-          );
-        })}
-
-        <style dangerouslySetInnerHTML={{__html: `
-          @keyframes glowPulse {
-            0%, 100% {
-              filter: drop-shadow(0 0 4px rgba(222,94,24,0.25));
-            }
-            50% {
-              filter: drop-shadow(0 0 15px rgba(222,94,24,0.55));
-            }
-          }
-          .animate-sticker-glow {
-            animation: glowPulse 4s infinite ease-in-out;
-          }
-        `}} />
 
         <div className="flex-1 flex flex-col items-center justify-center w-full z-10">
           {/* Hero Text */}

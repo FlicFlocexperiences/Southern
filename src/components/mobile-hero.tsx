@@ -1,80 +1,9 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 
 export function MobileHero() {
-  const [stickersState, setStickersState] = useState<{
-    src: string;
-    x: number;
-    y: number;
-    visible: boolean;
-  }[]>([]);
-  const [windowSize, setWindowSize] = useState({ width: 400, height: 800 });
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setWindowSize({ width: window.innerWidth, height: window.innerHeight });
-      const handleResize = () => {
-        setWindowSize({ width: window.innerWidth, height: window.innerHeight });
-      };
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
-    }
-  }, []);
-
-  const stickerAssets = [
-    { src: "/New%20folder%20(2)/app-development.png" },
-    { src: "/New%20folder%20(2)/app-settings.png" },
-    { src: "/New%20folder%20(2)/branding.png" },
-    { src: "/New%20folder%20(2)/bullhorn.png" },
-    { src: "/New%20folder%20(2)/search-engine-optimization.png" },
-    { src: "/New%20folder%20(2)/ux-design.png" }
-  ];
-
-  const possiblePositions = [
-    { x: 10, y: 15 },
-    { x: 88, y: 12 },
-    { x: 12, y: 82 },
-    { x: 85, y: 85 }
-  ];
-
-  useEffect(() => {
-    const shuffleAndSet = () => {
-      // Fade out
-      setStickersState(prev => prev.map(s => ({ ...s, visible: false })));
-
-      // Shuffle and fade in new positions after 300ms fadeout transition
-      setTimeout(() => {
-        // Pick 2 random stickers from the 6 assets
-        const randomStickers = [...stickerAssets].sort(() => 0.5 - Math.random()).slice(0, 2);
-        // Shuffle the 4 corner positions
-        const shuffledPositions = [...possiblePositions].sort(() => 0.5 - Math.random());
-        
-        const newState = randomStickers.map((asset, i) => {
-          const pos = shuffledPositions[i] || { x: 50, y: 50 };
-          return {
-            src: asset.src,
-            x: pos.x,
-            y: pos.y,
-            visible: true
-          };
-        });
-        setStickersState(newState);
-      }, 300);
-    };
-
-    shuffleAndSet();
-    const interval = setInterval(shuffleAndSet, 1600); // 1.6s cycle (0.3s fadeout + 0.3s fadein + 1.0s display)
-    return () => clearInterval(interval);
-  }, []);
-
-  const snapToGrid = (percent: number, maxDimension: number) => {
-    const pixelVal = (maxDimension * percent) / 100;
-    // Align exactly in the middle of a 36px grid cell (+ 18px offset)
-    return Math.floor(pixelVal / 36) * 36 + 18;
-  };
-
   return (
     <div className="w-full h-[100dvh] flex flex-col items-center pt-[85px] pb-6 relative overflow-hidden bg-[#f2decc]">
       {/* Square Box Grid Pattern */}
@@ -86,46 +15,6 @@ export function MobileHero() {
              backgroundSize: '100% 100%, 36px 36px, 36px 36px',
            }} 
       />
-
-      {/* Sticker Animations */}
-      {stickersState.map((sticker, idx) => {
-        const leftPx = snapToGrid(sticker.x, windowSize.width);
-        const topPx = snapToGrid(sticker.y, windowSize.height);
-        
-        return (
-          <div
-            key={idx}
-            className="absolute pointer-events-none z-0 flex items-center justify-center"
-            style={{
-              left: `${leftPx}px`,
-              top: `${topPx}px`,
-              opacity: sticker.visible ? 0.4 : 0,
-              transform: `translate(-50%, -50%) scale(${sticker.visible ? 1 : 0.8})`,
-              transition: "opacity 300ms ease-in-out, transform 300ms ease-in-out, filter 300ms ease-in-out",
-            }}
-          >
-            <img
-              src={sticker.src}
-              alt="Graffiti sticker"
-              className="w-[28px] h-[28px] object-contain select-none animate-sticker-glow"
-            />
-          </div>
-        );
-      })}
-
-      <style dangerouslySetInnerHTML={{__html: `
-        @keyframes glowPulse {
-          0%, 100% {
-            filter: drop-shadow(0 0 3px rgba(222,94,24,0.25));
-          }
-          50% {
-            filter: drop-shadow(0 0 10px rgba(222,94,24,0.55));
-          }
-        }
-        .animate-sticker-glow {
-          animation: glowPulse 4s infinite ease-in-out;
-        }
-      `}} />
 
       {/* Middle Content Wrapper (Centered) */}
       <div className="flex-1 flex flex-col items-center justify-center w-full z-10">
@@ -173,7 +62,7 @@ export function MobileHero() {
             <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
           </svg>
           <p className="text-[14px] font-medium text-black leading-snug">
-            Strategy, design, development, and marketing that actually drives business — not just vanity metrics.
+            Strategy, design, development, and marketing that actually drives business, not just vanity metrics.
           </p>
         </div>
 

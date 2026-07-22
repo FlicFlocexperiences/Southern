@@ -49,7 +49,7 @@ export const MobileFaq = () => {
   const faqs = [
     {
       question: "Who do you usually work with?",
-      answer: "We work with small and growing businesses across India — from D2C and e-commerce brands to F&B, retail, and professional services — who want marketing that's tied to real business outcomes, not just impressions."
+      answer: "We work with small and growing businesses across India, from D2C and e-commerce brands to F&B, retail, and professional services, who want marketing that's tied to real business outcomes, not just impressions."
     },
     {
       question: "How much does a new website cost?",
@@ -57,11 +57,11 @@ export const MobileFaq = () => {
     },
     {
       question: "Do you offer ongoing support?",
-      answer: "Yes — we don't disappear after launch. We offer ongoing maintenance, content, and performance support so your website and campaigns keep improving after go-live."
+      answer: "Yes, we don't disappear after launch. We offer ongoing maintenance, content, and performance support so your website and campaigns keep improving after go-live."
     },
     {
       question: "How long does it take to see results?",
-      answer: "It depends on the channel: website and brand work show up immediately, SEO typically builds momentum over 3–6 months, and paid ads/social can show early signals within the first few weeks."
+      answer: "It depends on the channel: website and brand work show up immediately, SEO typically builds momentum over 3 to 6 months, and paid ads/social can show early signals within the first few weeks."
     }
   ];
 

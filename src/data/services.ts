@@ -25,7 +25,7 @@ export const services: Service[] = [
     metaDescription: "Build high-performance websites designed for conversions. Southern Edge Marketing creates SEO-friendly, responsive websites that generate leads, increase sales, and grow businesses.",
     description1: "High-performance websites engineered to turn visitors into customers. We combine editorial craft with conversion science to build digital experiences that compound in value.",
     description2: "Using modern frameworks like Next.js and React, we ensure your store or landing page is lightning-fast, fully responsive, and optimized to capture every possible lead.",
-    callout: "The foundation of every growth system — without a website that converts, every other channel is pouring water into a leaky bucket.",
+    callout: "The foundation of every growth system, without a website that converts, every other channel is pouring water into a leaky bucket.",
     statValue: "3.2x",
     statLabel: "AVG. CONVERSION IMPROVEMENT",
     tags: ["UX Design", "Development", "CRO", "CMS"],
@@ -58,12 +58,12 @@ Whether you need a corporate website, landing page, or complete business platfor
 - Secure development standards
 
 ### Our Process
-- **01. Discovery** — Understanding your business goals and audience.
-- **02. UX Strategy** — Creating user journeys focused on conversions.
-- **03. UI Design** — Building visually engaging interfaces.
-- **04. Development** — Modern, optimized coding practices.
-- **05. QA Testing** — Performance, security and responsiveness testing.
-- **06. Launch & Growth** — Monitoring performance and continuous improvements.
+- **01. Discovery**: Understanding your business goals and audience.
+- **02. UX Strategy**: Creating user journeys focused on conversions.
+- **03. UI Design**: Building visually engaging interfaces.
+- **04. Development**: Modern, optimized coding practices.
+- **05. QA Testing**: Performance, security and responsiveness testing.
+- **06. Launch & Growth**: Monitoring performance and continuous improvements.
 
 ### Industries We Serve
 - Healthcare
@@ -83,7 +83,7 @@ Continue improving your online presence with our:
 - [Shopify Development](/services/shopify-development)
 
 ### Frequently Asked Questions
-- **How long does website development take?** Most projects are completed within 4–8 weeks depending on complexity.
+- **How long does website development take?** Most projects are completed within 4 to 8 weeks depending on complexity.
 - **Do you redesign existing websites?** Yes. We modernize outdated websites while improving speed, SEO, and conversions.`
   },
   {
@@ -95,7 +95,7 @@ Continue improving your online presence with our:
     metaDescription: "Strong brands create trust before the first conversation begins. Southern Edge Marketing combines research, positioning, messaging, and visual identity to build memorable brands.",
     description1: "We build cohesive, memorable identities that stand out in crowded markets, combining strategic positioning with visual storytelling to define who you are and why you matter.",
     description2: "From logo marks to comprehensive style guides, we establish a distinct design system that builds trust and drives immediate recognition across all touchpoints.",
-    callout: "Your brand isn't just what you say — it's the lasting imprint you leave on your audience's mind.",
+    callout: "Your brand isn't just what you say, it's the lasting imprint you leave on your audience's mind.",
     statValue: "84%",
     statLabel: "INCREASE IN BRAND RECALL",
     tags: ["Brand Identity", "Brand Strategy", "Typography", "Visual System"],
@@ -123,12 +123,12 @@ Our branding strategy combines research, positioning, messaging, and visual iden
 - Premium perception
 
 ### Our Process
-- **01. Research** — In-depth discovery into your business, vision, and core values.
-- **02. Competitor Analysis** — Auditing market dynamics and positioning opportunities.
-- **03. Brand Positioning** — Crafting your unique value proposition and messaging pillar.
-- **04. Identity Design** — Building logos, visual systems, and typography palettes.
-- **05. Brand Guidelines** — Documenting design rules for absolute consistency.
-- **06. Launch** — Executing a seamless brand rollout across all digital and print touchpoints.
+- **01. Research**: In-depth discovery into your business, vision, and core values.
+- **02. Competitor Analysis**: Auditing market dynamics and positioning opportunities.
+- **03. Brand Positioning**: Crafting your unique value proposition and messaging pillar.
+- **04. Identity Design**: Building logos, visual systems, and typography palettes.
+- **05. Brand Guidelines**: Documenting design rules for absolute consistency.
+- **06. Launch**: Executing a seamless brand rollout across all digital and print touchpoints.
 
 ### Related Solutions
 Strengthen your brand with:
@@ -177,12 +177,12 @@ We build custom Shopify stores optimized for conversions, speed, user experience
 - Scalable ecommerce architecture
 
 ### Our Process
-- **01. Strategy** — E-commerce auditing, UX mapping, and growth planning.
-- **02. Store Design** — Crafting high-converting, brand-aligned store layouts.
-- **03. Development** — Custom Liquid themes, app integrations, and custom APIs.
-- **04. Testing** — Cross-device, checkout, speed, and QA validation.
-- **05. Launch** — Zero-downtime deployment and catalog migration.
-- **06. Optimization** — Continuous CRO, speed tuning, and retention campaigns.
+- **01. Strategy**: E-commerce auditing, UX mapping, and growth planning.
+- **02. Store Design**: Crafting high-converting, brand-aligned store layouts.
+- **03. Development**: Custom Liquid themes, app integrations, and custom APIs.
+- **04. Testing**: Cross-device, checkout, speed, and QA validation.
+- **05. Launch**: Zero-downtime deployment and catalog migration.
+- **06. Optimization**: Continuous CRO, speed tuning, and retention campaigns.
 
 ### Related Solutions
 Grow your Shopify business using:
@@ -280,7 +280,7 @@ Improve results with:
 - [Branding](/services/branding)
 
 ### Frequently Asked Questions
-- **How long does SEO take?** Most businesses begin seeing measurable improvements within 3–6 months.`
+- **How long does SEO take?** Most businesses begin seeing measurable improvements within 3 to 6 months.`
   },
   {
     slug: "performance-marketing",
@@ -291,7 +291,7 @@ Improve results with:
     metaDescription: "Every advertising dollar should generate measurable business growth. We manage paid advertising campaigns across Google, Meta, LinkedIn, and other digital platforms while continuously optimizing for lower acquisition costs and higher returns.",
     description1: "Every advertising dollar should generate measurable business growth.",
     description2: "We manage paid advertising campaigns across Google, Meta, LinkedIn, and other digital platforms while continuously optimizing for lower acquisition costs and higher returns.",
-    callout: "Ad budgets are easy to spend but hard to return — we design funnels that turn clicks into profitable scale.",
+    callout: "Ad budgets are easy to spend but hard to return, we design funnels that turn clicks into profitable scale.",
     statValue: "4.5x",
     statLabel: "AVERAGE RETURN ON AD SPEND",
     tags: ["Meta Ads", "Google Ads/PMax", "Funnel Optim.", "Audience Scaling"],
@@ -336,7 +336,7 @@ Pair paid advertising with:
     metaDescription: "Social media isn't just about posting content—it's about building meaningful relationships with your audience. We develop data-driven social media strategies that increase brand awareness, engagement, and customer loyalty.",
     description1: "Social media isn't just about posting content—it's about building meaningful relationships with your audience.",
     description2: "We develop data-driven social media strategies that increase brand awareness, engagement, and customer loyalty across today's most influential platforms.",
-    callout: "Attention is the currency of the digital age — we build content that makes your brand the center of attention.",
+    callout: "Attention is the currency of the digital age, we build content that makes your brand the center of attention.",
     statValue: "6.8x",
     statLabel: "INCREASE IN SOCIAL ENGAGEMENT",
     tags: ["Content Creation", "Community Mgmt", "Short-Form Video", "Influencer Collab"],
@@ -363,12 +363,12 @@ We develop data-driven social media strategies that increase brand awareness, en
 - Consistent online presence
 
 ### Process
-- **01. Research** — Understanding your audience, competitors, and channel opportunities.
-- **02. Content Planning** — Structuring themes, calendars, and platform distribution tactics.
-- **03. Creative Production** — Designing high-converting graphics, reels, and video assets.
-- **04. Publishing** — Managing schedule, optimal post times, and captions across platforms.
-- **05. Community Management** — Engaging with followers, comments, and direct messages in real time.
-- **06. Monthly Optimization** — Analyzing performance data and tuning strategy for compound growth.
+- **01. Research**: Understanding your audience, competitors, and channel opportunities.
+- **02. Content Planning**: Structuring themes, calendars, and platform distribution tactics.
+- **03. Creative Production**: Designing high-converting graphics, reels, and video assets.
+- **04. Publishing**: Managing schedule, optimal post times, and captions across platforms.
+- **05. Community Management**: Engaging with followers, comments, and direct messages in real time.
+- **06. Monthly Optimization**: Analyzing performance data and tuning strategy for compound growth.
 
 ### Related Solutions
 Combine social growth with:

@@ -30,15 +30,15 @@ export default function About() {
 
       <main className="flex-grow">
         <AboutPageHero />
-        <AboutIntro />
-        {/* <DesktopAboutHero /> */}
-        <DesktopAboutTeam />
         <div className="hidden md:block">
           <DesktopClientLogos />
         </div>
         <div className="md:hidden">
           <MobileClientLogos />
         </div>
+        <AboutIntro />
+        {/* <DesktopAboutHero /> */}
+        <DesktopAboutTeam />
       </main>
 
       <div className="md:[zoom:0.8]">
