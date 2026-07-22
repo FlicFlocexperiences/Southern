@@ -4,7 +4,7 @@ import React from "react";
 
 export const DesktopClientLogos = () => {
   return (
-    <div className="w-full relative overflow-hidden py-28 z-10">
+    <div className="w-full relative overflow-hidden pt-6 pb-20 z-10">
       <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#f2decc] to-transparent z-20 pointer-events-none" />
       <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#f2decc] to-transparent z-20 pointer-events-none" />
       <div className="animate-logo-slide flex items-center w-max">
@@ -27,7 +27,7 @@ export const DesktopClientLogos = () => {
 
 export const MobileClientLogos = () => {
   return (
-    <div className="w-full relative overflow-hidden py-16 z-10">
+    <div className="w-full relative overflow-hidden pt-4 pb-12 z-10">
       <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-[#f2decc] to-transparent z-20 pointer-events-none" />
       <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-[#f2decc] to-transparent z-20 pointer-events-none" />
       <div className="animate-logo-slide flex items-center w-max">

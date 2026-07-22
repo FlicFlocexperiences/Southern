@@ -212,7 +212,7 @@ export const ContactUsWidget = () => {
       <div className="w-full md:w-[450px] bg-white border-2 border-dashed border-[#de5e18]/30 rounded-[24px] p-6 md:p-8 flex flex-col justify-between items-center text-center relative min-h-[460px] shrink-0">
         {/* Brand Logo Circle */}
         <div className="absolute top-6 left-6 w-[48px] h-[48px] md:w-[76px] md:h-[76px] rounded-full border border-black/5 bg-[#ffffff] flex items-center justify-center p-1.5 md:p-2.5 shadow-l">
-          <img src="/layer-MC0.svg" alt="Southern Edge Marketing" className="max-h-full max-w-full object-contain" />
+          <img src="/LOGO_Final.svg" alt="Southern Edge Marketing" className="max-h-full max-w-full object-contain" />
         </div>
 
         {/* Floating Time Badge */}

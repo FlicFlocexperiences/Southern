@@ -5,12 +5,20 @@ import Link from "next/link";
 
 export const DesktopHero = () => {
   return (
-    <div className="w-full flex flex-col bg-[#f2decc]">
+    <div className="w-full flex flex-col bg-[#f2decc] mb-5">
       {/* Hero Content Full Screen Wrapper */}
       <div className="w-full relative flex flex-col items-center h-[100dvh] pt-[110px] pb-8 overflow-hidden">
-        {/* Background blurred elements */}
-        <div className="absolute bg-[#de5e18]/20 blur-[100px] h-[400px] left-[-100px] top-[30%] w-[400px] rounded-full pointer-events-none" />
-        <div className="absolute bg-[#de5e18]/20 blur-[100px] h-[400px] right-[-100px] top-[10%] w-[400px] rounded-full pointer-events-none" />
+        
+
+        {/* Square Box Grid Pattern */}
+        <div className="absolute inset-0 z-0 pointer-events-none" 
+             style={{ 
+               backgroundImage: `radial-gradient(circle at 50% 50%, transparent 40%, #f2decc 98%), 
+                                 linear-gradient(to right, rgba(222,94,24,0.25) 1px, transparent 1px), 
+                                 linear-gradient(to bottom, rgba(222,94,24,0.25) 1px, transparent 1px)`,
+               backgroundSize: '100% 100%, 45px 45px, 45px 45px',
+             }} 
+        />
 
         <div className="flex-1 flex flex-col items-center justify-center w-full z-10">
           {/* Hero Text */}
@@ -58,8 +66,7 @@ export const DesktopHero = () => {
               <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
             </svg>
             <p className="text-[14px] xl:text-[16px] font-medium text-black/70 leading-[1.3]">
-              Strategy, design, development, and marketing that actually drives business — not just vanity metrics. Southern Edge Marketing helps brands in India get seen, get remembered, and get chosen.
-            </p>
+Strategy, design, development, and marketing that helps brands get seen, remembered, and chosen.            </p>
           </div>
 
           {/* Right side rating */}

@@ -133,7 +133,7 @@ export const DesktopIntegrations = () => {
       </div>
 
       {/* Text Details */}
-      <div className="w-full max-w-[900px] mx-auto relative z-20 flex flex-col items-center pb-24 pt-6">
+      <div className="w-full max-w-[900px] mx-auto relative z-20 flex flex-col items-center pb-12 pt-6">
         <div className="text-center flex flex-col items-center">
           <h2 className="flex flex-col gap-0 uppercase text-center font-sans tracking-tight">
             <span className="text-[40px] lg:text-[54px] xl:text-[64px] leading-[1.1] font-semibold text-[#A1A1A1]">

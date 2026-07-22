@@ -41,7 +41,7 @@ export const DesktopFooter = () => {
           <div className="lg:col-span-3 flex flex-col gap-6">
             <Link href="/" className="inline-block w-fit">
               <Image
-                src="/SEM_LOGO_FOOTER.svg"
+                src="/LOGO_Final.svg"
                 alt="Southern Edge Marketing Logo"
                 width={160}
                 height={84}

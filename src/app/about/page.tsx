@@ -9,6 +9,7 @@ import { DesktopAboutTeam } from "@/components/desktop-about-team";
 import { AboutPageHero } from "@/components/about-page-hero";
 import { AboutIntro } from "@/components/about-intro";
 import { Cta } from "@/components/cta";
+import { MobileClientLogos, DesktopClientLogos } from "@/components/client-logos";
 
 import { Metadata } from "next";
 
@@ -32,6 +33,12 @@ export default function About() {
         <AboutIntro />
         {/* <DesktopAboutHero /> */}
         <DesktopAboutTeam />
+        <div className="hidden md:block">
+          <DesktopClientLogos />
+        </div>
+        <div className="md:hidden">
+          <MobileClientLogos />
+        </div>
       </main>
 
       <div className="md:[zoom:0.8]">

@@ -5,16 +5,22 @@ import Link from "next/link";
 export function MobileHero() {
   return (
     <div className="w-full h-[100dvh] flex flex-col items-center pt-[85px] pb-6 relative overflow-hidden bg-[#f2decc]">
-      {/* Background blurred elements */}
-      <div className="absolute bg-[#de5e18]/20 blur-[60px] h-[200px] left-0 top-[60%] w-[100px] rounded-full pointer-events-none" />
-      <div className="absolute bg-[#de5e18]/20 blur-[60px] h-[200px] right-0 top-[20%] w-[100px] rounded-full pointer-events-none" />
+      {/* Square Box Grid Pattern */}
+      <div className="absolute inset-0 z-0 pointer-events-none" 
+           style={{ 
+             backgroundImage: `radial-gradient(circle at 50% 50%, transparent 35%, #f2decc 96%), 
+                               linear-gradient(to right, rgba(222,94,24,0.25) 1px, transparent 1px), 
+                               linear-gradient(to bottom, rgba(222,94,24,0.25) 1px, transparent 1px)`,
+             backgroundSize: '100% 100%, 36px 36px, 36px 36px',
+           }} 
+      />
 
       {/* Middle Content Wrapper (Centered) */}
       <div className="flex-1 flex flex-col items-center justify-center w-full z-10">
         {/* Hero Text */}
         <div className="flex flex-col items-center text-center px-4 w-full max-w-sm mx-auto text-black">
           <p className="font-semibold text-base tracking-wide mb-3 text-black">MORE THAN JUST DIGITAL</p>
-          <h1 className="font-extrabold text-[32px] leading-[1.1] tracking-tight text-black">
+          <h1 className="font-extrabold text-[42px] leading-[1.1] tracking-tight text-black">
             <span className="text-[#de5e18] block mb-1">WE TURN</span>
             <span className="block">ATTENTION</span>
             <span className="block">INTO ACTION</span>
@@ -48,7 +54,7 @@ export function MobileHero() {
       </div>
 
       {/* Info Text & Ratings (Bottom Section) */}
-      <div className="w-full px-6 mt-auto flex flex-col gap-4 z-10">
+      <div className="w-full px-6 mt-auto flex flex-col gap-4 z-10 mb-10">
         {/* Left side text */}
         <div className="flex items-start gap-2 max-w-[280px]">
           <svg className="w-6 h-6 text-[#de5e18] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">

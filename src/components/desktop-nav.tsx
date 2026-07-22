@@ -33,11 +33,11 @@ export const DesktopNav = () => {
         <div className="flex items-center shrink-0">
           <Link href="/">
             <Image
-              src="/layer-MC0.svg"
+              src="/LOGO_Final.svg"
               alt="SEM Logo"
-              width={50}
-              height={50}
-              className="h-12 w-12 cursor-pointer transition-transform"
+              width={56}
+              height={56}
+              className="h-14 w-14 cursor-pointer transition-transform"
             />
           </Link>
         </div>

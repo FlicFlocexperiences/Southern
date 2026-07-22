@@ -21,17 +21,19 @@ export function MobileNav() {
   ];
 
   return (
-    <div className="w-full relative z-[100]">
+    <div className="w-full fixed top-0 left-0 z-[100] h-0 pointer-events-none">
       {/* Base Navbar (Always visible at the bottom layer) */}
-      <div className="h-[68px] w-full flex items-center justify-between px-8 md:px-10 absolute top-0 left-0 z-40 bg-[rgba(255,255,240,0.1)]">
-        {/* Logo */}
+      <div className={`h-[68px] w-full flex items-center justify-between px-8 md:px-10 absolute top-0 left-0 z-40 transition-all duration-300 pointer-events-auto ${
+        isOpen ? "bg-transparent" : "bg-gradient-to-r from-[#e07243] to-[#e07243]"
+      }`}>
+        {/* Logo */} 
         <Link href="/">
           <Image
-            src="/layer-MC0.svg"
+            src="/LOGO_Final.svg"
             alt="SEM Logo"
-            width={42}
-            height={42}
-            className="h-9 w-9 cursor-pointer transition-transform hover:scale-105"
+            width={48}
+            height={48}
+            className="h-12 w-12 cursor-pointer transition-transform hover:scale-105"
           />
         </Link>
         
@@ -41,13 +43,13 @@ export function MobileNav() {
           onClick={() => setIsOpen(true)}
           aria-label="Open Menu"
         >
-          <p className="font-bold text-[15px] tracking-widest text-[#de5e18] pointer-events-none">
+          <p className="font-semibold text-[15px] tracking-widest text-[#ffffff] pointer-events-none">
             MENU
           </p>
           {/* Burger Icon */}
           <div className="flex flex-col gap-[4px] w-8 pointer-events-none">
-            <div className="h-[2px] w-full bg-[#de5e18]" />
-            <div className="h-[2px] w-3/4 self-end bg-[#de5e18] transition-all group-hover:w-full" />
+            <div className="h-[2px] w-full bg-[#ffffff]" />
+            <div className="h-[2px] w-3/4 self-end bg-[#ffffff] transition-all group-hover:w-full" />
           </div>
         </button>
       </div>
@@ -64,11 +66,11 @@ export function MobileNav() {
           <div className="h-[68px] w-full flex items-center justify-between px-8 md:px-10 absolute top-0 left-0 z-50">
             <Link href="/" onClick={() => setIsOpen(false)}>
               <Image
-                src="/layer-MC0.svg"
+                src="/LOGO_Final.svg"
                 alt="SEM Logo"
-                width={36}
-                height={36}
-                className="h-9 w-9 cursor-pointer transition-transform hover:scale-105"
+                width={48}
+                height={48}
+                className="h-12 w-12 cursor-pointer transition-transform hover:scale-105"
               />
             </Link>
             
