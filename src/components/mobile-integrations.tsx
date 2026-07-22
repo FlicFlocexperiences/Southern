@@ -88,7 +88,7 @@ export function MobileIntegrations() {
   let currentLogoIndex = 0;
 
   return (
-    <section className="w-full min-h-screen bg-[#f2decc] relative overflow-hidden flex flex-col justify-center items-center py-12">
+    <section className="w-full min-h-screen bg-[#f2decc] relative overflow-hidden flex flex-col justify-start items-center pt-8 pb-12">
       
       {/* Honeycombs Section with Background */}
       <div 

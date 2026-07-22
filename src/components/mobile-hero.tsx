@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function MobileHero() {
   return (
-    <div className="w-full h-screen flex flex-col items-center pt-[110px] pb-8 relative overflow-hidden bg-[#f2decc]">
+    <div className="w-full h-[100dvh] flex flex-col items-center pt-[85px] pb-6 relative overflow-hidden bg-[#f2decc]">
       {/* Background blurred elements */}
       <div className="absolute bg-[#de5e18]/20 blur-[60px] h-[200px] left-0 top-[60%] w-[100px] rounded-full pointer-events-none" />
       <div className="absolute bg-[#de5e18]/20 blur-[60px] h-[200px] right-0 top-[20%] w-[100px] rounded-full pointer-events-none" />

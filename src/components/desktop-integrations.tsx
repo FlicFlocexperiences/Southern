@@ -99,7 +99,7 @@ export const DesktopIntegrations = () => {
          <div className="absolute inset-0 bg-gradient-to-t from-[#f2decc] via-[#f2decc]/50 to-transparent" />
       </div>
 
-      <div className="w-full relative flex justify-center pt-20 pb-12 z-10">
+      <div className="w-full relative flex justify-center pt-8 pb-12 z-10">
         <div className="max-w-[1400px] mx-auto w-full flex flex-col items-center">
           <div className="flex flex-col items-center">
             {rowsConfig.map((row, rIdx) => (

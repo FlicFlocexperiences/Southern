@@ -7,7 +7,7 @@ export const DesktopHero = () => {
   return (
     <div className="w-full flex flex-col bg-[#f2decc]">
       {/* Hero Content Full Screen Wrapper */}
-      <div className="w-full relative flex flex-col items-center h-screen pt-[140px] pb-12 overflow-hidden">
+      <div className="w-full relative flex flex-col items-center h-[100dvh] pt-[110px] pb-8 overflow-hidden">
         {/* Background blurred elements */}
         <div className="absolute bg-[#de5e18]/20 blur-[100px] h-[400px] left-[-100px] top-[30%] w-[400px] rounded-full pointer-events-none" />
         <div className="absolute bg-[#de5e18]/20 blur-[100px] h-[400px] right-[-100px] top-[10%] w-[400px] rounded-full pointer-events-none" />
