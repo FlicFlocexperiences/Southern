@@ -8,19 +8,7 @@ interface BlogContentProps {
   blog: Blog;
 }
 
-const parseInlineMarkdown = (text: string) => {
-  const parts = text.split("**");
-  return parts.map((part, index) => {
-    if (index % 2 === 1) {
-      return (
-        <strong key={index} className="font-bold text-[#432d1c]">
-          {part}
-        </strong>
-      );
-    }
-    return part;
-  });
-};
+
 
 export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
   const [currentUrl, setCurrentUrl] = useState("");
@@ -57,19 +45,37 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
     setCurrentUrl(window.location.href);
   }, []);
 
-  // Parse sections (h3 headers) for TOC
-  const sections = useMemo(() => {
-    return blog.content
-      .split("\n")
-      .filter((line) => line.trim().startsWith("###"))
-      .map((line) => {
-        const text = line.trim().replace("###", "").trim();
-        const id = text
-          .toLowerCase()
-          .replace(/[^\w\s-]/g, "")
-          .replace(/\s+/g, "-");
-        return { id, title: text };
-      });
+  // Process content to inject IDs and build TOC
+  const { processedContent, sections } = useMemo(() => {
+    const headings: { id: string; title: string }[] = [];
+    let content = blog.content || "";
+
+    // Replace h2 and h3 tags, injecting an ID for scroll tracking
+    const headingRegex = /(<h[23][^>]*>)(.*?)(<\/h[23]>)/gi;
+    const idCounts: Record<string, number> = {};
+
+    const newContent = content.replace(headingRegex, (match, openTag, text, closeTag) => {
+      const cleanText = text.replace(/<[^>]+>/g, '').trim();
+      let baseId = cleanText
+        .toLowerCase()
+        .replace(/[^\w\s-]/g, "")
+        .replace(/\s+/g, "-");
+
+      if (!baseId) baseId = "section";
+      idCounts[baseId] = (idCounts[baseId] || 0) + 1;
+      const id = idCounts[baseId] > 1 ? `${baseId}-${idCounts[baseId]}` : baseId;
+
+      // Prevent duplicates if API generated an ID
+      if (!openTag.includes('id=')) {
+        headings.push({ id, title: cleanText });
+        return `${openTag.replace('>', ` id="${id}">`)}${text}${closeTag}`;
+      }
+
+      headings.push({ id, title: cleanText });
+      return match;
+    });
+
+    return { processedContent: newContent, sections: headings };
   }, [blog.content]);
 
   // Track active section on scroll
@@ -112,144 +118,22 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
     window.open(shareUrl, "_blank", "width=600,height=400");
   };
 
-  const renderContent = (content: string) => {
-    const lines = content.split("\n");
-    const elements: React.ReactNode[] = [];
-    let currentList: string[] = [];
-    let currentParagraph: string[] = [];
-    let sectionCounter = 0;
 
-    const flushParagraph = (key: string | number) => {
-      if (currentParagraph.length > 0) {
-        elements.push(
-          <p
-            key={`p-${key}`}
-            className="text-[16px] md:text-[18px] leading-[1.7] text-[#432d1c]/85 mb-6 font-normal font-sans"
-          >
-            {parseInlineMarkdown(currentParagraph.join(" "))}
-          </p>
-        );
-        currentParagraph = [];
-      }
-    };
-
-    const flushList = (key: string | number) => {
-      if (currentList.length > 0) {
-        elements.push(
-          <ul key={`ul-${key}`} className="list-disc pl-6 mb-6 text-[#432d1c]/80 space-y-2 text-[16px] md:text-[18px] font-normal font-sans">
-            {currentList.map((item, idx) => (
-              <li key={idx}>{parseInlineMarkdown(item)}</li>
-            ))}
-          </ul>
-        );
-        currentList = [];
-      }
-    };
-
-    lines.forEach((line, index) => {
-      const trimmed = line.trim();
-
-      if (trimmed.startsWith("###")) {
-        flushParagraph(index);
-        flushList(index);
-
-        const text = trimmed.replace("###", "").trim();
-        const id = text
-          .toLowerCase()
-          .replace(/[^\w\s-]/g, "")
-          .replace(/\s+/g, "-");
-        sectionCounter++;
-        const numStr = String(sectionCounter).padStart(2, "0");
-        elements.push(
-          <h3
-            key={`h3-${index}`}
-            id={id}
-            className="text-[22px] md:text-[28px] font-bold text-[#0f0f0f] mt-10 mb-4 font-sans scroll-mt-28 flex items-center gap-3"
-          >
-            <span className="text-[#de5e18] font-mono">// {numStr}</span>
-            <span>{text}</span>
-          </h3>
-        );
-      } else if (trimmed.startsWith("-")) {
-        flushParagraph(index);
-        const itemText = trimmed.substring(1).trim();
-        currentList.push(itemText);
-      } else if (trimmed === "") {
-        flushParagraph(index);
-        flushList(index);
-      } else {
-        flushList(index);
-        currentParagraph.push(trimmed);
-      }
-    });
-
-    flushParagraph("final");
-    flushList("final");
-
-    return elements;
-  };
 
   return (
     <div className="w-full bg-[#f2decc] min-h-screen pb-16">
-      {/* Top Hero Section */}
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 pt-6 pb-2">
-        {/* Mobile & Desktop Dark Hero Card */}
-        <div className="w-full bg-[#432d1c] text-white rounded-[28px] p-6 sm:p-10 lg:p-14 mb-6 shadow-lg relative overflow-hidden text-center flex flex-col items-center">
-          <div className="text-[11px] sm:text-[12px] tracking-[0.2em] font-bold text-[#de5e18] uppercase mb-3">
-            [ {blog.category || "BLOG"} ]
-          </div>
-
-          <h1 className="text-[28px] sm:text-[42px] md:text-[54px] lg:text-[64px] font-extrabold leading-[1.1] tracking-tight mb-4 max-w-[900px] text-white">
-            {blog.title}
-          </h1>
-
-          <p className="text-[14px] sm:text-[16px] text-white/70 max-w-[650px] leading-relaxed mb-6 font-light">
-            Published: {blog.publishedAt || "March 2026"} • 5 min read
-          </p>
-
-          <Link href="/contact" className="inline-block">
-            <button 
-              className="relative w-[260px] sm:w-[280px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
-              aria-label="For Consultation"
-            >
-              {/* Inner Left Pill with right shadow */}
-              <div className="absolute left-0 top-0 w-[195px] sm:w-[215px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
-                <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
-                <span className="font-medium text-[15px] sm:text-[16px] text-white tracking-tight whitespace-nowrap">
-                  For Consultation
-                </span>
-              </div>
-              
-              {/* Right Arrow Icon */}
-              <div className="absolute right-[20px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
-                <svg className="w-[20px] h-[20px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                </svg>
-              </div>
-            </button>
-          </Link>
-        </div>
-
-        {/* Breadcrumb Navigation */}
-        <div className="flex items-center gap-2 text-[13px] sm:text-[14px] text-black/60 font-medium mb-6 px-1">
-          <Link href="/" className="hover:text-[#de5e18] transition-colors">Home</Link>
-          <span>/</span>
-          <Link href="/blogs" className="hover:text-[#de5e18] transition-colors">Blogs</Link>
-          <span>/</span>
-          <span className="text-[#de5e18] font-semibold truncate max-w-[200px] sm:max-w-none">{blog.title}</span>
-        </div>
+      {/* Top Date & Author */}
+      <div className="w-full text-center text-black/60 text-[15px] font-medium pt-12 pb-10">
+        {blog.publishedAt || "March 2026"} &nbsp;&nbsp;&bull;&nbsp;&nbsp; {blog.author || "Southern Marketing Team"}
       </div>
 
       {/* Main Grid Layout */}
-      <div className="grid grid-cols-1 lg:grid-cols-[240px_1fr_280px] gap-8 xl:gap-12 items-start max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
-        
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-[18%_1fr_23%] gap-6 xl:gap-10 items-start w-full">
+
         {/* Left Sidebar - Table of Contents */}
-        <aside className="hidden lg:block sticky top-28 w-full pr-4">
-          <h4 className="text-[11px] font-bold uppercase tracking-[0.2em] text-black/40 mb-6 font-sans text-left">
-            TABLE OF CONTENTS
-          </h4>
-          <nav className="flex flex-col gap-2">
-            {sections.map((sec, idx) => {
+        <aside className="hidden lg:block sticky top-28 w-full pr-2 max-h-[calc(100vh-140px)] overflow-y-auto scrollbar-thin">
+          <nav className="flex flex-col gap-6">
+            {sections.map((sec) => {
               const isActive = activeId === sec.id;
               return (
                 <a
@@ -260,13 +144,12 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
                     document.getElementById(sec.id)?.scrollIntoView({ behavior: "smooth" });
                     setActiveId(sec.id);
                   }}
-                  className={`text-[14px] font-medium leading-[1.4] transition-all duration-200 border-l-2 pl-3 py-1.5 text-left ${
-                    isActive
-                      ? "text-[#de5e18] border-[#de5e18] font-semibold bg-[#de5e18]/5 rounded-r-md"
-                      : "text-black/60 border-transparent hover:text-black"
-                  }`}
+                  className={`text-[15px] leading-[1.5] transition-all duration-200 py-1 pr-4 text-left border-r-[3px] ${isActive
+                    ? "text-[#0f0f0f] border-[#de5e18] font-bold"
+                    : "text-black/60 border-transparent hover:text-black font-medium"
+                    }`}
                 >
-                  {idx + 1}. {sec.title}
+                  {sec.title}
                 </a>
               );
             })}
@@ -274,7 +157,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
         </aside>
 
         {/* Middle Column - Content */}
-        <div className="w-full min-w-0">
+        <div className="w-full min-w-0 lg:max-h-[calc(100vh-140px)] lg:overflow-y-auto scrollbar-thin lg:pr-2">
           {/* Mobile Horizontal Tabs Bar (Matching reference image) */}
           {sections.length > 0 && (
             <div className="lg:hidden w-full border-b border-black/10 mb-8 bg-[#f2decc]/90 sticky top-0 z-30 backdrop-blur-md">
@@ -301,11 +184,10 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
                           setActiveId(sec.id);
                         }
                       }}
-                      className={`shrink-0 text-[14px] font-bold pb-2 transition-all border-b-2 whitespace-nowrap ${
-                        isActive
-                          ? "text-[#de5e18] border-[#de5e18]"
-                          : "text-black/50 border-transparent hover:text-black"
-                      }`}
+                      className={`shrink-0 text-[14px] font-bold pb-2 transition-all border-b-2 whitespace-nowrap ${isActive
+                        ? "text-[#de5e18] border-[#de5e18]"
+                        : "text-black/50 border-transparent hover:text-black"
+                        }`}
                     >
                       {sec.title}
                     </a>
@@ -316,10 +198,29 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
           )}
 
           {/* Article Box */}
-          <article className="w-full bg-white border border-black/8 rounded-[28px] p-6 md:p-10 lg:p-12 shadow-[0_4px_30px_rgba(0,0,0,0.015)]">
-            <div className="prose max-w-none text-[#432d1c] font-sans text-left">
-              {renderContent(blog.content)}
-            </div>
+          <article className="w-full bg-white border border-black/8 rounded-xl p-6 md:p-8 lg:p-10 shadow-sm">
+            <h1 className="text-[32px] md:text-[40px] lg:text-[44px] font-extrabold leading-[1.1] tracking-tight mb-6 text-[#0f0f0f]">
+              {blog.title}
+            </h1>
+            <div
+              className="prose prose-lg max-w-none prose-slate prose-headings:font-bold prose-headings:text-[#0f0f0f] prose-h2:text-[28px] prose-h3:text-[22px] prose-p:text-[#432d1c]/85 prose-p:leading-[1.6] prose-p:my-4 prose-headings:mt-8 prose-headings:mb-4 prose-h2:mt-8 prose-h2:mb-4 prose-h3:mt-6 prose-h3:mb-3 prose-a:text-[#de5e18] prose-a:no-underline hover:prose-a:underline prose-li:text-[#432d1c]/80 text-left font-sans"
+              dangerouslySetInnerHTML={{ __html: processedContent }}
+            />
+
+            {/* FAQs */}
+            {blog.faqs && blog.faqs.length > 0 && (
+              <div className="mt-12 pt-8 border-t border-black/10">
+                <h3 className="text-[24px] font-bold text-[#0f0f0f] mb-6">Frequently Asked Questions</h3>
+                <div className="space-y-4">
+                  {blog.faqs.map((faq, index) => (
+                    <div key={index} className="bg-[#f8f9fa] rounded-xl p-6 border border-black/5">
+                      <h4 className="text-[18px] font-bold text-[#432d1c] mb-3">{faq.question}</h4>
+                      <p className="text-[15.5px] text-[#432d1c]/80 leading-relaxed font-light">{faq.answer}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Share Post */}
             <div className="border-t border-black/10 mt-12 pt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
@@ -360,9 +261,9 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
         </div>
 
         {/* Right Sidebar - About Agency & Contact Card */}
-        <aside className="w-full lg:sticky lg:top-28 space-y-6">
+        <aside className="w-full lg:sticky lg:top-28 space-y-5">
           {/* Company Bio Card */}
-          <div className="bg-white border border-black/10 rounded-[24px] p-6 text-[#0f0f0f] shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative overflow-hidden group text-left">
+          <div className="bg-white border border-black/10 rounded-xl p-6 text-[#0f0f0f] shadow-sm relative overflow-hidden group text-left">
             <div className="absolute top-[-20%] right-[-10%] w-[50%] aspect-square rounded-full bg-[#de5e18]/10 blur-[30px] pointer-events-none" />
             <h3 className="text-[18px] font-bold mb-3 uppercase tracking-wide text-black">
               Southern Edge Marketing
@@ -370,19 +271,19 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
             <p className="text-[14px] text-black/75 leading-relaxed mb-6 font-light">
               We design, build, and optimize high-converting digital storefronts, corporate portals, and brand systems for ambitious companies.
             </p>
-            <Link href="/about" className="inline-block mt-4">
-              <button 
-                className="relative w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
+            <Link href="/about" className="block mt-4 w-full">
+              <button
+                className="relative w-full h-[58px] sm:h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
                 aria-label="Learn about us"
               >
                 {/* Inner Left Pill with right shadow */}
-                <div className="absolute left-[0px] top-0 w-[157px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+                <div className="absolute left-0 top-0 w-[calc(100%-45px)] h-full rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-2 transform group-hover:translate-x-[3px] transition-transform duration-300 z-10 px-2 sm:px-3">
                   <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
-                  <span className="font-semibold text-[16px] text-white tracking-wide whitespace-nowrap">
+                  <span className="font-medium text-[13px] sm:text-[14px] lg:text-[15px] text-white tracking-tight whitespace-nowrap">
                     Learn about us
                   </span>
                 </div>
-                
+
                 {/* Right Arrow Icon */}
                 <div className="absolute right-[24px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
                   <svg className="w-[21px] h-[21px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -394,7 +295,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
           </div>
 
           {/* Need Marketing Help Card */}
-          <div className="bg-white border border-black/10 rounded-[24px] p-6 shadow-[0_4px_30px_rgba(0,0,0,0.02)] text-left">
+          <div className="bg-white border border-black/10 rounded-xl p-6 shadow-sm text-left">
             <h3 className="text-[18px] font-bold text-black mb-3 uppercase tracking-wide">
               Start Your Digital Journey
             </h3>
@@ -403,7 +304,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
             </p>
             <div className="flex flex-col gap-3">
               <Link href="/contact" className="w-full">
-                <button 
+                <button
                   className="relative w-full h-[58px] sm:h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
                   aria-label="For Consultation"
                 >
@@ -413,7 +314,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
                       For Consultation
                     </span>
                   </div>
-                  
+
                   <div className="absolute right-[14px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
                     <svg className="w-[18px] h-[18px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />

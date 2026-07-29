@@ -28,21 +28,21 @@ export default function AuthorityLayout({ children }: { children: React.ReactNod
     }
 
     return (
-        <div className="min-h-screen bg-zinc-950 text-white flex flex-col">
-            <nav className="bg-black border-b border-white/10 px-6 py-4 flex justify-between items-center sticky top-0 z-50">
+        <div className="min-h-screen bg-[#f2decc] text-black flex flex-col">
+            <nav className="bg-[#f2decc] border-b border-black/10 px-6 py-4 flex justify-between items-center sticky top-0 z-50">
                 <div className="flex items-center gap-6">
                     <h1 className="text-xl font-bold tracking-wider">AUTHORITY</h1>
                     <div className="flex items-center gap-4 text-sm font-medium">
-                        <Link href="/authority" className="text-zinc-400 hover:text-white transition-colors">Dashboard</Link>
-                        <Link href="/authority/leads" className="text-zinc-400 hover:text-white transition-colors">Leads</Link>
-                        <Link href="/authority/blogs" className="text-zinc-400 hover:text-white transition-colors">Blogs</Link>
+                        <Link href="/authority" className="text-black/60 hover:text-black transition-colors">Dashboard</Link>
+                        <Link href="/authority/leads" className="text-black/60 hover:text-black transition-colors">Leads</Link>
+                        <Link href="/authority/blogs" className="text-black/60 hover:text-black transition-colors">Blogs</Link>
                     </div>
                 </div>
                 <div className="flex items-center gap-4">
-                    <span className="text-zinc-500 text-xs">{user.email}</span>
+                    <span className="text-black/50 text-xs">{user.email}</span>
                     <button 
                         onClick={() => logout()}
-                        className="text-xs bg-white/5 hover:bg-white/10 border border-white/10 px-3 py-1.5 rounded transition-colors"
+                        className="text-xs bg-black/5 hover:bg-black/10 border border-black/10 px-3 py-1.5 rounded transition-colors text-black"
                     >
                         Sign Out
                     </button>

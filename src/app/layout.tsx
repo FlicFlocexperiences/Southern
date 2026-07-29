@@ -90,7 +90,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${onestSans.variable} ${geistMono.variable} ${playball.variable} h-full antialiased`}
+      className={`${onestSans.variable} ${geistMono.variable} ${playball.variable} antialiased`}
     >
       <head>
         <script
@@ -98,7 +98,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
         />
       </head>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-screen flex flex-col">
         <AuthProvider>
           {children}
           <WhatsappWidget />

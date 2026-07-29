@@ -1,3 +1,16 @@
+export interface FAQ {
+  id?: string;
+  question: string;
+  answer: string;
+}
+
+export interface Review {
+  id?: string;
+  name: string;
+  rating: number;
+  review: string;
+}
+
 export interface Blog {
   slug: string;
   title: string;
@@ -6,6 +19,9 @@ export interface Blog {
   publishedAt: string;
   category: string;
   image: string;
+  faqs?: FAQ[];
+  reviews?: Review[];
+  author?: string;
 }
 
 export const blogs: Blog[] = [

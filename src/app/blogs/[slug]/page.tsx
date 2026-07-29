@@ -17,22 +17,33 @@ async function getLiveBlog(slug: string): Promise<Blog | null> {
   try {
     const q = query(collection(db, "blogs"), where("slug", "==", slug));
     const snapshot = await getDocs(q);
-    
+
     if (snapshot.empty) {
       return null;
     }
 
-    const doc = snapshot.docs[0];
-    const data = doc.data();
+    const docSnap = snapshot.docs[0];
+    const data = docSnap.data();
+
+    // Fetch FAQs
+    const faqsSnapshot = await getDocs(collection(db, "blogs", docSnap.id, "faqs"));
+    const faqs = faqsSnapshot.docs.map(faqDoc => faqDoc.data() as any);
+
+    // Fetch Reviews
+    const reviewsSnapshot = await getDocs(collection(db, "blogs", docSnap.id, "reviews"));
+    const reviews = reviewsSnapshot.docs.map(reviewDoc => reviewDoc.data() as any);
 
     return {
-      slug: data.slug || doc.id,
+      slug: data.slug || docSnap.id,
       title: data.title || "Untitled",
       excerpt: data.subtitle || data.metaDescription || "",
       content: data.description || "", // Mapping description to content for BlogContent
       publishedAt: data.date || new Date().toISOString().split('T')[0],
       category: "MARKETING",
       image: data.image || "/photoshoot.jpg",
+      faqs,
+      reviews,
+      author: data.author || "Southern Marketing Team"
     };
   } catch (e) {
     console.error("Error fetching blog:", e);
@@ -43,7 +54,7 @@ async function getLiveBlog(slug: string): Promise<Blog | null> {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const blog = await getLiveBlog(slug);
-  
+
   if (!blog) return {};
   return {
     title: `${blog.title} | Southern Edge Marketing`,
@@ -65,7 +76,7 @@ export default async function BlogSlugPage({ params }: { params: Promise<{ slug:
       <div className="block md:hidden"><MobileNav /></div>
       <div className="hidden md:block"><DesktopNav /></div>
 
-      <main className="w-full pt-32 lg:pt-40 px-6 lg:px-[90px] pb-24">
+      <main className="w-full pt-32 lg:pt-40 px-6 pb-24">
         <BlogContent blog={blog} />
       </main>
 

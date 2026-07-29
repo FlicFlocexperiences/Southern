@@ -2,21 +2,47 @@
 import { NextResponse } from 'next/server';
 import OpenAI from 'openai';
 
+export const dynamic = "force-dynamic";
+
 export async function POST(request: Request) {
-    const openai = new OpenAI({
-        apiKey: process.env.HELLO_DROP_CHOO,
-    });
-
-    const sanitizeText = (txt: string) => txt.replace(/—/g, "-").replace(/\u2014/g, "-");
-
     try {
+        const sanitizeText = (txt: string) => txt.replace(/—/g, "-").replace(/\u2014/g, "-");
+
+        const apiKey = process.env.HELLO_DROP_CHOO;
+        if (!apiKey) {
+            return NextResponse.json({ error: 'OpenAI API configuration secret (HELLO_DROP_CHOO) is not set in .env' }, { status: 500 });
+        }
+
+        const openai = new OpenAI({
+            apiKey: apiKey,
+        });
+
         const body = await request.json();
         const primaryKeyword = body.primaryKeyword;
 
         if (!primaryKeyword) {
             return NextResponse.json({ error: 'Primary Keyword is required' }, { status: 400 });
         }
-
+        // --- TOKEN SAVING TEST MODE ---
+        if (primaryKeyword.toLowerCase() === 'test') {
+            console.log("[AI Generator Flow] TEST MODE ACTIVATED - Costing 0 tokens.");
+            const dummyHtml = Array(15).fill(
+                "<h2>Test Heading: Verifying Full Width</h2><p>This is a test paragraph to verify that the Tiptap editor is now utilizing the full horizontal space of the container. By applying the !max-w-none utility class, the Tailwind typography plugin will no longer arbitrarily constrain our text to 65 characters per line.</p><p>As you can see, the text should now stretch all the way from the left edge of the editor box to the right edge, filling the entire white space perfectly. You are saving your OpenAI tokens while we verify this CSS fix.</p>"
+            ).join("");
+            
+            return NextResponse.json({
+                title: "Test Mode Blog Title",
+                subtitle: "This is a dummy subtitle to save your API tokens.",
+                metaTitle: "Test Meta Title",
+                metaDescription: "Test Meta Description",
+                slug: "test-mode-blog",
+                description: dummyHtml,
+                faqs: [{ question: "Is this a test?", answer: "Yes, saving tokens." }],
+                reviews: [{ name: "Test User", rating: 5, review: "Great token saving!" }],
+                suggestedImagePrompt: "A cute robot saving money in a piggy bank."
+            });
+        }
+        // ------------------------------
         console.log(`[AI Generator Flow] Step 1: Generating SEO metadata and Article Outline for: [${primaryKeyword}]...`);
 
         // STEP 1: Generate Title, Subtitle, Meta Title, Meta Description, Slug, and Outline
@@ -26,7 +52,7 @@ export async function POST(request: Request) {
                 {
                     role: "system",
                     content: `You are a professional digital marketing SEO and AEO strategist.
-Generate an SEO-optimized H1 Title, engaging subtitle, meta title, meta description, URL slug, and a detailed outline of 10 to 12 H2 headings for an exhaustive blog article for Southern Marketing, a digital marketing agency.
+Generate an SEO-optimized H1 Title, engaging subtitle, meta title, meta description, URL slug, and a detailed outline of 5 to 7 H2 headings for a concise blog article for Southern Marketing, a digital marketing agency.
 Primary Keyword: ${primaryKeyword}
 
 CRITICAL NEGATIVE CONSTRAINT:
@@ -42,7 +68,7 @@ Return ONLY a JSON object with this exact structure:
   "outline": [
     "Introduction to Primary Keyword",
     "Understanding the Legal Framework...",
-    ... (10 to 12 detailed H2 heading titles)
+    ... (5 to 7 detailed H2 heading titles)
   ]
 }`
                 }
@@ -72,7 +98,7 @@ Article Title: ${step1Result.title}
 
 **CRITICAL WORD COUNT REQUIREMENT**:
 You are writing ONLY the content for the specific H2 section titled: "${heading}".
-Write exactly 350 to 450 words for this specific section alone. Ensure it is extremely detailed, comprehensive, and exhaustive. Expand with 4-6 detailed paragraphs.
+Write exactly 150 to 200 words for this specific section alone. Ensure it is concise, yet informative. Expand with 2-3 short paragraphs.
 
 **Requirements**:
 - **Structure**: Output HTML ONLY. Start with an <h2>${heading}</h2> tag, followed by <p>, <h3>, <ul>, <li>, or <table> tags as appropriate.
@@ -195,28 +221,13 @@ Return ONLY a JSON object with this exact structure:
             suggestedImagePrompt: suggestedImagePrompt
         };
 
-        const finalJsonStr = JSON.stringify(finalResult);
+        return NextResponse.json(finalResult);
 
-        // Stream the final JSON to the client
-        const stream = new ReadableStream({
-            async start(controller) {
-                controller.enqueue(new TextEncoder().encode(finalJsonStr));
-                controller.close();
-            },
-        });
-
-        return new Response(stream, {
-            headers: {
-                "Content-Type": "text/plain; charset=utf-8",
-            },
-        });
     } catch (error) {
-        console.error('Error generating article:', error);
+        console.error('CRITICAL TOP-LEVEL ERROR generating article:', error);
         return NextResponse.json(
             { error: 'Internal server error', details: error instanceof Error ? error.message : String(error) },
             { status: 500 }
         );
     }
 }
-
-export const maxDuration = 300;
