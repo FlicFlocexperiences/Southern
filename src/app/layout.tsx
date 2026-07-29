@@ -26,6 +26,25 @@ export const metadata: Metadata = {
     template: "%s | Southern Edge Marketing",
   },
   description: "Southern Edge Marketing turns attention into action, strategy, design, development, and marketing that actually drives business. Trusted by 100+ businesses across India. 5.0 rated.",
+  openGraph: {
+    title: "Southern Edge Marketing | Digital Marketing Agency in Delhi, India",
+    description: "Southern Edge Marketing turns attention into action, strategy, design, development, and marketing that actually drives business. Trusted by 100+ businesses across India. 5.0 rated.",
+    url: "https://southernedgemarketing.com",
+    siteName: "Southern Edge Marketing",
+    images: [{
+      url: "/LOGO_Final.svg",
+      width: 1200,
+      height: 630,
+    }],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Southern Edge Marketing",
+    description: "Digital Marketing Agency in Delhi, India",
+    images: ["/LOGO_Final.svg"],
+  },
   alternates: {
     canonical: "/",
   },

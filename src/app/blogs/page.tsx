@@ -15,6 +15,10 @@ import { db } from "@/lib/firebase";
 export const metadata: Metadata = {
   title: "Blogs | Southern Edge Marketing",
   description: "Read our latest articles and insights at Southern Edge Marketing.",
+  openGraph: {
+    title: "Blogs | Southern Edge Marketing",
+    description: "Read our latest articles and insights at Southern Edge Marketing.",
+  },
 };
 
 export const dynamic = 'force-dynamic'; // Ensures this page is server-rendered dynamically

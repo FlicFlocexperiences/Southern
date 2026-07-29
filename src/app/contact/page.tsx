@@ -11,6 +11,10 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Southern Edge Marketing | Let's Impress You",
   description: "Ready to grow? Get in touch with Southern Edge Marketing for a free consultation on strategy, design, and marketing that drives results.",
+  openGraph: {
+    title: "Contact Southern Edge Marketing | Let's Impress You",
+    description: "Ready to grow? Get in touch with Southern Edge Marketing for a free consultation on strategy, design, and marketing that drives results.",
+  },
 };
 
 const ArrowUpRight = () => (
