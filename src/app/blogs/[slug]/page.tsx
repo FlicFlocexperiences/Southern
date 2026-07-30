@@ -13,6 +13,8 @@ import { db } from "@/lib/firebase";
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
+const stripHtml = (html: string) => html ? html.replace(/<[^>]+>/g, '') : '';
+
 async function getLiveBlog(slug: string): Promise<Blog | null> {
   try {
     const q = query(collection(db, "blogs"), where("slug", "==", slug));
@@ -36,7 +38,7 @@ async function getLiveBlog(slug: string): Promise<Blog | null> {
     return {
       slug: data.slug || docSnap.id,
       title: data.title || "Untitled",
-      excerpt: data.subtitle || data.metaDescription || "",
+      excerpt: stripHtml(data.subtitle || data.metaDescription || ""),
       content: data.description || "", // Mapping description to content for BlogContent
       publishedAt: data.date || new Date().toISOString().split('T')[0],
       category: "MARKETING",
