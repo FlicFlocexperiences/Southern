@@ -23,7 +23,7 @@ const FaqItem = ({ question, answer }: { question: string, answer: string }) => 
           {question}
         </p>
         <div 
-          className={`shrink-0 w-[42px] h-[42px] rounded-full bg-[#ff5100] flex items-center justify-center transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+          className={`shrink-0 w-[42px] h-[42px] rounded-full bg-[#de5e18] flex items-center justify-center transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
           style={{
             boxShadow: "0px 10px 16px rgba(0,0,0,0.15), inset 0px 4px 6px rgba(255,255,255,0.4)"
           }}
@@ -35,7 +35,7 @@ const FaqItem = ({ question, answer }: { question: string, answer: string }) => 
       <div 
         className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-[300px] opacity-100 pb-2 mt-2' : 'max-h-0 opacity-0'}`}
       >
-        <div className="bg-[#ff5100] rounded-[16px] p-5 mb-2">
+        <div className="bg-[#de5e18] rounded-[16px] p-5 mb-2">
           <p className="text-white text-[16px] leading-relaxed">
             {answer}
           </p>
@@ -49,26 +49,30 @@ export const MobileFaq = () => {
   const faqs = [
     {
       question: "Who do you usually work with?",
-      answer: "We work with ambitious brands and businesses looking to scale their digital presence through strategic design and marketing."
+      answer: "We work with small and growing businesses across India, from D2C and e-commerce brands to F&B, retail, and professional services, who want marketing that's tied to real business outcomes, not just impressions."
     },
     {
-      question: "Who do you usually work with?",
-      answer: "Most website projects take 4-8 weeks from kickoff to launch, depending on complexity and features required."
+      question: "How much does a new website cost?",
+      answer: "Every project is scoped around what your business actually needs, from a lean landing page to a full custom build. Reach out for a free quote based on your goals and timeline."
     },
     {
-      question: "Who do you usually work with?",
-      answer: "Yes, we offer monthly retainers for SEO, marketing, and website maintenance to ensure your continued growth."
+      question: "Do you offer ongoing support?",
+      answer: "Yes, we don't disappear after launch. We offer ongoing maintenance, content, and performance support so your website and campaigns keep improving after go-live."
+    },
+    {
+      question: "How long does it take to see results?",
+      answer: "It depends on the channel: website and brand work show up immediately, SEO typically builds momentum over 3 to 6 months, and paid ads/social can show early signals within the first few weeks."
     }
   ];
 
   return (
-    <div className="w-full bg-[#fffff0] px-5 pt-16 pb-6 relative flex flex-col items-center" style={{ zoom: 1.08 }}>
+    <div className="w-full bg-[#f2decc] px-5 pt-16 pb-16 relative flex flex-col items-center">
       
       {/* Header */}
       <p className="text-[18px] font-medium tracking-wide mb-4 text-center">
-        <span className="text-[#ff5100]">[</span>
+        <span className="text-[#de5e18]">[</span>
         <span className="text-black mx-1">FAQ</span>
-        <span className="text-[#ff5100]">]</span>
+        <span className="text-[#de5e18]">]</span>
       </p>
       
       <div className="w-full max-w-[360px] h-[1px] bg-gray-200 mb-6"></div>

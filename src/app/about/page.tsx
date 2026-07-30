@@ -9,17 +9,22 @@ import { DesktopAboutTeam } from "@/components/desktop-about-team";
 import { AboutPageHero } from "@/components/about-page-hero";
 import { AboutIntro } from "@/components/about-intro";
 import { Cta } from "@/components/cta";
+import { MobileClientLogos, DesktopClientLogos } from "@/components/client-logos";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Southern Marketing",
-  description: "Learn more about Southern Marketing and our team.",
+  title: "About Southern Edge Marketing | Our Story & Approach",
+  description: "We're more than just digital. Meet the team behind Southern Edge Marketing and see how we build brands that grow, not just campaigns that run.",
+  openGraph: {
+    title: "About Southern Edge Marketing | Our Story & Approach",
+    description: "We're more than just digital. Meet the team behind Southern Edge Marketing and see how we build brands that grow, not just campaigns that run.",
+  },
 };
 
 export default function About() {
   return (
-    <div className="w-full bg-[#fffff0] min-h-screen flex flex-col">
+    <div className="w-full bg-[#f2decc] min-h-screen flex flex-col">
       <div className="hidden md:block">
         <DesktopNav />
       </div>
@@ -29,12 +34,18 @@ export default function About() {
 
       <main className="flex-grow">
         <AboutPageHero />
+        <div className="hidden md:block">
+          <DesktopClientLogos />
+        </div>
+        <div className="md:hidden">
+          <MobileClientLogos />
+        </div>
         <AboutIntro />
         {/* <DesktopAboutHero /> */}
         <DesktopAboutTeam />
       </main>
 
-      <div style={{ zoom: 0.8 }}>
+      <div className="md:[zoom:0.8]">
         <Cta />
       </div>
 
@@ -42,7 +53,7 @@ export default function About() {
         <DesktopFaq />
         <DesktopFooter />
       </div>
-      <div className="md:hidden" style={{ zoom: 0.8 }}>
+      <div className="md:hidden">
         <MobileFaq />
         <MobileFooter />
       </div>

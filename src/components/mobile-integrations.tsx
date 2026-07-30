@@ -24,10 +24,10 @@ const logos = [
   "/integrations/zoho.png",
   "/integrations/gemini.png",
   // Row 5
-  "/integrations/tiktok.png",
+  "/tik-tok_1.svg",
   "/integrations/snapchat.png",
   "/integrations/cursor.png",
-  "/integrations/figma.png",
+  "/figma_1.svg",
 ];
 
 const HexagonSvg = () => (
@@ -51,12 +51,26 @@ const HexagonSvg = () => (
 );
 
 const HexagonTile = ({ src, hasLogo }: { src?: string | null; hasLogo?: boolean }) => {
-  const isBlackBg = src && (src.includes('tiktok') || src.includes('cursor') || src.includes('figma'));
+  const isBlackBg = src && (
+    src.toLowerCase().includes('tiktok') || 
+    src.toLowerCase().includes('tik-tok') || 
+    src.toLowerCase().includes('cursor') || 
+    src.toLowerCase().includes('figma')
+  );
+  const isCursor = src && src.toLowerCase().includes('cursor');
   return (
     <div className="relative group w-[74px] h-[80px] flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:-translate-y-1">
       <HexagonSvg />
       {hasLogo && src && (
-        <img src={src} alt="Integration Logo" className={`w-[36px] h-[36px] object-contain relative z-10 filter drop-shadow-sm ${isBlackBg ? 'mix-blend-screen' : ''}`} />
+        <img 
+          src={src} 
+          alt="Integration Logo" 
+          className={`object-contain relative z-10 filter drop-shadow-sm ${
+            isCursor 
+              ? 'w-[32px] h-[32px]' 
+              : 'w-[36px] h-[36px]'
+          } ${isBlackBg ? 'mix-blend-screen' : ''}`} 
+        />
       )}
     </div>
   );
@@ -74,15 +88,15 @@ export function MobileIntegrations() {
   let currentLogoIndex = 0;
 
   return (
-    <section className="w-full bg-[#fffff0] relative overflow-hidden flex flex-col items-center">
+    <section className="w-full bg-[#f2decc] relative overflow-hidden flex flex-col justify-start items-center">
       
       {/* Honeycombs Section with Background */}
       <div 
-        className="w-full relative flex justify-center pt-16 pb-10"
+        className="w-full relative flex justify-center pt-8 pb-6"
         style={{ background: "url('/bggrad.png') lightgray 50% / cover no-repeat" }}
       >
         {/* Bottom Fade Overlay to blend image smoothly into the bg color below */}
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#fffff0] to-transparent pointer-events-none z-0" />
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#f2decc] to-transparent pointer-events-none z-0" />
         
         <div className="max-w-[440px] mx-auto relative z-10 w-full flex flex-col items-center">
           <div className="flex flex-col items-center">
@@ -117,7 +131,7 @@ export function MobileIntegrations() {
       </div>
 
       {/* Text Details */}
-      <div className="max-w-[440px] mx-auto relative z-20 w-full flex flex-col items-center pb-16 pt-4">
+      <div className="max-w-[440px] mx-auto relative z-20 w-full flex flex-col items-center pb-8 pt-2">
         <div className="text-center flex flex-col items-center">
           <h2 className="flex flex-col gap-0 uppercase text-center font-sans tracking-tight">
             <span className="text-[28px] leading-[1.1] font-semibold text-[#A1A1A1]">

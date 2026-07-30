@@ -24,19 +24,19 @@ export const DesktopFaq = () => {
   const faqs = [
     {
       question: "Who do you usually work with?",
-      answer: "We work with forward-thinking businesses, from ambitious startups to established enterprises, looking to scale their digital presence and drive measurable results."
+      answer: "We work with small and growing businesses across India, from D2C and e-commerce brands to F&B, retail, and professional services, who want marketing that's tied to real business outcomes, not just impressions."
     },
     {
       question: "How much does a new website cost?",
-      answer: "Project costs vary based on scope, features, and complexity. We offer customized quotes after understanding your specific needs and business goals."
+      answer: "Every project is scoped around what your business actually needs, from a lean landing page to a full custom build. Reach out for a free quote based on your goals and timeline."
     },
     {
       question: "Do you offer ongoing support?",
-      answer: "Yes, we provide dedicated maintenance, updates, and optimization services to ensure your digital assets continue performing at their best over time."
+      answer: "Yes, we don't disappear after launch. We offer ongoing maintenance, content, and performance support so your website and campaigns keep improving after go-live."
     },
     {
       question: "How long does it take to see results?",
-      answer: "While some technical optimizations show immediate impact, organic growth and comprehensive marketing strategies typically take 3-6 months to yield significant results."
+      answer: "It depends on the channel: website and brand work show up immediately, SEO typically builds momentum over 3 to 6 months, and paid ads/social can show early signals within the first few weeks."
     }
   ];
 
@@ -45,14 +45,14 @@ export const DesktopFaq = () => {
   };
 
   return (
-    <section className="w-full bg-[#fffff0] pt-24 pb-10 px-8 lg:px-[90px] flex flex-col items-center relative z-10" style={{ zoom: 0.75 }}>
+    <section className="w-full bg-[#f2decc] pt-22 pb-22 px-8 lg:px-[90px] flex flex-col items-center relative z-10" style={{ zoom: 0.75 }}>
       
       {/* Top Header */}
       <div className="flex flex-col items-center mb-16 w-full">
         <p className="font-medium text-[20px] lg:text-[24px] mb-8 tracking-wide">
-          <span className="text-[#ff5100]">[</span>
+          <span className="text-[#de5e18]">[</span>
           <span className="text-black mx-2">FAQ</span>
-          <span className="text-[#ff5100]">]</span>
+          <span className="text-[#de5e18]">]</span>
         </p>
         
         {/* Subtle divider line across the screen */}
@@ -71,7 +71,7 @@ export const DesktopFaq = () => {
           return (
             <div 
               key={index} 
-              className={`w-full bg-[#fffff0] rounded-[35px] border border-transparent transition-all duration-300 ${isOpen ? 'shadow-[0px_10px_30px_rgba(0,0,0,0.05)] border-black/5 pb-6' : 'hover:bg-black/[0.02]'}`}
+              className={`w-full bg-[#f2decc] rounded-[35px] border border-transparent transition-all duration-300 ${isOpen ? 'shadow-[0px_10px_30px_rgba(0,0,0,0.05)] border-black/5 pb-6' : 'hover:bg-black/[0.02]'}`}
             >
               <button 
                 onClick={() => toggleFaq(index)}
@@ -83,7 +83,7 @@ export const DesktopFaq = () => {
                 </span>
                 
                 {/* Arrow Button */}
-                <div className="w-[45px] h-[45px] lg:w-[50px] lg:h-[50px] rounded-full bg-[#ff5100] flex items-center justify-center shrink-0 shadow-[0_8px_16px_rgba(255,81,0,0.4)]">
+                <div className="w-[45px] h-[45px] lg:w-[50px] lg:h-[50px] rounded-full bg-[#de5e18] flex items-center justify-center shrink-0 shadow-[0_8px_16px_rgba(222,94,24,0.4)]">
                   <ArrowDownIcon isOpen={isOpen} />
                 </div>
               </button>
@@ -92,7 +92,7 @@ export const DesktopFaq = () => {
               <div 
                 className={`overflow-hidden transition-all duration-300 px-6 lg:px-10 ${isOpen ? 'max-h-[300px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}
               >
-                <div className="bg-[#ff5100] rounded-[20px] p-6 mb-6">
+                <div className="bg-[#de5e18] rounded-[20px] p-6 mb-6">
                   <p className="text-[18px] lg:text-[20px] text-white font-normal leading-[1.5]">
                     {faq.answer}
                   </p>

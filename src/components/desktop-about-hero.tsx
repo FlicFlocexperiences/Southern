@@ -125,7 +125,7 @@ export const DesktopAboutHero = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.5 }}
-              className="font-semibold text-[24px] md:text-[30px] leading-[30px] text-white mr-6 cursor-pointer hover:text-[#ff5100] transition-colors"
+              className="font-semibold text-[24px] md:text-[30px] leading-[30px] text-white mr-6 cursor-pointer hover:text-[#de5e18] transition-colors"
               onClick={() => handleManualChange(-1)}
             >
               {slides[currentSlide].startYear}
@@ -140,7 +140,7 @@ export const DesktopAboutHero = () => {
                    initial={{ x: "-100%" }}
                    animate={{ x: isHovered ? "-100%" : 0 }}
                    transition={{ duration: 10, ease: "linear" }}
-                   className="absolute inset-0 bg-[#ff5100]"
+                   className="absolute inset-0 bg-[#de5e18]"
                 />
              </div>
              <div className="w-[2px] h-[20px] md:h-[40px] bg-white transition-all duration-300" />
@@ -153,7 +153,7 @@ export const DesktopAboutHero = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.5 }}
-              className="font-semibold text-[24px] md:text-[30px] leading-[30px] text-white ml-6 cursor-pointer hover:text-[#ff5100] transition-colors"
+              className="font-semibold text-[24px] md:text-[30px] leading-[30px] text-white ml-6 cursor-pointer hover:text-[#de5e18] transition-colors"
               onClick={() => handleManualChange(1)}
             >
               {slides[currentSlide].endYear}

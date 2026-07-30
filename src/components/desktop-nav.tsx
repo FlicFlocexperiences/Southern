@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const ArrowRightIcon = () => (
@@ -20,21 +21,24 @@ export const DesktopNav = () => {
     { name: "Services", href: "/services" },
     { name: "Projects", href: "/projects" },
     { name: "Blogs", href: "/blogs" },
-    { name: "Contact", href: "/contact" },
   ];
 
   return (
-    <div className="absolute top-0 left-0 right-0 z-50 w-full px-6 md:px-10 py-4 flex flex-col gap-3 max-w-[1280px] mx-auto">
+    <div className="absolute top-4 left-0 right-0 z-[100] w-full px-6 md:px-10 py-4 flex flex-col gap-3 max-w-[1280px] mx-auto" style={{ zoom: 0.8 }}>
 
 
       {/* Main Navbar */}
-      <nav className="w-full h-[68px] bg-[#ff5100] rounded-full flex items-center justify-between px-6 relative overflow-hidden shadow-sm">
+      <nav className="w-full h-[68px] bg-[#de5e18] rounded-full flex items-center justify-between px-6 relative overflow-hidden shadow-sm">
         {/* Logo */}
         <div className="flex items-center shrink-0">
           <Link href="/">
-            <div className="h-9 w-9 rounded-full border-2 border-white bg-white/20 flex items-center justify-center cursor-pointer">
-              <span className="text-white text-xs font-bold">SM</span>
-            </div>
+            <Image
+              src="/LOGO_Final.svg"
+              alt="SEM Logo"
+              width={56}
+              height={56}
+              className="h-14 w-14 cursor-pointer transition-transform"
+            />
           </Link>
         </div>
 
@@ -70,7 +74,7 @@ export const DesktopNav = () => {
             </span>
           </div>
           <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center relative overflow-hidden group-hover:rotate-45 transition-transform duration-300 shadow-inner">
-             <div className="absolute inset-0 bg-gradient-to-r from-[#ffa479] to-[#ff5100]" />
+             <div className="absolute inset-0 bg-gradient-to-r from-[#ffa479] to-[#de5e18]" />
              <div className="relative z-10 text-white">
                <ArrowRightIcon />
              </div>

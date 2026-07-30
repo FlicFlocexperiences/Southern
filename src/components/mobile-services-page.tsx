@@ -1,136 +1,178 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
+import { services } from "@/data/services";
+import { CountUp } from "@/components/count-up";
 
 export const MobileServicesPage = () => {
-  const services = [
-    {
-      title: "Website Revamp",
-      description: "We modernize your existing site with improved functionality, faster load speeds, and fresh aesthetics.",
-      timeline: "2-3 Weeks",
-      deliverables: "Redesign • Optimization",
-      image: "/services/website-revamp.png"
-    },
-    {
-      title: "Branding & Creative Strategy",
-      description: "Create memorable brand identities, impactful visuals, and consistent messaging that drive growth.",
-      timeline: "2 – 4 Weeks",
-      deliverables: "Brand Identity • Brand Guidelines",
-      image: "/services/branding.png"
-    },
-    {
-      title: "Photography & Videography",
-      description: "Create high-quality visual content that captures attention, builds trust, and drives engagement.",
-      timeline: "1 – 3 Weeks",
-      deliverables: "High-Res Photos • Promo Videos",
-      image: "/services/photography.png"
-    },
-    {
-      title: "Performance Marketing",
-      description: "We drive measurable growth and high-quality leads through targeted, data-driven ad campaigns.",
-      timeline: "2-3 Weeks",
-      deliverables: "Ad Campaigns • Analytics Reports",
-      image: "/services/performance-marketing.png"
-    },
-    {
-      title: "SEO",
-      description: "We boost your search rankings and drive consistent organic traffic with proven strategies.",
-      timeline: "3-4 Weeks",
-      deliverables: "Keyword Strategy • Traffic Growth",
-      image: "/services/seo.png"
-    },
-    {
-      title: "Application Development",
-      description: "We engineer robust, intuitive mobile and web applications tailored to your business goals.",
-      timeline: "5-6 Weeks",
-      deliverables: "iOS/Android Apps • Web Apps",
-      image: "/services/app-development.png"
-    },
-    {
-      title: "Social Media Management",
-      description: "We build vibrant online communities through engaging content and strategic brand storytelling.",
-      timeline: "1-2 Weeks",
-      deliverables: "Content Calendar • Community Engagement",
-      image: "/services/social-media.png"
-    }
-  ];
-
   return (
-    <div className="w-full relative bg-[#fffff0] pt-16 pb-16 overflow-hidden">
+    <div className="w-full relative bg-[#f2decc] pt-24 pb-8 overflow-hidden">
       {/* Header Section */}
-      <div className="flex flex-col items-center mb-16 gap-6 w-full z-10 relative mt-4">
-
+      <div className="flex flex-col w-full px-6 items-start gap-6 z-10 relative mb-12">
+        {/* Breadcrumbs */}
         
-        <div className="w-[150vw] -ml-[25vw] h-px bg-black/10 relative" />
-        
-        <h2 className="text-[40px] leading-[1.1] font-semibold text-black text-center w-full px-4 mt-10">
-          SERVICES & EXPERTISE
-        </h2>
-      </div>
 
-      <div className="px-5 relative z-10">
-        {/* Services List */}
-        <div className="flex flex-col gap-16">
-          {services.map((service, index) => (
-            <div key={index} className="flex flex-col w-full relative pt-2">
-              
-              {/* Title */}
-              <h3 className="text-[28px] font-medium text-[#0f0f0f] mb-4">
-                {service.title}
-              </h3>
+        {/* Main Heading */}
+        <h1 className="text-[38px] leading-[1.1] font-bold text-black tracking-tight mt-2">
+          Six capabilities.<br />
+          <span className="text-[#de5e18]">One system.</span>
+        </h1>
 
-              {/* Image */}
-              <div className="w-full aspect-[16/10] rounded-[16px] overflow-hidden bg-[#e4e4e4] mb-6 relative">
-                <img 
-                  src={service.image} 
-                  alt={service.title} 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              {/* Line under image */}
-              <div className="w-full h-[2px] bg-black/5 mb-6" />
-
-              {/* Details */}
-              <div className="flex flex-col gap-4 mb-8">
-                <div className="flex justify-between items-start w-full">
-                  <span className="text-[18px] text-[#0f0f0f]">Timeline</span>
-                  <span className="text-[18px] text-[#828282] font-medium text-right">{service.timeline}</span>
-                </div>
-
-                <div className="flex justify-between items-start w-full">
-                  <span className="text-[18px] text-[#0f0f0f]">Deliverables</span>
-                  <span className="text-[18px] text-[#828282] font-medium text-right max-w-[60%]">
-                    {service.deliverables}
-                  </span>
-                </div>
-              </div>
-
-              {/* Description */}
-              <p className="text-[18px] leading-[1.4] text-[#828282] mb-8 text-justify hyphens-auto tracking-tight break-words" lang="en">
-                {service.description}
-              </p>
-
-              {/* Action row */}
-              <div className="flex flex-row justify-between items-center w-full mb-8">
-                <Link href="/contact" className="w-full mr-4">
-                  <button className="w-full bg-[#ff5100] text-white px-6 py-3.5 rounded-full font-semibold text-[16px] shadow-[inset_0px_-3px_13.8px_0px_rgba(232,232,232,0.76),inset_0px_4px_13.8px_0px_rgba(232,232,232,0.76)] flex items-center justify-center gap-[6px] hover:opacity-90 transition-opacity whitespace-nowrap">
-                    <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
-                    <span>Start Now</span>
-                  </button>
-                </Link>
-                <span className="text-[16px] text-black/55 font-normal whitespace-nowrap ml-4">
-                  T&C Apply
+        {/* Paragraph & CTA Button */}
+        <div className="flex flex-col items-start w-full gap-6">
+          <p className="text-black/70 text-[14px] leading-relaxed text-justify">
+            We don't offer isolated services. Every capability we practice is engineered to compound with the others, creating a growth system that gets smarter and more profitable with every passing month.
+          </p>
+          <Link href="/contact" className="w-full">
+            <button 
+              className="w-full relative h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] group cursor-pointer"
+              aria-label="Book a strategy call"
+            >
+              {/* Inner Left Pill with right shadow */}
+              <div className="absolute left-[0px] top-0 w-[calc(100%-60px)] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+                <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
+                <span className="font-medium text-[16px] md:text-[18px] text-white tracking-tight whitespace-nowrap">
+                  Book a strategy call
                 </span>
               </div>
-
-              {/* Bottom Line */}
-              <div className="w-full h-[2px] bg-black/5 mt-2" />
-            </div>
-          ))}
+              
+              {/* Right Arrow Icon */}
+              <div className="absolute right-[24px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
+                <svg className="w-[21px] h-[21px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                </svg>
+              </div>
+            </button>
+          </Link>
         </div>
+
+        {/* Stats Grid */}
+        <div className="w-full grid grid-cols-2 gap-y-6 gap-x-4 pt-4">
+          <div className="flex flex-col items-start gap-0.5">
+            <p className="text-[32px] font-bold text-black leading-none tracking-tight">
+              <CountUp to={250} suffix="+" />
+            </p>
+            <p className="text-[11px] text-black/50 font-bold uppercase tracking-wider leading-tight">
+              Brands Grown
+            </p>
+          </div>
+          <div className="flex flex-col items-start gap-0.5">
+            <p className="text-[32px] font-bold text-black leading-none tracking-tight">
+              <CountUp to={3} suffix="x" />
+            </p>
+            <p className="text-[11px] text-black/50 font-bold uppercase tracking-wider leading-tight">
+              Average Revenue Uplift
+            </p>
+          </div>
+          <div className="flex flex-col items-start gap-0.5">
+            <p className="text-[32px] font-bold text-black leading-none tracking-tight">
+              <CountUp to={10} suffix="+" />
+            </p>
+            <p className="text-[11px] text-black/50 font-bold uppercase tracking-wider leading-tight">
+              Years Building Growth Systems
+            </p>
+          </div>
+          <div className="flex flex-col items-start gap-0.5">
+            <p className="text-[32px] font-bold text-black leading-none tracking-tight">
+              <CountUp to={97} suffix="%" />
+            </p>
+            <p className="text-[11px] text-black/50 font-bold uppercase tracking-wider leading-tight">
+              Client Retention Rate
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Services Cards List */}
+      <div className="w-full px-6 flex flex-col gap-6 pb-16">
+        {services.map((service, index) => (
+          <Link
+            href={`/services/${service.slug}`}
+            key={index} 
+            className="group block w-full bg-orange-500/5 rounded-[24px] p-6 flex flex-col gap-5 relative overflow-hidden border border-black/5 cursor-pointer shadow-[0_4px_20px_rgba(0,0,0,0.015)]"
+          >
+            {/* Top Row: Index/Dot on left, Stat on right */}
+            <div className="flex justify-between items-start w-full">
+              {/* Index */}
+              <div className="flex items-center gap-2">
+                <span className="text-[18px] font-medium text-[#de5e18]">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                
+              </div>
+              
+              {/* Stat */}
+              {service.statValue && (
+                <div className="flex flex-col items-end text-right">
+                  <span className="text-[32px] font-bold text-black leading-none tracking-tight">
+                    <CountUp to={service.statValue} />
+                  </span>
+                  <span className="text-[9px] text-black/45 font-bold uppercase tracking-wider mt-1">
+                    {service.statLabel}
+                  </span>
+                </div>
+              )}
+            </div>
+
+            {/* Title & Tagline & Description */}
+            <div className="flex flex-col gap-3">
+              <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+                <h3 className="text-black text-[22px] font-medium tracking-tight">
+                  {service.title}
+                </h3>
+                {service.tagline && (
+                  <span className="text-[#de5e18] italic text-[14px] font-normal">
+                    {service.tagline}
+                  </span>
+                )}
+              </div>
+              
+              <p className="text-black/70 text-[14px] leading-relaxed text-justify">
+                {service.description1}
+              </p>
+
+              {/* Callout */}
+              {service.callout && (
+                <div className="flex items-stretch border-l-[3px] border-[#de5e18]/40 pl-3 mt-1">
+                  <p className="text-[#de5e18]/70 text-[13px] italic leading-relaxed text-justify">
+                    {service.callout}
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* Bottom Row: Pills & Arrow Button */}
+            <div className="flex justify-between items-end w-full gap-4 mt-2">
+              {/* Pills */}
+              <div className="flex flex-wrap gap-1.5 flex-1">
+                {service.tags.map((tag, tagIndex) => (
+                  <span 
+                    key={tagIndex} 
+                    className="px-3 py-1.5 border border-orange-500 rounded-full text-black/50 text-[12px] font-medium cursor-default"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              
+              {/* Arrow */}
+              <div className="w-[42px] h-[42px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] text-white flex items-center justify-center shadow-[0px_3px_8px_rgba(222,94,24,0.2)] transition-all duration-300 group-hover:scale-105 shrink-0">
+                <svg 
+                  className="w-5 h-5" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth={2.5} 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   );
 };
+
+

@@ -6,7 +6,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Thank You | Southern Marketing",
+  title: "Thank You | Southern Edge Marketing",
   description: "Thank you for getting in touch with us.",
 };
 
@@ -14,7 +14,7 @@ export default function ThankYou() {
   return (
     <>
       {/* Mobile Version */}
-      <div className="md:hidden w-full bg-[#fffff0] min-h-screen flex flex-col">
+      <div className="md:hidden w-full bg-[#f2decc] min-h-screen flex flex-col">
         <MobileNav />
 
         <section className="w-full px-5 pt-40 pb-20 flex-1 flex flex-col items-center justify-center text-center relative z-10">
@@ -32,8 +32,25 @@ export default function ThankYou() {
             We have received your message and our team will get back to you shortly to discuss your project!
           </p>
 
-          <Link href="/" className="bg-black text-white rounded-full px-8 py-4 text-[16px] font-medium tracking-wide hover:scale-105 transition-transform">
-            Return to Home
+          <Link 
+            href="/" 
+            className="relative inline-flex w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
+            aria-label="Return to Home"
+          >
+            {/* Inner Left Pill with right shadow */}
+            <div className="absolute left-[0px] top-0 w-[157px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+              <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
+              <span className="font-medium text-[16px] text-white tracking-tight whitespace-nowrap">
+                Return to Home
+              </span>
+            </div>
+            
+            {/* Right Arrow Icon */}
+            <div className="absolute right-[24px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
+              <svg className="w-[21px] h-[21px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
           </Link>
         </section>
 
@@ -41,7 +58,7 @@ export default function ThankYou() {
       </div>
 
       {/* Desktop Version */}
-      <div className="hidden md:flex w-full min-h-screen bg-[#fffff0] flex-col">
+      <div className="hidden md:flex w-full min-h-screen bg-[#f2decc] flex-col">
         <DesktopNav />
 
         <section className="w-full px-8 lg:px-[90px] pt-48 pb-32 flex-1 flex flex-col items-center justify-center text-center relative z-10 max-w-[1500px] mx-auto">
@@ -59,8 +76,25 @@ export default function ThankYou() {
             We've successfully received your project details. A member of our strategy team will reach out to you within the next 24 hours.
           </p>
 
-          <Link href="/" className="bg-black text-white rounded-full px-10 py-5 text-[18px] lg:text-[20px] font-medium tracking-wide hover:bg-[#ff5100] transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1 transform duration-300">
-            Return to Homepage
+          <Link 
+            href="/" 
+            className="relative inline-flex w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
+            aria-label="Return to Homepage"
+          >
+            {/* Inner Left Pill with right shadow */}
+            <div className="absolute left-[0px] top-0 w-[165px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+              <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
+              <span className="font-medium text-[13px] text-white tracking-tight whitespace-nowrap">
+                Return to Homepage
+              </span>
+            </div>
+            
+            {/* Right Arrow Icon */}
+            <div className="absolute right-[24px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
+              <svg className="w-[21px] h-[21px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
           </Link>
         </section>
 

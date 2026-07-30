@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
@@ -24,7 +25,7 @@ const TeamCard = ({ name, role1, role2, image, linkedinUrl, heightClass = "h-[32
         if (!linkedinUrl) e.preventDefault();
       }}
     >
-      <FontAwesomeIcon icon={faLinkedinIn} className="text-[#ff5100] text-[20px]" />
+      <FontAwesomeIcon icon={faLinkedinIn} className="text-[#de5e18] text-[20px]" />
     </a>
 
     <div className="relative z-10 p-6 lg:p-8 w-full transition-transform duration-500 group-hover:translate-y-[-4px]">
@@ -37,13 +38,13 @@ const TeamCard = ({ name, role1, role2, image, linkedinUrl, heightClass = "h-[32
 
 export const DesktopAboutTeam = () => {
   return (
-    <section className="w-full max-w-[1280px] mx-auto px-6 md:px-10 pt-10 pb-20 bg-[#fffff0]">
+    <section className="w-full max-w-[1280px] mx-auto px-6 md:px-10 pt-10 pb-20 bg-[#f2decc]">
       {/* Header */}
       <div className="w-full flex flex-col items-start">
         <p className="font-medium text-[24px] lg:text-[21px] text-black uppercase tracking-tight">
-          <span className="text-[#ff5100]">[</span>
+          <span className="text-[#de5e18]">[</span>
           <span className="mx-3 tracking-[-0.48px]">Team</span>
-          <span className="text-[#ff5100]">]</span>
+          <span className="text-[#de5e18]">]</span>
         </p>
         
         <div className="w-full h-[2px] bg-black/10 mt-[28px] mb-[28px]" />
@@ -53,7 +54,7 @@ export const DesktopAboutTeam = () => {
             MEET THE CREW
           </h2>
           <p className="text-[20px] lg:text-[21px] font-normal leading-snug text-black/65 max-w-[800px]">
-            Working directly with people fuels my creativity and pushes me to achieve remarkable experiences for the end user. Partners.
+            Our team of strategists, developers, and designers works directly with you to craft digital experiences that build trust and drive measurable growth across India and Dubai.
           </p>
         </div>
       </div>
@@ -66,13 +67,14 @@ export const DesktopAboutTeam = () => {
           <TeamCard 
             name="Ameet Nangia" 
             role1="Founder" 
-            role2="Digital/Performance Marketer" 
+            role2="Driving performance marketing and brand growth strategies." 
             image="/assets/team/ameet.png"
             linkedinUrl="https://linkedin.com/"
           />
           <TeamCard 
             name="Ankita Malik" 
             role1="Website Developer" 
+            role2="Building high-converting, scalable web applications."
             image="/assets/team/ankita.png"
             linkedinUrl="https://linkedin.com/"
             imageClassName="scale-[1.3] group-hover:!scale-[1.35] origin-bottom"
@@ -82,16 +84,37 @@ export const DesktopAboutTeam = () => {
         {/* Right Column */}
         <div className="flex flex-col gap-6 lg:col-span-2">
           {/* Card 3: Ready to grow */}
-          <div className="bg-[#ff5100] rounded-[20px] w-full flex flex-col justify-center p-6 lg:p-8 text-white shrink-0 h-auto lg:h-[240px]">
-            <h3 className="text-[28px] lg:text-[32px] font-medium leading-tight mb-3">READY TO GROW?</h3>
-            <p className="text-[18px] lg:text-[21px] font-normal leading-tight mb-8 opacity-95 max-w-[90%]">
-              Bring your vision to life with creative strategies, stunning design, and technology built for real business results.
-            </p>
-            <div className="w-full h-[2px] bg-white mb-6 opacity-80" />
-            <div className="w-[41px] h-[41px] bg-white rounded-full flex items-center justify-center shrink-0 cursor-pointer hover:scale-110 transition-transform">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff5100" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
+          <div className="bg-white rounded-[20px] w-full flex flex-col justify-between p-6 lg:p-8 text-[#de5e18] shrink-0 h-auto lg:h-[240px] shadow-xl">
+            <div>
+              <h3 className="text-[28px] lg:text-[32px] font-bold leading-tight mb-2 uppercase">READY TO GROW?</h3>
+              <p className="text-[15px] lg:text-[16px] font-normal leading-snug opacity-95 max-w-[95%]">
+                Bring your vision to life with creative strategies, stunning design, and technology built for real business results.
+              </p>
+            </div>
+            
+            <div className="flex flex-col gap-4">
+              <div className="w-full h-px " />
+              <Link href="/contact" className="w-fit">
+                <button 
+                  className="relative w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
+                  aria-label="Start Now"
+                >
+                  {/* Inner Left Pill with right shadow */}
+                  <div className="absolute left-[0px] top-0 w-[157px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+                    <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
+                    <span className="font-semibold text-[18px] text-white tracking-wide whitespace-nowrap">
+                      Start Now
+                    </span>
+                  </div>
+                  
+                  {/* Right Arrow Icon */}
+                  <div className="absolute right-[24px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
+                    <svg className="w-[21px] h-[21px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                    </svg>
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
           
@@ -100,6 +123,7 @@ export const DesktopAboutTeam = () => {
             <TeamCard 
               name="Bhavya Jain" 
               role1="Software Developer" 
+              role2="Engineering full-stack web and mobile software solutions."
               image="/assets/team/bhavya.png"
               linkedinUrl="https://linkedin.com/"
               heightClass="h-[320px] lg:h-full lg:min-h-[460px]"
@@ -107,6 +131,7 @@ export const DesktopAboutTeam = () => {
             <TeamCard 
               name="Zaib" 
               role1="UX/UI Designer" 
+              role2="Designing intuitive, user-centered digital interfaces."
               image="/assets/team/zaib.png"
               linkedinUrl="https://linkedin.com/"
               heightClass="h-[320px] lg:h-full lg:min-h-[460px]"
