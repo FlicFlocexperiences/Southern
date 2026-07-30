@@ -33,10 +33,24 @@ export default async function BlogsPage() {
     
     fetchedBlogs = snapshot.docs.map(doc => {
       const data = doc.data();
+      const rawExcerpt = data.excerpt || data.description || "";
+      // Remove H2 and H3 tags and their content completely
+      let cleanExcerpt = rawExcerpt.replace(/<h[23][^>]*>[\s\S]*?<\/h[23]>/gi, "");
+      // Strip out all other HTML tags
+      cleanExcerpt = cleanExcerpt.replace(/<[^>]+>/g, "");
+      // Decode HTML entities
+      cleanExcerpt = cleanExcerpt
+        .replace(/&nbsp;/g, " ")
+        .replace(/&amp;/g, "&")
+        .replace(/&lt;/g, "<")
+        .replace(/&gt;/g, ">")
+        .replace(/&quot;/g, '"')
+        .replace(/&#039;/g, "'");
+      
       return {
         title: data.title || "Untitled",
         category: data.category || "Article",
-        excerpt: data.excerpt || data.description || "",
+        excerpt: cleanExcerpt.trim(),
         slug: data.slug || doc.id,
         image: data.image || "/photoshoot.jpg", // Default image if missing
         date: data.date || new Date().toISOString().split('T')[0],

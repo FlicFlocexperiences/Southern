@@ -105,7 +105,7 @@ export const MobileFooter = () => {
       <div className="flex flex-col gap-4 mb-8 pt-6 border-t border-white/10 text-[15px]">
         <h3 className="text-[16px] font-bold text-white tracking-wide">Contact</h3>
         <div className="flex flex-col gap-3">
-          <a href="https://wa.me/919899238237" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 flex items-center gap-2 mt-1">
+          <a href="https://wa.me/+918700901769" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 flex items-center gap-2 mt-1">
             <WhatsAppIcon />
             <span>Start a conversation</span>
           </a>

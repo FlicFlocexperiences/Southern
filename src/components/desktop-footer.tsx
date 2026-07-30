@@ -132,7 +132,7 @@ export const DesktopFooter = () => {
             <div className="flex flex-col gap-3.5 text-[18px]">
               
             
-              <a href="https://wa.me/919899238237" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 flex items-center gap-2 mt-1">
+              <a href="https://wa.me/+918700901769" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 flex items-center gap-2 mt-1">
                 <WhatsAppIcon />
                 <span>Start a conversation</span>
               </a>

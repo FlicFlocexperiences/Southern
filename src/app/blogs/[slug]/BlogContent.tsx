@@ -213,7 +213,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
                       }}
                       className={`shrink-0 text-[14px] font-bold pb-2 transition-all border-b-2 whitespace-nowrap ${isActive
                         ? "text-[#de5e18] border-[#de5e18]"
-                        : "text-black/50 border-transparent hover:text-black"
+                        : "text-black border-transparent hover:text-black"
                         }`}
                     >
                       {sec.title}
@@ -227,7 +227,15 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
           {/* Article Box */}
           <article className="w-full bg-white border border-black/8 rounded-xl p-6 md:p-8 lg:p-10 shadow-sm">
             <div
-              className="prose prose-lg max-w-none prose-slate prose-headings:font-bold prose-headings:text-[#0f0f0f] prose-h2:text-[28px] prose-h3:text-[22px] prose-p:text-[#432d1c]/85 prose-p:leading-[1.6] prose-p:my-4 prose-headings:mt-8 prose-headings:mb-4 prose-h2:mt-8 prose-h2:mb-4 prose-h3:mt-6 prose-h3:mb-3 prose-a:text-[#de5e18] prose-a:no-underline hover:prose-a:underline prose-li:text-[#432d1c]/80 text-left font-sans"
+              className="prose prose-lg max-w-none prose-slate prose-headings:font-bold prose-headings:text-[#432d1c] prose-h2:text-[28px] prose-h3:text-[22px] prose-p:text-[#432d1c] prose-p:leading-[1.6] prose-p:my-4 prose-headings:mt-8 prose-headings:mb-4 prose-h2:mt-8 prose-h2:mb-4 prose-h3:mt-6 prose-h3:mb-3 prose-a:text-[#de5e18] prose-a:no-underline hover:prose-a:underline prose-li:text-[#432d1c] text-left font-sans text-[#432d1c]"
+              style={{
+                ['--tw-prose-body' as any]: '#432d1c',
+                ['--tw-prose-headings' as any]: '#432d1c',
+                ['--tw-prose-bold' as any]: '#432d1c',
+                ['--tw-prose-counters' as any]: '#432d1c',
+                ['--tw-prose-bullets' as any]: '#432d1c',
+                ['--tw-prose-quotes' as any]: '#432d1c',
+              }}
               dangerouslySetInnerHTML={{ __html: processedContent }}
             />
 
