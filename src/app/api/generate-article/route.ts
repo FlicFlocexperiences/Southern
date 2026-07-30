@@ -52,7 +52,7 @@ export async function POST(request: Request) {
                 {
                     role: "system",
                     content: `You are a professional digital marketing SEO and AEO strategist.
-Generate an SEO-optimized H1 Title, engaging subtitle, meta title, meta description, URL slug, and a detailed outline of 5 to 7 H2 headings for a concise blog article for Southern Marketing, a digital marketing agency.
+Generate an SEO-optimized H1 Title, engaging subtitle, meta title, meta description, URL slug, and a detailed outline of 9 to 10 H2 headings (the final heading MUST be a Conclusion) for a concise blog article for Southern Marketing, a digital marketing agency.
 Primary Keyword: ${primaryKeyword}
 
 CRITICAL NEGATIVE CONSTRAINT:
@@ -68,7 +68,8 @@ Return ONLY a JSON object with this exact structure:
   "outline": [
     "Introduction to Primary Keyword",
     "Understanding the Legal Framework...",
-    ... (5 to 7 detailed H2 heading titles)
+    ... (7 to 8 detailed H2 heading titles),
+    "Conclusion"
   ]
 }`
                 }
@@ -82,7 +83,7 @@ Return ONLY a JSON object with this exact structure:
         const outline: string[] = step1Result.outline || [];
 
         console.log(`[AI Generator Flow] Step 1 complete. Title: "${step1Result.title}", Outline items: ${outline.length}`);
-        console.log(`[AI Generator Flow] Step 2: Iteratively generating description content (Aiming for 3500+ words HTML)...`);
+        console.log(`[AI Generator Flow] Step 2: Iteratively generating description content (Aiming for 400-500 words HTML)...`);
 
         // STEP 2: Iteratively generate content for each outline heading
         let finalHtmlBodyChunks = [];
@@ -98,7 +99,7 @@ Article Title: ${step1Result.title}
 
 **CRITICAL WORD COUNT REQUIREMENT**:
 You are writing ONLY the content for the specific H2 section titled: "${heading}".
-Write exactly 150 to 200 words for this specific section alone. Ensure it is concise, yet informative. Expand with 2-3 short paragraphs.
+Write exactly 140 to 160 words for this specific section alone. Ensure it is detailed and informative. Expand with 2-3 short paragraphs.
 
 **Requirements**:
 - **Structure**: Output HTML ONLY. Start with an <h2>${heading}</h2> tag, followed by <p>, <h3>, <ul>, <li>, or <table> tags as appropriate.

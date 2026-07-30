@@ -13,7 +13,12 @@ interface BlogContentProps {
 export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
   const [currentUrl, setCurrentUrl] = useState("");
   const [activeId, setActiveId] = useState("");
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
   const mobileSliderRef = useRef<HTMLDivElement>(null);
+
+  const toggleFaq = (index: number) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
   const [isMobileDragging, setIsMobileDragging] = useState(false);
   const [mobileStartX, setMobileStartX] = useState(0);
   const [mobileScrollLeft, setMobileScrollLeft] = useState(0);
@@ -98,6 +103,17 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
     return () => observer.disconnect();
   }, [sections]);
 
+  // Sync sidebar TOC scroll with active section
+  useEffect(() => {
+    if (activeId) {
+      const activeElement = document.getElementById(`toc-${activeId}`);
+      if (activeElement) {
+        // Scroll nearest so we don't accidentally scroll the main window
+        activeElement.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+    }
+  }, [activeId]);
+
   const handleShare = (platform: string) => {
     const title = blog.title;
     let shareUrl = "";
@@ -122,22 +138,33 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
 
   return (
     <div className="w-full bg-[#f2decc] min-h-screen pb-16">
+      {/* Top Title */}
+      <div className="max-w-[1000px] mx-auto px-4 text-center pt-12 pb-4">
+        <h1 className="text-[36px] md:text-[48px] lg:text-[56px] font-extrabold leading-[1.1] tracking-tight text-[#0f0f0f]">
+          {blog.title}
+        </h1>
+      </div>
+
       {/* Top Date & Author */}
-      <div className="w-full text-center text-black/60 text-[15px] font-medium pt-12 pb-10">
+      <div className="w-full text-center text-black/60 text-[15px] font-medium pb-10">
         {blog.publishedAt || "March 2026"} &nbsp;&nbsp;&bull;&nbsp;&nbsp; {blog.author || "Southern Marketing Team"}
       </div>
 
       {/* Main Grid Layout */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-[18%_1fr_23%] gap-6 xl:gap-10 items-start w-full">
+      <div className="w-full max-w-none mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-[200px_1fr_280px] gap-6 xl:gap-10 items-start">
 
         {/* Left Sidebar - Table of Contents */}
-        <aside className="hidden lg:block sticky top-28 w-full pr-2 max-h-[calc(100vh-140px)] overflow-y-auto scrollbar-thin">
+        <aside 
+          className="hidden lg:block sticky top-8 w-full pr-2 max-h-[calc(100vh-80px)] overflow-y-auto scrollbar-none [&::-webkit-scrollbar]:hidden"
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        >
           <nav className="flex flex-col gap-6">
             {sections.map((sec) => {
               const isActive = activeId === sec.id;
               return (
                 <a
                   key={sec.id}
+                  id={`toc-${sec.id}`}
                   href={`#${sec.id}`}
                   onClick={(e) => {
                     e.preventDefault();
@@ -157,7 +184,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
         </aside>
 
         {/* Middle Column - Content */}
-        <div className="w-full min-w-0 lg:max-h-[calc(100vh-140px)] lg:overflow-y-auto scrollbar-thin lg:pr-2">
+        <div className="w-full min-w-0 lg:pr-2">
           {/* Mobile Horizontal Tabs Bar (Matching reference image) */}
           {sections.length > 0 && (
             <div className="lg:hidden w-full border-b border-black/10 mb-8 bg-[#f2decc]/90 sticky top-0 z-30 backdrop-blur-md">
@@ -199,9 +226,6 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
 
           {/* Article Box */}
           <article className="w-full bg-white border border-black/8 rounded-xl p-6 md:p-8 lg:p-10 shadow-sm">
-            <h1 className="text-[32px] md:text-[40px] lg:text-[44px] font-extrabold leading-[1.1] tracking-tight mb-6 text-[#0f0f0f]">
-              {blog.title}
-            </h1>
             <div
               className="prose prose-lg max-w-none prose-slate prose-headings:font-bold prose-headings:text-[#0f0f0f] prose-h2:text-[28px] prose-h3:text-[22px] prose-p:text-[#432d1c]/85 prose-p:leading-[1.6] prose-p:my-4 prose-headings:mt-8 prose-headings:mb-4 prose-h2:mt-8 prose-h2:mb-4 prose-h3:mt-6 prose-h3:mb-3 prose-a:text-[#de5e18] prose-a:no-underline hover:prose-a:underline prose-li:text-[#432d1c]/80 text-left font-sans"
               dangerouslySetInnerHTML={{ __html: processedContent }}
@@ -212,12 +236,37 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
               <div className="mt-12 pt-8 border-t border-black/10">
                 <h3 className="text-[24px] font-bold text-[#0f0f0f] mb-6">Frequently Asked Questions</h3>
                 <div className="space-y-4">
-                  {blog.faqs.map((faq, index) => (
-                    <div key={index} className="bg-[#f8f9fa] rounded-xl p-6 border border-black/5">
-                      <h4 className="text-[18px] font-bold text-[#432d1c] mb-3">{faq.question}</h4>
-                      <p className="text-[15.5px] text-[#432d1c]/80 leading-relaxed font-light">{faq.answer}</p>
-                    </div>
-                  ))}
+                  {blog.faqs.map((faq, index) => {
+                    const isOpen = openFaq === index;
+                    return (
+                      <div key={index} className="bg-[#f8f9fa] rounded-xl border border-black/5 overflow-hidden transition-all duration-300">
+                        <button
+                          onClick={() => toggleFaq(index)}
+                          className="w-full text-left p-6 flex justify-between items-center focus:outline-none"
+                        >
+                          <h4 className="text-[18px] font-bold text-[#432d1c] pr-4">{faq.question}</h4>
+                          <span className="shrink-0 ml-4 text-[#de5e18]">
+                            {isOpen ? (
+                              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                              </svg>
+                            ) : (
+                              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                              </svg>
+                            )}
+                          </span>
+                        </button>
+                        <div 
+                          className={`transition-all duration-300 ease-in-out px-6 ${
+                            isOpen ? "max-h-[500px] pb-6 opacity-100" : "max-h-0 py-0 opacity-0"
+                          }`}
+                        >
+                          <p className="text-[15.5px] text-[#432d1c]/80 leading-relaxed font-light">{faq.answer}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             )}
@@ -261,7 +310,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
         </div>
 
         {/* Right Sidebar - About Agency & Contact Card */}
-        <aside className="w-full lg:sticky lg:top-28 space-y-5">
+        <aside className="w-full lg:sticky lg:top-8 space-y-5">
           {/* Company Bio Card */}
           <div className="bg-white border border-black/10 rounded-xl p-6 text-[#0f0f0f] shadow-sm relative overflow-hidden group text-left">
             <div className="absolute top-[-20%] right-[-10%] w-[50%] aspect-square rounded-full bg-[#de5e18]/10 blur-[30px] pointer-events-none" />

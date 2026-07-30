@@ -76,7 +76,7 @@ export default async function BlogSlugPage({ params }: { params: Promise<{ slug:
       <div className="block md:hidden"><MobileNav /></div>
       <div className="hidden md:block"><DesktopNav /></div>
 
-      <main className="w-full pt-32 lg:pt-40 px-6 pb-24">
+      <main className="w-full pt-32 lg:pt-40 pb-24">
         <BlogContent blog={blog} />
       </main>
 
