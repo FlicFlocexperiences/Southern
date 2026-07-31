@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/authority/'],
+      disallow: ['/authority/', '/nullify/', '/thank-you/'],
     },
     sitemap: 'https://southernedgemarketing.com/sitemap.xml',
   };

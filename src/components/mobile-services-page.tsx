@@ -14,14 +14,14 @@ export const MobileServicesPage = () => {
 
         {/* Main Heading */}
         <h1 className="text-[38px] leading-[1.1] font-bold text-black tracking-tight mt-2">
-          Six capabilities.<br />
-          <span className="text-[#de5e18]">One system.</span>
+          Top Full Service<br />
+          <span className="text-[#de5e18]">Digital Marketing Agency.</span>
         </h1>
 
         {/* Paragraph & CTA Button */}
         <div className="flex flex-col items-start w-full gap-6">
           <p className="text-black/70 text-[14px] leading-relaxed text-justify">
-            We don't offer isolated services. Every capability we practice is engineered to compound with the others, creating a growth system that gets smarter and more profitable with every passing month.
+            We are a premier full-service digital marketing agency dedicated to scaling your business. Our team provides comprehensive digital marketing services tailored to your unique goals. We do not offer isolated solutions. Instead, we build a unified growth system that gets smarter and more profitable over time. By partnering with a results-driven digital marketing company, you ensure every capability works together to maximize your revenue.
           </p>
           <Link href="/contact" className="w-full">
             <button 

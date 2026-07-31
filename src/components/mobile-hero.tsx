@@ -20,12 +20,12 @@ export function MobileHero() {
       <div className="flex-1 flex flex-col items-center justify-center w-full z-10">
         {/* Hero Text */}
         <div className="flex flex-col items-center text-center px-4 w-full max-w-sm mx-auto text-black">
-          <p className="font-semibold text-base tracking-wide mb-3 text-black">MORE THAN JUST DIGITAL</p>
-          <h1 className="font-extrabold text-[42px] leading-[1.1] tracking-tight text-black">
+          <h1 className="font-semibold text-base tracking-wide mb-3 text-black">TOP DIGITAL MARKETING AGENCY IN DELHI</h1>
+          <p className="font-extrabold text-[42px] leading-[1.1] tracking-tight text-black">
             <span className="text-[#de5e18] block mb-1">WE TURN</span>
             <span className="block">ATTENTION</span>
             <span className="block">INTO ACTION</span>
-          </h1>
+          </p>
         </div>
 
         {/* CTA Button */}
@@ -62,7 +62,7 @@ export function MobileHero() {
             <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
           </svg>
           <p className="text-[14px] font-medium text-black leading-snug">
-            Strategy, design, development, and marketing that actually drives business, not just vanity metrics.
+            Are you looking to scale your business and dominate your local market? Welcome to Southern Edge Marketing. We turn attention into action with strategies, design, and development that actually drive revenue.
           </p>
         </div>
 

@@ -41,29 +41,24 @@ export const DesktopComparison = () => {
     <section className="w-full bg-[#f2decc] py-24 px-8 lg:px-[90px] flex flex-col items-start relative z-10">
       
       {/* Intro Text */}
-      <div className="max-w-[1200px] mb-20">
-        <h2 className="text-[32px] md:text-[38px] xl:text-[42px] leading-[1.3] text-black font-medium tracking-tight">
+      <div className="max-w-[1200px] mb-12">
+        <h2 className="text-[32px] md:text-[38px] xl:text-[42px] leading-[1.3] text-black font-medium tracking-tight mb-10">
           We know choosing the right <span className={highlightClass}>digital partner</span> is difficult because many agencies <span className={highlightClass}>promise results</span> but few actually <span className={highlightClass}>deliver.</span>
+          <br /><br />
+          So we made it easy to <span className={highlightClass}>compare</span> what you get with us versus what most agencies <span className={highlightClass}>offer.</span>
         </h2>
         
-        <div className="text-[32px] md:text-[38px] xl:text-[42px] leading-[1.3] text-black font-medium tracking-tight mt-6 flex flex-wrap items-center gap-x-3">
-          <span>So we made it easy to</span>
-          <span className={highlightClass}>compare</span>
-          <span>what you get with us</span>
-          
-          {/* Custom Toggle Switch */}
-          <div className="relative inline-flex items-center mx-2">
-            <button 
-              onClick={() => setIsOn(!isOn)}
-              className={`relative w-[84px] h-[46px] rounded-full p-[3px] flex items-center shadow-inner cursor-pointer transition-colors duration-300 ${isOn ? 'bg-[#de5e18] hover:bg-[#e64a00]' : 'bg-gray-400 hover:bg-gray-500'}`}
-              aria-label="Toggle comparison"
-            >
-              <div className={`w-[40px] h-[40px] bg-white rounded-full shadow-sm transition-transform duration-300 ${isOn ? 'translate-x-[38px]' : 'translate-x-[0px]'}`}></div>
-            </button>
-          </div>
-          
-          <span>versus what most agencies</span>
-          <span className={highlightClass}>offer.</span>
+        {/* Custom Toggle Switch */}
+        <div className="flex items-center gap-5">
+          <span className={`text-[20px] md:text-[24px] font-medium transition-colors duration-300 ${!isOn ? 'text-black' : 'text-gray-400'}`}>Other Agencies</span>
+          <button 
+            onClick={() => setIsOn(!isOn)}
+            className={`relative w-[84px] h-[46px] rounded-full p-[3px] flex items-center shadow-inner cursor-pointer transition-colors duration-300 ${isOn ? 'bg-[#de5e18] hover:bg-[#e64a00]' : 'bg-[#6b7282] hover:bg-[#5a606d]'}`}
+            aria-label="Toggle comparison"
+          >
+            <div className={`w-[40px] h-[40px] bg-white rounded-full shadow-sm transition-transform duration-300 ${isOn ? 'translate-x-[38px]' : 'translate-x-[0px]'}`}></div>
+          </button>
+          <span className={`text-[20px] md:text-[24px] font-medium transition-colors duration-300 ${isOn ? 'text-[#de5e18]' : 'text-gray-400'}`}>Southern Edge Marketing</span>
         </div>
       </div>
 

@@ -23,13 +23,13 @@ export const DesktopHero = () => {
         <div className="flex-1 flex flex-col items-center justify-center w-full z-10">
           {/* Hero Text */}
           <div className="flex flex-col items-center text-center max-w-[1000px] mx-auto px-6">
-            <p className="font-semibold text-[20px] lg:text-[28px] xl:text-[32px] tracking-wide mb-4 text-black uppercase">
-              More than just digital
-            </p>
-            <h1 className="font-semibold text-[48px] lg:text-[64px] xl:text-[76px] leading-[1.05] tracking-tight text-black flex flex-col uppercase">
+            <h1 className="font-semibold text-[18px] lg:text-[24px] xl:text-[28px] tracking-wide mb-4 text-[#de5e18] uppercase">
+              Top Digital Marketing Agency in Delhi
+            </h1>
+            <p className="font-semibold text-[48px] lg:text-[64px] xl:text-[76px] leading-[1.05] tracking-tight text-black flex flex-col uppercase">
               <span className="text-[#de5e18] mb-1">We turn</span>
               <span>Attention into action</span>
-            </h1>
+            </p>
           </div>
 
           {/* CTA Button */}
@@ -66,7 +66,8 @@ export const DesktopHero = () => {
               <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
             </svg>
             <p className="text-[14px] xl:text-[16px] font-medium text-black/70 leading-[1.3]">
-Strategy, design, development, and marketing that helps brands get seen, remembered, and chosen.            </p>
+            Are you looking to scale your business and dominate your local market? Welcome to Southern Edge Marketing. We turn attention into action with strategies, design, and development that actually drive revenue.
+          </p>
           </div>
 
           {/* Right side rating */}

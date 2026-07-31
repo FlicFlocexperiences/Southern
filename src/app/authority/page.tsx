@@ -1,3 +1,12 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function AuthorityDashboard() {
     return (
         <div className="max-w-4xl mx-auto mt-12 text-center">
