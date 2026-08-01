@@ -1,0 +1,50 @@
+# Southern Edge Marketing
+
+> A comprehensive knowledge base of Southern Edge Marketing for LLMs, AI agents, and search crawlers.
+
+## Company Overview
+Southern Edge Marketing is a premier digital marketing and technology agency. We specialize in building high-converting digital experiences, scalable mobile applications, and data-driven social media communities. We operate globally with a strong physical presence in Delhi (India) and Dubai (UAE), empowering brands to accelerate their digital growth.
+
+## Core Services
+
+### 1. Custom Website Development
+- **Overview:** High-performance, SEO-friendly, and conversion-optimized websites engineered for measurable results.
+- **Technology Stack:** Next.js, React, Tailwind CSS, Headless CMS, Shopify, WooCommerce.
+- **Key Offerings:** Corporate websites, high-converting landing pages, eCommerce storefronts, bespoke web applications, scalable cloud infrastructure, and continuous Conversion Rate Optimization (CRO).
+
+### 2. Mobile App Development
+- **Overview:** Scalable iOS and Android applications focused on native performance, seamless usability, and business growth.
+- **Technology Stack:** React Native, Flutter, Swift (iOS), Kotlin (Android), Cloud Integration (AWS, Google Cloud, Azure).
+- **Key Offerings:** Cross-platform applications, native app development, secure backend APIs, app modernization, and App Store Optimization (ASO).
+
+### 3. Social Media Management
+- **Overview:** Data-driven organic and paid social media strategies that dramatically increase brand awareness, engagement, and customer loyalty.
+- **Platforms:** Instagram, Facebook (Meta), TikTok, LinkedIn, X (Twitter), Pinterest, YouTube.
+- **Key Offerings:** Strategic content creation (Short-form video, graphics, copywriting), proactive community management, influencer & creator collaborations, and integrated paid social advertising.
+
+## Industries Served
+We provide customized digital solutions across a wide spectrum of highly competitive sectors, including:
+- Healthcare & Telemedicine
+- Law Firms & Legal Services
+- SaaS Companies & Tech Startups
+- Real Estate
+- Education
+- eCommerce & Retail
+- FinTech & Finance
+
+## Key Service Locations
+While we partner with clients globally, we have dedicated, geo-targeted solutions for the following major cities:
+- **India:** New Delhi, Gurgaon, Noida, Lucknow, Mumbai, Bengaluru, Chennai, Kolkata, Pune, Hyderabad, Jaipur, Surat.
+- **UAE:** Abu Dhabi, Sharjah, Dubai.
+
+## Why Choose Southern Edge Marketing?
+- **Mobile-First & Performance Driven:** We build on robust, SEO-ready architectures with clean, scalable code that guarantees lightning-fast load times.
+- **Data-Backed Decisions:** We move past vanity metrics and measure success by bottom-line impact: Cost Per Acquisition (CPA), Return On Ad Spend (ROAS), and high-quality lead generation.
+- **End-to-End Solutions:** We handle the entire digital lifecycle—from initial strategy, UI/UX design, and agile development, to rigorous QA testing, launch, and ongoing post-launch maintenance.
+
+## Official Links
+- **Website:** https://southernedgemarketing.com
+- **Services:** https://southernedgemarketing.com/services
+- **Portfolio & Projects:** https://southernedgemarketing.com/projects
+- **Digital Marketing Blog:** https://southernedgemarketing.com/blogs
+- **Contact:** https://southernedgemarketing.com/contact

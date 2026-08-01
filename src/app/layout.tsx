@@ -61,7 +61,7 @@ const jsonLdSchema = {
   "url": "https://southernedgemarketing.com",
   "logo": "https://southernedgemarketing.com/LOGO_Final.svg",
   "image": "https://southernedgemarketing.com/LOGO_Final.svg",
-  "telephone": "+919899238237",
+  "telephone": "+918700901769",
   "email": "info@southernedgemarketing.com",
   "priceRange": "$$",
   "address": [

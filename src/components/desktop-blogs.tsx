@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export interface BlogItem {
   title: string;
@@ -15,6 +16,8 @@ export interface BlogItem {
 export const DesktopBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [sortBy, setSortBy] = useState("newest");
+  const [currentPage, setCurrentPage] = useState(1);
+  const ITEMS_PER_PAGE = 5;
 
   // Use first blog as featured, or fallback if none exist
   const featuredBlog = blogs[0] || {
@@ -77,10 +80,11 @@ Explore articles on UI/UX design, modern web development, branding, performance,
           >
             {/* Featured Image with rounded corners and scale animation */}
             <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[22px] overflow-hidden shadow-sm group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)] transition-all duration-500 relative z-20">
-              <img 
+              <Image 
                 src={featuredBlog.image} 
-                alt={featuredBlog.title} 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)]" 
+                alt={featuredBlog.title}
+                fill 
+                className="object-cover group-hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)]" 
               />
             </div>
             {/* Featured Title */}
@@ -107,7 +111,10 @@ Explore articles on UI/UX design, modern web development, branding, performance,
             return (
               <button
                 key={filter}
-                onClick={() => setActiveFilter(filter)}
+                onClick={() => {
+                  setActiveFilter(filter);
+                  setCurrentPage(1);
+                }}
                 className={`px-5 py-2.5 rounded-full text-[13px] md:text-[14px] font-medium transition-all duration-300 cursor-pointer ${
                   isActive
                     ? "bg-orange-500 text-white  border-transparent shadow-sm"
@@ -127,7 +134,10 @@ Explore articles on UI/UX design, modern web development, branding, performance,
           </span>
           <select
             value={sortBy}
-            onChange={(e) => setSortBy(e.target.value)}
+            onChange={(e) => {
+              setSortBy(e.target.value);
+              setCurrentPage(1);
+            }}
             className="bg-transparent border border-black/10 rounded-xl px-4 py-2 text-[13px] md:text-[14px] font-medium text-black focus:outline-none focus:border-black/40 cursor-pointer"
           >
             <option value="newest">Newest</option>
@@ -139,7 +149,10 @@ Explore articles on UI/UX design, modern web development, branding, performance,
       {/* Blogs Grid */}
       <div className="w-full max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 mb-16">
         {filteredAndSortedBlogs.length > 0 ? (
-          filteredAndSortedBlogs.map((blog, index) => (
+          <>
+            {filteredAndSortedBlogs
+              .slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE)
+              .map((blog, index) => (
             <Link 
               key={index} 
               href={`/blogs/${blog.slug}`}
@@ -147,10 +160,11 @@ Explore articles on UI/UX design, modern web development, branding, performance,
             >
               {/* Thumbnail Image */}
               <div className="w-full aspect-[16/10] rounded-[20px] overflow-hidden shadow-sm transition-all duration-500 group-hover:shadow-[0_12px_36px_rgba(0,0,0,0.06)] relative z-10">
-                <img 
+                <Image 
                   src={blog.image} 
                   alt={blog.title} 
-                  className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" 
+                  fill
+                  className="object-cover group-hover:scale-[1.03] transition-transform duration-500" 
                 />
               </div>
 
@@ -172,7 +186,31 @@ Explore articles on UI/UX design, modern web development, branding, performance,
                 {blog.title}
               </h3>
             </Link>
-          ))
+          ))}
+          
+          {/* Pagination Controls */}
+          {Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE) > 1 && (
+            <div className="col-span-full flex justify-center items-center gap-4 mt-8">
+              <button
+                onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+                className="px-6 py-2 rounded-full border border-black/10 hover:border-black/30 disabled:opacity-50 disabled:hover:border-black/10 transition-all font-medium text-[14px]"
+              >
+                Previous
+              </button>
+              <span className="text-[14px] font-medium text-black/60">
+                Page {currentPage} of {Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE)}
+              </span>
+              <button
+                onClick={() => setCurrentPage(p => Math.min(Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE), p + 1))}
+                disabled={currentPage === Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE)}
+                className="px-6 py-2 rounded-full border border-black/10 hover:border-black/30 disabled:opacity-50 disabled:hover:border-black/10 transition-all font-medium text-[14px]"
+              >
+                Next
+              </button>
+            </div>
+          )}
+          </>
         ) : (
           <div className="col-span-full py-16 text-center text-black/40 font-medium">
             No articles found in this category.

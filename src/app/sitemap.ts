@@ -51,11 +51,40 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
+  const commonCities = [
+    'abu-dhabi',
+    'bengaluru',
+    'chennai',
+    'delhi',
+    'gurgaon',
+    'hyderabad',
+    'kolkata',
+    'lucknow',
+    'mumbai',
+    'noida',
+    'pune',
+    'sharjah',
+    'surat'
+  ];
+
+  const cityRoutes = [
+    ...commonCities.map(city => `/services/app-development/${city}`),
+    '/services/app-development/jaipur',
+    ...commonCities.map(city => `/services/web-development/${city}`),
+    ...commonCities.map(city => `/services/social-media-management/${city}`),
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }));
+
   return [
     ...staticRoutes,
     ...serviceRoutes,
     ...projectRoutes,
     ...blogRoutes,
     ...articleRoutes,
+    ...cityRoutes,
   ];
 }

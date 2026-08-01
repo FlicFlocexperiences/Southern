@@ -27,12 +27,13 @@ async function getLiveBlog(slug: string): Promise<Blog | null> {
     const docSnap = snapshot.docs[0];
     const data = docSnap.data();
 
-    // Fetch FAQs
-    const faqsSnapshot = await getDocs(collection(db, "blogs", docSnap.id, "faqs"));
-    const faqs = faqsSnapshot.docs.map(faqDoc => faqDoc.data() as any);
+    // Fetch FAQs and Reviews in parallel
+    const [faqsSnapshot, reviewsSnapshot] = await Promise.all([
+      getDocs(collection(db, "blogs", docSnap.id, "faqs")),
+      getDocs(collection(db, "blogs", docSnap.id, "reviews"))
+    ]);
 
-    // Fetch Reviews
-    const reviewsSnapshot = await getDocs(collection(db, "blogs", docSnap.id, "reviews"));
+    const faqs = faqsSnapshot.docs.map(faqDoc => faqDoc.data() as any);
     const reviews = reviewsSnapshot.docs.map(reviewDoc => reviewDoc.data() as any);
 
     return {

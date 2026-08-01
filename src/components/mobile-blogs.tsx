@@ -2,11 +2,14 @@
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { BlogItem } from "./desktop-blogs";
 
 export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [sortBy, setSortBy] = useState("newest");
+  const [currentPage, setCurrentPage] = useState(1);
+  const ITEMS_PER_PAGE = 5;
 
   // Use first blog as featured, or fallback if none exist
   const featuredBlog = blogs[0] || {
@@ -64,21 +67,49 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
         {/* Featured Card */}
         <Link 
           href={`/blogs/${featuredBlog.slug}`}
-          className="group flex flex-col w-full text-left cursor-pointer bg-white rounded-[24px] p-4 border border-black/5 shadow-sm"
+          className="group flex flex-col w-full text-left cursor-pointer bg-white rounded-[20px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-black/5"
         >
-          <div className="w-full aspect-[16/10] rounded-[16px] overflow-hidden relative shadow-sm">
-            <img 
+          <div className="w-full aspect-[16/11] relative">
+            <Image 
               src={featuredBlog.image} 
               alt={featuredBlog.title} 
-              className="w-full h-full object-cover" 
+              fill
+              className="object-cover" 
             />
+            {/* 3 min read pill */}
+            <div className="absolute top-4 left-4 bg-white px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-600">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span className="text-[12px] font-medium text-gray-700">3 min read</span>
+            </div>
           </div>
-          <h3 className="font-semibold text-[18px] leading-[1.3] text-black mt-4 mb-2">
-            {featuredBlog.title}
-          </h3>
-          <span className="text-[12px] text-black/50 font-medium">
-            {featuredBlog.date}
-          </span>
+          <div className="p-5 flex flex-col">
+            <div className="flex justify-between items-start gap-4 mb-3">
+              <span className="text-[11px] font-semibold text-[#de5e18] uppercase tracking-wider leading-relaxed flex-1">
+                {featuredBlog.category}
+              </span>
+              <span className="text-[12px] text-gray-400 whitespace-nowrap pt-0.5">
+                {featuredBlog.date}
+              </span>
+            </div>
+            <h3 className="font-semibold text-[20px] leading-[1.3] text-black mb-3">
+              {featuredBlog.title}
+            </h3>
+            {featuredBlog.excerpt && (
+              <p className="text-[14px] text-gray-500 line-clamp-3 mb-5 leading-relaxed">
+                {featuredBlog.excerpt}
+              </p>
+            )}
+            <div className="flex items-center gap-2 text-[14px] font-medium text-black mt-auto">
+              Read Article 
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
         </Link>
       </div>
 
@@ -94,7 +125,10 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
             return (
               <button
                 key={filter}
-                onClick={() => setActiveFilter(filter)}
+                onClick={() => {
+                  setActiveFilter(filter);
+                  setCurrentPage(1);
+                }}
                 className={`px-4 py-2.5 rounded-full text-[12px] font-medium transition-all duration-300 cursor-pointer ${
                   isActive
                     ? "bg-orange-500 text-white  border-transparent shadow-sm"
@@ -114,7 +148,10 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
           </span>
           <select
             value={sortBy}
-            onChange={(e) => setSortBy(e.target.value)}
+            onChange={(e) => {
+              setSortBy(e.target.value);
+              setCurrentPage(1);
+            }}
             className="bg-transparent border border-black/10 rounded-xl px-3 py-1.5 text-[12px] font-medium text-black focus:outline-none focus:border-black/40 cursor-pointer"
           >
             <option value="newest">Newest</option>
@@ -126,40 +163,85 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
       {/* Remaining Blogs List */}
       <div className="w-full px-6 flex flex-col gap-8 relative z-10">
         {filteredAndSortedBlogs.length > 0 ? (
-          filteredAndSortedBlogs.map((blog, index) => (
+          <>
+            {filteredAndSortedBlogs
+              .slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE)
+              .map((blog, index) => (
             <Link 
               key={index} 
               href={`/blogs/${blog.slug}`}
-              className="group flex flex-col w-full text-left cursor-pointer"
+              className="group flex flex-col w-full text-left cursor-pointer bg-white rounded-[20px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-black/5"
             >
-              {/* Thumbnail Image */}
-              <div className="w-full aspect-[16/10] rounded-[16px] overflow-hidden shadow-sm transition-all duration-500 relative z-10">
-                <img 
+              <div className="w-full aspect-[16/11] relative">
+                <Image 
                   src={blog.image} 
                   alt={blog.title} 
-                  className="w-full h-full object-cover" 
+                  fill
+                  className="object-cover" 
                 />
+                <div className="absolute top-4 left-4 bg-white px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-600">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span className="text-[12px] font-medium text-gray-700">3 min read</span>
+                </div>
               </div>
-
-              {/* Metadata Row */}
-              <div className="text-[12px] text-black/45 font-semibold mt-4 mb-2 flex items-center gap-2 flex-wrap">
-                <span className="uppercase tracking-wider">{blog.category}</span>
-                <span className="text-black/15 select-none">|</span>
-                <span>{blog.date}</span>
+              
+              <div className="p-5 flex flex-col">
+                <div className="flex justify-between items-start gap-4 mb-3">
+                  <span className="text-[11px] font-semibold text-[#de5e18] uppercase tracking-wider leading-relaxed flex-1">
+                    {blog.category}
+                  </span>
+                  <span className="text-[12px] text-gray-400 whitespace-nowrap pt-0.5">
+                    {blog.date}
+                  </span>
+                </div>
+                
+                <h3 className="font-semibold text-[19px] leading-[1.3] text-black mb-3">
+                  {blog.title}
+                </h3>
+                
                 {blog.excerpt && (
-                  <>
-                    <span className="text-black/15 select-none">|</span>
-                    <span className="line-clamp-1 text-black/40 font-medium">{blog.excerpt}</span>
-                  </>
+                  <p className="text-[14px] text-gray-500 line-clamp-3 mb-5 leading-relaxed">
+                    {blog.excerpt}
+                  </p>
                 )}
+                
+                <div className="flex items-center gap-2 text-[14px] font-medium text-black mt-auto">
+                  Read Article 
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
               </div>
-
-              {/* Title */}
-              <h3 className="font-semibold text-[17px] leading-[1.3] text-black">
-                {blog.title}
-              </h3>
             </Link>
-          ))
+          ))}
+          
+          {/* Pagination Controls */}
+          {Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE) > 1 && (
+            <div className="flex justify-between items-center gap-2 mt-4">
+              <button
+                onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+                className="px-4 py-2 rounded-full border border-black/10 hover:border-black/30 disabled:opacity-50 disabled:hover:border-black/10 transition-all font-medium text-[12px]"
+              >
+                Previous
+              </button>
+              <span className="text-[12px] font-medium text-black/60">
+                {currentPage} of {Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE)}
+              </span>
+              <button
+                onClick={() => setCurrentPage(p => Math.min(Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE), p + 1))}
+                disabled={currentPage === Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE)}
+                className="px-4 py-2 rounded-full border border-black/10 hover:border-black/30 disabled:opacity-50 disabled:hover:border-black/10 transition-all font-medium text-[12px]"
+              >
+                Next
+              </button>
+            </div>
+          )}
+          </>
         ) : (
           <div className="py-12 text-center text-black/40 font-medium">
             No articles found in this category.

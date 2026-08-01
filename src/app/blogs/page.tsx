@@ -23,7 +23,6 @@ export const metadata: Metadata = {
 
 export const dynamic = 'force-dynamic'; // Ensures this page is server-rendered dynamically
 export const revalidate = 0; // Disable caching
-
 const stripHtml = (html: string) => html ? html.replace(/<[^>]+>/g, '') : '';
 
 function SeoContent() {
@@ -33,12 +32,12 @@ function SeoContent() {
       <p className="mb-8 md:text-lg leading-relaxed max-w-4xl">
         Welcome to the Southern Edge digital marketing agency blog. Our industry experts share proven SEO strategy tips, modern web design insights, and effective digital marketing tactics. We focus on giving you the knowledge needed to stay competitive. Whether you want custom website design advice or local SEO best practices, our detailed articles provide real value. Learn how to optimize your online presence and reach your target audience more effectively.
       </p>
-      
+
       <h2 className="text-2xl md:text-4xl font-bold mb-6">Actionable SEO Strategy Tips</h2>
       <p className="mb-8 md:text-lg leading-relaxed max-w-4xl">
         A successful online presence requires more than just good looks. Our web design insights show you how to build fast and engaging sites. We pair this with deep dives into technical search engine optimization. You will find clear guides on how a tailored SEO strategy increases organic traffic. Our team breaks down complex digital marketing concepts into steps you can actually use.
       </p>
-      
+
       <h3 className="text-xl md:text-3xl font-bold mb-6">Driving Your Business Growth</h3>
       <p className="md:text-lg leading-relaxed max-w-4xl">
         Our goal is to share reliable business growth tips for modern brands. Every post on our digital marketing agency blog is crafted to help you succeed. Discover how professional web design and targeted SEO campaigns can transform your revenue. Dive into our latest resources and start building a stronger digital footprint today.
@@ -53,7 +52,7 @@ export default async function BlogsPage() {
   try {
     const blogsQuery = query(collection(db, "blogs"), orderBy("created", "desc"));
     const snapshot = await getDocs(blogsQuery);
-    
+
     fetchedBlogs = snapshot.docs.map(doc => {
       const data = doc.data();
       const rawExcerpt = data.excerpt || data.description || "";
@@ -69,7 +68,7 @@ export default async function BlogsPage() {
         .replace(/&gt;/g, ">")
         .replace(/&quot;/g, '"')
         .replace(/&#039;/g, "'");
-      
+
       return {
         title: data.title || "Untitled",
         category: data.category || "Article",
