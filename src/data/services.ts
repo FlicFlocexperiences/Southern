@@ -248,9 +248,51 @@ The gap between scrolling and shopping is closing rapidly. We implement advanced
   }
 ];
 
+export const hiddenSeoService: Service = {
+  slug: "seo",
+  title: "Search Engine Optimization (SEO)",
+  h1Title: "Top-Rated SEO Services in Delhi NCR",
+  tagline: "Rank higher. Drive traffic. Increase revenue.",
+  metaTitle: "Best SEO Company in Delhi NCR | Expert SEO Services",
+  metaDescription: "We are the best SEO company in Delhi NCR, providing ROI-focused SEO services that help local and national brands scale effectively and outpace their competition.",
+  description1: "Visibility on search engines is the foundation of online success. We are recognized as a leading SEO company in Delhi, helping businesses climb the rankings and stay there. Our SEO services in Delhi focus on technical optimization, high quality content, and authoritative link building.",
+  description2: "When you partner with us, you are choosing a team that truly cares about your bottom line. We deliver transparent and measurable results.",
+  callout: "SEO is a long term strategy that builds lasting authority and consistent traffic for your brand.",
+  statValue: "1st",
+  statLabel: "PAGE RANKINGS ACHIEVED",
+  tags: ["Technical SEO", "Local SEO", "Link Building", "Content Strategy"],
+  image: "/services/seo.png",
+  content: `### Introduction\nWe understand that modern businesses need more than just vanity metrics. They need real, sustainable growth. Our dedicated team provides ROI-focused SEO services in Delhi to help local and national brands scale effectively and outpace their competition.\n\n### Our SEO Approach\nFrom targeted local SEO services to comprehensive technical audits, our strategies are uniquely tailored to fit your specific business goals. We avoid generic solutions because we know your brand deserves a customized approach.\n\n**Technical SEO:** We ensure your website's underlying architecture is flawless, allowing search engines to easily crawl and index your pages.\n**On-Page Optimization:** We optimize your content, meta tags, and internal linking structure to maximize relevance for high-value keywords.\n**Off-Page Strategy:** We build your domain's authority through ethical, high-quality backlink acquisition from reputable industry sources.\n\n### Why Choose Us\nWe have built a solid reputation as the best SEO company in Delhi NCR by consistently delivering transparent and measurable results. While some technical improvements can show rapid results, significant organic growth usually takes 3 to 6 months. As an experienced SEO company, we focus on sustainable methods that build lasting authority.`,
+  faqs: [
+    { question: "How long does it take for your SEO company in Delhi to show results?", answer: "SEO is a long term strategy. While some technical improvements can show rapid results, significant organic growth usually takes 3 to 6 months. As an experienced SEO company in Delhi, we focus on sustainable methods that build lasting authority and consistent traffic for your brand." },
+    { question: "Do you combine SEO services in Delhi with paid ads?", answer: "Yes, we do. While our SEO services in Delhi build your long term organic presence, our targeted PPC services in Delhi provide immediate visibility. Combining both approaches ensures you capture both active buyers right now and future customers over time for maximum return on investment." }
+  ]
+};
+
+export const hiddenBrandingService: Service = {
+  slug: "branding",
+  title: "Branding & Creative Strategy",
+  h1Title: "Comprehensive Branding Strategies",
+  tagline: "Build a brand that commands attention.",
+  metaTitle: "Branding Agency | Brand Strategy & Identity Design",
+  metaDescription: "Transform your business into a recognizable brand. We offer comprehensive branding services, from visual identity to brand messaging and strategy.",
+  description1: "A strong brand is more than just a logo; it's the emotional connection you build with your audience. We craft compelling brand identities that resonate with your target market and differentiate you from the competition.",
+  description2: "From visual design systems to core messaging, we build brands that stand out in crowded markets.",
+  callout: "Your brand is what people say about you when you're not in the room.",
+  statValue: "100%",
+  statLabel: "BRAND RECOGNITION",
+  tags: ["Brand Identity", "Logo Design", "Brand Guidelines", "Messaging"],
+  image: "/services/branding.png",
+  content: `### Introduction\nIn a crowded marketplace, standing out requires more than just a good product; it requires a powerful, cohesive brand identity. We help businesses uncover their unique voice and translate it into a visual and verbal language that captivates audiences and builds lasting loyalty.\n\n### Our Branding Services\n**Brand Strategy:** We work closely with your team to define your core values, mission, and unique value proposition. This strategic foundation informs every creative decision we make.\n\n**Visual Identity Design:** Our expert designers craft memorable logos, select impactful typography, and develop comprehensive color palettes that visually communicate your brand's essence.\n\n**Brand Guidelines:** We create detailed brand books that ensure consistency across all your marketing channels, from your website to your social media profiles and print materials.\n\n**Brand Messaging:** We help you articulate your brand's story through compelling copywriting, defining your tone of voice and key messaging pillars.\n\n### The Value of Strong Branding\nInvesting in professional branding creates immediate trust and credibility with your audience. It allows you to command premium pricing, attracts top talent to your organization, and forms the bedrock of all your future marketing efforts.`,
+  faqs: [
+    { question: "What is included in a branding package?", answer: "Our comprehensive branding packages typically include brand strategy development, logo design, typography and color palette selection, brand guidelines creation, and core messaging development." },
+    { question: "How long does the branding process take?", answer: "A full brand identity project usually takes between 4 to 8 weeks, depending on the complexity of the requirements and the number of deliverables involved." }
+  ]
+};
+
 export const getServiceBySlug = (slug: string) => {
   if (slug === "website-development") return services.find((service) => service.slug === "web-development");
-  if (slug === "branding-strategy") return services.find((service) => service.slug === "branding");
-  if (slug === "seo-services") return services.find((service) => service.slug === "seo");
+  if (slug === "branding-strategy" || slug === "branding") return hiddenBrandingService;
+  if (slug === "seo-services" || slug === "seo") return hiddenSeoService;
   return services.find((service) => service.slug === slug);
 };

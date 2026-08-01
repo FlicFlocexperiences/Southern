@@ -46,9 +46,6 @@ export const metadata: Metadata = {
     description: "Digital Marketing Agency in Delhi, India",
     images: ["/LOGO_Final.svg"],
   },
-  alternates: {
-    canonical: "/",
-  },
 };
 
 import { AuthProvider } from "@/components/AuthProvider";
