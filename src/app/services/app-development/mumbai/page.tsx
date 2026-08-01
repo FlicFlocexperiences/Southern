@@ -74,7 +74,7 @@ export default function MumbaiAppdevelopmentPage() {
               Full-Spectrum Mobile Development Services
             </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              <strong className="font-semibold text-[#de5e18] tracking-tight">Delivering a world-class application</strong> requires expertise across multiple engineering disciplines. We provide comprehensive, end-to-end services for app development in Mumbai, handling everything from initial wireframing to final App Store deployment. <strong className="font-semibold text-[#de5e18] tracking-tight">Custom native development</strong> is our flagship service. We build incredibly fast, deeply integrated applications for iOS (Swift) and Android (Kotlin) that leverage the full power of modern smartphone hardware. For businesses prioritizing rapid, multi-platform deployment, our app development company in Mumbai offers elite cross-platform engineering using React Native. This approach significantly reduces initial capital expenditure while still delivering a near-native user experience. <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise mobility solutions</strong> are another core focus. We architect secure, scalable internal applications designed to streamline complex corporate logistics, manage large-scale workforces, and optimize operational efficiency across your entire organization. To maximize user acquisition post-launch, consider integrating your app with our comprehensive <Link href="/services/social-media-management" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">social media management</Link> strategies.
+              <strong className="font-semibold text-[#de5e18] tracking-tight">Delivering a world-class application</strong> requires expertise across multiple engineering disciplines. We provide comprehensive, end-to-end services for app development in Mumbai, handling everything from initial wireframing to final <a href="https://developer.apple.com/app-store/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">App Store</a> deployment. <strong className="font-semibold text-[#de5e18] tracking-tight">Custom native development</strong> is our flagship service. We build incredibly fast, deeply integrated applications for iOS (<a href="https://developer.apple.com/swift/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Swift</a>) and Android (<a href="https://kotlinlang.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Kotlin</a>) that leverage the full power of modern smartphone hardware. For businesses prioritizing rapid, multi-platform deployment, our app development company in Mumbai offers elite cross-platform engineering using <a href="https://reactnative.dev/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">React Native</a>. This approach significantly reduces initial capital expenditure while still delivering a near-native user experience. <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise mobility solutions</strong> are another core focus. We architect secure, scalable internal applications designed to streamline complex corporate logistics, manage large-scale workforces, and optimize operational efficiency across your entire organization. To maximize user acquisition post-launch, consider integrating your app with our comprehensive <Link href="/services/social-media-management" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">social media management</Link> strategies.
             </p>
 
             <h3 id="robust-cloud-architecture-and-apis" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
@@ -133,8 +133,8 @@ export default function MumbaiAppdevelopmentPage() {
                     "Southern Edge Marketing transformed our digital presence completely. The custom web platform reduced patient onboarding time by 40% and significantly elevated our brand authority."
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100">
-                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Anand M. Sharma" className="w-full h-full object-cover grayscale" />
+                    <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Anand M. Sharma" className="w-full h-full object-cover object-center grayscale" />
                     </div>
                     <div>
                       <p className="text-[14px] font-bold text-black">Anand M. Sharma</p>
@@ -144,11 +144,11 @@ export default function MumbaiAppdevelopmentPage() {
                 </div>
                 <div>
                   <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
-                    "Our Shopify storefront conversion rates increased by 42% within weeks of launch. Their team understands both high-end design aesthetics and conversion science."
+                    "Our <a href="https://www.shopify.com/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Shopify</a> storefront conversion rates increased by 42% within weeks of launch. Their team understands both high-end design aesthetics and conversion science."
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100">
-                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rohan Kapoor" className="w-full h-full object-cover grayscale" />
+                    <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rohan Kapoor" className="w-full h-full object-cover object-center grayscale" />
                     </div>
                     <div>
                       <p className="text-[14px] font-bold text-black">Rohan Kapoor</p>

@@ -82,7 +82,7 @@ export default function AbudhabiSocialmediamanagementPage() {
               Comprehensive Social Media Strategies
             </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              <strong className="font-semibold text-[#de5e18] tracking-tight">A successful social presence</strong> requires a multifaceted and highly strategic approach. We offer full-spectrum services for social media management in Abu Dhabi, handling everything from initial strategy to daily execution. <strong className="font-semibold text-[#de5e18] tracking-tight">Content creation</strong> is at the heart of our offering. We produce high-quality, culturally relevant visuals, engaging short-form video (Reels and TikToks), and persuasive copywriting that aligns perfectly with your brand identity. Beyond organic content, our social media agency in Abu Dhabi excels at strategic community management. We actively engage with your followers, responding to comments and messages to foster a genuine sense of community around your brand. Furthermore, we manage highly targeted paid social campaigns designed to exponentially increase your reach and drive direct conversions. If you want to ensure your overarching brand identity is as strong as your social presence, explore our <Link href="/services/branding" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">branding services</Link>.
+              <strong className="font-semibold text-[#de5e18] tracking-tight">A successful social presence</strong> requires a multifaceted and highly strategic approach. We offer full-spectrum services for social media management in Abu Dhabi, handling everything from initial strategy to daily execution. <strong className="font-semibold text-[#de5e18] tracking-tight">Content creation</strong> is at the heart of our offering. We produce high-quality, culturally relevant visuals, engaging short-form video (Reels and TikToks), and persuasive copywriting that aligns perfectly with your brand identity. Beyond organic content, our social media agency in Abu Dhabi excels at strategic community management. We actively engage with your followers, responding to comments and messages to foster a genuine sense of community around your brand. Furthermore, we manage highly targeted paid social campaigns designed to exponentially increase your reach and drive direct conversions. If you want to ensure your overarching brand identity is as strong as your social presence, explore our branding services.
             </p>
 
             <h3 id="data-driven-growth-and-analytics" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
@@ -110,7 +110,7 @@ export default function AbudhabiSocialmediamanagementPage() {
               Our Strategic Management Process
             </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              <strong className="font-semibold text-[#de5e18] tracking-tight">A structured methodology</strong> is essential for consistent social media success. Our process for social media management in Abu Dhabi begins with a comprehensive audit of your current digital presence and a deep analysis of your competitors. <strong className="font-semibold text-[#de5e18] tracking-tight">Strategic planning</strong> follows, where we define your brand voice, content pillars, and aesthetic guidelines. <strong className="font-semibold text-[#de5e18] tracking-tight">Monthly content calendars</strong> are then meticulously crafted and sent to you for approval, ensuring you retain total control over your brand's messaging. Once approved, our Abu Dhabi social media managers handle the scheduling, publishing, and active community engagement. <strong className="font-semibold text-[#de5e18] tracking-tight">Continuous optimization</strong> ensures that our strategies evolve alongside the ever-changing algorithms of platforms like Instagram, LinkedIn, and TikTok. This end-to-end process is why we are recognized as a leading social media agency in Abu Dhabi.
+              <strong className="font-semibold text-[#de5e18] tracking-tight">A structured methodology</strong> is essential for consistent social media success. Our process for social media management in Abu Dhabi begins with a comprehensive audit of your current digital presence and a deep analysis of your competitors. <strong className="font-semibold text-[#de5e18] tracking-tight">Strategic planning</strong> follows, where we define your brand voice, content pillars, and aesthetic guidelines. <strong className="font-semibold text-[#de5e18] tracking-tight">Monthly content calendars</strong> are then meticulously crafted and sent to you for approval, ensuring you retain total control over your brand's messaging. Once approved, our Abu Dhabi social media managers handle the scheduling, publishing, and active community engagement. <strong className="font-semibold text-[#de5e18] tracking-tight">Continuous optimization</strong> ensures that our strategies evolve alongside the ever-changing algorithms of platforms like Instagram, <a href="https://business.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">LinkedIn</a>, and <a href="https://www.tiktok.com/business" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">TikTok</a>. This end-to-end process is why we are recognized as a leading social media agency in Abu Dhabi.
             </p>
 
             <h3 id="elevating-key-industries-in-the-capital" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
@@ -155,8 +155,8 @@ export default function AbudhabiSocialmediamanagementPage() {
                     "Southern Edge Marketing transformed our digital presence completely. The custom web platform reduced patient onboarding time by 40% and significantly elevated our brand authority."
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100">
-                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Anand M. Sharma" className="w-full h-full object-cover grayscale" />
+                    <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Anand M. Sharma" className="w-full h-full object-cover object-center grayscale" />
                     </div>
                     <div>
                       <p className="text-[14px] font-bold text-black">Anand M. Sharma</p>
@@ -166,11 +166,11 @@ export default function AbudhabiSocialmediamanagementPage() {
                 </div>
                 <div>
                   <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
-                    "Our Shopify storefront conversion rates increased by 42% within weeks of launch. Their team understands both high-end design aesthetics and conversion science."
+                    "Our <a href="https://www.shopify.com/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Shopify</a> storefront conversion rates increased by 42% within weeks of launch. Their team understands both high-end design aesthetics and conversion science."
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100">
-                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rohan Kapoor" className="w-full h-full object-cover grayscale" />
+                    <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rohan Kapoor" className="w-full h-full object-cover object-center grayscale" />
                     </div>
                     <div>
                       <p className="text-[14px] font-bold text-black">Rohan Kapoor</p>

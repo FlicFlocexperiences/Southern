@@ -16,6 +16,7 @@ interface ServiceLayoutProps {
 export function ServiceLayout({ sections, children }: ServiceLayoutProps) {
   const [currentUrl, setCurrentUrl] = useState("");
   const [activeId, setActiveId] = useState("");
+  const sidebarRef = useRef<HTMLElement>(null);
   const mobileSliderRef = useRef<HTMLDivElement>(null);
   const [isMobileDragging, setIsMobileDragging] = useState(false);
   const [mobileStartX, setMobileStartX] = useState(0);
@@ -68,6 +69,42 @@ export function ServiceLayout({ sections, children }: ServiceLayoutProps) {
     return () => observer.disconnect();
   }, [sections]);
 
+  // Auto-scroll sidebar and mobile tabs when active section changes
+  useEffect(() => {
+    // Scroll desktop sidebar
+    if (activeId && sidebarRef.current) {
+      const activeElement = sidebarRef.current.querySelector(`a[href="#${activeId}"]`) as HTMLElement;
+      if (activeElement) {
+        const container = sidebarRef.current;
+        const containerRect = container.getBoundingClientRect();
+        const elementRect = activeElement.getBoundingClientRect();
+
+        // Check if element is out of visible bounds
+        if (elementRect.top < containerRect.top || elementRect.bottom > containerRect.bottom) {
+          const relativeTop = elementRect.top - containerRect.top;
+          const targetScroll = container.scrollTop + relativeTop - (containerRect.height / 2) + (elementRect.height / 2);
+          container.scrollTo({ top: targetScroll, behavior: "smooth" });
+        }
+      }
+    }
+
+    // Scroll mobile slider
+    if (activeId && mobileSliderRef.current) {
+      const activeElement = mobileSliderRef.current.querySelector(`a[href="#${activeId}"]`) as HTMLElement;
+      if (activeElement) {
+        const container = mobileSliderRef.current;
+        const containerRect = container.getBoundingClientRect();
+        const elementRect = activeElement.getBoundingClientRect();
+
+        if (elementRect.left < containerRect.left || elementRect.right > containerRect.right) {
+          const relativeLeft = elementRect.left - containerRect.left;
+          const targetScroll = container.scrollLeft + relativeLeft - (containerRect.width / 2) + (elementRect.width / 2);
+          container.scrollTo({ left: targetScroll, behavior: "smooth" });
+        }
+      }
+    }
+  }, [activeId]);
+
   const handleShare = (platform: string) => {
     const title = document.title || "Southern Edge Marketing";
     let shareUrl = "";
@@ -93,7 +130,8 @@ export function ServiceLayout({ sections, children }: ServiceLayoutProps) {
       
       {/* Left Sidebar - Table of Contents */}
       <aside 
-        className="hidden lg:block sticky top-28 w-full pr-2 max-h-[calc(100vh-120px)] overflow-y-auto scrollbar-none [&::-webkit-scrollbar]:hidden pb-10"
+        ref={sidebarRef}
+        className="hidden lg:block sticky top-28 w-full pr-2 max-h-[calc(100vh-120px)] overflow-y-auto scrollbar-none [&::-webkit-scrollbar]:hidden pb-24"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         <nav className="flex flex-col gap-3">

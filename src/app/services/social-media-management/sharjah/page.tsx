@@ -103,7 +103,7 @@ export default function SharjahSocialmediamanagementPage() {
               Brand Reputation and Crisis Management
             </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              <strong className="font-semibold text-[#de5e18] tracking-tight">In the highly visible realm of social media</strong>, protecting your brand's reputation is paramount. Our social media management in Sharjah includes proactive reputation monitoring and crisis mitigation strategies. We actively listen to online sentiment surrounding your business, ensuring positive feedback is highlighted and negative comments are addressed immediately and professionally. <strong className="font-semibold text-[#de5e18] tracking-tight">Swift, empathetic customer service</strong> is a key pillar of our community management strategy. Our Sharjah social media experts are trained to de-escalate sensitive situations publicly, proving to your audience that you value customer satisfaction above all else. By entrusting your digital reputation to our specialized team, you safeguard your brand equity in the highly interconnected UAE market.
+              <strong className="font-semibold text-[#de5e18] tracking-tight">In the highly visible realm of social media</strong>, protecting your brand's reputation is paramount. Our social media management in Sharjah includes proactive reputation monitoring and crisis mitigation strategies. We actively listen to online sentiment surrounding your business, ensuring positive feedback is highlighted and negative comments are addressed immediately and professionally. <strong className="font-semibold text-[#de5e18] tracking-tight"><a href="https://developer.apple.com/swift/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Swift</a>, empathetic customer service</strong> is a key pillar of our community management strategy. Our Sharjah social media experts are trained to de-escalate sensitive situations publicly, proving to your audience that you value customer satisfaction above all else. By entrusting your digital reputation to our specialized team, you safeguard your brand equity in the highly interconnected UAE market.
             </p>
 
             <h3 id="our-collaborative-management-workflow" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
@@ -117,7 +117,7 @@ export default function SharjahSocialmediamanagementPage() {
               Supporting Key Industries in Sharjah
             </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              <strong className="font-semibold text-[#de5e18] tracking-tight">The diverse economic landscape of Sharjah</strong> demands versatile marketing expertise. Our expert social media management in Sharjah has successfully scaled brands across the emirate's most crucial sectors. <strong className="font-semibold text-[#de5e18] tracking-tight">The education and cultural sectors</strong> partner with us to promote events and build engaged student communities. <strong className="font-semibold text-[#de5e18] tracking-tight">Manufacturing and logistics firms</strong> utilize our B2B LinkedIn strategies to establish industry authority and generate high-value corporate leads. <strong className="font-semibold text-[#de5e18] tracking-tight">Retailers and hospitality brands</strong> rely on our visually striking Instagram and TikTok campaigns to drive immediate foot traffic and online sales. Regardless of your specific industry, our social media experts have the localized knowledge necessary to dramatically elevate your digital footprint and accelerate your commercial success. Learn more about how we establish strong core identities on our <Link href="/services/branding" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">branding and strategy</Link> page.
+              <strong className="font-semibold text-[#de5e18] tracking-tight">The diverse economic landscape of Sharjah</strong> demands versatile marketing expertise. Our expert social media management in Sharjah has successfully scaled brands across the emirate's most crucial sectors. <strong className="font-semibold text-[#de5e18] tracking-tight">The education and cultural sectors</strong> partner with us to promote events and build engaged student communities. <strong className="font-semibold text-[#de5e18] tracking-tight">Manufacturing and logistics firms</strong> utilize our B2B <a href="https://business.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">LinkedIn</a> strategies to establish industry authority and generate high-value corporate leads. <strong className="font-semibold text-[#de5e18] tracking-tight">Retailers and hospitality brands</strong> rely on our visually striking Instagram and <a href="https://www.tiktok.com/business" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">TikTok</a> campaigns to drive immediate foot traffic and online sales. Regardless of your specific industry, our social media experts have the localized knowledge necessary to dramatically elevate your digital footprint and accelerate your commercial success. Learn more about how we establish strong core identities on our branding and strategy page.
             </p>
 
             <h3 id="b2b-lead-generation-via-linkedin" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
@@ -155,8 +155,8 @@ export default function SharjahSocialmediamanagementPage() {
                     "Southern Edge Marketing transformed our digital presence completely. The custom web platform reduced patient onboarding time by 40% and significantly elevated our brand authority."
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100">
-                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Anand M. Sharma" className="w-full h-full object-cover grayscale" />
+                    <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Anand M. Sharma" className="w-full h-full object-cover object-center grayscale" />
                     </div>
                     <div>
                       <p className="text-[14px] font-bold text-black">Anand M. Sharma</p>
@@ -166,11 +166,11 @@ export default function SharjahSocialmediamanagementPage() {
                 </div>
                 <div>
                   <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
-                    "Our Shopify storefront conversion rates increased by 42% within weeks of launch. Their team understands both high-end design aesthetics and conversion science."
+                    "Our <a href="https://www.shopify.com/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Shopify</a> storefront conversion rates increased by 42% within weeks of launch. Their team understands both high-end design aesthetics and conversion science."
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100">
-                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rohan Kapoor" className="w-full h-full object-cover grayscale" />
+                    <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rohan Kapoor" className="w-full h-full object-cover object-center grayscale" />
                     </div>
                     <div>
                       <p className="text-[14px] font-bold text-black">Rohan Kapoor</p>

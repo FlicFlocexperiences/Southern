@@ -74,7 +74,7 @@ export default function KolkataSocialmediamanagementPage() {
             </p>
 
             <h3 id="advanced-b2b-lead-generation-on-linkedin" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Advanced B2B Lead Generation on LinkedIn
+              Advanced B2B Lead Generation on <a href="https://business.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">LinkedIn</a>
             </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">While Kolkata is famous for retail and education,</strong> its IT and corporate sectors are growing rapidly. For B2B businesses operating out of Sector V or Dalhousie, LinkedIn is an invaluable asset. Our social media management in Kolkata includes highly targeted B2B lead generation strategies specifically optimized for LinkedIn. We optimize your corporate profile, publish authoritative thought-leadership content, and run precision-targeted InMail and sponsored content campaigns designed to connect you directly with key decision-makers and C-suite executives. <strong className="font-semibold text-[#de5e18] tracking-tight">This strategic approach</strong> establishes your brand as an undeniable industry authority and consistently fills your corporate sales pipeline with high-value leads.
@@ -105,7 +105,7 @@ export default function KolkataSocialmediamanagementPage() {
               Brand Reputation and Crisis Management
             </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              <strong className="font-semibold text-[#de5e18] tracking-tight">In the highly visible realm of modern social media</strong>, protecting your brand's hard-earned reputation is paramount. Our social media management in Kolkata includes proactive reputation monitoring and rapid crisis mitigation strategies. We actively listen to online sentiment surrounding your business across all platforms, ensuring positive feedback is highlighted and negative comments are addressed immediately and professionally. <strong className="font-semibold text-[#de5e18] tracking-tight">Swift, empathetic customer service</strong> is a key pillar of our community management strategy. Our Kolkata social media experts are highly trained to de-escalate sensitive situations publicly, proving to your audience that you value customer satisfaction above all else. By entrusting your digital reputation to our specialized team, you safeguard your brand equity in the highly interconnected Indian market.
+              <strong className="font-semibold text-[#de5e18] tracking-tight">In the highly visible realm of modern social media</strong>, protecting your brand's hard-earned reputation is paramount. Our social media management in Kolkata includes proactive reputation monitoring and rapid crisis mitigation strategies. We actively listen to online sentiment surrounding your business across all platforms, ensuring positive feedback is highlighted and negative comments are addressed immediately and professionally. <strong className="font-semibold text-[#de5e18] tracking-tight"><a href="https://developer.apple.com/swift/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Swift</a>, empathetic customer service</strong> is a key pillar of our community management strategy. Our Kolkata social media experts are highly trained to de-escalate sensitive situations publicly, proving to your audience that you value customer satisfaction above all else. By entrusting your digital reputation to our specialized team, you safeguard your brand equity in the highly interconnected Indian market.
             </p>
 
             {/* Client Reviews Section */}
@@ -122,8 +122,8 @@ export default function KolkataSocialmediamanagementPage() {
                     "Southern Edge Marketing transformed our digital presence completely. The custom web platform reduced patient onboarding time by 40% and significantly elevated our brand authority."
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100">
-                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Anand M. Sharma" className="w-full h-full object-cover grayscale" />
+                    <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Anand M. Sharma" className="w-full h-full object-cover object-center grayscale" />
                     </div>
                     <div>
                       <p className="text-[14px] font-bold text-black">Anand M. Sharma</p>
@@ -133,11 +133,11 @@ export default function KolkataSocialmediamanagementPage() {
                 </div>
                 <div>
                   <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
-                    "Our Shopify storefront conversion rates increased by 42% within weeks of launch. Their team understands both high-end design aesthetics and conversion science."
+                    "Our <a href="https://www.shopify.com/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Shopify</a> storefront conversion rates increased by 42% within weeks of launch. Their team understands both high-end design aesthetics and conversion science."
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100">
-                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rohan Kapoor" className="w-full h-full object-cover grayscale" />
+                    <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rohan Kapoor" className="w-full h-full object-cover object-center grayscale" />
                     </div>
                     <div>
                       <p className="text-[14px] font-bold text-black">Rohan Kapoor</p>

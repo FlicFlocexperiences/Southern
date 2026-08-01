@@ -74,7 +74,7 @@ export default function KolkataAppdevelopmentPage() {
               Comprehensive Mobile Application Services
             </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              <strong className="font-semibold text-[#de5e18] tracking-tight">A successful application</strong> requires a multi-faceted engineering approach. We provide end-to-end services for app development in Kolkata, covering every technical requirement from initial ideation to post-launch scaling. <strong className="font-semibold text-[#de5e18] tracking-tight">Native application development</strong> is a core strength. We build highly optimized, platform-specific solutions for iOS using Swift and for Android using Kotlin, ensuring maximum performance and deep integration with device hardware. Alternatively, our app development company in Kolkata excels in building robust cross-platform applications using frameworks like React Native. This approach allows ambitious startups to launch on both major platforms simultaneously, significantly reducing initial time-to-market. <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise mobility solutions</strong> form another vital pillar of our service offerings. We engineer secure, scalable internal applications designed to streamline corporate operations, manage logistics, and empower remote workforces across the region. For comprehensive growth strategies post-launch, we recommend pairing your application with our robust <Link href="/services/performance-marketing" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">performance marketing</Link> campaigns.
+              <strong className="font-semibold text-[#de5e18] tracking-tight">A successful application</strong> requires a multi-faceted engineering approach. We provide end-to-end services for app development in Kolkata, covering every technical requirement from initial ideation to post-launch scaling. <strong className="font-semibold text-[#de5e18] tracking-tight">Native application development</strong> is a core strength. We build highly optimized, platform-specific solutions for iOS using <a href="https://developer.apple.com/swift/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Swift</a> and for Android using <a href="https://kotlinlang.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Kotlin</a>, ensuring maximum performance and deep integration with device hardware. Alternatively, our app development company in Kolkata excels in building robust cross-platform applications using frameworks like <a href="https://reactnative.dev/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">React Native</a>. This approach allows ambitious startups to launch on both major platforms simultaneously, significantly reducing initial time-to-market. <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise mobility solutions</strong> form another vital pillar of our service offerings. We engineer secure, scalable internal applications designed to streamline corporate operations, manage logistics, and empower remote workforces across the region. For comprehensive growth strategies post-launch, we recommend pairing your application with our robust performance marketing campaigns.
             </p>
 
             <h3 id="advanced-architecture-and-cloud-integration" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
@@ -133,8 +133,8 @@ export default function KolkataAppdevelopmentPage() {
                     "Southern Edge Marketing transformed our digital presence completely. The custom web platform reduced patient onboarding time by 40% and significantly elevated our brand authority."
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100">
-                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Anand M. Sharma" className="w-full h-full object-cover grayscale" />
+                    <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Anand M. Sharma" className="w-full h-full object-cover object-center grayscale" />
                     </div>
                     <div>
                       <p className="text-[14px] font-bold text-black">Anand M. Sharma</p>
@@ -144,11 +144,11 @@ export default function KolkataAppdevelopmentPage() {
                 </div>
                 <div>
                   <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
-                    "Our Shopify storefront conversion rates increased by 42% within weeks of launch. Their team understands both high-end design aesthetics and conversion science."
+                    "Our <a href="https://www.shopify.com/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Shopify</a> storefront conversion rates increased by 42% within weeks of launch. Their team understands both high-end design aesthetics and conversion science."
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100">
-                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rohan Kapoor" className="w-full h-full object-cover grayscale" />
+                    <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rohan Kapoor" className="w-full h-full object-cover object-center grayscale" />
                     </div>
                     <div>
                       <p className="text-[14px] font-bold text-black">Rohan Kapoor</p>

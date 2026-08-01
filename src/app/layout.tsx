@@ -94,6 +94,7 @@ export default function RootLayout({
       className={`${onestSans.variable} ${geistMono.variable} ${playball.variable} antialiased`}
     >
       <head>
+        <meta name="facebook-domain-verification" content="g36uoug9vc4tadxt4aemu2cc5jyqza" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}

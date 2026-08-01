@@ -74,7 +74,7 @@ export default function MumbaiWebdevelopmentPage() {
               Comprehensive Web Development Services
             </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              <strong className="font-semibold text-[#de5e18] tracking-tight">A fragmented digital strategy</strong> inevitably leads to fragmented results. We offer a holistic suite of services for web development in Mumbai, ensuring seamless integration across all digital touchpoints. <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise website development</strong> is our core specialty. We design intricate, scalable platforms capable of handling massive amounts of data and complex user hierarchies, perfect for the financial and corporate sectors dominating Mumbai. <strong className="font-semibold text-[#de5e18] tracking-tight">Ecommerce web development Mumbai</strong> is another cornerstone of our practice. We empower local retailers and B2B distributors to scale their operations nationally by building robust online storefronts with advanced inventory management and local payment gateway integrations. Our web development company in Mumbai also places a massive emphasis on responsive, mobile-first design, recognizing that mobile commerce is rapidly becoming the dominant force in the Indian market. For businesses looking to establish a dominant brand presence alongside their new website, we highly recommend our comprehensive <Link href="/services/branding" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">branding and strategy</Link> services.
+              <strong className="font-semibold text-[#de5e18] tracking-tight">A fragmented digital strategy</strong> inevitably leads to fragmented results. We offer a holistic suite of services for web development in Mumbai, ensuring seamless integration across all digital touchpoints. <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise website development</strong> is our core specialty. We design intricate, scalable platforms capable of handling massive amounts of data and complex user hierarchies, perfect for the financial and corporate sectors dominating Mumbai. <strong className="font-semibold text-[#de5e18] tracking-tight">Ecommerce web development Mumbai</strong> is another cornerstone of our practice. We empower local retailers and B2B distributors to scale their operations nationally by building robust online storefronts with advanced inventory management and local payment gateway integrations. Our web development company in Mumbai also places a massive emphasis on responsive, mobile-first design, recognizing that mobile commerce is rapidly becoming the dominant force in the Indian market. For businesses looking to establish a dominant brand presence alongside their new website, we highly recommend our comprehensive branding and strategy services.
             </p>
 
             <h3 id="advanced-architecture-and-api-integration" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
@@ -116,7 +116,7 @@ export default function MumbaiWebdevelopmentPage() {
               Strategic A/B Testing and Iteration
             </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              <strong className="font-semibold text-[#de5e18] tracking-tight">Digital excellence is a continuous process,</strong> not a one-time event. Our web development company in Mumbai strongly advocates for data-driven iteration post-launch. We implement advanced analytics tracking and utilize rigorous A/B testing methodologies to constantly refine your user experience. <strong className="font-semibold text-[#de5e18] tracking-tight">By systematically testing</strong> different headline variations, call-to-action button placements, and landing page layouts, we continuously optimize your website to squeeze maximum value out of every single visitor. This iterative approach to custom website development Mumbai guarantees that your digital platform evolves alongside your business, consistently driving higher conversion rates and maximizing your overall return on investment. If you are looking to drive targeted, high-intent traffic to this newly optimized platform, explore our data-driven <Link href="/services/seo" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">SEO services</Link>.
+              <strong className="font-semibold text-[#de5e18] tracking-tight">Digital excellence is a continuous process,</strong> not a one-time event. Our web development company in Mumbai strongly advocates for data-driven iteration post-launch. We implement advanced analytics tracking and utilize rigorous A/B testing methodologies to constantly refine your user experience. <strong className="font-semibold text-[#de5e18] tracking-tight">By systematically testing</strong> different headline variations, call-to-action button placements, and landing page layouts, we continuously optimize your website to squeeze maximum value out of every single visitor. This iterative approach to custom website development Mumbai guarantees that your digital platform evolves alongside your business, consistently driving higher conversion rates and maximizing your overall return on investment. If you are looking to drive targeted, high-intent traffic to this newly optimized platform, explore our data-driven SEO services.
             </p>
 
             {/* Client Reviews Section */}
@@ -133,8 +133,8 @@ export default function MumbaiWebdevelopmentPage() {
                     "Southern Edge Marketing transformed our digital presence completely. The custom web platform reduced patient onboarding time by 40% and significantly elevated our brand authority."
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100">
-                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Anand M. Sharma" className="w-full h-full object-cover grayscale" />
+                    <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Anand M. Sharma" className="w-full h-full object-cover object-center grayscale" />
                     </div>
                     <div>
                       <p className="text-[14px] font-bold text-black">Anand M. Sharma</p>
@@ -144,11 +144,11 @@ export default function MumbaiWebdevelopmentPage() {
                 </div>
                 <div>
                   <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
-                    "Our Shopify storefront conversion rates increased by 42% within weeks of launch. Their team understands both high-end design aesthetics and conversion science."
+                    "Our <a href="https://www.shopify.com/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Shopify</a> storefront conversion rates increased by 42% within weeks of launch. Their team understands both high-end design aesthetics and conversion science."
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100">
-                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rohan Kapoor" className="w-full h-full object-cover grayscale" />
+                    <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rohan Kapoor" className="w-full h-full object-cover object-center grayscale" />
                     </div>
                     <div>
                       <p className="text-[14px] font-bold text-black">Rohan Kapoor</p>
