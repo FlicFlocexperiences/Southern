@@ -67,11 +67,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'surat'
   ];
 
+  const brandingCities = ['abu-dhabi', 'bengaluru', 'chennai', 'delhi', 'gurgaon', 'hyderabad', 'kolkata', 'lucknow'];
+  const seoCities = ['abu-dhabi', 'bengaluru', 'chennai', 'delhi', 'gurgaon', 'hyderabad', 'kolkata', 'lucknow'];
+
   const cityRoutes = [
     ...commonCities.map(city => `/services/app-development/${city}`),
     '/services/app-development/jaipur',
     ...commonCities.map(city => `/services/web-development/${city}`),
     ...commonCities.map(city => `/services/social-media-management/${city}`),
+    ...brandingCities.map(city => `/services/branding/${city}`),
+    ...seoCities.map(city => `/services/seo/${city}`),
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),

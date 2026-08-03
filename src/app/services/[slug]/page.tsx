@@ -48,7 +48,7 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
         <ServiceContent service={service} />
       </main>
 
-      {["web-development", "app-development", "social-media-management"].includes(service.slug) && (
+      {["web-development", "app-development", "social-media-management", "seo", "branding"].includes(service.slug) && (
         <LocationsGrid serviceSlug={service.slug} />
       )}
 

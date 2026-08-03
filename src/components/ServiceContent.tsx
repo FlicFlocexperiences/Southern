@@ -169,6 +169,26 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
     return () => observer.disconnect();
   }, [sections]);
 
+  // Auto-scroll TOC sidebar when active item changes
+  useEffect(() => {
+    if (activeId) {
+      const activeElement = document.getElementById(`toc-${activeId}`);
+      const sidebar = document.getElementById("toc-sidebar");
+      if (activeElement && sidebar) {
+        const sidebarRect = sidebar.getBoundingClientRect();
+        const activeRect = activeElement.getBoundingClientRect();
+        
+        // Only scroll if the active item is not fully visible in the sidebar
+        if (activeRect.top < sidebarRect.top || activeRect.bottom > sidebarRect.bottom) {
+          sidebar.scrollTo({
+            top: activeElement.offsetTop - sidebar.offsetTop - 20,
+            behavior: "smooth"
+          });
+        }
+      }
+    }
+  }, [activeId]);
+
   const handleShare = (platform: string) => {
     const title = service.title;
     let shareUrl = "";
@@ -320,22 +340,23 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
         
         {/* Left Sidebar - Table of Contents */}
         <aside 
-          className="hidden lg:block sticky top-28 w-full pr-2 max-h-[calc(100vh-120px)] overflow-y-auto scrollbar-none [&::-webkit-scrollbar]:hidden pb-10"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          id="toc-sidebar"
+          className="hidden lg:block sticky top-28 w-full pr-2 max-h-[calc(100vh-120px)] overflow-y-auto pb-10 custom-scrollbar"
         >
-          <nav className="flex flex-col gap-3">
+          <nav className="flex flex-col gap-2">
             {sections.map((sec) => {
               const isActive = activeId === sec.id;
               return (
                 <a
                   key={sec.id}
+                  id={`toc-${sec.id}`}
                   href={`#${sec.id}`}
                   onClick={(e) => {
                     e.preventDefault();
                     document.getElementById(sec.id)?.scrollIntoView({ behavior: "smooth" });
                     setActiveId(sec.id);
                   }}
-                  className={`text-[15px] leading-[1.5] transition-all duration-200 py-1 pr-4 text-left border-r-[3px] ${
+                  className={`text-[14px] leading-[1.4] transition-all duration-200 py-1.5 pr-4 text-left border-r-[3px] ${
                     isActive
                       ? "text-[#0f0f0f] border-[#de5e18] font-bold"
                       : "text-black/60 border-transparent hover:text-black font-medium"

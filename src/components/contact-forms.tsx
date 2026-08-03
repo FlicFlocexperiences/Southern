@@ -5,6 +5,7 @@ import { NameInput } from "@/components/name-input";
 import { PhoneInput } from "@/components/phone-input";
 import { countryCodes } from "@/lib/countryCodes";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 // Local Social Icons
 const InstagramIcon = () => (
@@ -179,6 +180,14 @@ export const ContactUsWidget = () => {
               placeholder="Message goes here..." 
               className="w-full bg-white rounded-xl px-4 py-3.5 outline-none text-[16px] text-black border border-black/10 focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] transition-all placeholder:text-black/35 h-[100px] resize-none" 
             />
+          </div>
+
+          {/* Disclaimer */}
+          <div className="text-[13px] text-black/60 text-center mt-2 mb-2 leading-relaxed px-2">
+            By clicking submit, you agree to share these details with us for the purpose of contacting you regarding our services. Please read our{" "}
+            <Link href="/privacy" className="text-[#de5e18] hover:underline font-medium">Privacy Policy</Link> and{" "}
+            <Link href="/terms" className="text-[#de5e18] hover:underline font-medium">Terms & Conditions</Link>{" "}
+            (including our <Link href="/terms" className="text-[#de5e18] hover:underline font-medium">Refund Policy</Link>) for more details.
           </div>
 
           {/* Submit Button */}

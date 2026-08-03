@@ -20,6 +20,7 @@ const locations = [
   { name: 'Kolkata', slug: 'kolkata', country: 'India' },
   { name: 'Pune', slug: 'pune', country: 'India' },
   { name: 'Hyderabad', slug: 'hyderabad', country: 'India' },
+  { name: 'Surat', slug: 'surat', country: 'India' },
 ];
 
 export function LocationsGrid({ serviceSlug }: LocationsGridProps) {
