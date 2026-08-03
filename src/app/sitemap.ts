@@ -74,9 +74,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...commonCities.map(city => `/services/app-development/${city}`),
     '/services/app-development/jaipur',
     ...commonCities.map(city => `/services/web-development/${city}`),
+    '/services/web-development/jaipur',
+    '/services/web-development/ahmedabad',
     ...commonCities.map(city => `/services/social-media-management/${city}`),
     ...brandingCities.map(city => `/services/branding/${city}`),
+    '/services/branding/jaipur',
     ...seoCities.map(city => `/services/seo/${city}`),
+    '/services/seo/jaipur',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
