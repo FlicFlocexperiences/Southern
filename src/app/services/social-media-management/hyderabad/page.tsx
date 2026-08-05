@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Social Media Agency in Hyderabad | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/social-media-management/hyderabad',
+  },
+  title: "Social Media Agency in Hyderabad",
   description: "Dominate the global and local market with elite social media management in Hyderabad. We build high-ROI campaigns for IT, real estate, and healthcare.",
 };
 

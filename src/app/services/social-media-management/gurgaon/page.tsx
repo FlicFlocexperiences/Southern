@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Social Media Management Company in Gurgaon | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/social-media-management/gurgaon',
+  },
+  title: "Social Media Management Company in Gurgaon",
   description: "Scale your brand with the leading social media management company in Gurgaon. High-impact B2B growth and brand authority for Cyber City enterprises."
 };
 

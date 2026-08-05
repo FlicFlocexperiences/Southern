@@ -5,7 +5,10 @@ import { MobileFooter } from "@/components/mobile-footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Southern Edge Marketing",
+  alternates: {
+    canonical: '/privacy',
+  },
+  title: "Privacy Policy",
   description: "Learn how Southern Edge Marketing collects, manages, processes, and protects your data.",
 };
 

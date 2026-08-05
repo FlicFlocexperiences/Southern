@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Web Development Company in Ahmedabad | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/web-development/ahmedabad',
+  },
+  title: "Web Development Company in Ahmedabad",
   description: "Scale your business with the leading web development company in Ahmedabad. We build high-performance Next.js portals, custom B2B systems, and e-commerce apps."
 };
 

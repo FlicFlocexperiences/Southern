@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Social Media Agency in Pune | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/social-media-management/pune',
+  },
+  title: "Social Media Agency in Pune",
   description: "Dominate Pune's dynamic market with elite social media management. We build high-ROI digital campaigns for IT startups, manufacturing firms, and education.",
 };
 

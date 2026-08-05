@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Branding Company in Pune | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/branding/pune',
+  },
+  title: "Branding Company in Pune",
   description: "Scale your corporate identity with the premier branding company in Pune. We design elite brand systems for Hinjawadi tech leaders and Chakan manufacturers."
 };
 

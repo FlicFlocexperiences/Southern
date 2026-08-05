@@ -14,6 +14,9 @@ import { MobileClientLogos, DesktopClientLogos } from "@/components/client-logos
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/about',
+  },
   title: "About Southern Edge Marketing | Our Story & Approach",
   description: "We're more than just digital. Meet the team behind Southern Edge Marketing and see how we build brands that grow, not just campaigns that run.",
   openGraph: {

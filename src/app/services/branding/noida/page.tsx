@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Branding Company in Noida | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/branding/noida',
+  },
+  title: "Branding Company in Noida",
   description: "Partner with the leading branding company in Noida to scale your enterprise identity. We build elite design systems for IT giants, manufacturers, and media hubs."
 };
 

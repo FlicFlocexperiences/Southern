@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Professional SEO Company in Lucknow | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/seo/lucknow',
+  },
+  title: "Professional SEO Company in Lucknow",
   description: "Scale your organic traffic with the premier SEO company in Lucknow. We build search strategies for Sultanpur Road IT firms and legacy export houses."
 };
 

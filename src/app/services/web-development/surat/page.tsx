@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Premium Web Development Company in Surat | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/web-development/surat',
+  },
+  title: "Premium Web Development Company in Surat",
   description: "Partner with the leading Web Development Company in Surat. We engineer secure B2B portals, high-performance D2C e-commerce, and enterprise web applications.",
 };
 

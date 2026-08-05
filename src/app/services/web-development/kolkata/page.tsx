@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Web Development Company in Kolkata | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/web-development/kolkata',
+  },
+  title: "Web Development Company in Kolkata",
   description: "Elevate your brand with premier web development in Kolkata. We build custom, high-converting digital platforms for education, retail, and IT sectors.",
 };
 

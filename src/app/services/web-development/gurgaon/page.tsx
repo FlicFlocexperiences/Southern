@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Web Development Company in Gurgaon | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/web-development/gurgaon',
+  },
+  title: "Web Development Company in Gurgaon",
   description: "Scale your Gurgaon enterprise with top-tier web development. We build high-performance, secure, custom digital platforms tailored for India's Millennium City.",
 };
 

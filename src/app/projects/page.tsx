@@ -9,10 +9,13 @@ import { MobileFaq } from "@/components/mobile-faq";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects | Southern Edge Marketing",
+  alternates: {
+    canonical: '/projects',
+  },
+  title: "Projects",
   description: "Explore our latest web development, branding, and design projects.",
   openGraph: {
-    title: "Projects | Southern Edge Marketing",
+    title: "Projects",
     description: "Explore our latest web development, branding, and design projects.",
   },
 };

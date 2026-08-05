@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Web Development Company in Chandigarh | Southern Edge Marketing",
-  description: "Elevate your digital presence with high-performance web development in Chandigarh. We engineer custom, scalable, and secure Next.js websites for Tricity enterprises.",
+  alternates: {
+    canonical: '/services/web-development/chandigarh',
+  },
+  title: "Web Development Company in Chandigarh",
+  description: "Elevate your digital presence with high-performance web development in Chandigarh. We engineer custom, scalable, secure Next.js websites for Tricity.",
 };
 
 const tableOfContents = [

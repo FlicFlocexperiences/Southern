@@ -14,11 +14,14 @@ import { Testimonials } from "@/components/testimonials";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Services | Web, Branding, SEO, Ads & App Development | Southern Edge Marketing",
-  description: "Six capabilities, one growth system: website platforms, branding, Shopify development, app development, SEO, performance marketing, and social media management, built to compound.",
+  alternates: {
+    canonical: '/services',
+  },
+  title: "Our Services | Web, Branding, SEO, Ads & App Development",
+  description: "Six capabilities, one growth system: websites, branding, Shopify, app development, SEO, performance marketing, and social media management.",
   openGraph: {
-    title: "Our Services | Web, Branding, SEO, Ads & App Development | Southern Edge Marketing",
-    description: "Six capabilities, one growth system: website platforms, branding, Shopify development, app development, SEO, performance marketing, and social media management, built to compound.",
+    title: "Our Services | Web, Branding, SEO, Ads & App Development",
+    description: "Six capabilities, one growth system: websites, branding, Shopify, app development, SEO, performance marketing, and social media management.",
   },
 };
 

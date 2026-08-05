@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Premium Branding Company in Lucknow | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/branding/lucknow',
+  },
+  title: "Premium Branding Company in Lucknow",
   description: "Scale your Lucknow enterprise with corporate branding. We build elite identity systems for Sultanpur Road IT firms, legacy Chikan exporters, and developers."
 };
 

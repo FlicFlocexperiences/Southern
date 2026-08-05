@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Branding Company in Sharjah | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/branding/sharjah',
+  },
+  title: "Branding Company in Sharjah",
   description: "Elevate your business with the premier branding company in Sharjah. We craft prestigious, bilingual brand systems for SAIF Zone and Hamriyah Free Zone leaders."
 };
 

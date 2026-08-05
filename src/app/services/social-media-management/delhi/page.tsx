@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Social Media Agency in Delhi | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/social-media-management/delhi',
+  },
+  title: "Social Media Agency in Delhi",
   description: "Dominate the NCR digital landscape with expert social media management in Delhi. We drive engagement and ROI across Instagram, LinkedIn, and Facebook.",
 };
 

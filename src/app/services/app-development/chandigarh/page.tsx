@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "App Development Company in Chandigarh | Southern Edge Marketing",
-  description: "Transform your Chandigarh business with bespoke app development. We build scalable, high-performance mobile solutions for Tricity startups and IT Park enterprises.",
+  alternates: {
+    canonical: '/services/app-development/chandigarh',
+  },
+  title: "App Development Company in Chandigarh",
+  description: "Transform your Chandigarh business with bespoke app development. We build scalable, high-performance mobile solutions for Tricity & IT Park startups.",
 };
 
 const tableOfContents = [

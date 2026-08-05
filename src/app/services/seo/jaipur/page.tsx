@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Premium SEO Company in Jaipur | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/seo/jaipur',
+  },
+  title: "Premium SEO Company in Jaipur",
   description: "Scale your organic search presence with the premier SEO Company in Jaipur. We deliver elite search strategies for heritage tourism, gem exports, and IT SEZs."
 };
 

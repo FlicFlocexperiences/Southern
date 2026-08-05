@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "SEO Company in Chandigarh | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/seo/chandigarh',
+  },
+  title: "SEO Company in Chandigarh",
   description: "Scale your organic traffic with the premier SEO Company in Chandigarh. We build data-driven search architectures for IT Park, SaaS, and Tricity B2B brands."
 };
 

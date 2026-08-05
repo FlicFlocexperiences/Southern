@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "SEO Company in Noida | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/seo/noida',
+  },
+  title: "SEO Company in Noida",
   description: "Scale your NCR business with the premier SEO company in Noida. We deliver technical, compliant organic search strategies for SaaS, IT hubs, and manufacturers."
 };
 

@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Social Media Management Company in Ahmedabad | Southern Edge Marketing",
-  description: "Scale your brand with the premier social media management company in Ahmedabad. We build authority for GIDC industrial giants, GIFT City fintechs, and D2C textile brands."
+  alternates: {
+    canonical: '/services/social-media-management/ahmedabad',
+  },
+  title: "Social Media Management Company in Ahmedabad",
+  description: "Scale your brand with Ahmedabad's premier social media management company. We build authority for GIDC, GIFT City fintechs, and D2C textile brands."
 };
 
 const tableOfContents = [

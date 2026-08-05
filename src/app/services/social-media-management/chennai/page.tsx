@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Social Media Agency in Chennai | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/social-media-management/chennai',
+  },
+  title: "Social Media Agency in Chennai",
   description: "Dominate the Southern Indian market with elite social media management in Chennai. We build high-ROI campaigns for manufacturing, IT, and retail sectors.",
 };
 

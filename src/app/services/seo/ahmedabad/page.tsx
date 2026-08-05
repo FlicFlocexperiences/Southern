@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Premium SEO Company in Ahmedabad | Southern Edge Marketing",
-  description: "Scale your organic search presence with the premier SEO Company in Ahmedabad. We deliver elite search strategies for GIDC manufacturers, GIFT City fintech, and tech startups."
+  alternates: {
+    canonical: '/services/seo/ahmedabad',
+  },
+  title: "Premium SEO Company in Ahmedabad",
+  description: "Scale your organic search presence with the premier SEO Company in Ahmedabad. We deliver elite search strategies for GIDC, GIFT City fintech, & startups."
 };
 
 const tableOfContents = [

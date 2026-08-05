@@ -26,10 +26,10 @@ export const metadata: Metadata = {
     default: "Southern Edge Marketing | Digital Marketing Agency in Delhi, India",
     template: "%s | Southern Edge Marketing",
   },
-  description: "Southern Edge Marketing turns attention into action, strategy, design, development, and marketing that actually drives business. Trusted by 100+ businesses across India. 5.0 rated.",
+  description: "Southern Edge Marketing drives business with strategy, design, development, and marketing. Trusted by 100+ businesses across India. 5.0 rated.",
   openGraph: {
     title: "Southern Edge Marketing | Digital Marketing Agency in Delhi, India",
-    description: "Southern Edge Marketing turns attention into action, strategy, design, development, and marketing that actually drives business. Trusted by 100+ businesses across India. 5.0 rated.",
+    description: "Southern Edge Marketing drives business with strategy, design, development, and marketing. Trusted by 100+ businesses across India. 5.0 rated.",
     url: "https://southernedgemarketing.com",
     siteName: "Southern Edge Marketing",
     images: [{
@@ -53,7 +53,7 @@ import { WhatsappWidget } from "@/components/whatsapp-widget";
 
 const jsonLdSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "ProfessionalService"],
+  "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
   "name": "Southern Edge Marketing",
   "url": "https://southernedgemarketing.com",
   "logo": "https://southernedgemarketing.com/LOGO_Final.svg",

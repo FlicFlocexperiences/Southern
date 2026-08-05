@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "SEO Company in Delhi | Southern Edge Marketing",
-  description: "Scale your organic traffic with the premier SEO company in Delhi. We deliver elite, technical search engine optimization for NCR manufacturing and retail sectors."
+  alternates: {
+    canonical: '/services/seo/delhi',
+  },
+  title: "SEO Company in Delhi",
+  description: "Scale your organic traffic with the premier SEO company in Delhi. We deliver elite, technical SEO strategies for NCR manufacturing and retail sectors."
 };
 
 const tableOfContents = [

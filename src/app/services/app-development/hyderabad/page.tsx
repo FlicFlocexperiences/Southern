@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "App Development Company in Hyderabad | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/app-development/hyderabad',
+  },
+  title: "App Development Company in Hyderabad",
   description: "Partner with Hyderabad's leading app development company. We engineer highly secure, scalable mobile applications for IT, healthcare, and global enterprises.",
 };
 

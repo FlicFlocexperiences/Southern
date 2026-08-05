@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "App Development Company in Ahmedabad | Southern Edge Marketing",
-  description: "Transform your Ahmedabad business with high-performance app development. We engineer custom mobile applications for GIDC manufacturing, pharma, and GIFT City fintech.",
+  alternates: {
+    canonical: '/services/app-development/ahmedabad',
+  },
+  title: "App Development Company in Ahmedabad",
+  description: "Transform your Ahmedabad business with high-performance app development. We build custom mobile apps for GIDC manufacturing, pharma & GIFT City.",
 };
 
 const tableOfContents = [

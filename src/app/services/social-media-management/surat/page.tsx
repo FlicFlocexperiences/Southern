@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Social Media Management Company in Surat | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/social-media-management/surat',
+  },
+  title: "Social Media Management Company in Surat",
   description: "Scale your brand with the premier social media management company in Surat. We grow diamond exporters, D2C textile brands, and GIDC industrial enterprises."
 };
 

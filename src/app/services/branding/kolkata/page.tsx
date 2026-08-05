@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Premium Branding Company in Kolkata | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/branding/kolkata',
+  },
+  title: "Premium Branding Company in Kolkata",
   description: "Scale your Kolkata enterprise with premium corporate branding. We build elite identity systems for Sector V tech firms, heritage tea brands, and manufacturers."
 };
 

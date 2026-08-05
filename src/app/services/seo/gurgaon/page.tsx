@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "SEO Company in Gurgaon | Southern Edge Marketing",
-  description: "Elevate your corporate visibility with the premier SEO company in Gurgaon. We deliver technical, compliant organic search strategies for SaaS, Fintech, and IT hubs."
+  alternates: {
+    canonical: '/services/seo/gurgaon',
+  },
+  title: "SEO Company in Gurgaon",
+  description: "Elevate your corporate visibility with the premier SEO company in Gurgaon. We deliver technical, compliant organic search strategies for SaaS & Fintech."
 };
 
 const tableOfContents = [

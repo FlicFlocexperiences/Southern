@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Premium App Development Company in Jaipur | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/app-development/jaipur',
+  },
+  title: "Premium App Development Company in Jaipur",
   description: "Scale your Jaipur enterprise with the leading App Development Company in Jaipur. We build custom, secure, high-performance mobile apps for startups & retail."
 };
 

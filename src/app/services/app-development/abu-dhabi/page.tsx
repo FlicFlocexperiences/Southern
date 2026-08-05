@@ -5,6 +5,9 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/services/app-development/abu-dhabi',
+  },
   title: "Expert App Developers in Abu Dhabi | Southern Edge",
   description: "Top mobile app development company in Abu Dhabi. We build high-performance iOS and Android applications designed to scale your enterprise globally.",
 };

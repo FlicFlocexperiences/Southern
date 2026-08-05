@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Social Media Agency in Mumbai | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/social-media-management/mumbai',
+  },
+  title: "Social Media Agency in Mumbai",
   description: "Elevate your brand in India's commercial capital. We provide data-driven social media management in Mumbai for finance, retail, and corporate sectors.",
 };
 

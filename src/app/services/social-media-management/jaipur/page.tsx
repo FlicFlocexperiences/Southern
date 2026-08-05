@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Social Media Management Company in Jaipur | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/social-media-management/jaipur',
+  },
+  title: "Social Media Management Company in Jaipur",
   description: "Partner with the premier social media management company in Jaipur. We scale luxury gemstone exporters, heritage D2C textile brands, and MWC tech startups."
 };
 

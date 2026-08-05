@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "App Development Company in Pune | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/app-development/pune',
+  },
+  title: "App Development Company in Pune",
   description: "Partner with Pune's top app development company. We engineer secure, highly scalable mobile applications for manufacturing, IT, and education sectors.",
 };
 

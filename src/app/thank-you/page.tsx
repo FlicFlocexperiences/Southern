@@ -6,7 +6,10 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Thank You | Southern Edge Marketing",
+  alternates: {
+    canonical: '/thank-you',
+  },
+  title: "Thank You",
   description: "Thank you for getting in touch with us.",
   robots: {
     index: false,

@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Web Development Company in Bengaluru | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/web-development/bengaluru',
+  },
+  title: "Web Development Company in Bengaluru",
   description: "Partner with Bengaluru's leading web development company. We build high-performance, scalable web architectures for startups and global tech enterprises.",
 };
 

@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Branding Company in Bengaluru | Southern Edge Marketing",
-  description: "Elevate your brand with the leading branding company in Bengaluru. We design premium identity systems for tech startups and enterprises across the Silicon Valley."
+  alternates: {
+    canonical: '/services/branding/bengaluru',
+  },
+  title: "Branding Company in Bengaluru",
+  description: "Elevate your brand with the leading branding company in Bengaluru. We design premium identity systems for tech startups and enterprises across the city."
 };
 
 const tableOfContents = [

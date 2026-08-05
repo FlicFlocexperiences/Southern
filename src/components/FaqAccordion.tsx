@@ -13,6 +13,23 @@ export function FaqAccordion({ faqs }: FaqAccordionProps) {
 
   return (
     <div className="w-full mt-10 mb-2">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+              },
+            })),
+          }),
+        }}
+      />
       <h3 id="faq" className="text-[26px] md:text-[32px] font-bold text-[#432d1c] tracking-tight mb-6 font-sans scroll-mt-28">
         Frequently Asked Questions
       </h3>

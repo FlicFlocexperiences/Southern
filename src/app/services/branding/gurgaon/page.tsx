@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Branding Company in Gurgaon | Southern Edge Marketing",
-  description: "Elevate your market presence with the leading branding company in Gurgaon. We craft elite brand identity systems for Cyber City tech giants and Golf Course Road firms."
+  alternates: {
+    canonical: '/services/branding/gurgaon',
+  },
+  title: "Branding Company in Gurgaon",
+  description: "Elevate your presence with the leading branding company in Gurgaon. We craft elite brand identity systems for Cyber City tech giants & Golf Course Road."
 };
 
 const tableOfContents = [

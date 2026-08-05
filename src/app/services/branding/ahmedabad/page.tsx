@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Premium Branding Company in Ahmedabad | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/branding/ahmedabad',
+  },
+  title: "Premium Branding Company in Ahmedabad",
   description: "Scale your business with the premier branding company in Ahmedabad. We design elite corporate identities for Gujarat's industrial hubs and GIFT City enterprises."
 };
 

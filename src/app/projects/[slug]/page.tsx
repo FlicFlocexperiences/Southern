@@ -167,7 +167,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const project = getProjectBySlug(slug);
   if (!project) return {};
   return {
-    title: `${project.title} | Southern Edge Marketing`,
+    alternates: { canonical: `/projects/${slug}` },
+    title: `${project.title}`,
     description: project.description || `${project.title} case study by Southern Edge Marketing.`,
   };
 }

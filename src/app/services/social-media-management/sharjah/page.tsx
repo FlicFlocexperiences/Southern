@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Social Media Agency in Sharjah | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/social-media-management/sharjah',
+  },
+  title: "Social Media Agency in Sharjah",
   description: "Elevate your brand in Sharjah. Our expert social media management strategies build highly engaged communities and drive measurable sales for local businesses.",
 };
 

@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Social Media Management Company in Lucknow | Southern Edge Marketing",
-  description: "Dominate the local market with the leading social media management company in Lucknow. We scale IT firms, Chikan exporters, and real estate brands on social channels.",
+  alternates: {
+    canonical: '/services/social-media-management/lucknow',
+  },
+  title: "Social Media Management Company in Lucknow",
+  description: "Dominate with the leading social media management company in Lucknow. We scale IT firms, Chikan exporters, and real estate brands on social channels.",
 };
 
 const tableOfContents = [

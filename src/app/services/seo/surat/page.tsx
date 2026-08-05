@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "SEO Company in Surat | Southern Edge Marketing",
-  description: "Scale your organic search traffic with the premier SEO Company in Surat. We specialize in B2B search strategy, diamond export SEO, and textile supply chain visibility."
+  alternates: {
+    canonical: '/services/seo/surat',
+  },
+  title: "SEO Company in Surat",
+  description: "Scale your organic search traffic with the premier SEO Company in Surat. We specialize in B2B search strategy, diamond export SEO, & textile visibility."
 };
 
 const tableOfContents = [

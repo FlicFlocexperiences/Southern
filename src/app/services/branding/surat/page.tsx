@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Premium Branding Company in Surat | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/branding/surat',
+  },
+  title: "Premium Branding Company in Surat",
   description: "Scale your business with the leading branding company in Surat. We design elite brand identity systems for diamond exporters and textile conglomerates."
 };
 

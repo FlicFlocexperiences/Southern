@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Social Media Agency in Kolkata | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/social-media-management/kolkata',
+  },
+  title: "Social Media Agency in Kolkata",
   description: "Grow your brand in Eastern India with expert social media management in Kolkata. We create culturally resonant campaigns for retail, education, and IT.",
 };
 

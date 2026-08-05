@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Expert App Developers in Sharjah | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/app-development/sharjah',
+  },
+  title: "Expert App Developers in Sharjah",
   description: "Leading app development company in Sharjah. We build intuitive, secure, and highly scalable iOS and Android applications for businesses across the emirate.",
 };
 

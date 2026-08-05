@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Social Media Management Company in Noida | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/social-media-management/noida',
+  },
+  title: "Social Media Management Company in Noida",
   description: "Dominate the local market with the leading social media management company in Noida. We build B2B leads, real estate trust, and high-impact social campaigns.",
 };
 

@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/services/web-development/abu-dhabi',
+  },
   title: "Expert Web Development in Abu Dhabi | Southern Edge",
-  description: "Top-tier web development in Abu Dhabi. We build responsive, high-performing websites to elevate your local business. Partner with expert Abu Dhabi web developers.",
+  description: "Top-tier web development in Abu Dhabi. We build responsive, high-performing websites to elevate your local business. Partner with expert web developers.",
 };
 
 const tableOfContents = [

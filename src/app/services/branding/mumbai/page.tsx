@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Premium Branding Company in Mumbai | Southern Edge Marketing",
-  description: "Scale your brand with the leading branding company in Mumbai. We design elite corporate identity systems for BKC financial firms, fintechs, and luxury developers."
+  alternates: {
+    canonical: '/services/branding/mumbai',
+  },
+  title: "Premium Branding Company in Mumbai",
+  description: "Scale your brand with the leading branding company in Mumbai. We design elite identity systems for BKC financial firms, fintechs, & luxury developers."
 };
 
 const tableOfContents = [

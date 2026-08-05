@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "SEO Company in Sharjah | Premium Search Optimization | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/seo/sharjah',
+  },
+  title: "SEO Company in Sharjah | Premium Search Optimization",
   description: "Accelerate your search visibility with the leading SEO company in Sharjah. We deliver bilingual search engine optimization for manufacturing hubs & free zones."
 };
 

@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "SEO Company in Pune | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/seo/pune',
+  },
+  title: "SEO Company in Pune",
   description: "Scale your organic presence with the premier SEO company in Pune. We deliver technical search engine optimization for IT hubs and manufacturing enterprises."
 };
 

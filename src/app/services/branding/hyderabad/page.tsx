@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Premium Branding Company in Hyderabad | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/branding/hyderabad',
+  },
+  title: "Premium Branding Company in Hyderabad",
   description: "Scale your Hyderabad enterprise with premium corporate branding. We build elite identity systems for IT leaders in HITEC City and pharma giants. Partner today."
 };
 

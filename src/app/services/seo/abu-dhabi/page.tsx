@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Premium SEO Company in Abu Dhabi | Southern Edge Marketing",
-  description: "Partner with the leading SEO company in Abu Dhabi to dominate search results. We provide elite, bilingual technical search engine optimization for UAE enterprises."
+  alternates: {
+    canonical: '/services/seo/abu-dhabi',
+  },
+  title: "Premium SEO Company in Abu Dhabi",
+  description: "Partner with the leading SEO company in Abu Dhabi to dominate search results. We provide elite, bilingual technical SEO strategies for UAE enterprises."
 };
 
 const tableOfContents = [

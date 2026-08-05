@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Web Development Company in Delhi | Southern Edge Marketing",
-  description: "Elevate your digital presence with top-tier web development in Delhi. We build fast, scalable, and high-converting custom websites for businesses across the NCR.",
+  alternates: {
+    canonical: '/services/web-development/delhi',
+  },
+  title: "Web Development Company in Delhi",
+  description: "Elevate your digital presence with top-tier web development in Delhi. We build fast, scalable, & high-converting custom websites for businesses in NCR.",
 };
 
 const tableOfContents = [

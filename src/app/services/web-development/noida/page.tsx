@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Premium Web Development Company in Noida | Southern Edge Marketing",
-  description: "Bespoke web development services in Noida. We engineer high-performance, scalable corporate websites, B2B portals, and D2C e-commerce platforms for Noida's enterprises.",
+  alternates: {
+    canonical: '/services/web-development/noida',
+  },
+  title: "Premium Web Development Company in Noida",
+  description: "Bespoke web development services in Noida. We engineer high-performance, scalable corporate websites, B2B portals, and D2C platforms for enterprises.",
 };
 
 const tableOfContents = [

@@ -13,6 +13,9 @@ import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blogs',
+  },
   title: "Digital Marketing & Web Design Blog | Southern Edge",
   description: "Read the Southern Edge digital marketing agency blog. Discover actionable SEO strategy tips, web design insights, and business growth tactics today.",
   openGraph: {
@@ -68,11 +71,15 @@ export default async function BlogsPage() {
         .replace(/&gt;/g, ">")
         .replace(/&quot;/g, '"')
         .replace(/&#039;/g, "'");
+      const trimmedExcerpt = cleanExcerpt.trim();
+      const truncatedExcerpt = trimmedExcerpt.length > 200 
+        ? trimmedExcerpt.substring(0, 200) + "..." 
+        : trimmedExcerpt;
 
       return {
         title: data.title || "Untitled",
         category: data.category || "Article",
-        excerpt: cleanExcerpt.trim(),
+        excerpt: truncatedExcerpt,
         slug: data.slug || doc.id,
         image: data.image || "/photoshoot.jpg", // Default image if missing
         date: data.date || new Date().toISOString().split('T')[0],

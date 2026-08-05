@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Web Development Company in Mumbai | Southern Edge Marketing",
-  description: "Drive digital growth with elite web development in Mumbai. We engineer highly secure, conversion-optimized websites for financial, retail, and corporate sectors.",
+  alternates: {
+    canonical: '/services/web-development/mumbai',
+  },
+  title: "Web Development Company in Mumbai",
+  description: "Drive digital growth with elite web development in Mumbai. We engineer secure, conversion-optimized websites for financial, retail & corporate sectors.",
 };
 
 const tableOfContents = [

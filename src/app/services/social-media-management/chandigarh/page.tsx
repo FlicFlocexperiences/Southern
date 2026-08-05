@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Social Media Management Company in Chandigarh | Southern Edge Marketing",
-  description: "Scale your Tricity business with premium social media management in Chandigarh. We build authoritative social campaigns for IT firms, B2B brands, and retail giants."
+  alternates: {
+    canonical: '/services/social-media-management/chandigarh',
+  },
+  title: "Social Media Management Company in Chandigarh",
+  description: "Scale your Tricity business with premium social media management in Chandigarh. We build authoritative social campaigns for IT firms, B2B, & retail."
 };
 
 const tableOfContents = [

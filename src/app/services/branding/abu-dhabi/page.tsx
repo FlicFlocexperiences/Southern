@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Branding Company in Abu Dhabi | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/branding/abu-dhabi',
+  },
+  title: "Branding Company in Abu Dhabi",
   description: "Elevate your enterprise with the premier branding company in Abu Dhabi. We design prestigious, bilingual brand systems for ADGM, Hub71, and global UAE brands."
 };
 

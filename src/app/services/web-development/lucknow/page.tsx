@@ -5,8 +5,11 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "Premium Web Development Company in Lucknow | Southern Edge Marketing",
-  description: "Bespoke web development services in Lucknow. We engineer high-performance B2B portals, custom D2C e-commerce, and enterprise web solutions for Lucknow's growth brands.",
+  alternates: {
+    canonical: '/services/web-development/lucknow',
+  },
+  title: "Premium Web Development Company in Lucknow",
+  description: "Bespoke web development services in Lucknow. We engineer high-performance B2B portals, custom D2C e-commerce, & enterprise web solutions for growth.",
 };
 
 const tableOfContents = [

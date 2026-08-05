@@ -5,7 +5,10 @@ import { ServiceLayout } from '@/components/ServiceLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: "App Development Company in Bengaluru | Southern Edge Marketing",
+  alternates: {
+    canonical: '/services/app-development/bengaluru',
+  },
+  title: "App Development Company in Bengaluru",
   description: "Launch disruptive mobile applications with Bengaluru's premier app development company. We specialize in native and React Native solutions for startups.",
 };
 
