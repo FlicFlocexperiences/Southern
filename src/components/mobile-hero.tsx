@@ -20,7 +20,7 @@ export function MobileHero() {
       <div className="flex-1 flex flex-col items-center justify-center w-full z-10">
         {/* Hero Text */}
         <div className="flex flex-col items-center text-center px-4 w-full max-w-sm mx-auto text-black">
-          <h1 className="font-semibold text-base tracking-wide mb-3 text-black">TOP DIGITAL MARKETING AGENCY IN DELHI</h1>
+          <h2 className="font-semibold text-base tracking-wide mb-3 text-black">TOP DIGITAL MARKETING AGENCY IN DELHI</h2>
           <p className="font-extrabold text-[42px] leading-[1.1] tracking-tight text-black">
             <span className="text-[#de5e18] block mb-1">WE TURN</span>
             <span className="block">ATTENTION</span>

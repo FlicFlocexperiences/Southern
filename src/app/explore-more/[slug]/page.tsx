@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!article) return {};
   return {
     alternates: { canonical: `/explore-more/${slug}` },
-    title: `${article.title}`,
+    title: { absolute: `${article.title} | SEM` },
     description: article.excerpt,
   };
 }

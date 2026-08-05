@@ -17,10 +17,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/about',
   },
-  title: "About Southern Edge Marketing | Our Story & Approach",
+  title: "About Us",
   description: "We're more than just digital. Meet the team behind Southern Edge Marketing and see how we build brands that grow, not just campaigns that run.",
   openGraph: {
-    title: "About Southern Edge Marketing | Our Story & Approach",
+    title: "About Us | Southern Edge Marketing",
     description: "We're more than just digital. Meet the team behind Southern Edge Marketing and see how we build brands that grow, not just campaigns that run.",
   },
 };

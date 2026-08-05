@@ -13,10 +13,10 @@ export const MobileServicesPage = () => {
         
 
         {/* Main Heading */}
-        <h1 className="text-[38px] leading-[1.1] font-bold text-black tracking-tight mt-2">
+        <h2 className="text-[38px] leading-[1.1] font-bold text-black tracking-tight mt-2">
           Top Full Service<br />
           <span className="text-[#de5e18]">Digital Marketing Agency.</span>
-        </h1>
+        </h2>
 
         {/* Paragraph & CTA Button */}
         <div className="flex flex-col items-start w-full gap-6">

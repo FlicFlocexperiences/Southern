@@ -23,12 +23,12 @@ const playball = Playball({
 export const metadata: Metadata = {
   metadataBase: new URL("https://southernedgemarketing.com"),
   title: {
-    default: "Southern Edge Marketing | Digital Marketing Agency in Delhi, India",
+    default: "Digital Marketing Agency Delhi | Southern Edge",
     template: "%s | Southern Edge Marketing",
   },
   description: "Southern Edge Marketing drives business with strategy, design, development, and marketing. Trusted by 100+ businesses across India. 5.0 rated.",
   openGraph: {
-    title: "Southern Edge Marketing | Digital Marketing Agency in Delhi, India",
+    title: "Digital Marketing Agency Delhi | Southern Edge",
     description: "Southern Edge Marketing drives business with strategy, design, development, and marketing. Trusted by 100+ businesses across India. 5.0 rated.",
     url: "https://southernedgemarketing.com",
     siteName: "Southern Edge Marketing",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Southern Edge Marketing",
+    title: "Digital Marketing Agency Delhi | Southern Edge",
     description: "Digital Marketing Agency in Delhi, India",
     images: ["/LOGO_Final.svg"],
   },
