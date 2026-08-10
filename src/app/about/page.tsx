@@ -25,6 +25,25 @@ export const metadata: Metadata = {
   },
 };
 
+const aboutFaqs = [
+  {
+    question: "What is the story behind Southern?",
+    answer: "Southern was founded with a mission to bridge the gap between stunning design and data-driven performance. We started as a small passionate team and have grown into a full-service agency, committed to helping brands achieve measurable growth."
+  },
+  {
+    question: "Where is your team based?",
+    answer: "Our core team is based in Delhi NCR, but we operate with a global mindset. We collaborate with talent across different regions and work with clients worldwide, providing high-quality digital solutions without geographical limitations."
+  },
+  {
+    question: "What are your core values as an agency?",
+    answer: "Transparency, innovation, and measurable results. We believe in being completely honest with our clients, constantly pushing the boundaries of creativity and technology, and ensuring everything we do directly impacts the bottom line."
+  },
+  {
+    question: "Are you currently hiring new talent?",
+    answer: "We are always on the lookout for exceptional talent—designers, developers, and marketers who share our vision. Feel free to send us your portfolio if you think you'd be a great fit for our team."
+  }
+];
+
 export default function About() {
   return (
     <div className="w-full bg-[#f2decc] min-h-screen flex flex-col">
@@ -53,11 +72,11 @@ export default function About() {
       </div>
 
       <div className="hidden md:block" style={{ zoom: 0.8 }}>
-        <DesktopFaq />
+        <DesktopFaq faqs={aboutFaqs} />
         <DesktopFooter />
       </div>
       <div className="md:hidden">
-        <MobileFaq />
+        <MobileFaq faqs={aboutFaqs} />
         <MobileFooter />
       </div>
     </div>

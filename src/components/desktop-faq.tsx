@@ -18,10 +18,19 @@ const ArrowDownIcon = ({ isOpen }: { isOpen: boolean }) => (
   </svg>
 );
 
-export const DesktopFaq = () => {
+export interface FaqItemType {
+  question: string;
+  answer: string;
+}
+
+interface DesktopFaqProps {
+  faqs?: FaqItemType[];
+}
+
+export const DesktopFaq = ({ faqs: customFaqs }: DesktopFaqProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const faqs = [
+  const defaultFaqs = [
     {
       question: "Why should I hire a digital marketing agency in Delhi?",
       answer: "Hiring a local digital marketing agency in Delhi gives you an edge. We understand the local market dynamics and consumer behavior. Our team creates customized strategies that connect your brand with the right audience, helping you scale revenue faster than trying to manage everything in house."
@@ -39,6 +48,8 @@ export const DesktopFaq = () => {
       answer: "Yes, we do. While our SEO services in Delhi build your long term organic presence, our targeted PPC services in Delhi provide immediate visibility. Combining both approaches ensures you capture both active buyers right now and future customers over time for maximum return on investment."
     }
   ];
+
+  const faqs = customFaqs && customFaqs.length > 0 ? customFaqs : defaultFaqs;
 
   const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);

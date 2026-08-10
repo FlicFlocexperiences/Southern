@@ -45,8 +45,17 @@ const FaqItem = ({ question, answer }: { question: string, answer: string }) => 
   );
 };
 
-export const MobileFaq = () => {
-  const faqs = [
+export interface FaqItemType {
+  question: string;
+  answer: string;
+}
+
+interface MobileFaqProps {
+  faqs?: FaqItemType[];
+}
+
+export const MobileFaq = ({ faqs: customFaqs }: MobileFaqProps) => {
+  const defaultFaqs = [
     {
       question: "Why should I hire a digital marketing agency in Delhi?",
       answer: "Hiring a local digital marketing agency in Delhi gives you an edge. We understand the local market dynamics and consumer behavior. Our team creates customized strategies that connect your brand with the right audience, helping you scale revenue faster than trying to manage everything in house."
@@ -64,6 +73,8 @@ export const MobileFaq = () => {
       answer: "Yes, we do. While our SEO services in Delhi build your long term organic presence, our targeted PPC services in Delhi provide immediate visibility. Combining both approaches ensures you capture both active buyers right now and future customers over time for maximum return on investment."
     }
   ];
+
+  const faqs = customFaqs && customFaqs.length > 0 ? customFaqs : defaultFaqs;
 
   return (
     <div className="w-full bg-[#f2decc] px-5 pt-16 pb-16 relative flex flex-col items-center">
