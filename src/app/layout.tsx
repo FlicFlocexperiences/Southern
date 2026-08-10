@@ -98,6 +98,19 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col">
+        {/* Google Analytics */}
+        <Script 
+          strategy="afterInteractive" 
+          src="https://www.googletagmanager.com/gtag/js?id=G-NS1V6RD7RJ" 
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-NS1V6RD7RJ');
+          `}
+        </Script>
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
