@@ -73,7 +73,7 @@ export default function LeadsPage() {
                     No leads found.
                 </div>
             ) : (
-                <div className="overflow-x-auto rounded-xl border border-white/10 bg-black">
+                <div className="overflow-x-auto rounded-xl border border-white/10 bg-black [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                     <table className="w-full text-left text-sm whitespace-nowrap">
                         <thead className="bg-white/5 text-zinc-300">
                             <tr>
