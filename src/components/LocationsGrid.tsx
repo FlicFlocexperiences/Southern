@@ -9,6 +9,7 @@ interface LocationsGridProps {
 
 const locations = [
   { name: 'Abu Dhabi', slug: 'abu-dhabi', country: 'UAE' },
+  { name: 'Dubai', slug: 'dubai', country: 'UAE' },
   { name: 'Sharjah', slug: 'sharjah', country: 'UAE' },
   { name: 'New Delhi', slug: 'delhi', country: 'India' },
   { name: 'Gurgaon', slug: 'gurgaon', country: 'India' },
