@@ -43,7 +43,7 @@ export default function LeadsPage() {
     }, []);
 
     return (
-        <div className="max-w-6xl mx-auto mt-8">
+        <div className="w-full mt-8">
             <div className="flex justify-between items-end mb-8 border-b border-white/10 pb-4">
                 <div>
                     <h2 className="text-3xl font-light tracking-tight">Leads Database</h2>
