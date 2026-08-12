@@ -5,7 +5,7 @@ import { blogs } from '@/data/blogs';
 import { articles } from '@/data/articles';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://southernedgemarketing.com';
+  const baseUrl = 'https://www.southernedgemarketing.com';
 
   const staticRoutes = [
     '',

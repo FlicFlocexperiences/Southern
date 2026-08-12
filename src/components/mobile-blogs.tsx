@@ -69,12 +69,18 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
           href={`/blogs/${featuredBlog.slug}`}
           className="group flex flex-col w-full text-left cursor-pointer bg-white rounded-[20px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-black/5"
         >
-          <div className="w-full aspect-[16/11] relative">
+          <div className="w-full aspect-[16/11] relative bg-[#f2decc]/50">
+            <Image 
+              src={featuredBlog.image} 
+              alt="" 
+              fill
+              className="object-cover blur-xl opacity-60 scale-110" 
+            />
             <Image 
               src={featuredBlog.image} 
               alt={featuredBlog.title} 
               fill
-              className="object-cover" 
+              className="object-contain drop-shadow-lg" 
             />
             {/* 3 min read pill */}
             <div className="absolute top-4 left-4 bg-white px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
@@ -172,12 +178,18 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
               href={`/blogs/${blog.slug}`}
               className="group flex flex-col w-full text-left cursor-pointer bg-white rounded-[20px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-black/5"
             >
-              <div className="w-full aspect-[16/11] relative">
+              <div className="w-full aspect-[16/11] relative bg-[#f2decc]/50">
+                <Image 
+                  src={blog.image} 
+                  alt="" 
+                  fill
+                  className="object-cover blur-xl opacity-60 scale-110" 
+                />
                 <Image 
                   src={blog.image} 
                   alt={blog.title} 
                   fill
-                  className="object-cover" 
+                  className="object-contain drop-shadow-lg" 
                 />
                 <div className="absolute top-4 left-4 bg-white px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-600">

@@ -24,8 +24,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const dynamic = 'force-dynamic'; // Ensures this page is server-rendered dynamically
-export const revalidate = 0; // Disable caching
+export const revalidate = 3600; // Cache for 1 hour
 const stripHtml = (html: string) => html ? html.replace(/<[^>]+>/g, '') : '';
 
 function SeoContent() {

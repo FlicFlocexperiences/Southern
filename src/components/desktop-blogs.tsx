@@ -79,12 +79,18 @@ Explore articles on UI/UX design, modern web development, branding, performance,
             className="group flex flex-col w-full max-w-[580px] text-left cursor-pointer"
           >
             {/* Featured Image with rounded corners and scale animation */}
-            <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[22px] overflow-hidden shadow-sm group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)] transition-all duration-500 relative z-20">
+            <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[22px] overflow-hidden shadow-sm group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)] transition-all duration-500 relative z-20 bg-[#f2decc]">
+              <Image 
+                src={featuredBlog.image} 
+                alt=""
+                fill 
+                className="object-cover blur-2xl opacity-60 scale-110" 
+              />
               <Image 
                 src={featuredBlog.image} 
                 alt={featuredBlog.title}
                 fill 
-                className="object-cover group-hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)]" 
+                className="object-contain group-hover:scale-[1.02] transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] drop-shadow-2xl" 
               />
             </div>
             {/* Featured Title */}
@@ -159,12 +165,18 @@ Explore articles on UI/UX design, modern web development, branding, performance,
               className="group flex flex-col w-full text-left cursor-pointer"
             >
               {/* Thumbnail Image */}
-              <div className="w-full aspect-[16/10] rounded-[20px] overflow-hidden shadow-sm transition-all duration-500 group-hover:shadow-[0_12px_36px_rgba(0,0,0,0.06)] relative z-10">
+              <div className="w-full aspect-[16/10] rounded-[20px] overflow-hidden shadow-sm transition-all duration-500 group-hover:shadow-[0_12px_36px_rgba(0,0,0,0.06)] relative z-10 bg-[#f2decc]">
+                <Image 
+                  src={blog.image} 
+                  alt="" 
+                  fill
+                  className="object-cover blur-xl opacity-60 scale-110" 
+                />
                 <Image 
                   src={blog.image} 
                   alt={blog.title} 
                   fill
-                  className="object-cover group-hover:scale-[1.03] transition-transform duration-500" 
+                  className="object-contain group-hover:scale-[1.02] transition-transform duration-500 drop-shadow-xl" 
                 />
               </div>
 
