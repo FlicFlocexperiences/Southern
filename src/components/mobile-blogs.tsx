@@ -2,7 +2,6 @@
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { BlogItem } from "./desktop-blogs";
 
 export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
@@ -69,18 +68,11 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
           href={`/blogs/${featuredBlog.slug}`}
           className="group flex flex-col w-full text-left cursor-pointer bg-white rounded-[20px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-black/5"
         >
-          <div className="w-full aspect-[16/11] relative bg-[#f2decc]/50">
-            <Image 
-              src={featuredBlog.image} 
-              alt="" 
-              fill
-              className="object-cover blur-xl opacity-60 scale-110" 
-            />
-            <Image 
+          <div className="w-full relative flex bg-transparent">
+            <img 
               src={featuredBlog.image} 
               alt={featuredBlog.title} 
-              fill
-              className="object-contain drop-shadow-lg" 
+              className="w-full h-auto block drop-shadow-lg" 
             />
             {/* 3 min read pill */}
             <div className="absolute top-4 left-4 bg-white px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
@@ -178,18 +170,11 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
               href={`/blogs/${blog.slug}`}
               className="group flex flex-col w-full text-left cursor-pointer bg-white rounded-[20px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-black/5"
             >
-              <div className="w-full aspect-[16/11] relative bg-[#f2decc]/50">
-                <Image 
-                  src={blog.image} 
-                  alt="" 
-                  fill
-                  className="object-cover blur-xl opacity-60 scale-110" 
-                />
-                <Image 
+              <div className="w-full relative flex bg-transparent">
+                <img 
                   src={blog.image} 
                   alt={blog.title} 
-                  fill
-                  className="object-contain drop-shadow-lg" 
+                  className="w-full h-auto block drop-shadow-lg" 
                 />
                 <div className="absolute top-4 left-4 bg-white px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-600">
@@ -237,7 +222,7 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
               <button
                 onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
                 disabled={currentPage === 1}
-                className="px-4 py-2 rounded-full border border-black/10 hover:border-black/30 disabled:opacity-50 disabled:hover:border-black/10 transition-all font-medium text-[12px]"
+                className="px-4 py-2 rounded-full border border-black/10 hover:border-black/30 disabled:opacity-50 disabled:hover:border-black/10 transition-all font-medium text-[12px] text-black"
               >
                 Previous
               </button>
@@ -247,7 +232,7 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
               <button
                 onClick={() => setCurrentPage(p => Math.min(Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE), p + 1))}
                 disabled={currentPage === Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE)}
-                className="px-4 py-2 rounded-full border border-black/10 hover:border-black/30 disabled:opacity-50 disabled:hover:border-black/10 transition-all font-medium text-[12px]"
+                className="px-4 py-2 rounded-full border border-black/10 hover:border-black/30 disabled:opacity-50 disabled:hover:border-black/10 transition-all font-medium text-[12px] text-black"
               >
                 Next
               </button>

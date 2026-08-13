@@ -29,7 +29,7 @@ const stripHtml = (html: string) => html ? html.replace(/<[^>]+>/g, '') : '';
 
 function SeoContent() {
   return (
-    <section className="px-6 py-16 md:py-24 max-w-7xl mx-auto text-[#1a1a1a]">
+    <section className="px-6 py-12 md:pt-12 md:pb-24 max-w-7xl mx-auto text-[#1a1a1a]">
       <h1 className="text-3xl md:text-5xl font-bold mb-6">Expert Digital Marketing Blog</h1>
       <p className="mb-8 md:text-lg leading-relaxed max-w-4xl">
         Welcome to the Southern Edge digital marketing agency blog. Our industry experts share proven SEO strategy tips, modern web design insights, and effective digital marketing tactics. We focus on giving you the knowledge needed to stay competitive. Whether you want custom website design advice or local SEO best practices, our detailed articles provide real value. Learn how to optimize your online presence and reach your target audience more effectively.

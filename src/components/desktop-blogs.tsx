@@ -2,7 +2,6 @@
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 export interface BlogItem {
   title: string;
@@ -55,7 +54,7 @@ export const DesktopBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
   }, [remainingBlogs, activeFilter, sortBy]);
 
   return (
-    <section className="w-full bg-[#f2decc] pb-32 pt-0 px-8 lg:px-[90px] flex flex-col relative z-10 overflow-hidden">
+    <section className="w-full bg-[#f2decc] pb-12 pt-0 px-8 lg:px-[90px] flex flex-col relative z-10 overflow-hidden">
       
       {/* Hero Section: Two-Column Layout */}
       <div className="flex flex-col lg:flex-row w-full gap-12 lg:gap-16 pt-32 lg:pt-36 mb-16 max-w-[1280px] mx-auto items-start">
@@ -79,18 +78,11 @@ Explore articles on UI/UX design, modern web development, branding, performance,
             className="group flex flex-col w-full max-w-[580px] text-left cursor-pointer"
           >
             {/* Featured Image with rounded corners and scale animation */}
-            <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[22px] overflow-hidden shadow-sm group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)] transition-all duration-500 relative z-20 bg-[#f2decc]">
-              <Image 
-                src={featuredBlog.image} 
-                alt=""
-                fill 
-                className="object-cover blur-2xl opacity-60 scale-110" 
-              />
-              <Image 
+            <div className="w-full rounded-[24px] md:rounded-[22px] overflow-hidden shadow-sm group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)] transition-all duration-500 relative z-20 flex bg-transparent">
+              <img 
                 src={featuredBlog.image} 
                 alt={featuredBlog.title}
-                fill 
-                className="object-contain group-hover:scale-[1.02] transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] drop-shadow-2xl" 
+                className="w-full h-auto block group-hover:scale-[1.02] transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] drop-shadow-2xl" 
               />
             </div>
             {/* Featured Title */}
@@ -153,7 +145,7 @@ Explore articles on UI/UX design, modern web development, branding, performance,
       </div>
 
       {/* Blogs Grid */}
-      <div className="w-full max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 mb-16">
+      <div className="w-full max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 mb-8">
         {filteredAndSortedBlogs.length > 0 ? (
           <>
             {filteredAndSortedBlogs
@@ -165,18 +157,11 @@ Explore articles on UI/UX design, modern web development, branding, performance,
               className="group flex flex-col w-full text-left cursor-pointer"
             >
               {/* Thumbnail Image */}
-              <div className="w-full aspect-[16/10] rounded-[20px] overflow-hidden shadow-sm transition-all duration-500 group-hover:shadow-[0_12px_36px_rgba(0,0,0,0.06)] relative z-10 bg-[#f2decc]">
-                <Image 
-                  src={blog.image} 
-                  alt="" 
-                  fill
-                  className="object-cover blur-xl opacity-60 scale-110" 
-                />
-                <Image 
+              <div className="w-full rounded-[20px] overflow-hidden shadow-sm transition-all duration-500 group-hover:shadow-[0_12px_36px_rgba(0,0,0,0.06)] relative z-10 flex bg-transparent">
+                <img 
                   src={blog.image} 
                   alt={blog.title} 
-                  fill
-                  className="object-contain group-hover:scale-[1.02] transition-transform duration-500 drop-shadow-xl" 
+                  className="w-full h-auto block group-hover:scale-[1.02] transition-transform duration-500" 
                 />
               </div>
 
@@ -206,7 +191,7 @@ Explore articles on UI/UX design, modern web development, branding, performance,
               <button
                 onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
                 disabled={currentPage === 1}
-                className="px-6 py-2 rounded-full border border-black/10 hover:border-black/30 disabled:opacity-50 disabled:hover:border-black/10 transition-all font-medium text-[14px]"
+                className="px-6 py-2 rounded-full border border-black/10 hover:border-black/30 disabled:opacity-50 disabled:hover:border-black/10 transition-all font-medium text-[14px] text-black"
               >
                 Previous
               </button>
@@ -216,7 +201,7 @@ Explore articles on UI/UX design, modern web development, branding, performance,
               <button
                 onClick={() => setCurrentPage(p => Math.min(Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE), p + 1))}
                 disabled={currentPage === Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE)}
-                className="px-6 py-2 rounded-full border border-black/10 hover:border-black/30 disabled:opacity-50 disabled:hover:border-black/10 transition-all font-medium text-[14px]"
+                className="px-6 py-2 rounded-full border border-black/10 hover:border-black/30 disabled:opacity-50 disabled:hover:border-black/10 transition-all font-medium text-[14px] text-black"
               >
                 Next
               </button>
