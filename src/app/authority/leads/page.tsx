@@ -13,6 +13,12 @@ interface Lead {
     projectDetails?: string;
     createdAt?: string;
     status?: string; 
+    history?: Array<{
+        id: string;
+        type: 'Follow-up';
+        text: string;
+        createdAt: string;
+    }>;
 }
 
 export default function LeadsPage() {
@@ -22,6 +28,12 @@ export default function LeadsPage() {
     const [openDropdownId, setOpenDropdownId] = useState<string | null>(null);
     const [openStatusDropdownId, setOpenStatusDropdownId] = useState<string | null>(null);
     const [viewLead, setViewLead] = useState<Lead | null>(null);
+    
+    // Modal State
+    const [noteModalOpen, setNoteModalOpen] = useState(false);
+    const [noteTarget, setNoteTarget] = useState<{ id: string, type: 'Follow-up' } | null>(null);
+    const [noteText, setNoteText] = useState('');
+    const [isSavingNote, setIsSavingNote] = useState(false);
 
     // Filtering & Pagination State
     const [searchTerm, setSearchTerm] = useState('');
@@ -93,6 +105,55 @@ export default function LeadsPage() {
     const updateLeadStatus = (id: string, newStatus: string) => {
         setLeads(leads.map(lead => lead.id === id ? { ...lead, status: newStatus } : lead));
         setOpenStatusDropdownId(null);
+    };
+
+    const handleSaveNote = async () => {
+        if (!noteTarget || !noteText.trim()) return;
+        setIsSavingNote(true);
+        try {
+            const payload = {
+                id: crypto.randomUUID(),
+                type: noteTarget.type,
+                text: noteText.trim()
+            };
+            
+            // If it's a real lead from DB, save it there
+            if (!noteTarget.id.startsWith('dummy-')) {
+                const res = await authFetch(`/api/leads/${noteTarget.id}`, {
+                    method: 'PATCH',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ action: 'ADD_HISTORY', payload })
+                });
+                
+                if (!res.ok) throw new Error('Failed to save note to database');
+            }
+            
+            const newHistoryItem = { ...payload, createdAt: new Date().toISOString() };
+            
+            // Update local leads list
+            setLeads(leads.map(lead => {
+                if (lead.id === noteTarget.id) {
+                    return { ...lead, history: [...(lead.history || []), newHistoryItem] };
+                }
+                return lead;
+            }));
+            
+            // If currently viewing this lead, update the details view too
+            if (viewLead?.id === noteTarget.id) {
+                setViewLead({
+                    ...viewLead,
+                    history: [...(viewLead.history || []), newHistoryItem]
+                });
+            }
+            
+            setNoteModalOpen(false);
+            setNoteText('');
+        } catch (err) {
+            console.error(err);
+            alert('Failed to save note');
+        } finally {
+            setIsSavingNote(false);
+        }
     };
 
     const getStatusColor = (status: string) => {
@@ -450,18 +511,11 @@ export default function LeadsPage() {
                                                                 Mark as Contacted
                                                             </button>
                                                             <button 
-                                                                onClick={() => { alert('Add Follow-up functionality coming soon!'); setOpenDropdownId(null); }}
+                                                                onClick={() => { setNoteTarget({ id: lead.id, type: 'Follow-up' }); setNoteModalOpen(true); setOpenDropdownId(null); }}
                                                                 className="w-full text-left px-4 py-2 text-sm text-[#4A332A] hover:bg-[#FAF7F2] flex items-center gap-2"
                                                             >
                                                                 <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                                                                 Add Follow-up
-                                                            </button>
-                                                            <button 
-                                                                onClick={() => { alert('Add Note functionality coming soon!'); setOpenDropdownId(null); }}
-                                                                className="w-full text-left px-4 py-2 text-sm text-[#4A332A] hover:bg-[#FAF7F2] flex items-center gap-2"
-                                                            >
-                                                                <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-                                                                Add Note
                                                             </button>
                                                             <button 
                                                                 onClick={() => toggleStatusDropdown(lead.id)}
@@ -579,43 +633,6 @@ export default function LeadsPage() {
                                 </div>
                             </div>
                             
-                            {/* Contact Info Card */}
-                            <div className="bg-white border border-[#E8D8C8] rounded-xl p-5 shadow-sm space-y-4">
-                                <h4 className="text-xs font-bold text-[#4A332A]/50 uppercase tracking-wider">Contact Information</h4>
-                                
-                                <div className="flex items-center gap-3">
-                                    <div className="w-8 h-8 rounded-full bg-[#F6E9DE] text-[#4A332A]/70 flex items-center justify-center shrink-0">
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                                    </div>
-                                    <div className="flex-1 min-w-0">
-                                        <p className="text-sm font-medium text-[#4A332A] truncate">{viewLead.email || 'No email provided'}</p>
-                                    </div>
-                                </div>
-                                
-                                <div className="flex items-center gap-3">
-                                    <div className="w-8 h-8 rounded-full bg-[#F6E9DE] text-[#4A332A]/70 flex items-center justify-center shrink-0">
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-                                    </div>
-                                    <div className="flex-1 min-w-0">
-                                        <p className="text-sm font-medium text-[#4A332A]">
-                                            {viewLead.phone ? `${viewLead.code ? viewLead.code + ' ' : ''}${viewLead.phone}` : 'No phone provided'}
-                                        </p>
-                                    </div>
-                                </div>
-                                
-                                {viewLead.phone && (
-                                    <a 
-                                        href={`https://wa.me/${(viewLead.code || '').replace(/[^0-9]/g, '') + (viewLead.phone || '').replace(/[^0-9]/g, '')}`}
-                                        target="_blank" 
-                                        rel="noopener noreferrer"
-                                        className="mt-2 flex items-center justify-center gap-2 w-full px-4 py-2 bg-green-50 text-green-700 border border-green-200 hover:bg-green-100 rounded-lg text-sm font-bold transition-colors"
-                                    >
-                                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
-                                        Message on WhatsApp
-                                    </a>
-                                )}
-                            </div>
-                            
                             {/* Project Requirements */}
                             <div className="bg-white border border-[#E8D8C8] rounded-xl p-5 shadow-sm space-y-3">
                                 <div className="flex items-center justify-between mb-1">
@@ -640,6 +657,51 @@ export default function LeadsPage() {
                             </button>
                             <button className="flex-1 px-4 py-2.5 bg-[#4A332A] text-white rounded-lg text-sm font-bold hover:bg-[#3A2821] shadow-sm transition-colors">
                                 Edit Lead
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
+            {/* Add Note Modal */}
+            {noteModalOpen && (
+                <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 sm:p-6">
+                    <div 
+                        className="absolute inset-0 bg-[#4A332A]/40 backdrop-blur-sm transition-opacity"
+                        onClick={() => !isSavingNote && setNoteModalOpen(false)}
+                    ></div>
+                    <div className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+                        <div className="px-6 py-4 border-b border-[#E8D8C8]">
+                            <h3 className="text-lg font-bold text-[#4A332A]">Add {noteTarget?.type}</h3>
+                        </div>
+                        <div className="p-6">
+                            <textarea
+                                value={noteText}
+                                onChange={(e) => setNoteText(e.target.value)}
+                                placeholder={`Type your ${noteTarget?.type?.toLowerCase()} here...`}
+                                className="w-full h-32 p-3 border border-[#E8D8C8] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#4A332A]/20 focus:border-[#4A332A] resize-none text-[#4A332A] text-sm bg-white"
+                                disabled={isSavingNote}
+                                autoFocus
+                            />
+                        </div>
+                        <div className="px-6 py-4 bg-[#FAF7F2] border-t border-[#E8D8C8] flex justify-end gap-3">
+                            <button 
+                                onClick={() => setNoteModalOpen(false)}
+                                disabled={isSavingNote}
+                                className="px-4 py-2 border border-[#E8D8C8] rounded-lg text-sm font-bold text-[#4A332A] hover:bg-white transition-colors disabled:opacity-50"
+                            >
+                                Cancel
+                            </button>
+                            <button 
+                                onClick={handleSaveNote}
+                                disabled={!noteText.trim() || isSavingNote}
+                                className="px-4 py-2 bg-[#4A332A] text-white rounded-lg text-sm font-bold hover:bg-[#3A2821] shadow-sm transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                            >
+                                {isSavingNote ? (
+                                    <>
+                                        <svg className="animate-spin h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                                        Saving...
+                                    </>
+                                ) : 'Save'}
                             </button>
                         </div>
                     </div>

@@ -285,13 +285,24 @@ export const ContactUsWidget = () => {
             </a>
           </div>
 
-          {/* Phone Link */}
-          <p className="text-[14px] text-black/50 mt-5">
-            or call us at 
-            <a href="tel:+918700901769" className="font-bold text-black hover:text-[#de5e18] transition-colors ml-1.5 whitespace-nowrap">
-              +91 87009 01769
-            </a>
-          </p>
+          {/* QR Code and Phone Link */}
+          <div className="flex flex-col items-center gap-3 mt-6">
+            <div className="p-2 bg-white border border-black/5 rounded-[16px] shadow-[inset_0_2px_8px_rgba(0,0,0,0.04)] inline-block hover:shadow-[inset_0_2px_12px_rgba(0,0,0,0.08)] transition-all">
+              <img 
+                src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=tel:+918700901769&margin=2" 
+                alt="Scan to call" 
+                width={90} 
+                height={90}
+                className="rounded-xl mix-blend-multiply opacity-80 hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <p className="text-[14px] text-black/50">
+              Scan to call, or dial 
+              <a href="tel:+918700901769" className="font-bold text-black hover:text-[#de5e18] transition-colors ml-1.5 whitespace-nowrap">
+                +91 87009 01769
+              </a>
+            </p>
+          </div>
         </div>
 
         {/* Social Icons at the bottom */}
