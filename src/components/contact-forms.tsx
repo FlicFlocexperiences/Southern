@@ -108,19 +108,24 @@ export const ContactUsWidget = () => {
           <div className="flex flex-col gap-1.5">
             <label className="text-[14px] md:text-[15px] font-semibold text-black/60 tracking-tight">Phone number</label>
             <div className="flex gap-3">
-              <div className="w-[95px] shrink-0 relative">
-                <input 
+              <div className="w-[130px] shrink-0 relative">
+                <select 
                   name="code"
-                  list="country-codes-widget" 
-                  className="w-full bg-white rounded-xl px-3 py-3.5 outline-none text-[16px] text-black border border-black/10 focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] transition-all placeholder:text-black/35 cursor-pointer text-center" 
-                  placeholder="+Code"
+                  className="w-full bg-white rounded-xl px-2 py-3.5 outline-none text-[20px] text-black border border-black/10 focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] transition-all cursor-pointer appearance-none text-center" 
+                  defaultValue="+971"
                   required
-                />
-                <datalist id="country-codes-widget">
+                >
                   {countryCodes.map((c, i) => (
-                    <option key={`w-${i}`} value={`${c.code}`}>{c.flag} {c.country}</option>
+                    <option key={`w-${i}`} value={`${c.code}`}>
+                      {c.flag} {c.code}
+                    </option>
                   ))}
-                </datalist>
+                </select>
+                <div className="absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none text-black/35">
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </div>
               </div>
               <PhoneInput 
                 name="phone" 
@@ -220,35 +225,57 @@ export const ContactUsWidget = () => {
       {/* Right Box: Info Callout Container */}
       <div className="w-full md:w-[450px] bg-white border-2 border-dashed border-[#de5e18]/30 rounded-[24px] p-6 md:p-8 flex flex-col justify-between items-center text-center relative min-h-[460px] shrink-0">
         {/* Brand Logo Circle */}
-        <div className="absolute top-6 left-6 w-[48px] h-[48px] md:w-[76px] md:h-[76px] rounded-full border border-black/5 bg-[#ffffff] flex items-center justify-center p-1.5 md:p-2.5 shadow-l">
+        <div className="absolute top-6 right-6 w-[48px] h-[48px] md:w-[76px] md:h-[76px] rounded-full border border-black/5 bg-[#ffffff] flex items-center justify-center p-1.5 md:p-2.5 shadow-l">
           <img src="/LOGO_Final.svg" alt="Southern Edge Marketing" className="max-h-full max-w-full object-contain" />
         </div>
 
         {/* Floating Time Badge */}
-        <div className="absolute top-6 right-6 bg-[#f4f3ef] text-black/60 px-4 py-2 md:px-6 md:py-3 rounded-full text-[14px] md:text-[16px] font-bold tracking-tight">
+        <div className="absolute top-6 left-6 bg-[#f4f3ef] text-black/60 px-4 py-2 md:px-6 md:py-3 rounded-full text-[14px] md:text-[16px] font-bold tracking-tight">
           Approximately 30-min.
         </div>
 
         {/* Center content */}
         <div className="flex-1 flex flex-col justify-center items-center mt-24 w-full">
+
           {/* Moving Client Logos */}
           <div className="w-full relative overflow-hidden mb-8 flex flex-col items-center">
             <p className="text-[11px] font-bold text-black/30 mb-3 uppercase tracking-[2px]">Trusted By</p>
-            <div className="w-full relative overflow-hidden h-[45px] md:h-[55px] opacity-90 transition-all duration-500">
+            <div className="w-full relative overflow-hidden opacity-90 transition-all duration-500 flex flex-col gap-5 py-2">
               {/* Fade edges */}
               <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
               <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none" />
               
-              <div className="animate-logo-slide flex items-center w-max h-full">
-                {Array.from({ length: 30 }).map((_, index) => {
-                  const logoIndex = (index % 15) + 1;
+              {/* Line 1 */}
+              <div className="animate-logo-slide flex items-center w-max" style={{ animationDuration: '50s' }}>
+                {Array.from({ length: 15 }).map((_, index) => {
+                  const logoIndex = (index % 5) + 1; // 1 to 5
                   return (
-                    <div key={index} className="h-[35px] md:h-[45px] w-[110px] md:w-[140px] mx-[15px] relative flex items-center justify-center shrink-0">
-                      <img 
-                        src={`/clientlogo/logo-${logoIndex}.png`} 
-                        alt={`Client Logo ${logoIndex}`} 
-                        className="max-h-full max-w-full object-contain mix-blend-multiply"
-                      />
+                    <div key={`l1-${index}`} className="h-[35px] md:h-[45px] w-[100px] md:w-[130px] mx-[15px] relative flex items-center justify-center shrink-0">
+                      <img src={`/clientlogo/logo-${logoIndex}.png`} alt={`Client Logo ${logoIndex}`} className="max-h-full max-w-full object-contain mix-blend-multiply" />
+                    </div>
+                  );
+                })}
+              </div>
+              
+              {/* Line 2 */}
+              <div className="animate-logo-slide flex items-center w-max" style={{ animationDuration: '60s', animationDirection: 'reverse' }}>
+                {Array.from({ length: 15 }).map((_, index) => {
+                  const logoIndex = (index % 5) + 6; // 6 to 10
+                  return (
+                    <div key={`l2-${index}`} className="h-[35px] md:h-[45px] w-[100px] md:w-[130px] mx-[15px] relative flex items-center justify-center shrink-0">
+                      <img src={`/clientlogo/logo-${logoIndex}.png`} alt={`Client Logo ${logoIndex}`} className="max-h-full max-w-full object-contain mix-blend-multiply" />
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* Line 3 */}
+              <div className="animate-logo-slide flex items-center w-max" style={{ animationDuration: '55s' }}>
+                {Array.from({ length: 15 }).map((_, index) => {
+                  const logoIndex = (index % 5) + 11; // 11 to 15
+                  return (
+                    <div key={`l3-${index}`} className="h-[35px] md:h-[45px] w-[100px] md:w-[130px] mx-[15px] relative flex items-center justify-center shrink-0">
+                      <img src={`/clientlogo/logo-${logoIndex}.png`} alt={`Client Logo ${logoIndex}`} className="max-h-full max-w-full object-contain mix-blend-multiply" />
                     </div>
                   );
                 })}

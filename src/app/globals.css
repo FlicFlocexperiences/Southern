@@ -14,11 +14,17 @@
   
   /* Define custom animation */
   --animate-logo-slide: logo-slide 35s linear infinite;
+  --animate-logo-slide-reverse: logo-slide-reverse 35s linear infinite;
   --animate-text-shine: text-shine 4s linear infinite;
 
   @keyframes logo-slide {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
+  }
+
+  @keyframes logo-slide-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
   }
 
   @keyframes text-shine {
