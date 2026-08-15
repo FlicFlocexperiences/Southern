@@ -1,211 +1,119 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { projects } from "@/data/projects";
-import { motion, AnimatePresence } from "framer-motion";
 
 const categories = [
   "All",
-  "Website Development",
-  "Shopify Development",
-  "Photography & Videography",
+  "Website development",
   "Branding",
-  "App Development",
-  "SEO",
-  "Social Media Management"
+  "Photoshoot",
+  "Shopify stores",
+  "Meta Ads"
 ];
-
-const getNormalizedCategory = (category: string): string => {
-  const cat = category.toLowerCase().trim();
-  if (cat.includes("website") || cat.includes("web development") || cat.includes("web design")) {
-    return "Website Development";
-  }
-  if (cat.includes("shopify")) {
-    return "Shopify Development";
-  }
-  if (cat.includes("photography") || cat.includes("videography") || cat.includes("photoshoot")) {
-    return "Photography & Videography";
-  }
-  if (cat.includes("app development")) {
-    return "App Development";
-  }
-  if (cat.includes("branding")) {
-    return "Branding";
-  }
-  if (cat.includes("seo")) {
-    return "SEO";
-  }
-  if (cat.includes("social media")) {
-    return "Social Media Management";
-  }
-  return category;
-};
 
 export const ProjectsGrid = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setIsOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
-  const getCategoryCount = (category: string) => {
-    if (category === "All") return projects.length;
-    return projects.filter(p => getNormalizedCategory(p.category) === category).length;
-  };
 
   const filteredProjects = selectedCategory === "All"
     ? projects
-    : projects.filter(p => getNormalizedCategory(p.category) === selectedCategory);
+    : projects.filter(p => p.category === selectedCategory);
 
   return (
-    <section className="w-full bg-[#f2decc] px-6 md:px-10 lg:px-[90px] pt-32 md:pt-36 lg:pt-40 pb-16 md:pb-24 max-w-[1440px] mx-auto">
-      {/* Top tag: [ OUR WORK ] */}
-      <div className="flex items-center gap-1 text-[11px] md:text-[13px] tracking-[0.2em] font-bold">
-        <span className="text-[#de5e18] font-sans">[</span>
-        <span className="text-[#432d1c] uppercase font-sans">OUR WORK</span>
-        <span className="text-[#de5e18] font-sans">]</span>
-      </div>
-
-      {/* Horizontal Line Divider */}
-      <div className="w-full h-px bg-[#432d1c]/15 my-5 md:my-6" />
-
-      {/* Heading: PROJECTS */}
-      <h1 className="text-[54px] sm:text-[72px] md:text-[90px] lg:text-[80px] xl:text-[80px] font-semibold leading-[1] text-[#432d1c] uppercase tracking-tighter mb-8 md:mb-12">
-        PROJECTS
-      </h1>
-
-      {/* Filter Dropdown Container */}
-      <div ref={dropdownRef} className="relative z-50 mb-12 md:mb-16 w-fit">
-        <div className="flex items-center">
-          {/* Understated Tab Filter Button */}
-          <button
+    <section className="w-full bg-[#fffff0] px-6 lg:px-[90px] py-16 lg:py-24">
+      {/* Dropdown Filter Button Container */}
+      <div className="relative mb-16 z-50 flex items-center">
+        {/* Backdrop for closing dropdown when clicking outside */}
+        {isOpen && (
+          <div 
+            className="fixed inset-0 z-40 cursor-default" 
+            onClick={() => setIsOpen(false)}
+          />
+        )}
+        
+        <div className="relative z-50 flex items-center gap-3">
+          {/* Pill Button (Category Label) */}
+          <button 
             onClick={() => setIsOpen(!isOpen)}
-            className="group relative flex items-center gap-2 md:gap-3 h-[45px] md:h-[50px] px-2 text-[#432d1c] focus:outline-none cursor-pointer"
+            className="px-8 py-3 bg-gradient-to-r from-[#ff5100] to-[#e04400] text-white font-medium text-[16px] rounded-full shadow-[0_8px_25px_-5px_rgba(255,81,0,0.45)] hover:shadow-[0_12px_30px_-5px_rgba(255,81,0,0.6)] transition-all duration-300 min-w-[120px] text-center cursor-pointer hover:scale-[1.02] active:scale-[0.98] outline-none border-none"
           >
-            <span className="text-[18px] md:text-[22px] font-bold tracking-wide pt-1">
-              {selectedCategory}
-            </span>
-            <svg
-              className={`w-5 h-5 md:w-6 md:h-6 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg>
-            
-            {/* Animated Bottom Border */}
-            <span className="absolute bottom-0 left-0 w-full h-[3px] bg-[#de5e18] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
+            {selectedCategory}
           </button>
-        </div>
-
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: -10, scale: 0.95 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: -10, scale: 0.95 }}
-              transition={{ duration: 0.2, ease: "easeOut" }}
-              className="absolute left-0 mt-3 w-[300px] sm:w-[340px] bg-white border border-[#432d1c]/15 rounded-[24px] shadow-[0_16px_40px_rgba(48,38,28,0.12)] z-50 overflow-hidden py-3"
+          
+          {/* Circular Arrow Button */}
+          <button 
+            onClick={() => setIsOpen(!isOpen)}
+            className="w-12 h-12 flex items-center justify-center bg-gradient-to-r from-[#ff5100] to-[#e04400] text-white rounded-full shadow-[0_8px_25px_-5px_rgba(255,81,0,0.45)] hover:shadow-[0_12px_30px_-5px_rgba(255,81,0,0.6)] transition-all duration-300 cursor-pointer hover:scale-[1.02] active:scale-[0.98] outline-none border-none"
+          >
+            <svg 
+              className={`w-5 h-5 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2.5" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div className="max-h-[300px] overflow-y-auto pr-1 scrollbar-thin">
-                {categories.map((category) => {
-                  const isActive = selectedCategory === category;
-                  const count = getCategoryCount(category);
-                  return (
-                    <button
-                      key={category}
-                      onClick={() => {
-                        setSelectedCategory(category);
-                        setIsOpen(false);
-                      }}
-                      className="flex items-center justify-between w-full px-5 py-3 text-left transition-colors duration-200 hover:bg-[#de5e18]/5 cursor-pointer"
-                    >
-                      <div className="flex items-center gap-3">
-                        <span
-                          className={`w-2 h-2 rounded-full transition-colors duration-200 ${
-                            isActive ? "bg-[#de5e18]" : "bg-transparent"
-                          }`}
-                        />
-                        <span
-                          className={`text-[15px] font-medium transition-colors duration-200 ${
-                            isActive ? "text-[#de5e18] font-semibold" : "text-[#432d1c]/60 hover:text-[#de5e18]"
-                          }`}
-                        >
-                          {category}
-                        </span>
-                      </div>
-                      <span className="text-[12px] font-semibold font-sans px-2 py-0.5 rounded-full bg-[#432d1c]/5 text-[#432d1c]/40">
-                        {count}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-            </motion.div>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"></path>
+            </svg>
+          </button>
+
+          {/* Dropdown Menu */}
+          {isOpen && (
+            <div className="absolute left-0 top-full mt-3 w-64 bg-white/95 backdrop-blur-xl border border-white/50 rounded-[24px] shadow-[0_20px_50px_rgba(0,0,0,0.15)] py-3 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => {
+                    setSelectedCategory(cat);
+                    setIsOpen(false);
+                  }}
+                  className={`w-full text-left px-6 py-3.5 text-[15px] transition-colors duration-200 first:rounded-t-[20px] last:rounded-b-[20px] cursor-pointer outline-none border-none ${
+                    selectedCategory === cat 
+                      ? 'text-[#ff5100] bg-[#ff5100]/5 font-semibold' 
+                      : 'text-[#30261c]/80 hover:bg-[#30261c]/5 hover:text-[#30261c]'
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
           )}
-        </AnimatePresence>
+        </div>
       </div>
 
       {/* Grid Container */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-y-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-x-12 lg:gap-y-16">
         {filteredProjects.map((project, index) => {
-          const isPhotography = false;
+          // Add a slight top margin to the second column on larger screens to create a staggered masonry feel
+          const isEven = index % 2 !== 0;
           return (
             <Link 
               href={`/projects/${project.slug}`}
-              key={`${project.id}-${project.slug}-${index}`} 
-              className="group flex flex-col w-full cursor-pointer bg-white border border-[#eaeaea] p-4 lg:p-5 rounded-[28px] lg:rounded-[32px] shadow-[0_4px_25px_rgba(0,0,0,0.015)] transition-all duration-300 hover:shadow-[0_16px_35px_rgba(0,0,0,0.045)] hover:border-neutral-200"
+              key={project.id} 
+              className={`group flex flex-col w-full cursor-pointer ${isEven ? 'md:mt-16' : ''}`}
             >
-              {/* Image Container with Inset padding and rounded corners */}
-              <div className={`w-full aspect-[4/3] rounded-[20px] lg:rounded-[24px] overflow-hidden mb-6 bg-neutral-50 relative ${isPhotography ? "flex items-center justify-center p-4" : ""}`}>
+              {/* Image Container with Overflow Hidden for the scale effect */}
+              <div className="w-full aspect-[4/3] rounded-[20px] overflow-hidden mb-6 bg-[#30261c]/5 shadow-[0_4px_30px_rgba(0,0,0,0.03)] relative">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className={`transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-105 ${
-                    isPhotography 
-                      ? "max-w-full max-h-full w-auto h-auto object-contain" 
-                      : "w-full h-full object-cover"
-                  }`}
+                  className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-110"
                 />
                 
-                {/* Subtle dark overlay on hover */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/[0.01] transition-colors duration-500 ease-in-out"></div>
+                {/* Optional dark overlay on hover for extra premium feel */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 ease-in-out"></div>
               </div>
               
               {/* Text Meta Container */}
-              <div className="flex flex-col gap-1">
-                <h3 className="text-[24px] lg:text-[28px] font-bold text-[#0f0f0f] leading-none transition-colors duration-300">
+              <div className="flex flex-col gap-1 px-2">
+                <h3 className="text-[22px] lg:text-[26px] font-medium text-[#30261C] group-hover:text-[#ff5100] transition-colors duration-300">
                   {project.title}
                 </h3>
-                
-                {/* Details Row: Category on left, Location & Year & Arrow on right */}
-                <div className="flex justify-between items-center text-[12px] lg:text-[13px] font-sans text-neutral-400 font-semibold tracking-wider uppercase mt-1">
-                  <span>
-                    {project.category}
-                  </span>
-                  
-                  <div className="flex items-center gap-2.5">
-                    {/* Circle Arrow Button */}
-                    <div className="w-11 h-11 rounded-full bg-[#de5e18] flex items-center justify-center text-white shrink-0 group-hover:scale-105 transition-all duration-300">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
+                <p className="text-[15px] lg:text-[17px] text-[#30261C]/60 font-light">
+                  {project.category}
+                </p>
               </div>
             </Link>
           );

@@ -23,7 +23,7 @@ const desktopLogos = [
   "/integrations/whatsapp.png",
   "/integrations/linkedin.png",
   "/integrations/sparkle.png",
-  "/integrations/cursor.png",
+  "/Cursor.svg",
   // Row 4 (4)
   "/integrations/zoho.png",
   "/integrations/wati.png",
@@ -58,22 +58,13 @@ const HexagonTile = ({ src, hasLogo }: { src?: string | null; hasLogo?: boolean 
     src.toLowerCase().includes('cursor') || 
     src.toLowerCase().includes('figma')
   );
-  const isCursor = src && src.toLowerCase().includes('cursor');
   return (
     <div className="relative group w-[100px] h-[110px] md:w-[130px] md:h-[143px] flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
       <div className={`absolute inset-0 transition-opacity duration-500 ${hasLogo ? 'opacity-100' : 'opacity-40 group-hover:opacity-60'}`}>
         <HexagonSvg />
       </div>
       {hasLogo && src && (
-        <img 
-          src={src} 
-          alt="Integration Logo" 
-          className={`object-contain relative z-10 filter drop-shadow-sm group-hover:scale-110 transition-transform duration-300 ${
-            isCursor 
-              ? 'w-[38px] h-[38px] md:w-[52px] md:h-[52px]' 
-              : 'w-[45px] h-[45px] md:w-[60px] md:h-[60px]'
-          } ${isBlackBg ? 'mix-blend-screen' : ''}`} 
-        />
+        <img src={src} alt="Integration Logo" className={`w-[45px] h-[45px] md:w-[60px] md:h-[60px] object-contain relative z-10 filter drop-shadow-sm group-hover:scale-110 transition-transform duration-300 ${isBlackBg ? 'mix-blend-screen' : ''}`} />
       )}
     </div>
   );
@@ -90,16 +81,16 @@ export const DesktopIntegrations = () => {
   let currentLogoIndex = 0;
 
   return (
-    <section className="w-full bg-[#f2decc] relative flex flex-col items-center rounded-t-[45px] overflow-hidden -mt-8 pt-8 z-20 shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
+    <section className="w-full bg-[#fffff0] relative flex flex-col items-center rounded-t-[45px] overflow-hidden -mt-8 pt-8 z-20 shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
       
       {/* Background Graphic Blend */}
       <div className="w-full absolute top-0 left-0 h-[800px] pointer-events-none overflow-hidden">
          <img src="/bggradi.png" alt="Background gradient" className="absolute top-0 left-0 w-full h-full object-cover object-top" />
          {/* Overlay to ensure smooth fade into the background color at the bottom */}
-         <div className="absolute inset-0 bg-gradient-to-t from-[#f2decc] via-[#f2decc]/50 to-transparent" />
+         <div className="absolute inset-0 bg-gradient-to-t from-[#fffff0] via-[#fffff0]/50 to-transparent" />
       </div>
 
-      <div className="w-full relative flex justify-center pt-8 pb-12 z-10">
+      <div className="w-full relative flex justify-center pt-20 pb-12 z-10">
         <div className="max-w-[1400px] mx-auto w-full flex flex-col items-center">
           <div className="flex flex-col items-center">
             {rowsConfig.map((row, rIdx) => (
@@ -133,7 +124,7 @@ export const DesktopIntegrations = () => {
       </div>
 
       {/* Text Details */}
-      <div className="w-full max-w-[900px] mx-auto relative z-20 flex flex-col items-center pb-12 pt-6">
+      <div className="w-full max-w-[900px] mx-auto relative z-20 flex flex-col items-center pb-24 pt-6">
         <div className="text-center flex flex-col items-center">
           <h2 className="flex flex-col gap-0 uppercase text-center font-sans tracking-tight">
             <span className="text-[40px] lg:text-[54px] xl:text-[64px] leading-[1.1] font-semibold text-[#A1A1A1]">
