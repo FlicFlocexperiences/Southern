@@ -54,6 +54,10 @@ const ArrowRightIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
 );
 
+const GridIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect></svg>
+);
+
 // --- Mapping & Data ---
 const categories = [
   { name: "All", icon: null, mapping: "All" },
@@ -71,11 +75,16 @@ export const ProjectsGrid = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState("Latest");
   const [isSortOpen, setIsSortOpen] = useState(false);
-  const sortRef = useRef<HTMLDivElement>(null);
+  const sortRefMobile = useRef<HTMLDivElement>(null);
+  const sortRefDesktop = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (sortRef.current && !sortRef.current.contains(event.target as Node)) {
+      const target = event.target as Node;
+      if (
+        (!sortRefMobile.current || !sortRefMobile.current.contains(target)) &&
+        (!sortRefDesktop.current || !sortRefDesktop.current.contains(target))
+      ) {
         setIsSortOpen(false);
       }
     };
@@ -127,9 +136,50 @@ export const ProjectsGrid = () => {
     return filtered;
   }, [selectedCategory, searchQuery, sortBy]);
 
+  const renderSortOptions = () => (
+    <AnimatePresence>
+      {isSortOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -10, scale: 0.95 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: -10, scale: 0.95 }}
+          transition={{ duration: 0.15, ease: "easeOut" }}
+          className="absolute left-0 md:left-auto md:right-0 mt-2 w-40 bg-white border border-gray-200 rounded-2xl shadow-lg z-50 overflow-hidden py-2"
+        >
+          {["Latest", "Oldest", "A-Z"].map((option) => (
+            <button
+              key={option}
+              onClick={(e) => {
+                e.stopPropagation();
+                setSortBy(option);
+                setIsSortOpen(false);
+              }}
+              className={`w-full text-left px-4 py-2 text-[14px] hover:bg-gray-50 transition-colors ${
+                sortBy === option ? "text-[#de5e18] font-bold" : "text-gray-700 font-medium"
+              }`}
+            >
+              {option}
+            </button>
+          ))}
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+
   return (
     <section className="w-full bg-[#fdfaf6] min-h-screen px-4 md:px-10 lg:px-[90px] pt-24 md:pt-32 lg:pt-36 pb-16 md:pb-24 max-w-[1600px] mx-auto">
       
+      {/* Mobile Success Stories Badge */}
+      <div className="flex md:hidden items-center gap-3 mb-6">
+        <div className="w-12 h-12 rounded-full bg-[#de5e18] flex items-center justify-center text-white shadow-lg shrink-0">
+          <BriefcaseIcon />
+        </div>
+        <div className="flex flex-col">
+          <span className="text-[20px] font-bold text-[#de5e18] leading-none">27</span>
+          <span className="text-[13px] font-medium text-[#5d4037]">Success Stories</span>
+        </div>
+      </div>
+
       {/* Header Section */}
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12">
         <div className="flex flex-col gap-2 max-w-2xl">
@@ -147,49 +197,64 @@ export const ProjectsGrid = () => {
       </div>
 
       {/* Search and Filter Bar */}
-      <div className="w-full bg-white rounded-full p-2 pl-6 flex flex-col md:flex-row items-center justify-between border border-gray-200 shadow-sm mb-6 gap-4 md:gap-0">
-        <div className="flex items-center gap-3 w-full md:w-auto flex-1">
-          <span className="text-gray-400">
+      <div className="w-full bg-white md:bg-white rounded-[24px] md:rounded-full p-3 md:p-2 md:pl-6 flex flex-col md:flex-row items-center justify-between border border-gray-100 md:border-gray-200 shadow-sm mb-6 gap-3 md:gap-0">
+        <div className="flex items-center gap-3 w-full md:w-auto flex-1 bg-[#fafafa] md:bg-transparent border border-gray-100 md:border-none rounded-[16px] md:rounded-none px-4 py-3 md:px-0 md:py-0">
+          <span className="text-gray-500 md:text-gray-400">
             <SearchIcon />
           </span>
           <input 
             type="text"
-            placeholder="Search projects, clients or keywords..."
-            className="w-full bg-transparent outline-none text-[15px] text-gray-700 placeholder-gray-400 py-2"
+            placeholder="Search projects..."
+            className="w-full bg-transparent outline-none text-[15px] text-gray-700 placeholder-gray-400"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
         </div>
         
-        <button className="hidden md:flex items-center gap-2 bg-[#fafafa] hover:bg-gray-100 border border-gray-200 px-6 py-2.5 rounded-full text-[14px] font-semibold text-gray-700 transition-colors shrink-0">
-          <FilterIcon />
-          <span>Filter By Category</span>
+        <button className="w-full md:w-auto flex items-center justify-between md:justify-center gap-2 bg-[#fafafa] md:bg-[#fafafa] hover:bg-gray-100 border border-gray-100 md:border-gray-200 px-4 py-3 md:px-6 md:py-2.5 rounded-[16px] md:rounded-full text-[14px] font-semibold text-gray-700 transition-colors shrink-0">
+          <div className="flex items-center gap-2">
+            <FilterIcon />
+            <span className="font-semibold md:font-normal">Filter By Category</span>
+          </div>
           <span className="ml-1"><ChevronDownIcon /></span>
         </button>
       </div>
 
       {/* Category Pills Row */}
-      <div className="flex flex-wrap items-center gap-3 mb-12">
+      <div className="flex overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] pb-2 md:pb-0 md:flex-wrap items-center gap-3 mb-6 md:mb-12 -mx-4 px-4 md:mx-0 md:px-0">
         {categories.map((cat) => {
           const isActive = selectedCategory === cat.name;
+          const isAll = cat.name === "All";
           return (
             <button
               key={cat.name}
               onClick={() => setSelectedCategory(cat.name)}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-[14px] font-semibold transition-all duration-300 border cursor-pointer ${
-                isActive 
-                  ? "bg-[#de5e18] border-[#de5e18] text-white shadow-md" 
-                  : "bg-white border-gray-200 text-gray-700 hover:bg-gray-50 hover:border-gray-300"
+              className={`flex shrink-0 items-center justify-center transition-all duration-300 cursor-pointer border ${
+                isAll
+                  ? isActive 
+                    ? "bg-[#de5e18] border-[#de5e18] text-white rounded-[20px] px-6 py-3 shadow-md font-bold text-[15px] h-fit md:h-auto" 
+                    : "bg-white border-gray-100 text-gray-700 hover:bg-gray-50 rounded-[20px] px-6 py-3 shadow-sm font-bold text-[15px] h-fit md:h-auto"
+                  : isActive
+                    ? "bg-[#de5e18] border-[#de5e18] text-white rounded-[24px] shadow-md flex-col w-[85px] h-[85px] gap-1 md:flex-row md:w-auto md:h-auto md:px-5 md:py-2.5 md:rounded-full md:gap-2"
+                    : "bg-white border-gray-100 text-gray-700 hover:bg-gray-50 rounded-[24px] shadow-sm flex-col w-[85px] h-[85px] gap-1 md:flex-row md:w-auto md:h-auto md:px-5 md:py-2.5 md:rounded-full md:gap-2"
               }`}
             >
-              {cat.icon && <span className={isActive ? "text-white" : "text-gray-500"}>{cat.icon}</span>}
-              <span>{cat.name}</span>
+              {cat.icon && (
+                <span className={`${isAll ? '' : 'mb-1 md:mb-0'} ${isActive ? "text-white" : "text-black md:text-gray-500"}`}>
+                  {cat.icon}
+                </span>
+              )}
+              <span className={`font-semibold whitespace-nowrap text-center ${
+                isAll ? "text-[15px]" : "text-[11px] md:text-[14px]"
+              } ${isActive ? "text-white" : "text-gray-700"}`}>
+                {cat.name}
+              </span>
             </button>
           );
         })}
 
-        {/* Sort Dropdown (Pushed to right if enough space) */}
-        <div ref={sortRef} className="ml-auto relative">
+        {/* Desktop Sort Dropdown */}
+        <div ref={sortRefDesktop} className="ml-auto relative hidden md:block">
           <div 
             onClick={() => setIsSortOpen(!isSortOpen)}
             className="flex items-center gap-2 bg-white border border-gray-200 px-5 py-2.5 rounded-full text-[14px] font-semibold text-gray-700 cursor-pointer hover:bg-gray-50 transition-colors"
@@ -199,33 +264,27 @@ export const ProjectsGrid = () => {
               <ChevronDownIcon />
             </span>
           </div>
+          {renderSortOptions()}
+        </div>
+      </div>
 
-          <AnimatePresence>
-            {isSortOpen && (
-              <motion.div
-                initial={{ opacity: 0, y: -10, scale: 0.95 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, y: -10, scale: 0.95 }}
-                transition={{ duration: 0.15, ease: "easeOut" }}
-                className="absolute right-0 mt-2 w-40 bg-white border border-gray-200 rounded-2xl shadow-lg z-50 overflow-hidden py-2"
-              >
-                {["Latest", "Oldest", "A-Z"].map((option) => (
-                  <button
-                    key={option}
-                    onClick={() => {
-                      setSortBy(option);
-                      setIsSortOpen(false);
-                    }}
-                    className={`w-full text-left px-4 py-2 text-[14px] hover:bg-gray-50 transition-colors ${
-                      sortBy === option ? "text-[#de5e18] font-bold" : "text-gray-700 font-medium"
-                    }`}
-                  >
-                    {option}
-                  </button>
-                ))}
-              </motion.div>
-            )}
-          </AnimatePresence>
+      {/* Mobile Sort & Grid Toggle Row */}
+      <div className="flex md:hidden items-center justify-between mb-8 px-1">
+        <div ref={sortRefMobile} className="relative">
+          <div 
+            onClick={() => setIsSortOpen(!isSortOpen)}
+            className="flex items-center gap-2 bg-white border border-gray-100 px-5 py-2.5 rounded-2xl shadow-sm text-[14px] font-semibold text-gray-700 cursor-pointer hover:bg-gray-50 transition-colors"
+          >
+            <span>Sort: <span className="text-[#de5e18]">{sortBy}</span></span>
+            <span className={`transition-transform duration-200 ${isSortOpen ? "rotate-180" : ""}`}>
+              <ChevronDownIcon />
+            </span>
+          </div>
+          {renderSortOptions()}
+        </div>
+        
+        <div className="w-11 h-11 bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-center text-gray-700 cursor-pointer hover:bg-gray-50">
+          <GridIcon />
         </div>
       </div>
 
