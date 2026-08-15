@@ -87,31 +87,27 @@ export const ProjectsGrid = () => {
 
       {/* Filter Dropdown Container */}
       <div ref={dropdownRef} className="relative z-50 mb-12 md:mb-16 w-fit">
-        <div className="flex items-center gap-3">
-          {/* Pill Button */}
+        <div className="flex items-center">
+          {/* Understated Tab Filter Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="h-[52px] md:h-[56px] min-w-[130px] px-8 flex items-center justify-center rounded-full bg-gradient-to-r from-[#ff6a00] to-[#ff3c00] text-white text-[16px] md:text-[17px] font-bold tracking-wide shadow-[0_10px_25px_rgba(222,94,24,0.3)] hover:shadow-[0_14px_28px_rgba(222,94,24,0.4)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 focus:outline-none cursor-pointer"
+            className="group relative flex items-center gap-2 md:gap-3 h-[45px] md:h-[50px] px-2 text-[#432d1c] focus:outline-none cursor-pointer"
           >
-            {selectedCategory}
-          </button>
-
-          {/* Circle Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="w-[52px] h-[52px] md:w-[56px] md:h-[56px] flex items-center justify-center rounded-full bg-gradient-to-r from-[#ff6a00] to-[#ff3c00] text-white shadow-[0_10px_25px_rgba(222,94,24,0.3)] hover:shadow-[0_14px_28px_rgba(222,94,24,0.4)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 focus:outline-none cursor-pointer shrink-0"
-          >
+            <span className="text-[18px] md:text-[22px] font-bold tracking-wide pt-1">
+              {selectedCategory}
+            </span>
             <svg
-              className={`w-5 h-5 text-white transition-transform duration-300 ${
-                isOpen ? "rotate-180" : ""
-              }`}
+              className={`w-5 h-5 md:w-6 md:h-6 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
               fill="none"
               stroke="currentColor"
               strokeWidth="2.5"
               viewBox="0 0 24 24"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m0 0l-5-5m5 5l5-5" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
             </svg>
+            
+            {/* Animated Bottom Border */}
+            <span className="absolute bottom-0 left-0 w-full h-[3px] bg-[#de5e18] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
           </button>
         </div>
 
