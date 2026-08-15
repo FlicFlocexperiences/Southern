@@ -5,7 +5,10 @@ import { MobileFooter } from "@/components/mobile-footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | Southern Edge Marketing",
+  alternates: {
+    canonical: '/terms',
+  },
+  title: "Terms & Conditions",
   description: "Terms and conditions governing our software partnership.",
 };
 

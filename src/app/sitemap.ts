@@ -5,7 +5,7 @@ import { blogs } from '@/data/blogs';
 import { articles } from '@/data/articles';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://southernedgemarketing.com';
+  const baseUrl = 'https://www.southernedgemarketing.com';
 
   const staticRoutes = [
     '',
@@ -51,11 +51,54 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
+  const commonCities = [
+    'abu-dhabi',
+    'bengaluru',
+    'chennai',
+    'delhi',
+    'gurgaon',
+    'hyderabad',
+    'kolkata',
+    'lucknow',
+    'mumbai',
+    'noida',
+    'pune',
+    'sharjah',
+    'surat'
+  ];
+
+  const brandingCities = ['abu-dhabi', 'bengaluru', 'chennai', 'delhi', 'gurgaon', 'hyderabad', 'kolkata', 'lucknow'];
+  const seoCities = ['abu-dhabi', 'bengaluru', 'chennai', 'delhi', 'gurgaon', 'hyderabad', 'kolkata', 'lucknow'];
+
+  const cityRoutes = [
+    ...commonCities.map(city => `/services/app-development/${city}`),
+    '/services/app-development/jaipur',
+    '/services/app-development/dubai',
+    ...commonCities.map(city => `/services/web-development/${city}`),
+    '/services/web-development/jaipur',
+    '/services/web-development/ahmedabad',
+    '/services/web-development/dubai',
+    ...commonCities.map(city => `/services/social-media-management/${city}`),
+    '/services/social-media-management/dubai',
+    ...brandingCities.map(city => `/services/branding/${city}`),
+    '/services/branding/jaipur',
+    '/services/branding/dubai',
+    ...seoCities.map(city => `/services/seo/${city}`),
+    '/services/seo/jaipur',
+    '/services/seo/dubai',
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }));
+
   return [
     ...staticRoutes,
     ...serviceRoutes,
     ...projectRoutes,
     ...blogRoutes,
     ...articleRoutes,
+    ...cityRoutes,
   ];
 }

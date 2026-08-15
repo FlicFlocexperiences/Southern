@@ -28,9 +28,29 @@ import { HowWeWork } from "@/components/how-we-work";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Southern Edge Marketing | Digital Marketing Agency in Delhi, India",
-  description: "Southern Edge Marketing turns attention into action, strategy, design, development, and marketing that actually drives business. Trusted by 100+ businesses across India. 5.0 rated.",
+  alternates: {
+    canonical: '/',
+  },
 };
+
+const homeFaqs = [
+  {
+    question: "What services does Southern provide?",
+    answer: "We are a full-service digital agency offering web development, UI/UX design, branding, SEO, performance marketing, and social media management. We build complete growth systems for our clients."
+  },
+  {
+    question: "Do you work with startups or established brands?",
+    answer: "We work with both! Whether you're a startup looking to make a strong market entry or an established brand aiming to scale revenue and improve digital presence, we tailor our strategies to fit your stage."
+  },
+  {
+    question: "How do you approach a new project?",
+    answer: "Every project starts with a deep dive into your business goals, target audience, and current market position. We then craft a custom strategy, develop the assets, and continuously optimize for maximum ROI."
+  },
+  {
+    question: "Why choose Southern over other agencies?",
+    answer: "We focus on measurable results rather than vanity metrics. Our team combines stunning creative design with data-driven marketing, ensuring that everything we build not only looks great but actively drives revenue."
+  }
+];
 
 export default function Home() {
   return (
@@ -48,7 +68,7 @@ export default function Home() {
         <HowWeWork />
         <Testimonials />
         <Cta />
-        <MobileFaq />
+        <MobileFaq faqs={homeFaqs} />
         <MobileFooter />
       </div>
 
@@ -66,7 +86,7 @@ export default function Home() {
           <HowWeWork />
           <Testimonials />
           <Cta />
-          <DesktopFaq />
+          <DesktopFaq faqs={homeFaqs} />
           <DesktopMarquee />
           <DesktopFooter />
         </div>

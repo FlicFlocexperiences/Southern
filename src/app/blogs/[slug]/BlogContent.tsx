@@ -8,8 +8,6 @@ interface BlogContentProps {
   blog: Blog;
 }
 
-
-
 export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
   const [currentUrl, setCurrentUrl] = useState("");
   const [activeId, setActiveId] = useState("");
@@ -61,17 +59,20 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
 
     const newContent = content.replace(headingRegex, (match, openTag, text, closeTag) => {
       const cleanText = text.replace(/<[^>]+>/g, '').trim();
-      let baseId = cleanText
-        .toLowerCase()
-        .replace(/[^\w\s-]/g, "")
-        .replace(/\s+/g, "-");
+      
+      // If heading already has an ID, use it
+      let id = "";
+      if (openTag.includes('id=')) {
+        const idMatch = openTag.match(/id=["']([^"']+)["']/);
+        if (idMatch) id = idMatch[1];
+      }
 
-      if (!baseId) baseId = "section";
-      idCounts[baseId] = (idCounts[baseId] || 0) + 1;
-      const id = idCounts[baseId] > 1 ? `${baseId}-${idCounts[baseId]}` : baseId;
-
-      // Prevent duplicates if API generated an ID
-      if (!openTag.includes('id=')) {
+      if (!id) {
+        let baseId = cleanText.toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-");
+        if (!baseId) baseId = "section";
+        idCounts[baseId] = (idCounts[baseId] || 0) + 1;
+        id = idCounts[baseId] > 1 ? `${baseId}-${idCounts[baseId]}` : baseId;
+        
         headings.push({ id, title: cleanText });
         return `${openTag.replace('>', ` id="${id}">`)}${text}${closeTag}`;
       }
@@ -85,23 +86,43 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
 
   // Track active section on scroll
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleEntry = entries.find((entry) => entry.isIntersecting);
-        if (visibleEntry) {
-          setActiveId(visibleEntry.target.id);
+    const handleScroll = () => {
+      const headingElements = sections.map(({ id }) => document.getElementById(id)).filter(Boolean) as HTMLElement[];
+      
+      let currentActiveId = "";
+      // Offset accounts for sticky navs and visual padding (e.g., 200px from top)
+      const offset = 200; 
+      
+      for (const el of headingElements) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= offset) {
+          currentActiveId = el.id;
+        } else {
+          // Since elements are in DOM order, once we find one below the threshold, 
+          // the previously stored currentActiveId is the right one.
+          break;
         }
-      },
-      { rootMargin: "-80px 0px -60% 0px" }
-    );
+      }
+      
+      // Default to first section if we haven't scrolled past it yet but are near the top
+      if (!currentActiveId && headingElements.length > 0 && window.scrollY < 300) {
+         currentActiveId = headingElements[0].id;
+      }
+      
+      if (currentActiveId && currentActiveId !== activeId) {
+        setActiveId(currentActiveId);
+      }
+    };
 
-    sections.forEach(({ id }) => {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el);
-    });
+    // Run shortly after mount to allow DOM to render dangerouslySetInnerHTML
+    const timeoutId = setTimeout(handleScroll, 100);
 
-    return () => observer.disconnect();
-  }, [sections]);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [sections, activeId]);
 
   // Sync sidebar TOC scroll with active section
   useEffect(() => {
@@ -134,30 +155,67 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
     window.open(shareUrl, "_blank", "width=600,height=400");
   };
 
-
-
   return (
     <div className="w-full bg-[#f2decc] min-h-screen pb-16">
-      {/* Top Title */}
-      <div className="max-w-[1000px] mx-auto px-4 text-center pt-12 pb-4">
-        <h1 className="text-[36px] md:text-[48px] lg:text-[56px] font-extrabold leading-[1.1] tracking-tight text-[#0f0f0f]">
-          {blog.title}
-        </h1>
+      
+      {/* Dark Brown Hero Section */}
+      <div className="w-full bg-[#3e271a] -mt-32 lg:-mt-40 pt-36 lg:pt-44 pb-8 px-4">
+        <div className="max-w-[900px] mx-auto text-center">
+          <div className="text-[#de5e18] text-[14px] font-bold tracking-[0.2em] mb-4 uppercase">
+            [ BLOG ]
+          </div>
+          <h1 className="text-[36px] md:text-[48px] lg:text-[56px] font-extrabold leading-[1.1] tracking-tight text-white mb-6">
+            {blog.title}
+          </h1>
+          {blog.excerpt && (
+            <p className="text-[18px] md:text-[20px] text-white/70 mb-8 font-light max-w-[700px] mx-auto leading-relaxed">
+              {blog.excerpt}
+            </p>
+          )}
+          
+          <div className="text-white/50 text-[14px] font-medium mb-10">
+            {blog.publishedAt || "March 2026"} &nbsp;&nbsp;&bull;&nbsp;&nbsp; {blog.author || "Southern Marketing Team"}
+          </div>
+
+          <div className="flex justify-center">
+            <Link href="/contact">
+              <button
+                className="relative h-[58px] sm:h-[63px] w-[240px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
+                aria-label="For Consultation"
+              >
+                <div className="absolute left-0 top-0 w-[calc(100%-45px)] h-full rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-2 transform group-hover:translate-x-[3px] transition-transform duration-300 z-10 px-2 sm:px-3">
+                  <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
+                  <span className="font-medium text-[15px] text-white tracking-tight whitespace-nowrap">
+                    For Consultation
+                  </span>
+                </div>
+
+                <div className="absolute right-[14px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
+                  <svg className="w-[18px] h-[18px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>
+                </div>
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
 
-      {/* Top Date & Author */}
-      <div className="w-full text-center text-black/60 text-[15px] font-medium pb-10">
-        {blog.publishedAt || "March 2026"} &nbsp;&nbsp;&bull;&nbsp;&nbsp; {blog.author || "Southern Marketing Team"}
-      </div>
-
-      {/* Main Grid Layout */}
-      <div className="w-full max-w-none mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-[200px_1fr_280px] gap-6 xl:gap-10 items-start">
+      {/* Main Content Area */}
+      <div className="w-full max-w-none mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-[200px_1fr_280px] gap-6 xl:gap-10 items-start mt-8">
 
         {/* Left Sidebar - Table of Contents */}
         <aside 
           className="hidden lg:block sticky top-8 w-full pr-2 max-h-[calc(100vh-80px)] overflow-y-auto scrollbar-none [&::-webkit-scrollbar]:hidden"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
+          {/* Breadcrumbs for Desktop (in left sidebar) */}
+          <div className="text-[13px] text-black/50 font-medium mb-12 hidden lg:block">
+            <Link href="/" className="hover:text-black">Home</Link> 
+            <span className="mx-2">/</span> 
+            <Link href="/blogs" className="hover:text-black">Blog</Link>
+          </div>
+
           <nav className="flex flex-col gap-6">
             {sections.map((sec) => {
               const isActive = activeId === sec.id;
@@ -185,7 +243,17 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
 
         {/* Middle Column - Content */}
         <div className="w-full min-w-0 lg:pr-2">
-          {/* Mobile Horizontal Tabs Bar (Matching reference image) */}
+          
+          {/* Mobile Breadcrumbs */}
+          <div className="text-[13px] text-black/50 font-medium mb-6 lg:hidden">
+            <Link href="/" className="hover:text-black">Home</Link> 
+            <span className="mx-2">/</span> 
+            <Link href="/blogs" className="hover:text-black">Blog</Link> 
+            <span className="mx-2">/</span> 
+            <span className="text-black/80 truncate max-w-[150px] inline-block align-bottom">{blog.title}</span>
+          </div>
+
+          {/* Mobile Horizontal Tabs Bar */}
           {sections.length > 0 && (
             <div className="lg:hidden w-full border-b border-black/10 mb-8 bg-[#f2decc]/90 sticky top-0 z-30 backdrop-blur-md">
               <div
@@ -351,34 +419,34 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
             </Link>
           </div>
 
-          {/* Need Marketing Help Card */}
-          <div className="bg-white border border-black/10 rounded-xl p-6 shadow-sm text-left">
-            <h3 className="text-[18px] font-bold text-black mb-3 uppercase tracking-wide">
-              Start Your Digital Journey
+          {/* Call Us Card - Web Only */}
+          <div className="hidden lg:block bg-white border border-black/10 rounded-xl p-4 shadow-sm text-center">
+            <h3 className="text-[16px] font-bold text-black mb-2 uppercase tracking-wide">
+              Prefer to Call?
             </h3>
-            <p className="text-[14px] text-black/75 leading-relaxed mb-6 font-light">
-              Get in touch with our team to discuss custom Next.js engineering, Shopify architectures, or modern digital strategies.
+            <p className="text-[13px] text-black/75 leading-snug mb-4 font-light">
+              Scan the QR code below or call us directly to discuss your digital strategy.
             </p>
-            <div className="flex flex-col gap-3">
-              <Link href="/contact" className="w-full">
-                <button
-                  className="relative w-full h-[58px] sm:h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
-                  aria-label="For Consultation"
-                >
-                  <div className="absolute left-0 top-0 w-[calc(100%-45px)] h-full rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-2 transform group-hover:translate-x-[3px] transition-transform duration-300 z-10 px-2 sm:px-3">
-                    <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
-                    <span className="font-medium text-[13px] sm:text-[14px] lg:text-[15px] text-white tracking-tight whitespace-nowrap">
-                      For Consultation
-                    </span>
-                  </div>
-
-                  <div className="absolute right-[14px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
-                    <svg className="w-[18px] h-[18px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>
-                  </div>
-                </button>
-              </Link>
+            <div className="flex flex-col items-center gap-3">
+              <div className="p-2 bg-white border border-black/10 rounded-[12px] shadow-sm inline-block">
+                <img 
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=tel:+918700901769&margin=2" 
+                  alt="Scan to call" 
+                  width={110} 
+                  height={110}
+                  className="rounded-lg mix-blend-multiply"
+                />
+              </div>
+              <div className="flex flex-col items-center gap-3 mt-1 w-full">
+                <a href="tel:+918700901769" className="text-[17px] font-semibold text-[#de5e18] hover:text-[#de5e18]/80 transition-colors flex items-center gap-1.5">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.896-1.596-5.48-4.18-7.076-7.076l1.293-.97c.362-.271.527-.733.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"></path></svg>
+                  +91 8700901769
+                </a>
+                <a href="https://www.linkedin.com/in/ameet-nangia-b231b864/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 w-full py-2 bg-[#0a66c2]/10 text-[#0a66c2] rounded-lg text-[13.5px] font-semibold hover:bg-[#0a66c2] hover:text-white transition-all duration-300">
+                  <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+                  Connect on LinkedIn
+                </a>
+              </div>
             </div>
           </div>
         </aside>

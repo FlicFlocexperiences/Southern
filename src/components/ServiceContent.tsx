@@ -9,17 +9,85 @@ interface ServiceContentProps {
 }
 
 const parseInlineMarkdown = (text: string) => {
-  const parts = text.split("**");
-  return parts.map((part, index) => {
-    if (index % 2 === 1) {
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const linkParts = [];
+  let lastIndex = 0;
+  let match;
+  
+  while ((match = linkRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      linkParts.push(text.substring(lastIndex, match.index));
+    }
+    linkParts.push({ text: match[1], url: match[2] });
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < text.length) {
+    linkParts.push(text.substring(lastIndex));
+  }
+  
+  return linkParts.map((part, i) => {
+    if (typeof part === 'string') {
+      const boldParts = part.split("**");
       return (
-        <strong key={index} className="font-bold text-[#432d1c]">
-          {part}
-        </strong>
+        <React.Fragment key={`text-${i}`}>
+          {boldParts.map((bPart, j) => {
+            if (j % 2 === 1) {
+              return <strong key={`bold-${i}-${j}`} className="font-semibold text-[#de5e18] tracking-tight">{bPart}</strong>;
+            }
+            return bPart;
+          })}
+        </React.Fragment>
+      );
+    } else {
+      return (
+        <Link key={`link-${i}`} href={part.url} className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">
+          {part.text}
+        </Link>
       );
     }
-    return part;
   });
+};
+
+const FaqAccordion = ({ faqs }: { faqs: { question: string; answer: string }[] }) => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  if (!faqs || faqs.length === 0) return null;
+
+  return (
+    <div className="w-full mt-10 mb-2">
+      <h3 id="faq" className="text-[26px] md:text-[32px] font-bold text-[#432d1c] tracking-tight mb-6 font-sans scroll-mt-28">
+        Frequently Asked Questions
+      </h3>
+      <div className="flex flex-col gap-3">
+        {faqs.map((faq, index) => {
+          const isOpen = openIndex === index;
+          return (
+            <div 
+              key={index} 
+              className={`w-full rounded-2xl border transition-all duration-300 overflow-hidden ${isOpen ? 'border-[#de5e18] shadow-md bg-white' : 'border-black/10 bg-white hover:border-black/20'}`}
+            >
+              <button 
+                onClick={() => setOpenIndex(isOpen ? null : index)}
+                className="w-full text-left px-5 py-4 flex items-center justify-between focus:outline-none"
+              >
+                <span className="font-semibold text-[17px] text-[#432d1c] pr-4">{faq.question}</span>
+                <span className={`shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#f2decc] text-[#de5e18] transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </span>
+              </button>
+              <div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                <p className="px-5 pb-5 text-[16px] text-black/75 leading-relaxed">
+                  {faq.answer}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 };
 
 export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
@@ -59,7 +127,7 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
 
   // Parse sections (h3 headers) for TOC
   const sections = useMemo(() => {
-    return service.content
+    const parsedSections = service.content
       .split("\n")
       .filter((line) => line.trim().startsWith("###"))
       .map((line) => {
@@ -70,7 +138,16 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
           .replace(/\s+/g, "-");
         return { id, title: text };
       });
-  }, [service.content]);
+      
+    parsedSections.push({ id: "reviews", title: "Reviews" });
+    
+    if (service.faqs && service.faqs.length > 0) {
+      parsedSections.push({ id: "faq", title: "FAQ" });
+    }
+    
+    console.log("DEBUG SECTIONS:", parsedSections);
+    return parsedSections;
+  }, [service.content, service.faqs]);
 
   // Track active section on scroll
   useEffect(() => {
@@ -91,6 +168,26 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
 
     return () => observer.disconnect();
   }, [sections]);
+
+  // Auto-scroll TOC sidebar when active item changes
+  useEffect(() => {
+    if (activeId) {
+      const activeElement = document.getElementById(`toc-${activeId}`);
+      const sidebar = document.getElementById("toc-sidebar");
+      if (activeElement && sidebar) {
+        const sidebarRect = sidebar.getBoundingClientRect();
+        const activeRect = activeElement.getBoundingClientRect();
+        
+        // Only scroll if the active item is not fully visible in the sidebar
+        if (activeRect.top < sidebarRect.top || activeRect.bottom > sidebarRect.bottom) {
+          sidebar.scrollTo({
+            top: activeElement.offsetTop - sidebar.offsetTop - 20,
+            behavior: "smooth"
+          });
+        }
+      }
+    }
+  }, [activeId]);
 
   const handleShare = (platform: string) => {
     const title = service.title;
@@ -124,7 +221,7 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
         elements.push(
           <p
             key={`p-${key}`}
-            className="text-[16px] md:text-[18px] leading-[1.7] text-[#432d1c]/85 mb-6 font-normal font-sans"
+            className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]"
           >
             {parseInlineMarkdown(currentParagraph.join(" "))}
           </p>
@@ -164,10 +261,9 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
           <h3
             key={`h3-${index}`}
             id={id}
-            className="text-[22px] md:text-[28px] font-bold text-[#0f0f0f] mt-10 mb-4 font-sans scroll-mt-28 flex items-center gap-3"
+            className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28"
           >
-            <span className="text-[#de5e18] font-mono">// {numStr}</span>
-            <span>{text}</span>
+            {text}
           </h3>
         );
       } else if (trimmed.startsWith("-")) {
@@ -191,47 +287,46 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
 
   return (
     <div className="w-full bg-[#f2decc] min-h-screen pb-16">
-      {/* Top Hero Section */}
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 pt-6 pb-2">
-        {/* Mobile & Desktop Dark Hero Card */}
-        <div className="w-full bg-[#432d1c] text-white rounded-[28px] p-6 sm:p-10 lg:p-14 mb-6 shadow-lg relative overflow-hidden text-center flex flex-col items-center">
-          <div className="text-[11px] sm:text-[12px] tracking-[0.2em] font-bold text-[#de5e18] uppercase mb-3">
-            [ SERVICE ]
-          </div>
-
-          <h1 className="text-[28px] sm:text-[42px] md:text-[54px] lg:text-[64px] font-extrabold leading-[1.1] tracking-tight mb-4 max-w-[900px] text-white">
-            {service.h1Title || service.title}
-          </h1>
-
-          <p className="text-[14px] sm:text-[16px] text-white/70 max-w-[650px] leading-relaxed mb-6 font-light">
-            {service.description1 || service.metaDescription || "Engineered to convert visitors into customers, not just look good. High-performance, mobile-first growth systems."}
-          </p>
-
-          <Link href="/contact" className="inline-block">
-            <button 
-              className="relative w-[260px] sm:w-[280px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
-              aria-label="For Consultation"
-            >
-              {/* Inner Left Pill with right shadow */}
-              <div className="absolute left-0 top-0 w-[195px] sm:w-[215px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
-                <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
-                <span className="font-medium text-[15px] sm:text-[16px] text-white tracking-tight whitespace-nowrap">
-                  For Consultation
-                </span>
-              </div>
-              
-              {/* Right Arrow Icon */}
-              <div className="absolute right-[20px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
-                <svg className="w-[20px] h-[20px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                </svg>
-              </div>
-            </button>
-          </Link>
+      {/* Top Hero Section - Full Width */}
+      <div className="w-full bg-[#432d1c] text-white pt-[120px] lg:pt-[160px] pb-14 px-4 sm:px-6 lg:px-12 relative overflow-hidden text-center flex flex-col items-center">
+        <div className="text-[11px] sm:text-[12px] tracking-[0.2em] font-bold text-[#de5e18] uppercase mb-2">
+          [ SERVICE ]
         </div>
 
-        {/* Breadcrumb Navigation */}
-        <div className="flex items-center gap-2 text-[13px] sm:text-[14px] text-black/60 font-medium mb-6 px-1">
+        <h1 className="text-[26px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-extrabold leading-[1.1] tracking-tight mb-3 max-w-[800px] text-white">
+          {service.h1Title || service.title}
+        </h1>
+
+        <p className="text-[13px] sm:text-[15px] text-white/70 max-w-[600px] leading-relaxed mb-5 font-light">
+          {service.metaDescription || service.tagline || "Engineered to convert visitors into customers, not just look good. High-performance, mobile-first growth systems."}
+        </p>
+
+        <Link href="/contact" className="inline-block">
+          <button 
+            className="relative w-[220px] sm:w-[240px] h-[52px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
+            aria-label="For Consultation"
+          >
+            {/* Inner Left Pill with right shadow */}
+            <div className="absolute left-0 top-0 w-[165px] sm:w-[185px] h-[52px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+              <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
+              <span className="font-medium text-[14px] sm:text-[15px] text-white tracking-tight whitespace-nowrap">
+                For Consultation
+              </span>
+            </div>
+            
+            {/* Right Arrow Icon */}
+            <div className="absolute right-[20px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
+              <svg className="w-[20px] h-[20px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+          </button>
+        </Link>
+      </div>
+
+      {/* Breadcrumb Navigation - Moved outside the dark hero */}
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 py-6">
+        <div className="flex items-center gap-2 text-[13px] sm:text-[14px] text-black/60 font-medium px-1">
           <Link href="/" className="hover:text-[#de5e18] transition-colors">Home</Link>
           <span>/</span>
           <Link href="/services" className="hover:text-[#de5e18] transition-colors">Services</Link>
@@ -241,32 +336,33 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
       </div>
 
       {/* Main Grid Layout */}
-      <div className="grid grid-cols-1 lg:grid-cols-[240px_1fr_280px] gap-8 xl:gap-12 items-start max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
+      <div className="w-full max-w-none mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-[200px_1fr_280px] gap-6 xl:gap-10 items-start">
         
         {/* Left Sidebar - Table of Contents */}
-        <aside className="hidden lg:block sticky top-28 w-full pr-4">
-          <h4 className="text-[11px] font-bold uppercase tracking-[0.2em] text-black/40 mb-6 font-sans text-left">
-            TABLE OF CONTENTS
-          </h4>
+        <aside 
+          id="toc-sidebar"
+          className="hidden lg:block sticky top-28 w-full pr-2 max-h-[calc(100vh-120px)] overflow-y-auto pb-10 custom-scrollbar"
+        >
           <nav className="flex flex-col gap-2">
-            {sections.map((sec, idx) => {
+            {sections.map((sec) => {
               const isActive = activeId === sec.id;
               return (
                 <a
                   key={sec.id}
+                  id={`toc-${sec.id}`}
                   href={`#${sec.id}`}
                   onClick={(e) => {
                     e.preventDefault();
                     document.getElementById(sec.id)?.scrollIntoView({ behavior: "smooth" });
                     setActiveId(sec.id);
                   }}
-                  className={`text-[14px] font-medium leading-[1.4] transition-all duration-200 border-l-2 pl-3 py-1.5 text-left ${
+                  className={`text-[14px] leading-[1.4] transition-all duration-200 py-1.5 pr-4 text-left border-r-[3px] ${
                     isActive
-                      ? "text-[#de5e18] border-[#de5e18] font-semibold bg-[#de5e18]/5 rounded-r-md"
-                      : "text-black/60 border-transparent hover:text-black"
+                      ? "text-[#0f0f0f] border-[#de5e18] font-bold"
+                      : "text-black/60 border-transparent hover:text-black font-medium"
                   }`}
                 >
-                  {idx + 1}. {sec.title}
+                  {sec.title}
                 </a>
               );
             })}
@@ -274,7 +370,7 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
         </aside>
 
         {/* Middle Column - Content */}
-        <div className="w-full min-w-0">
+        <div className="w-full min-w-0 lg:pr-2">
           {/* Mobile Horizontal Tabs Bar (Matching reference image) */}
           {sections.length > 0 && (
             <div className="lg:hidden w-full border-b border-black/10 mb-8 bg-[#f2decc]/90 sticky top-0 z-30 backdrop-blur-md">
@@ -316,8 +412,8 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
           )}
 
           {/* Article Content Container */}
-          <article className="w-full bg-white border border-black/8 rounded-[28px] p-6 md:p-10 lg:p-12 shadow-[0_4px_30px_rgba(0,0,0,0.015)]">
-            <div className="prose max-w-none text-[#432d1c] font-sans text-left">
+          <article className="w-full bg-white border border-black/8 rounded-xl p-6 md:p-8 lg:p-10 shadow-sm">
+            <div className="prose prose-lg max-w-none text-[#432d1c] font-sans text-left">
               {renderContent(service.content)}
             </div>
 
@@ -356,14 +452,60 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
                 </button>
               </div>
             </div>
+            
+            {/* Client Reviews Section */}
+            <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
+              <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+                <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                Client Reviews
+              </h3>
+              
+              <div className="flex flex-col gap-8">
+                <div className="border-b border-black/5 pb-6">
+                  <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
+                    "Southern Edge Marketing transformed our digital presence completely. The custom web platform reduced patient onboarding time by 40% and significantly elevated our brand authority."
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Anand M. Sharma" className="w-full h-full object-cover object-center grayscale" />
+                    </div>
+                    <div>
+                      <p className="text-[14px] font-bold text-black">Anand M. Sharma</p>
+                      <p className="text-[12px] text-black/50 uppercase tracking-wide">AMA Legal Solutions</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
+                    "Our Shopify storefront conversion rates increased by 42% within weeks of launch. Their team understands both high-end design aesthetics and conversion science."
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rohan Kapoor" className="w-full h-full object-cover object-center grayscale" />
+                    </div>
+                    <div>
+                      <p className="text-[14px] font-bold text-black">Rohan Kapoor</p>
+                      <p className="text-[12px] text-black/50 uppercase tracking-wide">The Fat Cookie</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* FAQs Accordion */}
+            {service.faqs && service.faqs.length > 0 && (
+              <FaqAccordion faqs={service.faqs} />
+            )}
           </article>
         </div>
 
         {/* Right Sidebar - About Agency & Contact Card */}
-        <aside className="w-full lg:sticky lg:top-28 space-y-6">
-          
+        <aside className="w-full lg:sticky lg:top-28 space-y-5">
           {/* Company Bio Card */}
-          <div className="bg-white border border-black/10 rounded-[24px] p-6 text-[#0f0f0f] shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative overflow-hidden group text-left">
+          <div className="bg-white border border-black/10 rounded-xl p-6 text-[#0f0f0f] shadow-sm relative overflow-hidden group text-left">
             <div className="absolute top-[-20%] right-[-10%] w-[50%] aspect-square rounded-full bg-[#de5e18]/10 blur-[30px] pointer-events-none" />
             <h3 className="text-[18px] font-bold mb-3 uppercase tracking-wide text-black">
               Southern Edge Marketing
@@ -371,19 +513,19 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
             <p className="text-[14px] text-black/75 leading-relaxed mb-6 font-light">
               We design, build, and optimize high-converting digital storefronts, corporate portals, and brand systems for ambitious companies.
             </p>
-            <Link href="/about" className="inline-block mt-4">
-              <button 
-                className="relative w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
+            <Link href="/about" className="block mt-4 w-full">
+              <button
+                className="relative w-full h-[58px] sm:h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
                 aria-label="Learn about us"
               >
                 {/* Inner Left Pill with right shadow */}
-                <div className="absolute left-[0px] top-0 w-[157px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-[6px] transform group-hover:translate-x-[3px] transition-transform duration-300 z-10">
+                <div className="absolute left-0 top-0 w-[calc(100%-45px)] h-full rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-2 transform group-hover:translate-x-[3px] transition-transform duration-300 z-10 px-2 sm:px-3">
                   <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
-                  <span className="font-semibold text-[16px] text-white tracking-wide whitespace-nowrap">
+                  <span className="font-medium text-[13px] sm:text-[14px] lg:text-[15px] text-white tracking-tight whitespace-nowrap">
                     Learn about us
                   </span>
                 </div>
-                
+
                 {/* Right Arrow Icon */}
                 <div className="absolute right-[24px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
                   <svg className="w-[21px] h-[21px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -395,7 +537,7 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
           </div>
 
           {/* Need Marketing Help Card */}
-          <div className="bg-white border border-black/10 rounded-[24px] p-6 shadow-[0_4px_30px_rgba(0,0,0,0.02)] text-left">
+          <div className="bg-white border border-black/10 rounded-xl p-6 shadow-sm text-left">
             <h3 className="text-[18px] font-bold text-black mb-3 uppercase tracking-wide">
               Start Your Digital Journey
             </h3>
@@ -404,19 +546,17 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
             </p>
             <div className="flex flex-col gap-3">
               <Link href="/contact" className="w-full">
-                <button 
+                <button
                   className="relative w-full h-[58px] sm:h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-shadow group cursor-pointer"
                   aria-label="For Consultation"
                 >
-                  {/* Inner Left Pill with right shadow */}
                   <div className="absolute left-0 top-0 w-[calc(100%-45px)] h-full rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] drop-shadow-[4px_0px_6px_rgba(0,0,0,0.25)] flex items-center justify-center gap-2 transform group-hover:translate-x-[3px] transition-transform duration-300 z-10 px-2 sm:px-3">
                     <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
                     <span className="font-medium text-[13px] sm:text-[14px] lg:text-[15px] text-white tracking-tight whitespace-nowrap">
                       For Consultation
                     </span>
                   </div>
-                  
-                  {/* Right Arrow Icon */}
+
                   <div className="absolute right-[14px] top-1/2 -translate-y-1/2 flex items-center justify-center transform group-hover:translate-x-[3px] transition-transform duration-300 z-0">
                     <svg className="w-[18px] h-[18px] text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
@@ -426,6 +566,7 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
               </Link>
             </div>
           </div>
+
         </aside>
 
       </div>

@@ -15,14 +15,14 @@ export const DesktopServicesPage = () => {
 
         {/* Main Heading */}
         <h1 className="text-[56px] md:text-[80px] lg:text-[85px] font-medium text-black leading-[1.05] tracking-tight">
-          Six capabilities.<br />
-          <span className="text-[#de5e18]">One system.</span>
+          Top Full Service<br />
+          <span className="text-[#de5e18]">Digital Marketing Agency.</span>
         </h1>
 
         {/* Sub-heading & CTA Button */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end w-full gap-8 mt-2">
           <p className="text-black/70 text-[16px] md:text-[18px] lg:text-[18px] leading-relaxed max-w-[620px] text-justify md:text-left">
-            We don't offer isolated services. Every capability we practice is engineered to compound with the others, creating a growth system that gets smarter and more profitable with every passing month.
+            We are a premier full-service digital marketing agency dedicated to scaling your business. Our team provides comprehensive digital marketing services tailored to your unique goals. We do not offer isolated solutions. Instead, we build a unified growth system that gets smarter and more profitable over time. By partnering with a results-driven digital marketing company, you ensure every capability works together to maximize your revenue.
           </p>
           <Link href="/contact" className="shrink-0 mt-4 md:mt-0">
             <button 

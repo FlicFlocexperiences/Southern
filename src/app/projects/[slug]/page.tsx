@@ -6,8 +6,7 @@ import { DesktopFooter } from "@/components/desktop-footer";
 import { MobileFooter } from "@/components/mobile-footer";
 import { Cta } from "@/components/cta";
 import { ProjectGallerySlider } from "@/components/project-gallery-slider";
-import { DesktopFaq } from "@/components/desktop-faq";
-import { MobileFaq } from "@/components/mobile-faq";
+
 import fs from "fs";
 import path from "path";
 
@@ -168,7 +167,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const project = getProjectBySlug(slug);
   if (!project) return {};
   return {
-    title: `${project.title} | Southern Edge Marketing`,
+    alternates: { canonical: `/projects/${slug}` },
+    title: `${project.title}`,
     description: project.description || `${project.title} case study by Southern Edge Marketing.`,
   };
 }
@@ -348,11 +348,9 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
       <div style={{ zoom: 0.8 }}><Cta /></div>
       <div className="hidden md:block" style={{ zoom: 0.8 }}>
-        <DesktopFaq />
         <DesktopFooter />
       </div>
       <div className="md:hidden" style={{ zoom: 0.8 }}>
-        <MobileFaq />
         <MobileFooter />
       </div>
     </div>

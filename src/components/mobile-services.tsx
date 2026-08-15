@@ -43,15 +43,15 @@ const services = [
   },
   {
     num: "05",
-    title: "SEO Solutions",
-    desc: "We optimize your website's search visibility to drive consistent, high-intent organic traffic that converts without recurring advertising spend.",
+    title: "Proven SEO Services in Delhi",
+    desc: "Visibility on search engines is the foundation of online success. We are recognized as a leading SEO company in Delhi, helping businesses climb the rankings and stay there. Our SEO services in Delhi focus on technical optimization, high quality content, and authoritative link building.",
     time: "3 to 4 weeks",
     icon: <img src="/6d024c7b5b7156400997ad06258dcf9946364743.svg" alt="SEO Solutions" className="w-[45px] h-[45px] object-contain" />
   },
   {
     num: "06",
-    title: "Performance Marketing",
-    desc: "We run data-driven, highly optimized ad campaigns across Google and Meta to scale your acquisition pipeline with predictable customer acquisition costs.",
+    title: "PPC Services in Delhi",
+    desc: "When organic growth needs a boost, our targeted paid advertising campaigns step in. We craft highly optimized ads that put your brand directly in front of active buyers. By leveraging our PPC services in Delhi, you maximize your return on investment.",
     time: "2 to 4 weeks",
     icon: <img src="/00cd375964412dedc26595d780eebba9baf9a5c4.svg" alt="Performance Marketing" className="w-[45px] h-[45px] object-contain" />
   },
@@ -77,12 +77,12 @@ export const MobileServices = () => {
             <span className="text-[#de5e18]">]</span>
           </p>
           
-          <h2 className="text-[60px] font-bold text-black leading-[0.9] tracking-tight mb-6">
-            WHAT WE<br />DO BEST
+          <h2 className="text-[44px] sm:text-[50px] font-bold text-black leading-[0.9] tracking-tight mb-6">
+            EXPERT DIGITAL<br />MARKETING SERVICES<br />IN DELHI NCR
           </h2>
           
-          <p className="text-[18px] text-black/65 font-normal leading-[1.4] mb-8">
-            From web development and branding to SEO and marketing, we create digital solutions designed to drive measurable growth.
+          <p className="text-[16px] text-black/65 font-normal leading-[1.4] mb-8">
+            In today's competitive landscape, having a beautiful website is not enough. You need a comprehensive approach to capture and convert your audience. As an experienced online marketing agency, we build custom campaigns tailored to your specific industry. We do not believe in generic solutions. Instead, we analyze your market, understand your customers, and deploy digital marketing services in Delhi NCR that generate sustainable, long term ROI.
           </p>
 
           <div className="flex items-center gap-4">

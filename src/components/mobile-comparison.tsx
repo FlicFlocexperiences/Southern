@@ -21,33 +21,36 @@ export const MobileComparison = () => {
 
   return (
     <div className="w-full px-5 py-12 relative bg-[#f2decc]">
-      {/* Intro Text Block 1 */}
-      <p className="text-[26px] leading-[34px] font-sans font-normal text-black mb-6">
-        We know choosing the right{" "}
-        <span className={highlightClass}>digital partner</span>{" "}
-        is difficult because many agencies{" "}
-        <span className={highlightClass}>promise results</span>{" "}
-        but few actually{" "}
-        <span className={highlightClass}>deliver.</span>
-      </p>
+      {/* Intro Text Block */}
+      <div className="mb-10">
+        <p className="text-[26px] leading-[34px] font-sans font-normal text-black mb-6">
+          We know choosing the right{" "}
+          <span className={highlightClass}>digital partner</span>{" "}
+          is difficult because many agencies{" "}
+          <span className={highlightClass}>promise results</span>{" "}
+          but few actually{" "}
+          <span className={highlightClass}>deliver.</span>
+        </p>
 
-      {/* Intro Text Block 2 */}
-      <p className="text-[26px] leading-[34px] font-sans font-normal text-black mb-12">
-        So we made it easy to{" "}
-        <span className={highlightClass}>compare</span>{" "}
-        what you get with us{" "}
-        <span className="inline-flex items-center mx-1 align-middle translate-y-[-2px]">
+        <p className="text-[26px] leading-[34px] font-sans font-normal text-black mb-8">
+          So we made it easy to{" "}
+          <span className={highlightClass}>compare</span>{" "}
+          what you get with us versus what most agencies{" "}
+          <span className={highlightClass}>offer.</span>
+        </p>
+
+        <div className="flex items-center justify-start gap-4">
+          <span className={`text-[16px] font-medium transition-colors duration-300 ${!isOn ? 'text-black' : 'text-gray-400'}`}>Other Agencies</span>
           <button 
             onClick={() => setIsOn(!isOn)}
-            className={`relative w-[76px] h-[38px] rounded-full overflow-hidden block transition-colors duration-300 ${isOn ? 'bg-[#de5e18]' : 'bg-gray-400'}`}
+            className={`relative w-[76px] h-[38px] rounded-full overflow-hidden block shrink-0 transition-colors duration-300 ${isOn ? 'bg-[#de5e18]' : 'bg-[#6b7282]'}`}
             aria-label="Toggle comparison"
           >
             <span className={`absolute top-[4px] left-0 w-[30px] h-[30px] bg-white rounded-full block shadow-sm transition-transform duration-300 ${isOn ? 'translate-x-[42px]' : 'translate-x-[4px]'}`}></span>
           </button>
-        </span>{" "}
-        versus what most agencies{" "}
-        <span className={highlightClass}>offer.</span>
-      </p>
+          <span className={`text-[16px] font-medium transition-colors duration-300 ${isOn ? 'text-[#de5e18]' : 'text-gray-400'}`}>Southern Edge</span>
+        </div>
+      </div>
 
       {/* Comparison Cards Wrapper */}
       <div className="rounded-[20px] overflow-hidden flex flex-col shadow-sm border border-gray-100/50">

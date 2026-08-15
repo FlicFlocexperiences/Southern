@@ -40,9 +40,12 @@ export const WhyUs = () => {
         </p>
 
         {/* Section Heading */}
-        <h2 className="text-[42px] sm:text-[56px] md:text-[72px] lg:text-[85px] font-bold text-black leading-[1.02] tracking-tight mb-12 md:mb-16 max-w-[900px]">
-          Why 100+ businesses grow with us
+        <h2 className="text-[42px] sm:text-[56px] md:text-[72px] lg:text-[85px] font-bold text-black leading-[1.02] tracking-tight mb-6 max-w-[900px]">
+          Why Partner With Us?
         </h2>
+        <p className="text-[18px] md:text-[22px] text-black/70 leading-[1.4] max-w-[800px] mb-12 md:mb-16">
+          Choosing the right digital marketing agency in Delhi can make or break your online presence. With a stellar 5.0 rating, we bring transparency, dedication, and proven frameworks to every project. We operate as an extension of your team. Let us build a growth engine that scales your revenue and elevates your brand above the noise.
+        </p>
 
         {/* Desktop: Static 2x2 Grid (Visible on >= 768px) */}
         <div className="hidden md:grid grid-cols-2 gap-6 md:gap-8 w-full">

@@ -6,8 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const ArrowRightIcon = () => (
-// ... existing ArrowRightIcon ...
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
 );
@@ -24,35 +23,34 @@ export const DesktopNav = () => {
   ];
 
   return (
-    <div className="absolute top-4 left-0 right-0 z-[100] w-full px-6 md:px-10 py-4 flex flex-col gap-3 max-w-[1280px] mx-auto" style={{ zoom: 0.8 }}>
-
+    <div className="fixed top-3 left-0 right-0 z-[100] w-full px-5 md:px-8 py-3 flex flex-col gap-3 max-w-[1280px] mx-auto">
 
       {/* Main Navbar */}
-      <nav className="w-full h-[68px] bg-[#de5e18] rounded-full flex items-center justify-between px-6 relative overflow-hidden shadow-sm">
+      <nav className="w-full h-[54px] bg-[#de5e18] rounded-full flex items-center justify-between px-5 relative overflow-hidden shadow-sm">
         {/* Logo */}
         <div className="flex items-center shrink-0">
           <Link href="/">
             <Image
               src="/LOGO_Final.svg"
               alt="SEM Logo"
-              width={56}
-              height={56}
-              className="h-14 w-14 cursor-pointer transition-transform"
+              width={44}
+              height={44}
+              className="h-11 w-11 cursor-pointer transition-transform"
             />
           </Link>
         </div>
 
         {/* Links */}
-        <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-[28px]">
+        <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-[22px]">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
               <Link 
                 key={link.name}
                 href={link.href} 
-                className={`text-[18px] transition-all whitespace-nowrap ${
+                className={`text-[15px] transition-all whitespace-nowrap ${
                   isActive 
-                    ? "text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]" 
+                    ? "text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]" 
                     : "text-white/65 hover:text-white"
                 }`}
               >
@@ -65,15 +63,15 @@ export const DesktopNav = () => {
         {/* CTA Button */}
         <Link 
           href="/contact" 
-          className="shrink-0 h-[48px] bg-white rounded-full flex items-center pl-5 pr-[4px] gap-3 group hover:scale-[1.02] transition-transform"
+          className="shrink-0 h-[38px] bg-white rounded-full flex items-center pl-4 pr-[3px] gap-2 group hover:scale-[1.02] transition-transform"
         >
-          <div className="flex items-center gap-[6px]">
-            <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
-            <span className="text-black text-[20px] font-medium tracking-tight whitespace-nowrap pt-0.5">
+          <div className="flex items-center gap-[5px]">
+            <div className="w-[6px] h-[6px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_6px_#00ff00] animate-pulse" />
+            <span className="text-black text-[15px] font-medium tracking-tight whitespace-nowrap pt-0.5">
               Let's impress you
             </span>
           </div>
-          <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center relative overflow-hidden group-hover:rotate-45 transition-transform duration-300 shadow-inner">
+          <div className="w-[32px] h-[32px] rounded-full flex items-center justify-center relative overflow-hidden group-hover:rotate-45 transition-transform duration-300 shadow-inner">
              <div className="absolute inset-0 bg-gradient-to-r from-[#ffa479] to-[#de5e18]" />
              <div className="relative z-10 text-white">
                <ArrowRightIcon />

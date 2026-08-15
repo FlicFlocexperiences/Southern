@@ -5,6 +5,7 @@ import { NameInput } from "@/components/name-input";
 import { PhoneInput } from "@/components/phone-input";
 import { countryCodes } from "@/lib/countryCodes";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 // Local Social Icons
 const InstagramIcon = () => (
@@ -181,6 +182,14 @@ export const ContactUsWidget = () => {
             />
           </div>
 
+          {/* Disclaimer */}
+          <div className="text-[13px] text-black/60 text-center mt-2 mb-2 leading-relaxed px-2">
+            By clicking submit, you agree to share these details with us for the purpose of contacting you regarding our services. Please read our{" "}
+            <Link href="/privacy" className="text-[#de5e18] hover:underline font-medium">Privacy Policy</Link> and{" "}
+            <Link href="/terms" className="text-[#de5e18] hover:underline font-medium">Terms & Conditions</Link>{" "}
+            (including our <Link href="/terms" className="text-[#de5e18] hover:underline font-medium">Refund Policy</Link>) for more details.
+          </div>
+
           {/* Submit Button */}
           <div className="mt-4 flex justify-center w-full">
             <button 
@@ -221,7 +230,32 @@ export const ContactUsWidget = () => {
         </div>
 
         {/* Center content */}
-        <div className="flex-1 flex flex-col justify-center items-center mt-20 w-full">
+        <div className="flex-1 flex flex-col justify-center items-center mt-24 w-full">
+          {/* Moving Client Logos */}
+          <div className="w-full relative overflow-hidden mb-8 flex flex-col items-center">
+            <p className="text-[11px] font-bold text-black/30 mb-3 uppercase tracking-[2px]">Trusted By</p>
+            <div className="w-full relative overflow-hidden h-[45px] md:h-[55px] opacity-90 transition-all duration-500">
+              {/* Fade edges */}
+              <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
+              <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none" />
+              
+              <div className="animate-logo-slide flex items-center w-max h-full">
+                {Array.from({ length: 30 }).map((_, index) => {
+                  const logoIndex = (index % 15) + 1;
+                  return (
+                    <div key={index} className="h-[35px] md:h-[45px] w-[110px] md:w-[140px] mx-[15px] relative flex items-center justify-center shrink-0">
+                      <img 
+                        src={`/clientlogo/logo-${logoIndex}.png`} 
+                        alt={`Client Logo ${logoIndex}`} 
+                        className="max-h-full max-w-full object-contain mix-blend-multiply"
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+
           <h4 className="text-[22px] font-bold text-black tracking-tight mb-3">Prefer email or phone?</h4>
           <p className="text-[15px] text-black/50 leading-relaxed max-w-[260px] mx-auto mb-8">
             Let's connect. Reach out and we'll help bring your ideas to life.
@@ -251,13 +285,24 @@ export const ContactUsWidget = () => {
             </a>
           </div>
 
-          {/* Phone Link */}
-          <p className="text-[14px] text-black/50 mt-5">
-            or call us at 
-            <a href="tel:+918700901769" className="font-bold text-black hover:text-[#de5e18] transition-colors ml-1.5 whitespace-nowrap">
-              +91 87009 01769
-            </a>
-          </p>
+          {/* QR Code and Phone Link */}
+          <div className="flex flex-col items-center gap-3 mt-6">
+            <div className="p-2 bg-white border border-black/5 rounded-[16px] shadow-[inset_0_2px_8px_rgba(0,0,0,0.04)] inline-block hover:shadow-[inset_0_2px_12px_rgba(0,0,0,0.08)] transition-all">
+              <img 
+                src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=tel:+918700901769&margin=2" 
+                alt="Scan to call" 
+                width={90} 
+                height={90}
+                className="rounded-xl mix-blend-multiply opacity-80 hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <p className="text-[14px] text-black/50">
+              Scan to call, or dial 
+              <a href="tel:+918700901769" className="font-bold text-black hover:text-[#de5e18] transition-colors ml-1.5 whitespace-nowrap">
+                +91 87009 01769
+              </a>
+            </p>
+          </div>
         </div>
 
         {/* Social Icons at the bottom */}

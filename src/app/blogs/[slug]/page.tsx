@@ -13,6 +13,8 @@ import { db } from "@/lib/firebase";
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
+const stripHtml = (html: string) => html ? html.replace(/<[^>]+>/g, '') : '';
+
 async function getLiveBlog(slug: string): Promise<Blog | null> {
   try {
     const q = query(collection(db, "blogs"), where("slug", "==", slug));
@@ -25,18 +27,19 @@ async function getLiveBlog(slug: string): Promise<Blog | null> {
     const docSnap = snapshot.docs[0];
     const data = docSnap.data();
 
-    // Fetch FAQs
-    const faqsSnapshot = await getDocs(collection(db, "blogs", docSnap.id, "faqs"));
-    const faqs = faqsSnapshot.docs.map(faqDoc => faqDoc.data() as any);
+    // Fetch FAQs and Reviews in parallel
+    const [faqsSnapshot, reviewsSnapshot] = await Promise.all([
+      getDocs(collection(db, "blogs", docSnap.id, "faqs")),
+      getDocs(collection(db, "blogs", docSnap.id, "reviews"))
+    ]);
 
-    // Fetch Reviews
-    const reviewsSnapshot = await getDocs(collection(db, "blogs", docSnap.id, "reviews"));
+    const faqs = faqsSnapshot.docs.map(faqDoc => faqDoc.data() as any);
     const reviews = reviewsSnapshot.docs.map(reviewDoc => reviewDoc.data() as any);
 
     return {
       slug: data.slug || docSnap.id,
       title: data.title || "Untitled",
-      excerpt: data.subtitle || data.metaDescription || "",
+      excerpt: stripHtml(data.subtitle || data.metaDescription || ""),
       content: data.description || "", // Mapping description to content for BlogContent
       publishedAt: data.date || new Date().toISOString().split('T')[0],
       category: "MARKETING",
@@ -57,7 +60,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   if (!blog) return {};
   return {
-    title: `${blog.title} | Southern Edge Marketing`,
+    alternates: { canonical: `/blogs/${slug}` },
+    title: `${blog.title}`,
     description: blog.excerpt,
   };
 }

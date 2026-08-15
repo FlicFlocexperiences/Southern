@@ -18,27 +18,38 @@ const ArrowDownIcon = ({ isOpen }: { isOpen: boolean }) => (
   </svg>
 );
 
-export const DesktopFaq = () => {
+export interface FaqItemType {
+  question: string;
+  answer: string;
+}
+
+interface DesktopFaqProps {
+  faqs?: FaqItemType[];
+}
+
+export const DesktopFaq = ({ faqs: customFaqs }: DesktopFaqProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const faqs = [
+  const defaultFaqs = [
     {
-      question: "Who do you usually work with?",
-      answer: "We work with small and growing businesses across India, from D2C and e-commerce brands to F&B, retail, and professional services, who want marketing that's tied to real business outcomes, not just impressions."
+      question: "Why should I hire a digital marketing agency in Delhi?",
+      answer: "Hiring a local digital marketing agency in Delhi gives you an edge. We understand the local market dynamics and consumer behavior. Our team creates customized strategies that connect your brand with the right audience, helping you scale revenue faster than trying to manage everything in house."
     },
     {
-      question: "How much does a new website cost?",
-      answer: "Every project is scoped around what your business actually needs, from a lean landing page to a full custom build. Reach out for a free quote based on your goals and timeline."
+      question: "How much do digital marketing services in Delhi NCR cost?",
+      answer: "Pricing depends on your specific goals and requirements. We offer flexible digital marketing services in Delhi NCR, ranging from core SEO packages to comprehensive paid advertising campaigns. Reach out to us for a customized quote tailored to your business needs and budget."
     },
     {
-      question: "Do you offer ongoing support?",
-      answer: "Yes, we don't disappear after launch. We offer ongoing maintenance, content, and performance support so your website and campaigns keep improving after go-live."
+      question: "How long does it take for your SEO company in Delhi to show results?",
+      answer: "SEO is a long term strategy. While some technical improvements can show rapid results, significant organic growth usually takes 3 to 6 months. As an experienced SEO company in Delhi, we focus on sustainable methods that build lasting authority and consistent traffic for your brand."
     },
     {
-      question: "How long does it take to see results?",
-      answer: "It depends on the channel: website and brand work show up immediately, SEO typically builds momentum over 3 to 6 months, and paid ads/social can show early signals within the first few weeks."
+      question: "Do you combine SEO services in Delhi with paid ads?",
+      answer: "Yes, we do. While our SEO services in Delhi build your long term organic presence, our targeted PPC services in Delhi provide immediate visibility. Combining both approaches ensures you capture both active buyers right now and future customers over time for maximum return on investment."
     }
   ];
+
+  const faqs = customFaqs && customFaqs.length > 0 ? customFaqs : defaultFaqs;
 
   const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);

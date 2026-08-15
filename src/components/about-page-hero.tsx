@@ -20,8 +20,8 @@ export function AboutPageHero() {
       
       <div className="max-w-[1200px] w-full flex flex-col items-start relative z-10">
         <h1 className="text-[40px] sm:text-[55px] md:text-[75px] leading-[1.1] md:leading-[1.05] font-semibold tracking-[-0.02em] text-[#0f0f0f] w-full max-w-[1100px]">
-          We shape Brands
-          <span className="inline-block mt-2">that build lasting connections</span>
+          Top Digital Marketing
+          <span className="inline-block mt-2">Agency in Delhi</span>
         </h1>
         
         <div className="flex items-start gap-4 mt-8 md:mt-10 max-w-[550px]">
@@ -31,7 +31,7 @@ export function AboutPageHero() {
             </svg>
           </div>
           <p className="text-[18px] md:text-[20px] leading-[1.5] text-[#0f0f0f]">
-            We craft brands and digital experiences that build trust, inspire growth, and leave a lasting impact, for businesses across India and the UAE.
+            Welcome to Southern Edge Marketing. As the leading digital marketing agency in Delhi, we specialize in turning attention into action and delivering sustainable growth for our clients.
           </p>
         </div>
 

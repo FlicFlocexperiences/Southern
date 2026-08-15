@@ -3,16 +3,20 @@ import { DesktopFaq } from "@/components/desktop-faq";
 import { DesktopFooter } from "@/components/desktop-footer";
 import { MobileNav } from "@/components/mobile-nav";
 import { MobileFooter } from "@/components/mobile-footer";
+import { MobileFaq } from "@/components/mobile-faq";
 import { countryCodes } from "@/lib/countryCodes";
 import { ContactUsWidget } from "@/components/contact-forms";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Southern Edge Marketing | Let's Impress You",
+  alternates: {
+    canonical: '/contact',
+  },
+  title: "Contact Us",
   description: "Ready to grow? Get in touch with Southern Edge Marketing for a free consultation on strategy, design, and marketing that drives results.",
   openGraph: {
-    title: "Contact Southern Edge Marketing | Let's Impress You",
+    title: "Contact Us | Southern Edge Marketing",
     description: "Ready to grow? Get in touch with Southern Edge Marketing for a free consultation on strategy, design, and marketing that drives results.",
   },
 };
@@ -35,6 +39,25 @@ const XIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4l16 16M4 20L20 4"></path></svg>
 );
 
+const contactFaqs = [
+  {
+    question: "How quickly can I expect a response to my inquiry?",
+    answer: "We aim to respond to all inquiries within 24 business hours. If you reach out over the weekend, we'll get back to you first thing on Monday. For urgent matters, you can also reach us via phone."
+  },
+  {
+    question: "What information should I include in my initial message?",
+    answer: "To help us understand your needs faster, please include your website URL (if you have one), a brief description of your business goals, and the specific services you're interested in. The more details, the better!"
+  },
+  {
+    question: "Can we schedule an in-person meeting?",
+    answer: "Absolutely! We love meeting our clients. If you're located in or around Delhi NCR, we can arrange an in-person meeting at our office or yours. For clients elsewhere, we use Zoom or Google Meet."
+  },
+  {
+    question: "Do you offer free consultations?",
+    answer: "Yes, we offer a complimentary initial consultation. This is a 30-minute discovery call where we learn about your business, discuss your goals, and see if we'd be a good fit for working together."
+  }
+];
+
 export default function Contact() {
   return (
     <>
@@ -53,9 +76,9 @@ export default function Contact() {
               
               <div className="w-full h-px bg-black/10 mb-4" />
               
-              <h1 className="text-[50px] font-semibold text-black leading-[50px] tracking-tight">
+              <h2 className="text-[50px] font-semibold text-black leading-[50px] tracking-tight">
                 CONTACT US
-              </h1>
+              </h2>
             </div>
 
             <div className="w-full mb-8">
@@ -107,6 +130,7 @@ export default function Contact() {
           </section>
           */}
 
+          <MobileFaq faqs={contactFaqs} />
           <MobileFooter />
         </div>
       </div>
@@ -171,7 +195,7 @@ export default function Contact() {
           </section>
           */}
 
-          <DesktopFaq />
+          <DesktopFaq faqs={contactFaqs} />
           <DesktopFooter />
         </div>
       </div>
