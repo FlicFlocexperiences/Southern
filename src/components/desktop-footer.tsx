@@ -14,7 +14,7 @@ export const DesktopFooter = () => {
         {/* Left: Logo & Description */}
         <div className="flex flex-col max-w-[800px]">
           <h2 className="text-[70px] lg:text-[85px] xl:text-[104px] font-bold leading-[0.9] tracking-tight mb-8">
-            <span className="text-[#ff5100]">SOUTHERN</span>
+            <span className="text-[#ff5100]">SOUTHERN EDGE</span>
             <br />
             <span className="text-black">MARKETING</span>
           </h2>

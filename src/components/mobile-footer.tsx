@@ -12,7 +12,7 @@ export const MobileFooter = () => {
       {/* Brand & Intro */}
       <div className="flex flex-col gap-3 mb-6">
         <h2 className="text-[56px] leading-[0.95] font-bold text-black flex flex-col tracking-tight">
-          <span className="text-[#ff5100]">SOUTHERN</span>
+          <span className="text-[#ff5100]">SOUTHERN EDGE</span>
           <span>MARKETING</span>
         </h2>
         <p className="text-[18px] leading-[1.4] text-black/75 mt-3 pr-4 font-sans">
