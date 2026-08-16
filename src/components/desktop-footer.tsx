@@ -96,6 +96,12 @@ export const DesktopFooter = () => {
               >
                 Privacy Policy
               </Link>
+              <Link 
+                href="/refund" 
+                className="text-[28px] lg:text-[36px] text-black font-normal hover:text-white transition-colors duration-300"
+              >
+                Refund Policy
+              </Link>
             </nav>
           </div>
 

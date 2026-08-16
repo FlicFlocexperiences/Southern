@@ -77,12 +77,15 @@ export const MobileFooter = () => {
       </div>
 
       {/* Legal Links Row */}
-      <div className="flex flex-row items-center gap-6 mt-8 mb-4 w-full pl-1">
-        <Link href="/terms" className="text-[16px] text-black leading-none font-sans hover:underline">
+      <div className="flex flex-row flex-wrap items-center gap-4 mt-8 mb-4 w-full pl-1">
+        <Link href="/terms" className="text-[15px] text-black leading-none font-sans hover:underline">
           Terms & Conditions
         </Link>
-        <Link href="/privacy" className="text-[16px] text-black leading-none font-sans hover:underline">
+        <Link href="/privacy" className="text-[15px] text-black leading-none font-sans hover:underline">
           Privacy Policy
+        </Link>
+        <Link href="/refund" className="text-[15px] text-black leading-none font-sans hover:underline">
+          Refund Policy
         </Link>
       </div>
 
