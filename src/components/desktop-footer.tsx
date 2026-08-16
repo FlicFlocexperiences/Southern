@@ -103,7 +103,7 @@ export const DesktopFooter = () => {
           <div className="flex flex-col items-end">
             <p className="text-[18px] lg:text-[24px] text-black/65 mb-6">Social</p>
             <nav className="flex flex-col gap-4">
-              {['Instagram', 'LinkedIn', 'X'].map((link) => (
+              {['Instagram', 'Facebook', 'LinkedIn', 'X'].map((link) => (
                 <a 
                   key={link} 
                   href="/contact" 
