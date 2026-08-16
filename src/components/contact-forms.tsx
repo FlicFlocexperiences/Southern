@@ -227,7 +227,8 @@ export const ContactUsWidget = () => {
 
 
         {/* Floating Time Badge */}
-        <div className="absolute top-6 left-6 bg-[#f4f3ef] text-black/60 px-4 py-2 md:px-6 md:py-3 rounded-full text-[14px] md:text-[16px] font-bold tracking-tight">
+        <div className="absolute top-6 left-6 bg-[#f4f3ef] text-black/60 px-4 py-2 md:px-6 md:py-3 rounded-full text-[14px] md:text-[16px] font-bold tracking-tight flex items-center gap-2">
+          <div className="w-2.5 h-2.5 rounded-full bg-[#22c55e] shrink-0 shadow-[0_0_8px_#22c55e] animate-pulse" />
           Approximately 30-min.
         </div>
 
