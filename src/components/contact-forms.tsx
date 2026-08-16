@@ -237,51 +237,6 @@ export const ContactUsWidget = () => {
         {/* Center content */}
         <div className="flex-1 flex flex-col justify-center items-center mt-24 w-full">
 
-          {/* Moving Client Logos */}
-          <div className="w-full relative overflow-hidden mb-8 flex flex-col items-center">
-            <p className="text-[11px] font-bold text-black/30 mb-3 uppercase tracking-[2px]">Trusted By</p>
-            <div className="w-full relative overflow-hidden opacity-90 transition-all duration-500 flex flex-col gap-5 py-2">
-              {/* Fade edges */}
-              <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
-              <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none" />
-              
-              {/* Line 1 */}
-              <div className="animate-logo-slide flex items-center w-max" style={{ animationDuration: '50s' }}>
-                {Array.from({ length: 15 }).map((_, index) => {
-                  const logoIndex = (index % 5) + 1; // 1 to 5
-                  return (
-                    <div key={`l1-${index}`} className="h-[35px] md:h-[45px] w-[100px] md:w-[130px] mx-[15px] relative flex items-center justify-center shrink-0">
-                      <img src={`/clientlogo/logo-${logoIndex}.png`} alt={`Client Logo ${logoIndex}`} className="max-h-full max-w-full object-contain mix-blend-multiply" />
-                    </div>
-                  );
-                })}
-              </div>
-              
-              {/* Line 2 */}
-              <div className="animate-logo-slide flex items-center w-max" style={{ animationDuration: '60s', animationDirection: 'reverse' }}>
-                {Array.from({ length: 15 }).map((_, index) => {
-                  const logoIndex = (index % 5) + 6; // 6 to 10
-                  return (
-                    <div key={`l2-${index}`} className="h-[35px] md:h-[45px] w-[100px] md:w-[130px] mx-[15px] relative flex items-center justify-center shrink-0">
-                      <img src={`/clientlogo/logo-${logoIndex}.png`} alt={`Client Logo ${logoIndex}`} className="max-h-full max-w-full object-contain mix-blend-multiply" />
-                    </div>
-                  );
-                })}
-              </div>
-
-              {/* Line 3 */}
-              <div className="animate-logo-slide flex items-center w-max" style={{ animationDuration: '55s' }}>
-                {Array.from({ length: 15 }).map((_, index) => {
-                  const logoIndex = (index % 5) + 11; // 11 to 15
-                  return (
-                    <div key={`l3-${index}`} className="h-[35px] md:h-[45px] w-[100px] md:w-[130px] mx-[15px] relative flex items-center justify-center shrink-0">
-                      <img src={`/clientlogo/logo-${logoIndex}.png`} alt={`Client Logo ${logoIndex}`} className="max-h-full max-w-full object-contain mix-blend-multiply" />
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
 
           <h4 className="text-[22px] font-bold text-black tracking-tight mb-3">Prefer email or phone?</h4>
           <p className="text-[15px] text-black/50 leading-relaxed max-w-[260px] mx-auto mb-8">
