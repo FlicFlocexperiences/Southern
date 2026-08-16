@@ -58,9 +58,20 @@ export const MobileFooter = () => {
       <div className="flex flex-col items-end text-right mb-6 pr-2">
         <p className="text-[25px] text-black/65 mb-4 font-sans">Social</p>
         <nav className="flex flex-col items-end gap-3">
-          {["Instagram", "Facebook", "LinkedIn", "X"].map((item) => (
-            <a key={item} href="/contact" className="text-[16px] text-black leading-none font-sans hover:-translate-x-2 transition-transform duration-300 w-fit">
-              {item}
+          {[
+            { name: 'Instagram', url: 'https://www.instagram.com/southernedgemarketing?igsh=MXF2bTlpNHZpbzlt&utm_source=qr' },
+            { name: 'Facebook', url: 'https://www.facebook.com/southernedgemarketing' },
+            { name: 'LinkedIn', url: 'https://www.linkedin.com/company/southernedgemarketing/?viewAsMember=true' },
+            { name: 'X', url: '/contact' }
+          ].map((item) => (
+            <a 
+              key={item.name} 
+              href={item.url} 
+              target={item.url.startsWith('http') ? "_blank" : "_self"} 
+              rel={item.url.startsWith('http') ? "noopener noreferrer" : ""}
+              className="text-[16px] text-black leading-none font-sans hover:-translate-x-2 transition-transform duration-300 w-fit"
+            >
+              {item.name}
             </a>
           ))}
         </nav>

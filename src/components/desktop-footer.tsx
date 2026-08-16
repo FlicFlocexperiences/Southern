@@ -103,15 +103,20 @@ export const DesktopFooter = () => {
           <div className="flex flex-col items-end">
             <p className="text-[18px] lg:text-[24px] text-black/65 mb-6">Social</p>
             <nav className="flex flex-col gap-4">
-              {['Instagram', 'Facebook', 'LinkedIn', 'X'].map((link) => (
+              {[
+                { name: 'Instagram', url: 'https://www.instagram.com/southernedgemarketing?igsh=MXF2bTlpNHZpbzlt&utm_source=qr' },
+                { name: 'Facebook', url: 'https://www.facebook.com/southernedgemarketing' },
+                { name: 'LinkedIn', url: 'https://www.linkedin.com/company/southernedgemarketing/?viewAsMember=true' },
+                { name: 'X', url: '/contact' }
+              ].map((link) => (
                 <a 
-                  key={link} 
-                  href="/contact" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                  key={link.name} 
+                  href={link.url} 
+                  target={link.url.startsWith('http') ? "_blank" : "_self"} 
+                  rel={link.url.startsWith('http') ? "noopener noreferrer" : ""}
                   className="text-[28px] lg:text-[36px] text-black font-normal hover:text-white transition-colors duration-300"
                 >
-                  {link}
+                  {link.name}
                 </a>
               ))}
             </nav>
