@@ -105,9 +105,8 @@ export const DesktopFooter = () => {
             <nav className="flex flex-col gap-4">
               {[
                 { name: 'Instagram', url: 'https://www.instagram.com/southernedgemarketing?igsh=MXF2bTlpNHZpbzlt&utm_source=qr' },
-                { name: 'Facebook', url: 'https://www.facebook.com/southernedgemarketing' },
-                { name: 'LinkedIn', url: 'https://www.linkedin.com/company/southernedgemarketing/?viewAsMember=true' },
-                { name: 'X', url: '/contact' }
+                { name: 'Facebook', url: 'https://www.facebook.com/profile.php?id=61590949122507#' },
+                { name: 'LinkedIn', url: 'https://www.linkedin.com/company/southernedgemarketing/?viewAsMember=true' }
               ].map((link) => (
                 <a 
                   key={link.name} 
