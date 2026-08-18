@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyAuth } from '@/lib/auth';
 import { db } from '@/lib/firebase';
-import { doc, updateDoc, arrayUnion } from 'firebase/firestore';
+import { doc, updateDoc, arrayUnion, deleteDoc } from 'firebase/firestore';
 
 export async function PATCH(request: NextRequest, context: any) {
     // 1. Verify Authentication
@@ -48,3 +48,30 @@ export async function PATCH(request: NextRequest, context: any) {
         return NextResponse.json({ error: "Failed to update lead" }, { status: 500 });
     }
 }
+
+export async function DELETE(request: NextRequest, context: any) {
+    // 1. Verify Authentication
+    const { error, uid } = await verifyAuth(request);
+    
+    if (error) {
+        return error;
+    }
+
+    try {
+        const params = await context.params;
+        const leadId = params.id;
+        
+        if (!leadId) {
+            return NextResponse.json({ error: "Lead ID is required" }, { status: 400 });
+        }
+
+        const leadRef = doc(db, 'contacts', leadId);
+        await deleteDoc(leadRef);
+
+        return NextResponse.json({ success: true, message: "Lead deleted successfully" }, { status: 200 });
+    } catch (err: any) {
+        console.error('Error deleting lead:', err);
+        return NextResponse.json({ error: "Failed to delete lead" }, { status: 500 });
+    }
+}
+

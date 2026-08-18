@@ -16,7 +16,7 @@ export const DesktopBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [sortBy, setSortBy] = useState("newest");
   const [currentPage, setCurrentPage] = useState(1);
-  const ITEMS_PER_PAGE = 5;
+  const ITEMS_PER_PAGE = 6;
 
   // Use first blog as featured, or fallback if none exist
   const featuredBlog = blogs[0] || {
@@ -187,23 +187,29 @@ Explore articles on UI/UX design, modern web development, branding, performance,
           
           {/* Pagination Controls */}
           {Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE) > 1 && (
-            <div className="col-span-full flex justify-center items-center gap-4 mt-8">
+            <div className="col-span-full flex justify-center items-center gap-3 sm:gap-4 mt-10">
               <button
                 onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
                 disabled={currentPage === 1}
-                className="px-6 py-2 rounded-full border border-black/10 hover:border-black/30 disabled:opacity-50 disabled:hover:border-black/10 transition-all font-medium text-[14px] text-black"
+                className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-white border border-black/20 text-[#30261C] hover:bg-black/5 disabled:opacity-40 disabled:hover:bg-white disabled:cursor-not-allowed transition-all font-semibold text-[14px] shadow-sm cursor-pointer"
               >
-                Previous
+                <span>←</span>
+                <span>Previous</span>
               </button>
-              <span className="text-[14px] font-medium text-black/60">
-                Page {currentPage} of {Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE)}
-              </span>
+              
+              <div className="px-5 py-2 rounded-full bg-white/70 border border-black/15 shadow-2xs">
+                <span className="text-[14px] font-bold text-[#30261C]">
+                  Page {currentPage} of {Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE)}
+                </span>
+              </div>
+
               <button
                 onClick={() => setCurrentPage(p => Math.min(Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE), p + 1))}
                 disabled={currentPage === Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE)}
-                className="px-6 py-2 rounded-full border border-black/10 hover:border-black/30 disabled:opacity-50 disabled:hover:border-black/10 transition-all font-medium text-[14px] text-black"
+                className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#30261C] text-white hover:bg-[#de5e18] disabled:bg-black/10 disabled:text-black/30 disabled:hover:bg-black/10 disabled:cursor-not-allowed transition-all font-semibold text-[14px] shadow-sm cursor-pointer"
               >
-                Next
+                <span>Next</span>
+                <span>→</span>
               </button>
             </div>
           )}

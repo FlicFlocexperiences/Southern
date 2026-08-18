@@ -56,25 +56,7 @@ export default function LeadsPage() {
                 }
 
                 const data = await response.json();
-                
-                // Auto-generate 45 dummy leads for testing filters
-                const dummyLeads: Lead[] = Array.from({ length: 45 }).map((_, i) => {
-                    const statuses = ['New', 'Contacted', 'Follow-up', 'Converted', 'Not Interested'];
-                    const services = ['SEO', 'Digital Marketing', 'App Development', 'Web Development'];
-                    return {
-                        id: `dummy-${Date.now()}-${i}`,
-                        name: `Test User ${i + 1}`,
-                        email: `testuser${i + 1}@example.com`,
-                        code: '+91',
-                        phone: `9876543${String(i).padStart(3, '0')}`,
-                        service: services[i % services.length],
-                        projectDetails: `Looking for ${services[i % services.length]} services for my business.`,
-                        createdAt: new Date(Date.now() - i * 86400000).toISOString(),
-                        status: statuses[i % statuses.length],
-                    }
-                });
-
-                setLeads([...(data.leads || []), ...dummyLeads]);
+                setLeads(data.leads || []);
             } catch (err: any) {
                 console.error(err);
                 setError(err.message || 'An error occurred while fetching leads.');
@@ -102,9 +84,54 @@ export default function LeadsPage() {
         }
     };
 
-    const updateLeadStatus = (id: string, newStatus: string) => {
+    const updateLeadStatus = async (id: string, newStatus: string) => {
+        const previousLeads = [...leads];
         setLeads(leads.map(lead => lead.id === id ? { ...lead, status: newStatus } : lead));
+        if (viewLead?.id === id) {
+            setViewLead({ ...viewLead, status: newStatus });
+        }
         setOpenStatusDropdownId(null);
+
+        try {
+            const response = await authFetch(`/api/leads/${id}`, {
+                method: 'PATCH',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'UPDATE_STATUS', payload: { status: newStatus } })
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.error || 'Failed to update status');
+            }
+        } catch (err: any) {
+            console.error('Status update failed:', err);
+            alert(err.message || 'Failed to update status in database');
+            setLeads(previousLeads);
+        }
+    };
+
+    const handleDeleteLead = async (id: string) => {
+        if (!confirm('Are you sure you want to delete this lead?')) return;
+        
+        const previousLeads = [...leads];
+        setLeads(leads.filter(l => l.id !== id));
+        if (openDropdownId === id) setOpenDropdownId(null);
+        if (viewLead?.id === id) setViewLead(null);
+
+        try {
+            const response = await authFetch(`/api/leads/${id}`, {
+                method: 'DELETE'
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.error || 'Failed to delete lead');
+            }
+        } catch (err: any) {
+            console.error('Delete failed:', err);
+            alert(err.message || 'Failed to delete lead from database');
+            setLeads(previousLeads);
+        }
     };
 
     const handleSaveNote = async () => {
@@ -218,9 +245,9 @@ export default function LeadsPage() {
     const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 
     return (
-        <div className="w-full mt-4 pb-20">
+        <div className="w-full pb-20">
             {/* Header Area */}
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+            <div className="px-6 md:px-10 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
                 <div>
                     <h2 className="text-3xl font-extrabold tracking-tight text-[#4A332A]">Leads Database</h2>
                     <p className="text-[#4A332A]/70 mt-1">View and manage contact submissions.</p>
@@ -243,7 +270,7 @@ export default function LeadsPage() {
             </div>
 
             {/* Filter Bar */}
-            <div className="flex flex-col lg:flex-row justify-between items-center gap-4 mb-6 relative z-30">
+            <div className="px-6 md:px-10 flex flex-col lg:flex-row justify-between items-center gap-4 mb-6 relative z-30">
                 <div className="relative w-full lg:w-96">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-[#4A332A]/50">
                         <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
@@ -347,11 +374,11 @@ export default function LeadsPage() {
 
             {/* Table Area */}
             {loading ? (
-                <div className="flex justify-center py-20 text-[#4A332A]/50 animate-pulse bg-white border border-[#E8D8C8] rounded-xl shadow-sm">
+                <div className="w-full flex justify-center py-20 text-[#4A332A]/50 animate-pulse bg-white border-y border-[#E8D8C8]">
                     Retrieving securely...
                 </div>
             ) : error ? (
-                <div className="bg-red-50 border border-red-200 text-red-600 p-6 rounded-xl">
+                <div className="mx-6 md:mx-10 bg-red-50 border border-red-200 text-red-600 p-6 rounded-xl">
                     <h3 className="font-semibold mb-2">Error Fetching Leads</h3>
                     <p>{error}</p>
                     {error.includes('Firebase Admin') && (
@@ -361,17 +388,17 @@ export default function LeadsPage() {
                     )}
                 </div>
             ) : currentLeads.length === 0 ? (
-                <div className="text-center py-20 bg-white border border-[#E8D8C8] rounded-xl text-[#4A332A]/60 shadow-sm flex flex-col items-center">
+                <div className="w-full text-center py-20 bg-white border-y border-[#E8D8C8] text-[#4A332A]/60 flex flex-col items-center">
                     <svg className="w-12 h-12 text-[#4A332A]/20 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                     <p>No leads found matching your criteria.</p>
                 </div>
             ) : (
                 <>
-                    <div className={`overflow-x-auto lg:overflow-visible rounded-xl border border-[#E8D8C8] bg-white shadow-sm [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] ${openDropdownId ? 'pb-[280px] lg:pb-0' : ''}`}>
+                    <div className={`w-full overflow-x-auto lg:overflow-visible border-y border-[#E8D8C8] bg-white [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] ${openDropdownId ? 'pb-[280px] lg:pb-0' : ''}`}>
                         <table className="w-full text-left text-sm whitespace-nowrap">
                             <thead className="bg-[#4a332a] text-[#FAF7F2]">
                                 <tr>
-                                    <th className="px-6 py-4 font-medium flex items-center gap-1 cursor-pointer">
+                                    <th className="pl-6 md:pl-10 pr-6 py-4 font-medium flex items-center gap-1 cursor-pointer">
                                         Date
                                         <svg className="w-3 h-3 text-[#FAF7F2]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" /></svg>
                                     </th>
@@ -386,10 +413,10 @@ export default function LeadsPage() {
                                     <th className="px-6 py-4 font-medium">Service</th>
                                     <th className="px-6 py-4 font-medium">Project Details</th>
                                     <th className="px-6 py-4 font-medium">Status</th>
-                                    <th className="px-6 py-4 font-medium text-center">Actions</th>
+                                    <th className="pl-6 pr-6 md:pr-10 py-4 font-medium text-center">Actions</th>
                                 </tr>
                             </thead>
-                            <tbody className="divide-y divide-[#E8D8C8]/50">
+                            <tbody className="divide-y divide-[#E8D8C8]/50 bg-white">
                                 {currentLeads.map((lead, index) => {
                                     const leadStatus = lead.status || 'New';
                                     const initial = lead.name ? lead.name.charAt(0).toUpperCase() : 'U';
@@ -399,8 +426,8 @@ export default function LeadsPage() {
                                     const whatsappNumber = cleanPhone.replace(/[^0-9]/g, '');
                                     
                                     return (
-                                    <tr key={lead.id || index} className="hover:bg-[#FAF7F2]/50 transition-colors">
-                                        <td className="px-6 py-5 text-[#4A332A]/80 whitespace-nowrap font-medium">
+                                    <tr key={lead.id || index} className="hover:bg-[#FAF7F2]/60 transition-colors">
+                                        <td className="pl-6 md:pl-10 pr-6 py-5 text-[#4A332A]/80 whitespace-nowrap font-medium">
                                             {lead.createdAt ? new Date(lead.createdAt).toLocaleDateString('en-GB') : 'N/A'}
                                         </td>
                                         <td className="px-6 py-5">
@@ -452,15 +479,11 @@ export default function LeadsPage() {
                                                 )}
                                             </div>
                                         </td>
-                                        <td className="px-6 py-5">
+                                        <td className="pl-6 pr-6 md:pr-10 py-5">
                                             <div className="flex items-center justify-end gap-2 relative">
                                                 <button 
                                                     title="Delete Lead"
-                                                    onClick={() => {
-                                                        if(confirm('Are you sure you want to delete this lead?')) {
-                                                            setLeads(leads.filter(l => l.id !== lead.id));
-                                                        }
-                                                    }}
+                                                    onClick={() => handleDeleteLead(lead.id)}
                                                     className="p-1.5 border border-red-200 bg-red-50 text-red-600 hover:bg-red-100 rounded-md transition-colors"
                                                 >
                                                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
@@ -537,12 +560,7 @@ export default function LeadsPage() {
                                                             </button>
                                                             <div className="border-t border-[#E8D8C8] my-1"></div>
                                                             <button 
-                                                                onClick={() => {
-                                                                    if(confirm('Are you sure you want to delete this lead?')) {
-                                                                        setLeads(leads.filter(l => l.id !== lead.id));
-                                                                        setOpenDropdownId(null);
-                                                                    }
-                                                                }}
+                                                                onClick={() => handleDeleteLead(lead.id)}
                                                                 className="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-red-50 flex items-center gap-2"
                                                             >
                                                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
@@ -562,7 +580,7 @@ export default function LeadsPage() {
                     
                     {/* Pagination */}
                     {totalPages > 0 && (
-                        <div className="flex flex-col sm:flex-row justify-between items-center mt-6 gap-4 text-sm text-[#4A332A]/70 font-medium">
+                        <div className="px-6 md:px-10 flex flex-col sm:flex-row justify-between items-center mt-6 gap-4 text-sm text-[#4A332A]/70 font-medium">
                             <div>
                                 Showing {(currentPage - 1) * itemsPerPage + 1} to {Math.min(currentPage * itemsPerPage, filteredLeads.length)} of {filteredLeads.length} leads
                             </div>

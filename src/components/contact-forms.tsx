@@ -36,6 +36,10 @@ function useContactForm() {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
 
+  React.useEffect(() => {
+    router.prefetch("/thank-you");
+  }, [router]);
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);

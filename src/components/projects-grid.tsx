@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo, useRef, useEffect } from "react";
 import Link from "next/link";
-import { projects } from "@/data/projects";
+import { projects, ProjectCategory } from "@/data/projects";
 import { motion, AnimatePresence } from "framer-motion";
 
 // --- Icons ---
@@ -58,25 +58,30 @@ const GridIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect></svg>
 );
 
-// --- Mapping & Data ---
-const categories = [
-  { name: "All", icon: null, mapping: "All" },
-  { name: "Web Design", icon: <GlobeIcon />, mapping: "Website development" },
-  { name: "Meta Ads", icon: <InfinityIcon />, mapping: "Meta Ads" },
-  { name: "Lead Generation", icon: <TargetIcon />, mapping: "Lead Generation" },
-  { name: "SEO", icon: <ChartIcon />, mapping: "SEO" },
-  { name: "Branding", icon: <PencilIcon />, mapping: "Branding" },
-  { name: "Social Media", icon: <ThumbsUpIcon />, mapping: "Social Media Management" },
-  { name: "Photography", icon: <CameraIcon />, mapping: "Photoshoot" }
+type FilterCategory = "All" | ProjectCategory;
+
+// --- Categories Definition ---
+const categories: { name: FilterCategory; icon: React.ReactNode | null }[] = [
+  { name: "All", icon: null },
+  { name: "Web Design", icon: <GlobeIcon /> },
+  { name: "Meta Ads", icon: <InfinityIcon /> },
+  { name: "Lead Generation", icon: <TargetIcon /> },
+  { name: "SEO", icon: <ChartIcon /> },
+  { name: "Branding", icon: <PencilIcon /> },
+  { name: "Social Media", icon: <ThumbsUpIcon /> },
+  { name: "Photography", icon: <CameraIcon /> }
 ];
 
 export const ProjectsGrid = () => {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState<FilterCategory>("All");
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState("Latest");
   const [isSortOpen, setIsSortOpen] = useState(false);
+  const [isFilterDropdownOpen, setIsFilterDropdownOpen] = useState(false);
+  
   const sortRefMobile = useRef<HTMLDivElement>(null);
   const sortRefDesktop = useRef<HTMLDivElement>(null);
+  const filterDropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -87,6 +92,9 @@ export const ProjectsGrid = () => {
       ) {
         setIsSortOpen(false);
       }
+      if (!filterDropdownRef.current || !filterDropdownRef.current.contains(target)) {
+        setIsFilterDropdownOpen(false);
+      }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
@@ -95,34 +103,27 @@ export const ProjectsGrid = () => {
   const filteredProjects = useMemo(() => {
     let filtered = projects;
 
-    // Filter by Category
+    // Filter strictly by Category
     if (selectedCategory !== "All") {
-      const activeCat = categories.find(c => c.name === selectedCategory);
-      if (activeCat) {
-        filtered = filtered.filter(p => {
-          // Normalize some categories to match data
-          const pCat = p.category.toLowerCase();
-          const targetCat = activeCat.mapping.toLowerCase();
-          
-          if (targetCat.includes('website') || targetCat.includes('web')) {
-            return pCat.includes('website') || pCat.includes('web') || pCat.includes('shopify');
-          }
-          if (targetCat.includes('photo')) {
-            return pCat.includes('photo') || pCat.includes('video');
-          }
-          return pCat.includes(targetCat);
-        });
-      }
+      filtered = filtered.filter((p) => {
+        if (p.categories && Array.isArray(p.categories)) {
+          return p.categories.includes(selectedCategory);
+        }
+        return p.category === selectedCategory;
+      });
     }
 
     // Filter by Search
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
-      filtered = filtered.filter(p => 
-        p.title.toLowerCase().includes(q) || 
-        p.category.toLowerCase().includes(q) || 
-        p.client.toLowerCase().includes(q) ||
-        p.description.toLowerCase().includes(q)
+      filtered = filtered.filter(
+        (p) =>
+          p.title.toLowerCase().includes(q) ||
+          p.client.toLowerCase().includes(q) ||
+          p.description.toLowerCase().includes(q) ||
+          p.services.toLowerCase().includes(q) ||
+          p.tag.toLowerCase().includes(q) ||
+          p.categories.some((c) => c.toLowerCase().includes(q))
       );
     }
 
@@ -175,7 +176,9 @@ export const ProjectsGrid = () => {
           <BriefcaseIcon />
         </div>
         <div className="flex flex-col">
-          <span className="text-[20px] font-bold text-[#de5e18] leading-none">27</span>
+          <span className="text-[20px] font-bold text-[#de5e18] leading-none">
+            {projects.length}
+          </span>
           <span className="text-[13px] font-medium text-[#5d4037]">Success Stories</span>
         </div>
       </div>
@@ -197,27 +200,82 @@ export const ProjectsGrid = () => {
       </div>
 
       {/* Search and Filter Bar */}
-      <div className="w-full bg-white md:bg-white rounded-[24px] md:rounded-full p-3 md:p-2 md:pl-6 flex flex-col md:flex-row items-center justify-between border border-gray-100 md:border-gray-200 shadow-sm mb-6 gap-3 md:gap-0">
+      <div className="w-full bg-white rounded-[24px] md:rounded-full p-3 md:p-2 md:pl-6 flex flex-col md:flex-row items-center justify-between border border-gray-100 md:border-gray-200 shadow-sm mb-6 gap-3 md:gap-0 relative z-30">
         <div className="flex items-center gap-3 w-full md:w-auto flex-1 bg-[#fafafa] md:bg-transparent border border-gray-100 md:border-none rounded-[16px] md:rounded-none px-4 py-3 md:px-0 md:py-0">
           <span className="text-gray-500 md:text-gray-400">
             <SearchIcon />
           </span>
           <input 
             type="text"
-            placeholder="Search projects..."
+            placeholder="Search projects by name, service or industry..."
             className="w-full bg-transparent outline-none text-[15px] text-gray-700 placeholder-gray-400"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
+          {searchQuery && (
+            <button 
+              onClick={() => setSearchQuery("")}
+              className="text-gray-400 hover:text-gray-600 px-2 text-xs font-bold"
+            >
+              CLEAR
+            </button>
+          )}
         </div>
         
-        <button className="w-full md:w-auto flex items-center justify-between md:justify-center gap-2 bg-[#fafafa] md:bg-[#fafafa] hover:bg-gray-100 border border-gray-100 md:border-gray-200 px-4 py-3 md:px-6 md:py-2.5 rounded-[16px] md:rounded-full text-[14px] font-semibold text-gray-700 transition-colors shrink-0">
-          <div className="flex items-center gap-2">
-            <FilterIcon />
-            <span className="font-semibold md:font-normal">Filter By Category</span>
-          </div>
-          <span className="ml-1"><ChevronDownIcon /></span>
-        </button>
+        {/* Filter By Category Dropdown */}
+        <div ref={filterDropdownRef} className="relative w-full md:w-auto">
+          <button 
+            onClick={() => setIsFilterDropdownOpen(!isFilterDropdownOpen)}
+            className={`w-full md:w-auto flex items-center justify-between md:justify-center gap-2 px-4 py-3 md:px-6 md:py-2.5 rounded-[16px] md:rounded-full text-[14px] font-semibold transition-colors shrink-0 ${
+              selectedCategory !== "All"
+                ? "bg-[#de5e18] text-white"
+                : "bg-[#fafafa] hover:bg-gray-100 text-gray-700 border border-gray-100 md:border-gray-200"
+            }`}
+          >
+            <div className="flex items-center gap-2">
+              <FilterIcon />
+              <span>{selectedCategory === "All" ? "Filter By Category" : selectedCategory}</span>
+            </div>
+            <span className={`ml-1 transition-transform duration-200 ${isFilterDropdownOpen ? "rotate-180" : ""}`}>
+              <ChevronDownIcon />
+            </span>
+          </button>
+
+          <AnimatePresence>
+            {isFilterDropdownOpen && (
+              <motion.div
+                initial={{ opacity: 0, y: -10, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: -10, scale: 0.95 }}
+                transition={{ duration: 0.15, ease: "easeOut" }}
+                className="absolute right-0 mt-2 w-56 bg-white border border-gray-200 rounded-2xl shadow-xl z-50 overflow-hidden py-2"
+              >
+                {categories.map((cat) => (
+                  <button
+                    key={cat.name}
+                    onClick={() => {
+                      setSelectedCategory(cat.name);
+                      setIsFilterDropdownOpen(false);
+                    }}
+                    className={`w-full flex items-center justify-between px-4 py-2.5 text-[14px] hover:bg-gray-50 transition-colors ${
+                      selectedCategory === cat.name
+                        ? "text-[#de5e18] font-bold bg-[#de5e18]/5"
+                        : "text-gray-700 font-medium"
+                    }`}
+                  >
+                    <div className="flex items-center gap-2.5">
+                      {cat.icon && <span className="opacity-70">{cat.icon}</span>}
+                      <span>{cat.name}</span>
+                    </div>
+                    {selectedCategory === cat.name && (
+                      <span className="w-2 h-2 rounded-full bg-[#de5e18]"></span>
+                    )}
+                  </button>
+                ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
       </div>
 
       {/* Category Pills Row */}
@@ -290,59 +348,66 @@ export const ProjectsGrid = () => {
 
       {/* Grid Container */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-        {filteredProjects.map((project, index) => {
-          // Determine tag text based on category for the pill
-          let tagText = project.category.split(' ')[0].toUpperCase();
-          if (project.category.toLowerCase().includes('website') || project.category.toLowerCase().includes('shopify')) tagText = "WEB";
-          if (project.category.toLowerCase().includes('photo')) tagText = "MEDIA";
-
-          // Temporary override to match screenshot exactly
-          if (project.slug === 'health') tagText = 'HEALTH';
-          if (project.slug === 'chavelle') tagText = 'TRAVEL';
-          if (project.slug === 'lotd') tagText = 'FOOD & BEVERAGE';
-
-          return (
-            <Link 
-              href={`/projects/${project.slug}`}
-              key={`${project.id}-${project.slug}-${index}`} 
-              className="group flex flex-col w-full bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100"
+        {filteredProjects.length === 0 ? (
+          <div className="col-span-full text-center py-20 bg-white/70 rounded-3xl border border-gray-100 p-8 flex flex-col items-center justify-center">
+            <p className="text-[#3e2723] text-lg font-bold mb-2">No projects found</p>
+            <p className="text-gray-500 text-sm mb-6 max-w-md">
+              No projects match the selected category &quot;{selectedCategory}&quot; {searchQuery ? `and search &quot;${searchQuery}&quot;` : ""}.
+            </p>
+            <button 
+              onClick={() => { setSelectedCategory("All"); setSearchQuery(""); }}
+              className="px-6 py-2.5 bg-[#de5e18] text-white rounded-full font-bold text-sm hover:bg-[#c44f12] shadow-sm transition-colors"
             >
-              {/* Image Header with embedded Pill */}
-              <div className="w-full aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3] bg-gray-50 relative overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-105"
-                />
-                
-                {/* Category Pill Overlaid */}
-                <div className="absolute top-4 left-4 bg-white px-4 py-1.5 rounded-full shadow-sm z-10">
-                  <span className="text-[10px] md:text-[11px] font-bold text-[#de5e18] tracking-wider uppercase">
-                    {tagText}
-                  </span>
+              View All Projects
+            </button>
+          </div>
+        ) : (
+          filteredProjects.map((project, index) => {
+            const badgeTag = project.tag || project.category.toUpperCase();
+
+            return (
+              <Link 
+                href={`/projects/${project.slug}`}
+                key={`${project.id}-${project.slug}-${index}`} 
+                className="group flex flex-col w-full bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100"
+              >
+                {/* Image Header with embedded Pill */}
+                <div className="w-full aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3] bg-gray-50 relative overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-105"
+                  />
+                  
+                  {/* Category Pill Overlaid */}
+                  <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-xs px-4 py-1.5 rounded-full shadow-sm z-10 border border-black/5">
+                    <span className="text-[10px] md:text-[11px] font-bold text-[#de5e18] tracking-wider uppercase">
+                      {badgeTag}
+                    </span>
+                  </div>
                 </div>
-              </div>
-              
-              {/* Content Body */}
-              <div className="flex flex-col p-6 lg:p-8 flex-1">
-                <h3 className="text-[20px] lg:text-[24px] font-bold text-[#3e2723] mb-3">
-                  {project.title}
-                </h3>
                 
-                <p className="text-[14px] text-gray-600 leading-relaxed mb-6 flex-1">
-                  {project.description}
-                </p>
-                
-                <div className="w-full h-px bg-gray-100 mb-6" />
-                
-                <div className="flex items-center gap-2 text-[#de5e18] font-bold text-[14px] group-hover:gap-3 transition-all duration-300">
-                  <span>View Project</span>
-                  <ArrowRightIcon />
+                {/* Content Body */}
+                <div className="flex flex-col p-6 lg:p-8 flex-1">
+                  <h3 className="text-[20px] lg:text-[24px] font-bold text-[#3e2723] mb-3">
+                    {project.title}
+                  </h3>
+                  
+                  <p className="text-[14px] text-gray-600 leading-relaxed mb-6 flex-1">
+                    {project.description}
+                  </p>
+                  
+                  <div className="w-full h-px bg-gray-100 mb-6" />
+                  
+                  <div className="flex items-center gap-2 text-[#de5e18] font-bold text-[14px] group-hover:gap-3 transition-all duration-300">
+                    <span>View Project</span>
+                    <ArrowRightIcon />
+                  </div>
                 </div>
-              </div>
-            </Link>
-          );
-        })}
+              </Link>
+            );
+          })
+        )}
       </div>
 
     </section>

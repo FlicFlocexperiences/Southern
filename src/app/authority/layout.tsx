@@ -48,7 +48,7 @@ export default function AuthorityLayout({ children }: { children: React.ReactNod
                     </button>
                 </div>
             </nav>
-            <main className="flex-1 p-6 md:p-10 w-full">
+            <main className="flex-1 w-full">
                 {children}
             </main>
         </div>

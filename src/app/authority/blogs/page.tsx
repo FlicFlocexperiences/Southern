@@ -877,7 +877,8 @@ const BlogsDashboard = () => {
     };
 
     return (
-        <div className="w-full min-h-full bg-[#f2decc] text-black font-sans rounded-3xl p-6 md:p-8">
+        <div className="p-6 md:p-10 w-full">
+            <div className="w-full min-h-full bg-[#f2decc] text-black font-sans rounded-3xl p-6 md:p-8">
             <AnimatePresence>
                 {!showBlogForm ? (
                     <motion.div
@@ -1525,7 +1526,8 @@ const BlogsDashboard = () => {
                 )}
             </AnimatePresence>
         </div>
-    );
+    </div>
+);
 };
 
 export default BlogsDashboard;

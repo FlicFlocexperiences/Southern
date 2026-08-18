@@ -3,7 +3,7 @@ import { MobileFooter } from "@/components/mobile-footer";
 import { DesktopNav } from "@/components/desktop-nav";
 import { DesktopFooter } from "@/components/desktop-footer";
 import { Cta } from "@/components/cta";
-import { Blog } from "@/data/blogs";
+import { Blog, getBlogBySlug } from "@/data/blogs";
 import { BlogContent } from "./BlogContent";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
@@ -20,38 +20,43 @@ async function getLiveBlog(slug: string): Promise<Blog | null> {
     const q = query(collection(db, "blogs"), where("slug", "==", slug));
     const snapshot = await getDocs(q);
 
-    if (snapshot.empty) {
-      return null;
+    if (!snapshot.empty) {
+      const docSnap = snapshot.docs[0];
+      const data = docSnap.data();
+
+      // Fetch FAQs and Reviews in parallel
+      const [faqsSnapshot, reviewsSnapshot] = await Promise.all([
+        getDocs(collection(db, "blogs", docSnap.id, "faqs")),
+        getDocs(collection(db, "blogs", docSnap.id, "reviews"))
+      ]);
+
+      const faqs = faqsSnapshot.docs.map(faqDoc => faqDoc.data() as any);
+      const reviews = reviewsSnapshot.docs.map(reviewDoc => reviewDoc.data() as any);
+
+      return {
+        slug: data.slug || docSnap.id,
+        title: data.title || "Untitled",
+        excerpt: stripHtml(data.subtitle || data.metaDescription || ""),
+        content: data.description || "", // Mapping description to content for BlogContent
+        publishedAt: data.date || new Date().toISOString().split('T')[0],
+        category: "MARKETING",
+        image: data.image || "/photoshoot.jpg",
+        faqs,
+        reviews,
+        author: data.author || "Southern Marketing Team"
+      };
     }
-
-    const docSnap = snapshot.docs[0];
-    const data = docSnap.data();
-
-    // Fetch FAQs and Reviews in parallel
-    const [faqsSnapshot, reviewsSnapshot] = await Promise.all([
-      getDocs(collection(db, "blogs", docSnap.id, "faqs")),
-      getDocs(collection(db, "blogs", docSnap.id, "reviews"))
-    ]);
-
-    const faqs = faqsSnapshot.docs.map(faqDoc => faqDoc.data() as any);
-    const reviews = reviewsSnapshot.docs.map(reviewDoc => reviewDoc.data() as any);
-
-    return {
-      slug: data.slug || docSnap.id,
-      title: data.title || "Untitled",
-      excerpt: stripHtml(data.subtitle || data.metaDescription || ""),
-      content: data.description || "", // Mapping description to content for BlogContent
-      publishedAt: data.date || new Date().toISOString().split('T')[0],
-      category: "MARKETING",
-      image: data.image || "/photoshoot.jpg",
-      faqs,
-      reviews,
-      author: data.author || "Southern Marketing Team"
-    };
   } catch (e) {
-    console.error("Error fetching blog:", e);
-    return null;
+    console.error("Error fetching blog from Firestore:", e);
   }
+
+  // Fallback to static blogs in src/data/blogs.ts
+  const staticBlog = getBlogBySlug(slug);
+  if (staticBlog) {
+    return staticBlog;
+  }
+
+  return null;
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
