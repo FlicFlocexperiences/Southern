@@ -531,22 +531,47 @@ export default function AuthorityProjectsPage() {
         }
     };
 
-    // Filtered and Paginated list
-    const filteredProjects = projects.filter(p => {
-        const matchesCategory = selectedCategoryFilter === 'All' || 
-            p.category === selectedCategoryFilter || 
-            (p.categories && p.categories.includes(selectedCategoryFilter as ProjectCategory));
-        
-        const q = searchTerm.toLowerCase().trim();
-        const matchesSearch = !q || 
-            p.title.toLowerCase().includes(q) ||
-            p.client.toLowerCase().includes(q) ||
-            p.slug.toLowerCase().includes(q) ||
-            p.services.toLowerCase().includes(q) ||
-            p.tag.toLowerCase().includes(q);
+    const normalizeCat = (str: string) => str.toLowerCase().replace(/[^a-z0-9]/g, '');
 
-        return matchesCategory && matchesSearch;
-    });
+    const matchesCategoryFilter = (p: Project, targetCat: string): boolean => {
+        if (targetCat === 'All') return true;
+        const targetNorm = normalizeCat(targetCat);
+
+        if (p.category && normalizeCat(p.category) === targetNorm) return true;
+        if (p.categories && Array.isArray(p.categories)) {
+            if (p.categories.some(c => typeof c === 'string' && normalizeCat(c) === targetNorm)) return true;
+        }
+
+        if (p.tag && normalizeCat(p.tag) === targetNorm) {
+            return true;
+        }
+
+        return false;
+    };
+
+    // Filtered and Paginated list
+    const filteredProjects = projects
+        .filter(p => {
+            const matchesCat = matchesCategoryFilter(p, selectedCategoryFilter);
+            
+            const q = searchTerm.toLowerCase().trim();
+            const matchesSearch = !q || 
+                p.title.toLowerCase().includes(q) ||
+                p.client.toLowerCase().includes(q) ||
+                p.slug.toLowerCase().includes(q) ||
+                p.services.toLowerCase().includes(q) ||
+                p.tag.toLowerCase().includes(q);
+
+            return matchesCat && matchesSearch;
+        })
+        .sort((a, b) => {
+            const hasLiveA = a.websiteUrl && a.websiteUrl !== '#' && a.websiteUrl.trim() !== '' ? 1 : 0;
+            const hasLiveB = b.websiteUrl && b.websiteUrl !== '#' && b.websiteUrl.trim() !== '' ? 1 : 0;
+            if (hasLiveA !== hasLiveB) {
+                return hasLiveB - hasLiveA;
+            }
+            return (b.created || 0) - (a.created || 0);
+        });
 
     const totalPages = Math.max(1, Math.ceil(filteredProjects.length / itemsPerPage));
     const currentProjects = filteredProjects.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);

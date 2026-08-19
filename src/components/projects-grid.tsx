@@ -74,6 +74,31 @@ const categories: { name: FilterCategory; icon: React.ReactNode | null }[] = [
   { name: "Photography", icon: <CameraIcon /> }
 ];
 
+const normalizeCat = (str: string) => str.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+const matchesCategory = (p: Project, targetCat: FilterCategory): boolean => {
+  if (targetCat === "All") return true;
+
+  const targetNorm = normalizeCat(targetCat);
+
+  // 1. Direct match on primary category
+  if (p.category && normalizeCat(p.category) === targetNorm) return true;
+
+  // 2. Match in categories array
+  if (p.categories && Array.isArray(p.categories)) {
+    if (p.categories.some(c => typeof c === 'string' && normalizeCat(c) === targetNorm)) {
+      return true;
+    }
+  }
+
+  // 3. Match on exact tag if specified as category name
+  if (p.tag && normalizeCat(p.tag) === targetNorm) {
+    return true;
+  }
+
+  return false;
+};
+
 export const ProjectsGrid = () => {
   const [projectsList, setProjectsList] = useState<Project[]>(initialStaticProjects);
   const [selectedCategory, setSelectedCategory] = useState<FilterCategory>("All");
@@ -141,6 +166,7 @@ export const ProjectsGrid = () => {
         setIsFilterDropdownOpen(false);
       }
     };
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
@@ -148,14 +174,9 @@ export const ProjectsGrid = () => {
   const filteredProjects = useMemo(() => {
     let filtered = projectsList;
 
-    // Filter strictly by Category
+    // Filter strictly & smartly by Category
     if (selectedCategory !== "All") {
-      filtered = filtered.filter((p) => {
-        if (p.categories && Array.isArray(p.categories)) {
-          return p.categories.includes(selectedCategory);
-        }
-        return p.category === selectedCategory;
-      });
+      filtered = filtered.filter((p) => matchesCategory(p, selectedCategory));
     }
 
     // Filter by Search
@@ -177,6 +198,16 @@ export const ProjectsGrid = () => {
       filtered = [...filtered].reverse();
     } else if (sortBy === "A-Z") {
       filtered = [...filtered].sort((a, b) => a.title.localeCompare(b.title));
+    } else {
+      // Default (Latest): Prioritize projects with active live website links first
+      filtered = [...filtered].sort((a, b) => {
+        const hasLiveA = a.websiteUrl && a.websiteUrl !== "#" && a.websiteUrl.trim() !== "" ? 1 : 0;
+        const hasLiveB = b.websiteUrl && b.websiteUrl !== "#" && b.websiteUrl.trim() !== "" ? 1 : 0;
+        if (hasLiveA !== hasLiveB) {
+          return hasLiveB - hasLiveA;
+        }
+        return (b.created || 0) - (a.created || 0);
+      });
     }
 
     return filtered;
@@ -190,21 +221,25 @@ export const ProjectsGrid = () => {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: -10, scale: 0.95 }}
           transition={{ duration: 0.15, ease: "easeOut" }}
-          className="absolute left-0 md:left-auto md:right-0 mt-2 w-40 bg-white border border-gray-200 rounded-2xl shadow-lg z-50 overflow-hidden py-2"
+          className="absolute right-0 top-full mt-2 w-44 bg-white border border-gray-200 rounded-2xl shadow-xl z-50 overflow-hidden py-2"
         >
           {["Latest", "Oldest", "A-Z"].map((option) => (
             <button
               key={option}
+              type="button"
               onClick={(e) => {
                 e.stopPropagation();
                 setSortBy(option);
                 setIsSortOpen(false);
               }}
-              className={`w-full text-left px-4 py-2 text-[14px] hover:bg-gray-50 transition-colors ${
-                sortBy === option ? "text-[#de5e18] font-bold" : "text-gray-700 font-medium"
+              className={`w-full text-left px-4 py-2.5 text-[14px] hover:bg-gray-50 transition-colors flex items-center justify-between ${
+                sortBy === option ? "text-[#de5e18] font-bold bg-[#de5e18]/5" : "text-gray-700 font-medium"
               }`}
             >
-              {option}
+              <span>{option}</span>
+              {sortBy === option && (
+                <span className="w-2 h-2 rounded-full bg-[#de5e18]"></span>
+              )}
             </button>
           ))}
         </motion.div>
@@ -270,6 +305,7 @@ export const ProjectsGrid = () => {
         {/* Filter By Category Dropdown */}
         <div ref={filterDropdownRef} className="relative w-full md:w-auto">
           <button 
+            type="button"
             onClick={() => setIsFilterDropdownOpen(!isFilterDropdownOpen)}
             className={`w-full md:w-auto flex items-center justify-between md:justify-center gap-2 px-4 py-3 md:px-6 md:py-2.5 rounded-[16px] md:rounded-full text-[14px] font-semibold transition-colors shrink-0 ${
               selectedCategory !== "All"
@@ -298,6 +334,7 @@ export const ProjectsGrid = () => {
                 {categories.map((cat) => (
                   <button
                     key={cat.name}
+                    type="button"
                     onClick={() => {
                       setSelectedCategory(cat.name);
                       setIsFilterDropdownOpen(false);
@@ -323,58 +360,64 @@ export const ProjectsGrid = () => {
         </div>
       </div>
 
-      {/* Category Pills Row */}
-      <div className="flex overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] pb-2 md:pb-0 md:flex-wrap items-center gap-3 mb-6 md:mb-12 -mx-4 px-4 md:mx-0 md:px-0">
-        {categories.map((cat) => {
-          const isActive = selectedCategory === cat.name;
-          const isAll = cat.name === "All";
-          return (
-            <button
-              key={cat.name}
-              onClick={() => setSelectedCategory(cat.name)}
-              className={`flex shrink-0 items-center justify-center transition-all duration-300 cursor-pointer border ${
-                isAll
-                  ? isActive 
-                    ? "bg-[#de5e18] border-[#de5e18] text-white rounded-[20px] px-6 py-3 shadow-md font-bold text-[15px] h-fit md:h-auto" 
-                    : "bg-white border-gray-100 text-gray-700 hover:bg-gray-50 rounded-[20px] px-6 py-3 shadow-sm font-bold text-[15px] h-fit md:h-auto"
-                  : isActive
-                    ? "bg-[#de5e18] border-[#de5e18] text-white rounded-[24px] shadow-md flex-col w-[85px] h-[85px] gap-1 md:flex-row md:w-auto md:h-auto md:px-5 md:py-2.5 md:rounded-full md:gap-2"
-                    : "bg-white border-gray-100 text-gray-700 hover:bg-gray-50 rounded-[24px] shadow-sm flex-col w-[85px] h-[85px] gap-1 md:flex-row md:w-auto md:h-auto md:px-5 md:py-2.5 md:rounded-full md:gap-2"
-              }`}
-            >
-              {cat.icon && (
-                <span className={`${isAll ? '' : 'mb-1 md:mb-0'} ${isActive ? "text-white" : "text-black md:text-gray-500"}`}>
-                  {cat.icon}
+      {/* Category Pills & Desktop Sort Row */}
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 md:mb-12 relative z-20">
+        {/* Category Pills Row */}
+        <div className="flex overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] pb-2 md:pb-0 md:flex-wrap items-center gap-3 -mx-4 px-4 md:mx-0 md:px-0 flex-1">
+          {categories.map((cat) => {
+            const isActive = selectedCategory === cat.name;
+            const isAll = cat.name === "All";
+            return (
+              <button
+                key={cat.name}
+                type="button"
+                onClick={() => setSelectedCategory(cat.name)}
+                className={`flex shrink-0 items-center justify-center transition-all duration-300 cursor-pointer border ${
+                  isAll
+                    ? isActive 
+                      ? "bg-[#de5e18] border-[#de5e18] text-white rounded-[20px] px-6 py-3 shadow-md font-bold text-[15px] h-fit md:h-auto" 
+                      : "bg-white border-gray-100 text-gray-700 hover:bg-gray-50 rounded-[20px] px-6 py-3 shadow-sm font-bold text-[15px] h-fit md:h-auto"
+                    : isActive
+                      ? "bg-[#de5e18] border-[#de5e18] text-white rounded-[24px] shadow-md flex-col w-[85px] h-[85px] gap-1 md:flex-row md:w-auto md:h-auto md:px-5 md:py-2.5 md:rounded-full md:gap-2"
+                      : "bg-white border-gray-100 text-gray-700 hover:bg-gray-50 rounded-[24px] shadow-sm flex-col w-[85px] h-[85px] gap-1 md:flex-row md:w-auto md:h-auto md:px-5 md:py-2.5 md:rounded-full md:gap-2"
+                }`}
+              >
+                {cat.icon && (
+                  <span className={`${isAll ? '' : 'mb-1 md:mb-0'} ${isActive ? "text-white" : "text-black md:text-gray-500"}`}>
+                    {cat.icon}
+                  </span>
+                )}
+                <span className={`font-semibold whitespace-nowrap text-center ${
+                  isAll ? "text-[15px]" : "text-[11px] md:text-[14px]"
+                } ${isActive ? "text-white" : "text-gray-700"}`}>
+                  {cat.name}
                 </span>
-              )}
-              <span className={`font-semibold whitespace-nowrap text-center ${
-                isAll ? "text-[15px]" : "text-[11px] md:text-[14px]"
-              } ${isActive ? "text-white" : "text-gray-700"}`}>
-                {cat.name}
-              </span>
-            </button>
-          );
-        })}
+              </button>
+            );
+          })}
+        </div>
 
-        {/* Desktop Sort Dropdown */}
-        <div ref={sortRefDesktop} className="ml-auto relative hidden md:block">
-          <div 
+        {/* Desktop Sort Dropdown (Positioned outside overflow-x-auto) */}
+        <div ref={sortRefDesktop} className="relative hidden md:block shrink-0 z-30">
+          <button 
+            type="button"
             onClick={() => setIsSortOpen(!isSortOpen)}
-            className="flex items-center gap-2 bg-white border border-gray-200 px-5 py-2.5 rounded-full text-[14px] font-semibold text-gray-700 cursor-pointer hover:bg-gray-50 transition-colors"
+            className="flex items-center gap-2 bg-white border border-gray-200 px-5 py-2.5 rounded-full text-[14px] font-semibold text-gray-700 cursor-pointer hover:bg-gray-50 transition-colors shadow-xs"
           >
             <span>Sort: <span className="text-[#de5e18]">{sortBy}</span></span>
             <span className={`transition-transform duration-200 ${isSortOpen ? "rotate-180" : ""}`}>
               <ChevronDownIcon />
             </span>
-          </div>
+          </button>
           {renderSortOptions()}
         </div>
       </div>
 
       {/* Mobile Sort & Grid Toggle Row */}
-      <div className="flex md:hidden items-center justify-between mb-8 px-1">
+      <div className="flex md:hidden items-center justify-between mb-8 px-1 relative z-20">
         <div ref={sortRefMobile} className="relative">
-          <div 
+          <button 
+            type="button"
             onClick={() => setIsSortOpen(!isSortOpen)}
             className="flex items-center gap-2 bg-white border border-gray-100 px-5 py-2.5 rounded-2xl shadow-sm text-[14px] font-semibold text-gray-700 cursor-pointer hover:bg-gray-50 transition-colors"
           >
@@ -382,7 +425,7 @@ export const ProjectsGrid = () => {
             <span className={`transition-transform duration-200 ${isSortOpen ? "rotate-180" : ""}`}>
               <ChevronDownIcon />
             </span>
-          </div>
+          </button>
           {renderSortOptions()}
         </div>
         
