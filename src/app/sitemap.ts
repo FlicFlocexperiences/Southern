@@ -118,6 +118,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...seoCities.map(city => `/services/seo/${city}`),
     '/services/seo/jaipur',
     '/services/seo/dubai',
+    '/services/seo/toronto',
+    '/services/branding/toronto',
+    '/services/app-development/toronto',
+    '/services/web-development/toronto',
+    '/services/social-media-management/toronto',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),

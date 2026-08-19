@@ -402,17 +402,32 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                 </div>
               )}
 
-              {/* Visit Website Button */}
+              {/* Visit Website Button matching Southern Inverted Orange Theme */}
               {project.websiteUrl && (
-                <div className="pt-2">
+                <div className="pt-3">
                   <a 
                     href={project.websiteUrl} 
                     target="_blank" 
-                    rel="noreferrer"
-                    className="w-full py-4 bg-[#3e2723] hover:bg-[#de5e18] text-white rounded-2xl flex items-center justify-center gap-2 font-bold text-[15px] transition-colors shadow-md hover:shadow-lg cursor-pointer"
+                    rel="noopener noreferrer"
+                    className="w-full h-[54px] bg-gradient-to-b from-[#ffa479] to-[#de5e18] hover:from-[#ff9360] hover:to-[#cb5210] rounded-full flex items-center justify-between pl-5 pr-2 gap-3 group hover:scale-[1.02] transition-all duration-300 shadow-[0_6px_20px_rgba(222,94,24,0.35)] hover:shadow-[0_8px_24px_rgba(222,94,24,0.5)] cursor-pointer"
                   >
-                    <span>Visit Website</span>
-                    <span className="text-[18px] leading-none">↗</span>
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
+                      <span className="text-white text-[15px] font-bold tracking-tight whitespace-nowrap">
+                        Visit Website
+                      </span>
+                    </div>
+                    <div className="w-[38px] h-[38px] rounded-full bg-white flex items-center justify-center relative overflow-hidden group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform duration-300 shadow-[0_2px_6px_rgba(0,0,0,0.15)] shrink-0">
+                      <svg 
+                        className="w-4 h-4 text-[#de5e18] relative z-10" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        strokeWidth="2.5" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                    </div>
                   </a>
                 </div>
               )}
