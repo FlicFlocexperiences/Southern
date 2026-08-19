@@ -1,15 +1,26 @@
 import { notFound } from "next/navigation";
-import { getProjectBySlug, projects } from "@/data/projects";
+import { getProjectBySlug, projects as staticProjects, Project } from "@/data/projects";
 import { DesktopNav } from "@/components/desktop-nav";
 import { MobileNav } from "@/components/mobile-nav";
 import { DesktopFooter } from "@/components/desktop-footer";
 import { MobileFooter } from "@/components/mobile-footer";
 import { Cta } from "@/components/cta";
+import { collection, query, where, getDocs } from "firebase/firestore";
+import { db } from "@/lib/firebase";
+import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 
-// Helper function to read project images from local folders or fallback to database gallery
-function getProjectImages(slug: string, fallbackGallery: string[]): string[] {
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
+// Helper function to read project images from database gallery or fallback to local folders
+function getProjectImages(slug: string, gallery?: string[]): string[] {
+  // If the project has an explicit gallery list (from Firestore or edited data), ALWAYS prioritize it
+  if (gallery && Array.isArray(gallery) && gallery.length > 0) {
+    return gallery;
+  }
+
   const folderName = 
     slug === "health" ? "Health/GRID 13" : 
     slug === "chavelle" ? "Chavelle/Grid 08" : 
@@ -46,30 +57,184 @@ function getProjectImages(slug: string, fallbackGallery: string[]): string[] {
       console.error("Error reading project folder:", error);
     }
   }
-  return fallbackGallery;
+  return [];
 }
 
-// Make it dynamic by defining generateStaticParams
-export function generateStaticParams() {
-  return projects.map((project) => ({
-    slug: project.slug,
-  }));
+async function getLiveProject(slug: string): Promise<Project | null> {
+  try {
+    const q = query(collection(db, "projects"), where("slug", "==", slug));
+    const snapshot = await getDocs(q);
+
+    if (!snapshot.empty) {
+      const docSnap = snapshot.docs[0];
+      const data = docSnap.data();
+
+      return {
+        id: docSnap.id,
+        slug: data.slug || docSnap.id,
+        title: data.title || "Untitled Project",
+        category: data.category || "Web Design",
+        tag: data.tag || (data.category ? data.category.toUpperCase() : "WEB DESIGN"),
+        categories: data.categories || [data.category || "Web Design"],
+        description: data.description || "",
+        client: data.client || "",
+        duration: data.duration || "",
+        services: data.services || "",
+        websiteUrl: data.websiteUrl || "",
+        image: data.image || "/photoshoot.jpg",
+        heroImage: data.heroImage || data.image || "/photoshoot.jpg",
+        gallery: Array.isArray(data.gallery) ? data.gallery : [],
+        created: data.created || Date.now()
+      };
+    }
+  } catch (e) {
+    console.error("Error fetching project from Firestore:", e);
+  }
+
+  // Fallback to static projects in src/data/projects.ts
+  const staticProject = getProjectBySlug(slug);
+  if (staticProject) {
+    return staticProject;
+  }
+
+  return null;
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const project = await getLiveProject(slug);
+
+  if (!project) return {};
+  return {
+    alternates: { canonical: `/projects/${slug}` },
+    title: `${project.title} | Case Study | Southern Edge`,
+    description: project.description?.slice(0, 160) || `Explore ${project.title} case study.`,
+  };
+}
+
+function ProjectGalleryView({ title, images }: { title: string; images: string[] }) {
+  if (!images || images.length === 0) return null;
+
+  // 1 Image layout
+  if (images.length === 1) {
+    return (
+      <div className="w-full h-[280px] md:h-[520px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
+        <img 
+          src={images[0]} 
+          alt={`${title} Gallery`} 
+          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
+        />
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
+      </div>
+    );
+  }
+
+  // 2 Images layout (side-by-side split)
+  if (images.length === 2) {
+    return (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+        {images.map((img, idx) => (
+          <div key={idx} className="h-[280px] md:h-[480px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
+            <img 
+              src={img} 
+              alt={`${title} Gallery ${idx + 1}`} 
+              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
+            />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  // 3 Images layout (1 full width top + 2 columns below)
+  if (images.length === 3) {
+    return (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+        <div className="md:col-span-2 h-[260px] md:h-[450px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
+          <img 
+            src={images[0]} 
+            alt={`${title} Gallery 1`} 
+            className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
+          />
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
+        </div>
+        {images.slice(1).map((img, idx) => (
+          <div key={idx} className="h-[240px] md:h-[380px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
+            <img 
+              src={img} 
+              alt={`${title} Gallery ${idx + 2}`} 
+              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
+            />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  // 4 Images layout (2x2 grid)
+  if (images.length === 4) {
+    return (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+        {images.map((img, idx) => (
+          <div key={idx} className="h-[240px] md:h-[380px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
+            <img 
+              src={img} 
+              alt={`${title} Gallery ${idx + 1}`} 
+              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
+            />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  // 5+ Images layout (Dynamic Bento Grid without duplication)
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 w-full">
+      {images.map((img, idx) => {
+        let spanClass = "col-span-1 md:col-span-1 h-[200px] md:h-[260px] lg:h-[330px]";
+        
+        if (idx === 0) {
+          spanClass = "col-span-1 md:col-span-4 h-[250px] md:h-[450px]";
+        } else if (idx === 1 && images.length >= 6) {
+          spanClass = "col-span-1 md:col-span-2 md:row-span-2 h-[250px] md:h-full min-h-[250px] md:min-h-[360px] lg:min-h-[464px]";
+        } else if (idx === 6 && images.length >= 7) {
+          spanClass = "col-span-1 md:col-span-4 h-[250px] md:h-[450px]";
+        } else if (images.length === 5 && (idx === 1 || idx === 2 || idx === 3 || idx === 4)) {
+          spanClass = "col-span-1 md:col-span-2 h-[240px] md:h-[360px]";
+        }
+
+        return (
+          <div 
+            key={idx} 
+            className={`${spanClass} rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group`}
+          >
+            <img 
+              src={img} 
+              alt={`${title} Gallery ${idx + 1}`} 
+              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
+            />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const project = getProjectBySlug(slug);
+  const project = await getLiveProject(slug);
 
   if (!project) {
     notFound();
   }
 
-  // Gather images from the local folder or fallback to the gallery array
+  // Gather images from the project gallery or fallback
   const galleryImages = getProjectImages(slug, project.gallery);
-  const bentoImages = [...galleryImages];
-  while (bentoImages.length < 7) {
-    bentoImages.push(project.heroImage || project.image);
-  }
 
   return (
     <div className="w-full min-h-screen bg-[#fffff0]">
@@ -127,84 +292,15 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           </div>
         </div>
 
-        {/* Bento Grid Image Gallery */}
-        <div className="w-full mb-24">
-          <h2 className="text-[28px] lg:text-[42px] font-medium text-[#30261C] mb-8 lg:mb-12 uppercase tracking-tight">
-            Project Gallery
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 w-full">
-            {/* Slot 1: Top Full-Width Image */}
-            <div className="col-span-1 md:col-span-4 h-[250px] md:h-[450px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-              <img 
-                src={bentoImages[0]} 
-                alt={`${project.title} Gallery 1`} 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-            </div>
-
-            {/* Slot 2: Middle Left Medium-Large (spans 2 rows) */}
-            <div className="col-span-1 md:col-span-2 md:row-span-2 h-[250px] md:h-full min-h-[250px] md:min-h-[360px] lg:min-h-[464px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-              <img 
-                src={bentoImages[1]} 
-                alt={`${project.title} Gallery 2`} 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-            </div>
-
-            {/* Slot 3: Middle Right Small 1 */}
-            <div className="col-span-1 md:col-span-1 h-[170px] md:h-[170px] lg:h-[330px] rounded-[24px] lg:rounded-[28px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-              <img 
-                src={bentoImages[2]} 
-                alt={`${project.title} Gallery 3`} 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-            </div>
-
-            {/* Slot 4: Middle Right Small 2 */}
-            <div className="col-span-1 md:col-span-1 h-[170px] md:h-[170px] lg:h-[330px] rounded-[24px] lg:rounded-[28px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-              <img 
-                src={bentoImages[3]} 
-                alt={`${project.title} Gallery 4`} 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-            </div>
-
-            {/* Slot 5: Middle Right Small 3 */}
-            <div className="col-span-1 md:col-span-1 h-[170px] md:h-[170px] lg:h-[330px] rounded-[24px] lg:rounded-[28px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-              <img 
-                src={bentoImages[4]} 
-                alt={`${project.title} Gallery 5`} 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-            </div>
-
-            {/* Slot 6: Middle Right Small 4 */}
-            <div className="col-span-1 md:col-span-1 h-[170px] md:h-[170px] lg:h-[330px] rounded-[24px] lg:rounded-[28px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-              <img 
-                src={bentoImages[5]} 
-                alt={`${project.title} Gallery 6`} 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-            </div>
-
-            {/* Slot 7: Bottom Full-Width Image */}
-            <div className="col-span-1 md:col-span-4 h-[250px] md:h-[450px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-              <img 
-                src={bentoImages[6]} 
-                alt={`${project.title} Gallery 7`} 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-            </div>
+        {/* Bento Grid Image Gallery (Only renders if gallery images exist) */}
+        {galleryImages.length > 0 && (
+          <div className="w-full mb-24">
+            <h2 className="text-[28px] lg:text-[42px] font-medium text-[#30261C] mb-8 lg:mb-12 uppercase tracking-tight">
+              Project Gallery
+            </h2>
+            <ProjectGalleryView title={project.title} images={galleryImages} />
           </div>
-        </div>
+        )}
       </main>
 
       <div style={{ zoom: 0.8 }}><Cta /></div>

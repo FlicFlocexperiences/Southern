@@ -32,8 +32,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  const projectRoutes = projects.map((project) => ({
-    url: `${baseUrl}/projects/${project.slug}`,
+  // Fetch Firestore projects + combine with static projects (deduplicated by slug)
+  const allProjectSlugs = new Set<string>();
+  projects.forEach((p) => allProjectSlugs.add(p.slug));
+
+  try {
+    const querySnapshot = await getDocs(collection(db, 'projects'));
+    querySnapshot.docs.forEach((doc) => {
+      const data = doc.data();
+      const slug = data.slug || doc.id;
+      if (slug) allProjectSlugs.add(slug);
+    });
+  } catch (error) {
+    console.error('Error fetching projects for sitemap:', error);
+  }
+
+  const projectRoutes = Array.from(allProjectSlugs).map((slug) => ({
+    url: `${baseUrl}/projects/${slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.7,

@@ -8,7 +8,7 @@ export type ProjectCategory =
   | "Photography";
 
 export type Project = {
-  id: number;
+  id?: number | string;
   slug: string;
   title: string;
   category: ProjectCategory;
@@ -22,6 +22,7 @@ export type Project = {
   image: string; // Used for the grid
   heroImage: string; // Used for the individual page
   gallery: string[]; // Additional images
+  created?: number;
 };
 
 export const projects: Project[] = [

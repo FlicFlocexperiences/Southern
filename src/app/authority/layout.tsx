@@ -1,13 +1,14 @@
 'use client';
 
 import { useAuth } from '@/components/AuthProvider';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 import Link from 'next/link';
 
 export default function AuthorityLayout({ children }: { children: React.ReactNode }) {
     const { user, loading, logout } = useAuth();
     const router = useRouter();
+    const pathname = usePathname();
 
     useEffect(() => {
         if (!loading && !user) {
@@ -27,14 +28,46 @@ export default function AuthorityLayout({ children }: { children: React.ReactNod
         return null; // Will redirect in useEffect
     }
 
+    const isLeadsActive = pathname?.startsWith('/authority/leads');
+    const isBlogsActive = pathname?.startsWith('/authority/blogs');
+    const isProjectsActive = pathname?.startsWith('/authority/projects');
+
     return (
         <div className="min-h-screen w-full overflow-x-hidden bg-[#FAF7F2] text-[#4A332A] flex flex-col">
             <nav className="bg-[#FAF7F2] border-b border-[#E8D8C8] px-6 md:px-10 py-5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sticky top-0 z-50">
                 <div className="flex items-center gap-6 md:gap-8 w-full sm:w-auto justify-between sm:justify-start">
                     <h1 className="text-xl font-extrabold tracking-widest text-[#4A332A]">AUTHORITY</h1>
                     <div className="flex items-center gap-2 text-sm font-semibold">
-                        <Link href="/authority/leads" className="bg-[#EBD8C3] text-[#4A332A] px-4 py-1.5 rounded-lg transition-colors">Leads</Link>
-                        <Link href="/authority/blogs" className="text-[#4A332A]/70 hover:text-[#4A332A] px-4 py-1.5 transition-colors">Blogs</Link>
+                        <Link 
+                            href="/authority/leads" 
+                            className={`px-4 py-1.5 rounded-lg transition-colors ${
+                                isLeadsActive 
+                                    ? 'bg-[#EBD8C3] text-[#4A332A]' 
+                                    : 'text-[#4A332A]/70 hover:text-[#4A332A] hover:bg-[#EBD8C3]/40'
+                            }`}
+                        >
+                            Leads
+                        </Link>
+                        <Link 
+                            href="/authority/blogs" 
+                            className={`px-4 py-1.5 rounded-lg transition-colors ${
+                                isBlogsActive 
+                                    ? 'bg-[#EBD8C3] text-[#4A332A]' 
+                                    : 'text-[#4A332A]/70 hover:text-[#4A332A] hover:bg-[#EBD8C3]/40'
+                            }`}
+                        >
+                            Blogs
+                        </Link>
+                        <Link 
+                            href="/authority/projects" 
+                            className={`px-4 py-1.5 rounded-lg transition-colors ${
+                                isProjectsActive 
+                                    ? 'bg-[#EBD8C3] text-[#4A332A]' 
+                                    : 'text-[#4A332A]/70 hover:text-[#4A332A] hover:bg-[#EBD8C3]/40'
+                            }`}
+                        >
+                            Projects
+                        </Link>
                     </div>
                 </div>
                 <div className="flex items-center justify-between w-full sm:w-auto gap-6">

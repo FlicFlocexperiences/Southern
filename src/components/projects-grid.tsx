@@ -2,8 +2,10 @@
 
 import React, { useState, useMemo, useRef, useEffect } from "react";
 import Link from "next/link";
-import { projects, ProjectCategory } from "@/data/projects";
+import { projects as initialStaticProjects, Project, ProjectCategory } from "@/data/projects";
 import { motion, AnimatePresence } from "framer-motion";
+import { collection, getDocs, query, orderBy } from "firebase/firestore";
+import { db } from "@/lib/firebase";
 
 // --- Icons ---
 const SearchIcon = () => (
@@ -73,6 +75,7 @@ const categories: { name: FilterCategory; icon: React.ReactNode | null }[] = [
 ];
 
 export const ProjectsGrid = () => {
+  const [projectsList, setProjectsList] = useState<Project[]>(initialStaticProjects);
   const [selectedCategory, setSelectedCategory] = useState<FilterCategory>("All");
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState("Latest");
@@ -82,6 +85,48 @@ export const ProjectsGrid = () => {
   const sortRefMobile = useRef<HTMLDivElement>(null);
   const sortRefDesktop = useRef<HTMLDivElement>(null);
   const filterDropdownRef = useRef<HTMLDivElement>(null);
+
+  // Fetch Firestore projects and merge with static projects
+  useEffect(() => {
+    const fetchLiveProjects = async () => {
+      try {
+        const q = query(collection(db, "projects"), orderBy("created", "desc"));
+        const snapshot = await getDocs(q);
+
+        if (!snapshot.empty) {
+          const liveProjects: Project[] = snapshot.docs.map(doc => {
+            const data = doc.data();
+            return {
+              id: doc.id,
+              slug: data.slug || doc.id,
+              title: data.title || "Untitled Project",
+              category: (data.category as ProjectCategory) || "Web Design",
+              tag: data.tag || (data.category ? data.category.toUpperCase() : "WEB DESIGN"),
+              categories: (data.categories as ProjectCategory[]) || [data.category || "Web Design"],
+              description: data.description || "",
+              client: data.client || "",
+              duration: data.duration || "",
+              services: data.services || "",
+              websiteUrl: data.websiteUrl || "",
+              image: data.image || "/photoshoot.jpg",
+              heroImage: data.heroImage || data.image || "/photoshoot.jpg",
+              gallery: Array.isArray(data.gallery) ? data.gallery : [],
+              created: data.created || Date.now()
+            };
+          });
+
+          // Merge live projects with static ones, deduplicating by slug (live projects take priority)
+          const liveSlugs = new Set(liveProjects.map(p => p.slug));
+          const remainingStatic = initialStaticProjects.filter(p => !liveSlugs.has(p.slug));
+          setProjectsList([...liveProjects, ...remainingStatic]);
+        }
+      } catch (err) {
+        console.error("Error fetching live projects from Firestore:", err);
+      }
+    };
+
+    fetchLiveProjects();
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -101,7 +146,7 @@ export const ProjectsGrid = () => {
   }, []);
 
   const filteredProjects = useMemo(() => {
-    let filtered = projects;
+    let filtered = projectsList;
 
     // Filter strictly by Category
     if (selectedCategory !== "All") {
@@ -135,7 +180,7 @@ export const ProjectsGrid = () => {
     }
 
     return filtered;
-  }, [selectedCategory, searchQuery, sortBy]);
+  }, [projectsList, selectedCategory, searchQuery, sortBy]);
 
   const renderSortOptions = () => (
     <AnimatePresence>
@@ -177,7 +222,7 @@ export const ProjectsGrid = () => {
         </div>
         <div className="flex flex-col">
           <span className="text-[20px] font-bold text-[#de5e18] leading-none">
-            {projects.length}
+            {projectsList.length}
           </span>
           <span className="text-[13px] font-medium text-[#5d4037]">Success Stories</span>
         </div>
