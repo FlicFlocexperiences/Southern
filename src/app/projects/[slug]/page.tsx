@@ -8,6 +8,7 @@ import { Cta } from "@/components/cta";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { Metadata } from "next";
+import Link from "next/link";
 import fs from "fs";
 import path from "path";
 
@@ -76,6 +77,9 @@ async function getLiveProject(slug: string): Promise<Project | null> {
         category: data.category || "Web Design",
         tag: data.tag || (data.category ? data.category.toUpperCase() : "WEB DESIGN"),
         categories: data.categories || [data.category || "Web Design"],
+        projectType: data.projectType || "Custom Code",
+        flag: data.flag || "🇺🇸",
+        content: data.content || "",
         description: data.description || "",
         client: data.client || "",
         duration: data.duration || "",
@@ -112,19 +116,52 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+function getProjectCaseStudyContent(project: Project): string {
+  // If the user entered custom rich content in TipTap (long custom case study), prioritize it
+  if (project.content && project.content.trim().length > 300) {
+    return project.content;
+  }
+
+  const category = project.tag || project.category || "Web Design";
+
+  return `
+    <p class="lead">${project.title} is a premier ${category.toLowerCase()} experience built to deliver a digital presence as refined as their services. It pairs a sleek, editorial aesthetic with high-performance engineering to provide a comprehensive, intuitive interface and fully scalable architecture right out of the box.</p>
+    
+    <h2>Important</h2>
+    <p>Modern digital platforms don't just display information — they build credibility. ${project.title} is structured around that reality, guiding each visitor from curiosity to action using proof-led storytelling and a frictionless navigation path.</p>
+    
+    <h2>Approach</h2>
+    <p>Rather than chasing transient trends, the layout follows natural user conversion behavior: a clear introduction, real success metrics, transparent process descriptions, and direct ways to engage. Every section is designed to keep users engaged and build momentum toward a transaction.</p>
+    
+    <h2>Vision and Innovation</h2>
+    <p>The goal was a customized digital home that reads like a premium brand, not a generic template. Typography-led layouts, generous grid alignment, and a minimalist color palette keep the client's identity front and center, while modern rendering ensures lightning-fast performance.</p>
+    
+    <h2>Identifying Unique Challenges</h2>
+    <p>Usually, digital experiences fall into one of two traps: templates that feel identical, or highly experimental sites that bury user actions and load slowly. ${project.title} had to look visually distinctive while remaining accessible and optimized for conversion.</p>
+    
+    <h2>Resolving Complex Problems</h2>
+    <p>We resolved this challenge with a streamlined narrative structure — showcasing value, detailing the plan, proving the outcomes, and prompting action. Integrations are fully modular, so features can be scaled and modified easily as the client grows.</p>
+    
+    <h2>User-Centric Design</h2>
+    <p>Every design decision started from the visitor's perspective — someone looking for professional solutions and immediate answers. Strategic breathing room, clear hierarchy, and smooth micro-interactions assure quality, while a singular primary action path removes all friction.</p>
+    
+    <h2>Meeting User Needs</h2>
+    <p>By implementing a high-performance modern web architecture, we created a platform that is extremely fast on mobile and desktop alike. The user has direct access to key information, making self-service intuitive and ensuring they can connect with ${project.title} effortlessly.</p>
+  `;
+}
+
 function ProjectGalleryView({ title, images }: { title: string; images: string[] }) {
   if (!images || images.length === 0) return null;
 
-  // 1 Image layout
+  // 1 Image layout - Uncropped Full View
   if (images.length === 1) {
     return (
-      <div className="w-full h-[280px] md:h-[520px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
+      <div className="w-full rounded-[24px] lg:rounded-[36px] overflow-hidden bg-white border border-gray-200/80 shadow-[0_10px_40px_rgba(0,0,0,0.04)] relative group p-3 sm:p-6 md:p-8 flex items-center justify-center">
         <img 
           src={images[0]} 
           alt={`${title} Gallery`} 
-          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
+          className="w-full h-auto max-h-[850px] object-contain rounded-2xl transition-transform duration-700 ease-out group-hover:scale-[1.01]" 
         />
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
       </div>
     );
   }
@@ -134,13 +171,12 @@ function ProjectGalleryView({ title, images }: { title: string; images: string[]
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
         {images.map((img, idx) => (
-          <div key={idx} className="h-[280px] md:h-[480px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
+          <div key={idx} className="h-[280px] md:h-[480px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-white border border-gray-100 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group flex items-center justify-center p-2 sm:p-4">
             <img 
               src={img} 
               alt={`${title} Gallery ${idx + 1}`} 
-              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
+              className="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105" 
             />
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
           </div>
         ))}
       </div>
@@ -235,68 +271,239 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
   // Gather images from the project gallery or fallback
   const galleryImages = getProjectImages(slug, project.gallery);
+  const caseStudyHtml = getProjectCaseStudyContent(project);
 
   return (
-    <div className="w-full min-h-screen bg-[#fffff0]">
+    <div className="w-full min-h-screen bg-[#fdfaf6] text-[#3e2723]">
       <div className="block md:hidden"><MobileNav /></div>
       <div className="hidden md:block"><DesktopNav /></div>
 
-      <main className="w-full pt-32 lg:pt-48 px-6 lg:px-[90px] pb-24">
-        {/* Massive Title */}
-        <h1 className="text-[50px] lg:text-[110px] xl:text-[130px] font-medium leading-[1] text-[#30261C] uppercase tracking-tighter mb-12 lg:mb-24">
-          {project.title}
-        </h1>
+      <main className="w-full pt-28 md:pt-36 lg:pt-40 px-4 sm:px-6 md:px-10 lg:px-[90px] pb-24 max-w-[1600px] mx-auto">
+        
+        {/* Back Link */}
+        <div className="mb-8">
+          <Link 
+            href="/projects" 
+            className="inline-flex items-center gap-2 text-[14px] font-bold text-gray-500 hover:text-[#de5e18] transition-colors group cursor-pointer"
+          >
+            <span className="transition-transform group-hover:-translate-x-1">←</span>
+            <span>Back to Projects</span>
+          </Link>
+        </div>
 
-        {/* Two-Column Details Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-16 lg:mb-32">
-          {/* Left Column: Description & Links */}
-          <div className="lg:col-span-7 xl:col-span-8 flex flex-col justify-between">
-            <p className="text-[22px] lg:text-[28px] xl:text-[34px] leading-[1.3] text-[#30261C]/80 font-light mb-12">
-              {project.description}
-            </p>
+        {/* Hero Title & Headline */}
+        <div className="text-center max-w-5xl mx-auto mb-10 md:mb-14">
+          <h1 className="text-[32px] sm:text-[44px] md:text-[54px] lg:text-[62px] font-extrabold text-[#3e2723] tracking-tight leading-[1.15] mb-6">
+            {project.title}
+            {project.description && (
+              <span className="font-normal text-[#5d4037]/85 block sm:inline">
+                , {project.description}
+              </span>
+            )}
+          </h1>
 
-            <div className="flex items-center gap-6">
-              {project.websiteUrl && (
-                <a 
-                  href={project.websiteUrl} 
-                  target="_blank" 
-                  rel="noreferrer"
-                  className="px-8 py-3 bg-[#30261C]/50 hover:bg-[#30261C] text-white rounded-full transition-colors font-medium text-[14px] tracking-wide"
-                >
-                  VISIT WEBSITE
-                </a>
-              )}
-              <a 
-                href="#approach" 
-                className="flex items-center gap-2 text-[#30261C]/60 hover:text-[#ff5100] transition-colors text-[14px] font-medium tracking-wide uppercase"
+          {/* Badges / Category Pills */}
+          <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
+            {project.categories && project.categories.map((cat) => (
+              <span 
+                key={cat}
+                className="px-4 py-1.5 rounded-full text-[13px] font-bold bg-white border border-gray-200/80 text-gray-700 shadow-xs"
               >
-                OUR APPROACH <span className="text-[18px]">↗</span>
-              </a>
-            </div>
+                {cat}
+              </span>
+            ))}
+            {project.projectType && (
+              <span className="px-4 py-1.5 rounded-full text-[13px] font-bold bg-[#de5e18]/10 border border-[#de5e18]/20 text-[#de5e18] shadow-xs">
+                {project.projectType}
+              </span>
+            )}
+            {project.flag && (
+              <span className="px-4 py-1.5 rounded-full text-[13px] font-bold bg-white border border-gray-200/80 text-gray-700 shadow-xs flex items-center gap-1.5">
+                <span>Origin:</span>
+                <span>{project.flag}</span>
+              </span>
+            )}
           </div>
+        </div>
 
-          {/* Right Column: Meta Info */}
-          <div className="lg:col-span-5 xl:col-span-4 flex flex-col pt-2 lg:pt-0">
-            <div className="flex flex-col border-t border-[#30261C]/10 py-5">
-              <span className="text-[11px] text-[#30261C]/40 uppercase tracking-widest mb-1">DURATION</span>
-              <span className="text-[16px] text-[#30261C]">{project.duration}</span>
+        {/* Device Showcase Mockup Window */}
+        <div className="w-full max-w-6xl mx-auto mb-16 lg:mb-24">
+          <div className="rounded-[28px] sm:rounded-[36px] bg-white border border-gray-200/80 shadow-[0_20px_50px_rgba(0,0,0,0.06)] overflow-hidden">
+            {/* Browser Top Chrome */}
+            <div className="flex items-center justify-between px-6 py-3.5 bg-gray-50/80 border-b border-gray-200/60">
+              <div className="flex items-center gap-2">
+                <span className="w-3 h-3 rounded-full bg-red-400"></span>
+                <span className="w-3 h-3 rounded-full bg-amber-400"></span>
+                <span className="w-3 h-3 rounded-full bg-emerald-400"></span>
+              </div>
+              <div className="bg-white px-6 py-1 rounded-full text-[11px] font-semibold text-gray-400 border border-gray-200/50 shadow-xs max-w-xs truncate">
+                {project.websiteUrl ? project.websiteUrl.replace(/^https?:\/\//, '') : `${project.slug}.com`}
+              </div>
+              <div className="w-10"></div>
             </div>
-            <div className="flex flex-col border-t border-[#30261C]/10 py-5">
-              <span className="text-[11px] text-[#30261C]/40 uppercase tracking-widest mb-1">CLIENT</span>
-              <span className="text-[16px] text-[#30261C]">{project.client}</span>
-            </div>
-            <div className="flex flex-col border-t border-[#30261C]/10 py-5">
-              <span className="text-[11px] text-[#30261C]/40 uppercase tracking-widest mb-1">SERVICES</span>
-              <span className="text-[16px] text-[#30261C]">{project.services}</span>
+
+            {/* Showcase Image Display */}
+            <div className="w-full relative bg-[#f7f5f0] p-4 sm:p-8 flex items-center justify-center">
+              <img 
+                src={project.heroImage || project.image} 
+                alt={`${project.title} Showcase Mockup`} 
+                className="w-full h-auto max-h-[700px] object-contain rounded-2xl shadow-sm transition-transform duration-500 hover:scale-[1.01]"
+              />
             </div>
           </div>
         </div>
 
-        {/* Bento Grid Image Gallery (Only renders if gallery images exist) */}
-        {galleryImages.length > 0 && (
+        {/* Two-Column Deep Case Study & Specifications Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 mb-20 lg:mb-32 items-start">
+          
+          {/* Left Column: Floating Specifications Card */}
+          <div className="lg:col-span-5 xl:col-span-4 lg:sticky lg:top-32">
+            <div className="bg-white/90 backdrop-blur-md rounded-[28px] p-6 sm:p-8 border border-gray-200/80 shadow-lg space-y-6">
+              
+              {/* Type */}
+              <div className="flex items-center justify-between border-b border-gray-100 pb-4">
+                <span className="text-[13px] font-bold text-gray-400 uppercase tracking-wider">Type:</span>
+                <span className="text-[15px] font-extrabold text-[#3e2723]">
+                  {project.projectType || "Custom Code"}
+                </span>
+              </div>
+
+              {/* Category */}
+              <div className="flex items-center justify-between border-b border-gray-100 pb-4">
+                <span className="text-[13px] font-bold text-gray-400 uppercase tracking-wider">Category:</span>
+                <span className="text-[15px] font-extrabold text-[#3e2723]">
+                  {project.category}
+                </span>
+              </div>
+
+              {/* Client */}
+              <div className="flex items-center justify-between border-b border-gray-100 pb-4">
+                <span className="text-[13px] font-bold text-gray-400 uppercase tracking-wider">Client:</span>
+                <span className="text-[15px] font-extrabold text-[#3e2723]">
+                  {project.client || project.title}
+                </span>
+              </div>
+
+              {/* Duration */}
+              <div className="flex items-center justify-between border-b border-gray-100 pb-4">
+                <span className="text-[13px] font-bold text-gray-400 uppercase tracking-wider">Duration:</span>
+                <span className="text-[15px] font-extrabold text-[#3e2723]">
+                  {project.duration || "6 Weeks"}
+                </span>
+              </div>
+
+              {/* Services */}
+              {project.services && (
+                <div className="flex flex-col border-b border-gray-100 pb-4">
+                  <span className="text-[13px] font-bold text-gray-400 uppercase tracking-wider mb-1.5">Services:</span>
+                  <span className="text-[14px] font-medium text-[#5d4037] leading-relaxed">
+                    {project.services}
+                  </span>
+                </div>
+              )}
+
+              {/* Visit Website Button */}
+              {project.websiteUrl && (
+                <div className="pt-2">
+                  <a 
+                    href={project.websiteUrl} 
+                    target="_blank" 
+                    rel="noreferrer"
+                    className="w-full py-4 bg-[#3e2723] hover:bg-[#de5e18] text-white rounded-2xl flex items-center justify-center gap-2 font-bold text-[15px] transition-colors shadow-md hover:shadow-lg cursor-pointer"
+                  >
+                    <span>Visit Website</span>
+                    <span className="text-[18px] leading-none">↗</span>
+                  </a>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Right Column: Deep Case Study Storytelling Body */}
+          <div className="lg:col-span-7 xl:col-span-8">
+            <div className="case-study-content max-w-3xl">
+              <style>{`
+                .case-study-content h1 {
+                  font-size: 2.2rem;
+                  font-weight: 800;
+                  color: #3e2723;
+                  margin-top: 1.8rem;
+                  margin-bottom: 0.8rem;
+                  line-height: 1.2;
+                  letter-spacing: -0.02em;
+                }
+                .case-study-content h2 {
+                  font-size: 1.75rem;
+                  font-weight: 800;
+                  color: #3e2723;
+                  margin-top: 2.2rem;
+                  margin-bottom: 0.8rem;
+                  line-height: 1.25;
+                  letter-spacing: -0.01em;
+                }
+                .case-study-content h3 {
+                  font-size: 1.35rem;
+                  font-weight: 700;
+                  color: #3e2723;
+                  margin-top: 1.6rem;
+                  margin-bottom: 0.6rem;
+                }
+                .case-study-content p {
+                  font-size: 1.1rem;
+                  line-height: 1.8;
+                  color: #5d4037;
+                  margin-bottom: 1.4rem;
+                  font-weight: 400;
+                }
+                .case-study-content p.lead,
+                .case-study-content > p:first-of-type {
+                  font-size: 1.25rem;
+                  line-height: 1.7;
+                  color: #3e2723;
+                  font-weight: 500;
+                  margin-bottom: 1.8rem;
+                }
+                .case-study-content ul, .case-study-content ol {
+                  margin: 1.2rem 0;
+                  padding-left: 1.8rem;
+                  color: #5d4037;
+                  font-size: 1.05rem;
+                  line-height: 1.7;
+                }
+                .case-study-content ul { list-style-type: disc; }
+                .case-study-content ol { list-style-type: decimal; }
+                .case-study-content li { margin-bottom: 0.5rem; }
+                .case-study-content blockquote {
+                  border-left: 4px solid #de5e18;
+                  padding-left: 1.2rem;
+                  margin: 1.6rem 0;
+                  font-style: italic;
+                  color: #3e2723;
+                  font-size: 1.15rem;
+                }
+                .case-study-content img {
+                  border-radius: 1.2rem;
+                  margin: 2rem 0;
+                  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+                }
+              `}</style>
+              
+              <div 
+                dangerouslySetInnerHTML={{ __html: caseStudyHtml }}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Bento Grid Image Gallery (Only renders if distinct gallery images exist) */}
+        {(galleryImages.length > 1 || (galleryImages.length === 1 && galleryImages[0] !== (project.heroImage || project.image))) && (
           <div className="w-full mb-24">
-            <h2 className="text-[28px] lg:text-[42px] font-medium text-[#30261C] mb-8 lg:mb-12 uppercase tracking-tight">
-              Project Gallery
+            <div className="flex items-center gap-2 text-[13px] font-bold text-[#de5e18] uppercase tracking-wider mb-2">
+              <span>VISUAL SHOWCASE</span>
+              <span>•</span>
+            </div>
+            <h2 className="text-[32px] lg:text-[46px] font-bold text-[#3e2723] mb-8 lg:mb-12 tracking-tight">
+              PROJECT GALLERY
             </h2>
             <ProjectGalleryView title={project.title} images={galleryImages} />
           </div>

@@ -35,6 +35,7 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { db, storage } from '@/lib/firebase';
 import { Project, ProjectCategory, projects as initialStaticProjects } from '@/data/projects';
 import Link from 'next/link';
+import TiptapEditor from '../blogs/TipTapEditor';
 
 const AVAILABLE_CATEGORIES: ProjectCategory[] = [
     "Web Design",
@@ -78,6 +79,9 @@ export default function AuthorityProjectsPage() {
         category: 'Web Design',
         tag: 'WEB DESIGN',
         categories: ['Web Design'],
+        projectType: 'Custom Code',
+        flag: '🇺🇸',
+        content: '',
         description: '',
         client: '',
         duration: '',
@@ -115,6 +119,9 @@ export default function AuthorityProjectsPage() {
                     category: (docData.category as ProjectCategory) || 'Web Design',
                     tag: docData.tag || '',
                     categories: (docData.categories as ProjectCategory[]) || [docData.category || 'Web Design'],
+                    projectType: docData.projectType || 'Custom Code',
+                    flag: docData.flag || '🇺🇸',
+                    content: docData.content || '',
                     description: docData.description || '',
                     client: docData.client || '',
                     duration: docData.duration || '',
@@ -399,6 +406,9 @@ export default function AuthorityProjectsPage() {
                 category: newProject.category,
                 tag: newProject.tag?.trim() || newProject.category.toUpperCase(),
                 categories: newProject.categories.length > 0 ? newProject.categories : [newProject.category],
+                projectType: newProject.projectType || 'Custom Code',
+                flag: newProject.flag || '🇺🇸',
+                content: newProject.content || '',
                 description: newProject.description.trim(),
                 client: newProject.client.trim(),
                 duration: newProject.duration.trim(),
@@ -442,6 +452,9 @@ export default function AuthorityProjectsPage() {
         setNewProject({
             ...project,
             categories: project.categories || [project.category],
+            projectType: project.projectType || 'Custom Code',
+            flag: project.flag || '🇺🇸',
+            content: project.content || '',
             heroImage: project.heroImage || project.image,
             gallery: project.gallery || []
         });
@@ -492,6 +505,9 @@ export default function AuthorityProjectsPage() {
             category: 'Web Design',
             tag: 'WEB DESIGN',
             categories: ['Web Design'],
+            projectType: 'Custom Code',
+            flag: '🇺🇸',
+            content: '',
             description: '',
             client: '',
             duration: '',
@@ -981,6 +997,55 @@ export default function AuthorityProjectsPage() {
                                             ))}
                                         </div>
                                     </div>
+
+                                    <div>
+                                        <label className="block text-xs font-bold text-black/70 uppercase tracking-wider mb-2">
+                                            Build / Architecture Type
+                                        </label>
+                                        <select
+                                            name="projectType"
+                                            value={newProject.projectType || 'Custom Code'}
+                                            onChange={handleInputChange}
+                                            className="w-full bg-[#FAF7F2] border border-black/20 rounded-xl px-4 py-3 text-sm font-semibold text-black focus:outline-none focus:border-[#de5e18]"
+                                        >
+                                            <option value="Custom Code">Custom Code (Next.js / React / Node)</option>
+                                            <option value="Shopify Store">Shopify Store (Liquid / Hydrogen)</option>
+                                            <option value="Mobile App">Mobile App (iOS / Android / Flutter)</option>
+                                            <option value="Visual Identity">Visual Identity & Branding</option>
+                                            <option value="Photoshoot">Studio Photoshoot & Creative</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label className="block text-xs font-bold text-black/70 uppercase tracking-wider mb-2">
+                                            Origin / Client Country Flag
+                                        </label>
+                                        <input
+                                            type="text"
+                                            name="flag"
+                                            value={newProject.flag || '🇺🇸'}
+                                            onChange={handleInputChange}
+                                            placeholder="e.g. 🇺🇸, 🇮🇳, 🇦🇪, 🇬🇧, 🇨🇦, 🇦🇺"
+                                            className="w-full bg-[#FAF7F2] border border-black/20 rounded-xl px-4 py-3 text-sm font-semibold text-black focus:outline-none focus:border-[#de5e18]"
+                                        />
+                                        <div className="flex flex-wrap gap-2 mt-2">
+                                            {['🇺🇸 United States', '🇮🇳 India', '🇦🇪 UAE', '🇬🇧 UK', '🇨🇦 Canada', '🇦🇺 Australia', '🇸🇬 Singapore'].map(flagItem => {
+                                                const emoji = flagItem.split(' ')[0];
+                                                return (
+                                                    <button
+                                                        type="button"
+                                                        key={flagItem}
+                                                        onClick={() => setNewProject(p => ({ ...p, flag: emoji }))}
+                                                        className={`text-xs px-2 py-1 rounded-lg border font-semibold cursor-pointer ${
+                                                            newProject.flag === emoji ? 'bg-[#de5e18] text-white border-[#de5e18]' : 'bg-[#FAF7F2] text-black/70 border-black/10 hover:bg-black/5'
+                                                        }`}
+                                                    >
+                                                        {flagItem}
+                                                    </button>
+                                                );
+                                            })}
+                                        </div>
+                                    </div>
                                 </div>
 
                                 {/* Multi-Categories Selector */}
@@ -1237,6 +1302,28 @@ export default function AuthorityProjectsPage() {
                                         </p>
                                     </div>
                                 )}
+                            </div>
+
+                            {/* Section 4: Deep Case Study Storytelling (TipTap Rich Text Editor) */}
+                            <div className="space-y-6">
+                                <div className="border-b border-black/10 pb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                                    <h3 className="text-sm font-black text-black uppercase tracking-wider flex items-center gap-2">
+                                        <span>4. Deep Case Study & Storytelling (TipTap Rich Text Editor)</span>
+                                    </h3>
+                                    <span className="text-xs text-black/50 font-semibold">
+                                        Introduction, Important, Approach, Vision & Innovation, Impact
+                                    </span>
+                                </div>
+                                <p className="text-xs text-black/60 font-medium leading-relaxed">
+                                    Use the visual TipTap editor below to write deep, structured case studies for this project. Format headings (H1, H2, H3), bold key phrases, bullet points, blockquotes, code blocks, images, and tables. This content is displayed alongside the client specifications sidebar.
+                                </p>
+                                <div className="bg-[#FAF7F2] p-3 rounded-2xl border border-black/20">
+                                    <TiptapEditor
+                                        content={newProject.content || ''}
+                                        onChange={(html) => setNewProject(prev => ({ ...prev, content: html }))}
+                                        className="min-h-[380px] bg-white rounded-xl shadow-xs"
+                                    />
+                                </div>
                             </div>
 
                             {/* Form Submit Footer */}

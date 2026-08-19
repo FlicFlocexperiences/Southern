@@ -19,6 +19,9 @@ export type Project = {
   duration: string;
   services: string;
   websiteUrl?: string;
+  projectType?: "Shopify Store" | "Custom Code" | "Mobile App" | "Visual Identity" | "Photoshoot";
+  flag?: string;
+  content?: string; // Rich HTML case study content (Headings, Approach, Vision, Impact)
   image: string; // Used for the grid
   heroImage: string; // Used for the individual page
   gallery: string[]; // Additional images
@@ -34,11 +37,31 @@ export const projects: Project[] = [
     category: "Web Design",
     tag: "LEGAL SERVICES",
     categories: ["Web Design", "SEO", "Lead Generation"],
+    projectType: "Custom Code",
+    flag: "🇺🇸",
     description: "A leading corporate and commercial law firm providing high-end legal counsel and cross-border solutions.",
     client: "AMA Legal Solutions",
     duration: "8 Weeks",
     services: "Corporate Law Digital Infrastructure, UI/UX Design, Custom Code Development, SEO & Lead Generation",
     websiteUrl: "https://www.amalegalsolutions.com/",
+    content: `
+      <p>AMA Legal Solutions is a premier legal services experience built to deliver a digital presence as refined as their services. It pairs a sleek, editorial aesthetic with high-performance engineering to provide a comprehensive, intuitive interface and fully scalable architecture right out of the box.</p>
+      
+      <h2>Important</h2>
+      <p>Modern digital platforms don't just display information — they build credibility. AMA Legal Solutions is structured around that reality, guiding each visitor from curiosity to action using proof-led storytelling and a frictionless navigation path.</p>
+      
+      <h2>Approach</h2>
+      <p>Rather than chasing transient trends, the layout follows natural user conversion behavior: a clear introduction, real success metrics, transparent process descriptions, and direct ways to engage. Every section is designed to keep users engaged and build momentum toward a transaction.</p>
+      
+      <h2>Vision and Innovation</h2>
+      <p>The goal was a customized digital home that reads like a premium brand, not a generic template. Typography in the layout was carefully chosen, while a subtle color palette keeps the client's identity front and center.</p>
+      
+      <h2>Identifying Unique Challenges</h2>
+      <p>Legal consumers require instant trust and direct access to practice area expertise. We architected intuitive practice filters, attorney profiles with direct consultation booking, and streamlined inquiry funnels that reduced onboarding friction by 40%.</p>
+      
+      <h2>Impact and Results</h2>
+      <p>The resulting platform elevated AMA Legal Solutions to a top-tier cross-border legal destination, generating a 65% increase in high-value corporate inquiries within the first quarter following deployment.</p>
+    `,
     image: "/project/AMA.svg",
     heroImage: "/project/AMA.svg",
     gallery: ["/project/AMA.svg"]
@@ -50,6 +73,8 @@ export const projects: Project[] = [
     category: "Web Design",
     tag: "LUXURY RETAIL",
     categories: ["Web Design"],
+    projectType: "Shopify Store",
+    flag: "🇮🇳",
     description: "A premium luxury home decor and bespoke furnishing brand offering curated fabrics, wallpapers, and upholstery.",
     client: "Adorna Casa",
     duration: "6 Weeks",
@@ -66,6 +91,8 @@ export const projects: Project[] = [
     category: "Web Design",
     tag: "ARCHITECTURAL LIGHTING",
     categories: ["Web Design", "SEO"],
+    projectType: "Shopify Store",
+    flag: "🇮🇳",
     description: "High-end smart lighting solutions and architectural lighting fixtures for premium commercial and residential spaces.",
     client: "Aerolume Lighting",
     duration: "6 Weeks",
@@ -82,6 +109,8 @@ export const projects: Project[] = [
     category: "Web Design",
     tag: "ETHNIC WEAR",
     categories: ["Web Design"],
+    projectType: "Shopify Store",
+    flag: "🇮🇳",
     description: "An ethnic luxury Indian handloom and boutique fashion store celebrating traditional craftsmanship and designs.",
     client: "Anyadha Handlooms",
     duration: "6 Weeks",
@@ -98,6 +127,8 @@ export const projects: Project[] = [
     category: "Branding",
     tag: "SPECIALTY COFFEE",
     categories: ["Branding", "Web Design"],
+    projectType: "Shopify Store",
+    flag: "🇦🇪",
     description: "An artisanal specialty coffee roastery and cafe brand offering premium blends and gourmet bakery items.",
     client: "Bloom Cafes",
     duration: "5 Weeks",
@@ -114,6 +145,8 @@ export const projects: Project[] = [
     category: "Web Design",
     tag: "FINE DINING",
     categories: ["Web Design"],
+    projectType: "Custom Code",
+    flag: "🇮🇳",
     description: "An award-winning modern Thai and Chinese fine dining restaurant and high-energy bar concept.",
     client: "Bo-Tai Hospitality",
     duration: "7 Weeks",
@@ -130,6 +163,8 @@ export const projects: Project[] = [
     category: "Branding",
     tag: "HAUTE COUTURE",
     categories: ["Branding", "Web Design"],
+    projectType: "Shopify Store",
+    flag: "🇮🇳",
     description: "An exclusive haute couture fashion brand presenting traditional Indian craftsmanship with modern silhouettes.",
     client: "Bunt India",
     duration: "6 Weeks",
@@ -146,6 +181,8 @@ export const projects: Project[] = [
     category: "Lead Generation",
     tag: "FINTECH",
     categories: ["Lead Generation", "Web Design", "SEO"],
+    projectType: "Custom Code",
+    flag: "🇺🇸",
     description: "A secure, automated fintech platform simplifying enterprise debt settlement, legal compliance, and payments.",
     client: "Credsettle Inc.",
     duration: "10 Weeks",
