@@ -11,6 +11,13 @@ const locations = [
   { name: 'Abu Dhabi', slug: 'abu-dhabi', country: 'UAE' },
   { name: 'Dubai', slug: 'dubai', country: 'UAE' },
   { name: 'Sharjah', slug: 'sharjah', country: 'UAE' },
+  { name: 'Toronto', slug: 'toronto', country: 'Canada' },
+  { name: 'Montreal', slug: 'montreal', country: 'Canada' },
+  { name: 'Vancouver', slug: 'vancouver', country: 'Canada' },
+  { name: 'London', slug: 'london', country: 'UK' },
+  { name: 'Manchester', slug: 'manchester', country: 'UK' },
+  { name: 'Birmingham', slug: 'birmingham', country: 'UK' },
+  { name: 'New York', slug: 'new-york', country: 'USA' },
   { name: 'New Delhi', slug: 'delhi', country: 'India' },
   { name: 'Gurgaon', slug: 'gurgaon', country: 'India' },
   { name: 'Noida', slug: 'noida', country: 'India' },
@@ -26,7 +33,7 @@ const locations = [
 ];
 
 export function LocationsGrid({ serviceSlug }: LocationsGridProps) {
-  const [activeFilter, setActiveFilter] = useState<'All' | 'India' | 'UAE'>('All');
+  const [activeFilter, setActiveFilter] = useState<'All' | 'India' | 'UAE' | 'Canada' | 'UK' | 'USA'>('All');
 
   const filteredLocations = locations.filter(loc => 
     activeFilter === 'All' ? true : loc.country === activeFilter
@@ -37,13 +44,13 @@ export function LocationsGrid({ serviceSlug }: LocationsGridProps) {
       <div className="text-center mb-8">
         <h2 className="text-4xl md:text-5xl font-extrabold text-[#3b2b23] mb-4">Our Locations</h2>
         <p className="text-lg text-[#554238] max-w-3xl mx-auto">
-          Southern Edge Marketing is a trusted digital agency in the UAE. We are strategically located to serve businesses across the region, bringing expert digital solutions directly to you.
+          Southern Edge Marketing is a trusted global digital agency. We are strategically located to serve businesses across the USA, UAE, India, Canada, the UK, and international markets, bringing expert digital solutions directly to you.
         </p>
       </div>
 
       <div className="flex justify-center mb-10">
-        <div className="inline-flex bg-[#fbf8f5] rounded-full p-1.5 border border-[#e6d0bb]/50 shadow-sm">
-          {(['All', 'India', 'UAE'] as const).map((filter) => (
+        <div className="inline-flex flex-wrap justify-center gap-1 bg-[#fbf8f5] rounded-full p-1.5 border border-[#e6d0bb]/50 shadow-sm">
+          {(['All', 'USA', 'India', 'UAE', 'Canada', 'UK'] as const).map((filter) => (
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}

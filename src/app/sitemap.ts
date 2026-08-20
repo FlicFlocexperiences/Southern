@@ -83,46 +83,39 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  const commonCities = [
+  const allCities = [
     'abu-dhabi',
+    'ahmedabad',
     'bengaluru',
+    'birmingham',
+    'chandigarh',
     'chennai',
     'delhi',
+    'dubai',
     'gurgaon',
     'hyderabad',
+    'jaipur',
     'kolkata',
+    'london',
     'lucknow',
+    'manchester',
+    'montreal',
     'mumbai',
+    'new-york',
     'noida',
     'pune',
     'sharjah',
-    'surat'
+    'surat',
+    'toronto',
+    'vancouver',
   ];
 
-  const brandingCities = ['abu-dhabi', 'bengaluru', 'chennai', 'delhi', 'gurgaon', 'hyderabad', 'kolkata', 'lucknow'];
-  const seoCities = ['abu-dhabi', 'bengaluru', 'chennai', 'delhi', 'gurgaon', 'hyderabad', 'kolkata', 'lucknow'];
-
   const cityRoutes = [
-    ...commonCities.map(city => `/services/app-development/${city}`),
-    '/services/app-development/jaipur',
-    '/services/app-development/dubai',
-    ...commonCities.map(city => `/services/web-development/${city}`),
-    '/services/web-development/jaipur',
-    '/services/web-development/ahmedabad',
-    '/services/web-development/dubai',
-    ...commonCities.map(city => `/services/social-media-management/${city}`),
-    '/services/social-media-management/dubai',
-    ...brandingCities.map(city => `/services/branding/${city}`),
-    '/services/branding/jaipur',
-    '/services/branding/dubai',
-    ...seoCities.map(city => `/services/seo/${city}`),
-    '/services/seo/jaipur',
-    '/services/seo/dubai',
-    '/services/seo/toronto',
-    '/services/branding/toronto',
-    '/services/app-development/toronto',
-    '/services/web-development/toronto',
-    '/services/social-media-management/toronto',
+    ...allCities.map(city => `/services/app-development/${city}`),
+    ...allCities.map(city => `/services/web-development/${city}`),
+    ...allCities.map(city => `/services/social-media-management/${city}`),
+    ...allCities.filter(city => city !== 'chandigarh').map(city => `/services/branding/${city}`),
+    ...allCities.map(city => `/services/seo/${city}`),
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
