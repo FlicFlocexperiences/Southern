@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
+import { AuthorCard } from "./AuthorCard";
 
 export interface Section {
   id: string;
@@ -247,6 +248,9 @@ export function ServiceLayout({ sections, children }: ServiceLayoutProps) {
 
       {/* Right Sidebar - About Agency & Contact Card */}
       <aside className="w-full lg:sticky lg:top-28 space-y-5">
+        {/* Author Card */}
+        <AuthorCard />
+
         <div className="bg-white border border-black/10 rounded-xl p-6 text-[#0f0f0f] shadow-sm relative overflow-hidden group text-left">
           <div className="absolute top-[-20%] right-[-10%] w-[50%] aspect-square rounded-full bg-[#de5e18]/10 blur-[30px] pointer-events-none" />
           <h3 className="text-[18px] font-bold mb-3 uppercase tracking-wide text-black">

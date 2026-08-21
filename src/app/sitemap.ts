@@ -104,6 +104,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'new-york',
     'noida',
     'pune',
+    'san-francisco',
     'sharjah',
     'surat',
     'toronto',

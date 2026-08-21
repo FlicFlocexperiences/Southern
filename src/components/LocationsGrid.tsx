@@ -18,6 +18,7 @@ const locations = [
   { name: 'Manchester', slug: 'manchester', country: 'UK' },
   { name: 'Birmingham', slug: 'birmingham', country: 'UK' },
   { name: 'New York', slug: 'new-york', country: 'USA' },
+  { name: 'San Francisco', slug: 'san-francisco', country: 'USA' },
   { name: 'New Delhi', slug: 'delhi', country: 'India' },
   { name: 'Gurgaon', slug: 'gurgaon', country: 'India' },
   { name: 'Noida', slug: 'noida', country: 'India' },
@@ -32,10 +33,28 @@ const locations = [
   { name: 'Jaipur', slug: 'jaipur', country: 'India' },
 ];
 
-export function LocationsGrid({ serviceSlug }: LocationsGridProps) {
-  const [activeFilter, setActiveFilter] = useState<'All' | 'India' | 'UAE' | 'Canada' | 'UK' | 'USA'>('All');
+const unavailableByService: Record<string, string[]> = {
+  branding: ['chandigarh'],
+  seo: [],
+};
 
-  const filteredLocations = locations.filter(loc => 
+export function LocationsGrid({ serviceSlug }: LocationsGridProps) {
+  const [activeFilter, setActiveFilter] = useState<'All' | 'USA' | 'India' | 'UAE' | 'Canada' | 'UK'>('All');
+
+  const availableLocations = locations.filter(loc => {
+    if (serviceSlug && unavailableByService[serviceSlug]?.includes(loc.slug)) {
+      return false;
+    }
+    return true;
+  });
+
+  const availableCountries = Array.from(new Set(availableLocations.map(loc => loc.country)));
+  const filterTabs: ('All' | 'USA' | 'India' | 'UAE' | 'Canada' | 'UK')[] = [
+    'All',
+    ...(['USA', 'India', 'UAE', 'Canada', 'UK'] as const).filter(c => availableCountries.includes(c)),
+  ];
+
+  const filteredLocations = availableLocations.filter(loc => 
     activeFilter === 'All' ? true : loc.country === activeFilter
   );
 
@@ -50,7 +69,7 @@ export function LocationsGrid({ serviceSlug }: LocationsGridProps) {
 
       <div className="flex justify-center mb-10">
         <div className="inline-flex flex-wrap justify-center gap-1 bg-[#fbf8f5] rounded-full p-1.5 border border-[#e6d0bb]/50 shadow-sm">
-          {(['All', 'USA', 'India', 'UAE', 'Canada', 'UK'] as const).map((filter) => (
+          {filterTabs.map((filter) => (
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}

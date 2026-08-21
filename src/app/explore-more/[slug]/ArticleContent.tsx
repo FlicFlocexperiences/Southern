@@ -3,6 +3,7 @@
 import React, { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { Article } from "@/data/articles";
+import { AuthorCard } from "@/components/AuthorCard";
 
 interface ArticleContentProps {
   article: Article;
@@ -388,6 +389,9 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
 
         {/* Right Sidebar - About Agency & Contact Card */}
         <aside className="w-full lg:sticky lg:top-8 space-y-5">
+          {/* Author Card */}
+          <AuthorCard />
+
           {/* Company Bio Card */}
           <div className="bg-white border border-black/10 rounded-2xl p-6 text-[#0f0f0f] shadow-sm relative overflow-hidden group text-left">
             <div className="absolute top-[-20%] right-[-10%] w-[50%] aspect-square rounded-full bg-[#de5e18]/10 blur-[30px] pointer-events-none" />
