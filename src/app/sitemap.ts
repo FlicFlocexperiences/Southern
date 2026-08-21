@@ -7,7 +7,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://www.southernedgemarketing.com';
+  const baseUrl = 'https://southernedgemarketing.com';
 
   const staticRoutes = [
     '',

@@ -11,13 +11,9 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
 export function generateStaticParams() {
-  const params = services.map((service) => ({
+  return services.map((service) => ({
     slug: service.slug,
   }));
-  params.push({ slug: "website-development" });
-  params.push({ slug: "branding-strategy" });
-  params.push({ slug: "seo-services" });
-  return params;
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {

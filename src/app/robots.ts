@@ -14,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       }
     ],
-    sitemap: 'https://www.southernedgemarketing.com/sitemap.xml',
+    sitemap: 'https://southernedgemarketing.com/sitemap.xml',
   };
 }
