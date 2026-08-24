@@ -1,4 +1,10 @@
-export const countryCodes = [
+export interface CountryCode {
+  code: string;
+  country: string;
+  flag: string;
+}
+
+export const countryCodes: CountryCode[] = [
   { code: "+93", country: "Afghanistan", flag: "🇦🇫" },
   { code: "+355", country: "Albania", flag: "🇦🇱" },
   { code: "+213", country: "Algeria", flag: "🇩🇿" },

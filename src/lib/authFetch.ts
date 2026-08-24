@@ -23,7 +23,7 @@ export async function authFetch(input: RequestInfo | URL, init?: RequestInit): P
         throw new Error("User is not authenticated");
     }
     
-    const token = await user.getIdToken();
+    const token = await user.getIdToken(false);
     
     const headers = new Headers(init?.headers);
     headers.set('Authorization', `Bearer ${token}`);

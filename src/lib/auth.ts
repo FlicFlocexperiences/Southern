@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+const tokenCache = new Map<string, { uid: string; expiresAt: number }>();
+
 export async function verifyAuth(request: NextRequest) {
     const authHeader = request.headers.get('authorization');
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
@@ -8,6 +10,13 @@ export async function verifyAuth(request: NextRequest) {
 
     const token = authHeader.split('Bearer ')[1];
     
+    // Check in-memory cache (valid for 5 minutes)
+    const now = Date.now();
+    const cached = tokenCache.get(token);
+    if (cached && cached.expiresAt > now) {
+        return { error: null, uid: cached.uid };
+    }
+
     try {
         // We use the REST API to verify the token without needing firebase-admin and service accounts
         const apiKey = "AIzaSyBDQKm8HPlLQwSRnrArVyiuET3WvAlX7a8";
@@ -23,7 +32,10 @@ export async function verifyAuth(request: NextRequest) {
         
         const data = await response.json();
         if (data.users && data.users.length > 0) {
-            return { error: null, uid: data.users[0].localId };
+            const uid = data.users[0].localId;
+            // Cache for 5 minutes
+            tokenCache.set(token, { uid, expiresAt: now + 5 * 60 * 1000 });
+            return { error: null, uid };
         } else {
             return { error: NextResponse.json({ error: "Unauthorized: Invalid token" }, { status: 401 }), uid: null };
         }

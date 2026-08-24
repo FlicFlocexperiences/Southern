@@ -16,15 +16,7 @@ export default function AuthorityLayout({ children }: { children: React.ReactNod
         }
     }, [user, loading, router]);
 
-    if (loading) {
-        return (
-            <div className="min-h-screen bg-black flex items-center justify-center">
-                <div className="text-white text-sm animate-pulse">Verifying Authority...</div>
-            </div>
-        );
-    }
-
-    if (!user) {
+    if (!loading && !user) {
         return null; // Will redirect in useEffect
     }
 
@@ -71,7 +63,7 @@ export default function AuthorityLayout({ children }: { children: React.ReactNod
                     </div>
                 </div>
                 <div className="flex items-center justify-between w-full sm:w-auto gap-6">
-                    <span className="text-[#4A332A]/60 text-sm font-medium truncate max-w-[200px]">{user.email}</span>
+                    <span className="text-[#4A332A]/60 text-sm font-medium truncate max-w-[200px]">{user?.email || ""}</span>
                     <button 
                         onClick={() => logout()}
                         className="text-sm font-medium flex items-center gap-2 border border-[#E8D8C8] hover:bg-[#E8D8C8]/50 px-4 py-2 rounded-lg transition-colors text-[#4A332A] whitespace-nowrap bg-white/50"

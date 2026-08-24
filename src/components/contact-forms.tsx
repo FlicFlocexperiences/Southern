@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { NameInput } from "@/components/name-input";
 import { PhoneInput } from "@/components/phone-input";
-import { countryCodes } from "@/lib/countryCodes";
+import { CountryCodeSelect } from "@/components/country-code-select";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -112,25 +112,11 @@ export const ContactUsWidget = () => {
           <div className="flex flex-col gap-1.5">
             <label className="text-[14px] md:text-[15px] font-semibold text-black/60 tracking-tight">Phone number</label>
             <div className="flex gap-3">
-              <div className="w-[130px] shrink-0 relative">
-                <select 
-                  name="code"
-                  className="w-full bg-white rounded-xl px-2 py-3.5 outline-none text-[20px] text-black border border-black/10 focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] transition-all cursor-pointer appearance-none text-center" 
-                  defaultValue="+971"
-                  required
-                >
-                  {countryCodes.map((c, i) => (
-                    <option key={`w-${i}`} value={`${c.code}`}>
-                      {c.flag} {c.code}
-                    </option>
-                  ))}
-                </select>
-                <div className="absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none text-black/35">
-                  <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                  </svg>
-                </div>
-              </div>
+              <CountryCodeSelect 
+                name="code" 
+                defaultValue="+971"
+                className="w-[125px] sm:w-[130px] shrink-0"
+              />
               <PhoneInput 
                 name="phone" 
                 required 

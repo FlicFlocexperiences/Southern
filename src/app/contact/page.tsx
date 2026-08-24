@@ -4,7 +4,6 @@ import { DesktopFooter } from "@/components/desktop-footer";
 import { MobileNav } from "@/components/mobile-nav";
 import { MobileFooter } from "@/components/mobile-footer";
 import { MobileFaq } from "@/components/mobile-faq";
-import { countryCodes } from "@/lib/countryCodes";
 import { ContactUsWidget } from "@/components/contact-forms";
 
 import { Metadata } from "next";

@@ -1,9 +1,14 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 export function WhatsappWidget() {
+  const pathname = usePathname();
+  if (pathname?.startsWith("/authority") || pathname?.startsWith("/nullify")) {
+    return null;
+  }
   return (
     <div className="fixed bottom-6 right-6 z-[9999] flex items-center">
       {/* WhatsApp Button */}

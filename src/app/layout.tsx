@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Onest, Geist_Mono, Playball } from "next/font/google";
 import "./globals.css";
 
@@ -50,6 +49,7 @@ export const metadata: Metadata = {
 
 import { AuthProvider } from "@/components/AuthProvider";
 import { WhatsappWidget } from "@/components/whatsapp-widget";
+import { Analytics } from "@/components/Analytics";
 
 const jsonLdSchema = {
   "@context": "https://schema.org",
@@ -96,56 +96,9 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
         />
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(c,l,a,r,i,t,y){
-                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "y6wutbd2rw");
-            `
-          }}
-        />
       </head>
       <body className="min-h-screen flex flex-col">
-        {/* Google Analytics */}
-        <Script 
-          strategy="afterInteractive" 
-          src="https://www.googletagmanager.com/gtag/js?id=G-NS1V6RD7RJ" 
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-NS1V6RD7RJ');
-          `}
-        </Script>
-        <Script id="meta-pixel" strategy="afterInteractive">
-          {`
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '2511912949279933');
-            fbq('track', 'PageView');
-          `}
-        </Script>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=2511912949279933&ev=PageView&noscript=1"
-            alt=""
-          />
-        </noscript>
+        <Analytics />
         <AuthProvider>
           {children}
           <WhatsappWidget />
