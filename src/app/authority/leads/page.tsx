@@ -1,8 +1,9 @@
 'use client';
 
 import { useEffect, useState, useMemo, useRef } from 'react';
-import { authFetch } from '@/lib/authFetch';
 import { useAuth } from '@/components/AuthProvider';
+import { db } from '@/lib/firebase';
+import { collection, query, orderBy, getDocs, doc, updateDoc, deleteDoc, arrayUnion } from 'firebase/firestore';
 
 interface Lead {
     id: string;
@@ -48,7 +49,7 @@ export default function LeadsPage() {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 10;
 
-    // Fetch leads - only once when auth is resolved
+    // Fetch leads directly from Firestore
     useEffect(() => {
         if (authLoading) return;
         if (!user) return;
@@ -59,31 +60,31 @@ export default function LeadsPage() {
 
         const fetchLeads = async () => {
             const pageStart = performance.now();
-            console.log('[LeadsPage] 🏁 Initiating fetchLeads with authenticated user...');
+            console.log('[LeadsPage] 🏁 Fetching leads directly from Firestore...');
             try {
-                const fetchStart = performance.now();
-                const response = await authFetch('/api/leads', undefined, user);
-                const fetchDuration = performance.now() - fetchStart;
-                console.log(`[LeadsPage] 📥 authFetch returned in ${fetchDuration.toFixed(1)}ms (Status: ${response.status})`);
-                
-                if (!response.ok) {
-                    const errorData = await response.json();
-                    throw new Error(errorData.error || 'Failed to fetch leads');
-                }
+                const contactsRef = collection(db, 'contacts');
+                const q = query(contactsRef, orderBy('createdAt', 'desc'));
+                const snapshot = await getDocs(q);
+                const fetchDuration = performance.now() - pageStart;
 
-                const jsonStart = performance.now();
-                const data = await response.json();
-                const jsonDuration = performance.now() - jsonStart;
-                console.log(`[LeadsPage] 📦 JSON parsed in ${jsonDuration.toFixed(1)}ms. Leads received: ${data.leads?.length || 0}`);
+                const loadedLeads = snapshot.docs.map((docSnap) => {
+                    const data = docSnap.data();
+                    return {
+                        id: docSnap.id,
+                        ...data,
+                        createdAt: data.createdAt?.toDate 
+                            ? data.createdAt.toDate().toISOString() 
+                            : (data.createdAt || new Date().toISOString())
+                    } as Lead;
+                });
 
                 if (isMounted) {
-                    setLeads(data.leads || []);
-                    const totalPageDuration = performance.now() - pageStart;
-                    console.log(`[LeadsPage] ✅ Leads loaded into state in ${totalPageDuration.toFixed(1)}ms total.`);
+                    setLeads(loadedLeads);
+                    console.log(`[LeadsPage] ⚡ Firestore query finished in ${fetchDuration.toFixed(1)}ms (${loadedLeads.length} leads loaded)`);
                 }
             } catch (err: any) {
                 const errorDuration = performance.now() - pageStart;
-                console.error(`[LeadsPage] 💥 Error fetching leads after ${errorDuration.toFixed(1)}ms:`, err);
+                console.error(`[LeadsPage] 💥 Error fetching leads from Firestore after ${errorDuration.toFixed(1)}ms:`, err);
                 if (isMounted) {
                     setError(err.message || 'An error occurred while fetching leads.');
                 }
@@ -124,16 +125,8 @@ export default function LeadsPage() {
         setOpenStatusDropdownId(null);
 
         try {
-            const response = await authFetch(`/api/leads/${id}`, {
-                method: 'PATCH',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ action: 'UPDATE_STATUS', payload: { status: newStatus } })
-            }, user);
-
-            if (!response.ok) {
-                const errorData = await response.json();
-                throw new Error(errorData.error || 'Failed to update status');
-            }
+            const leadRef = doc(db, 'contacts', id);
+            await updateDoc(leadRef, { status: newStatus });
         } catch (err: any) {
             console.error('Status update failed:', err);
             alert(err.message || 'Failed to update status in database');
@@ -151,14 +144,8 @@ export default function LeadsPage() {
         if (viewLead?.id === id) setViewLead(null);
 
         try {
-            const response = await authFetch(`/api/leads/${id}`, {
-                method: 'DELETE'
-            }, user);
-
-            if (!response.ok) {
-                const errorData = await response.json();
-                throw new Error(errorData.error || 'Failed to delete lead');
-            }
+            const leadRef = doc(db, 'contacts', id);
+            await deleteDoc(leadRef);
         } catch (err: any) {
             console.error('Delete failed:', err);
             alert(err.message || 'Failed to delete lead from database');
@@ -176,15 +163,15 @@ export default function LeadsPage() {
                 text: noteText.trim()
             };
             
-            // If it's a real lead from DB, save it there
+            // If it's a real lead from DB, save it directly to Firestore
             if (!noteTarget.id.startsWith('dummy-')) {
-                const res = await authFetch(`/api/leads/${noteTarget.id}`, {
-                    method: 'PATCH',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ action: 'ADD_HISTORY', payload })
-                }, user);
-                
-                if (!res.ok) throw new Error('Failed to save note to database');
+                const leadRef = doc(db, 'contacts', noteTarget.id);
+                await updateDoc(leadRef, {
+                    history: arrayUnion({
+                        ...payload,
+                        createdAt: new Date().toISOString()
+                    })
+                });
             }
             
             const newHistoryItem = { ...payload, createdAt: new Date().toISOString() };
