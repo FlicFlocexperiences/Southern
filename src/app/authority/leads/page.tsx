@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useMemo, useRef } from 'react';
 import { authFetch } from '@/lib/authFetch';
+import { useAuth } from '@/components/AuthProvider';
 
 interface Lead {
     id: string;
@@ -22,6 +23,7 @@ interface Lead {
 }
 
 export default function LeadsPage() {
+    const { user } = useAuth();
     const [leads, setLeads] = useState<Lead[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
@@ -45,28 +47,49 @@ export default function LeadsPage() {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 10;
 
+    // Fetch leads
     useEffect(() => {
+        let isMounted = true;
         const fetchLeads = async () => {
+            const pageStart = performance.now();
+            console.log('[LeadsPage] 🏁 Initiating fetchLeads...');
             try {
-                const response = await authFetch('/api/leads');
+                const fetchStart = performance.now();
+                const response = await authFetch('/api/leads', undefined, user);
+                const fetchDuration = performance.now() - fetchStart;
+                console.log(`[LeadsPage] 📥 authFetch returned in ${fetchDuration.toFixed(1)}ms (Status: ${response.status})`);
                 
                 if (!response.ok) {
                     const errorData = await response.json();
                     throw new Error(errorData.error || 'Failed to fetch leads');
                 }
 
+                const jsonStart = performance.now();
                 const data = await response.json();
-                setLeads(data.leads || []);
+                const jsonDuration = performance.now() - jsonStart;
+                console.log(`[LeadsPage] 📦 JSON parsed in ${jsonDuration.toFixed(1)}ms. Leads received: ${data.leads?.length || 0}`);
+
+                if (isMounted) {
+                    setLeads(data.leads || []);
+                    const totalPageDuration = performance.now() - pageStart;
+                    console.log(`[LeadsPage] ✅ Leads loaded into state in ${totalPageDuration.toFixed(1)}ms total.`);
+                }
             } catch (err: any) {
-                console.error(err);
-                setError(err.message || 'An error occurred while fetching leads.');
+                const errorDuration = performance.now() - pageStart;
+                console.error(`[LeadsPage] 💥 Error fetching leads after ${errorDuration.toFixed(1)}ms:`, err);
+                if (isMounted) {
+                    setError(err.message || 'An error occurred while fetching leads.');
+                }
             } finally {
-                setLoading(false);
+                if (isMounted) {
+                    setLoading(false);
+                }
             }
         };
 
         fetchLeads();
-    }, []);
+        return () => { isMounted = false; };
+    }, [user]);
 
     const toggleDropdown = (id: string) => {
         if (openDropdownId === id) setOpenDropdownId(null);
@@ -87,6 +110,7 @@ export default function LeadsPage() {
     const updateLeadStatus = async (id: string, newStatus: string) => {
         const previousLeads = [...leads];
         setLeads(leads.map(lead => lead.id === id ? { ...lead, status: newStatus } : lead));
+
         if (viewLead?.id === id) {
             setViewLead({ ...viewLead, status: newStatus });
         }
@@ -97,7 +121,7 @@ export default function LeadsPage() {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ action: 'UPDATE_STATUS', payload: { status: newStatus } })
-            });
+            }, user);
 
             if (!response.ok) {
                 const errorData = await response.json();
@@ -115,13 +139,14 @@ export default function LeadsPage() {
         
         const previousLeads = [...leads];
         setLeads(leads.filter(l => l.id !== id));
+
         if (openDropdownId === id) setOpenDropdownId(null);
         if (viewLead?.id === id) setViewLead(null);
 
         try {
             const response = await authFetch(`/api/leads/${id}`, {
                 method: 'DELETE'
-            });
+            }, user);
 
             if (!response.ok) {
                 const errorData = await response.json();
@@ -150,7 +175,7 @@ export default function LeadsPage() {
                     method: 'PATCH',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ action: 'ADD_HISTORY', payload })
-                });
+                }, user);
                 
                 if (!res.ok) throw new Error('Failed to save note to database');
             }

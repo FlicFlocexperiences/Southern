@@ -71,6 +71,21 @@ function useContactForm() {
         throw new Error(result.error || "Failed to submit the form.");
       }
 
+      // Track Meta Pixel Lead event
+      if (typeof window !== "undefined" && (window as any).fbq) {
+        (window as any).fbq("track", "Lead", {
+          content_name: (data.service as string) || "General Inquiry",
+        });
+      }
+
+      // Track Google Analytics Lead event
+      if (typeof window !== "undefined" && (window as any).gtag) {
+        (window as any).gtag("event", "generate_lead", {
+          event_category: "Contact Form",
+          event_label: (data.service as string) || "General Inquiry",
+        });
+      }
+
       setSuccess(true);
       (e.target as HTMLFormElement).reset();
       router.push("/thank-you");

@@ -58,6 +58,7 @@ export function Analytics() {
           t.src=v;s=b.getElementsByTagName(e)[0];
           s.parentNode.insertBefore(t,s)}(window, document,'script',
           'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('set', 'autoConfig', false, '2511912949279933');
           fbq('init', '2511912949279933');
           fbq('track', 'PageView');
         `}
