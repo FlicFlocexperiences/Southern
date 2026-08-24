@@ -23,10 +23,11 @@ interface Lead {
 }
 
 export default function LeadsPage() {
-    const { user } = useAuth();
+    const { user, loading: authLoading } = useAuth();
     const [leads, setLeads] = useState<Lead[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
+    const isFetchingRef = useRef(false);
     const [openDropdownId, setOpenDropdownId] = useState<string | null>(null);
     const [openStatusDropdownId, setOpenStatusDropdownId] = useState<string | null>(null);
     const [viewLead, setViewLead] = useState<Lead | null>(null);
@@ -47,12 +48,18 @@ export default function LeadsPage() {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 10;
 
-    // Fetch leads
+    // Fetch leads - only once when auth is resolved
     useEffect(() => {
+        if (authLoading) return;
+        if (!user) return;
+        if (isFetchingRef.current) return;
+
+        isFetchingRef.current = true;
         let isMounted = true;
+
         const fetchLeads = async () => {
             const pageStart = performance.now();
-            console.log('[LeadsPage] 🏁 Initiating fetchLeads...');
+            console.log('[LeadsPage] 🏁 Initiating fetchLeads with authenticated user...');
             try {
                 const fetchStart = performance.now();
                 const response = await authFetch('/api/leads', undefined, user);
@@ -89,7 +96,7 @@ export default function LeadsPage() {
 
         fetchLeads();
         return () => { isMounted = false; };
-    }, [user]);
+    }, [user, authLoading]);
 
     const toggleDropdown = (id: string) => {
         if (openDropdownId === id) setOpenDropdownId(null);
