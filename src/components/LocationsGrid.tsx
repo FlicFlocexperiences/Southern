@@ -20,6 +20,7 @@ const locations = [
   { name: 'New York', slug: 'new-york', country: 'USA' },
   { name: 'San Francisco', slug: 'san-francisco', country: 'USA' },
   { name: 'Los Angeles', slug: 'los-angeles', country: 'USA' },
+  { name: 'California', slug: 'california', country: 'USA' },
   { name: 'New Delhi', slug: 'delhi', country: 'India' },
   { name: 'Gurgaon', slug: 'gurgaon', country: 'India' },
   { name: 'Noida', slug: 'noida', country: 'India' },

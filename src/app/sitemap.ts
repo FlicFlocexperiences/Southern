@@ -88,6 +88,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'ahmedabad',
     'bengaluru',
     'birmingham',
+    'california',
     'chandigarh',
     'chennai',
     'delhi',
