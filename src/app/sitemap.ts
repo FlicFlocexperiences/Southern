@@ -97,6 +97,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'jaipur',
     'kolkata',
     'london',
+    'los-angeles',
     'lucknow',
     'manchester',
     'montreal',
