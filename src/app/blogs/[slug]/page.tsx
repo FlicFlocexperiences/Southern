@@ -63,11 +63,60 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const blog = await getLiveBlog(slug);
 
-  if (!blog) return {};
+  if (!blog) {
+    return {
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
+  }
+
+  const blogImage = blog.image?.startsWith("http")
+    ? blog.image
+    : blog.image
+    ? `https://southernedgemarketing.com${blog.image.startsWith("/") ? "" : "/"}${blog.image}`
+    : "https://southernedgemarketing.com/photoshoot.jpg";
+
   return {
-    alternates: { canonical: `/blogs/${slug}` },
     title: `${blog.title}`,
     description: blog.excerpt,
+    alternates: {
+      canonical: `/blogs/${slug}`,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    openGraph: {
+      title: `${blog.title} | Southern Edge Marketing`,
+      description: blog.excerpt,
+      url: `https://southernedgemarketing.com/blogs/${slug}`,
+      type: "article",
+      publishedTime: blog.publishedAt,
+      authors: [blog.author || "Southern Marketing Team"],
+      images: [
+        {
+          url: blogImage,
+          width: 1200,
+          height: 630,
+          alt: blog.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${blog.title} | Southern Edge Marketing`,
+      description: blog.excerpt,
+      images: [blogImage],
+    },
   };
 }
 
@@ -79,8 +128,43 @@ export default async function BlogSlugPage({ params }: { params: Promise<{ slug:
     notFound();
   }
 
+  const blogImage = blog.image?.startsWith("http")
+    ? blog.image
+    : blog.image
+    ? `https://southernedgemarketing.com${blog.image.startsWith("/") ? "" : "/"}${blog.image}`
+    : "https://southernedgemarketing.com/photoshoot.jpg";
+
+  const blogJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: blog.title,
+    description: blog.excerpt,
+    image: blogImage,
+    datePublished: blog.publishedAt,
+    author: {
+      "@type": "Person",
+      name: blog.author || "Southern Marketing Team",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Southern Edge Marketing",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://southernedgemarketing.com/LOGO_Final.svg",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://southernedgemarketing.com/blogs/${slug}`,
+    },
+  };
+
   return (
     <div className="w-full min-h-screen bg-[#f2decc]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
+      />
       {/* Navigation Headers */}
       <div className="block md:hidden"><MobileNav /></div>
       <div className="hidden md:block"><DesktopNav /></div>

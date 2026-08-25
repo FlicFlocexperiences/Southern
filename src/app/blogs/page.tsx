@@ -18,6 +18,17 @@ export const metadata: Metadata = {
   },
   title: "Digital Marketing & Web Design Blog | Southern Edge",
   description: "Read the Southern Edge digital marketing agency blog. Discover actionable SEO strategy tips, web design insights, and business growth tactics today.",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "Digital Marketing & Web Design Blog | Southern Edge",
     description: "Read the Southern Edge digital marketing agency blog. Discover actionable SEO strategy tips, web design insights, and business growth tactics today.",
