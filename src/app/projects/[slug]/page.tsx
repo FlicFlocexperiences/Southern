@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getProjectBySlug, projects as staticProjects, Project } from "@/data/projects";
+import { customCaseStudies } from "@/data/case-studies";
 import { DesktopNav } from "@/components/desktop-nav";
 import { MobileNav } from "@/components/mobile-nav";
 import { DesktopFooter } from "@/components/desktop-footer";
@@ -39,63 +40,37 @@ function getProjectImages(slug: string, gallery?: string[]): string[] {
   if (fs.existsSync(dirPath)) {
     try {
       const files = fs.readdirSync(dirPath);
-      const imageExtensions = [".png", ".jpg", ".jpeg", ".webp", ".svg"];
-      const localImages = files
-        .filter((file) => imageExtensions.includes(path.extname(file).toLowerCase()))
-        .filter((file) => 
-          !file.includes("Grid 08.png") && 
-          !file.includes("Grid 01.png") && 
-          !file.includes("Grid 03.png") &&
-          !file.includes("Grid 12.png") &&
-          !file.includes("grid 0f 9 ii.png")
-        ) // Exclude huge images for speed
-        .map((file) => `/${folderName}/${file}`);
+      const imageFiles = files
+        .filter((file) => /\.(jpg|jpeg|png|svg|webp)$/i.test(file))
+        .sort((a, b) => {
+          const numA = parseInt(a.match(/\d+/)?.[0] || "0", 10);
+          const numB = parseInt(b.match(/\d+/)?.[0] || "0", 10);
+          return numA - numB;
+        });
 
-      if (localImages.length > 0) {
-        return localImages;
+      if (imageFiles.length > 0) {
+        return imageFiles.map((file) => `/${folderName}/${file}`);
       }
-    } catch (error) {
-      console.error("Error reading project folder:", error);
+    } catch {
+      // ignore
     }
   }
+
   return [];
 }
 
 async function getLiveProject(slug: string): Promise<Project | null> {
   try {
     const q = query(collection(db, "projects"), where("slug", "==", slug));
-    const snapshot = await getDocs(q);
-
-    if (!snapshot.empty) {
-      const docSnap = snapshot.docs[0];
-      const data = docSnap.data();
-
-      return {
-        id: docSnap.id,
-        slug: data.slug || docSnap.id,
-        title: data.title || "Untitled Project",
-        category: data.category || "Web Design",
-        tag: data.tag || (data.category ? data.category.toUpperCase() : "WEB DESIGN"),
-        categories: data.categories || [data.category || "Web Design"],
-        projectType: data.projectType || "Custom Code",
-        flag: data.flag || "🇺🇸",
-        content: data.content || "",
-        description: data.description || "",
-        client: data.client || "",
-        duration: data.duration || "",
-        services: data.services || "",
-        websiteUrl: data.websiteUrl || "",
-        image: data.image || "/photoshoot.jpg",
-        heroImage: data.heroImage || data.image || "/photoshoot.jpg",
-        gallery: Array.isArray(data.gallery) ? data.gallery : [],
-        created: data.created || Date.now()
-      };
+    const querySnapshot = await getDocs(q);
+    if (!querySnapshot.empty) {
+      const docData = querySnapshot.docs[0].data() as Project;
+      return docData;
     }
-  } catch (e) {
-    console.error("Error fetching project from Firestore:", e);
+  } catch {
+    // fallback
   }
 
-  // Fallback to static projects in src/data/projects.ts
   const staticProject = getProjectBySlug(slug);
   if (staticProject) {
     return staticProject;
@@ -117,36 +92,68 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 function getProjectCaseStudyContent(project: Project): string {
-  // If the user entered custom rich content in TipTap (long custom case study), prioritize it
-  if (project.content && project.content.trim().length > 300) {
+  // If a bespoke case study is registered for this specific project slug, use it
+  const study = customCaseStudies[project.slug] || 
+    customCaseStudies[project.slug.replace(/_/g, "-")] || 
+    customCaseStudies[project.slug.toLowerCase()];
+
+  if (study) {
+    const featuresList = study.features
+      .map(
+        (f) => `
+        <div style="margin-bottom: 1.25rem;">
+          <h3 style="font-size: 1.15rem; font-weight: 700; color: #3e2723; margin-bottom: 0.25rem;">✦ ${f.title}</h3>
+          <p style="margin-top: 0; color: #5d4037;">${f.desc}</p>
+        </div>`
+      )
+      .join("");
+
+    return `
+      <p class="lead">${study.lead}</p>
+      
+      <h2>The Strategic Challenge</h2>
+      <p>${study.challenge}</p>
+      
+      <h2>The Southern Edge Solution</h2>
+      <p>${study.solution}</p>
+      
+      <h2>Key Features & Platform Innovations</h2>
+      ${featuresList}
+      
+      <h2>Measurable Business Impact</h2>
+      <p>${study.impact}</p>
+    `;
+  }
+
+  // If the user entered custom rich content in TipTap (without old boilerplate), prioritize it
+  if (project.content && project.content.trim().length > 300 && !project.content.includes("Modern digital platforms don't just display information")) {
     return project.content;
   }
 
   const category = project.tag || project.category || "Web Design";
+  const services = project.services || "Digital Strategy, UI/UX Architecture, Custom Engineering";
 
   return `
-    <p class="lead">${project.title} is a premier ${category.toLowerCase()} experience built to deliver a digital presence as refined as their services. It pairs a sleek, editorial aesthetic with high-performance engineering to provide a comprehensive, intuitive interface and fully scalable architecture right out of the box.</p>
+    <p class="lead">${project.title} is a premier ${category.toLowerCase()} platform engineered by Southern Edge to deliver a high-converting digital home tailored for ${project.client || project.title}.</p>
     
-    <h2>Important</h2>
-    <p>Modern digital platforms don't just display information — they build credibility. ${project.title} is structured around that reality, guiding each visitor from curiosity to action using proof-led storytelling and a frictionless navigation path.</p>
+    <h2>Project Objectives</h2>
+    <p>${project.description || `Delivering an industry-leading digital presence with streamlined user journeys, lightning-fast rendering, and intuitive navigation.`}</p>
     
-    <h2>Approach</h2>
-    <p>Rather than chasing transient trends, the layout follows natural user conversion behavior: a clear introduction, real success metrics, transparent process descriptions, and direct ways to engage. Every section is designed to keep users engaged and build momentum toward a transaction.</p>
+    <h2>Delivered Architecture & Services</h2>
+    <p>Our multidisciplinary team developed a customized technical stack including ${services}. Every layout and interactive flow was purpose-built to guide visitors seamlessly from initial curiosity to verified conversion.</p>
     
-    <h2>Vision and Innovation</h2>
-    <p>The goal was a customized digital home that reads like a premium brand, not a generic template. Typography-led layouts, generous grid alignment, and a minimalist color palette keep the client's identity front and center, while modern rendering ensures lightning-fast performance.</p>
+    <h2>Key Highlights</h2>
+    <div style="margin-bottom: 1.25rem;">
+      <h3 style="font-size: 1.15rem; font-weight: 700; color: #3e2723; margin-bottom: 0.25rem;">✦ Custom Brand Aesthetic</h3>
+      <p style="margin-top: 0; color: #5d4037;">A bespoke design language reflecting the distinct identity and premium stature of ${project.client || project.title}.</p>
+    </div>
+    <div style="margin-bottom: 1.25rem;">
+      <h3 style="font-size: 1.15rem; font-weight: 700; color: #3e2723; margin-bottom: 0.25rem;">✦ Frictionless Mobile Checkout & Intake</h3>
+      <p style="margin-top: 0; color: #5d4037;">Thumb-friendly UI patterns and minimal step transitions engineered for high mobile conversion rates.</p>
+    </div>
     
-    <h2>Identifying Unique Challenges</h2>
-    <p>Usually, digital experiences fall into one of two traps: templates that feel identical, or highly experimental sites that bury user actions and load slowly. ${project.title} had to look visually distinctive while remaining accessible and optimized for conversion.</p>
-    
-    <h2>Resolving Complex Problems</h2>
-    <p>We resolved this challenge with a streamlined narrative structure — showcasing value, detailing the plan, proving the outcomes, and prompting action. Integrations are fully modular, so features can be scaled and modified easily as the client grows.</p>
-    
-    <h2>User-Centric Design</h2>
-    <p>Every design decision started from the visitor's perspective — someone looking for professional solutions and immediate answers. Strategic breathing room, clear hierarchy, and smooth micro-interactions assure quality, while a singular primary action path removes all friction.</p>
-    
-    <h2>Meeting User Needs</h2>
-    <p>By implementing a high-performance modern web architecture, we created a platform that is extremely fast on mobile and desktop alike. The user has direct access to key information, making self-service intuitive and ensuring they can connect with ${project.title} effortlessly.</p>
+    <h2>Measurable Outcomes</h2>
+    <p>The platform achieved exceptional performance metrics with sub-second page loads, significant reductions in bounce rates, and a measurable increase in qualified client inquiries.</p>
   `;
 }
 
