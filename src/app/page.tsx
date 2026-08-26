@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
 const homeFaqs = [
   {
-    question: "What services does Southern provide?",
+    question: "What services does Southern Edge Marketing provide?",
     answer: "We are a full-service digital agency offering web development, UI/UX design, branding, SEO, performance marketing, and social media management. We build complete growth systems for our clients."
   },
   {
@@ -47,50 +47,58 @@ const homeFaqs = [
     answer: "Every project starts with a deep dive into your business goals, target audience, and current market position. We then craft a custom strategy, develop the assets, and continuously optimize for maximum ROI."
   },
   {
-    question: "Why choose Southern over other agencies?",
+    question: "Why choose Southern Edge Marketing over other agencies?",
     answer: "We focus on measurable results rather than vanity metrics. Our team combines stunning creative design with data-driven marketing, ensuring that everything we build not only looks great but actively drives revenue."
   }
 ];
 
 export default function Home() {
   return (
-    <>
-      {/* Mobile Version - Visible only on mobile screens (< 768px) */}
-      <div className="block md:hidden w-full min-h-screen bg-[#f2decc]">
-        <MobileNav />
-        <MobileHero />
-        <MobileIntegrations />
-        <MobileStats />
-        <MobileComparison />
-        <MobileCaseStudies />
-        <MobileServices />
-        <WhyUs />
-        <HowWeWork />
-        <Testimonials />
-        <Cta />
-        <MobileFaq faqs={homeFaqs} />
-        <MobileFooter />
-      </div>
+    <div className="w-full min-h-screen bg-[#f2decc]">
+      {/* Navigation */}
+      <div className="block md:hidden"><MobileNav /></div>
+      <div className="hidden md:block"><DesktopNav /></div>
 
-      {/* Desktop Version - Visible only on desktop screens (>= 768px) */}
-      <div className="hidden md:block w-full min-h-screen bg-[#f2decc]">
-        <DesktopNav />
-        <DesktopHero />
-        <div style={{ zoom: 0.8 }}>
-          <DesktopIntegrations />
-          <DesktopStats />
-          <DesktopComparison />
-          <DesktopCaseStudies />
-          <DesktopServices />
-          <WhyUs />
-          <HowWeWork />
-          <Testimonials />
-          <Cta />
-          <DesktopFaq faqs={homeFaqs} />
-          <DesktopMarquee />
-          <DesktopFooter />
-        </div>
-      </div>
-    </>
+      {/* Hero */}
+      <div className="block md:hidden"><MobileHero /></div>
+      <div className="hidden md:block"><DesktopHero /></div>
+
+      {/* Integrations */}
+      <div className="block md:hidden"><MobileIntegrations /></div>
+      <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopIntegrations /></div>
+
+      {/* Stats */}
+      <div className="block md:hidden"><MobileStats /></div>
+      <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopStats /></div>
+
+      {/* Comparison */}
+      <div className="block md:hidden"><MobileComparison /></div>
+      <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopComparison /></div>
+
+      {/* Case Studies */}
+      <div className="block md:hidden"><MobileCaseStudies /></div>
+      <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopCaseStudies /></div>
+
+      {/* Services */}
+      <div className="block md:hidden"><MobileServices /></div>
+      <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopServices /></div>
+
+      {/* Shared Responsive Sections */}
+      <div className="md:[zoom:0.8]"><WhyUs /></div>
+      <div className="md:[zoom:0.8]"><HowWeWork /></div>
+      <div className="md:[zoom:0.8]"><Testimonials /></div>
+      <div className="md:[zoom:0.8]"><Cta /></div>
+
+      {/* FAQ */}
+      <div className="block md:hidden"><MobileFaq faqs={homeFaqs} /></div>
+      <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopFaq faqs={homeFaqs} /></div>
+
+      {/* Marquee (Desktop Only) */}
+      <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopMarquee /></div>
+
+      {/* Footer */}
+      <div className="block md:hidden"><MobileFooter /></div>
+      <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopFooter /></div>
+    </div>
   );
 }

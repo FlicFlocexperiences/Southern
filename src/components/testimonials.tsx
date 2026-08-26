@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 const testimonials = [
   {
-    quote: "Southern Edge Marketing transformed our digital presence completely. The custom web platform reduced patient onboarding time by 40% and significantly elevated our brand authority.",
+    quote: "Southern Edge Marketing transformed our digital presence completely. The custom web platform reduced client onboarding time by 40% and significantly elevated our brand authority.",
     name: "Anand M. Sharma",
     role: "Managing Director, AMA Legal Solutions",
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",

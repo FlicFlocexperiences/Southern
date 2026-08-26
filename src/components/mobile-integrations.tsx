@@ -4,7 +4,7 @@ import React from "react";
 
 const logos = [
   // Row 1
-  "/integrations/docker.png",
+  "/integrations/shopify.svg",
   "/integrations/meta.png",
   "/integrations/stripe.png",
   "/integrations/zapier.png",
@@ -18,7 +18,7 @@ const logos = [
   "/integrations/payu.png",
   "/integrations/linkedin.png",
   "/integrations/whatsapp.png",
-  "/integrations/github.png",
+  "/integrations/salesforce.svg",
   // Row 4
   "/integrations/sparkle.png",
   "/integrations/zoho.png",
@@ -26,8 +26,8 @@ const logos = [
   // Row 5
   "/tik-tok_1.svg",
   "/integrations/snapchat.png",
-  "/Cursor.svg",
-  "/figma_1.svg",
+  "/integrations/hubspot.svg",
+  "/integrations/klaviyo.svg",
 ];
 
 const HexagonSvg = () => (
@@ -54,8 +54,7 @@ const HexagonTile = ({ src, hasLogo }: { src?: string | null; hasLogo?: boolean 
   const isBlackBg = src && (
     src.toLowerCase().includes('tiktok') || 
     src.toLowerCase().includes('tik-tok') || 
-    src.toLowerCase().includes('cursor') || 
-    src.toLowerCase().includes('figma')
+    src.toLowerCase().includes('klaviyo')
   );
   return (
     <div className="relative group w-[74px] h-[80px] flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:-translate-y-1">

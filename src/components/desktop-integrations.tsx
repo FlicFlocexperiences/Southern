@@ -6,7 +6,7 @@ const desktopLogos = [
   // Row 1 (6)
   "/integrations/google.png",
   "/integrations/stripe.png",
-  "/integrations/docker.png",
+  "/integrations/shopify.svg",
   "/integrations/zapier.png",
   "/integrations/openai.png",
   "/integrations/meta.png",
@@ -23,12 +23,12 @@ const desktopLogos = [
   "/integrations/whatsapp.png",
   "/integrations/linkedin.png",
   "/integrations/sparkle.png",
-  "/Cursor.svg",
+  "/integrations/hubspot.svg",
   // Row 4 (4)
   "/integrations/zoho.png",
   "/integrations/wati.png",
-  "/integrations/github.png",
-  "/figma_1.svg",
+  "/integrations/salesforce.svg",
+  "/integrations/klaviyo.svg",
 ];
 
 const HexagonSvg = () => (
@@ -55,8 +55,7 @@ const HexagonTile = ({ src, hasLogo }: { src?: string | null; hasLogo?: boolean 
   const isBlackBg = src && (
     src.toLowerCase().includes('tiktok') || 
     src.toLowerCase().includes('tik-tok') || 
-    src.toLowerCase().includes('cursor') || 
-    src.toLowerCase().includes('figma')
+    src.toLowerCase().includes('klaviyo')
   );
   return (
     <div className="relative group w-[100px] h-[110px] md:w-[130px] md:h-[143px] flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:-translate-y-2 cursor-pointer">

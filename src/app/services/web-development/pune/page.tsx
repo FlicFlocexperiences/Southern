@@ -111,7 +111,7 @@ export default function PuneWebdevelopmentPage() {
               <div className="flex flex-col gap-8">
                 <div className="border-b border-black/5 pb-6">
                   <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
-                    "Southern Edge Marketing transformed our digital presence completely. The custom web platform reduced patient onboarding time by 40% and significantly elevated our brand authority."
+                    "Southern Edge Marketing transformed our digital presence completely. The custom web platform reduced client onboarding time by 40% and significantly elevated our brand authority."
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">

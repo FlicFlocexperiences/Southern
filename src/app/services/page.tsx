@@ -46,30 +46,26 @@ const servicesFaqs = [
 
 export default function ServicesPage() {
   return (
-    <>
-      {/* Mobile Version - Visible only on mobile screens (< 768px) */}
-      <div className="block md:hidden w-full min-h-screen bg-[#f2decc]">
-        <MobileNav />
-        <MobileServicesPage />
-        <Testimonials />
-        <Cta />
-        <MobileFaq faqs={servicesFaqs} />
-        <MobileFooter />
-      </div>
+    <div className="w-full min-h-screen bg-[#f2decc]">
+      {/* Navigation */}
+      <div className="block md:hidden"><MobileNav /></div>
+      <div className="hidden md:block"><DesktopNav /></div>
 
-      {/* Desktop Version - Visible only on desktop screens (>= 768px) */}
-      <div className="hidden md:block w-full min-h-screen bg-[#f2decc]">
-        <DesktopNav />
-        <DesktopServicesPage />
-        <div style={{ zoom: 0.8 }}>
-          <Testimonials />
-          <Cta />
-        </div>
-        <div style={{ zoom: 0.8 }}>
-          <DesktopFaq faqs={servicesFaqs} />
-          <DesktopFooter />
-        </div>
-      </div>
-    </>
+      {/* Services Content */}
+      <div className="block md:hidden"><MobileServicesPage /></div>
+      <div className="hidden md:block"><DesktopServicesPage /></div>
+
+      {/* Shared Sections */}
+      <div className="md:[zoom:0.8]"><Testimonials /></div>
+      <div className="md:[zoom:0.8]"><Cta /></div>
+
+      {/* FAQ */}
+      <div className="block md:hidden"><MobileFaq faqs={servicesFaqs} /></div>
+      <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopFaq faqs={servicesFaqs} /></div>
+
+      {/* Footer */}
+      <div className="block md:hidden"><MobileFooter /></div>
+      <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopFooter /></div>
+    </div>
   );
 }

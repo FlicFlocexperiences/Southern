@@ -27,8 +27,8 @@ export const metadata: Metadata = {
 
 const aboutFaqs = [
   {
-    question: "What is the story behind Southern?",
-    answer: "Southern was founded with a mission to bridge the gap between stunning design and data-driven performance. We started as a small passionate team and have grown into a full-service agency, committed to helping brands achieve measurable growth."
+    question: "What is the story behind Southern Edge Marketing?",
+    answer: "Southern Edge Marketing was founded with a mission to bridge the gap between stunning design and data-driven performance. We started as a small passionate team and have grown into a full-service agency, committed to helping brands achieve measurable growth."
   },
   {
     question: "Where is your team based?",
