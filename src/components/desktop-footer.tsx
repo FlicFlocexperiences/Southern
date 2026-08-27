@@ -1,178 +1,312 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import { articles } from "@/data/articles";
+import Image from "next/image";
 
 export const DesktopFooter = () => {
-  const [isOpen, setIsOpen] = useState(false);
   return (
-    <footer className="w-full bg-gradient-to-b from-[#fffff0] to-[#ff5100] pt-10 pb-6 px-8 lg:px-[90px] relative z-10 overflow-hidden flex flex-col" style={{ zoom: 0.8 }}>
+    <footer className="w-full bg-gradient-to-b from-[#fffff0] via-[#ffebd9] to-[#ff5100] pt-14 pb-10 px-8 lg:px-[80px] xl:px-[100px] relative z-10 overflow-hidden flex flex-col text-black font-sans">
       
-      {/* Top Row: Logo & Contact */}
-      <div className="flex w-full justify-between items-start mb-10">
-        {/* Left: Logo & Description */}
-        <div className="flex flex-col max-w-[800px]">
-          <h2 className="text-[70px] lg:text-[85px] xl:text-[104px] font-bold leading-[0.9] tracking-tight mb-8">
-            <span className="text-[#ff5100]">SOUTHERN EDGE</span>
-            <br />
-            <span className="text-black">MARKETING</span>
-          </h2>
-          <p className="text-[18px] lg:text-[21px] xl:text-[24px] text-black/65 leading-[1.4] max-w-[650px]">
-            Building brands, websites, and growth strategies that help ambitious businesses stand out, scale faster, and stay ahead in a digital-first world.
-          </p>
-        </div>
-
-        {/* Right: Direct Contact */}
-        <div className="flex flex-col items-end text-right pt-4">
-          <p className="text-[16px] lg:text-[20px] text-black/65 font-medium mb-2">
-            Let's Build Something Great
-          </p>
-          <a 
-            href="mailto:info@southernedgemarketing.com" 
-            className="text-[16px] lg:text-[22px] text-black font-normal hover:text-white transition-colors duration-300"
-          >
-            info@southernedgemarketing.com
-          </a>
-        </div>
+      {/* Top Section: Centered Brand Mark & Mission */}
+      <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-14">
+        <Link href="/" className="inline-flex items-center gap-4 group mb-5">
+          <div className="relative w-14 h-14 transition-transform duration-300 group-hover:scale-105">
+            <Image
+              src="/LOGO_Final.svg"
+              alt="Southern Edge Marketing Logo"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <div className="flex flex-col text-left">
+            <span className="text-[28px] font-extrabold tracking-tight leading-none text-[#ff5100]">
+              SOUTHERN EDGE
+            </span>
+            <span className="text-[20px] font-bold tracking-wider leading-none text-black">
+              MARKETING
+            </span>
+          </div>
+        </Link>
+        <p className="text-[17px] lg:text-[19px] text-black/75 max-w-2xl leading-relaxed font-normal">
+          Building high-performance digital platforms, custom websites, and revenue-driven growth strategies that help ambitious businesses dominate their industry.
+        </p>
       </div>
 
-      {/* Middle Row: Links & Social */}
-      <div className="flex w-full justify-end items-start mb-12">
+      {/* Main Grid: 8 Columns across 2 Rows */}
+      <div className="flex flex-col gap-12 w-full max-w-[1400px] mx-auto mb-12">
         
-        {/* Right: Lists */}
-        <div className="flex gap-16 lg:gap-32 text-right">
-
-          {/* Navigation */}
-          <div className="flex flex-col items-end">
-            <p className="text-[18px] lg:text-[24px] text-black/65 mb-6">Navigation</p>
-            <nav className="flex flex-col gap-4">
-              <Link 
-                href="/" 
-                className="text-[28px] lg:text-[36px] text-black font-normal hover:text-white transition-colors duration-300"
-              >
+        {/* ROW 1: 4 Columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+          
+          {/* Col 1: Quick Links */}
+          <div className="flex flex-col">
+            <h3 className="text-[18px] lg:text-[19px] font-bold tracking-tight text-black pb-2.5 mb-4 border-b border-black/15">
+              Quick Links
+            </h3>
+            <nav className="flex flex-col gap-2.5 text-[14.5px] lg:text-[15px] text-black/80">
+              <Link href="/" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
                 Home
               </Link>
-              <Link 
-                href="/about" 
-                className="text-[28px] lg:text-[36px] text-black font-normal hover:text-white transition-colors duration-300"
-              >
+              <Link href="/about" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
                 About Us
               </Link>
-              <Link 
-                href="/services" 
-                className="text-[28px] lg:text-[36px] text-black font-normal hover:text-white transition-colors duration-300"
-              >
-                Services
+              <Link href="/services" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Our Services
               </Link>
-              <Link 
-                href="/projects" 
-                className="text-[28px] lg:text-[36px] text-black font-normal hover:text-white transition-colors duration-300"
-              >
-                Projects
+              <Link href="/projects" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Featured Projects
               </Link>
-              <Link 
-                href="/blogs" 
-                className="text-[28px] lg:text-[36px] text-black font-normal hover:text-white transition-colors duration-300"
-              >
-                Blogs
+              <Link href="/blogs" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Blogs & Insights
+              </Link>
+              <Link href="/author/ameet-nangia" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Founder Profile
+              </Link>
+              <Link href="/contact" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit font-medium text-[#c43e00]">
+                Free Growth Consultation →
               </Link>
             </nav>
           </div>
 
-          {/* Legal */}
-          <div className="flex flex-col items-end">
-            <p className="text-[18px] lg:text-[24px] text-black/65 mb-6">Legal</p>
-            <nav className="flex flex-col gap-4">
-              <Link 
-                href="/terms" 
-                className="text-[28px] lg:text-[36px] text-black font-normal hover:text-white transition-colors duration-300"
-              >
-                Terms & Conditions
+          {/* Col 2: Our Expertise */}
+          <div className="flex flex-col">
+            <h3 className="text-[18px] lg:text-[19px] font-bold tracking-tight text-black pb-2.5 mb-4 border-b border-black/15">
+              Our Expertise
+            </h3>
+            <nav className="flex flex-col gap-2.5 text-[14.5px] lg:text-[15px] text-black/80">
+              <Link href="/services/web-development" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Custom Web Development
               </Link>
-              <Link 
-                href="/privacy" 
-                className="text-[28px] lg:text-[36px] text-black font-normal hover:text-white transition-colors duration-300"
-              >
-                Privacy Policy
+              <Link href="/services/app-development" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Mobile App Development
               </Link>
-              <Link 
-                href="/refund" 
-                className="text-[28px] lg:text-[36px] text-black font-normal hover:text-white transition-colors duration-300"
-              >
-                Refund Policy
+              <Link href="/services/seo" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Search Engine Optimization
+              </Link>
+              <Link href="/services/social-media-management" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Social Media Management
+              </Link>
+              <Link href="/services/branding" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Branding & Creative Strategy
+              </Link>
+              <Link href="/services/web-development" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                UI/UX & Conversion Design
+              </Link>
+              <Link href="/services" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Performance Marketing & Ads
               </Link>
             </nav>
           </div>
 
-          {/* Social */}
-          <div className="flex flex-col items-end">
-            <p className="text-[18px] lg:text-[24px] text-black/65 mb-6">Social</p>
-            <nav className="flex flex-col gap-4">
-              {[
-                { name: 'Instagram', url: 'https://www.instagram.com/southernedgemarketing?igsh=MXF2bTlpNHZpbzlt&utm_source=qr' },
-                { name: 'Facebook', url: 'https://www.facebook.com/profile.php?id=61590949122507#' },
-                { name: 'LinkedIn', url: 'https://www.linkedin.com/company/southernedgemarketing/?viewAsMember=true' }
-              ].map((link) => (
-                <a 
-                  key={link.name} 
-                  href={link.url} 
-                  target={link.url.startsWith('http') ? "_blank" : "_self"} 
-                  rel={link.url.startsWith('http') ? "noopener noreferrer" : ""}
-                  className="text-[28px] lg:text-[36px] text-black font-normal hover:text-white transition-colors duration-300"
-                >
-                  {link.name}
-                </a>
-              ))}
+          {/* Col 3: Connect With Us */}
+          <div className="flex flex-col">
+            <h3 className="text-[18px] lg:text-[19px] font-bold tracking-tight text-black pb-2.5 mb-4 border-b border-black/15">
+              Connect With Us
+            </h3>
+            <nav className="flex flex-col gap-2.5 text-[14.5px] lg:text-[15px] text-black/80">
+              <Link href="/contact" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Schedule a Meeting
+              </Link>
+              <a 
+                href="mailto:info@southernedgemarketing.com" 
+                className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit text-black"
+              >
+                info@southernedgemarketing.com
+              </a>
+              <a 
+                href="tel:+918700901769" 
+                className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit"
+              >
+                +91 87009 01769
+              </a>
+              <a 
+                href="https://www.instagram.com/southernedgemarketing?igsh=MXF2bTlpNHZpbzlt&utm_source=qr" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit"
+              >
+                Instagram
+              </a>
+              <a 
+                href="https://www.linkedin.com/company/southernedgemarketing/?viewAsMember=true" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit"
+              >
+                LinkedIn
+              </a>
+              <a 
+                href="https://www.facebook.com/profile.php?id=61590949122507#" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit"
+              >
+                Facebook
+              </a>
+              <Link href="/about" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Offices: Delhi & Dubai
+              </Link>
             </nav>
           </div>
-          
+
+          {/* Col 4: Top Locations */}
+          <div className="flex flex-col">
+            <h3 className="text-[18px] lg:text-[19px] font-bold tracking-tight text-black pb-2.5 mb-4 border-b border-black/15">
+              Top Locations
+            </h3>
+            <nav className="flex flex-col gap-2.5 text-[14.5px] lg:text-[15px] text-black/80">
+              <Link href="/services/web-development/delhi" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Delhi NCR, India
+              </Link>
+              <Link href="/services/web-development/dubai" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Dubai, UAE
+              </Link>
+              <Link href="/services/web-development/mumbai" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Mumbai, India
+              </Link>
+              <Link href="/services/web-development/bengaluru" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Bengaluru, India
+              </Link>
+              <Link href="/services/web-development/london" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                London, UK
+              </Link>
+              <Link href="/services/web-development/new-york" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                New York, USA
+              </Link>
+              <Link href="/services/web-development/toronto" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Toronto, Canada
+              </Link>
+            </nav>
+          </div>
+
         </div>
+
+        {/* ROW 2: 4 Deep-Dive Columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 pt-4 border-t border-black/10">
+          
+          {/* Col 5: Web & App Solutions */}
+          <div className="flex flex-col">
+            <h3 className="text-[18px] lg:text-[19px] font-bold tracking-tight text-black pb-2.5 mb-4 border-b border-black/15">
+              Web & App Solutions
+            </h3>
+            <nav className="flex flex-col gap-2.5 text-[14.5px] lg:text-[15px] text-black/80">
+              <Link href="/services/web-development" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Next.js & React Web Apps
+              </Link>
+              <Link href="/explore-more/why-shopify-good-for-ecommerce" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Custom E-Commerce & Shopify
+              </Link>
+              <Link href="/services/app-development" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                iOS & Android Native Apps
+              </Link>
+              <Link href="/explore-more/future-of-headless-architecture" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Headless CMS Architecture
+              </Link>
+              <Link href="/explore-more/psychology-of-high-converting-landing-pages" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                High-Converting Landing Pages
+              </Link>
+              <Link href="/explore-more/benefits-of-pwa-for-mobile-users" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Progressive Web Apps (PWA)
+              </Link>
+            </nav>
+          </div>
+
+          {/* Col 6: Search & Growth Marketing */}
+          <div className="flex flex-col">
+            <h3 className="text-[18px] lg:text-[19px] font-bold tracking-tight text-black pb-2.5 mb-4 border-b border-black/15">
+              Search & Growth Marketing
+            </h3>
+            <nav className="flex flex-col gap-2.5 text-[14.5px] lg:text-[15px] text-black/80">
+              <Link href="/services/seo" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Technical SEO & Core Audits
+              </Link>
+              <Link href="/services/seo" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Local SEO & Maps Ranking
+              </Link>
+              <Link href="/explore-more/maximizing-roas-on-meta-ads" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Meta & Google Paid Ads (ROAS)
+              </Link>
+              <Link href="/explore-more/optimizing-page-speed-for-conversion" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Speed & Core Web Vitals
+              </Link>
+              <Link href="/explore-more/scaling-e-commerce-with-email-marketing" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                E-Commerce Email Scaling
+              </Link>
+              <Link href="/explore-more/role-of-seo-in-digital-growth" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Organic Search Growth Engine
+              </Link>
+            </nav>
+          </div>
+
+          {/* Col 7: Creative & Case Studies */}
+          <div className="flex flex-col">
+            <h3 className="text-[18px] lg:text-[19px] font-bold tracking-tight text-black pb-2.5 mb-4 border-b border-black/15">
+              Creative & Case Studies
+            </h3>
+            <nav className="flex flex-col gap-2.5 text-[14.5px] lg:text-[15px] text-black/80">
+              <Link href="/services/branding" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Brand Strategy & Identity
+              </Link>
+              <Link href="/services/social-media-management" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Short-Form Content & Reels
+              </Link>
+              <Link href="/services/social-media-management" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Influencer & Creator Growth
+              </Link>
+              <Link href="/explore-more/importance-of-photography-for-luxury-brands" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Luxury Brand Photography
+              </Link>
+              <Link href="/projects" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit font-medium text-black">
+                Explore 30+ Client Case Studies →
+              </Link>
+            </nav>
+          </div>
+
+          {/* Col 8: Popular Guides & Insights */}
+          <div className="flex flex-col">
+            <h3 className="text-[18px] lg:text-[19px] font-bold tracking-tight text-black pb-2.5 mb-4 border-b border-black/15">
+              Popular Guides & Insights
+            </h3>
+            <nav className="flex flex-col gap-2.5 text-[14.5px] lg:text-[15px] text-black/80">
+              <Link href="/explore-more/why-custom-code-better-than-wordpress" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Custom Code vs WordPress
+              </Link>
+              <Link href="/explore-more/power-of-nextjs-for-modern-websites" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Why Next.js Powers Modern Web
+              </Link>
+              <Link href="/explore-more/how-branding-dictates-business-success" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                How Branding Dictates Growth
+              </Link>
+              <Link href="/blogs/the-importance-of-mobile-first-design-in-2005" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Mobile-First Design Blueprint
+              </Link>
+              <Link href="/blogs/understanding-color-theory-in-digital-branding" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Color Theory in Digital Identity
+              </Link>
+            </nav>
+          </div>
+
+        </div>
+
       </div>
 
-      {/* Bottom Row: Explore More */}
-      <div className="flex flex-col w-full gap-6 mt-6">
-        <button 
-          onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center w-full gap-8 cursor-pointer outline-none border-none bg-transparent text-left group"
-        >
-          <span className="text-[24px] lg:text-[28px] text-black font-semibold shrink-0 flex items-center gap-3 group-hover:text-white transition-colors duration-300">
-            Explore More
-            <svg 
-              className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-180 text-white' : 'text-black group-hover:text-white'}`}
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2.5" 
-              viewBox="0 0 24 24" 
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
-            </svg>
-          </span>
-          <div className="h-px bg-black/20 w-full group-hover:bg-white/40 transition-colors duration-300" />
-        </button>
-
-        <div className={`grid grid-cols-1 md:grid-cols-3 gap-y-6 gap-x-12 overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[1200px] opacity-100 py-6' : 'max-h-0 opacity-0 py-0'}`}>
-          {articles.map((article) => (
-            <Link 
-              key={article.slug}
-              href={`/explore-more/${article.slug}`}
-              className="flex flex-col gap-2 p-6 rounded-[20px] bg-white/5 border border-white/10 hover:bg-white/15 hover:border-white/20 transition-all duration-300 group/item"
-            >
-              <h4 className="text-[20px] lg:text-[22px] font-medium text-black group-hover/item:text-white transition-colors duration-300 leading-tight">
-                {article.title}
-              </h4>
-              <p className="text-[14px] lg:text-[15px] text-black/60 group-hover/item:text-white/70 transition-colors duration-300 font-light font-sans line-clamp-2">
-                {article.excerpt}
-              </p>
-              <span className="text-[14px] font-semibold text-[#ff5100] group-hover/item:text-white flex items-center gap-1.5 mt-auto pt-2">
-                Read Article
-                <svg className="w-4 h-4 transform group-hover/item:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                </svg>
-              </span>
-            </Link>
-          ))}
+      {/* Bottom Bar */}
+      <div className="w-full max-w-[1400px] mx-auto pt-6 border-t border-black/20 flex flex-col md:flex-row items-center justify-between gap-4 text-[13.5px] text-black/85">
+        <p>© {new Date().getFullYear()} Southern Edge Marketing. All rights reserved.</p>
+        
+        <div className="flex items-center gap-6">
+          <Link href="/privacy" className="hover:text-white transition-colors duration-200">
+            Privacy Policy
+          </Link>
+          <span className="text-black/30">•</span>
+          <Link href="/terms" className="hover:text-white transition-colors duration-200">
+            Terms & Conditions
+          </Link>
+          <span className="text-black/30">•</span>
+          <Link href="/refund" className="hover:text-white transition-colors duration-200">
+            Refund Policy
+          </Link>
         </div>
       </div>
 
