@@ -10,23 +10,14 @@ export const DesktopFooter = () => {
       
       {/* Top Section: Centered Brand Mark & Mission */}
       <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-14">
-        <Link href="/" className="inline-flex items-center gap-4 group mb-5">
-          <div className="relative w-14 h-14 transition-transform duration-300 group-hover:scale-105">
-            <Image
-              src="/LOGO_Final.svg"
-              alt="Southern Edge Marketing Logo"
-              fill
-              className="object-contain"
-            />
-          </div>
-          <div className="flex flex-col text-left">
-            <span className="text-[28px] font-extrabold tracking-tight leading-none text-[#ff5100]">
-              SOUTHERN EDGE
-            </span>
-            <span className="text-[20px] font-bold tracking-wider leading-none text-black">
-              MARKETING
-            </span>
-          </div>
+        <Link href="/" className="inline-flex items-center group mb-5">
+          <Image
+            src="/Footer_Logo.svg"
+            alt="Southern Edge Marketing"
+            width={220}
+            height={74}
+            className="h-12 lg:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          />
         </Link>
         <p className="text-[17px] lg:text-[19px] text-black/75 max-w-2xl leading-relaxed font-normal">
           Building high-performance digital platforms, custom websites, and revenue-driven growth strategies that help ambitious businesses dominate their industry.

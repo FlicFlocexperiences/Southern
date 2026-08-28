@@ -130,23 +130,14 @@ export const MobileFooter = () => {
       
       {/* Brand & Intro */}
       <div className="flex flex-col gap-3 mb-8">
-        <Link href="/" className="inline-flex items-center gap-3 w-fit">
-          <div className="relative w-10 h-10">
-            <Image
-              src="/LOGO_Final.svg"
-              alt="Southern Edge Marketing Logo"
-              fill
-              className="object-contain"
-            />
-          </div>
-          <div className="flex flex-col">
-            <span className="text-[20px] font-extrabold tracking-tight leading-none text-[#ff5100]">
-              SOUTHERN EDGE
-            </span>
-            <span className="text-[14px] font-bold tracking-wider leading-none text-black">
-              MARKETING
-            </span>
-          </div>
+        <Link href="/" className="inline-flex items-center w-fit">
+          <Image
+            src="/Footer_Logo.svg"
+            alt="Southern Edge Marketing"
+            width={170}
+            height={58}
+            className="h-10 w-auto object-contain"
+          />
         </Link>
         <p className="text-[14px] leading-relaxed text-black/75">
           Building brands, websites, and growth strategies that help ambitious businesses stand out, scale faster, and stay ahead in a digital-first world.
