@@ -93,6 +93,9 @@ export default function AuthorityProjectsPage() {
         created: Date.now()
     });
 
+    const [editingDocId, setEditingDocId] = useState<string | null>(null);
+    const [editingOriginalSlug, setEditingOriginalSlug] = useState<string | null>(null);
+
     // Image Upload states
     const [uploadingMain, setUploadingMain] = useState(false);
     const [mainImagePreview, setMainImagePreview] = useState<string | null>(null);
@@ -135,7 +138,7 @@ export default function AuthorityProjectsPage() {
             });
 
             if (firestoreProjects.length > 0) {
-                // Merge firestore projects with any static projects that haven't been customized
+                // Merge firestore projects with any un-seeded static projects (live projects take priority)
                 const firestoreSlugs = new Set(firestoreProjects.map(p => p.slug));
                 const remainingStatic = initialStaticProjects.filter(p => !firestoreSlugs.has(p.slug));
                 setProjects([...firestoreProjects, ...remainingStatic]);
@@ -426,14 +429,17 @@ export default function AuthorityProjectsPage() {
                 setProjects(prev => [addedProject, ...prev.filter(p => p.slug !== addedProject.slug)]);
                 alert("Project added successfully!");
             } else {
-                const isFirestoreDoc = newProject.id && typeof newProject.id === 'string' && !String(newProject.id).match(/^\d+$/);
-                if (isFirestoreDoc) {
-                    const docRef = doc(db, 'projects', String(newProject.id));
+                if (editingDocId) {
+                    const docRef = doc(db, 'projects', editingDocId);
                     await updateDoc(docRef, projectData);
-                    setProjects(prev => prev.map(p => p.id === newProject.id ? { ...p, ...projectData } : p));
+                    setProjects(prev => prev.map(p => p.id === editingDocId ? { id: editingDocId, ...projectData } : p));
                 } else {
                     const docRef = await addDoc(collection(db, 'projects'), projectData);
-                    setProjects(prev => prev.map(p => p.slug === newProject.slug ? { id: docRef.id, ...projectData } : p));
+                    const savedProject: Project = { id: docRef.id, ...projectData };
+                    setProjects(prev => [
+                        savedProject, 
+                        ...prev.filter(p => p.slug !== editingOriginalSlug && p.slug !== savedProject.slug && p.id !== newProject.id)
+                    ]);
                 }
                 alert("Project updated successfully!");
             }
@@ -449,6 +455,10 @@ export default function AuthorityProjectsPage() {
 
     // Handle Edit
     const handleEdit = (project: Project) => {
+        const isFirestore = project.id && typeof project.id === 'string' && !String(project.id).match(/^\d+$/);
+        setEditingDocId(isFirestore ? String(project.id) : null);
+        setEditingOriginalSlug(project.slug);
+
         setNewProject({
             ...project,
             categories: project.categories || [project.category],
@@ -499,6 +509,9 @@ export default function AuthorityProjectsPage() {
             localStorage.removeItem('autosave_project_new');
         }
 
+        setEditingDocId(null);
+        setEditingOriginalSlug(null);
+
         setNewProject({
             slug: '',
             title: '',
@@ -523,13 +536,20 @@ export default function AuthorityProjectsPage() {
         setShowProjectForm(false);
     };
 
-    // Optional 1-Click Seed Initial Projects into Firestore
+    // Optional 1-Click Seed / Sync Initial Projects into Firestore
     const handleSeedInitialProjects = async () => {
-        if (!window.confirm("This will import the 10 static initial projects into Firestore so you can manage them in this panel. Proceed?")) return;
+        if (!window.confirm(`This will import all ${initialStaticProjects.length} built-in portfolio projects into Firestore so you can edit, rename, and manage them directly in the database. Proceed?`)) return;
         try {
             setLoading(true);
+            const existingSnapshot = await getDocs(collection(db, 'projects'));
+            const existingSlugs = new Set(existingSnapshot.docs.map(d => d.data().slug));
+
             let count = 0;
             for (const p of initialStaticProjects) {
+                // Skip if this slug already exists or if it's deja-brew and deja exists
+                if (existingSlugs.has(p.slug) || (p.slug === 'deja-brew' && existingSlugs.has('deja'))) {
+                    continue;
+                }
                 const { id, ...dataWithoutId } = p;
                 await addDoc(collection(db, 'projects'), {
                     ...dataWithoutId,
@@ -537,8 +557,8 @@ export default function AuthorityProjectsPage() {
                 });
                 count++;
             }
-            alert(`Successfully imported ${count} projects into Firestore!`);
-            fetchProjects();
+            alert(`Successfully imported ${count} project(s) into Firestore! Total database projects: ${existingSnapshot.docs.length + count}`);
+            await fetchProjects();
         } catch (error) {
             console.error("Error seeding projects:", error);
             alert("Failed to seed projects: " + (error instanceof Error ? error.message : String(error)));
@@ -620,14 +640,14 @@ export default function AuthorityProjectsPage() {
                                     </p>
                                 </div>
                                 <div className="flex items-center gap-2 flex-wrap">
-                                    {projects.length === 0 && !loading && (
+                                    {!loading && (
                                         <button
                                             onClick={handleSeedInitialProjects}
                                             className="bg-black/5 hover:bg-black/10 border border-black/20 text-black px-4 py-3 rounded-xl font-bold text-xs flex items-center gap-2 transition-all cursor-pointer"
-                                            title="Import built-in projects to Firestore"
+                                            title="Import built-in projects into Firestore database"
                                         >
                                             <FontAwesomeIcon icon={faDatabase} />
-                                            <span>Seed Initial Projects</span>
+                                            <span>Seed / Sync to Database</span>
                                         </button>
                                     )}
                                     <button

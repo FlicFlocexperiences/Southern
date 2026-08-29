@@ -140,7 +140,7 @@ export const ProjectsGrid = () => {
             };
           });
 
-          // Merge live projects with static ones, deduplicating by slug (live projects take priority)
+          // Merge live projects with static ones (live projects take priority)
           const liveSlugs = new Set(liveProjects.map(p => p.slug));
           const remainingStatic = initialStaticProjects.filter(p => !liveSlugs.has(p.slug));
           setProjectsList([...liveProjects, ...remainingStatic]);

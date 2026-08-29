@@ -389,24 +389,6 @@ export const projects: Project[] = [
     gallery: ["/project/Gods_By_Dmart.svg"]
   },
   {
-    id: 126,
-    slug: "deja-brew",
-    title: "Deja Brew",
-    category: "Branding",
-    tag: "CRAFT BREWERY & CAFE",
-    categories: ["Branding", "Web Design"],
-    projectType: "Custom Code",
-    flag: "🇮🇳",
-    description: "A vibrant artisanal craft beer microbrewery and specialty coffee lounge with a community-first ambiance.",
-    client: "Deja Brew Hospitality",
-    duration: "6 Weeks",
-    services: "Craft Brewery Brand Identity, Digital Menu Experience, Custom Web Development",
-    websiteUrl: "https://www.dejabrew.co.in/",
-    image: "/project/Deja_Brew.svg",
-    heroImage: "/project/Deja_Brew.svg",
-    gallery: ["/project/Deja_Brew.svg"]
-  },
-  {
     id: 127,
     slug: "kyma",
     title: "KYMA",
