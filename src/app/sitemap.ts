@@ -32,26 +32,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  // Fetch Firestore projects + combine with static projects (preventing ghost duplicates)
+  // Fetch Firestore projects as the single authoritative source of truth
   const allProjectSlugs = new Set<string>();
 
   try {
     const querySnapshot = await getDocs(collection(db, 'projects'));
-    querySnapshot.docs.forEach((doc) => {
-      const data = doc.data();
-      const slug = data.slug || doc.id;
-      if (slug) allProjectSlugs.add(slug);
-    });
+    if (!querySnapshot.empty) {
+      querySnapshot.docs.forEach((doc) => {
+        const data = doc.data();
+        const slug = data.slug || doc.id;
+        if (slug) allProjectSlugs.add(slug);
+      });
+    } else {
+      projects.forEach((p) => allProjectSlugs.add(p.slug));
+    }
   } catch (error) {
     console.error('Error fetching projects for sitemap:', error);
+    projects.forEach((p) => allProjectSlugs.add(p.slug));
   }
-
-  // Include remaining static projects that aren't already in Firestore
-  projects.forEach((p) => {
-    if (!allProjectSlugs.has(p.slug)) {
-      allProjectSlugs.add(p.slug);
-    }
-  });
 
   const projectRoutes = Array.from(allProjectSlugs).map((slug) => ({
     url: `${baseUrl}/projects/${slug}`,

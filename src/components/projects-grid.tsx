@@ -140,13 +140,15 @@ export const ProjectsGrid = () => {
             };
           });
 
-          // Merge live projects with static ones (live projects take priority)
-          const liveSlugs = new Set(liveProjects.map(p => p.slug));
-          const remainingStatic = initialStaticProjects.filter(p => !liveSlugs.has(p.slug));
-          setProjectsList([...liveProjects, ...remainingStatic]);
+          // Firestore is the single authoritative source of truth
+          setProjectsList(liveProjects);
+        } else {
+          // Fallback only if Firestore is completely empty
+          setProjectsList(initialStaticProjects);
         }
       } catch (err) {
         console.error("Error fetching live projects from Firestore:", err);
+        setProjectsList(initialStaticProjects);
       }
     };
 

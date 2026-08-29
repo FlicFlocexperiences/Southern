@@ -138,12 +138,10 @@ export default function AuthorityProjectsPage() {
             });
 
             if (firestoreProjects.length > 0) {
-                // Merge firestore projects with any un-seeded static projects (live projects take priority)
-                const firestoreSlugs = new Set(firestoreProjects.map(p => p.slug));
-                const remainingStatic = initialStaticProjects.filter(p => !firestoreSlugs.has(p.slug));
-                setProjects([...firestoreProjects, ...remainingStatic]);
+                // Firestore is the single authoritative source of truth
+                setProjects(firestoreProjects);
             } else {
-                // Auto-populate with initial projects so the table and stats are immediately active
+                // Auto-populate with initial projects on cold start before seeding
                 setProjects(initialStaticProjects);
             }
         } catch (error) {
@@ -546,8 +544,7 @@ export default function AuthorityProjectsPage() {
 
             let count = 0;
             for (const p of initialStaticProjects) {
-                // Skip if this slug already exists or if it's deja-brew and deja exists
-                if (existingSlugs.has(p.slug) || (p.slug === 'deja-brew' && existingSlugs.has('deja'))) {
+                if (existingSlugs.has(p.slug)) {
                     continue;
                 }
                 const { id, ...dataWithoutId } = p;
