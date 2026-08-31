@@ -15,6 +15,19 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value: "frame-ancestors 'self' https://www.facebook.com https://business.facebook.com https://*.facebook.com;",
+          },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return [
       {

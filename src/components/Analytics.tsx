@@ -2,11 +2,12 @@
 
 import { usePathname } from "next/navigation";
 import Script from "next/script";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export function Analytics() {
   const pathname = usePathname();
   const isAdminRoute = pathname?.startsWith("/authority") || pathname?.startsWith("/nullify");
+  const isFirstMount = useRef(true);
 
   useEffect(() => {
     // Only initialize Microsoft Clarity on public customer-facing routes
@@ -26,8 +27,13 @@ export function Analytics() {
     }
   }, [isAdminRoute]);
 
-  // Track PageView on SPA route changes for Meta Pixel & Google Analytics
+  // Track PageView on SPA route changes for Meta Pixel & Google Analytics (skips initial mount to avoid duplicate)
   useEffect(() => {
+    if (isFirstMount.current) {
+      isFirstMount.current = false;
+      return;
+    }
+
     if (!isAdminRoute && typeof window !== "undefined") {
       if (typeof (window as any).fbq === "function") {
         (window as any).fbq("track", "PageView");
@@ -71,20 +77,6 @@ export function Analytics() {
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
-            if (typeof Node !== 'undefined' && !Node.prototype.getBoundingClientRect) {
-              Node.prototype.getBoundingClientRect = function() {
-                return this.parentElement && typeof this.parentElement.getBoundingClientRect === 'function'
-                  ? this.parentElement.getBoundingClientRect()
-                  : { top: 0, left: 0, right: 0, bottom: 0, width: 0, height: 0, x: 0, y: 0 };
-              };
-            }
-            if (typeof EventTarget !== 'undefined' && !EventTarget.prototype.getBoundingClientRect) {
-              EventTarget.prototype.getBoundingClientRect = function() {
-                return this.parentElement && typeof this.parentElement.getBoundingClientRect === 'function'
-                  ? this.parentElement.getBoundingClientRect()
-                  : { top: 0, left: 0, right: 0, bottom: 0, width: 0, height: 0, x: 0, y: 0 };
-              };
-            }
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
