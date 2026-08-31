@@ -72,23 +72,37 @@ function useContactForm() {
       }
 
       // Track Meta Pixel Lead event
-      if (typeof window !== "undefined" && (window as any).fbq) {
-        (window as any).fbq("track", "Lead", {
-          content_name: (data.service as string) || "General Inquiry",
-        });
+      try {
+        if (typeof window !== "undefined" && typeof (window as any).fbq === "function") {
+          (window as any).fbq("track", "Lead", {
+            content_name: (data.service as string) || "General Inquiry",
+            value: 0,
+            currency: "USD",
+          });
+        }
+      } catch (trackErr) {
+        console.error("Meta pixel track error:", trackErr);
       }
 
       // Track Google Analytics Lead event
-      if (typeof window !== "undefined" && (window as any).gtag) {
-        (window as any).gtag("event", "generate_lead", {
-          event_category: "Contact Form",
-          event_label: (data.service as string) || "General Inquiry",
-        });
+      try {
+        if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
+          (window as any).gtag("event", "generate_lead", {
+            event_category: "Contact Form",
+            event_label: (data.service as string) || "General Inquiry",
+          });
+        }
+      } catch (gtagErr) {
+        console.error("Google Analytics track error:", gtagErr);
       }
 
       setSuccess(true);
       (e.target as HTMLFormElement).reset();
-      router.push("/thank-you");
+      
+      // Allow beacon dispatch before navigation
+      setTimeout(() => {
+        router.push("/thank-you");
+      }, 150);
     } catch (err: any) {
       console.error("Error adding document: ", err);
       setError("Something went wrong. Please try again.");
@@ -100,7 +114,7 @@ function useContactForm() {
   return { handleSubmit, loading, success, error };
 }
 
-export const ContactUsWidget = () => {
+export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string }) => {
   const { handleSubmit, loading, success, error } = useContactForm();
 
   return (
@@ -203,6 +217,8 @@ export const ContactUsWidget = () => {
           {/* Submit Button */}
           <div className="mt-4 flex justify-center w-full">
             <button 
+              id={`${idPrefix}-submit-btn`}
+              data-tracking="contact-lead-submit"
               disabled={loading} 
               type="submit" 
               className="relative w-[222px] h-[63px] rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] overflow-hidden shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] transition-all group cursor-pointer disabled:opacity-75 disabled:cursor-not-allowed"

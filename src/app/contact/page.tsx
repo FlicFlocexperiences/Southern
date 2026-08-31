@@ -81,7 +81,7 @@ export default function Contact() {
             </div>
 
             <div className="w-full mb-8">
-              <ContactUsWidget />
+              <ContactUsWidget idPrefix="contact-mobile" />
             </div>
 
             {/* Description and Tagline */}
@@ -156,7 +156,7 @@ export default function Contact() {
             </div>
 
             <div className="w-full mb-16">
-              <ContactUsWidget />
+              <ContactUsWidget idPrefix="contact-desktop" />
             </div>
           </section>
 
