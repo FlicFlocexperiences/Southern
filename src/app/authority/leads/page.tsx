@@ -15,6 +15,8 @@ interface Lead {
     projectDetails?: string;
     createdAt?: string;
     status?: string; 
+    captchaScore?: number | null;
+    captchaStatus?: string;
     history?: Array<{
         id: string;
         type: 'Follow-up';
@@ -518,31 +520,49 @@ export default function LeadsPage() {
                                             {lead.projectDetails || 'N/A'}
                                         </td>
                                         <td className="px-2 py-4">
-                                            <div className="relative inline-block">
-                                                <button 
-                                                    onClick={() => toggleStatusDropdown(lead.id)}
-                                                    className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-semibold whitespace-nowrap border ${getStatusColor(leadStatus)}`}
-                                                >
-                                                    {leadStatus}
-                                                    <svg className="w-2.5 h-2.5 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-                                                </button>
+                                            <div className="flex flex-col gap-1 items-start">
+                                                <div className="relative inline-block">
+                                                    <button 
+                                                        onClick={() => toggleStatusDropdown(lead.id)}
+                                                        className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-semibold whitespace-nowrap border ${getStatusColor(leadStatus)}`}
+                                                    >
+                                                        {leadStatus}
+                                                        <svg className="w-2.5 h-2.5 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                                                    </button>
 
-                                                {/* Status Dropdown Menu */}
-                                                {openStatusDropdownId === lead.id && (
-                                                    <>
-                                                        <div className="fixed inset-0 z-40" onClick={() => setOpenStatusDropdownId(null)}></div>
-                                                        <div className="absolute left-0 top-full mt-1 w-40 bg-white border border-[#E8D8C8] rounded-xl shadow-lg z-50 py-2 flex flex-col">
-                                                            {['New', 'Contacted', 'Follow-up', 'Converted', 'Not Interested'].map(status => (
-                                                                <button 
-                                                                    key={status}
-                                                                    onClick={() => updateLeadStatus(lead.id, status)}
-                                                                    className={`w-full text-left px-4 py-2 text-sm text-[#4A332A] hover:bg-[#FAF7F2] ${leadStatus === status ? 'font-bold bg-[#FAF7F2]' : ''}`}
-                                                                >
-                                                                    {status}
-                                                                </button>
-                                                            ))}
-                                                        </div>
-                                                    </>
+                                                    {/* Status Dropdown Menu */}
+                                                    {openStatusDropdownId === lead.id && (
+                                                        <>
+                                                            <div className="fixed inset-0 z-40" onClick={() => setOpenStatusDropdownId(null)}></div>
+                                                            <div className="absolute left-0 top-full mt-1 w-40 bg-white border border-[#E8D8C8] rounded-xl shadow-lg z-50 py-2 flex flex-col">
+                                                                {['New', 'Contacted', 'Follow-up', 'Converted', 'Not Interested'].map(status => (
+                                                                    <button 
+                                                                        key={status}
+                                                                        onClick={() => updateLeadStatus(lead.id, status)}
+                                                                        className={`w-full text-left px-4 py-2 text-sm text-[#4A332A] hover:bg-[#FAF7F2] ${leadStatus === status ? 'font-bold bg-[#FAF7F2]' : ''}`}
+                                                                    >
+                                                                        {status}
+                                                                    </button>
+                                                                ))}
+                                                            </div>
+                                                        </>
+                                                    )}
+                                                </div>
+
+                                                {typeof lead.captchaScore === 'number' && (
+                                                    <span 
+                                                        title={`reCAPTCHA v3 Score: ${lead.captchaScore.toFixed(2)} (${lead.captchaScore >= 0.8 ? 'High Confidence' : lead.captchaScore >= 0.5 ? 'Moderate Confidence' : 'Low Confidence'})`}
+                                                        className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-semibold border ${
+                                                            lead.captchaScore >= 0.8 
+                                                                ? 'bg-emerald-50 text-emerald-700 border-emerald-200' 
+                                                                : lead.captchaScore >= 0.5 
+                                                                ? 'bg-amber-50 text-amber-700 border-amber-200' 
+                                                                : 'bg-red-50 text-red-700 border-red-200'
+                                                        }`}
+                                                    >
+                                                        <span className={`w-1.5 h-1.5 rounded-full ${lead.captchaScore >= 0.8 ? 'bg-emerald-500' : lead.captchaScore >= 0.5 ? 'bg-amber-500' : 'bg-red-500'}`} />
+                                                        Score: {lead.captchaScore.toFixed(1)}
+                                                    </span>
                                                 )}
                                             </div>
                                         </td>
@@ -739,6 +759,33 @@ export default function LeadsPage() {
                                 <p className="text-sm text-[#4A332A] leading-relaxed whitespace-pre-wrap">
                                     {viewLead.projectDetails || 'No project details provided.'}
                                 </p>
+                            </div>
+
+                            {/* Security & reCAPTCHA Verification */}
+                            <div className="bg-white border border-[#E8D8C8] rounded-xl p-5 shadow-sm space-y-3">
+                                <div className="flex items-center justify-between">
+                                    <h4 className="text-xs font-bold text-[#4A332A]/50 uppercase tracking-wider">Security & Anti-Spam</h4>
+                                    {typeof viewLead.captchaScore === 'number' ? (
+                                        <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold border ${
+                                            viewLead.captchaScore >= 0.8 
+                                                ? 'bg-emerald-50 text-emerald-700 border-emerald-200' 
+                                                : viewLead.captchaScore >= 0.5 
+                                                ? 'bg-amber-50 text-amber-700 border-amber-200' 
+                                                : 'bg-red-50 text-red-700 border-red-200'
+                                        }`}>
+                                            <span className={`w-2 h-2 rounded-full ${viewLead.captchaScore >= 0.8 ? 'bg-emerald-500' : viewLead.captchaScore >= 0.5 ? 'bg-amber-500' : 'bg-red-500'}`} />
+                                            {viewLead.captchaScore >= 0.8 ? 'High Confidence' : viewLead.captchaScore >= 0.5 ? 'Moderate Confidence' : 'Low Confidence'}
+                                        </span>
+                                    ) : (
+                                        <span className="text-xs text-[#4A332A]/50 font-medium">Unverified / Legacy</span>
+                                    )}
+                                </div>
+                                <div className="flex items-center justify-between text-sm">
+                                    <span className="text-[#4A332A]/70">Google reCAPTCHA v3 Score:</span>
+                                    <span className="font-bold text-[#4A332A]">
+                                        {typeof viewLead.captchaScore === 'number' ? `${viewLead.captchaScore.toFixed(2)} / 1.0` : 'Not Available'}
+                                    </span>
+                                </div>
                             </div>
                         </div>
                         

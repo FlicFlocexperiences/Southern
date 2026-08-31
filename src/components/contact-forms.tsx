@@ -30,6 +30,50 @@ const FacebookIcon = () => (
   </svg>
 );
 
+// Helper to get Google reCAPTCHA v3 token
+const getRecaptchaToken = async (): Promise<string | null> => {
+  if (typeof window === "undefined") return null;
+  const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+  if (!siteKey) {
+    console.warn("⚠️ [reCAPTCHA] NEXT_PUBLIC_RECAPTCHA_SITE_KEY environment variable is not defined.");
+    return null;
+  }
+
+  return new Promise((resolve) => {
+    const grecaptcha = (window as any).grecaptcha;
+    if (grecaptcha && typeof grecaptcha.execute === "function") {
+      grecaptcha.ready(async () => {
+        try {
+          const token = await grecaptcha.execute(siteKey, { action: "submit_lead" });
+          resolve(token);
+        } catch (err) {
+          console.error("❌ [reCAPTCHA] Failed to execute grecaptcha:", err);
+          resolve(null);
+        }
+      });
+    } else {
+      console.warn("⚠️ [reCAPTCHA] grecaptcha object not yet ready on window.");
+      // Fallback check after 500ms in case script was still initializing
+      setTimeout(() => {
+        const delayedGrecaptcha = (window as any).grecaptcha;
+        if (delayedGrecaptcha && typeof delayedGrecaptcha.execute === "function") {
+          delayedGrecaptcha.ready(async () => {
+            try {
+              const token = await delayedGrecaptcha.execute(siteKey, { action: "submit_lead" });
+              resolve(token);
+            } catch (err) {
+              console.error("❌ [reCAPTCHA delayed] Execution failed:", err);
+              resolve(null);
+            }
+          });
+        } else {
+          resolve(null);
+        }
+      }, 500);
+    }
+  });
+};
+
 function useContactForm() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
@@ -47,7 +91,17 @@ function useContactForm() {
     setError("");
     setSuccess(false);
 
-    const formData = new FormData(e.currentTarget);
+    // Obtain reCAPTCHA v3 token
+    const recaptchaToken = await getRecaptchaToken();
+    if (!recaptchaToken) {
+      console.warn("⚠️ [Contact Form Debug] Security verification failed: reCAPTCHA token unavailable.");
+      setError("Security check failed. Please refresh the page and try again.");
+      setLoading(false);
+      return;
+    }
+
+    const formElement = e.currentTarget;
+    const formData = new FormData(formElement);
     const data = {
       name: formData.get("name"),
       code: formData.get("code"),
@@ -55,6 +109,7 @@ function useContactForm() {
       email: formData.get("email"),
       service: formData.get("service"),
       projectDetails: formData.get("projectDetails"),
+      recaptchaToken,
     };
 
     console.group("📝 [Contact Form Debug] Submission Triggered");
@@ -66,6 +121,7 @@ function useContactForm() {
       email: data.email,
       service: data.service,
       hasProjectDetails: !!data.projectDetails,
+      hasRecaptchaToken: !!recaptchaToken,
     });
 
     try {
@@ -120,7 +176,7 @@ function useContactForm() {
       }
 
       setSuccess(true);
-      (e.target as HTMLFormElement).reset();
+      formElement.reset();
       console.log("🚀 [Contact Form Debug] Form successfully saved to DB. Routing to /thank-you in 150ms...");
       console.groupEnd();
       
@@ -131,7 +187,7 @@ function useContactForm() {
     } catch (err: any) {
       console.error("🚨 [Contact Form Debug] Submission Failure:", err);
       console.groupEnd();
-      setError("Something went wrong. Please try again.");
+      setError(err?.message || "Something went wrong. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -233,11 +289,16 @@ export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string })
           </div>
 
           {/* Disclaimer */}
-          <div className="text-[13px] text-black/60 text-center mt-2 mb-2 leading-relaxed px-2">
+          <div className="text-[13px] text-black/60 text-center mt-2 mb-1 leading-relaxed px-2">
             By clicking submit, you agree to share these details with us for the purpose of contacting you regarding our services. Please read our{" "}
             <Link href="/privacy" className="text-[#de5e18] hover:underline font-medium">Privacy Policy</Link> and{" "}
             <Link href="/terms" className="text-[#de5e18] hover:underline font-medium">Terms & Conditions</Link>{" "}
             (including our <Link href="/terms" className="text-[#de5e18] hover:underline font-medium">Refund Policy</Link>) for more details.
+          </div>
+          <div className="text-[11px] text-black/40 text-center mb-2 leading-relaxed px-2">
+            This site is protected by reCAPTCHA and the Google{" "}
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-medium">Privacy Policy</a> and{" "}
+            <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-medium">Terms of Service</a> apply.
           </div>
 
           {/* Submit Button */}

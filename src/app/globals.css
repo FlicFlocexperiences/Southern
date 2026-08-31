@@ -53,3 +53,9 @@ body {
     display: none; /* Chrome, Safari and Opera */
   }
 }
+
+/* Hide default floating reCAPTCHA badge to avoid overlapping floating buttons (allowed by Google when disclaimer is shown) */
+.grecaptcha-badge {
+  visibility: hidden !important;
+}
+

@@ -58,6 +58,7 @@ export const metadata: Metadata = {
   },
 };
 
+import Script from "next/script";
 import { AuthProvider } from "@/components/AuthProvider";
 import { WhatsappWidget } from "@/components/whatsapp-widget";
 import { Analytics } from "@/components/Analytics";
@@ -96,6 +97,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+
   return (
     <html
       lang="en"
@@ -107,6 +110,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
         />
+        {recaptchaSiteKey && (
+          <Script
+            src={`https://www.google.com/recaptcha/api.js?render=${recaptchaSiteKey}`}
+            strategy="afterInteractive"
+          />
+        )}
       </head>
       <body className="min-h-screen flex flex-col">
         <Analytics />
