@@ -71,6 +71,20 @@ export function Analytics() {
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
+            if (typeof Node !== 'undefined' && !Node.prototype.getBoundingClientRect) {
+              Node.prototype.getBoundingClientRect = function() {
+                return this.parentElement && typeof this.parentElement.getBoundingClientRect === 'function'
+                  ? this.parentElement.getBoundingClientRect()
+                  : { top: 0, left: 0, right: 0, bottom: 0, width: 0, height: 0, x: 0, y: 0 };
+              };
+            }
+            if (typeof EventTarget !== 'undefined' && !EventTarget.prototype.getBoundingClientRect) {
+              EventTarget.prototype.getBoundingClientRect = function() {
+                return this.parentElement && typeof this.parentElement.getBoundingClientRect === 'function'
+                  ? this.parentElement.getBoundingClientRect()
+                  : { top: 0, left: 0, right: 0, bottom: 0, width: 0, height: 0, x: 0, y: 0 };
+              };
+            }
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
