@@ -2,6 +2,7 @@ import { DesktopNav } from "@/components/desktop-nav";
 import { MobileNav } from "@/components/mobile-nav";
 import { DesktopFooter } from "@/components/desktop-footer";
 import { MobileFooter } from "@/components/mobile-footer";
+import { ThankYouTracker } from "@/components/thank-you-tracker";
 import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
@@ -77,6 +78,7 @@ const PhoneIcon = () => (
 export default function ThankYouPage() {
   return (
     <div className="min-h-screen bg-[#ebe2d4] flex flex-col font-sans">
+      <ThankYouTracker />
       <div className="hidden md:block">
         <DesktopNav />
       </div>

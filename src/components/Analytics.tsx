@@ -26,6 +26,20 @@ export function Analytics() {
     }
   }, [isAdminRoute]);
 
+  // Track PageView on SPA route changes for Meta Pixel & Google Analytics
+  useEffect(() => {
+    if (!isAdminRoute && typeof window !== "undefined") {
+      if (typeof (window as any).fbq === "function") {
+        (window as any).fbq("track", "PageView");
+      }
+      if (typeof (window as any).gtag === "function") {
+        (window as any).gtag("event", "page_view", {
+          page_path: pathname,
+        });
+      }
+    }
+  }, [pathname, isAdminRoute]);
+
   // Exclude all third-party marketing & analytics scripts on admin/internal pages
   if (isAdminRoute) {
     return null;
