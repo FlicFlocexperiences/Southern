@@ -5,7 +5,7 @@ import { MobileNav } from "@/components/mobile-nav";
 import { MobileFooter } from "@/components/mobile-footer";
 import { MobileFaq } from "@/components/mobile-faq";
 import { ContactUsWidget } from "@/components/contact-forms";
-
+import { ContactDebugLogger } from "@/components/contact-debug-logger";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -59,145 +59,60 @@ const contactFaqs = [
 
 export default function Contact() {
   return (
-    <>
-      {/* Mobile Version */}
-      <div className="md:hidden w-full bg-[#f2decc]">
+    <div className="w-full min-h-screen bg-[#f2decc]">
+      <ContactDebugLogger />
+      
+      {/* Navigation */}
+      <div className="block md:hidden">
         <MobileNav />
-        <div className="w-full">
-          {/* Mobile Contact Hero */}
-          <section className="w-full px-5 pt-28 pb-8 flex flex-col items-start relative z-10">
-            <div className="flex flex-col items-start mb-8 w-full">
-              <p className="font-medium text-[20px] mb-4 tracking-wide">
-                <span className="text-[#de5e18]">[</span>
-                <span className="text-black mx-2 uppercase tracking-[-0.6px]">Let's Connect</span>
-                <span className="text-[#de5e18]">]</span>
-              </p>
-              
-              <div className="w-full h-px bg-black/10 mb-4" />
-              
-              <h2 className="text-[50px] font-semibold text-black leading-[50px] tracking-tight">
-                CONTACT US
-              </h2>
-            </div>
+      </div>
+      <div className="hidden md:block">
+        <DesktopNav />
+      </div>
 
-            <div className="w-full mb-8">
-              <ContactUsWidget idPrefix="contact-mobile" />
-            </div>
-
-            {/* Description and Tagline */}
-            <div className="w-full flex flex-col gap-4 mt-4 pr-4">
-              <p className="text-[26px] font-medium text-black leading-tight tracking-tight">
-                Big ideas deserve better than average.
-              </p>
-              <p className="text-[18px] font-normal text-black/65 leading-snug">
-                Need a website that converts? A brand that stands out? Marketing that actually gets noticed?
-              </p>
-            </div>
-          </section>
-
-          {/* Trusted By Section */}
-          {/*
-          <section className="w-full mt-8 mb-20 flex flex-col items-center overflow-hidden">
-            <p className="text-[28px] font-medium text-black mb-8 tracking-tight">
-              Trusted by many
+      {/* Main Content */}
+      <main className="w-full">
+        {/* Contact Hero Section */}
+        <section className="w-full px-5 md:px-8 lg:px-[90px] pt-28 md:pt-32 pb-8 md:pb-10 flex flex-col items-start relative z-10 max-w-8xl mx-auto md:min-h-[calc(100vh-100px)]">
+          <div className="flex flex-col items-start mb-8 md:mb-12 w-full">
+            <p className="font-medium text-[20px] md:text-[24px] mb-4 md:mb-6 tracking-wide">
+              <span className="text-[#de5e18]">[</span>
+              <span className="text-black mx-2 uppercase tracking-[-0.6px] md:tracking-normal">Let's Connect</span>
+              <span className="text-[#de5e18]">]</span>
             </p>
-            <div className="w-full flex items-center justify-between relative overflow-hidden h-[100px]">
-              <span className="text-[#de5e18] text-[75px] font-medium absolute left-0 z-30 leading-none -top-2 bg-[#f2decc] pr-2 pointer-events-none">[</span>
-              
-              <div className="w-full relative overflow-hidden h-full z-10 pl-[30px] pr-[30px]">
-                <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-[#f2decc] to-transparent z-20 pointer-events-none" />
-                <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-[#f2decc] to-transparent z-20 pointer-events-none" />
-                
-                <div className="animate-logo-slide flex items-center w-max h-full">
-                  {Array.from({ length: 30 }).map((_, index) => {
-                    const logoIndex = (index % 15) + 1;
-                    return (
-                      <div key={index} className="h-[56px] w-[196px] mx-[10px] relative flex items-center justify-center shrink-0 transition-all duration-300">
-                        <img 
-                          src={`/clientlogo/logo-${logoIndex}.png`} 
-                          alt={`Client Logo ${logoIndex}`} 
-                          className="max-h-full max-w-full object-contain"
-                        />
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
+            
+            <div className="w-full h-px bg-black/10 mb-4 md:mb-6" />
+            
+            <h1 className="text-[50px] md:text-[80px] lg:text-[90px] font-semibold text-black leading-[50px] md:leading-none tracking-tight">
+              CONTACT US
+            </h1>
+          </div>
 
-              <span className="text-[#de5e18] text-[75px] font-medium absolute right-0 z-30 leading-none -top-2 bg-[#f2decc] pl-2 pointer-events-none">]</span>
-            </div>
-          </section>
-          */}
+          <div className="w-full mb-8 md:mb-16">
+            <ContactUsWidget idPrefix="contact" />
+          </div>
 
+          {/* Description and Tagline (Mobile) */}
+          <div className="w-full flex flex-col gap-4 mt-4 pr-4 md:hidden">
+            <p className="text-[26px] font-medium text-black leading-tight tracking-tight">
+              Big ideas deserve better than average.
+            </p>
+            <p className="text-[18px] font-normal text-black/65 leading-snug">
+              Need a website that converts? A brand that stands out? Marketing that actually gets noticed?
+            </p>
+          </div>
+        </section>
+
+        {/* FAQs */}
+        <div className="block md:hidden">
           <MobileFaq faqs={contactFaqs} />
           <MobileFooter />
         </div>
-      </div>
-
-      {/* Desktop Version */}
-      <div className="hidden md:block w-full min-h-screen bg-[#f2decc]">
-        <DesktopNav />
-        <div style={{ zoom: 0.8 }}>
-          {/* Contact Us Hero Section */}
-          <section className="w-full px-8 lg:px-[90px] pt-32 pb-10 flex flex-col items-start relative z-10 max-w-8xl mx-auto min-h-[calc(100vh-100px)]">
-            <div className="flex flex-col items-start mb-12 w-full">
-              <p className="font-medium text-[24px] mb-6 tracking-wide">
-                <span className="text-[#de5e18]">[</span>
-                <span className="text-black mx-2 uppercase">Let's Connect</span>
-                <span className="text-[#de5e18]">]</span>
-              </p>
-              
-              {/* Subtle divider line */}
-              <div className="w-full h-px bg-black/10 mb-6" />
-              
-              <h1 className="text-[80px] lg:text-[90px] font-semibold text-black leading-none tracking-tight">
-                CONTACT US
-              </h1>
-            </div>
-
-            <div className="w-full mb-16">
-              <ContactUsWidget idPrefix="contact-desktop" />
-            </div>
-          </section>
-
-          {/* Trusted By Section */}
-          {/*
-          <section className="w-full px-8 lg:px-[90px] mb-32 flex flex-col items-start max-w-[1500px] mx-auto">
-            <p className="text-[28px] lg:text-[32px] font-medium text-black mb-10 tracking-tight">
-              Trusted by many
-            </p>
-            <div className="w-full flex items-center justify-between relative overflow-hidden h-[100px] lg:h-[120px]">
-              <span className="text-[#de5e18] text-[80px] lg:text-[96px] font-medium absolute left-0 z-30 leading-none -top-4 bg-[#f2decc] pr-4 pointer-events-none">[</span>
-              
-              <div className="w-full relative overflow-hidden h-full z-10 pl-[50px] pr-[50px]">
-                <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#f2decc] to-transparent z-20 pointer-events-none" />
-                <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#f2decc] to-transparent z-20 pointer-events-none" />
-                
-                <div className="animate-logo-slide flex items-center w-max h-full">
-                  {Array.from({ length: 30 }).map((_, index) => {
-                    const logoIndex = (index % 15) + 1;
-                    return (
-                      <div key={index} className="h-[60px] lg:h-[80px] w-[200px] mx-[10px] relative flex items-center justify-center shrink-0 transition-all duration-300">
-                        <img 
-                          src={`/clientlogo/logo-${logoIndex}.png`} 
-                          alt={`Client Logo ${logoIndex}`} 
-                          className="max-h-full max-w-full object-contain"
-                        />
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <span className="text-[#de5e18] text-[80px] lg:text-[96px] font-medium absolute right-0 z-30 leading-none -top-4 bg-[#f2decc] pl-4 pointer-events-none">]</span>
-            </div>
-          </section>
-          */}
-
+        <div className="hidden md:block">
           <DesktopFaq faqs={contactFaqs} />
           <DesktopFooter />
         </div>
-      </div>
-    </>
+      </main>
+    </div>
   );
 }

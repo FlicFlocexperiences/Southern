@@ -42,6 +42,7 @@ function useContactForm() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const submitStartTime = performance.now();
     setLoading(true);
     setError("");
     setSuccess(false);
@@ -56,7 +57,19 @@ function useContactForm() {
       projectDetails: formData.get("projectDetails"),
     };
 
+    console.group("📝 [Contact Form Debug] Submission Triggered");
+    console.log("⏰ Submit Timestamp:", new Date().toISOString());
+    console.log("📦 Form Data Payload:", {
+      name: data.name,
+      code: data.code,
+      phone: data.phone ? `***${String(data.phone).slice(-4)}` : "empty",
+      email: data.email,
+      service: data.service,
+      hasProjectDetails: !!data.projectDetails,
+    });
+
     try {
+      console.log("🌐 [Contact Form Debug] Sending POST request to /api/contact...");
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
@@ -65,7 +78,13 @@ function useContactForm() {
         body: JSON.stringify(data),
       });
 
+      const responseTime = Math.round(performance.now() - submitStartTime);
       const result = await response.json();
+      console.log(`📥 [Contact Form Debug] API Response received in ${responseTime}ms:`, {
+        status: response.status,
+        statusText: response.statusText,
+        result,
+      });
 
       if (!response.ok) {
         throw new Error(result.error || "Failed to submit the form.");
@@ -74,37 +93,44 @@ function useContactForm() {
       // Track Meta Pixel Lead event
       try {
         if (typeof window !== "undefined" && typeof (window as any).fbq === "function") {
+          console.log("🎯 [Contact Form Debug] Dispatching Meta Pixel Lead event: fbq('track', 'Lead')");
           (window as any).fbq("track", "Lead", {
             content_name: (data.service as string) || "General Inquiry",
             value: 0,
             currency: "USD",
           });
+        } else {
+          console.warn("⚠️ [Contact Form Debug] window.fbq is not available on window at submission time.");
         }
       } catch (trackErr) {
-        console.error("Meta pixel track error:", trackErr);
+        console.error("❌ [Contact Form Debug] Meta pixel track error:", trackErr);
       }
 
       // Track Google Analytics Lead event
       try {
         if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
+          console.log("📊 [Contact Form Debug] Dispatching GA4 Lead event: gtag('event', 'generate_lead')");
           (window as any).gtag("event", "generate_lead", {
             event_category: "Contact Form",
             event_label: (data.service as string) || "General Inquiry",
           });
         }
       } catch (gtagErr) {
-        console.error("Google Analytics track error:", gtagErr);
+        console.error("❌ [Contact Form Debug] Google Analytics track error:", gtagErr);
       }
 
       setSuccess(true);
       (e.target as HTMLFormElement).reset();
+      console.log("🚀 [Contact Form Debug] Form successfully saved to DB. Routing to /thank-you in 150ms...");
+      console.groupEnd();
       
       // Allow beacon dispatch before navigation
       setTimeout(() => {
         router.push("/thank-you");
       }, 150);
     } catch (err: any) {
-      console.error("Error adding document: ", err);
+      console.error("🚨 [Contact Form Debug] Submission Failure:", err);
+      console.groupEnd();
       setError("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
