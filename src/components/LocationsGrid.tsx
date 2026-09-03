@@ -11,6 +11,9 @@ const locations = [
   { name: 'Abu Dhabi', slug: 'abu-dhabi', country: 'UAE' },
   { name: 'Dubai', slug: 'dubai', country: 'UAE' },
   { name: 'Sharjah', slug: 'sharjah', country: 'UAE' },
+  { name: 'Sydney', slug: 'sydney', country: 'Australia' },
+  { name: 'Melbourne', slug: 'melbourne', country: 'Australia' },
+  { name: 'Brisbane', slug: 'brisbane', country: 'Australia' },
   { name: 'Toronto', slug: 'toronto', country: 'Canada' },
   { name: 'Montreal', slug: 'montreal', country: 'Canada' },
   { name: 'Vancouver', slug: 'vancouver', country: 'Canada' },
@@ -41,8 +44,10 @@ const unavailableByService: Record<string, string[]> = {
   seo: [],
 };
 
+type FilterCategory = 'All' | 'USA' | 'India' | 'UAE' | 'Canada' | 'UK' | 'Australia';
+
 export function LocationsGrid({ serviceSlug }: LocationsGridProps) {
-  const [activeFilter, setActiveFilter] = useState<'All' | 'USA' | 'India' | 'UAE' | 'Canada' | 'UK'>('All');
+  const [activeFilter, setActiveFilter] = useState<FilterCategory>('All');
 
   const availableLocations = locations.filter(loc => {
     if (serviceSlug && unavailableByService[serviceSlug]?.includes(loc.slug)) {
@@ -52,9 +57,9 @@ export function LocationsGrid({ serviceSlug }: LocationsGridProps) {
   });
 
   const availableCountries = Array.from(new Set(availableLocations.map(loc => loc.country)));
-  const filterTabs: ('All' | 'USA' | 'India' | 'UAE' | 'Canada' | 'UK')[] = [
+  const filterTabs: FilterCategory[] = [
     'All',
-    ...(['USA', 'India', 'UAE', 'Canada', 'UK'] as const).filter(c => availableCountries.includes(c)),
+    ...(['USA', 'India', 'UAE', 'Canada', 'UK', 'Australia'] as const).filter(c => availableCountries.includes(c)),
   ];
 
   const filteredLocations = availableLocations.filter(loc => 
@@ -66,7 +71,7 @@ export function LocationsGrid({ serviceSlug }: LocationsGridProps) {
       <div className="text-center mb-8">
         <h2 className="text-4xl md:text-5xl font-extrabold text-[#3b2b23] mb-4">Our Locations</h2>
         <p className="text-lg text-[#554238] max-w-3xl mx-auto">
-          Southern Edge Marketing is a trusted global digital agency. We are strategically located to serve businesses across the USA, UAE, India, Canada, the UK, and international markets, bringing expert digital solutions directly to you.
+          Southern Edge Marketing is a trusted global digital agency. We are strategically located to serve businesses across the USA, UAE, India, Canada, the UK, Australia, and international markets, bringing expert digital solutions directly to you.
         </p>
       </div>
 

@@ -60,6 +60,16 @@ const nextConfig: NextConfig = {
         destination: "/services/seo/:slug",
         permanent: true,
       },
+      {
+        source: "/services/social-media",
+        destination: "/services/social-media-management",
+        permanent: true,
+      },
+      {
+        source: "/services/social-media/:slug",
+        destination: "/services/social-media-management/:slug",
+        permanent: true,
+      },
     ];
   },
 };

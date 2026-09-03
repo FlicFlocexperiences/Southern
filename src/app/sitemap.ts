@@ -92,6 +92,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'ahmedabad',
     'bengaluru',
     'birmingham',
+    'brisbane',
     'california',
     'chandigarh',
     'chennai',
@@ -105,6 +106,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'los-angeles',
     'lucknow',
     'manchester',
+    'melbourne',
     'montreal',
     'mumbai',
     'new-york',
@@ -113,6 +115,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'san-francisco',
     'sharjah',
     'surat',
+    'sydney',
     'toronto',
     'vancouver',
   ];
