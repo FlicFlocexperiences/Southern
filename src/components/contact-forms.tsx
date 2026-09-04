@@ -345,7 +345,7 @@ export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string })
           {/* Floating SEM Badge Logo */}
           <div className="flex items-center justify-center pointer-events-auto shrink-0">
             <img 
-              src="/SEMBadgeNew.svg" 
+              src="/SemBeige.svg" 
               alt="Southern Edge Marketing Badge" 
               className="w-[44px] h-[44px] md:w-[52px] md:h-[52px] object-contain select-none shadow-sm rounded-full" 
             />
