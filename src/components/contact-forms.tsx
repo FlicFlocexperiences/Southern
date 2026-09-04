@@ -334,10 +334,22 @@ export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string })
       <div className="w-full md:w-[450px] bg-white border-2 border-dashed border-[#de5e18]/30 rounded-[24px] p-6 md:p-8 flex flex-col justify-between items-center text-center relative min-h-[460px] shrink-0">
 
 
-        {/* Floating Time Badge */}
-        <div className="absolute top-6 left-6 bg-[#f4f3ef] text-black/60 px-4 py-2 md:px-6 md:py-3 rounded-full text-[14px] md:text-[16px] font-bold tracking-tight flex items-center gap-2">
-          <div className="w-2.5 h-2.5 rounded-full bg-[#22c55e] shrink-0 shadow-[0_0_8px_#22c55e] animate-pulse" />
-          Approximately 30-min.
+        {/* Header Badges Row */}
+        <div className="w-full flex items-center justify-between absolute top-6 md:top-8 left-0 px-6 md:px-8 pointer-events-none z-10">
+          {/* Floating Time Badge */}
+          <div className="bg-[#f4f3ef] text-black/60 px-4 py-2 md:px-6 md:py-3 rounded-full text-[14px] md:text-[16px] font-bold tracking-tight flex items-center gap-2 pointer-events-auto">
+            <div className="w-2.5 h-2.5 rounded-full bg-[#22c55e] shrink-0 shadow-[0_0_8px_#22c55e] animate-pulse" />
+            Approximately 30-min.
+          </div>
+
+          {/* Floating SEM Badge Logo */}
+          <div className="flex items-center justify-center pointer-events-auto shrink-0">
+            <img 
+              src="/SEMBadgeNew.svg" 
+              alt="Southern Edge Marketing Badge" 
+              className="w-[44px] h-[44px] md:w-[52px] md:h-[52px] object-contain select-none shadow-sm rounded-full" 
+            />
+          </div>
         </div>
 
         {/* Center content */}
