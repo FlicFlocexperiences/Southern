@@ -86,6 +86,8 @@ function useContactForm() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const formElement = e.currentTarget;
+    const formData = new FormData(formElement);
     const submitStartTime = performance.now();
     setLoading(true);
     setError("");
@@ -100,8 +102,6 @@ function useContactForm() {
       return;
     }
 
-    const formElement = e.currentTarget;
-    const formData = new FormData(formElement);
     const data = {
       name: formData.get("name"),
       code: formData.get("code"),
