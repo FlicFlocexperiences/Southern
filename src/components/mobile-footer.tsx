@@ -119,7 +119,7 @@ export const MobileFooter = () => {
         { label: "Custom Code vs WordPress", href: "/explore-more/why-custom-code-better-than-wordpress" },
         { label: "Why Next.js Powers Modern Web", href: "/explore-more/power-of-nextjs-for-modern-websites" },
         { label: "How Branding Dictates Growth", href: "/explore-more/how-branding-dictates-business-success" },
-        { label: "Mobile-First Design Blueprint", href: "/blogs/the-importance-of-mobile-first-design-in-2005" },
+        { label: "Mobile-First Design Blueprint", href: "/blogs/the-importance-of-mobile-first-design-in-2025" },
         { label: "Color Theory in Digital Identity", href: "/blogs/understanding-color-theory-in-digital-branding" },
       ],
     },

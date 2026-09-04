@@ -200,9 +200,9 @@ export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string })
   const { handleSubmit, loading, success, error } = useContactForm();
 
   return (
-    <div className="w-full max-w-[1400px] mx-auto rounded-[32px] border-4 border-[#432d1c]/10 bg-white p-4 md:p-6 flex flex-col md:flex-row gap-6 shadow-[0_12px_40px_rgba(0,0,0,0.03)] font-sans text-left">
+    <div className="w-full max-w-[1400px] mx-auto rounded-[32px] border-4 border-[#432d1c]/10 bg-white p-3.5 sm:p-4 md:p-6 flex flex-col md:flex-row gap-6 shadow-[0_12px_40px_rgba(0,0,0,0.03)] font-sans text-left">
       {/* Left Box: Form Container */}
-      <div className="flex-1 bg-[#f2decc]/30 rounded-[24px] p-6 md:p-8 flex flex-col">
+      <div className="flex-1 bg-[#f2decc]/30 rounded-[24px] p-4 sm:p-6 md:p-8 flex flex-col">
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           
           {success && <p className="text-[#de5e18] font-medium text-[16px] mb-2">Thank you! We have received your message.</p>}
@@ -222,17 +222,17 @@ export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string })
           {/* Phone Field */}
           <div className="flex flex-col gap-1.5">
             <label className="text-[14px] md:text-[15px] font-semibold text-black/60 tracking-tight">Phone number</label>
-            <div className="flex gap-3">
+            <div className="flex gap-2 sm:gap-3">
               <CountryCodeSelect 
                 name="code" 
-                defaultValue="+971"
-                className="w-[125px] sm:w-[130px] shrink-0"
+                defaultValue="+91"
+                className="w-[88px] sm:w-[105px] md:w-[125px] shrink-0"
               />
               <PhoneInput 
                 name="phone" 
                 required 
-                placeholder="Enter your phone number" 
-                className="flex-1 min-w-0 w-full bg-white rounded-xl px-4 py-3.5 outline-none text-[16px] text-black border border-black/10 focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] transition-all placeholder:text-black/35" 
+                placeholder="Enter phone number" 
+                className="flex-1 min-w-0 w-full bg-white rounded-xl px-3.5 sm:px-4 py-3.5 outline-none text-[16px] text-black border border-black/10 focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] transition-all placeholder:text-black/35" 
               />
             </div>
           </div>
@@ -331,7 +331,7 @@ export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string })
       </div>
 
       {/* Right Box: Info Callout Container */}
-      <div className="w-full md:w-[450px] bg-white border-2 border-dashed border-[#de5e18]/30 rounded-[24px] p-6 md:p-8 flex flex-col justify-between items-center text-center relative min-h-[460px] shrink-0">
+      <div className="w-full md:w-[450px] bg-white border-2 border-dashed border-[#de5e18]/30 rounded-[24px] p-5 sm:p-6 md:p-8 flex flex-col justify-between items-center text-center relative min-h-[460px] shrink-0">
 
 
         {/* Header Badges Row */}

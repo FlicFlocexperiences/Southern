@@ -26,10 +26,10 @@ export interface Blog {
 
 export const blogs: Blog[] = [
   {
-    slug: "the-importance-of-mobile-first-design-in-2005",
-    title: "The Importance of Mobile-First Design in 2005",
+    slug: "the-importance-of-mobile-first-design-in-2025",
+    title: "The Importance of Mobile-First Design in 2025",
     excerpt: "Explore why designing for mobile screens first revolutionized user experience, accessibility, and modern SEO rankings.",
-    publishedAt: "Feb 26, 2001",
+    publishedAt: "Feb 26, 2025",
     category: "DESIGN",
     image: "/photoshoot.jpg",
     content: `In the early days of mobile internet, web developers designed exclusively for large desktop screens. Mobile layouts were merely scaled-down versions that forced users to pinch and zoom. That all changed when the mobile-first design philosophy emerged.

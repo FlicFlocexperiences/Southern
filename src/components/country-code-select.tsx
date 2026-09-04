@@ -12,14 +12,14 @@ interface CountryCodeSelectProps {
 
 export function CountryCodeSelect({
   name = "code",
-  defaultValue = "+971",
+  defaultValue = "+91",
   className = "",
   onChange,
 }: CountryCodeSelectProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   
-  // Find initial country (default to +971 UAE, fallback to India or first)
+  // Find initial country (default to +91 India, fallback to first)
   const initialCountry = useMemo(() => {
     return (
       countryCodes.find((c) => c.code === defaultValue) ||
@@ -117,15 +117,15 @@ export function CountryCodeSelect({
       <button
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}
-        className="w-full h-full bg-white rounded-xl px-2.5 py-3.5 outline-none text-black border border-black/10 hover:border-[#de5e18]/60 focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] transition-all cursor-pointer flex items-center justify-between gap-1 select-none shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
+        className="w-full h-full bg-white rounded-xl px-2 sm:px-2.5 py-3.5 outline-none text-black border border-black/10 hover:border-[#de5e18]/60 focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] transition-all cursor-pointer flex items-center justify-between gap-1 select-none shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
         aria-haspopup="listbox"
         aria-expanded={isOpen}
         aria-label="Select Country Dial Code"
       >
-        <span className="text-[20px] leading-none shrink-0" role="img" aria-label={selectedCountry.country}>
+        <span className="text-[18px] sm:text-[20px] leading-none shrink-0" role="img" aria-label={selectedCountry.country}>
           {selectedCountry.flag}
         </span>
-        <span className="text-[16px] font-medium text-black tracking-tight shrink-0">
+        <span className="text-[14px] sm:text-[16px] font-medium text-black tracking-tight shrink-0">
           {selectedCountry.code}
         </span>
         <svg
@@ -143,7 +143,7 @@ export function CountryCodeSelect({
 
       {/* Popover Dropdown */}
       {isOpen && (
-        <div className="absolute left-0 top-full mt-2 w-[310px] sm:w-[350px] bg-white rounded-2xl shadow-[0_16px_40px_rgba(0,0,0,0.16)] border border-black/10 z-50 flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+        <div className="absolute left-0 top-full mt-2 w-[290px] sm:w-[350px] max-w-[calc(100vw-40px)] bg-white rounded-2xl shadow-[0_16px_40px_rgba(0,0,0,0.16)] border border-black/10 z-50 flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-150">
           {/* Search Header */}
           <div className="p-3 border-b border-black/5 bg-[#faf8f5]">
             <div className="relative flex items-center">

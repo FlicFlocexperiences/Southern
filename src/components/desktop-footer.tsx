@@ -269,7 +269,7 @@ export const DesktopFooter = () => {
               <Link href="/explore-more/how-branding-dictates-business-success" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
                 How Branding Dictates Growth
               </Link>
-              <Link href="/blogs/the-importance-of-mobile-first-design-in-2005" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+              <Link href="/blogs/the-importance-of-mobile-first-design-in-2025" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
                 Mobile-First Design Blueprint
               </Link>
               <Link href="/blogs/understanding-color-theory-in-digital-branding" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">

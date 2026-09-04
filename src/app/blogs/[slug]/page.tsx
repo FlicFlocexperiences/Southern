@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { MobileNav } from "@/components/mobile-nav";
 import { MobileFooter } from "@/components/mobile-footer";
 import { DesktopNav } from "@/components/desktop-nav";
@@ -15,7 +16,7 @@ export const revalidate = 0;
 
 const stripHtml = (html: string) => html ? html.replace(/<[^>]+>/g, '') : '';
 
-async function getLiveBlog(slug: string): Promise<Blog | null> {
+const getLiveBlog = cache(async (slug: string): Promise<Blog | null> => {
   try {
     const q = query(collection(db, "blogs"), where("slug", "==", slug));
     const snapshot = await getDocs(q);
@@ -57,19 +58,18 @@ async function getLiveBlog(slug: string): Promise<Blog | null> {
   }
 
   return null;
-}
+});
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const blog = await getLiveBlog(slug);
 
   if (!blog) {
-    return {
-      robots: {
-        index: false,
-        follow: false,
-      },
-    };
+    // Don't set noindex here — the page component calls notFound() which
+    // returns a proper 404 status that Google already handles correctly.
+    // An explicit noindex was causing valid blog pages to be excluded
+    // from Google's index when Firestore had transient failures.
+    return {};
   }
 
   const blogImage = blog.image?.startsWith("http")

@@ -73,7 +73,7 @@ export default function Contact() {
       {/* Main Content */}
       <main className="w-full">
         {/* Contact Hero Section */}
-        <section className="w-full px-5 md:px-8 lg:px-[90px] pt-28 md:pt-32 pb-8 md:pb-10 flex flex-col items-start relative z-10 max-w-8xl mx-auto md:min-h-[calc(100vh-100px)]">
+        <section className="w-full px-4 sm:px-6 md:px-8 lg:px-[90px] pt-28 md:pt-32 pb-8 md:pb-10 flex flex-col items-start relative z-10 max-w-8xl mx-auto md:min-h-[calc(100vh-100px)]">
           <div className="flex flex-col items-start mb-8 md:mb-12 w-full">
             <p className="font-medium text-[20px] md:text-[24px] mb-4 md:mb-6 tracking-wide">
               <span className="text-[#de5e18]">[</span>
