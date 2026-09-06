@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     url: "https://southernedgemarketing.com",
     siteName: "Southern Edge Marketing",
     images: [{
-      url: "/LOGO_Final.svg",
+      url: "/og-image.png",
       width: 1200,
       height: 630,
     }],
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Digital Marketing Agency Delhi | Southern Edge",
     description: "Digital Marketing Agency in Delhi, India",
-    images: ["/LOGO_Final.svg"],
+    images: ["/og-image.png"],
   },
 };
 
@@ -68,8 +68,8 @@ const jsonLdSchema = {
   "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
   "name": "Southern Edge Marketing",
   "url": "https://southernedgemarketing.com",
-  "logo": "https://southernedgemarketing.com/LOGO_Final.svg",
-  "image": "https://southernedgemarketing.com/LOGO_Final.svg",
+  "logo": "https://southernedgemarketing.com/logo.png",
+  "image": "https://southernedgemarketing.com/logo.png",
   "telephone": "+918700901769",
   "email": "info@southernedgemarketing.com",
   "priceRange": "$$",
