@@ -2,7 +2,7 @@ import { DesktopNav } from "@/components/desktop-nav";
 import { MobileNav } from "@/components/mobile-nav";
 import { DesktopFooter } from "@/components/desktop-footer";
 import { MobileFooter } from "@/components/mobile-footer";
-import { ThankYouTracker } from "@/components/thank-you-tracker";
+import { ThankYouGuard } from "@/components/thank-you-guard";
 import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
@@ -77,109 +77,110 @@ const PhoneIcon = () => (
 
 export default function ThankYouPage() {
   return (
-    <div className="min-h-screen bg-[#ebe2d4] flex flex-col font-sans">
-      <ThankYouTracker />
-      <div className="hidden md:block">
-        <DesktopNav />
-      </div>
-      <div className="block md:hidden">
-        <MobileNav />
-      </div>
-
-      <main className="flex-1 flex flex-col items-center justify-center px-4 md:px-8 pt-32 pb-16 max-w-[800px] mx-auto w-full">
-
-
-        {/* Main Heading */}
-        <h1 className="text-[80px] md:text-[140px] font-black text-[#2a1c17] tracking-[-0.04em] mb-4 text-center leading-[0.9]">
-          Thank you
-        </h1>
-
-        {/* Sub Heading */}
-        <div className="text-[28px] md:text-[38px] font-semibold text-[#a45330] text-center mb-6 leading-[1.1] tracking-tight">
-          <p>The hard part's done.</p>
-          <p>Now we get to</p>
-          <p>impress you.</p>
+    <ThankYouGuard>
+      <div className="min-h-screen bg-[#ebe2d4] flex flex-col font-sans">
+        <div className="hidden md:block">
+          <DesktopNav />
+        </div>
+        <div className="block md:hidden">
+          <MobileNav />
         </div>
 
-        {/* Text */}
-        <p className="text-[#2a1c17]/60 text-center text-[18px] md:text-[20px] max-w-[700px] mb-12 leading-[1.6] font-normal">
-          We've got your brief. A strategist from our team will personally<br className="hidden md:block" /> reach out within 24 hours — no bots, no queue.
-        </p>
+        <main className="flex-1 flex flex-col items-center justify-center px-4 md:px-8 pt-32 pb-16 max-w-[800px] mx-auto w-full">
 
-        {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-5 mb-24 w-full sm:w-auto">
-          <a href="tel:+918700901769" className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#2a241f] text-white px-8 py-4 rounded-full font-medium hover:bg-black transition-colors text-[17px]">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4ade80" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
-            Call now
-          </a>
-          <Link href="/" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#ca744d] text-white px-8 py-4 rounded-full font-medium hover:bg-[#b8613c] transition-colors text-[17px]">
-            <div className="w-2 h-2 rounded-full bg-[#4ade80]" />
-            Return to homepage <span className="text-[18px] ml-1">→</span>
-          </Link>
-          <Link href="/projects" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-transparent border border-[#2a1c17]/15 text-[#2a1c17] px-8 py-4 rounded-full font-medium hover:bg-black/5 transition-colors text-[17px]">
-            See our work <span className="text-[18px] ml-1">→</span>
-          </Link>
-        </div>
 
-        {/* While you wait section */}
-        <div className="w-full max-w-[800px]">
-          <div className="flex items-center gap-3 mb-6">
-            <h3 className="text-[22px] font-bold text-[#2a1c17]">While you wait</h3>
-            <p className="text-[#2a1c17]/60 text-[17px] mt-[3px]">Get a feel for how we think and what we've shipped.</p>
+          {/* Main Heading */}
+          <h1 className="text-[80px] md:text-[140px] font-black text-[#2a1c17] tracking-[-0.04em] mb-4 text-center leading-[0.9]">
+            Thank you
+          </h1>
+
+          {/* Sub Heading */}
+          <div className="text-[28px] md:text-[38px] font-semibold text-[#a45330] text-center mb-6 leading-[1.1] tracking-tight">
+            <p>The hard part's done.</p>
+            <p>Now we get to</p>
+            <p>impress you.</p>
           </div>
 
-          <div className="flex flex-col gap-4">
-            {/* Card 1 */}
-            <Link href="/projects" className="flex items-center justify-between p-4 bg-[#f6efe7] rounded-[24px] hover:bg-white transition-colors group">
-              <div className="flex items-center gap-5">
-                <div className="w-14 h-14 rounded-[18px] bg-[#d46d3e] flex items-center justify-center">
-                  <FolderIcon />
-                </div>
-                <div>
-                  <h4 className="font-bold text-[#2a1c17] text-[18px]">Recent projects</h4>
-                  <p className="text-[#2a1c17]/60 text-[15px]">Brands we've grown across Dubai and India.</p>
-                </div>
-              </div>
-              <div className="text-[#d46d3e] pr-4 group-hover:translate-x-1 transition-transform">→</div>
-            </Link>
+          {/* Text */}
+          <p className="text-[#2a1c17]/60 text-center text-[18px] md:text-[20px] max-w-[700px] mb-12 leading-[1.6] font-normal">
+            We've got your brief. A strategist from our team will personally<br className="hidden md:block" /> reach out within 24 hours — no bots, no queue.
+          </p>
 
-            {/* Card 2 */}
-            <Link href="/blogs" className="flex items-center justify-between p-4 bg-[#f6efe7] rounded-[24px] hover:bg-white transition-colors group">
-              <div className="flex items-center gap-5">
-                <div className="w-14 h-14 rounded-[18px] bg-[#d46d3e] flex items-center justify-center">
-                  <PencilIcon />
-                </div>
-                <div>
-                  <h4 className="font-bold text-[#2a1c17] text-[18px]">Read the blog</h4>
-                  <p className="text-[#2a1c17]/60 text-[15px]">Playbooks and ideas from our strategy team.</p>
-                </div>
-              </div>
-              <div className="text-[#d46d3e] pr-4 group-hover:translate-x-1 transition-transform">→</div>
+          {/* Action Buttons */}
+          <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-5 mb-24 w-full sm:w-auto">
+            <a href="tel:+918700901769" className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#2a241f] text-white px-8 py-4 rounded-full font-medium hover:bg-black transition-colors text-[17px]">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4ade80" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+              Call now
+            </a>
+            <Link href="/" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#ca744d] text-white px-8 py-4 rounded-full font-medium hover:bg-[#b8613c] transition-colors text-[17px]">
+              <div className="w-2 h-2 rounded-full bg-[#4ade80]" />
+              Return to homepage <span className="text-[18px] ml-1">→</span>
             </Link>
-
-            {/* Card 3 */}
-            <Link href="https://www.instagram.com/southernedgemarketing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 bg-[#f6efe7] rounded-[24px] hover:bg-white transition-colors group">
-              <div className="flex items-center gap-5">
-                <div className="w-14 h-14 rounded-[18px] bg-[#eb4a75] flex items-center justify-center">
-                  <InstagramCardIcon />
-                </div>
-                <div>
-                  <h4 className="font-bold text-[#2a1c17] text-[18px]">Follow us</h4>
-                  <p className="text-[#2a1c17]/60 text-[15px]">Behind the scenes and fresh work, daily.</p>
-                </div>
-              </div>
-              <div className="text-[#d46d3e] pr-4 group-hover:translate-x-1 transition-transform">→</div>
+            <Link href="/projects" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-transparent border border-[#2a1c17]/15 text-[#2a1c17] px-8 py-4 rounded-full font-medium hover:bg-black/5 transition-colors text-[17px]">
+              See our work <span className="text-[18px] ml-1">→</span>
             </Link>
           </div>
-        </div>
-      </main>
 
-      <div className="hidden md:block">
-        <DesktopFooter />
+          {/* While you wait section */}
+          <div className="w-full max-w-[800px]">
+            <div className="flex items-center gap-3 mb-6">
+              <h3 className="text-[22px] font-bold text-[#2a1c17]">While you wait</h3>
+              <p className="text-[#2a1c17]/60 text-[17px] mt-[3px]">Get a feel for how we think and what we've shipped.</p>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              {/* Card 1 */}
+              <Link href="/projects" className="flex items-center justify-between p-4 bg-[#f6efe7] rounded-[24px] hover:bg-white transition-colors group">
+                <div className="flex items-center gap-5">
+                  <div className="w-14 h-14 rounded-[18px] bg-[#d46d3e] flex items-center justify-center">
+                    <FolderIcon />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#2a1c17] text-[18px]">Recent projects</h4>
+                    <p className="text-[#2a1c17]/60 text-[15px]">Brands we've grown across Dubai and India.</p>
+                  </div>
+                </div>
+                <div className="text-[#d46d3e] pr-4 group-hover:translate-x-1 transition-transform">→</div>
+              </Link>
+
+              {/* Card 2 */}
+              <Link href="/blogs" className="flex items-center justify-between p-4 bg-[#f6efe7] rounded-[24px] hover:bg-white transition-colors group">
+                <div className="flex items-center gap-5">
+                  <div className="w-14 h-14 rounded-[18px] bg-[#d46d3e] flex items-center justify-center">
+                    <PencilIcon />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#2a1c17] text-[18px]">Read the blog</h4>
+                    <p className="text-[#2a1c17]/60 text-[15px]">Playbooks and ideas from our strategy team.</p>
+                  </div>
+                </div>
+                <div className="text-[#d46d3e] pr-4 group-hover:translate-x-1 transition-transform">→</div>
+              </Link>
+
+              {/* Card 3 */}
+              <Link href="https://www.instagram.com/southernedgemarketing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 bg-[#f6efe7] rounded-[24px] hover:bg-white transition-colors group">
+                <div className="flex items-center gap-5">
+                  <div className="w-14 h-14 rounded-[18px] bg-[#eb4a75] flex items-center justify-center">
+                    <InstagramCardIcon />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#2a1c17] text-[18px]">Follow us</h4>
+                    <p className="text-[#2a1c17]/60 text-[15px]">Behind the scenes and fresh work, daily.</p>
+                  </div>
+                </div>
+                <div className="text-[#d46d3e] pr-4 group-hover:translate-x-1 transition-transform">→</div>
+              </Link>
+            </div>
+          </div>
+        </main>
+
+        <div className="hidden md:block">
+          <DesktopFooter />
+        </div>
+        <div className="block md:hidden">
+          <MobileFooter />
+        </div>
       </div>
-      <div className="block md:hidden">
-        <MobileFooter />
-      </div>
-    </div>
+    </ThankYouGuard>
   );
 }

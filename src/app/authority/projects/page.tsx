@@ -421,12 +421,37 @@ export default function AuthorityProjectsPage() {
                 created: formMode === 'add' ? Date.now() : (newProject.created || Date.now())
             };
 
+            const normalizedSlug = newProject.slug.trim().toLowerCase();
+            const existingDuplicate = projects.find(p => p.slug.trim().toLowerCase() === normalizedSlug);
+
             if (formMode === 'add') {
+                if (existingDuplicate) {
+                    const confirmEdit = window.confirm(
+                        `A project with the slug "/${normalizedSlug}" already exists ("${existingDuplicate.title}").\n\nTo prevent duplicate entries, would you like to edit the existing project instead?`
+                    );
+                    if (confirmEdit) {
+                        handleEdit(existingDuplicate);
+                    }
+                    setIsSubmitting(false);
+                    return;
+                }
+
                 const docRef = await addDoc(collection(db, 'projects'), projectData);
                 const addedProject: Project = { id: docRef.id, ...projectData };
                 setProjects(prev => [addedProject, ...prev.filter(p => p.slug !== addedProject.slug)]);
                 alert("Project added successfully!");
             } else {
+                const slugCollision = projects.find(
+                    p => p.slug.trim().toLowerCase() === normalizedSlug && 
+                    p.id !== editingDocId && 
+                    p.id !== newProject.id
+                );
+                if (slugCollision) {
+                    alert(`The slug "/${normalizedSlug}" is already in use by another project ("${slugCollision.title}"). Please use a unique slug.`);
+                    setIsSubmitting(false);
+                    return;
+                }
+
                 if (editingDocId) {
                     const docRef = doc(db, 'projects', editingDocId);
                     await updateDoc(docRef, projectData);
@@ -540,11 +565,14 @@ export default function AuthorityProjectsPage() {
         try {
             setLoading(true);
             const existingSnapshot = await getDocs(collection(db, 'projects'));
-            const existingSlugs = new Set(existingSnapshot.docs.map(d => d.data().slug));
+            const existingSlugs = new Set(existingSnapshot.docs.map(d => (d.data().slug || '').trim().toLowerCase()));
+            const existingTitles = new Set(existingSnapshot.docs.map(d => (d.data().title || '').trim().toLowerCase().replace(/[^a-z0-9]/g, '')));
 
             let count = 0;
             for (const p of initialStaticProjects) {
-                if (existingSlugs.has(p.slug)) {
+                const normSlug = (p.slug || '').trim().toLowerCase();
+                const normTitle = (p.title || '').trim().toLowerCase().replace(/[^a-z0-9]/g, '');
+                if (existingSlugs.has(normSlug) || existingTitles.has(normTitle)) {
                     continue;
                 }
                 const { id, ...dataWithoutId } = p;

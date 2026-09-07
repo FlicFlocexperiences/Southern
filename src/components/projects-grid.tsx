@@ -140,8 +140,19 @@ export const ProjectsGrid = () => {
             };
           });
 
-          // Firestore is the single authoritative source of truth
-          setProjectsList(liveProjects);
+          // Firestore is the single authoritative source of truth (with slug deduplication safeguard)
+          const uniqueLiveProjects: Project[] = [];
+          const seenSlugs = new Set<string>();
+          for (const p of liveProjects) {
+            const slugKey = (p.slug || '').trim().toLowerCase();
+            if (slugKey && !seenSlugs.has(slugKey)) {
+              seenSlugs.add(slugKey);
+              uniqueLiveProjects.push(p);
+            } else if (!slugKey) {
+              uniqueLiveProjects.push(p);
+            }
+          }
+          setProjectsList(uniqueLiveProjects);
         } else {
           // Fallback only if Firestore is completely empty
           setProjectsList(initialStaticProjects);

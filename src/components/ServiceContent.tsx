@@ -567,6 +567,37 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
             </div>
           </div>
 
+          {/* Call Us Card - Web Only */}
+          <div className="hidden lg:block bg-white border border-black/10 rounded-xl p-4 shadow-sm text-center">
+            <h3 className="text-[16px] font-bold text-black mb-2 uppercase tracking-wide">
+              Prefer to Call?
+            </h3>
+            <p className="text-[13px] text-black/75 leading-snug mb-4 font-light">
+              Scan the QR code below or call us directly to discuss your digital strategy.
+            </p>
+            <div className="flex flex-col items-center gap-3">
+              <div className="p-2 bg-white border border-black/10 rounded-[12px] shadow-sm inline-block">
+                <img 
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=tel:+918700901769&margin=2" 
+                  alt="Scan to call" 
+                  width={110} 
+                  height={110}
+                  className="rounded-lg mix-blend-multiply"
+                />
+              </div>
+              <div className="flex flex-col items-center gap-3 mt-1 w-full">
+                <a href="tel:+918700901769" className="text-[17px] font-semibold text-[#de5e18] hover:text-[#de5e18]/80 transition-colors flex items-center gap-1.5">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.896-1.596-5.48-4.18-7.076-7.076l1.293-.97c.362-.271.527-.733.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"></path></svg>
+                  +91 8700901769
+                </a>
+                <a href="https://www.linkedin.com/in/ameet-nangia-b231b864/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 w-full py-2 bg-[#0a66c2]/10 text-[#0a66c2] rounded-lg text-[13.5px] font-semibold hover:bg-[#0a66c2] hover:text-white transition-all duration-300">
+                  <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+                  Connect on LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+
         </aside>
 
       </div>
