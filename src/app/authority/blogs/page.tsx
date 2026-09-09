@@ -81,11 +81,14 @@ const BlogsDashboard = () => {
     // AI Generation state
     const [primaryKeyword, setPrimaryKeyword] = useState('');
     const [isGenerating, setIsGenerating] = useState(false);
+    const [aiProvider, setAiProvider] = useState<'gemini' | 'openai'>('gemini');
 
     // New Image Generation and Content Expansion state
     const [imagePrompt, setImagePrompt] = useState('');
     const [isGeneratingImage, setIsGeneratingImage] = useState(false);
     const [generatedImageUrl, setGeneratedImageUrl] = useState<string | null>(null);
+    const [generatedImageAlt, setGeneratedImageAlt] = useState<string>('');
+    const [imageProvider, setImageProvider] = useState<'gemini' | 'openai'>('gemini');
     const [isUploadingGenerated, setIsUploadingGenerated] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -376,7 +379,8 @@ const BlogsDashboard = () => {
 
         try {
             setIsGenerating(true);
-            const response = await fetch('/api/generate-article', {
+            const endpoint = aiProvider === 'gemini' ? '/api/generate-article-gemini' : '/api/generate-article';
+            const response = await fetch(endpoint, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -385,7 +389,8 @@ const BlogsDashboard = () => {
             });
 
             if (!response.ok) {
-                throw new Error('Failed to generate blog');
+                const errData = await response.json().catch(() => ({}));
+                throw new Error(errData.error || errData.details || 'Failed to generate blog');
             }
 
             const generatedData = await response.json();
@@ -418,40 +423,51 @@ const BlogsDashboard = () => {
                 setImagePrompt(generatedData.suggestedImagePrompt);
             }
 
-            alert('Blog generated successfully! Please review and add an image.');
-        } catch (error) {
+            const providerLabel = aiProvider === 'gemini' ? 'Gemini 3.8 Flash (Screaming Frog SEO Optimized)' : 'ChatGPT (GPT-4o)';
+            alert(`Blog generated successfully with ${providerLabel}! Please review and add an image.`);
+        } catch (error: any) {
             console.error('Error generating blog:', error);
-            alert('Failed to generate blog. Please try again.');
+            alert(`Failed to generate blog: ${error?.message || 'Please try again.'}`);
         } finally {
             setIsGenerating(false);
         }
     };
 
-    const handleGenerateImage = async () => {
+    const handleGenerateImage = async (overrideProvider?: 'gemini' | 'openai') => {
         if (!imagePrompt.trim()) {
             alert('Please enter an image prompt.');
             return;
         }
 
+        const providerToUse = overrideProvider || imageProvider;
+
         try {
             setIsGeneratingImage(true);
-            const response = await fetch('/api/generate-image', {
+            const endpoint = providerToUse === 'gemini' ? '/api/generate-image-gemini' : '/api/generate-image';
+            const response = await fetch(endpoint, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ prompt: imagePrompt }),
+                body: JSON.stringify({
+                    prompt: imagePrompt,
+                    topic: newBlog.title || primaryKeyword,
+                }),
             });
 
             if (!response.ok) {
-                throw new Error('Failed to generate image');
+                const errData = await response.json().catch(() => ({}));
+                throw new Error(errData.error || errData.details || 'Failed to generate image');
             }
 
             const data = await response.json();
             setGeneratedImageUrl(data.imageUrl);
-        } catch (error) {
+            if (data.suggestedAlt) {
+                setGeneratedImageAlt(data.suggestedAlt);
+            }
+        } catch (error: any) {
             console.error('Error generating image:', error);
-            alert('Failed to generate image. Please try again.');
+            alert(`Failed to generate image: ${error?.message || 'Please try again.'}`);
         } finally {
             setIsGeneratingImage(false);
         }
@@ -1114,17 +1130,59 @@ const BlogsDashboard = () => {
                             <div className="p-6 border border-amber-200/80 bg-gradient-to-br from-amber-50/40 to-orange-50/10 rounded-2xl shadow-none relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-amber-200/10 to-transparent rounded-bl-full pointer-events-none"></div>
 
-                                <div className="flex items-center justify-between mb-4">
-                                    <div className="flex items-center gap-2">
-                                        <span className="flex items-center justify-center w-7 h-7 rounded-lg bg-[#de5e18]/10 text-[#de5e18] text-xs font-bold animate-pulse">✨</span>
+                                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+                                    <div className="flex items-center gap-2.5">
+                                        <span className="flex items-center justify-center w-8 h-8 rounded-xl bg-[#de5e18]/10 text-[#de5e18] text-sm font-bold shadow-sm">
+                                            {aiProvider === 'gemini' ? '⚡' : '✨'}
+                                        </span>
                                         <div>
-                                            <h3 className="text-black text-sm font-bold uppercase tracking-wider">
-                                                AI Writeup Auto-Generator (ChatGPT)
-                                            </h3>
+                                            <div className="flex items-center gap-2">
+                                                <h3 className="text-black text-sm font-bold uppercase tracking-wider">
+                                                    AI Blog Auto-Generator
+                                                </h3>
+                                                <span className={`text-[10px] px-2 py-0.5 rounded-full font-extrabold uppercase tracking-wider ${
+                                                    aiProvider === 'gemini'
+                                                        ? 'bg-[#de5e18]/15 text-[#de5e18] border border-[#de5e18]/30'
+                                                        : 'bg-emerald-100 text-emerald-700 border border-emerald-300'
+                                                }`}>
+                                                    {aiProvider === 'gemini' ? 'Gemini 3.8 Flash' : 'ChatGPT GPT-4o'}
+                                                </span>
+                                            </div>
                                             <p className="text-black/60 text-[11px] mt-0.5 leading-relaxed normal-case">
-                                                Paste the raw writeup or primary keyword below. ChatGPT will automatically draft the title, subtitle, slug, detailed rich blog post, 10+ FAQ schemas, and 5+ client reviews.
+                                                {aiProvider === 'gemini'
+                                                    ? 'Screaming Frog SEO-optimized: 0 em dashes, strict character boundaries, verified internal links, comparison table, FAQs & reviews.'
+                                                    : 'Standard OpenAI GPT-4o generator: drafts title, subtitle, slug, rich HTML blog post, FAQs, and reviews.'}
                                             </p>
                                         </div>
+                                    </div>
+
+                                    {/* AI Engine Selector Toggle */}
+                                    <div className="flex items-center bg-black/5 p-1 rounded-xl border border-black/10 shrink-0 self-start sm:self-auto">
+                                        <button
+                                            type="button"
+                                            onClick={() => setAiProvider('gemini')}
+                                            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+                                                aiProvider === 'gemini'
+                                                    ? 'bg-white text-[#de5e18] shadow-sm'
+                                                    : 'text-black/60 hover:text-black'
+                                            }`}
+                                        >
+                                            <span>⚡</span>
+                                            <span>Gemini 3.8 Flash</span>
+                                            <span className="text-[9px] px-1.5 py-0.5 bg-[#de5e18]/10 text-[#de5e18] rounded-md font-black uppercase">SEO</span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            onClick={() => setAiProvider('openai')}
+                                            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+                                                aiProvider === 'openai'
+                                                    ? 'bg-white text-[#0f0f0f] shadow-sm'
+                                                    : 'text-black/60 hover:text-black'
+                                            }`}
+                                        >
+                                            <span>🤖</span>
+                                            <span>ChatGPT</span>
+                                        </button>
                                     </div>
                                 </div>
 
@@ -1144,7 +1202,7 @@ const BlogsDashboard = () => {
                                                 <div className="flex items-center gap-2">
                                                     <span className="animate-spin text-amber-500 text-sm">💫</span>
                                                     <span className="text-[11px] font-bold text-black/70 animate-pulse">
-                                                        Generating Content...
+                                                        Generating with {aiProvider === 'gemini' ? 'Gemini 3.8 Flash' : 'ChatGPT'}...
                                                     </span>
                                                 </div>
                                             )}
@@ -1156,7 +1214,11 @@ const BlogsDashboard = () => {
                                             disabled={isGenerating || !primaryKeyword.trim()}
                                             whileHover={{ scale: 1.02 }}
                                             whileTap={{ scale: 0.98 }}
-                                            className="px-5 py-2.5 bg-gradient-to-r from-[#de5e18] to-[#de5e18] hover:from-[#d94400] hover:to-[#d94400] text-white disabled:opacity-40 rounded-xl font-bold text-xs shadow-none hover:shadow transition-all cursor-pointer flex items-center gap-1.5"
+                                            className={`px-5 py-2.5 text-white disabled:opacity-40 rounded-xl font-bold text-xs shadow-none hover:shadow transition-all cursor-pointer flex items-center gap-1.5 ${
+                                                aiProvider === 'gemini'
+                                                    ? 'bg-gradient-to-r from-[#de5e18] to-[#ea580c] hover:from-[#c2410c] hover:to-[#c2410c]'
+                                                    : 'bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800'
+                                            }`}
                                         >
                                             {isGenerating ? (
                                                 <>
@@ -1165,7 +1227,7 @@ const BlogsDashboard = () => {
                                                 </>
                                             ) : (
                                                 <>
-                                                    <span>✨ Generate Blog with AI</span>
+                                                    <span>{aiProvider === 'gemini' ? '⚡ Generate SEO Blog (Gemini)' : '✨ Generate Blog (ChatGPT)'}</span>
                                                 </>
                                             )}
                                         </motion.button>
@@ -1249,23 +1311,73 @@ const BlogsDashboard = () => {
                             </div>
 
                             {/* Image Input */}
-                            <div className="flex flex-col gap-1.5 md:col-span-2">
-                                <label className="text-xs font-extrabold uppercase text-black/40 tracking-wider">Cover Image Prompt (AI Generation)</label>
-                                <div className="flex gap-2">
+                            <div className="flex flex-col gap-2 md:col-span-2 p-4 bg-amber-50/40 rounded-2xl border border-amber-200/80">
+                                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-xs font-extrabold uppercase text-black/70 tracking-wider">Cover Image Prompt (AI Generation)</span>
+                                        <span className={`text-[10px] px-2 py-0.5 rounded-full font-extrabold uppercase tracking-wider ${
+                                            imageProvider === 'gemini'
+                                                ? 'bg-[#de5e18]/15 text-[#de5e18] border border-[#de5e18]/30'
+                                                : 'bg-emerald-100 text-emerald-700 border border-emerald-300'
+                                        }`}>
+                                            {imageProvider === 'gemini' ? 'Nano Banana Pro' : 'OpenAI'}
+                                        </span>
+                                    </div>
+
+                                    {/* Image AI Engine Selector */}
+                                    <div className="flex items-center bg-black/5 p-0.5 rounded-lg border border-black/10 shrink-0 self-start sm:self-auto">
+                                        <button
+                                            type="button"
+                                            onClick={() => setImageProvider('gemini')}
+                                            className={`px-2.5 py-1 rounded-md text-[11px] font-bold transition-all flex items-center gap-1 cursor-pointer ${
+                                                imageProvider === 'gemini'
+                                                    ? 'bg-white text-[#de5e18] shadow-sm'
+                                                    : 'text-black/60 hover:text-black'
+                                            }`}
+                                        >
+                                            <span>⚡</span>
+                                            <span>Nano Banana Pro</span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            onClick={() => setImageProvider('openai')}
+                                            className={`px-2.5 py-1 rounded-md text-[11px] font-bold transition-all flex items-center gap-1 cursor-pointer ${
+                                                imageProvider === 'openai'
+                                                    ? 'bg-white text-[#0f0f0f] shadow-sm'
+                                                    : 'text-black/60 hover:text-black'
+                                            }`}
+                                        >
+                                            <span>🤖</span>
+                                            <span>OpenAI</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col sm:flex-row gap-2">
                                     <input
                                         type="text"
                                         value={imagePrompt}
                                         onChange={(e) => setImagePrompt(e.target.value)}
-                                        placeholder="e.g. A professional legal illustration..."
+                                        placeholder="e.g. Modern dental clinic with friendly dentist and patient consultation..."
                                         className="p-3.5 border border-black/20 rounded-xl focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] focus:outline-none text-xs sm:text-sm font-semibold text-black/80 bg-white flex-1"
                                     />
                                     <button
                                         type="button"
-                                        onClick={handleGenerateImage}
+                                        onClick={() => handleGenerateImage()}
                                         disabled={isGeneratingImage || !imagePrompt.trim()}
-                                        className="px-4 py-3 bg-[#de5e18]/5 hover:bg-[#de5e18]/10 border border-[#de5e18]/30 text-[#de5e18] rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer disabled:opacity-50"
+                                        className={`px-5 py-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer disabled:opacity-50 text-white shadow-none hover:shadow shrink-0 ${
+                                            imageProvider === 'gemini'
+                                                ? 'bg-[#de5e18] hover:bg-[#c2410c]'
+                                                : 'bg-emerald-600 hover:bg-emerald-700'
+                                        }`}
                                     >
-                                        <span>{isGeneratingImage ? '💫 Generating...' : '✨ Generate AI'}</span>
+                                        <span>
+                                            {isGeneratingImage
+                                                ? '💫 Generating...'
+                                                : imageProvider === 'gemini'
+                                                    ? '⚡ Generate (Nano Banana Pro)'
+                                                    : '✨ Generate (OpenAI)'}
+                                        </span>
                                     </button>
                                 </div>
                             </div>
@@ -1303,20 +1415,54 @@ const BlogsDashboard = () => {
 
                         {/* Generated Image Preview Block */}
                         {generatedImageUrl && (
-                            <div className="p-4 bg-[#de5e18]/5/50 rounded-2xl border border-amber-200 flex flex-col items-center gap-3">
-                                <span className="text-[10px] text-[#de5e18] font-bold uppercase tracking-wider">AI Generated Image</span>
+                            <div className="p-5 bg-gradient-to-br from-amber-50/60 to-orange-50/30 rounded-2xl border border-amber-200 flex flex-col items-center gap-3">
+                                <div className="w-full flex items-center justify-between">
+                                    <span className="text-[11px] text-[#de5e18] font-extrabold uppercase tracking-wider flex items-center gap-1.5">
+                                        <span>⚡</span> Nano Banana Pro Cover Preview (1200x630)
+                                    </span>
+                                    <button
+                                        type="button"
+                                        onClick={() => setGeneratedImageUrl(null)}
+                                        className="text-[11px] text-black/40 hover:text-black font-semibold cursor-pointer"
+                                    >
+                                        ✕ Discard
+                                    </button>
+                                </div>
+
                                 <img
                                     src={generatedImageUrl}
-                                    alt="generated preview"
-                                    className="w-full max-w-sm h-40 object-cover rounded-xl border border-amber-200 shadow-none"
+                                    alt={generatedImageAlt || "AI Generated Cover"}
+                                    className="w-full max-w-md h-52 object-cover rounded-xl border border-amber-200/80 shadow-md"
                                 />
+
+                                {generatedImageAlt && (
+                                    <div className="w-full max-w-md p-2.5 bg-white rounded-lg border border-amber-200/70 text-[11px] text-black/80 flex items-center justify-between gap-2">
+                                        <div className="truncate">
+                                            <span className="font-bold text-[#de5e18]">SEO Alt Text: </span>
+                                            <span className="italic font-medium">"{generatedImageAlt}"</span>
+                                        </div>
+                                        <span className="text-[9px] px-1.5 py-0.5 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded font-bold shrink-0">
+                                            {generatedImageAlt.length} chars (Screaming Frog OK)
+                                        </span>
+                                    </div>
+                                )}
+
                                 <button
                                     type="button"
                                     onClick={handleUploadGeneratedImage}
                                     disabled={isUploadingGenerated}
-                                    className="px-4 py-2 bg-[#de5e18] text-white rounded-lg text-xs font-bold hover:bg-[#d94400] transition-colors disabled:opacity-50"
+                                    className="px-5 py-2.5 bg-[#de5e18] text-white rounded-xl text-xs font-bold hover:bg-[#c2410c] transition-all disabled:opacity-50 flex items-center gap-2 cursor-pointer shadow-sm"
                                 >
-                                    {isUploadingGenerated ? 'Uploading to Firebase...' : 'Upload this to Firebase & Use as Cover'}
+                                    {isUploadingGenerated ? (
+                                        <>
+                                            <span className="animate-spin text-xs">💫</span>
+                                            <span>Uploading to Firebase Storage...</span>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <span>☁️ Upload to Firebase & Set as Cover</span>
+                                        </>
+                                    )}
                                 </button>
                             </div>
                         )}
