@@ -1,0 +1,623 @@
+====================================================================================================
+                        SOUTHERN EDGE MARKETING - SEO & DIGITAL AUDIT
+                                COMPREHENSIVE ACTION PLAN
+====================================================================================================
+Generated: 2026-09-14
+Total Audit Points: 32 Items
+Target Domain: southernedgemarketing.com / www.southernedgemarketing.com
+Scope: Technical SEO, On-Page, Local SEO, E-E-A-T, Content Strategy, AEO, GEO
+
+====================================================================================================
+1. EXECUTIVE SUMMARY & DASHBOARD
+====================================================================================================
+
+[PRIORITY BANDS]
+- Do First (Immediate / High ROI) : 10 items (31.25%)
+- Do Next  (Core Foundations)     : 11 items (34.38%)
+- Do Later (Deep GEO & Enhancements): 11 items (34.38%)
+
+[PILLAR BREAKDOWN]
+- Technical SEO : 7 items  (#1, #3, #4, #15, #22, #31, #32)
+- On-Page SEO   : 1 item   (#2)
+- Local SEO     : 3 items  (#5, #6, #16)
+- E-E-A-T       : 6 items  (#7, #8, #9, #10, #11, #12)
+- Content       : 4 items  (#13, #14, #29, #30)
+- AEO (Answer Engine Opt): 5 items (#17, #18, #19, #20, #21)
+- GEO (Generative Engine Opt): 6 items (#23, #24, #25, #26, #27, #28)
+
+[SEVERITY LEVELS]
+- Critical : 4 items  (#5, #6, #7, #23)
+- High     : 10 items (#1, #3, #4, #8, #9, #10, #17, #21, #24, #32)
+- Medium   : 17 items (#2, #11, #12, #13, #14, #15, #16, #18, #19, #20, #25, #26, #27, #28, #29, #30, #31)
+- Low      : 1 item   (#22)
+
+====================================================================================================
+2. MASTER QUICK-REFERENCE INDEX
+====================================================================================================
+ID  | Pillar    | Severity | Imp | Eff | Score | Band     | Issue Summary
+----+-----------+----------+-----+-----+-------+----------+-------------------------------------------------------------
+01  | Technical | High     |  4  |  1  |  40.0 | Do first | Open Graph/Twitter tags inherited from homepage on service/city pages
+02  | On-Page   | Medium   |  3  |  1  |  30.0 | Do first | Title tags append brand twice
+03  | Technical | High     |  4  |  1  |  40.0 | Do first | Canonical tags point to non-www while served on www
+04  | Technical | High     |  4  |  3  |  13.3 | Do later | Duplicated desktop and mobile DOM inflates every page
+05  | Local     | Critical |  5  |  2  |  25.0 | Do first | No physical address or NAP anywhere on the site
+06  | Local     | Critical |  5  |  2  |  25.0 | Do first | No Google Business Profile found for the brand
+07  | E-E-A-T   | Critical |  5  |  2  |  25.0 | Do first | Testimonial photos are stock images attributed to named people
+08  | E-E-A-T   | High     |  4  |  3  |  13.3 | Do later | Result claims are specific but unverifiable and unattributed
+09  | E-E-A-T   | High     |  4  |  2  |  20.0 | Do next  | Company statistics are inconsistent across the site
+10  | E-E-A-T   | High     |  4  |  1  |  40.0 | Do first | '5.0 rating' appears with no source, platform or review count
+11  | E-E-A-T   | Medium   |  3  |  2  |  15.0 | Do next  | Founder bio does not establish authority in marketing
+12  | E-E-A-T   | Medium   |  3  |  2  |  15.0 | Do next  | No published/updated dates & single author across site
+13  | Content   | Medium   |  4  |  2  |  20.0 | Do next  | No pricing or engagement-model information anywhere
+14  | Content   | Medium   |  3  |  3  |  10.0 | Do later | Dubai page markets Arabic capability site does not demonstrate
+15  | Technical | Medium   |  3  |  2  |  15.0 | Do next  | og:locale is en_IN everywhere (Dubai/London/NY) & no hreflang
+16  | Local     | Medium   |  3  |  2  |  15.0 | Do next  | Indian phone number only on pages targeting Dubai/London/NY
+17  | AEO       | High     |  5  |  2  |  25.0 | Do next  | VERIFY: Structured data (JSON-LD) not confirmed in HTML
+18  | AEO       | Medium   |  4  |  2  |  20.0 | Do next  | FAQ answers bury the answer behind filler openers
+19  | AEO       | Medium   |  4  |  3  |  13.3 | Do later | No extractable definitions, comparisons or step lists in copy
+20  | AEO       | Medium   |  3  |  3  |  10.0 | Do later | Marketing language is too inflated to be quoted as fact
+21  | AEO       | High     |  5  |  1  |  50.0 | Do first | VERIFY: AI crawler access in robots.txt and add llms.txt
+22  | Technical | Low      |  2  |  1  |  20.0 | Do next  | Site-wide footer link redirects on every page (/author -> /authors)
+23  | GEO       | Critical |  5  |  3  |  16.7 | Do first | Brand has almost no presence off its own domain (directories/PR)
+24  | GEO       | High     |  5  |  4  |  12.5 | Do later | No earned media, guest bylines or digital PR for own brand
+25  | GEO       | Medium   |  5  |  4  |  12.5 | Do later | No original data or proprietary research assets
+26  | GEO       | Medium   |  4  |  3  |  13.3 | Do later | No presence in communities AI weights heavily (Reddit/Quora/LI)
+27  | GEO       | Medium   |  4  |  3  |  13.3 | Do later | Entity identity is ambiguous (name vs Delhi/Dubai location)
+28  | GEO       | Medium   |  4  |  2  |  20.0 | Do next  | Case studies exist on-site but nowhere else
+29  | Content   | Medium   |  4  |  3  |  13.3 | Do later | No comparison or shortlist content targeting agency-selection
+30  | Content   | Medium   |  3  |  2  |  15.0 | Do next  | Blog posts lack structure (TOC, author, dates, FAQ) that city pages have
+31  | Technical | Medium   |  4  |  1  |  40.0 | Do first | VERIFY: Sitemap coverage against real page count (>150 URLs)
+32  | Technical | High     |  4  |  3  |  13.3 | Do later | VERIFY: Core Web Vitals on real devices (DOM size / unoptimized logos)
+
+====================================================================================================
+3. DETAILED ACTION ITEMS (1 - 32)
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+[ITEM 01]
+----------------------------------------------------------------------------------------------------
+Pillar          : Technical
+Issue           : Open Graph and Twitter card tags are inherited from the homepage on service and location templates
+Where It Shows  : Verified on /services/seo and /services/seo/dubai — og:title, og:description and og:url all return homepage values. The /authors/ template gets it right.
+Why It Matters  : Every time anyone shares a service or city page on LinkedIn, WhatsApp, Slack or X, it renders as 'Digital Marketing Agency Delhi' with generic copy. You lose the click and the page-specific relevance signal. It also tells crawlers the page's canonical identity is the homepage.
+How To Fix It   : In Next.js, move openGraph and twitter into each route's generateMetadata rather than inheriting from the root layout. Set og:title and og:description from the page's own title/description, og:url from the page's canonical, and generate a per-page og:image (city name + service). Re-scrape with the LinkedIn Post Inspector and Facebook Sharing Debugger afterwards.
+Severity        : High
+Impact (1-5)    : 4
+Effort (1-5)    : 1
+Priority Score  : 40.0
+Band            : Do first
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 02]
+----------------------------------------------------------------------------------------------------
+Pillar          : On-Page
+Issue           : Title tags append the brand twice
+Where It Shows  : /services/seo/dubai renders 'SEO Company in Dubai | Southern Edge Marketing | Southern Edge Marketing'. Same on /authors/ameet-nangia.
+Why It Matters  : Wastes 25+ characters of a ~60-character budget, so the meaningful part gets truncated in results. Looks careless on an SEO agency's own site, which is a credibility problem when prospects check your work.
+How To Fix It   : Fix the title template so the brand suffix is only appended when the page title does not already contain it — or stop storing the brand in the page-level title and let the template add it once. Audit all titles afterwards and keep them under 60 characters.
+Severity        : Medium
+Impact (1-5)    : 3
+Effort (1-5)    : 1
+Priority Score  : 30.0
+Band            : Do first
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 03]
+----------------------------------------------------------------------------------------------------
+Pillar          : Technical
+Issue           : Canonical tags point to the non-www host while pages are served on www
+Where It Shows  : Every page: canonical reads https://southernedgemarketing.com/... but the live URL is https://www.southernedgemarketing.com/...
+Why It Matters  : You are telling search engines the authoritative version of every page lives on a different hostname than the one they crawled. At best it wastes a redirect hop on every URL; at worst it splits signals between two hosts and slows indexing of your newer city pages.
+How To Fix It   : Pick one host — www or non-www, it does not matter which, but pick one. Make the 301 redirect point to it, make every canonical use it, make internal links and the sitemap use it, and set the same version as the property in Google Search Console. Then request re-indexing of key pages.
+Severity        : High
+Impact (1-5)    : 4
+Effort (1-5)    : 1
+Priority Score  : 40.0
+Band            : Do first
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 04]
+----------------------------------------------------------------------------------------------------
+Pillar          : Technical
+Issue           : Duplicated desktop and mobile DOM inflates every page
+Where It Shows  : Homepage: the 'Why Partner With Us' block appears 5 times in the HTML, 'How We Work' 5 times, the FAQ twice, the integrations strip twice, the footer twice.
+Why It Matters  : Crawlers and LLM extractors see the same paragraphs repeated many times on one page. It muddies which copy is the real content, bloats the HTML payload (hurting Core Web Vitals), and makes clean passage extraction for AI answers much harder.
+How To Fix It   : Render one DOM and control layout with CSS, or use a single responsive component instead of separate desktop and mobile trees. If both trees must exist, ensure only one is present in the server-rendered HTML. Verify by viewing source and searching for a distinctive sentence — it should appear once.
+Severity        : High
+Impact (1-5)    : 4
+Effort (1-5)    : 3
+Priority Score  : 13.3
+Band            : Do later
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 05]
+----------------------------------------------------------------------------------------------------
+Pillar          : Local
+Issue           : No physical address or NAP anywhere on the site
+Where It Shows  : Footer says only 'Offices: Delhi & Dubai'. No street address, no postcode, no map, on any page including /contact and /about.
+Why It Matters  : Name-Address-Phone consistency is foundational for local ranking. Without an address you cannot properly verify a Google Business Profile, you cannot build citations, and you will not appear in the Delhi local pack — which is where a large share of 'digital marketing agency Delhi' clicks actually go.
+How To Fix It   : Publish the full Delhi address (and Dubai, if it is a real office rather than a virtual one) in the footer and on /contact. Add an embedded map. Mark it up with LocalBusiness or ProfessionalService schema including address, geo, openingHours and telephone. Keep the exact same format everywhere you publish it.
+Severity        : Critical
+Impact (1-5)    : 5
+Effort (1-5)    : 2
+Priority Score  : 25.0
+Band            : Do first
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 06]
+----------------------------------------------------------------------------------------------------
+Pillar          : Local
+Issue           : No Google Business Profile found for the brand
+Where It Shows  : A brand search surfaced no GBP, no map pack entry and no Google reviews.
+Why It Matters  : For a local service business this is the single largest missed channel. It also removes the most-cited source of independent reviews — which is exactly what both Google and AI assistants look for when deciding whether to recommend you.
+How To Fix It   : Create and verify a Google Business Profile for the Delhi office. Complete every field: categories, services, service areas, hours, description, photos. Then run a deliberate review campaign with past clients — aim for 20+ genuine reviews in the first quarter. Repeat for Dubai if you have a verifiable presence there.
+Severity        : Critical
+Impact (1-5)    : 5
+Effort (1-5)    : 2
+Priority Score  : 25.0
+Band            : Do first
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 07]
+----------------------------------------------------------------------------------------------------
+Pillar          : E-E-A-T
+Issue           : Testimonial photos are stock images attributed to named individuals
+Where It Shows  : Client photos on /services/seo and /services/seo/dubai are Unsplash stock URLs. The same image (photo-1507003211169) appears as both 'Rohan Kapoor, The Fat Cookie' and 'Faisal Al-Jamil, Elysian Mansions Dubai'.
+Why It Matters  : This is the most damaging issue on the site. Anyone who reverse-image-searches or simply visits two pages sees the same face under two names — as an agency selling trust, that is hard to recover from. If these are also marked up as Review schema, it is a Google structured-data policy violation and risks a manual action.
+How To Fix It   : Replace with real client headshots used with written permission, or drop photos entirely and use the client's company logo plus full name, title and company. Never reuse an image across two identities. If a testimonial is illustrative rather than from a named real client, do not attribute it to a named person at all.
+Severity        : Critical
+Impact (1-5)    : 5
+Effort (1-5)    : 2
+Priority Score  : 25.0
+Band            : Do first
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 08]
+----------------------------------------------------------------------------------------------------
+Pillar          : E-E-A-T
+Issue           : Result claims are specific but unverifiable and unattributed
+Where It Shows  : '314% increase in organic leads in 8 months', '250% lift in non-branded organic revenue', '160 percent', '115 percent' — none tied to a named client, date range or measurement method.
+Why It Matters  : Precise-sounding numbers with no source are a classic low-trust pattern that both human buyers and LLMs discount. AI assistants preferentially cite claims they can attribute; an unattributed statistic is close to worthless for GEO.
+How To Fix It   : For each claim, either (a) publish a full case study page with the client named, the period covered, the starting baseline, the measurement tool and a client quote approving the numbers, and link the claim to it, or (b) remove the number. Anonymised is acceptable if the industry, size and timeframe are stated ('a 40-person B2B SaaS firm, Jan-Aug 2025, measured in GA4').
+Severity        : High
+Impact (1-5)    : 4
+Effort (1-5)    : 3
+Priority Score  : 13.3
+Band            : Do later
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 09]
+----------------------------------------------------------------------------------------------------
+Pillar          : E-E-A-T
+Issue           : Company statistics are inconsistent across the site
+Where It Shows  : Homepage alone: '100+ businesses', '1500+ Projects Delivered', '95% Client Retention', '20+ Industry Specialists', '8+ Years Experience'. Footer separately claims '30+ Client Case Studies'.
+Why It Matters  : 1500 projects against 100+ businesses against 30+ case studies does not reconcile, and a reader will notice. For GEO this matters doubly: an LLM building a profile of your company ingests conflicting figures, lowers its confidence, and is then less likely to state anything about you at all.
+How To Fix It   : Agree one canonical set of facts — founding year, legal entity name, headcount, clients served, projects delivered, markets — and publish it identically on /about, in your Organization schema, on LinkedIn and on every directory listing. Where a number cannot be substantiated, remove it rather than rounding it up.
+Severity        : High
+Impact (1-5)    : 4
+Effort (1-5)    : 2
+Priority Score  : 20.0
+Band            : Do next
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 10]
+----------------------------------------------------------------------------------------------------
+Pillar          : E-E-A-T
+Issue           : '5.0 rating' appears with no source, platform or review count
+Where It Shows  : Homepage hero and the 'Why Partner With Us' section.
+Why It Matters  : An unsourced rating is not a trust signal, it is a red flag — and if it is marked up as AggregateRating without real reviews behind it, it breaches Google's review snippet policy.
+How To Fix It   : Either link the rating to a live third-party profile showing the review count (Google, Clutch, GoodFirms) and state the count alongside it, or remove the claim until you have the reviews to back it. Never use AggregateRating schema for self-reported ratings.
+Severity        : High
+Impact (1-5)    : 4
+Effort (1-5)    : 1
+Priority Score  : 40.0
+Band            : Do first
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 11]
+----------------------------------------------------------------------------------------------------
+Pillar          : E-E-A-T
+Issue           : Founder bio does not establish authority in marketing
+Where It Shows  : /authors/ameet-nangia leads with 'demonstrated history of working in the construction industry' — reads as a lifted LinkedIn summary. No credentials, certifications, publications, talks or press.
+Why It Matters  : The author page is the site's main E-E-A-T anchor and it currently undersells you. LLMs building an entity profile for a person look for corroborating signals across the web; right now there is one LinkedIn URL and nothing else.
+How To Fix It   : Rewrite around marketing proof: years in performance marketing, named client verticals (restaurants, hospitality, e-commerce), platforms certified on, budget managed, results owned. Add Google Ads / Analytics certifications with verification links. Add sameAs links to LinkedIn, X, Crunchbase and any published bylines. Mark up as Person schema with knowsAbout.
+Severity        : Medium
+Impact (1-5)    : 3
+Effort (1-5)    : 2
+Priority Score  : 15.0
+Band            : Do next
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 12]
+----------------------------------------------------------------------------------------------------
+Pillar          : E-E-A-T
+Issue           : No published or updated dates, and a single author across the whole site
+Where It Shows  : Service pages, city pages and blog posts show no visible publish or last-updated date. Every author box is the founder.
+Why It Matters  : Freshness is a direct ranking and citation factor — AI assistants strongly prefer content they can date. A site with one author and no dates reads as a thin operation regardless of content quality.
+How To Fix It   : Add visible 'Published' and 'Last updated' dates to every content page, backed by datePublished and dateModified in schema. Update them honestly when you revise. Add at least one more named contributor or a 'Reviewed by' line to show editorial process.
+Severity        : Medium
+Impact (1-5)    : 3
+Effort (1-5)    : 2
+Priority Score  : 15.0
+Band            : Do next
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 13]
+----------------------------------------------------------------------------------------------------
+Pillar          : Content
+Issue           : No pricing or engagement-model information anywhere
+Where It Shows  : No page covers cost, retainer ranges, project minimums or engagement models.
+Why It Matters  : 'How much does SEO cost in Delhi' is a high-volume, high-intent query and one of the most common things people now ask AI assistants. With nothing on your site, you cannot be the source of that answer — a competitor will be.
+How To Fix It   : Publish a pricing or 'how we price' page: retainer bands, project minimums, what changes the price, what a typical engagement includes. Ranges are fine and convert better than silence. Add FAQ entries covering cost and minimum commitment, and mark up with Offer or PriceSpecification where honest.
+Severity        : Medium
+Impact (1-5)    : 4
+Effort (1-5)    : 2
+Priority Score  : 20.0
+Band            : Do next
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 14]
+----------------------------------------------------------------------------------------------------
+Pillar          : Content
+Issue           : The Dubai page markets Arabic capability the site does not demonstrate
+Where It Shows  : /services/seo/dubai sells bilingual English-Arabic SEO, RTL formatting and native Arabic copywriters. The site itself is English-only with og:locale set to en_IN.
+Why It Matters  : A prospect in Dubai will notice immediately. It also means the page argues for hreflang and localisation while the site implements neither — the credibility cost is self-inflicted.
+How To Fix It   : Either publish a genuine Arabic version of the Dubai pages with correct hreflang and RTL, or soften the claim to reflect what you actually deliver today (for example, managing Arabic campaigns through vetted native partners). Set og:locale correctly per market.
+Severity        : Medium
+Impact (1-5)    : 3
+Effort (1-5)    : 3
+Priority Score  : 10.0
+Band            : Do later
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 15]
+----------------------------------------------------------------------------------------------------
+Pillar          : Technical
+Issue           : og:locale is en_IN on every page including Dubai, London and New York, and there is no hreflang
+Where It Shows  : Verified on /services/seo/dubai.
+Why It Matters  : You run one service across seven-plus countries with no locale signalling. Search engines have no instruction on which market each page serves, which weakens international targeting for exactly the pages you have invested most content effort in.
+How To Fix It   : Set og:locale per page to match the target market. If you build genuine language variants, implement hreflang with correct reciprocal tags and an x-default. If pages stay English-only, at minimum align og:locale and use geo-specific content signals (currency, local phone, local address) to make targeting unambiguous.
+Severity        : Medium
+Impact (1-5)    : 3
+Effort (1-5)    : 2
+Priority Score  : 15.0
+Band            : Do next
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 16]
+----------------------------------------------------------------------------------------------------
+Pillar          : Local
+Issue           : Only an Indian phone number on pages targeting Dubai, London, New York and Toronto
+Where It Shows  : +91 87009 01769 in the header, footer and QR code on every page.
+Why It Matters  : A Dubai enterprise prospect will not dial an Indian mobile from a page claiming DIFC expertise. It undermines the local positioning and reduces conversion on your best content.
+How To Fix It   : Add a UAE number for Dubai pages (and a local or toll-free number for other priority markets). Display the right number by page region. Keep each number consistent across the site, the relevant Google Business Profile and every directory listing.
+Severity        : Medium
+Impact (1-5)    : 3
+Effort (1-5)    : 2
+Priority Score  : 15.0
+Band            : Do next
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 17]
+----------------------------------------------------------------------------------------------------
+Pillar          : AEO
+Issue           : VERIFY: structured data could not be confirmed in the rendered output
+Where It Shows  : JSON-LD was not visible in the extracted HTML for any page tested. This may be an extraction limitation rather than a genuine absence.
+Why It Matters  : Schema is how you tell engines what an entity, service, FAQ or review actually is. If it is missing you lose FAQ rich results, breadcrumb display and much of the machine-readable context that AI answers rely on.
+How To Fix It   : Run Google's Rich Results Test and Schema.org validator on the homepage, a service page, a city page, the author page and a blog post. Then ensure each has: Organization + LocalBusiness (home), Service + FAQPage + BreadcrumbList (service and city pages), Person (author), Article with datePublished/dateModified (blog). Link them with @id references so they form one graph rather than disconnected blocks.
+Severity        : High
+Impact (1-5)    : 5
+Effort (1-5)    : 2
+Priority Score  : 25.0
+Band            : Do next
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 18]
+----------------------------------------------------------------------------------------------------
+Pillar          : AEO
+Issue           : FAQ answers bury the answer behind filler openers
+Where It Shows  : Examples: 'Absolutely. In fact, we highly recommend it.' and 'SEO is a strategic, compounding investment.' before the actual answer arrives.
+Why It Matters  : Snippet and AI-answer extraction takes the opening sentences. If your first sentence is throat-clearing, the extracted passage says nothing useful and a competitor's cleaner answer gets used instead.
+How To Fix It   : Rewrite every FAQ answer so the first sentence answers the question directly and completely in 40-60 words, then elaborate. 'How long does SEO take?' should open with 'Most clients see measurable ranking movement in 3-4 months and meaningful lead growth by month 6.' Supporting nuance comes after.
+Severity        : Medium
+Impact (1-5)    : 4
+Effort (1-5)    : 2
+Priority Score  : 20.0
+Band            : Do next
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 19]
+----------------------------------------------------------------------------------------------------
+Pillar          : AEO
+Issue           : No extractable definitions, comparisons or step lists in the main copy
+Where It Shows  : Service page copy is long, dense, adjective-heavy paragraphs. No 'What is X' blocks, no comparison tables, no numbered procedures.
+Why It Matters  : These three formats are disproportionately what gets lifted into featured snippets and AI answers. Dense persuasive prose is the format least likely to be quoted.
+How To Fix It   : For each service page add: (1) a 40-60 word plain definition under a 'What is [service]?' H2, (2) at least one genuine comparison table (SEO vs PPC, in-house vs agency, Shopify vs custom), (3) a numbered process list with concrete timings. Keep the persuasive copy, but put the extractable blocks above it.
+Severity        : Medium
+Impact (1-5)    : 4
+Effort (1-5)    : 3
+Priority Score  : 13.3
+Band            : Do later
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 20]
+----------------------------------------------------------------------------------------------------
+Pillar          : AEO
+Issue           : Marketing language is too inflated to be quoted as fact
+Where It Shows  : 'uncompromising', 'forensic', 'relentless', 'elite', 'undisputed leader', 'unshakeable, penalty-proof organic presence'.
+Why It Matters  : AI assistants extract checkable claims. Superlatives are unquotable, and 'penalty-proof' is a promise no honest SEO can make — which is itself a credibility problem with informed buyers.
+How To Fix It   : Replace adjectives with specifics. 'Forensic technical audits' becomes 'a 120-point technical audit covering crawl, index, speed and schema, delivered in 10 working days'. Numbers, timeframes and deliverables are quotable; adjectives are not.
+Severity        : Medium
+Impact (1-5)    : 3
+Effort (1-5)    : 3
+Priority Score  : 10.0
+Band            : Do later
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 21]
+----------------------------------------------------------------------------------------------------
+Pillar          : AEO
+Issue           : VERIFY: AI crawler access and llms.txt
+Where It Shows  : robots.txt could not be retrieved during this audit.
+Why It Matters  : If GPTBot, ClaudeBot, PerplexityBot, CCBot or Google-Extended are disallowed, you are invisible in AI answers no matter how good the content is. Many Next.js starters and CDN security presets block them by default.
+How To Fix It   : Open /robots.txt and confirm those agents are allowed. Confirm your sitemap is referenced there. Then add an /llms.txt file listing your key pages with one-line descriptions — a low-cost, emerging convention that helps AI systems index your most important content correctly.
+Severity        : High
+Impact (1-5)    : 5
+Effort (1-5)    : 1
+Priority Score  : 50.0
+Band            : Do first
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 22]
+----------------------------------------------------------------------------------------------------
+Pillar          : Technical
+Issue           : Site-wide footer link redirects on every page
+Where It Shows  : 'Founder Profile' points to /author/ameet-nangia which 301s to /authors/ameet-nangia.
+Why It Matters  : A redirect hop replicated across every page on the site is unnecessary crawl waste and a small signal-dilution. Trivial to fix.
+How To Fix It   : Point the footer link directly at /authors/ameet-nangia. Then crawl the site with Screaming Frog and fix every other internal link that resolves via a redirect.
+Severity        : Low
+Impact (1-5)    : 2
+Effort (1-5)    : 1
+Priority Score  : 20.0
+Band            : Do next
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 23]
+----------------------------------------------------------------------------------------------------
+Pillar          : GEO
+Issue           : The brand has almost no presence off its own domain
+Where It Shows  : A brand-name search returns only southernedgemarketing.com pages. No Clutch, GoodFirms, DesignRush, Sortlist, The Manifest, Semrush Agency Partners, Crunchbase or press coverage.
+Why It Matters  : This is the root cause of the low GEO score. When someone asks an AI 'best digital marketing agency in Delhi', the model composes an answer from third-party directories, listicles and reviews — not from agency websites. With no presence in those sources you are structurally excluded, regardless of how good your site is.
+How To Fix It   : Build the citation base deliberately: claim and complete profiles on Clutch, GoodFirms, DesignRush, Sortlist, The Manifest, Semrush Agency Partners and Crunchbase. Each needs a full portfolio, verified reviews and identical NAP. Target 15-20 quality listings in 90 days. This is the highest-leverage work on this entire sheet.
+Severity        : Critical
+Impact (1-5)    : 5
+Effort (1-5)    : 3
+Priority Score  : 16.7
+Band            : Do first
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 24]
+----------------------------------------------------------------------------------------------------
+Pillar          : GEO
+Issue           : No earned media, guest bylines or digital PR for your own brand
+Where It Shows  : Your SEO service page sells digital PR and high-authority link acquisition. There is no evidence of any for Southern Edge itself.
+Why It Matters  : Prospects who check will spot the gap immediately. More practically, earned mentions on publications LLMs already trust are the fastest route into generated answers — a single citation in a respected industry publication outperforms dozens of directory entries.
+How To Fix It   : Pitch guest posts to Indian and UAE marketing publications and startup outlets. Respond to journalist requests through HARO-style services. Publish original data (see #25) and pitch it. Aim for 4-6 earned placements per quarter, each naming the founder as author.
+Severity        : High
+Impact (1-5)    : 5
+Effort (1-5)    : 4
+Priority Score  : 12.5
+Band            : Do later
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 25]
+----------------------------------------------------------------------------------------------------
+Pillar          : GEO
+Issue           : No original data or research assets
+Where It Shows  : All content is explanatory. Nothing publishes numbers only you have.
+Why It Matters  : Original statistics are the most-cited content format in AI-generated answers, because a model quoting a number needs a source to attribute. Explanatory content, however good, is replaceable — a hundred sites explain what technical SEO is.
+How To Fix It   : Publish one original research piece per quarter from data you already hold: page-speed benchmarks for Delhi e-commerce sites, average Meta ad CPCs across Indian verticals, a Core Web Vitals study of the top 100 Delhi agency sites. Give it a stable URL, a clear methodology section and a downloadable dataset, then pitch it.
+Severity        : Medium
+Impact (1-5)    : 5
+Effort (1-5)    : 4
+Priority Score  : 12.5
+Band            : Do later
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 26]
+----------------------------------------------------------------------------------------------------
+Pillar          : GEO
+Issue           : No presence in the communities AI models weight heavily
+Where It Shows  : No Reddit, Quora or substantive LinkedIn long-form footprint under the brand or founder.
+Why It Matters  : Reddit and Quora are heavily represented in the training and retrieval data behind AI answers, and 'recommend an agency' threads are exactly where models look for candidate names.
+How To Fix It   : Have the founder answer genuinely useful questions in r/SEO, r/digital_marketing, r/india and relevant Quora topics — disclosed, helpful, not promotional. Publish weekly LinkedIn long-form posts on specific work. Consistency over months is what registers; spam gets removed and hurts you.
+Severity        : Medium
+Impact (1-5)    : 4
+Effort (1-5)    : 3
+Priority Score  : 13.3
+Band            : Do later
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 27]
+----------------------------------------------------------------------------------------------------
+Pillar          : GEO
+Issue           : Entity identity is ambiguous
+Where It Shows  : The name 'Southern Edge' suggests a US or southern-hemisphere brand; the business is Delhi and Dubai. No founding year, legal entity name, registration or address is published anywhere.
+Why It Matters  : LLMs resolve entities by cross-referencing consistent identifiers. With none published and a geographically misleading name, the model cannot confidently connect mentions of you to one organisation — so it hesitates to name you at all.
+How To Fix It   : Publish an unambiguous entity block on /about: full legal name, founding year, registered address, founder, markets served. Mirror it in Organization schema with sameAs links to every social and directory profile. Create a Crunchbase entry and a Wikidata item. Consistency across all of them is the point.
+Severity        : Medium
+Impact (1-5)    : 4
+Effort (1-5)    : 3
+Priority Score  : 13.3
+Band            : Do later
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 28]
+----------------------------------------------------------------------------------------------------
+Pillar          : GEO
+Issue           : Case studies exist on-site but nowhere else
+Where It Shows  : AMA Legal Solutions, The Fat Cookie, Sage Perfume and JSV live only on your domain.
+Why It Matters  : A case study on your own site is a claim. The same case study on Clutch with a verified client review is evidence — and evidence is what gets cited.
+How To Fix It   : Syndicate each case study to your directory profiles. Ask each client for a verified review on Clutch or Google and a LinkedIn recommendation. Where the client agrees, co-publish on their site with a link back.
+Severity        : Medium
+Impact (1-5)    : 4
+Effort (1-5)    : 2
+Priority Score  : 20.0
+Band            : Do next
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 29]
+----------------------------------------------------------------------------------------------------
+Pillar          : Content
+Issue           : No comparison or shortlist content targeting agency-selection queries
+Where It Shows  : Nothing addressing 'best digital marketing agencies in Delhi', 'how to choose an SEO agency', 'agency vs in-house' or 'what to ask before hiring'.
+Why It Matters  : This is the query space where buyers and AI assistants build shortlists. You currently have no entry point into it.
+How To Fix It   : Publish honest selection-guide content: how to evaluate an agency, questions to ask, red flags, agency vs freelancer vs in-house with real cost comparisons. Being genuinely useful — including about when not to hire an agency — is what gets a piece cited rather than dismissed as marketing.
+Severity        : Medium
+Impact (1-5)    : 4
+Effort (1-5)    : 3
+Priority Score  : 13.3
+Band            : Do later
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 30]
+----------------------------------------------------------------------------------------------------
+Pillar          : Content
+Issue           : Blog posts lack the structure the service pages already have
+Where It Shows  : /blogs posts have no visible table of contents, author box, dates or FAQ block — all of which the city pages do well.
+Why It Matters  : Your best structural practices are not applied to the content most likely to earn links and citations.
+How To Fix It   : Apply the city-page template to every blog post: TOC with anchors, author box, visible dates, an FAQ block and Article schema. This is mostly template work, so it applies retroactively to everything already published.
+Severity        : Medium
+Impact (1-5)    : 3
+Effort (1-5)    : 2
+Priority Score  : 15.0
+Band            : Do next
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 31]
+----------------------------------------------------------------------------------------------------
+Pillar          : Technical
+Issue           : VERIFY: sitemap coverage against the real page count
+Where It Shows  : Sitemap contents could not be retrieved. The footer implies 5 services across 30 cities, so the URL count could exceed 150.
+Why It Matters  : At that scale, pages missing from the sitemap frequently go undiscovered for months, and a stale sitemap wastes crawl budget on URLs that no longer matter.
+How To Fix It   : Confirm /sitemap.xml exists, is referenced in robots.txt, uses the canonical host, includes every indexable page with accurate lastmod values, and excludes redirects and noindex pages. Submit it in Search Console and check Coverage weekly for the first month.
+Severity        : Medium
+Impact (1-5)    : 4
+Effort (1-5)    : 1
+Priority Score  : 40.0
+Band            : Do first
+Owner           : [Unassigned]
+Status          : Not started
+
+----------------------------------------------------------------------------------------------------
+[ITEM 32]
+----------------------------------------------------------------------------------------------------
+Pillar          : Technical
+Issue           : VERIFY: Core Web Vitals on real devices
+Where It Shows  : Not measurable in this audit. The duplicated DOM (#4) and the volume of un-lazy-loaded integration logos on the homepage are likely contributors.
+Why It Matters  : You sell Core Web Vitals optimisation. Field data showing your own site failing is a conversion problem as much as a ranking one — and informed prospects do check.
+How To Fix It   : Run PageSpeed Insights on the homepage, a service page and a city page, using field data not just lab. Fix LCP, INP and CLS to green. Lazy-load below-fold images, serve the integration logos as a sprite or at correct dimensions, and reduce the duplicate DOM. Re-test monthly.
+Severity        : High
+Impact (1-5)    : 4
+Effort (1-5)    : 3
+Priority Score  : 13.3
+Band            : Do later
+Owner           : [Unassigned]
+Status          : Not started
+
+====================================================================================================
+4. TAB-SEPARATED VALUES (TSV) EXPORT (FOR SPREADSHEETS)
+====================================================================================================
+ID	Pillar	Issue	Where it shows up	Why it matters	How to fix it	Severity	Impact (1-5)	Effort (1-5)	Priority Score	Band	Owner	Status
+1	Technical	Open Graph and Twitter card tags are inherited from the homepage on service and location templates	Verified on /services/seo and /services/seo/dubai — og:title, og:description and og:url all return homepage values. The /authors/ template gets it right.	Every time anyone shares a service or city page on LinkedIn, WhatsApp, Slack or X, it renders as 'Digital Marketing Agency Delhi' with generic copy. You lose the click and the page-specific relevance signal. It also tells crawlers the page's canonical identity is the homepage.	In Next.js, move openGraph and twitter into each route's generateMetadata rather than inheriting from the root layout. Set og:title and og:description from the page's own title/description, og:url from the page's canonical, and generate a per-page og:image (city name + service). Re-scrape with the LinkedIn Post Inspector and Facebook Sharing Debugger afterwards.	High	4	1	40.0	Do first		Not started
+2	On-Page	Title tags append the brand twice	/services/seo/dubai renders 'SEO Company in Dubai | Southern Edge Marketing | Southern Edge Marketing'. Same on /authors/ameet-nangia.	Wastes 25+ characters of a ~60-character budget, so the meaningful part gets truncated in results. Looks careless on an SEO agency's own site, which is a credibility problem when prospects check your work.	Fix the title template so the brand suffix is only appended when the page title does not already contain it — or stop storing the brand in the page-level title and let the template add it once. Audit all titles afterwards and keep them under 60 characters.	Medium	3	1	30.0	Do first		Not started
+3	Technical	Canonical tags point to the non-www host while pages are served on www	Every page: canonical reads https://southernedgemarketing.com/... but the live URL is https://www.southernedgemarketing.com/...	You are telling search engines the authoritative version of every page lives on a different hostname than the one they crawled. At best it wastes a redirect hop on every URL; at worst it splits signals between two hosts and slows indexing of your newer city pages.	Pick one host — www or non-www, it does not matter which, but pick one. Make the 301 redirect point to it, make every canonical use it, make internal links and the sitemap use it, and set the same version as the property in Google Search Console. Then request re-indexing of key pages.	High	4	1	40.0	Do first		Not started
+4	Technical	Duplicated desktop and mobile DOM inflates every page	Homepage: the 'Why Partner With Us' block appears 5 times in the HTML, 'How We Work' 5 times, the FAQ twice, the integrations strip twice, the footer twice.	Crawlers and LLM extractors see the same paragraphs repeated many times on one page. It muddies which copy is the real content, bloats the HTML payload (hurting Core Web Vitals), and makes clean passage extraction for AI answers much harder.	Render one DOM and control layout with CSS, or use a single responsive component instead of separate desktop and mobile trees. If both trees must exist, ensure only one is present in the server-rendered HTML. Verify by viewing source and searching for a distinctive sentence — it should appear once.	High	4	3	13.3	Do later		Not started
+5	Local	No physical address or NAP anywhere on the site	Footer says only 'Offices: Delhi & Dubai'. No street address, no postcode, no map, on any page including /contact and /about.	Name-Address-Phone consistency is foundational for local ranking. Without an address you cannot properly verify a Google Business Profile, you cannot build citations, and you will not appear in the Delhi local pack — which is where a large share of 'digital marketing agency Delhi' clicks actually go.	Publish the full Delhi address (and Dubai, if it is a real office rather than a virtual one) in the footer and on /contact. Add an embedded map. Mark it up with LocalBusiness or ProfessionalService schema including address, geo, openingHours and telephone. Keep the exact same format everywhere you publish it.	Critical	5	2	25.0	Do first		Not started
+6	Local	No Google Business Profile found for the brand	A brand search surfaced no GBP, no map pack entry and no Google reviews.	For a local service business this is the single largest missed channel. It also removes the most-cited source of independent reviews — which is exactly what both Google and AI assistants look for when deciding whether to recommend you.	Create and verify a Google Business Profile for the Delhi office. Complete every field: categories, services, service areas, hours, description, photos. Then run a deliberate review campaign with past clients — aim for 20+ genuine reviews in the first quarter. Repeat for Dubai if you have a verifiable presence there.	Critical	5	2	25.0	Do first		Not started
+7	E-E-A-T	Testimonial photos are stock images attributed to named individuals	Client photos on /services/seo and /services/seo/dubai are Unsplash stock URLs. The same image (photo-1507003211169) appears as both 'Rohan Kapoor, The Fat Cookie' and 'Faisal Al-Jamil, Elysian Mansions Dubai'.	This is the most damaging issue on the site. Anyone who reverse-image-searches or simply visits two pages sees the same face under two names — as an agency selling trust, that is hard to recover from. If these are also marked up as Review schema, it is a Google structured-data policy violation and risks a manual action.	Replace with real client headshots used with written permission, or drop photos entirely and use the client's company logo plus full name, title and company. Never reuse an image across two identities. If a testimonial is illustrative rather than from a named real client, do not attribute it to a named person at all.	Critical	5	2	25.0	Do first		Not started
+8	E-E-A-T	Result claims are specific but unverifiable and unattributed	'314% increase in organic leads in 8 months', '250% lift in non-branded organic revenue', '160 percent', '115 percent' — none tied to a named client, date range or measurement method.	Precise-sounding numbers with no source are a classic low-trust pattern that both human buyers and LLMs discount. AI assistants preferentially cite claims they can attribute; an unattributed statistic is close to worthless for GEO.	For each claim, either (a) publish a full case study page with the client named, the period covered, the starting baseline, the measurement tool and a client quote approving the numbers, and link the claim to it, or (b) remove the number. Anonymised is acceptable if the industry, size and timeframe are stated ('a 40-person B2B SaaS firm, Jan-Aug 2025, measured in GA4').	High	4	3	13.3	Do later		Not started
+9	E-E-A-T	Company statistics are inconsistent across the site	Homepage alone: '100+ businesses', '1500+ Projects Delivered', '95% Client Retention', '20+ Industry Specialists', '8+ Years Experience'. Footer separately claims '30+ Client Case Studies'.	1500 projects against 100+ businesses against 30+ case studies does not reconcile, and a reader will notice. For GEO this matters doubly: an LLM building a profile of your company ingests conflicting figures, lowers its confidence, and is then less likely to state anything about you at all.	Agree one canonical set of facts — founding year, legal entity name, headcount, clients served, projects delivered, markets — and publish it identically on /about, in your Organization schema, on LinkedIn and on every directory listing. Where a number cannot be substantiated, remove it rather than rounding it up.	High	4	2	20.0	Do next		Not started
+10	E-E-A-T	'5.0 rating' appears with no source, platform or review count	Homepage hero and the 'Why Partner With Us' section.	An unsourced rating is not a trust signal, it is a red flag — and if it is marked up as AggregateRating without real reviews behind it, it breaches Google's review snippet policy.	Either link the rating to a live third-party profile showing the review count (Google, Clutch, GoodFirms) and state the count alongside it, or remove the claim until you have the reviews to back it. Never use AggregateRating schema for self-reported ratings.	High	4	1	40.0	Do first		Not started
+11	E-E-A-T	Founder bio does not establish authority in marketing	/authors/ameet-nangia leads with 'demonstrated history of working in the construction industry' — reads as a lifted LinkedIn summary. No credentials, certifications, publications, talks or press.	The author page is the site's main E-E-A-T anchor and it currently undersells you. LLMs building an entity profile for a person look for corroborating signals across the web; right now there is one LinkedIn URL and nothing else.	Rewrite around marketing proof: years in performance marketing, named client verticals (restaurants, hospitality, e-commerce), platforms certified on, budget managed, results owned. Add Google Ads / Analytics certifications with verification links. Add sameAs links to LinkedIn, X, Crunchbase and any published bylines. Mark up as Person schema with knowsAbout.	Medium	3	2	15.0	Do next		Not started
+12	E-E-A-T	No published or updated dates, and a single author across the whole site	Service pages, city pages and blog posts show no visible publish or last-updated date. Every author box is the founder.	Freshness is a direct ranking and citation factor — AI assistants strongly prefer content they can date. A site with one author and no dates reads as a thin operation regardless of content quality.	Add visible 'Published' and 'Last updated' dates to every content page, backed by datePublished and dateModified in schema. Update them honestly when you revise. Add at least one more named contributor or a 'Reviewed by' line to show editorial process.	Medium	3	2	15.0	Do next		Not started
+13	Content	No pricing or engagement-model information anywhere	No page covers cost, retainer ranges, project minimums or engagement models.	'How much does SEO cost in Delhi' is a high-volume, high-intent query and one of the most common things people now ask AI assistants. With nothing on your site, you cannot be the source of that answer — a competitor will be.	Publish a pricing or 'how we price' page: retainer bands, project minimums, what changes the price, what a typical engagement includes. Ranges are fine and convert better than silence. Add FAQ entries covering cost and minimum commitment, and mark up with Offer or PriceSpecification where honest.	Medium	4	2	20.0	Do next		Not started
+14	Content	The Dubai page markets Arabic capability the site does not demonstrate	/services/seo/dubai sells bilingual English-Arabic SEO, RTL formatting and native Arabic copywriters. The site itself is English-only with og:locale set to en_IN.	A prospect in Dubai will notice immediately. It also means the page argues for hreflang and localisation while the site implements neither — the credibility cost is self-inflicted.	Either publish a genuine Arabic version of the Dubai pages with correct hreflang and RTL, or soften the claim to reflect what you actually deliver today (for example, managing Arabic campaigns through vetted native partners). Set og:locale correctly per market.	Medium	3	3	10.0	Do later		Not started
+15	Technical	og:locale is en_IN on every page including Dubai, London and New York, and there is no hreflang	Verified on /services/seo/dubai.	You run one service across seven-plus countries with no locale signalling. Search engines have no instruction on which market each page serves, which weakens international targeting for exactly the pages you have invested most content effort in.	Set og:locale per page to match the target market. If you build genuine language variants, implement hreflang with correct reciprocal tags and an x-default. If pages stay English-only, at minimum align og:locale and use geo-specific content signals (currency, local phone, local address) to make targeting unambiguous.	Medium	3	2	15.0	Do next		Not started
+16	Local	Only an Indian phone number on pages targeting Dubai, London, New York and Toronto	+91 87009 01769 in the header, footer and QR code on every page.	A Dubai enterprise prospect will not dial an Indian mobile from a page claiming DIFC expertise. It undermines the local positioning and reduces conversion on your best content.	Add a UAE number for Dubai pages (and a local or toll-free number for other priority markets). Display the right number by page region. Keep each number consistent across the site, the relevant Google Business Profile and every directory listing.	Medium	3	2	15.0	Do next		Not started
+17	AEO	VERIFY: structured data could not be confirmed in the rendered output	JSON-LD was not visible in the extracted HTML for any page tested. This may be an extraction limitation rather than a genuine absence.	Schema is how you tell engines what an entity, service, FAQ or review actually is. If it is missing you lose FAQ rich results, breadcrumb display and much of the machine-readable context that AI answers rely on.	Run Google's Rich Results Test and Schema.org validator on the homepage, a service page, a city page, the author page and a blog post. Then ensure each has: Organization + LocalBusiness (home), Service + FAQPage + BreadcrumbList (service and city pages), Person (author), Article with datePublished/dateModified (blog). Link them with @id references so they form one graph rather than disconnected blocks.	High	5	2	25.0	Do next		Not started
+18	AEO	FAQ answers bury the answer behind filler openers	Examples: 'Absolutely. In fact, we highly recommend it.' and 'SEO is a strategic, compounding investment.' before the actual answer arrives.	Snippet and AI-answer extraction takes the opening sentences. If your first sentence is throat-clearing, the extracted passage says nothing useful and a competitor's cleaner answer gets used instead.	Rewrite every FAQ answer so the first sentence answers the question directly and completely in 40-60 words, then elaborate. 'How long does SEO take?' should open with 'Most clients see measurable ranking movement in 3-4 months and meaningful lead growth by month 6.' Supporting nuance comes after.	Medium	4	2	20.0	Do next		Not started
+19	AEO	No extractable definitions, comparisons or step lists in the main copy	Service page copy is long, dense, adjective-heavy paragraphs. No 'What is X' blocks, no comparison tables, no numbered procedures.	These three formats are disproportionately what gets lifted into featured snippets and AI answers. Dense persuasive prose is the format least likely to be quoted.	For each service page add: (1) a 40-60 word plain definition under a 'What is [service]?' H2, (2) at least one genuine comparison table (SEO vs PPC, in-house vs agency, Shopify vs custom), (3) a numbered process list with concrete timings. Keep the persuasive copy, but put the extractable blocks above it.	Medium	4	3	13.3	Do later		Not started
+20	AEO	Marketing language is too inflated to be quoted as fact	'uncompromising', 'forensic', 'relentless', 'elite', 'undisputed leader', 'unshakeable, penalty-proof organic presence'.	AI assistants extract checkable claims. Superlatives are unquotable, and 'penalty-proof' is a promise no honest SEO can make — which is itself a credibility problem with informed buyers.	Replace adjectives with specifics. 'Forensic technical audits' becomes 'a 120-point technical audit covering crawl, index, speed and schema, delivered in 10 working days'. Numbers, timeframes and deliverables are quotable; adjectives are not.	Medium	3	3	10.0	Do later		Not started
+21	AEO	VERIFY: AI crawler access and llms.txt	robots.txt could not be retrieved during this audit.	If GPTBot, ClaudeBot, PerplexityBot, CCBot or Google-Extended are disallowed, you are invisible in AI answers no matter how good the content is. Many Next.js starters and CDN security presets block them by default.	Open /robots.txt and confirm those agents are allowed. Confirm your sitemap is referenced there. Then add an /llms.txt file listing your key pages with one-line descriptions — a low-cost, emerging convention that helps AI systems index your most important content correctly.	High	5	1	50.0	Do first		Not started
+22	Technical	Site-wide footer link redirects on every page	'Founder Profile' points to /author/ameet-nangia which 301s to /authors/ameet-nangia.	A redirect hop replicated across every page on the site is unnecessary crawl waste and a small signal-dilution. Trivial to fix.	Point the footer link directly at /authors/ameet-nangia. Then crawl the site with Screaming Frog and fix every other internal link that resolves via a redirect.	Low	2	1	20.0	Do next		Not started
+23	GEO	The brand has almost no presence off its own domain	A brand-name search returns only southernedgemarketing.com pages. No Clutch, GoodFirms, DesignRush, Sortlist, The Manifest, Semrush Agency Partners, Crunchbase or press coverage.	This is the root cause of the low GEO score. When someone asks an AI 'best digital marketing agency in Delhi', the model composes an answer from third-party directories, listicles and reviews — not from agency websites. With no presence in those sources you are structurally excluded, regardless of how good your site is.	Build the citation base deliberately: claim and complete profiles on Clutch, GoodFirms, DesignRush, Sortlist, The Manifest, Semrush Agency Partners and Crunchbase. Each needs a full portfolio, verified reviews and identical NAP. Target 15-20 quality listings in 90 days. This is the highest-leverage work on this entire sheet.	Critical	5	3	16.7	Do first		Not started
+24	GEO	No earned media, guest bylines or digital PR for your own brand	Your SEO service page sells digital PR and high-authority link acquisition. There is no evidence of any for Southern Edge itself.	Prospects who check will spot the gap immediately. More practically, earned mentions on publications LLMs already trust are the fastest route into generated answers — a single citation in a respected industry publication outperforms dozens of directory entries.	Pitch guest posts to Indian and UAE marketing publications and startup outlets. Respond to journalist requests through HARO-style services. Publish original data (see #25) and pitch it. Aim for 4-6 earned placements per quarter, each naming the founder as author.	High	5	4	12.5	Do later		Not started
+25	GEO	No original data or research assets	All content is explanatory. Nothing publishes numbers only you have.	Original statistics are the most-cited content format in AI-generated answers, because a model quoting a number needs a source to attribute. Explanatory content, however good, is replaceable — a hundred sites explain what technical SEO is.	Publish one original research piece per quarter from data you already hold: page-speed benchmarks for Delhi e-commerce sites, average Meta ad CPCs across Indian verticals, a Core Web Vitals study of the top 100 Delhi agency sites. Give it a stable URL, a clear methodology section and a downloadable dataset, then pitch it.	Medium	5	4	12.5	Do later		Not started
+26	GEO	No presence in the communities AI models weight heavily	No Reddit, Quora or substantive LinkedIn long-form footprint under the brand or founder.	Reddit and Quora are heavily represented in the training and retrieval data behind AI answers, and 'recommend an agency' threads are exactly where models look for candidate names.	Have the founder answer genuinely useful questions in r/SEO, r/digital_marketing, r/india and relevant Quora topics — disclosed, helpful, not promotional. Publish weekly LinkedIn long-form posts on specific work. Consistency over months is what registers; spam gets removed and hurts you.	Medium	4	3	13.3	Do later		Not started
+27	GEO	Entity identity is ambiguous	The name 'Southern Edge' suggests a US or southern-hemisphere brand; the business is Delhi and Dubai. No founding year, legal entity name, registration or address is published anywhere.	LLMs resolve entities by cross-referencing consistent identifiers. With none published and a geographically misleading name, the model cannot confidently connect mentions of you to one organisation — so it hesitates to name you at all.	Publish an unambiguous entity block on /about: full legal name, founding year, registered address, founder, markets served. Mirror it in Organization schema with sameAs links to every social and directory profile. Create a Crunchbase entry and a Wikidata item. Consistency across all of them is the point.	Medium	4	3	13.3	Do later		Not started
+28	GEO	Case studies exist on-site but nowhere else	AMA Legal Solutions, The Fat Cookie, Sage Perfume and JSV live only on your domain.	A case study on your own site is a claim. The same case study on Clutch with a verified client review is evidence — and evidence is what gets cited.	Syndicate each case study to your directory profiles. Ask each client for a verified review on Clutch or Google and a LinkedIn recommendation. Where the client agrees, co-publish on their site with a link back.	Medium	4	2	20.0	Do next		Not started
+29	Content	No comparison or shortlist content targeting agency-selection queries	Nothing addressing 'best digital marketing agencies in Delhi', 'how to choose an SEO agency', 'agency vs in-house' or 'what to ask before hiring'.	This is the query space where buyers and AI assistants build shortlists. You currently have no entry point into it.	Publish honest selection-guide content: how to evaluate an agency, questions to ask, red flags, agency vs freelancer vs in-house with real cost comparisons. Being genuinely useful — including about when not to hire an agency — is what gets a piece cited rather than dismissed as marketing.	Medium	4	3	13.3	Do later		Not started
+30	Content	Blog posts lack the structure the service pages already have	/blogs posts have no visible table of contents, author box, dates or FAQ block — all of which the city pages do well.	Your best structural practices are not applied to the content most likely to earn links and citations.	Apply the city-page template to every blog post: TOC with anchors, author box, visible dates, an FAQ block and Article schema. This is mostly template work, so it applies retroactively to everything already published.	Medium	3	2	15.0	Do next		Not started
+31	Technical	VERIFY: sitemap coverage against the real page count	Sitemap contents could not be retrieved. The footer implies 5 services across 30 cities, so the URL count could exceed 150.	At that scale, pages missing from the sitemap frequently go undiscovered for months, and a stale sitemap wastes crawl budget on URLs that no longer matter.	Confirm /sitemap.xml exists, is referenced in robots.txt, uses the canonical host, includes every indexable page with accurate lastmod values, and excludes redirects and noindex pages. Submit it in Search Console and check Coverage weekly for the first month.	Medium	4	1	40.0	Do first		Not started
+32	Technical	VERIFY: Core Web Vitals on real devices	Not measurable in this audit. The duplicated DOM (#4) and the volume of un-lazy-loaded integration logos on the homepage are likely contributors.	You sell Core Web Vitals optimisation. Field data showing your own site failing is a conversion problem as much as a ranking one — and informed prospects do check.	Run PageSpeed Insights on the homepage, a service page and a city page, using field data not just lab. Fix LCP, INP and CLS to green. Lazy-load below-fold images, serve the integration logos as a sprite or at correct dimensions, and reduce the duplicate DOM. Re-test monthly.	High	4	3	13.3	Do later		Not started
