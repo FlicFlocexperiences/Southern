@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SEO Company in New York | Southern Edge Marketing",
     description: "Dominate organic search across Manhattan, Wall Street, and Silicon Alley. We engineer enterprise SEO and Generative Engine Optimization architectures for NYC leaders.",
-    url: "https://southernedgemarketing.com/services/seo/new-york",
+    url: "https://www.southernedgemarketing.com/services/seo/new-york",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/seo-new-york.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/seo-new-york.jpg",
         width: 1200,
         height: 675,
         alt: "SEO in New York Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SEO Company in New York | Southern Edge Marketing",
     description: "Dominate organic search across Manhattan, Wall Street, and Silicon Alley. We engineer enterprise SEO and Generative Engine Optimization architectures for NYC leaders.",
-    images: ["https://southernedgemarketing.com/images/infographics/seo-new-york.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/seo-new-york.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function NewYorkSeoPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/seo/new-york#organization",
+        "@id": "https://www.southernedgemarketing.com/services/seo/new-york#organization",
         "name": "Southern Edge Marketing - SEO New York",
-        "url": "https://southernedgemarketing.com/services/seo/new-york",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/seo-new-york.jpg",
+        "url": "https://www.southernedgemarketing.com/services/seo/new-york",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/seo-new-york.jpg",
         "telephone": "+1-800-555-0199",
         "priceRange": "$$$",
         "address": {
@@ -83,7 +83,7 @@ export default function NewYorkSeoPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/seo/new-york#service",
+        "@id": "https://www.southernedgemarketing.com/services/seo/new-york#service",
         "name": "SEO in New York",
         "provider": {
           "@type": "ProfessionalService",
@@ -97,31 +97,31 @@ export default function NewYorkSeoPage() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/seo/new-york#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/seo/new-york#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "SEO in New York",
-            "item": "https://southernedgemarketing.com/services/seo/new-york"
+            "item": "https://www.southernedgemarketing.com/services/seo/new-york"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/seo/new-york#faq",
+        "@id": "https://www.southernedgemarketing.com/services/seo/new-york#faq",
         "mainEntity": [
           {
             "@type": "Question",

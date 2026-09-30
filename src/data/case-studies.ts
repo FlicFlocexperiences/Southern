@@ -866,5 +866,17 @@ export const customCaseStudies: Record<string, ProjectCaseStudy> = {
       { title: "Sustainable Sourcing Transparency", desc: "Highlighting wild-harvested French lavender, organic sugarcane alcohol, and cruelty-free ethics." }
     ],
     impact: "Achieved a 40% conversion rate from discovery sampler set buyers to full-sized bottle orders."
+  },
+  "jsv": {
+    lead: "JSV Group is a premier automotive dealership and commercial enterprise network requiring a commanding, unified brand identity across multi-city showroom hubs.",
+    challenge: "Managing disparate sub-brands across automotive sales, service centers, and commercial operations created fragmented brand perception and diluted customer recall.",
+    solution: "We engineered a monolithic brand architecture, complete with high-precision logo geometry, corporate stationery systems, showroom environmental signage, and high-impact digital collateral.",
+    features: [
+      { title: "Unified Brand Architecture", desc: "A standardized visual design system aligning commercial automotive dealerships under a single identity." },
+      { title: "Environmental Signage Guidelines", desc: "Scalable architectural blueprints for physical showroom facades, pylon signs, and customer lounges." },
+      { title: "Corporate Digital Asset Kit", desc: "High-resolution vector assets, typography scales, and social media templates for multi-branch marketing teams." },
+      { title: "Brand Governance Playbook", desc: "Comprehensive brand guidelines ensuring strict visual consistency across print, outdoor advertising, and web touchpoints." }
+    ],
+    impact: "Unified 12+ regional facility touchpoints, resulting in a 35% increase in brand recall and a streamlined collateral rollout across all locations."
   }
 };

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Web Development Company in Los Angeles | Southern Edge Marketing",
     description: "Partner with the premier web development company in Los Angeles. We engineer ultra-fast Next.js platforms, headless Shopify stores, and enterprise portals for Silicon Beach and Hollywood leaders.",
-    url: "https://southernedgemarketing.com/services/web-development/los-angeles",
+    url: "https://www.southernedgemarketing.com/services/web-development/los-angeles",
     siteName: "Southern Edge Marketing",
     locale: "en_US",
     type: "website",
@@ -85,10 +85,10 @@ export default function LosAngelesWebDevelopmentPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/web-development/los-angeles#organization",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/los-angeles#organization",
         "name": "Southern Edge Marketing - Web Development Los Angeles",
-        "url": "https://southernedgemarketing.com/services/web-development/los-angeles",
-        "logo": "https://southernedgemarketing.com/LOGO_Final.svg",
+        "url": "https://www.southernedgemarketing.com/services/web-development/los-angeles",
+        "logo": "https://www.southernedgemarketing.com/LOGO_Final.svg",
         "telephone": "+1-800-555-0199",
         "priceRange": "$$$",
         "address": {
@@ -115,10 +115,10 @@ export default function LosAngelesWebDevelopmentPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/web-development/los-angeles#service",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/los-angeles#service",
         "name": "Enterprise Web Development in Los Angeles",
         "provider": {
-          "@id": "https://southernedgemarketing.com/services/web-development/los-angeles#organization"
+          "@id": "https://www.southernedgemarketing.com/services/web-development/los-angeles#organization"
         },
         "serviceType": "Enterprise Web Development, Headless Next.js, Omnichannel E-Commerce",
         "areaServed": {

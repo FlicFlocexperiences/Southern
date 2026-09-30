@@ -24,6 +24,18 @@ const nextConfig: NextConfig = {
             key: "Content-Security-Policy",
             value: "frame-ancestors 'self' https://www.facebook.com https://business.facebook.com https://*.facebook.com;",
           },
+          {
+            key: "X-Content-Type-Options",
+            value: "nosniff",
+          },
+          {
+            key: "Referrer-Policy",
+            value: "strict-origin-when-cross-origin",
+          },
+          {
+            key: "Permissions-Policy",
+            value: "camera=(), microphone=(), geolocation=()",
+          },
         ],
       },
     ];
@@ -68,6 +80,68 @@ const nextConfig: NextConfig = {
       {
         source: "/services/social-media/:slug",
         destination: "/services/social-media-management/:slug",
+        permanent: true,
+      },
+      // --- Project Slug & Casing 301 Redirects ---
+      {
+        source: "/projects/Jewellery",
+        destination: "/projects/jwellery",
+        permanent: true,
+      },
+      {
+        source: "/projects/jewellery",
+        destination: "/projects/jwellery",
+        permanent: true,
+      },
+      {
+        source: "/projects/Roseate",
+        destination: "/projects/upstage-collection",
+        permanent: true,
+      },
+      {
+        source: "/projects/roseate",
+        destination: "/projects/upstage-collection",
+        permanent: true,
+      },
+      {
+        source: "/projects/oud",
+        destination: "/projects/oudqua",
+        permanent: true,
+      },
+      // --- Explore-More Legacy Articles 301 Redirects ---
+      {
+        source: "/explore-more/customer-retention-strategies-scaling-d2c",
+        destination: "/explore-more/scaling-e-commerce-with-email-marketing",
+        permanent: true,
+      },
+      {
+        source: "/explore-more/power-of-design-systems-branding-web",
+        destination: "/explore-more/how-branding-dictates-business-success",
+        permanent: true,
+      },
+      {
+        source: "/explore-more/conversion-rate-optimization-turning-traffic-revenue",
+        destination: "/explore-more/psychology-of-high-converting-landing-pages",
+        permanent: true,
+      },
+      {
+        source: "/explore-more/copywriting-secrets-writing-words-that-sell",
+        destination: "/explore-more/psychology-of-high-converting-landing-pages",
+        permanent: true,
+      },
+      {
+        source: "/explore-more/why-web-accessibility-is-essential",
+        destination: "/explore-more/why-custom-code-better-than-wordpress",
+        permanent: true,
+      },
+      {
+        source: "/explore-more/ai-in-digital-marketing-working-smarter",
+        destination: "/explore-more/maximizing-roas-on-meta-ads",
+        permanent: true,
+      },
+      {
+        source: "/explore-more/dominate-local-seo-regional-businesses",
+        destination: "/explore-more/role-of-seo-in-digital-growth",
         permanent: true,
       },
     ];

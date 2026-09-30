@@ -1040,6 +1040,22 @@ export const projects: Project[] = [
     image: "/project/KachraCo.svg",
     heroImage: "/project/KachraCo.svg",
     gallery: ["/project/KachraCo.svg"]
+  },
+  {
+    id: 20,
+    slug: "jsv",
+    title: "JSV Branding",
+    category: "Branding",
+    tag: "AUTOMOTIVE & COMMERCIAL",
+    categories: ["Branding", "Social Media"],
+    projectType: "Visual Identity",
+    description: "A comprehensive brand identity system and corporate positioning strategy engineered for scalable market leadership.",
+    client: "JSV Group",
+    duration: "6 Weeks",
+    services: "Brand Architecture, Visual Identity Design, Corporate Guidelines, Social Media Kit",
+    image: "/JSV/5.jpg",
+    heroImage: "/JSV/5.jpg",
+    gallery: ["/JSV/5.jpg", "/JSV/5.1.jpg", "/JSV/5,2.jpg", "/JSV/5.3.jpg", "/JSV/5.4.jpg"]
   }
 ];
 

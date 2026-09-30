@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SEO Company in Brisbane | Southern Edge Marketing",
     description: "Scale organic pipeline with Brisbane premier enterprise SEO agency. We engineer generative engine optimization, entity graphs, and technical search platforms.",
-    url: "https://southernedgemarketing.com/services/seo/brisbane",
+    url: "https://www.southernedgemarketing.com/services/seo/brisbane",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/seo-brisbane.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/seo-brisbane.jpg",
         width: 1200,
         height: 675,
         alt: "SEO and Generative Engine Optimization in Brisbane Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SEO Company in Brisbane | Southern Edge Marketing",
     description: "Scale organic pipeline with Brisbane premier enterprise SEO agency. We engineer generative engine optimization, entity graphs, and technical search platforms.",
-    images: ["https://southernedgemarketing.com/images/infographics/seo-brisbane.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/seo-brisbane.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function BrisbaneSeoPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/seo/brisbane#organization",
+        "@id": "https://www.southernedgemarketing.com/services/seo/brisbane#organization",
         "name": "Southern Edge Marketing - SEO Brisbane",
-        "url": "https://southernedgemarketing.com/services/seo/brisbane",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/seo-brisbane.jpg",
+        "url": "https://www.southernedgemarketing.com/services/seo/brisbane",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/seo-brisbane.jpg",
         "telephone": "+61-7-3000-1234",
         "priceRange": "$$$",
         "address": {
@@ -84,12 +84,12 @@ export default function BrisbaneSeoPage() {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/seo/brisbane#service",
+        "@id": "https://www.southernedgemarketing.com/services/seo/brisbane#service",
         "name": "SEO and Generative Engine Optimization in Brisbane",
         "provider": {
           "@type": "ProfessionalService",
@@ -103,42 +103,42 @@ export default function BrisbaneSeoPage() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://southernedgemarketing.com/services/seo/brisbane#webpage",
-        "url": "https://southernedgemarketing.com/services/seo/brisbane",
+        "@id": "https://www.southernedgemarketing.com/services/seo/brisbane#webpage",
+        "url": "https://www.southernedgemarketing.com/services/seo/brisbane",
         "name": "SEO Company in Brisbane | Southern Edge Marketing",
         "author": {
           "@type": "Person",
           "name": "Ameet Nangia",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/seo/brisbane#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/seo/brisbane#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "SEO in Brisbane",
-            "item": "https://southernedgemarketing.com/services/seo/brisbane"
+            "item": "https://www.southernedgemarketing.com/services/seo/brisbane"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/seo/brisbane#faq",
+        "@id": "https://www.southernedgemarketing.com/services/seo/brisbane#faq",
         "mainEntity": [
           {
             "@type": "Question",

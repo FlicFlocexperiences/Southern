@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SEO Company in San Francisco | Southern Edge Marketing",
     description: "Dominate organic search across SoMa, FiDi, and Mission Bay. We engineer enterprise SEO, Generative Engine Optimization (GEO), and schema graphs for SF leaders.",
-    url: "https://southernedgemarketing.com/services/seo/san-francisco",
+    url: "https://www.southernedgemarketing.com/services/seo/san-francisco",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/seo-san-francisco.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/seo-san-francisco.jpg",
         width: 1200,
         height: 675,
         alt: "SEO in San Francisco Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SEO Company in San Francisco | Southern Edge Marketing",
     description: "Dominate organic search across SoMa, FiDi, and Mission Bay. We engineer enterprise SEO, Generative Engine Optimization (GEO), and schema graphs for SF leaders.",
-    images: ["https://southernedgemarketing.com/images/infographics/seo-san-francisco.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/seo-san-francisco.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function SanFranciscoSeoPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/seo/san-francisco#organization",
+        "@id": "https://www.southernedgemarketing.com/services/seo/san-francisco#organization",
         "name": "Southern Edge Marketing - SEO San Francisco",
-        "url": "https://southernedgemarketing.com/services/seo/san-francisco",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/seo-san-francisco.jpg",
+        "url": "https://www.southernedgemarketing.com/services/seo/san-francisco",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/seo-san-francisco.jpg",
         "telephone": "+1-800-555-0199",
         "priceRange": "$$$",
         "address": {
@@ -83,7 +83,7 @@ export default function SanFranciscoSeoPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/seo/san-francisco#service",
+        "@id": "https://www.southernedgemarketing.com/services/seo/san-francisco#service",
         "name": "SEO in San Francisco",
         "provider": {
           "@type": "ProfessionalService",
@@ -97,31 +97,31 @@ export default function SanFranciscoSeoPage() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/seo/san-francisco#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/seo/san-francisco#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "SEO in San Francisco",
-            "item": "https://southernedgemarketing.com/services/seo/san-francisco"
+            "item": "https://www.southernedgemarketing.com/services/seo/san-francisco"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/seo/san-francisco#faq",
+        "@id": "https://www.southernedgemarketing.com/services/seo/san-francisco#faq",
         "mainEntity": [
           {
             "@type": "Question",

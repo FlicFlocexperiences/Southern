@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "App Development Company in Melbourne | Southern Edge Marketing",
     description: "Partner with Melbourne's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native applications for Victorian enterprises.",
-    url: "https://southernedgemarketing.com/services/app-development/melbourne",
+    url: "https://www.southernedgemarketing.com/services/app-development/melbourne",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/app-development-melbourne.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/app-development-melbourne.jpg",
         width: 1200,
         height: 675,
         alt: "App Development in Melbourne Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "App Development Company in Melbourne | Southern Edge Marketing",
     description: "Partner with Melbourne's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native applications for Victorian enterprises.",
-    images: ["https://southernedgemarketing.com/images/infographics/app-development-melbourne.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/app-development-melbourne.jpg"],
   },
 };
 
@@ -53,18 +53,18 @@ export default function MelbourneAppDevelopmentPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/app-development/melbourne#organization",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/melbourne#organization",
         "name": "Southern Edge Marketing - App Development Melbourne",
-        "url": "https://southernedgemarketing.com/services/app-development/melbourne",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/app-development-melbourne.jpg",
+        "url": "https://www.southernedgemarketing.com/services/app-development/melbourne",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/app-development-melbourne.jpg",
         "telephone": "+61-3-9000-1234",
         "priceRange": "$$$",
         "founder": {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         },
         "address": {
           "@type": "PostalAddress",
@@ -89,7 +89,7 @@ export default function MelbourneAppDevelopmentPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/app-development/melbourne#service",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/melbourne#service",
         "name": "App Development in Melbourne",
         "provider": {
           "@type": "ProfessionalService",
@@ -103,51 +103,51 @@ export default function MelbourneAppDevelopmentPage() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://southernedgemarketing.com/services/app-development/melbourne#webpage",
-        "url": "https://southernedgemarketing.com/services/app-development/melbourne",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/melbourne#webpage",
+        "url": "https://www.southernedgemarketing.com/services/app-development/melbourne",
         "name": "App Development Company in Melbourne | Southern Edge Marketing",
         "description": "Enterprise mobile application development engineering native iOS Swift, Android Kotlin, and React Native platforms for Victorian enterprises.",
         "isPartOf": {
           "@type": "WebSite",
-          "@id": "https://southernedgemarketing.com/#website",
+          "@id": "https://www.southernedgemarketing.com/#website",
           "name": "Southern Edge Marketing",
-          "url": "https://southernedgemarketing.com"
+          "url": "https://www.southernedgemarketing.com"
         },
         "author": {
           "@type": "Person",
-          "@id": "https://southernedgemarketing.com/authors/ameet-nangia#person",
+          "@id": "https://www.southernedgemarketing.com/authors/ameet-nangia#person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/app-development/melbourne#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/melbourne#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "App Development in Melbourne",
-            "item": "https://southernedgemarketing.com/services/app-development/melbourne"
+            "item": "https://www.southernedgemarketing.com/services/app-development/melbourne"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/app-development/melbourne#faq",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/melbourne#faq",
         "mainEntity": [
           {
             "@type": "Question",

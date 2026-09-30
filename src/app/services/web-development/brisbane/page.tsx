@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Web Development Company in Brisbane | Southern Edge Marketing",
     description: "Partner with Brisbane premier enterprise web development company. We engineer high-velocity Next.js platforms, Privacy Act compliant systems, and scalable APIs.",
-    url: "https://southernedgemarketing.com/services/web-development/brisbane",
+    url: "https://www.southernedgemarketing.com/services/web-development/brisbane",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/web-development-brisbane.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/web-development-brisbane.jpg",
         width: 1200,
         height: 675,
         alt: "Web Development in Brisbane Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Web Development Company in Brisbane | Southern Edge Marketing",
     description: "Partner with Brisbane premier enterprise web development company. We engineer high-velocity Next.js platforms, Privacy Act compliant systems, and scalable APIs.",
-    images: ["https://southernedgemarketing.com/images/infographics/web-development-brisbane.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/web-development-brisbane.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function BrisbaneWebDevelopmentPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/web-development/brisbane#organization",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/brisbane#organization",
         "name": "Southern Edge Marketing - Web Development Brisbane",
-        "url": "https://southernedgemarketing.com/services/web-development/brisbane",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/web-development-brisbane.jpg",
+        "url": "https://www.southernedgemarketing.com/services/web-development/brisbane",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/web-development-brisbane.jpg",
         "telephone": "+61-7-3000-1234",
         "priceRange": "$$$",
         "address": {
@@ -84,12 +84,12 @@ export default function BrisbaneWebDevelopmentPage() {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/web-development/brisbane#service",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/brisbane#service",
         "name": "Web Development in Brisbane",
         "provider": {
           "@type": "ProfessionalService",
@@ -103,31 +103,31 @@ export default function BrisbaneWebDevelopmentPage() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/web-development/brisbane#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/brisbane#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Web Development in Brisbane",
-            "item": "https://southernedgemarketing.com/services/web-development/brisbane"
+            "item": "https://www.southernedgemarketing.com/services/web-development/brisbane"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/web-development/brisbane#faq",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/brisbane#faq",
         "mainEntity": [
           {
             "@type": "Question",

@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SEO Company in Ras Al Khaimah | Southern Edge Marketing",
     description: "Scale organic revenue across RAKEZ, Al Marjan Island, and Mina Al Arab. We engineer enterprise SEO, Generative Engine Optimization, and Arabic entity graphs.",
-    url: "https://southernedgemarketing.com/services/seo/ras-al-khaimah",
+    url: "https://www.southernedgemarketing.com/services/seo/ras-al-khaimah",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/seo-ras-al-khaimah.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/seo-ras-al-khaimah.jpg",
         width: 1200,
         height: 675,
         alt: "SEO in Ras Al Khaimah Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SEO Company in Ras Al Khaimah | Southern Edge Marketing",
     description: "Scale organic revenue across RAKEZ, Al Marjan Island, and Mina Al Arab. We engineer enterprise SEO, Generative Engine Optimization, and Arabic entity graphs.",
-    images: ["https://southernedgemarketing.com/images/infographics/seo-ras-al-khaimah.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/seo-ras-al-khaimah.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function RasAlKhaimahSeoPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/seo/ras-al-khaimah#organization",
+        "@id": "https://www.southernedgemarketing.com/services/seo/ras-al-khaimah#organization",
         "name": "Southern Edge Marketing - SEO Ras Al Khaimah",
-        "url": "https://southernedgemarketing.com/services/seo/ras-al-khaimah",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/seo-ras-al-khaimah.jpg",
+        "url": "https://www.southernedgemarketing.com/services/seo/ras-al-khaimah",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/seo-ras-al-khaimah.jpg",
         "telephone": "+1-800-555-0199",
         "priceRange": "$$$",
         "address": {
@@ -83,7 +83,7 @@ export default function RasAlKhaimahSeoPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/seo/ras-al-khaimah#service",
+        "@id": "https://www.southernedgemarketing.com/services/seo/ras-al-khaimah#service",
         "name": "SEO in Ras Al Khaimah",
         "provider": {
           "@type": "ProfessionalService",
@@ -93,7 +93,7 @@ export default function RasAlKhaimahSeoPage() {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         },
         "areaServed": {
           "@type": "City",
@@ -103,31 +103,31 @@ export default function RasAlKhaimahSeoPage() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/seo/ras-al-khaimah#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/seo/ras-al-khaimah#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "SEO in Ras Al Khaimah",
-            "item": "https://southernedgemarketing.com/services/seo/ras-al-khaimah"
+            "item": "https://www.southernedgemarketing.com/services/seo/ras-al-khaimah"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/seo/ras-al-khaimah#faq",
+        "@id": "https://www.southernedgemarketing.com/services/seo/ras-al-khaimah#faq",
         "mainEntity": [
           {
             "@type": "Question",

@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SEO Company in Melbourne | Southern Edge Marketing",
     description: "Scale organic pipeline with Melbourne premier enterprise SEO agency. We engineer generative engine optimization, entity graphs, and technical search platforms.",
-    url: "https://southernedgemarketing.com/services/seo/melbourne",
+    url: "https://www.southernedgemarketing.com/services/seo/melbourne",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/seo-melbourne.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/seo-melbourne.jpg",
         width: 1200,
         height: 675,
         alt: "SEO and Generative Engine Optimization in Melbourne Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SEO Company in Melbourne | Southern Edge Marketing",
     description: "Scale organic pipeline with Melbourne premier enterprise SEO agency. We engineer generative engine optimization, entity graphs, and technical search platforms.",
-    images: ["https://southernedgemarketing.com/images/infographics/seo-melbourne.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/seo-melbourne.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function MelbourneSeoPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/seo/melbourne#organization",
+        "@id": "https://www.southernedgemarketing.com/services/seo/melbourne#organization",
         "name": "Southern Edge Marketing - SEO Melbourne",
-        "url": "https://southernedgemarketing.com/services/seo/melbourne",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/seo-melbourne.jpg",
+        "url": "https://www.southernedgemarketing.com/services/seo/melbourne",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/seo-melbourne.jpg",
         "telephone": "+61-3-9000-1234",
         "priceRange": "$$$",
         "address": {
@@ -84,12 +84,12 @@ export default function MelbourneSeoPage() {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/seo/melbourne#service",
+        "@id": "https://www.southernedgemarketing.com/services/seo/melbourne#service",
         "name": "SEO and Generative Engine Optimization in Melbourne",
         "provider": {
           "@type": "ProfessionalService",
@@ -103,42 +103,42 @@ export default function MelbourneSeoPage() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://southernedgemarketing.com/services/seo/melbourne#webpage",
-        "url": "https://southernedgemarketing.com/services/seo/melbourne",
+        "@id": "https://www.southernedgemarketing.com/services/seo/melbourne#webpage",
+        "url": "https://www.southernedgemarketing.com/services/seo/melbourne",
         "name": "SEO Company in Melbourne | Southern Edge Marketing",
         "author": {
           "@type": "Person",
           "name": "Ameet Nangia",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/seo/melbourne#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/seo/melbourne#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "SEO in Melbourne",
-            "item": "https://southernedgemarketing.com/services/seo/melbourne"
+            "item": "https://www.southernedgemarketing.com/services/seo/melbourne"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/seo/melbourne#faq",
+        "@id": "https://www.southernedgemarketing.com/services/seo/melbourne#faq",
         "mainEntity": [
           {
             "@type": "Question",

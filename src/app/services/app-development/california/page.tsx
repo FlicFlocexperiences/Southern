@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "App Development Company in California | Southern Edge Marketing",
     description: "Partner with California premier app development company. We engineer high-velocity iOS, Android, and React Native mobile platforms for enterprise scale.",
-    url: "https://southernedgemarketing.com/services/app-development/california",
+    url: "https://www.southernedgemarketing.com/services/app-development/california",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/app-development-california.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/app-development-california.jpg",
         width: 1200,
         height: 675,
         alt: "App Development in California Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "App Development Company in California | Southern Edge Marketing",
     description: "Partner with California premier app development company. We engineer high-velocity iOS, Android, and React Native mobile platforms for enterprise scale.",
-    images: ["https://southernedgemarketing.com/images/infographics/app-development-california.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/app-development-california.jpg"],
   },
   robots: {
     index: true,
@@ -64,18 +64,18 @@ export default function CaliforniaAppDevelopmentPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/app-development/california#organization",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/california#organization",
         "name": "Southern Edge Marketing - App Development California",
-        "url": "https://southernedgemarketing.com/services/app-development/california",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/app-development-california.jpg",
+        "url": "https://www.southernedgemarketing.com/services/app-development/california",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/app-development-california.jpg",
         "telephone": "+1-800-555-0199",
         "priceRange": "$$$",
         "founder": {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         },
         "address": {
           "@type": "PostalAddress",
@@ -100,7 +100,7 @@ export default function CaliforniaAppDevelopmentPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/app-development/california#service",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/california#service",
         "name": "App Development in California",
         "provider": {
           "@type": "ProfessionalService",
@@ -114,42 +114,42 @@ export default function CaliforniaAppDevelopmentPage() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/app-development/california#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/california#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "App Development in California",
-            "item": "https://southernedgemarketing.com/services/app-development/california"
+            "item": "https://www.southernedgemarketing.com/services/app-development/california"
           }
         ]
       },
       {
         "@type": "WebPage",
-        "@id": "https://southernedgemarketing.com/services/app-development/california#webpage",
-        "url": "https://southernedgemarketing.com/services/app-development/california",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/california#webpage",
+        "url": "https://www.southernedgemarketing.com/services/app-development/california",
         "name": "App Development Company in California | Southern Edge Marketing",
         "author": {
           "@type": "Person",
           "name": "Ameet Nangia",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/app-development/california#faq",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/california#faq",
         "mainEntity": [
           {
             "@type": "Question",

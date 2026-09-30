@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Branding Company in Melbourne | Southern Edge Marketing",
     description: "Partner with Melbourne premier enterprise branding company. We engineer category-defining brand systems, IP Australia cleared trademarks, and living design tokens.",
-    url: "https://southernedgemarketing.com/services/branding/melbourne",
+    url: "https://www.southernedgemarketing.com/services/branding/melbourne",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/branding-melbourne.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/branding-melbourne.jpg",
         width: 1200,
         height: 675,
         alt: "Branding in Melbourne Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Branding Company in Melbourne | Southern Edge Marketing",
     description: "Partner with Melbourne premier enterprise branding company. We engineer category-defining brand systems, IP Australia cleared trademarks, and living design tokens.",
-    images: ["https://southernedgemarketing.com/images/infographics/branding-melbourne.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/branding-melbourne.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function MelbourneBrandingPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/branding/melbourne#organization",
+        "@id": "https://www.southernedgemarketing.com/services/branding/melbourne#organization",
         "name": "Southern Edge Marketing - Branding Melbourne",
-        "url": "https://southernedgemarketing.com/services/branding/melbourne",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/branding-melbourne.jpg",
+        "url": "https://www.southernedgemarketing.com/services/branding/melbourne",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/branding-melbourne.jpg",
         "telephone": "+61-3-9000-5678",
         "priceRange": "$$$",
         "address": {
@@ -84,12 +84,12 @@ export default function MelbourneBrandingPage() {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/branding/melbourne#service",
+        "@id": "https://www.southernedgemarketing.com/services/branding/melbourne#service",
         "name": "Branding in Melbourne",
         "provider": {
           "@type": "ProfessionalService",
@@ -103,42 +103,42 @@ export default function MelbourneBrandingPage() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://southernedgemarketing.com/services/branding/melbourne#webpage",
-        "url": "https://southernedgemarketing.com/services/branding/melbourne",
+        "@id": "https://www.southernedgemarketing.com/services/branding/melbourne#webpage",
+        "url": "https://www.southernedgemarketing.com/services/branding/melbourne",
         "name": "Branding Company in Melbourne | Southern Edge Marketing",
         "author": {
           "@type": "Person",
           "name": "Ameet Nangia",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/branding/melbourne#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/branding/melbourne#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Branding in Melbourne",
-            "item": "https://southernedgemarketing.com/services/branding/melbourne"
+            "item": "https://www.southernedgemarketing.com/services/branding/melbourne"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/branding/melbourne#faq",
+        "@id": "https://www.southernedgemarketing.com/services/branding/melbourne#faq",
         "mainEntity": [
           {
             "@type": "Question",

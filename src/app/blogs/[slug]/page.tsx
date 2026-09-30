@@ -75,8 +75,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const blogImage = blog.image?.startsWith("http")
     ? blog.image
     : blog.image
-    ? `https://southernedgemarketing.com${blog.image.startsWith("/") ? "" : "/"}${blog.image}`
-    : "https://southernedgemarketing.com/photoshoot.jpg";
+    ? `https://www.southernedgemarketing.com${blog.image.startsWith("/") ? "" : "/"}${blog.image}`
+    : "https://www.southernedgemarketing.com/photoshoot.jpg";
 
   return {
     title: `${blog.title}`,
@@ -98,7 +98,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title: `${blog.title} | Southern Edge Marketing`,
       description: blog.excerpt,
-      url: `https://southernedgemarketing.com/blogs/${slug}`,
+      url: `https://www.southernedgemarketing.com/blogs/${slug}`,
       type: "article",
       publishedTime: blog.publishedAt,
       authors: [blog.author || "Southern Marketing Team"],
@@ -131,8 +131,8 @@ export default async function BlogSlugPage({ params }: { params: Promise<{ slug:
   const blogImage = blog.image?.startsWith("http")
     ? blog.image
     : blog.image
-    ? `https://southernedgemarketing.com${blog.image.startsWith("/") ? "" : "/"}${blog.image}`
-    : "https://southernedgemarketing.com/photoshoot.jpg";
+    ? `https://www.southernedgemarketing.com${blog.image.startsWith("/") ? "" : "/"}${blog.image}`
+    : "https://www.southernedgemarketing.com/photoshoot.jpg";
 
   const blogJsonLd = {
     "@context": "https://schema.org",
@@ -150,12 +150,12 @@ export default async function BlogSlugPage({ params }: { params: Promise<{ slug:
       name: "Southern Edge Marketing",
       logo: {
         "@type": "ImageObject",
-        url: "https://southernedgemarketing.com/LOGO_Final.svg",
+        url: "https://www.southernedgemarketing.com/LOGO_Final.svg",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://southernedgemarketing.com/blogs/${slug}`,
+      "@id": `https://www.southernedgemarketing.com/blogs/${slug}`,
     },
   };
 

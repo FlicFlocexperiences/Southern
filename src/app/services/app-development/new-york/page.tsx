@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "App Development Company in New York | Southern Edge Marketing",
     description: "Partner with New York's premier app development company. We engineer secure, high-performance iOS and Android mobile applications for NYC enterprises and startups.",
-    url: "https://southernedgemarketing.com/services/app-development/new-york",
+    url: "https://www.southernedgemarketing.com/services/app-development/new-york",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/app-development-new-york.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/app-development-new-york.jpg",
         width: 1200,
         height: 675,
         alt: "App Development in New York Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "App Development Company in New York | Southern Edge Marketing",
     description: "Partner with New York's premier app development company. We engineer secure, high-performance iOS and Android mobile applications for NYC enterprises and startups.",
-    images: ["https://southernedgemarketing.com/images/infographics/app-development-new-york.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/app-development-new-york.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function NewYorkAppDevelopmentPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/app-development/new-york#organization",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/new-york#organization",
         "name": "Southern Edge Marketing - App Development New York",
-        "url": "https://southernedgemarketing.com/services/app-development/new-york",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/app-development-new-york.jpg",
+        "url": "https://www.southernedgemarketing.com/services/app-development/new-york",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/app-development-new-york.jpg",
         "telephone": "+1-800-555-0199",
         "priceRange": "$$$",
         "address": {
@@ -83,7 +83,7 @@ export default function NewYorkAppDevelopmentPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/app-development/new-york#service",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/new-york#service",
         "name": "App Development in New York",
         "provider": {
           "@type": "ProfessionalService",
@@ -97,31 +97,31 @@ export default function NewYorkAppDevelopmentPage() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/app-development/new-york#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/new-york#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "App Development in New York",
-            "item": "https://southernedgemarketing.com/services/app-development/new-york"
+            "item": "https://www.southernedgemarketing.com/services/app-development/new-york"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/app-development/new-york#faq",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/new-york#faq",
         "mainEntity": [
           {
             "@type": "Question",

@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SEO Company in Sydney | Southern Edge Marketing",
     description: "Scale organic revenue with Sydney premier enterprise SEO agency. We engineer generative engine optimization, entity graphs, and technical search platforms.",
-    url: "https://southernedgemarketing.com/services/seo/sydney",
+    url: "https://www.southernedgemarketing.com/services/seo/sydney",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/seo-sydney.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/seo-sydney.jpg",
         width: 1200,
         height: 675,
         alt: "SEO and Generative Engine Optimization in Sydney Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SEO Company in Sydney | Southern Edge Marketing",
     description: "Scale organic revenue with Sydney premier enterprise SEO agency. We engineer generative engine optimization, entity graphs, and technical search platforms.",
-    images: ["https://southernedgemarketing.com/images/infographics/seo-sydney.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/seo-sydney.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function SydneySeoPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/seo/sydney#organization",
+        "@id": "https://www.southernedgemarketing.com/services/seo/sydney#organization",
         "name": "Southern Edge Marketing - SEO Sydney",
-        "url": "https://southernedgemarketing.com/services/seo/sydney",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/seo-sydney.jpg",
+        "url": "https://www.southernedgemarketing.com/services/seo/sydney",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/seo-sydney.jpg",
         "telephone": "+61-2-9000-1234",
         "priceRange": "$$$",
         "address": {
@@ -84,12 +84,12 @@ export default function SydneySeoPage() {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/seo/sydney#service",
+        "@id": "https://www.southernedgemarketing.com/services/seo/sydney#service",
         "name": "SEO and Generative Engine Optimization in Sydney",
         "provider": {
           "@type": "ProfessionalService",
@@ -103,42 +103,42 @@ export default function SydneySeoPage() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://southernedgemarketing.com/services/seo/sydney#webpage",
-        "url": "https://southernedgemarketing.com/services/seo/sydney",
+        "@id": "https://www.southernedgemarketing.com/services/seo/sydney#webpage",
+        "url": "https://www.southernedgemarketing.com/services/seo/sydney",
         "name": "SEO Company in Sydney | Southern Edge Marketing",
         "author": {
           "@type": "Person",
           "name": "Ameet Nangia",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/seo/sydney#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/seo/sydney#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "SEO in Sydney",
-            "item": "https://southernedgemarketing.com/services/seo/sydney"
+            "item": "https://www.southernedgemarketing.com/services/seo/sydney"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/seo/sydney#faq",
+        "@id": "https://www.southernedgemarketing.com/services/seo/sydney#faq",
         "mainEntity": [
           {
             "@type": "Question",

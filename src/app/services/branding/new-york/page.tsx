@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Branding Company in New York | Southern Edge Marketing",
     description: "Partner with New York premier enterprise branding company. We engineer prestigious corporate brand systems, luxury visual identities, and category-defining positioning.",
-    url: "https://southernedgemarketing.com/services/branding/new-york",
+    url: "https://www.southernedgemarketing.com/services/branding/new-york",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/branding-new-york.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/branding-new-york.jpg",
         width: 1200,
         height: 675,
         alt: "Branding in New York Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Branding Company in New York | Southern Edge Marketing",
     description: "Partner with New York premier enterprise branding company. We engineer prestigious corporate brand systems, luxury visual identities, and category-defining positioning.",
-    images: ["https://southernedgemarketing.com/images/infographics/branding-new-york.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/branding-new-york.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function NewYorkBrandingPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/branding/new-york#organization",
+        "@id": "https://www.southernedgemarketing.com/services/branding/new-york#organization",
         "name": "Southern Edge Marketing - Branding New York",
-        "url": "https://southernedgemarketing.com/services/branding/new-york",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/branding-new-york.jpg",
+        "url": "https://www.southernedgemarketing.com/services/branding/new-york",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/branding-new-york.jpg",
         "telephone": "+1-800-555-0199",
         "priceRange": "$$$",
         "address": {
@@ -83,7 +83,7 @@ export default function NewYorkBrandingPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/branding/new-york#service",
+        "@id": "https://www.southernedgemarketing.com/services/branding/new-york#service",
         "name": "Branding in New York",
         "provider": {
           "@type": "ProfessionalService",
@@ -97,31 +97,31 @@ export default function NewYorkBrandingPage() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/branding/new-york#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/branding/new-york#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Branding in New York",
-            "item": "https://southernedgemarketing.com/services/branding/new-york"
+            "item": "https://www.southernedgemarketing.com/services/branding/new-york"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/branding/new-york#faq",
+        "@id": "https://www.southernedgemarketing.com/services/branding/new-york#faq",
         "mainEntity": [
           {
             "@type": "Question",

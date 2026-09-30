@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Web Development Company in Ras Al Khaimah | Southern Edge Marketing",
     description: "Enterprise web development in Ras Al Khaimah. We build high-performance Next.js websites, UAE PDPL compliant portals, and scalable cloud systems for RAK.",
-    url: "https://southernedgemarketing.com/services/web-development/ras-al-khaimah",
+    url: "https://www.southernedgemarketing.com/services/web-development/ras-al-khaimah",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/web-development-ras-al-khaimah.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/web-development-ras-al-khaimah.jpg",
         width: 1200,
         height: 675,
         alt: "Web Development in Ras Al Khaimah Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Web Development Company in Ras Al Khaimah | Southern Edge Marketing",
     description: "Enterprise web development in Ras Al Khaimah. We build high-performance Next.js websites, UAE PDPL compliant portals, and scalable cloud systems for RAK.",
-    images: ["https://southernedgemarketing.com/images/infographics/web-development-ras-al-khaimah.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/web-development-ras-al-khaimah.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function RasAlKhaimahWebDevelopmentPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/web-development/ras-al-khaimah#organization",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/ras-al-khaimah#organization",
         "name": "Southern Edge Marketing - Web Development Ras Al Khaimah",
-        "url": "https://southernedgemarketing.com/services/web-development/ras-al-khaimah",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/web-development-ras-al-khaimah.jpg",
+        "url": "https://www.southernedgemarketing.com/services/web-development/ras-al-khaimah",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/web-development-ras-al-khaimah.jpg",
         "telephone": "+1-800-555-0199",
         "priceRange": "$$$",
         "address": {
@@ -83,7 +83,7 @@ export default function RasAlKhaimahWebDevelopmentPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/web-development/ras-al-khaimah#service",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/ras-al-khaimah#service",
         "name": "Web Development in Ras Al Khaimah",
         "provider": {
           "@type": "ProfessionalService",
@@ -97,31 +97,31 @@ export default function RasAlKhaimahWebDevelopmentPage() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/web-development/ras-al-khaimah#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/ras-al-khaimah#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Web Development in Ras Al Khaimah",
-            "item": "https://southernedgemarketing.com/services/web-development/ras-al-khaimah"
+            "item": "https://www.southernedgemarketing.com/services/web-development/ras-al-khaimah"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/web-development/ras-al-khaimah#faq",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/ras-al-khaimah#faq",
         "mainEntity": [
           {
             "@type": "Question",

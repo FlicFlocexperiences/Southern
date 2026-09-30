@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Social Media Management Company in Melbourne | Southern Edge Marketing",
     description: "Partner with Melbourne's leading social media management company. We engineer high-converting B2B LinkedIn campaigns, executive leadership, and paid acquisition.",
-    url: "https://southernedgemarketing.com/services/social-media-management/melbourne",
+    url: "https://www.southernedgemarketing.com/services/social-media-management/melbourne",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/social-media-management-melbourne.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/social-media-management-melbourne.jpg",
         width: 1200,
         height: 675,
         alt: "Social Media Management in Melbourne Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Social Media Management Company in Melbourne | Southern Edge Marketing",
     description: "Partner with Melbourne's leading social media management company. We engineer high-converting B2B LinkedIn campaigns, executive leadership, and paid acquisition.",
-    images: ["https://southernedgemarketing.com/images/infographics/social-media-management-melbourne.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/social-media-management-melbourne.jpg"],
   },
 };
 
@@ -53,18 +53,18 @@ export default function MelbourneSocialMediaManagementPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/melbourne#organization",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/melbourne#organization",
         "name": "Southern Edge Marketing - Social Media Management Melbourne",
-        "url": "https://southernedgemarketing.com/services/social-media-management/melbourne",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/social-media-management-melbourne.jpg",
+        "url": "https://www.southernedgemarketing.com/services/social-media-management/melbourne",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/social-media-management-melbourne.jpg",
         "telephone": "+61-3-9000-1234",
         "priceRange": "$$$",
         "founder": {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         },
         "address": {
           "@type": "PostalAddress",
@@ -89,7 +89,7 @@ export default function MelbourneSocialMediaManagementPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/melbourne#service",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/melbourne#service",
         "name": "Social Media Management in Melbourne",
         "provider": {
           "@type": "ProfessionalService",
@@ -103,47 +103,47 @@ export default function MelbourneSocialMediaManagementPage() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/melbourne#webpage",
-        "url": "https://southernedgemarketing.com/services/social-media-management/melbourne",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/melbourne#webpage",
+        "url": "https://www.southernedgemarketing.com/services/social-media-management/melbourne",
         "name": "Social Media Management Company in Melbourne | Southern Edge Marketing",
         "description": "Partner with Melbourne's leading social media management company. We engineer high-converting B2B LinkedIn campaigns, executive leadership, and paid acquisition.",
         "inLanguage": "en-AU",
         "author": {
           "@type": "Person",
           "name": "Ameet Nangia",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         },
         "publisher": {
-          "@id": "https://southernedgemarketing.com/services/social-media-management/melbourne#organization"
+          "@id": "https://www.southernedgemarketing.com/services/social-media-management/melbourne#organization"
         }
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/melbourne#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/melbourne#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Social Media Management in Melbourne",
-            "item": "https://southernedgemarketing.com/services/social-media-management/melbourne"
+            "item": "https://www.southernedgemarketing.com/services/social-media-management/melbourne"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/melbourne#faq",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/melbourne#faq",
         "mainEntity": [
           {
             "@type": "Question",

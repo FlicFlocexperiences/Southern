@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Social Media Management Company in California | Southern Edge Marketing",
     description: "Scale your enterprise pipeline with California premier social media management agency. We engineer high-ROAS paid social, creator activations, and B2B ABM campaigns.",
-    url: "https://southernedgemarketing.com/services/social-media-management/california",
+    url: "https://www.southernedgemarketing.com/services/social-media-management/california",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/social-media-management-california.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/social-media-management-california.jpg",
         width: 1200,
         height: 675,
         alt: "Social Media Management in California Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Social Media Management Company in California | Southern Edge Marketing",
     description: "Scale your enterprise pipeline with California premier social media management agency. We engineer high-ROAS paid social, creator activations, and B2B ABM campaigns.",
-    images: ["https://southernedgemarketing.com/images/infographics/social-media-management-california.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/social-media-management-california.jpg"],
   },
   robots: {
     index: true,
@@ -64,18 +64,18 @@ export default function CaliforniaSocialMediaPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/california#organization",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/california#organization",
         "name": "Southern Edge Marketing - Social Media California",
-        "url": "https://southernedgemarketing.com/services/social-media-management/california",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/social-media-management-california.jpg",
+        "url": "https://www.southernedgemarketing.com/services/social-media-management/california",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/social-media-management-california.jpg",
         "telephone": "+1-800-555-0199",
         "priceRange": "$$$",
         "founder": {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         },
         "address": {
           "@type": "PostalAddress",
@@ -100,7 +100,7 @@ export default function CaliforniaSocialMediaPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/california#service",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/california#service",
         "name": "Social Media Management & Paid Performance Advertising in California",
         "provider": {
           "@type": "ProfessionalService",
@@ -114,42 +114,42 @@ export default function CaliforniaSocialMediaPage() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/california#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/california#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Social Media Management in California",
-            "item": "https://southernedgemarketing.com/services/social-media-management/california"
+            "item": "https://www.southernedgemarketing.com/services/social-media-management/california"
           }
         ]
       },
       {
         "@type": "WebPage",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/california#webpage",
-        "url": "https://southernedgemarketing.com/services/social-media-management/california",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/california#webpage",
+        "url": "https://www.southernedgemarketing.com/services/social-media-management/california",
         "name": "Social Media Management Company in California | Southern Edge Marketing",
         "author": {
           "@type": "Person",
           "name": "Ameet Nangia",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/california#faq",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/california#faq",
         "mainEntity": [
           {
             "@type": "Question",

@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "App Development Company in San Francisco | Southern Edge Marketing",
     description: "Partner with San Francisco's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native apps for Bay Area enterprises.",
-    url: "https://southernedgemarketing.com/services/app-development/san-francisco",
+    url: "https://www.southernedgemarketing.com/services/app-development/san-francisco",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/app-development-san-francisco.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/app-development-san-francisco.jpg",
         width: 1200,
         height: 675,
         alt: "App Development in San Francisco Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "App Development Company in San Francisco | Southern Edge Marketing",
     description: "Partner with San Francisco's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native apps for Bay Area enterprises.",
-    images: ["https://southernedgemarketing.com/images/infographics/app-development-san-francisco.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/app-development-san-francisco.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function SanFranciscoAppDevelopmentPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/app-development/san-francisco#organization",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/san-francisco#organization",
         "name": "Southern Edge Marketing - App Development San Francisco",
-        "url": "https://southernedgemarketing.com/services/app-development/san-francisco",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/app-development-san-francisco.jpg",
+        "url": "https://www.southernedgemarketing.com/services/app-development/san-francisco",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/app-development-san-francisco.jpg",
         "telephone": "+1-800-555-0199",
         "priceRange": "$$$",
         "address": {
@@ -83,7 +83,7 @@ export default function SanFranciscoAppDevelopmentPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/app-development/san-francisco#service",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/san-francisco#service",
         "name": "App Development in San Francisco",
         "provider": {
           "@type": "ProfessionalService",
@@ -97,31 +97,31 @@ export default function SanFranciscoAppDevelopmentPage() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/app-development/san-francisco#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/san-francisco#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "App Development in San Francisco",
-            "item": "https://southernedgemarketing.com/services/app-development/san-francisco"
+            "item": "https://www.southernedgemarketing.com/services/app-development/san-francisco"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/app-development/san-francisco#faq",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/san-francisco#faq",
         "mainEntity": [
           {
             "@type": "Question",

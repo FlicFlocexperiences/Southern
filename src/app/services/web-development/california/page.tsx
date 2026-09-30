@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Web Development Company in California | Southern Edge Marketing",
     description: "Scale your enterprise digital infrastructure with California premier web development agency. We engineer high-velocity Next.js platforms, CCPA-compliant systems, and scalable APIs.",
-    url: "https://southernedgemarketing.com/services/web-development/california",
+    url: "https://www.southernedgemarketing.com/services/web-development/california",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/web-development-california.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/web-development-california.jpg",
         width: 1200,
         height: 675,
         alt: "Web Development in California Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Web Development Company in California | Southern Edge Marketing",
     description: "Scale your enterprise digital infrastructure with California premier web development agency. We engineer high-velocity Next.js platforms, CCPA-compliant systems, and scalable APIs.",
-    images: ["https://southernedgemarketing.com/images/infographics/web-development-california.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/web-development-california.jpg"],
   },
   robots: {
     index: true,
@@ -64,18 +64,18 @@ export default function CaliforniaWebDevelopmentPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/web-development/california#organization",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/california#organization",
         "name": "Southern Edge Marketing - Web Development California",
-        "url": "https://southernedgemarketing.com/services/web-development/california",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/web-development-california.jpg",
+        "url": "https://www.southernedgemarketing.com/services/web-development/california",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/web-development-california.jpg",
         "telephone": "+1-800-555-0199",
         "priceRange": "$$$",
         "founder": {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         },
         "address": {
           "@type": "PostalAddress",
@@ -100,7 +100,7 @@ export default function CaliforniaWebDevelopmentPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/web-development/california#service",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/california#service",
         "name": "Web Development in California",
         "provider": {
           "@type": "ProfessionalService",
@@ -114,42 +114,42 @@ export default function CaliforniaWebDevelopmentPage() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/web-development/california#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/california#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Web Development in California",
-            "item": "https://southernedgemarketing.com/services/web-development/california"
+            "item": "https://www.southernedgemarketing.com/services/web-development/california"
           }
         ]
       },
       {
         "@type": "WebPage",
-        "@id": "https://southernedgemarketing.com/services/web-development/california#webpage",
-        "url": "https://southernedgemarketing.com/services/web-development/california",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/california#webpage",
+        "url": "https://www.southernedgemarketing.com/services/web-development/california",
         "name": "Web Development Company in California | Southern Edge Marketing",
         "author": {
           "@type": "Person",
           "name": "Ameet Nangia",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/web-development/california#faq",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/california#faq",
         "mainEntity": [
           {
             "@type": "Question",

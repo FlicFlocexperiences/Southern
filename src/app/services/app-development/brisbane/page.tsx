@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "App Development Company in Brisbane | Southern Edge Marketing",
     description: "Partner with Brisbane's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native applications for Queensland enterprises.",
-    url: "https://southernedgemarketing.com/services/app-development/brisbane",
+    url: "https://www.southernedgemarketing.com/services/app-development/brisbane",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/app-development-brisbane.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/app-development-brisbane.jpg",
         width: 1200,
         height: 675,
         alt: "App Development in Brisbane Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "App Development Company in Brisbane | Southern Edge Marketing",
     description: "Partner with Brisbane's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native applications for Queensland enterprises.",
-    images: ["https://southernedgemarketing.com/images/infographics/app-development-brisbane.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/app-development-brisbane.jpg"],
   },
 };
 
@@ -53,18 +53,18 @@ export default function BrisbaneAppDevelopmentPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/app-development/brisbane#organization",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/brisbane#organization",
         "name": "Southern Edge Marketing - App Development Brisbane",
-        "url": "https://southernedgemarketing.com/services/app-development/brisbane",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/app-development-brisbane.jpg",
+        "url": "https://www.southernedgemarketing.com/services/app-development/brisbane",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/app-development-brisbane.jpg",
         "telephone": "+61-7-3000-1234",
         "priceRange": "$$$",
         "founder": {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         },
         "address": {
           "@type": "PostalAddress",
@@ -89,7 +89,7 @@ export default function BrisbaneAppDevelopmentPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/app-development/brisbane#service",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/brisbane#service",
         "name": "App Development in Brisbane",
         "provider": {
           "@type": "ProfessionalService",
@@ -103,51 +103,51 @@ export default function BrisbaneAppDevelopmentPage() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://southernedgemarketing.com/services/app-development/brisbane#webpage",
-        "url": "https://southernedgemarketing.com/services/app-development/brisbane",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/brisbane#webpage",
+        "url": "https://www.southernedgemarketing.com/services/app-development/brisbane",
         "name": "App Development Company in Brisbane | Southern Edge Marketing",
         "description": "Enterprise mobile application development engineering native iOS Swift, Android Kotlin, and React Native platforms for Queensland enterprises.",
         "isPartOf": {
           "@type": "WebSite",
-          "@id": "https://southernedgemarketing.com/#website",
+          "@id": "https://www.southernedgemarketing.com/#website",
           "name": "Southern Edge Marketing",
-          "url": "https://southernedgemarketing.com"
+          "url": "https://www.southernedgemarketing.com"
         },
         "author": {
           "@type": "Person",
-          "@id": "https://southernedgemarketing.com/authors/ameet-nangia#person",
+          "@id": "https://www.southernedgemarketing.com/authors/ameet-nangia#person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/app-development/brisbane#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/brisbane#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "App Development in Brisbane",
-            "item": "https://southernedgemarketing.com/services/app-development/brisbane"
+            "item": "https://www.southernedgemarketing.com/services/app-development/brisbane"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/app-development/brisbane#faq",
+        "@id": "https://www.southernedgemarketing.com/services/app-development/brisbane#faq",
         "mainEntity": [
           {
             "@type": "Question",

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Social Media Management in Los Angeles | Southern Edge Marketing",
     description: "Partner with Los Angeles's premier social media management agency. We engineer high-ROAS paid social campaigns, creator economy activations, and viral content strategies for Silicon Beach and Hollywood brands.",
-    url: "https://southernedgemarketing.com/services/social-media-management/los-angeles",
+    url: "https://www.southernedgemarketing.com/services/social-media-management/los-angeles",
     siteName: "Southern Edge Marketing",
     locale: "en_US",
     type: "website",
@@ -55,10 +55,10 @@ export default function LosAngelesSocialMediaPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/los-angeles#organization",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/los-angeles#organization",
         "name": "Southern Edge Marketing - Social Media Los Angeles",
-        "url": "https://southernedgemarketing.com/services/social-media-management/los-angeles",
-        "logo": "https://southernedgemarketing.com/LOGO_Final.svg",
+        "url": "https://www.southernedgemarketing.com/services/social-media-management/los-angeles",
+        "logo": "https://www.southernedgemarketing.com/LOGO_Final.svg",
         "telephone": "+1-800-555-0199",
         "priceRange": "$$$",
         "address": {
@@ -77,10 +77,10 @@ export default function LosAngelesSocialMediaPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/los-angeles#service",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/los-angeles#service",
         "name": "Social Media Management & Paid Social in Los Angeles",
         "provider": {
-          "@id": "https://southernedgemarketing.com/services/social-media-management/los-angeles#organization"
+          "@id": "https://www.southernedgemarketing.com/services/social-media-management/los-angeles#organization"
         },
         "serviceType": "Paid Social Advertising, Creator Economy Management, Short-Form Video Production, Executive Thought Leadership",
         "areaServed": {

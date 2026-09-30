@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Web Development Company in Melbourne | Southern Edge Marketing",
     description: "Partner with Melbourne premier enterprise web development company. We engineer high-velocity Next.js platforms, Privacy Act compliant systems, and scalable APIs.",
-    url: "https://southernedgemarketing.com/services/web-development/melbourne",
+    url: "https://www.southernedgemarketing.com/services/web-development/melbourne",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/web-development-melbourne.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/web-development-melbourne.jpg",
         width: 1200,
         height: 675,
         alt: "Web Development in Melbourne Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Web Development Company in Melbourne | Southern Edge Marketing",
     description: "Partner with Melbourne premier enterprise web development company. We engineer high-velocity Next.js platforms, Privacy Act compliant systems, and scalable APIs.",
-    images: ["https://southernedgemarketing.com/images/infographics/web-development-melbourne.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/web-development-melbourne.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function MelbourneWebDevelopmentPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/web-development/melbourne#organization",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/melbourne#organization",
         "name": "Southern Edge Marketing - Web Development Melbourne",
-        "url": "https://southernedgemarketing.com/services/web-development/melbourne",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/web-development-melbourne.jpg",
+        "url": "https://www.southernedgemarketing.com/services/web-development/melbourne",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/web-development-melbourne.jpg",
         "telephone": "+61-3-9000-1234",
         "priceRange": "$$$",
         "address": {
@@ -84,12 +84,12 @@ export default function MelbourneWebDevelopmentPage() {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/web-development/melbourne#service",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/melbourne#service",
         "name": "Web Development in Melbourne",
         "provider": {
           "@type": "ProfessionalService",
@@ -103,31 +103,31 @@ export default function MelbourneWebDevelopmentPage() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/web-development/melbourne#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/melbourne#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Web Development in Melbourne",
-            "item": "https://southernedgemarketing.com/services/web-development/melbourne"
+            "item": "https://www.southernedgemarketing.com/services/web-development/melbourne"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/web-development/melbourne#faq",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/melbourne#faq",
         "mainEntity": [
           {
             "@type": "Question",

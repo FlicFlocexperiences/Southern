@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Branding Company in Sydney | Southern Edge Marketing",
     description: "Partner with Sydney premier enterprise branding company. We engineer category-defining brand systems, IP Australia cleared trademarks, and living design tokens.",
-    url: "https://southernedgemarketing.com/services/branding/sydney",
+    url: "https://www.southernedgemarketing.com/services/branding/sydney",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/branding-sydney.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/branding-sydney.jpg",
         width: 1200,
         height: 675,
         alt: "Branding in Sydney Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Branding Company in Sydney | Southern Edge Marketing",
     description: "Partner with Sydney premier enterprise branding company. We engineer category-defining brand systems, IP Australia cleared trademarks, and living design tokens.",
-    images: ["https://southernedgemarketing.com/images/infographics/branding-sydney.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/branding-sydney.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function SydneyBrandingPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/branding/sydney#organization",
+        "@id": "https://www.southernedgemarketing.com/services/branding/sydney#organization",
         "name": "Southern Edge Marketing - Branding Sydney",
-        "url": "https://southernedgemarketing.com/services/branding/sydney",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/branding-sydney.jpg",
+        "url": "https://www.southernedgemarketing.com/services/branding/sydney",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/branding-sydney.jpg",
         "telephone": "+61-2-9000-1234",
         "priceRange": "$$$",
         "address": {
@@ -84,12 +84,12 @@ export default function SydneyBrandingPage() {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/branding/sydney#service",
+        "@id": "https://www.southernedgemarketing.com/services/branding/sydney#service",
         "name": "Branding in Sydney",
         "provider": {
           "@type": "ProfessionalService",
@@ -103,42 +103,42 @@ export default function SydneyBrandingPage() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://southernedgemarketing.com/services/branding/sydney#webpage",
-        "url": "https://southernedgemarketing.com/services/branding/sydney",
+        "@id": "https://www.southernedgemarketing.com/services/branding/sydney#webpage",
+        "url": "https://www.southernedgemarketing.com/services/branding/sydney",
         "name": "Branding Company in Sydney | Southern Edge Marketing",
         "author": {
           "@type": "Person",
           "name": "Ameet Nangia",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/branding/sydney#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/branding/sydney#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Branding in Sydney",
-            "item": "https://southernedgemarketing.com/services/branding/sydney"
+            "item": "https://www.southernedgemarketing.com/services/branding/sydney"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/branding/sydney#faq",
+        "@id": "https://www.southernedgemarketing.com/services/branding/sydney#faq",
         "mainEntity": [
           {
             "@type": "Question",

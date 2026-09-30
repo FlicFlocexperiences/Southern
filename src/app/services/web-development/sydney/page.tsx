@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Web Development Company in Sydney | Southern Edge Marketing",
     description: "Partner with Sydney premier enterprise web development company. We engineer high-velocity Next.js platforms, Privacy Act compliant systems, and scalable APIs.",
-    url: "https://southernedgemarketing.com/services/web-development/sydney",
+    url: "https://www.southernedgemarketing.com/services/web-development/sydney",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/web-development-sydney.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/web-development-sydney.jpg",
         width: 1200,
         height: 675,
         alt: "Web Development in Sydney Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Web Development Company in Sydney | Southern Edge Marketing",
     description: "Partner with Sydney premier enterprise web development company. We engineer high-velocity Next.js platforms, Privacy Act compliant systems, and scalable APIs.",
-    images: ["https://southernedgemarketing.com/images/infographics/web-development-sydney.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/web-development-sydney.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function SydneyWebDevelopmentPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/web-development/sydney#organization",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/sydney#organization",
         "name": "Southern Edge Marketing - Web Development Sydney",
-        "url": "https://southernedgemarketing.com/services/web-development/sydney",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/web-development-sydney.jpg",
+        "url": "https://www.southernedgemarketing.com/services/web-development/sydney",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/web-development-sydney.jpg",
         "telephone": "+61-2-9000-1234",
         "priceRange": "$$$",
         "address": {
@@ -84,12 +84,12 @@ export default function SydneyWebDevelopmentPage() {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/web-development/sydney#service",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/sydney#service",
         "name": "Web Development in Sydney",
         "provider": {
           "@type": "ProfessionalService",
@@ -103,31 +103,31 @@ export default function SydneyWebDevelopmentPage() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/web-development/sydney#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/sydney#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Web Development in Sydney",
-            "item": "https://southernedgemarketing.com/services/web-development/sydney"
+            "item": "https://www.southernedgemarketing.com/services/web-development/sydney"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/web-development/sydney#faq",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/sydney#faq",
         "mainEntity": [
           {
             "@type": "Question",

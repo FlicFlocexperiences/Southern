@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Branding Company in Brisbane | Southern Edge Marketing",
     description: "Partner with Brisbane premier enterprise branding company. We engineer category-defining brand systems, IP Australia cleared trademarks, and living design tokens.",
-    url: "https://southernedgemarketing.com/services/branding/brisbane",
+    url: "https://www.southernedgemarketing.com/services/branding/brisbane",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/branding-brisbane.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/branding-brisbane.jpg",
         width: 1200,
         height: 675,
         alt: "Branding in Brisbane Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Branding Company in Brisbane | Southern Edge Marketing",
     description: "Partner with Brisbane premier enterprise branding company. We engineer category-defining brand systems, IP Australia cleared trademarks, and living design tokens.",
-    images: ["https://southernedgemarketing.com/images/infographics/branding-brisbane.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/branding-brisbane.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function BrisbaneBrandingPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/branding/brisbane#organization",
+        "@id": "https://www.southernedgemarketing.com/services/branding/brisbane#organization",
         "name": "Southern Edge Marketing - Branding Brisbane",
-        "url": "https://southernedgemarketing.com/services/branding/brisbane",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/branding-brisbane.jpg",
+        "url": "https://www.southernedgemarketing.com/services/branding/brisbane",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/branding-brisbane.jpg",
         "telephone": "+61-7-3000-1234",
         "priceRange": "$$$",
         "address": {
@@ -84,12 +84,12 @@ export default function BrisbaneBrandingPage() {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/branding/brisbane#service",
+        "@id": "https://www.southernedgemarketing.com/services/branding/brisbane#service",
         "name": "Branding in Brisbane",
         "provider": {
           "@type": "ProfessionalService",
@@ -103,42 +103,42 @@ export default function BrisbaneBrandingPage() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://southernedgemarketing.com/services/branding/brisbane#webpage",
-        "url": "https://southernedgemarketing.com/services/branding/brisbane",
+        "@id": "https://www.southernedgemarketing.com/services/branding/brisbane#webpage",
+        "url": "https://www.southernedgemarketing.com/services/branding/brisbane",
         "name": "Branding Company in Brisbane | Southern Edge Marketing",
         "author": {
           "@type": "Person",
           "name": "Ameet Nangia",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/branding/brisbane#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/branding/brisbane#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Branding in Brisbane",
-            "item": "https://southernedgemarketing.com/services/branding/brisbane"
+            "item": "https://www.southernedgemarketing.com/services/branding/brisbane"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/branding/brisbane#faq",
+        "@id": "https://www.southernedgemarketing.com/services/branding/brisbane#faq",
         "mainEntity": [
           {
             "@type": "Question",

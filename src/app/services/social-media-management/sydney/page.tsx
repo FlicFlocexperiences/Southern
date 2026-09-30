@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Social Media Management Company in Sydney | Southern Edge Marketing",
     description: "Partner with Sydney's premier social media management company. We engineer high-converting B2B LinkedIn campaigns, executive thought leadership, and paid acquisition.",
-    url: "https://southernedgemarketing.com/services/social-media-management/sydney",
+    url: "https://www.southernedgemarketing.com/services/social-media-management/sydney",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/social-media-management-sydney.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/social-media-management-sydney.jpg",
         width: 1200,
         height: 675,
         alt: "Social Media Management in Sydney Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Social Media Management Company in Sydney | Southern Edge Marketing",
     description: "Partner with Sydney's premier social media management company. We engineer high-converting B2B LinkedIn campaigns, executive thought leadership, and paid acquisition.",
-    images: ["https://southernedgemarketing.com/images/infographics/social-media-management-sydney.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/social-media-management-sydney.jpg"],
   },
 };
 
@@ -53,18 +53,18 @@ export default function SydneySocialMediaManagementPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/sydney#organization",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/sydney#organization",
         "name": "Southern Edge Marketing - Social Media Management Sydney",
-        "url": "https://southernedgemarketing.com/services/social-media-management/sydney",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/social-media-management-sydney.jpg",
+        "url": "https://www.southernedgemarketing.com/services/social-media-management/sydney",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/social-media-management-sydney.jpg",
         "telephone": "+61-2-8000-0199",
         "priceRange": "$$$",
         "founder": {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         },
         "address": {
           "@type": "PostalAddress",
@@ -89,7 +89,7 @@ export default function SydneySocialMediaManagementPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/sydney#service",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/sydney#service",
         "name": "Social Media Management in Sydney",
         "provider": {
           "@type": "ProfessionalService",
@@ -103,51 +103,51 @@ export default function SydneySocialMediaManagementPage() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/sydney#webpage",
-        "url": "https://southernedgemarketing.com/services/social-media-management/sydney",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/sydney#webpage",
+        "url": "https://www.southernedgemarketing.com/services/social-media-management/sydney",
         "name": "Social Media Management Company in Sydney | Southern Edge Marketing",
         "description": "Enterprise social media management, executive thought leadership, algorithmic short-form video, and Privacy Act compliant ad acquisition for Sydney enterprises.",
         "isPartOf": {
           "@type": "WebSite",
-          "@id": "https://southernedgemarketing.com/#website",
+          "@id": "https://www.southernedgemarketing.com/#website",
           "name": "Southern Edge Marketing",
-          "url": "https://southernedgemarketing.com"
+          "url": "https://www.southernedgemarketing.com"
         },
         "author": {
           "@type": "Person",
-          "@id": "https://southernedgemarketing.com/authors/ameet-nangia#person",
+          "@id": "https://www.southernedgemarketing.com/authors/ameet-nangia#person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/sydney#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/sydney#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Social Media Management in Sydney",
-            "item": "https://southernedgemarketing.com/services/social-media-management/sydney"
+            "item": "https://www.southernedgemarketing.com/services/social-media-management/sydney"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/sydney#faq",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/sydney#faq",
         "mainEntity": [
           {
             "@type": "Question",

@@ -34,6 +34,7 @@ function getProjectImages(slug: string, gallery?: string[]): string[] {
     slug === "sosha" ? "Sosha/GRID 04" :
     slug === "jwellery" ? "Jwellery" :
     (slug === "sage" || slug === "sage-perfume" || slug === "sage_perfume") ? "SAGE_Perfumes" :
+    slug === "jsv" ? "JSV" :
     slug;
   const dirPath = path.join(process.cwd(), "public", folderName);
 

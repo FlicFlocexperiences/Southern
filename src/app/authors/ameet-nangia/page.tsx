@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     title: "Ameet Nangia - Founder & Lead Digital Strategist | Southern Edge Marketing",
     description:
       "Learn about Ameet Nangia, Founder and Lead Digital Strategist at Southern Edge Marketing. Specialist in SEO, Digital Strategy, Google Adwords, and Enterprise Lead Generation.",
-    url: "https://southernedgemarketing.com/authors/ameet-nangia",
+    url: "https://www.southernedgemarketing.com/authors/ameet-nangia",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/assets/team/ameet.png",
+        url: "https://www.southernedgemarketing.com/assets/team/ameet.png",
         width: 800,
         height: 800,
         alt: "Ameet Nangia - Southern Edge Marketing",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Ameet Nangia - Founder & Lead Digital Strategist | Southern Edge Marketing",
     description:
       "Learn about Ameet Nangia, Founder and Lead Digital Strategist at Southern Edge Marketing. Specialist in SEO, Digital Strategy, Google Adwords, and Enterprise Lead Generation.",
-    images: ["https://southernedgemarketing.com/assets/team/ameet.png"],
+    images: ["https://www.southernedgemarketing.com/assets/team/ameet.png"],
   },
 };
 
@@ -51,10 +51,10 @@ export default function AmeetNangiaAuthorPage() {
     "worksFor": {
       "@type": "Organization",
       "name": "Southern Edge Marketing",
-      "url": "https://southernedgemarketing.com"
+      "url": "https://www.southernedgemarketing.com"
     },
-    "url": "https://southernedgemarketing.com/authors/ameet-nangia",
-    "image": "https://southernedgemarketing.com/assets/team/ameet.png",
+    "url": "https://www.southernedgemarketing.com/authors/ameet-nangia",
+    "image": "https://www.southernedgemarketing.com/assets/team/ameet.png",
     "sameAs": [
       "https://www.linkedin.com/in/ameet-nangia-b231b864/"
     ],

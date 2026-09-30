@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Social Media Management Company in Brisbane | Southern Edge Marketing",
     description: "Partner with Brisbane's premier social media management company. We engineer high-converting B2B LinkedIn campaigns, executive thought leadership, and paid acquisition.",
-    url: "https://southernedgemarketing.com/services/social-media-management/brisbane",
+    url: "https://www.southernedgemarketing.com/services/social-media-management/brisbane",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/social-media-management-brisbane.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/social-media-management-brisbane.jpg",
         width: 1200,
         height: 675,
         alt: "Social Media Management in Brisbane Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Social Media Management Company in Brisbane | Southern Edge Marketing",
     description: "Partner with Brisbane's premier social media management company. We engineer high-converting B2B LinkedIn campaigns, executive thought leadership, and paid acquisition.",
-    images: ["https://southernedgemarketing.com/images/infographics/social-media-management-brisbane.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/social-media-management-brisbane.jpg"],
   },
 };
 
@@ -53,18 +53,18 @@ export default function BrisbaneSocialMediaManagementPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/brisbane#organization",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/brisbane#organization",
         "name": "Southern Edge Marketing - Social Media Management Brisbane",
-        "url": "https://southernedgemarketing.com/services/social-media-management/brisbane",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/social-media-management-brisbane.jpg",
+        "url": "https://www.southernedgemarketing.com/services/social-media-management/brisbane",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/social-media-management-brisbane.jpg",
         "telephone": "+61-7-3000-0199",
         "priceRange": "$$$",
         "founder": {
           "@type": "Person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         },
         "address": {
           "@type": "PostalAddress",
@@ -89,7 +89,7 @@ export default function BrisbaneSocialMediaManagementPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/brisbane#service",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/brisbane#service",
         "name": "Social Media Management in Brisbane",
         "provider": {
           "@type": "ProfessionalService",
@@ -103,51 +103,51 @@ export default function BrisbaneSocialMediaManagementPage() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/brisbane#webpage",
-        "url": "https://southernedgemarketing.com/services/social-media-management/brisbane",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/brisbane#webpage",
+        "url": "https://www.southernedgemarketing.com/services/social-media-management/brisbane",
         "name": "Social Media Management Company in Brisbane | Southern Edge Marketing",
         "description": "Enterprise social media management, executive thought leadership, algorithmic short-form video, and Privacy Act compliant ad acquisition for Brisbane enterprises.",
         "isPartOf": {
           "@type": "WebSite",
-          "@id": "https://southernedgemarketing.com/#website",
+          "@id": "https://www.southernedgemarketing.com/#website",
           "name": "Southern Edge Marketing",
-          "url": "https://southernedgemarketing.com"
+          "url": "https://www.southernedgemarketing.com"
         },
         "author": {
           "@type": "Person",
-          "@id": "https://southernedgemarketing.com/authors/ameet-nangia#person",
+          "@id": "https://www.southernedgemarketing.com/authors/ameet-nangia#person",
           "name": "Ameet Nangia",
           "jobTitle": "Founder & Lead Digital Strategist",
-          "url": "https://southernedgemarketing.com/authors/ameet-nangia"
+          "url": "https://www.southernedgemarketing.com/authors/ameet-nangia"
         }
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/brisbane#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/brisbane#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Social Media Management in Brisbane",
-            "item": "https://southernedgemarketing.com/services/social-media-management/brisbane"
+            "item": "https://www.southernedgemarketing.com/services/social-media-management/brisbane"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/social-media-management/brisbane#faq",
+        "@id": "https://www.southernedgemarketing.com/services/social-media-management/brisbane#faq",
         "mainEntity": [
           {
             "@type": "Question",

@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Web Development Company in San Francisco | Southern Edge Marketing",
     description: "Partner with San Francisco premier enterprise web development company. We engineer high-velocity Next.js platforms, CCPA-compliant systems, and scalable APIs.",
-    url: "https://southernedgemarketing.com/services/web-development/san-francisco",
+    url: "https://www.southernedgemarketing.com/services/web-development/san-francisco",
     siteName: "Southern Edge Marketing",
     images: [
       {
-        url: "https://southernedgemarketing.com/images/infographics/web-development-san-francisco.jpg",
+        url: "https://www.southernedgemarketing.com/images/infographics/web-development-san-francisco.jpg",
         width: 1200,
         height: 675,
         alt: "Web Development in San Francisco Infographic Blueprint",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Web Development Company in San Francisco | Southern Edge Marketing",
     description: "Partner with San Francisco premier enterprise web development company. We engineer high-velocity Next.js platforms, CCPA-compliant systems, and scalable APIs.",
-    images: ["https://southernedgemarketing.com/images/infographics/web-development-san-francisco.jpg"],
+    images: ["https://www.southernedgemarketing.com/images/infographics/web-development-san-francisco.jpg"],
   },
 };
 
@@ -53,11 +53,11 @@ export default function SanFranciscoWebDevelopmentPage() {
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://southernedgemarketing.com/services/web-development/san-francisco#organization",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/san-francisco#organization",
         "name": "Southern Edge Marketing - Web Development San Francisco",
-        "url": "https://southernedgemarketing.com/services/web-development/san-francisco",
-        "logo": "https://southernedgemarketing.com/logo.png",
-        "image": "https://southernedgemarketing.com/images/infographics/web-development-san-francisco.jpg",
+        "url": "https://www.southernedgemarketing.com/services/web-development/san-francisco",
+        "logo": "https://www.southernedgemarketing.com/logo.png",
+        "image": "https://www.southernedgemarketing.com/images/infographics/web-development-san-francisco.jpg",
         "telephone": "+1-800-555-0199",
         "priceRange": "$$$",
         "address": {
@@ -83,7 +83,7 @@ export default function SanFranciscoWebDevelopmentPage() {
       },
       {
         "@type": "Service",
-        "@id": "https://southernedgemarketing.com/services/web-development/san-francisco#service",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/san-francisco#service",
         "name": "Web Development in San Francisco",
         "provider": {
           "@type": "ProfessionalService",
@@ -97,31 +97,31 @@ export default function SanFranciscoWebDevelopmentPage() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://southernedgemarketing.com/services/web-development/san-francisco#breadcrumb",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/san-francisco#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://southernedgemarketing.com"
+            "item": "https://www.southernedgemarketing.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://southernedgemarketing.com/services"
+            "item": "https://www.southernedgemarketing.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Web Development in San Francisco",
-            "item": "https://southernedgemarketing.com/services/web-development/san-francisco"
+            "item": "https://www.southernedgemarketing.com/services/web-development/san-francisco"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://southernedgemarketing.com/services/web-development/san-francisco#faq",
+        "@id": "https://www.southernedgemarketing.com/services/web-development/san-francisco#faq",
         "mainEntity": [
           {
             "@type": "Question",

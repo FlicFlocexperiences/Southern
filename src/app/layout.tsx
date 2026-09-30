@@ -20,7 +20,7 @@ const playball = Playball({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://southernedgemarketing.com"),
+  metadataBase: new URL("https://www.southernedgemarketing.com"),
   title: {
     default: "Digital Marketing Agency Delhi | Southern Edge",
     template: "%s | Southern Edge Marketing",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Digital Marketing Agency Delhi | Southern Edge",
     description: "Southern Edge Marketing drives business with strategy, design, development, and marketing. Trusted by 100+ businesses across India. 5.0 rated.",
-    url: "https://southernedgemarketing.com",
+    url: "https://www.southernedgemarketing.com",
     siteName: "Southern Edge Marketing",
     images: [{
       url: "/og-image.png",
@@ -49,6 +49,11 @@ export const metadata: Metadata = {
     }],
     locale: "en_IN",
     type: "website",
+  },
+  verification: {
+    other: {
+      "facebook-domain-verification": "g36uoug9vc4tadxt4aemu2cc5jyqza",
+    },
   },
   twitter: {
     card: "summary_large_image",
@@ -67,9 +72,9 @@ const jsonLdSchema = {
   "@context": "https://schema.org",
   "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
   "name": "Southern Edge Marketing",
-  "url": "https://southernedgemarketing.com",
-  "logo": "https://southernedgemarketing.com/logo.png",
-  "image": "https://southernedgemarketing.com/logo.png",
+  "url": "https://www.southernedgemarketing.com",
+  "logo": "https://www.southernedgemarketing.com/logo.png",
+  "image": "https://www.southernedgemarketing.com/logo.png",
   "telephone": "+918700901769",
   "email": "info@southernedgemarketing.com",
   "priceRange": "$$",
@@ -105,7 +110,6 @@ export default function RootLayout({
       className={`${onestSans.variable} ${geistMono.variable} ${playball.variable} antialiased`}
     >
       <head>
-        <meta name="facebook-domain-verification" content="g36uoug9vc4tadxt4aemu2cc5jyqza" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
