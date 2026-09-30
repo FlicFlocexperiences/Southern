@@ -34,7 +34,7 @@ export const MobileFooter = () => {
         { label: "Our Services", href: "/services" },
         { label: "Featured Projects", href: "/projects" },
         { label: "Blogs & Insights", href: "/blogs" },
-        { label: "Founder Profile", href: "/author/ameet-nangia" },
+        { label: "Founder Profile", href: "/authors/ameet-nangia" },
         { label: "Free Growth Consultation →", href: "/contact", highlight: true },
       ],
     },
@@ -130,10 +130,10 @@ export const MobileFooter = () => {
       
       {/* Brand & Intro */}
       <div className="flex flex-col gap-3 mb-8">
-        <Link href="/" className="inline-flex items-center w-fit">
+        <Link href="/" className="inline-flex items-center w-fit" aria-label="Southern Edge Marketing Home">
           <Image
             src="/Footer_Logo.svg"
-            alt="Southern Edge Marketing"
+            alt="Southern Edge Marketing Logo"
             width={170}
             height={58}
             className="h-10 w-auto object-contain"

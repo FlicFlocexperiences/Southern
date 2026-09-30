@@ -23,7 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ slug, title, category, durati
       <div className={`w-full aspect-[4/3] rounded-[20px] lg:rounded-[24px] overflow-hidden mb-6 bg-neutral-50 relative ${isPhotography ? "flex items-center justify-center p-4" : ""}`}>
         <img 
           src={image} 
-          alt={title}
+          alt={`${title} Case Study`}
           className={`transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-105 ${
             isPhotography 
               ? "max-w-full max-h-full w-auto h-auto object-contain" 

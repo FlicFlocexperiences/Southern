@@ -10,10 +10,10 @@ export const DesktopFooter = () => {
       
       {/* Top Section: Centered Brand Mark & Mission */}
       <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-14">
-        <Link href="/" className="inline-flex items-center group mb-5">
+        <Link href="/" className="inline-flex items-center group mb-5" aria-label="Southern Edge Marketing Home">
           <Image
             src="/Footer_Logo.svg"
-            alt="Southern Edge Marketing"
+            alt="Southern Edge Marketing Logo"
             width={220}
             height={74}
             className="h-12 lg:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
@@ -51,7 +51,7 @@ export const DesktopFooter = () => {
               <Link href="/blogs" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
                 Blogs & Insights
               </Link>
-              <Link href="/author/ameet-nangia" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+              <Link href="/authors/ameet-nangia" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
                 Founder Profile
               </Link>
               <Link href="/contact" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit font-medium text-[#c43e00]">

@@ -9,7 +9,13 @@ export const metadata: Metadata = {
     canonical: '/privacy',
   },
   title: "Privacy Policy",
-  description: "Learn how Southern Edge Marketing collects, manages, processes, and protects your data.",
+  description: "Learn how Southern Edge Marketing collects, manages, processes, and protects your enterprise data with rigorous security standards.",
+  openGraph: {
+    title: "Privacy Policy | Southern Edge",
+    description: "Learn how Southern Edge Marketing collects, manages, processes, and protects your enterprise data with rigorous security standards.",
+    url: "https://www.southernedgemarketing.com/privacy",
+    siteName: "Southern Edge Marketing",
+  },
 };
 
 export default function PrivacyPolicy() {
@@ -23,7 +29,7 @@ export default function PrivacyPolicy() {
       </div>
 
       <main className="flex-grow pt-32 pb-16 px-5 md:px-20 max-w-5xl mx-auto w-full">
-        <h4 className="text-[#de5e18] text-sm font-semibold tracking-wider uppercase mb-2">Compliance & Legal</h4>
+        <span className="text-[#de5e18] text-sm font-semibold tracking-wider uppercase mb-2 block">Compliance & Legal</span>
         <h1 className="text-4xl md:text-5xl font-bold text-[#0f0f0f] mb-6">Privacy Policy</h1>
         
         <p className="text-lg text-[#828282] mb-12">
@@ -68,12 +74,12 @@ export default function PrivacyPolicy() {
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">5. Contact & Regulatory Rights</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            You hold the absolute right to request access to, correction of, or erasure of any personal records stored within our databases. If you wish to execute your data protection rights, or if you have questions regarding this Privacy Policy statement, please contact our data compliance officer directly at info@southernedgemarketing. We will respond to and address your requests within 10 business days.
+            You hold the absolute right to request access to, correction of, or erasure of any personal records stored within our databases. If you wish to execute your data protection rights, or if you have questions regarding this Privacy Policy statement, please contact our data compliance officer directly at info@southernedgemarketing.com. We will respond to and address your requests within 10 business days.
           </p>
         </section>
 
         <p className="text-sm text-[#828282] mt-16 pt-8 border-t border-black/10">
-          © 2026 Design N Code. All corporate rights reserved.
+          © {new Date().getFullYear()} Southern Edge Marketing. All corporate rights reserved.
         </p>
       </main>
 

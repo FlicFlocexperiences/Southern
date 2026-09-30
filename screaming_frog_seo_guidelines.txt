@@ -1,0 +1,256 @@
+================================================================================
+SCREAMING FROG SEO COMPREHENSIVE AUDIT GUIDELINES & FIXING REFERENCE
+Southern Edge Marketing Codebase Standard
+================================================================================
+
+This document serves as the master reference manual for resolving all SEO issues
+flagged by Screaming Frog SEO Spider, Google Search Console, and Lighthouse.
+Every fix must adhere strictly to the boundaries and rules below to guarantee 
+that resolving one issue does not trigger any new warnings or errors.
+
+--------------------------------------------------------------------------------
+TABLE OF CONTENTS
+--------------------------------------------------------------------------------
+1. Core Principles & Zero-Issue Policy
+2. Meta Descriptions (Length, Pixels, Content)
+3. Page Titles (<title> & Next.js Template Behavior)
+4. Headings Architecture (H1, H2, Non-Sequential Rules)
+5. Canonicals & URL Handling
+6. Images & Asset Optimization
+7. Internal & External Linking (Anchors & Status Codes)
+8. Robots, Directives & XML Sitemaps
+9. Open Graph & Social Sharing Metadata
+10. Structured Data (JSON-LD Schema)
+11. Next.js Code Reference Template for Pages
+
+================================================================================
+1. CORE PRINCIPLES & ZERO-ISSUE POLICY
+================================================================================
+When fixing any issue reported by Screaming Frog:
+- Verify both CHARACTER COUNT and PIXEL WIDTH limits before committing changes.
+- Ensure metadata is 100% unique across all pages on the domain.
+- Never truncate sentences with ellipses (...) in meta descriptions or titles.
+- Confirm Next.js parent layout title templates do not cause double suffixes or length overflow.
+- Run `npm run build` after editing metadata to ensure static generation and types pass.
+
+================================================================================
+2. META DESCRIPTIONS (<meta name="description">)
+================================================================================
+Google SERP snippets display meta descriptions up to ~960 pixels on desktop and 
+~680 pixels on mobile. Screaming Frog audits both characters and estimated pixels.
+
+[Thresholds & Limits]
+- Optimal Character Count : 120 - 150 characters
+- Safe Minimum Length     : 70 characters (Prevents "Below 70 Characters" warning)
+- Absolute Maximum Length : 155 characters (Prevents "Over 155 Characters" warning)
+- Safe Minimum Pixels     : 400 pixels (Prevents "Below 400 Pixels" opportunity)
+- Absolute Maximum Pixels : 960 pixels (Prevents "Over 960 Pixels" warning)
+
+[Common Screaming Frog Issues & Fixes]
+• "Meta Description: Missing"
+  -> Add unique, descriptive text between 120-150 characters to page metadata.
+• "Meta Description: Below 70 Characters" / "Meta Description: Below 400 Pixels"
+  -> Expand description to include key offerings, service scope, and value proposition.
+• "Meta Description: Over 155 Characters" / "Meta Description: Over 960 Pixels"
+  -> Trim description to 130-145 characters while keeping full, cohesive sentences.
+• "Meta Description: Duplicate"
+  -> Write customized descriptions for each service, location, or policy page.
+
+[Writing Best Practices]
+- State what the page covers clearly with active verbs (e.g., "Read the terms...", "Explore our custom Next.js development...").
+- Include company/service context (e.g., "at Southern Edge Marketing").
+- Keep tone professional, concise, and informative.
+
+================================================================================
+3. PAGE TITLES (<title>)
+================================================================================
+The Next.js root layout applies a title template:
+  title: {
+    default: "Digital Marketing Agency Delhi | Southern Edge",
+    template: "%s | Southern Edge",
+  }
+This automatically appends " | Southern Edge" (16 characters / ~120 pixels) to child page titles.
+
+[Thresholds & Limits for Final Rendered Title]
+- Optimal Character Count : 45 - 58 characters (including " | Southern Edge")
+- Safe Minimum Length     : 30 characters (Prevents "Below 30 Characters" warning)
+- Absolute Maximum Length : 60 characters (Prevents "Over 60 Characters" warning)
+- Safe Minimum Pixels     : 200 pixels (Prevents "Below 200 Pixels" opportunity)
+- Absolute Maximum Pixels : 568 pixels (Prevents "Over 568 Pixels" warning)
+
+[Child Page Submissions in Next.js (Input before template)]
+- If template adds " | Southern Edge" (16 chars):
+  - Page `title` string should be 20 - 42 characters long.
+  - Example: `title: "Terms & Conditions"` -> renders as `Terms & Conditions | Southern Edge` (36 chars, ~330px) [PERFECT].
+- Never manually append " | Southern Edge" in child page `title` when layout template is active.
+
+[Common Screaming Frog Issues & Fixes]
+• "Title: Missing"
+  -> Add `title` property to page's `export const metadata`.
+• "Title: Below 30 Characters" / "Title: Below 200 Pixels"
+  -> Elaborate page title with secondary keyword or descriptive category.
+• "Title: Over 60 Characters" / "Title: Over 568 Pixels"
+  -> Shorten child title input so total rendered output does not exceed 58 characters.
+• "Title: Duplicate"
+  -> Make title unique for each page / location / service.
+• "Title: Same as H1"
+  -> Ensure title provides branding context (e.g., Title: "About Our Team | Southern Edge", H1: "About Southern Edge Marketing").
+
+================================================================================
+4. HEADINGS ARCHITECTURE (H1, H2, NON-SEQUENTIAL)
+================================================================================
+[H1 Rules]
+- Exactly ONE `<h1>` element per page.
+- Optimal H1 length: 20 - 70 characters.
+- Screaming Frog Flags to Avoid:
+  - "H1: Missing" (Ensure every page has a prominent <h1>)
+  - "H1: Duplicate" (Do not use identical H1 across different pages)
+  - "H1: Multiple" (Never render more than one <h1> in the DOM)
+  - "H1: Over 70 Characters" (Keep H1 concise and under 70 chars)
+
+[H2 Rules & Hierarchy]
+- Optimal H2 length: <= 70 characters per section.
+- Screaming Frog Flags to Avoid:
+  - "H2: Over 70 Characters" (Split long headlines into concise H2 + subtext <p>)
+  - "H1: Non-Sequential" / "H2: Non-Sequential" (Never place an H2 before H1, or skip from H1 to H4/H5)
+
+[Heading Hierarchy Flow]
+  <main>
+    <p or span className="...">Category / Subtitle</p>  <-- (Use span/p instead of h4 above h1)
+    <h1>Primary Page Topic (Unique, <=70 chars)</h1>
+    <h2>Section Topic (Unique, <=70 chars)</h2>
+      <h3>Sub-section Details</h3>
+    <h2>Next Section Topic (Unique, <=70 chars)</h2>
+  </main>
+
+================================================================================
+5. CANONICALS & URL HANDLING
+================================================================================
+[Rules]
+- Every indexable page must have a self-referencing canonical URL.
+- Use clean URLs: lowercase, hyphens (`-`), no trailing slashes (unless site-wide rule), no uppercase characters.
+- In Next.js metadata, specify:
+  alternates: {
+    canonical: '/path-name',
+  }
+  With `metadataBase: new URL("https://www.southernedgemarketing.com")` in root layout, this resolves to `https://www.southernedgemarketing.com/path-name`.
+
+[Common Screaming Frog Issues & Fixes]
+• "Canonical: Missing" -> Add `alternates: { canonical: '/page-slug' }`.
+• "Canonical: Multiple" -> Ensure canonical is not set in both layout.tsx and page.tsx with conflicting tags.
+• "Canonicalised" -> Verify the canonical points to itself on primary indexable URLs.
+
+================================================================================
+6. IMAGES & ASSET OPTIMIZATION
+================================================================================
+[Rules]
+- Every `<img>` or `<Image />` component MUST have a descriptive `alt` attribute.
+- Alt text must not be empty unless the image is purely decorative and marked `aria-hidden="true"`.
+- Use Next.js `<Image />` component with explicit `width`, `height`, or `fill` with `sizes`.
+- Keep image file sizes below 100KB for UI assets/icons and below 200KB for large hero/banners (using WebP/AVIF format).
+
+[Common Screaming Frog Issues & Fixes]
+• "Images: Missing Alt Text" -> Add meaningful alt attribute explaining the visual content.
+• "Images: Over 100 KB" -> Compress to WebP or optimize dimensions.
+
+================================================================================
+7. INTERNAL & EXTERNAL LINKING
+================================================================================
+[Rules]
+- Anchor text must be descriptive (e.g., "view our web development services" instead of "click here" or "read more").
+- Never use `rel="nofollow"` on standard internal navigation links (avoid "Links: Internal Nofollow Outlinks").
+- External links to third-party sites should have `rel="noopener noreferrer"`.
+- Ensure no broken internal links (0 4xx client errors or 3xx redirect chains).
+
+================================================================================
+8. DIRECTIVES & XML SITEMAPS
+================================================================================
+[Rules]
+- All public pages must be indexable (`index, follow`).
+- Disallow / API routes, admin portals, and search filters in `robots.ts` (`robots.txt`).
+- All valid canonical indexable routes must be registered in `src/app/sitemap.ts`.
+- Ensure sitemap URLs use exact matching canonical casing and protocol (HTTPS).
+
+================================================================================
+9. OPEN GRAPH & SOCIAL SHARING METADATA
+================================================================================
+[Rules]
+For each major page, include Open Graph metadata for rich social previews:
+- `openGraph.title`: Match page title or branded title.
+- `openGraph.description`: Mirror the optimized meta description.
+- `openGraph.url`: Full absolute URL of the page.
+- `openGraph.siteName`: "Southern Edge Marketing"
+- `openGraph.images`: High-resolution 1200x630px image.
+
+================================================================================
+10. STRUCTURED DATA (JSON-LD SCHEMA)
+================================================================================
+- Organization & LocalBusiness schema placed in `layout.tsx`.
+- Add Article / BlogPosting schema on individual blog pages.
+- Add Service schema on primary service pages.
+- Ensure all JSON-LD scripts are valid, without syntax errors or undefined values.
+
+================================================================================
+11. NEXT.JS CODE REFERENCE TEMPLATE FOR PAGES
+================================================================================
+
+```tsx
+import { Metadata } from "next";
+import { DesktopNav } from "@/components/desktop-nav";
+import { DesktopFooter } from "@/components/desktop-footer";
+import { MobileNav } from "@/components/mobile-nav";
+import { MobileFooter } from "@/components/mobile-footer";
+
+export const metadata: Metadata = {
+  title: "Page Topic Here", // 20-40 chars -> Renders as "Page Topic Here | Southern Edge" (35-56 chars)
+  description: "Descriptive, engaging overview of the page content containing keywords and branding context." // 120-150 chars (~750-900px)
+  alternates: {
+    canonical: "/page-path",
+  },
+  openGraph: {
+    title: "Page Topic Here | Southern Edge",
+    description: "Descriptive, engaging overview of the page content containing keywords and branding context.",
+    url: "https://www.southernedgemarketing.com/page-path",
+  },
+};
+
+export default function Page() {
+  return (
+    <div className="w-full min-h-screen flex flex-col">
+      <div className="hidden md:block"><DesktopNav /></div>
+      <div className="md:hidden"><MobileNav /></div>
+
+      <main className="flex-grow max-w-5xl mx-auto w-full px-5 py-24">
+        {/* Category badge using span/p (NOT h4) to maintain sequential heading hierarchy */}
+        <span className="text-[#de5e18] text-sm font-semibold tracking-wider uppercase mb-2 block">
+          Category Tag
+        </span>
+        
+        {/* Single H1 on page (<= 70 chars) */}
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          Primary Page Topic
+        </h1>
+
+        <p className="text-lg text-[#828282] mb-12">
+          Introductory page summary paragraph.
+        </p>
+
+        {/* Sequential H2 sections (<= 70 chars each) */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold mb-4">
+            First Major Section
+          </h2>
+          <p className="text-[#555] leading-relaxed">
+            Detailed section content...
+          </p>
+        </section>
+      </main>
+
+      <div className="hidden md:block mt-auto"><DesktopFooter /></div>
+      <div className="md:hidden mt-auto"><MobileFooter /></div>
+    </div>
+  );
+}
+```
+================================================================================
+EOF

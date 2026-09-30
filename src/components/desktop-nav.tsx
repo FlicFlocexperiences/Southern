@@ -29,10 +29,10 @@ export const DesktopNav = () => {
       <nav className="w-full h-[54px] bg-[#de5e18] rounded-full flex items-center justify-between px-5 relative overflow-hidden shadow-sm">
         {/* Logo */}
         <div className="flex items-center shrink-0">
-          <Link href="/">
+          <Link href="/" aria-label="Southern Edge Marketing Home">
             <Image
               src="/LOGO_Final.svg"
-              alt="SEM Logo"
+              alt="Southern Edge Marketing Logo"
               width={44}
               height={44}
               className="h-11 w-11 cursor-pointer transition-transform"

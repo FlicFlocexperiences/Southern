@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 // Icons
 
@@ -85,19 +86,19 @@ export const DesktopServices = () => {
             In today's competitive landscape, having a beautiful website is not enough. You need a comprehensive approach to capture and convert your audience. As an experienced online marketing agency, we build custom campaigns tailored to your specific industry. We do not believe in generic solutions. Instead, we analyze your market, understand your customers, and deploy digital marketing services in Delhi NCR that generate sustainable, long term ROI.
           </p>
 
-          <div className="flex items-center gap-6">
-            <a href="/contact" className="w-[80px] h-[80px] rounded-full border border-black/20 flex items-center justify-center hover:bg-[#de5e18]/5 transition-colors group shrink-0">
+          <Link href="/contact" className="flex items-center gap-6 group cursor-pointer">
+            <div className="w-[80px] h-[80px] rounded-full border border-black/20 flex items-center justify-center group-hover:bg-[#de5e18]/5 transition-colors shrink-0">
               <ArrowRightUpIcon />
-            </a>
+            </div>
             <div className="flex flex-col gap-1">
               <p className="text-[18px] text-black font-medium leading-tight">Let's build something</p>
               <p className="text-[18px] text-black font-medium leading-tight">great together.</p>
-              <a href="/contact" className="text-[#de5e18] text-[18px] font-bold tracking-wide mt-1 hover:opacity-80 transition-opacity flex items-center gap-2">
+              <span className="text-[#de5e18] text-[18px] font-bold tracking-wide mt-1 group-hover:opacity-80 transition-opacity flex items-center gap-2">
                 <div className="w-[8px] h-[8px] rounded-full bg-[#00ff00] shrink-0 shadow-[0_0_8px_#00ff00] animate-pulse" />
                 GET IN TOUCH
-              </a>
+              </span>
             </div>
-          </div>
+          </Link>
           
           {/* Vertical Divider Line */}
           <div className="absolute right-0 top-0 bottom-0 w-[1px] bg-[#de5e18] hidden md:block"></div>

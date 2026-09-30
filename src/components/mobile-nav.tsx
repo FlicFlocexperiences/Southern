@@ -27,10 +27,10 @@ export function MobileNav() {
         isOpen ? "bg-transparent" : "bg-gradient-to-r from-[#e07243] to-[#e07243]"
       }`}>
         {/* Logo */} 
-        <Link href="/">
+        <Link href="/" aria-label="Southern Edge Marketing Home">
           <Image
             src="/LOGO_Final.svg"
-            alt="SEM Logo"
+            alt="Southern Edge Marketing Logo"
             width={48}
             height={48}
             className="h-12 w-12 cursor-pointer transition-transform hover:scale-105"
@@ -64,10 +64,10 @@ export function MobileNav() {
         <div className="w-full relative" style={{ height: '480px' }}>
           {/* Header (perfectly overlays the base header) */}
           <div className="h-[68px] w-full flex items-center justify-between px-8 md:px-10 absolute top-0 left-0 z-50">
-            <Link href="/" onClick={() => setIsOpen(false)}>
+            <Link href="/" onClick={() => setIsOpen(false)} aria-label="Southern Edge Marketing Home">
               <Image
                 src="/LOGO_Final.svg"
-                alt="SEM Logo"
+                alt="Southern Edge Marketing Logo"
                 width={48}
                 height={48}
                 className="h-12 w-12 cursor-pointer transition-transform hover:scale-105"
@@ -118,10 +118,22 @@ export function MobileNav() {
               <a href="tel:+918700901769" className="leading-tight text-2xl hover:text-[#de5e18] transition-colors">+91 8700901769</a>
             </div>
             <div className="flex gap-2.5 items-center">
-              <a href="/contact" className="flex items-center justify-center rounded-full size-10 bg-[#de5e18] text-white hover:bg-[#de5e18]/90 hover:scale-105 transition-all shadow-sm">
+              <a 
+                href="https://www.instagram.com/southernedgemarketing?igsh=MXF2bTlpNHZpbzlt&utm_source=qr" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="Southern Edge Marketing Instagram"
+                className="flex items-center justify-center rounded-full size-10 bg-[#de5e18] text-white hover:bg-[#de5e18]/90 hover:scale-105 transition-all shadow-sm"
+              >
                 <FontAwesomeIcon icon={faInstagram} className="text-lg" />
               </a>
-              <a href="/contact" className="flex items-center justify-center rounded-full size-10 bg-[#de5e18] text-white hover:bg-[#de5e18]/90 hover:scale-105 transition-all shadow-sm">
+              <a 
+                href="https://www.linkedin.com/company/southernedgemarketing/?viewAsMember=true" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="Southern Edge Marketing LinkedIn"
+                className="flex items-center justify-center rounded-full size-10 bg-[#de5e18] text-white hover:bg-[#de5e18]/90 hover:scale-105 transition-all shadow-sm"
+              >
                 <FontAwesomeIcon icon={faLinkedinIn} className="text-lg" />
               </a>
             </div>

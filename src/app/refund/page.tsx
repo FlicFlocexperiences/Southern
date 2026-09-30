@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/refund',
   },
   title: "Refund & Cancellation Policy",
-  description: "Information regarding refunds and cancellations for our services at Southern Edge Marketing.",
+  description: "Read the official refund and cancellation policy for digital marketing, web engineering, and branding services at Southern Edge Marketing.",
   openGraph: {
     title: "Refund & Cancellation Policy | Southern Edge",
-    description: "Information regarding refunds and cancellations for our services at Southern Edge Marketing.",
+    description: "Read the official refund and cancellation policy for digital marketing, web engineering, and branding services at Southern Edge Marketing.",
   },
 };
 
@@ -27,7 +27,7 @@ export default function Refund() {
       </div>
 
       <main className="flex-grow pt-32 pb-16 px-5 md:px-20 max-w-5xl mx-auto w-full">
-        <h4 className="text-[#de5e18] text-sm font-semibold tracking-wider uppercase mb-2">Legal Framework</h4>
+        <span className="text-[#de5e18] text-sm font-semibold tracking-wider uppercase mb-2 block">Legal Framework</span>
         <h1 className="text-4xl md:text-5xl font-bold text-[#0f0f0f] mb-6">Refund Policy</h1>
         
         <p className="text-lg text-[#828282] mb-12">

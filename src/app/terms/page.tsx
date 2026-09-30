@@ -9,7 +9,13 @@ export const metadata: Metadata = {
     canonical: '/terms',
   },
   title: "Terms & Conditions",
-  description: "Terms and conditions governing our software partnership.",
+  description: "Read the terms and conditions governing our web development, digital marketing services, and client partnerships at Southern Edge Marketing.",
+  openGraph: {
+    title: "Terms & Conditions | Southern Edge",
+    description: "Read the terms and conditions governing our web development, digital marketing services, and client partnerships at Southern Edge Marketing.",
+    url: "https://www.southernedgemarketing.com/terms",
+    siteName: "Southern Edge Marketing",
+  },
 };
 
 export default function Terms() {
@@ -23,7 +29,7 @@ export default function Terms() {
       </div>
 
       <main className="flex-grow pt-32 pb-16 px-5 md:px-20 max-w-5xl mx-auto w-full">
-        <h4 className="text-[#de5e18] text-sm font-semibold tracking-wider uppercase mb-2">Legal Framework</h4>
+        <span className="text-[#de5e18] text-sm font-semibold tracking-wider uppercase mb-2 block">Legal Framework</span>
         <h1 className="text-4xl md:text-5xl font-bold text-[#0f0f0f] mb-6">Terms & Conditions</h1>
         
         <p className="text-lg text-[#828282] mb-12">
