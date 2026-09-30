@@ -41,17 +41,17 @@ const stripHtml = (html: string) => html ? html.replace(/<[^>]+>/g, '') : '';
 function SeoContent() {
   return (
     <section className="px-6 py-12 md:pt-12 md:pb-24 max-w-7xl mx-auto text-[#1a1a1a]">
-      <h1 className="text-3xl md:text-5xl font-bold mb-6">Expert Digital Marketing Blog</h1>
+      <h2 className="text-3xl md:text-5xl font-bold mb-6">Expert Digital Marketing Blog</h2>
       <p className="mb-8 md:text-lg leading-relaxed max-w-4xl">
         Welcome to the Southern Edge digital marketing agency blog. Our industry experts share proven SEO strategy tips, modern web design insights, and effective digital marketing tactics. We focus on giving you the knowledge needed to stay competitive. Whether you want custom website design advice or local SEO best practices, our detailed articles provide real value. Learn how to optimize your online presence and reach your target audience more effectively.
       </p>
 
-      <h2 className="text-2xl md:text-4xl font-bold mb-6">Actionable SEO Strategy Tips</h2>
+      <h3 className="text-2xl md:text-4xl font-bold mb-6">Actionable SEO Strategy Tips</h3>
       <p className="mb-8 md:text-lg leading-relaxed max-w-4xl">
         A successful online presence requires more than just good looks. Our web design insights show you how to build fast and engaging sites. We pair this with deep dives into technical search engine optimization. You will find clear guides on how a tailored SEO strategy increases organic traffic. Our team breaks down complex digital marketing concepts into steps you can actually use.
       </p>
 
-      <h3 className="text-xl md:text-3xl font-bold mb-6">Driving Your Business Growth</h3>
+      <h4 className="text-xl md:text-3xl font-bold mb-6">Driving Your Business Growth</h4>
       <p className="md:text-lg leading-relaxed max-w-4xl">
         Our goal is to share reliable business growth tips for modern brands. Every post on our digital marketing agency blog is crafted to help you succeed. Discover how professional web design and targeted SEO campaigns can transform your revenue. Dive into our latest resources and start building a stronger digital footprint today.
       </p>

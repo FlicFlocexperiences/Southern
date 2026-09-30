@@ -4,15 +4,31 @@ import { MobileFooter } from "@/components/mobile-footer";
 import { DesktopNav } from "@/components/desktop-nav";
 import { DesktopFooter } from "@/components/desktop-footer";
 import { Cta } from "@/components/cta";
-import { Blog, getBlogBySlug } from "@/data/blogs";
+import { Blog, blogs as staticBlogs, getBlogBySlug } from "@/data/blogs";
 import { BlogContent } from "./BlogContent";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 
-export const dynamic = 'force-dynamic';
-export const revalidate = 0;
+export const revalidate = 60; // Revalidate every 60 seconds
+
+export async function generateStaticParams() {
+  const allBlogSlugs = new Set<string>();
+  staticBlogs.forEach((b) => allBlogSlugs.add(b.slug));
+
+  try {
+    const querySnapshot = await getDocs(collection(db, "blogs"));
+    querySnapshot.forEach((docSnap) => {
+      const slug = docSnap.data().slug || docSnap.id;
+      if (slug) allBlogSlugs.add(slug);
+    });
+  } catch (error) {
+    console.error("Error fetching blog slugs for static params:", error);
+  }
+
+  return Array.from(allBlogSlugs).map((slug) => ({ slug }));
+}
 
 const stripHtml = (html: string) => html ? html.replace(/<[^>]+>/g, '') : '';
 
@@ -37,10 +53,10 @@ const getLiveBlog = cache(async (slug: string): Promise<Blog | null> => {
       return {
         slug: data.slug || docSnap.id,
         title: data.title || "Untitled",
-        excerpt: stripHtml(data.subtitle || data.metaDescription || ""),
+        excerpt: stripHtml(data.subtitle || data.metaDescription || data.excerpt || ""),
         content: data.description || "", // Mapping description to content for BlogContent
         publishedAt: data.date || new Date().toISOString().split('T')[0],
-        category: "MARKETING",
+        category: data.category || "MARKETING",
         image: data.image || "/photoshoot.jpg",
         faqs,
         reviews,
@@ -65,10 +81,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const blog = await getLiveBlog(slug);
 
   if (!blog) {
-    // Don't set noindex here — the page component calls notFound() which
-    // returns a proper 404 status that Google already handles correctly.
-    // An explicit noindex was causing valid blog pages to be excluded
-    // from Google's index when Firestore had transient failures.
     return {};
   }
 
@@ -78,8 +90,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     ? `https://www.southernedgemarketing.com${blog.image.startsWith("/") ? "" : "/"}${blog.image}`
     : "https://www.southernedgemarketing.com/photoshoot.jpg";
 
+  // Clean title: remove any pre-existing agency brand suffix to prevent duplicate stacking
+  const cleanTitle = blog.title.replace(/\s*\|\s*Southern Edge.*$/i, '').trim();
+
   return {
-    title: `${blog.title}`,
+    title: cleanTitle,
     description: blog.excerpt,
     alternates: {
       canonical: `/blogs/${slug}`,
@@ -96,7 +111,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       },
     },
     openGraph: {
-      title: `${blog.title} | Southern Edge Marketing`,
+      title: cleanTitle,
       description: blog.excerpt,
       url: `https://www.southernedgemarketing.com/blogs/${slug}`,
       type: "article",
@@ -107,13 +122,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
           url: blogImage,
           width: 1200,
           height: 630,
-          alt: blog.title,
+          alt: cleanTitle,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${blog.title} | Southern Edge Marketing`,
+      title: cleanTitle,
       description: blog.excerpt,
       images: [blogImage],
     },

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.southernedgemarketing.com"),
   title: {
     default: "Digital Marketing Agency Delhi | Southern Edge",
-    template: "%s | Southern Edge Marketing",
+    template: "%s | Southern Edge",
   },
   description: "Southern Edge Marketing drives business with strategy, design, development, and marketing. Trusted by 100+ businesses across India. 5.0 rated.",
   robots: {
@@ -109,7 +109,7 @@ export default function RootLayout({
       lang="en"
       className={`${onestSans.variable} ${geistMono.variable} ${playball.variable} antialiased`}
     >
-      <head>
+      <body className="min-h-screen flex flex-col">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
@@ -120,8 +120,6 @@ export default function RootLayout({
             strategy="afterInteractive"
           />
         )}
-      </head>
-      <body className="min-h-screen flex flex-col">
         <Analytics />
         <AuthProvider>
           {children}

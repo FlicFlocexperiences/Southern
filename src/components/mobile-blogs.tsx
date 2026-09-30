@@ -54,10 +54,10 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
           SOUTHERN EDGE MARKETING BLOGS
         </span>
         
-        <h1 className="text-[36px] leading-[1.1] font-bold text-black tracking-tight mt-1">
+        <p className="text-[36px] leading-[1.1] font-bold text-black tracking-tight mt-1">
           Ideas that build<br />
           better digital experiences
-        </h1>
+        </p>
         
         <p className="text-black/60 text-[14px] leading-relaxed text-justify mb-4">
           Anything and everything you're looking for to protect your brand, trademarks, and intellectual property rights.
