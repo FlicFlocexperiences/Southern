@@ -253,9 +253,9 @@ export function ServiceLayout({ sections, children }: ServiceLayoutProps) {
 
         <div className="bg-white border border-black/10 rounded-xl p-6 text-[#0f0f0f] shadow-sm relative overflow-hidden group text-left">
           <div className="absolute top-[-20%] right-[-10%] w-[50%] aspect-square rounded-full bg-[#de5e18]/10 blur-[30px] pointer-events-none" />
-          <h3 className="text-[18px] font-bold mb-3 uppercase tracking-wide text-black">
+          <p className="text-[18px] font-bold mb-3 uppercase tracking-wide text-black">
             Southern Edge Marketing
-          </h3>
+          </p>
           <p className="text-[14px] text-black/75 leading-relaxed mb-6 font-light">
             We design, build, and optimize high-converting digital storefronts, corporate portals, and brand systems for ambitious companies.
           </p>
@@ -280,9 +280,9 @@ export function ServiceLayout({ sections, children }: ServiceLayoutProps) {
         </div>
 
         <div className="bg-white border border-black/10 rounded-xl p-6 shadow-sm text-left">
-          <h3 className="text-[18px] font-bold text-black mb-3 uppercase tracking-wide">
+          <p className="text-[18px] font-bold text-black mb-3 uppercase tracking-wide">
             Start Your Digital Journey
-          </h3>
+          </p>
           <p className="text-[14px] text-black/75 leading-relaxed mb-6 font-light">
             Get in touch with our team to discuss custom Next.js engineering, Shopify architectures, or modern digital strategies.
           </p>

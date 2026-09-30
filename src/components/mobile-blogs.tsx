@@ -92,9 +92,9 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
                 {featuredBlog.date}
               </span>
             </div>
-            <h3 className="font-semibold text-[20px] leading-[1.3] text-black mb-3">
+            <p className="font-semibold text-[20px] leading-[1.3] text-black mb-3">
               {featuredBlog.title}
-            </h3>
+            </p>
             {featuredBlog.excerpt && (
               <p className="text-[14px] text-gray-500 line-clamp-3 mb-5 leading-relaxed">
                 {featuredBlog.excerpt}
@@ -195,9 +195,9 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
                   </span>
                 </div>
                 
-                <h3 className="font-semibold text-[19px] leading-[1.3] text-black mb-3">
+                <p className="font-semibold text-[19px] leading-[1.3] text-black mb-3">
                   {blog.title}
-                </h3>
+                </p>
                 
                 {blog.excerpt && (
                   <p className="text-[14px] text-gray-500 line-clamp-3 mb-5 leading-relaxed">

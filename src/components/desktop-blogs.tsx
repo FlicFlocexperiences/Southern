@@ -86,9 +86,9 @@ Explore articles on UI/UX design, modern web development, branding, performance,
               />
             </div>
             {/* Featured Title */}
-            <h3 className="font-semibold text-[22px] md:text-[26px] leading-[1.25] text-black mt-6 mb-3 transition-colors duration-300 group-hover:text-[#de5e18]">
+            <p className="font-semibold text-[22px] md:text-[26px] leading-[1.25] text-black mt-6 mb-3 transition-colors duration-300 group-hover:text-[#de5e18]">
               {featuredBlog.title}
-            </h3>
+            </p>
             {/* Featured Date */}
             <span className="text-[14px] md:text-[16px] text-black/50 font-medium">
               {featuredBlog.date}
@@ -179,9 +179,9 @@ Explore articles on UI/UX design, modern web development, branding, performance,
               </div>
 
               {/* Title */}
-              <h3 className="font-semibold text-[18px] md:text-[21px] leading-[1.3] text-black transition-colors duration-300 group-hover:text-[#de5e18]">
+              <p className="font-semibold text-[18px] md:text-[21px] leading-[1.3] text-black transition-colors duration-300 group-hover:text-[#de5e18]">
                 {blog.title}
-              </h3>
+              </p>
             </Link>
           ))}
           

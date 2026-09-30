@@ -38,9 +38,9 @@ export function AuthorCard({
             </span>
             <span className="w-1.5 h-1.5 rounded-full bg-[#de5e18]" />
           </div>
-          <h3 className="text-[17px] font-bold text-black leading-tight tracking-tight">
+          <p className="text-[17px] font-bold text-black leading-tight tracking-tight">
             {name}
-          </h3>
+          </p>
           <p className="text-[12px] font-semibold text-[#de5e18] leading-tight mt-0.5 truncate">
             {role}
           </p>

@@ -11,6 +11,8 @@ import { Metadata } from "next";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 
+import { cleanInternalNofollow } from "@/lib/seo-utils";
+
 export const revalidate = 60; // Revalidate every 60 seconds
 
 export async function generateStaticParams() {
@@ -54,7 +56,7 @@ const getLiveBlog = cache(async (slug: string): Promise<Blog | null> => {
         slug: data.slug || docSnap.id,
         title: data.title || "Untitled",
         excerpt: stripHtml(data.subtitle || data.metaDescription || data.excerpt || ""),
-        content: data.description || "", // Mapping description to content for BlogContent
+        content: cleanInternalNofollow(data.description || ""), // Clean internal nofollow links
         publishedAt: data.date || new Date().toISOString().split('T')[0],
         category: data.category || "MARKETING",
         image: data.image || "/photoshoot.jpg",
@@ -70,7 +72,10 @@ const getLiveBlog = cache(async (slug: string): Promise<Blog | null> => {
   // Fallback to static blogs in src/data/blogs.ts
   const staticBlog = getBlogBySlug(slug);
   if (staticBlog) {
-    return staticBlog;
+    return {
+      ...staticBlog,
+      content: cleanInternalNofollow(staticBlog.content || ""),
+    };
   }
 
   return null;

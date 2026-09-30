@@ -426,7 +426,7 @@ export const articles: Article[] = [
         When your brand identity communicates uncompromising precision, cultural relevance, and category authority, you escape the downward pressure of price elasticity. High-equity brands achieve 3x to 5x higher gross profit margins, insulating the enterprise from economic downturns and aggressive discounters.
       </p>
 
-      <h2>2. Cognitive Neuroscience & Visual Heuristics: How the Brain Evaluates Trust</h2>
+      <h2>2. Cognitive Neuroscience: How the Brain Evaluates Brand Trust</h2>
       <p>
         Human decision-making is governed by cognitive shortcuts (heuristics). According to behavioral psychology research, prospective buyers form an impression of your company within <strong>50 milliseconds</strong> of landing on your digital touchpoint.
       </p>
@@ -1113,7 +1113,7 @@ export const articles: Article[] = [
         In the world of luxury, clients do not purchase mere physical utility—they invest in aspiration, provenance, artistry, and emotional identity. High-end bespoke photography serves as the definitive visual bridge between your artisanal craftsmanship and the discerning buyer. When perceived value is determined within milliseconds of visual contact, the quality, lighting, and art direction of your imagery dictate whether your brand commands premium pricing or is dismissed as an overpriced commodity.
       </p>
 
-      <h2>1. The Psychology of Visual Prestige: Crafting Aspiration Over Function</h2>
+      <h2>1. The Psychology of Visual Prestige: Aspiration Over Function</h2>
       <p>
         Mass-market brands photograph products to explain functional features; luxury Maisons photograph imagery to construct an atmospheric mythology. The human brain processes visual imagery 60,000 times faster than written text, creating an immediate emotional visceral impression long before the client reads a product specification.
       </p>
@@ -1121,7 +1121,7 @@ export const articles: Article[] = [
         Bespoke art direction leverages intentional composition, negative space, cinematic framing, and nuanced tonal contrasts to evoke feelings of exclusivity, timelessness, and status. This visual prestige allows luxury enterprises to justify 300% to 1,000% pricing multiples above baseline production costs.
       </p>
 
-      <h2>2. Tactical E-Commerce Packshots vs. Editorial Lifestyle Storytelling</h2>
+      <h2>2. E-Commerce Packshots vs. Editorial Lifestyle Storytelling</h2>
       <p>
         A comprehensive luxury visual strategy balances two complementary photographic disciplines:
       </p>
@@ -1138,7 +1138,7 @@ export const articles: Article[] = [
         By utilizing medium-format digital camera sensors (100MP+), specialized multi-point strobe diffusion, and precision focus-stacking techniques, master photographers render microscopic textures with such lifelike depth that the viewer subconsciously feels the weight and quality of the materials.
       </p>
 
-      <h2>4. Comparison: Bespoke Luxury Photography vs. Generic Product Imagery</h2>
+      <h2>4. Bespoke Luxury Photography vs. Generic Product Imagery</h2>
       <p>
         The table below illustrates how custom editorial visual assets compare against generic product photos and stock imagery across core luxury metrics:
       </p>
@@ -1395,7 +1395,7 @@ export const articles: Article[] = [
         By capturing first-party zero-data attributes (preferences, sizing, birthdays, product interests) during onboarding, direct-to-consumer and luxury brands insulate their revenue against social media algorithm shifts and privacy policy changes.
       </p>
 
-      <h2>2. The Five Foundational Lifecycle Automations That Generate 80% of Email Revenue</h2>
+      <h2>2. 5 Foundational Automations Generating 80% of Email Revenue</h2>
       <p>
         Behavior-triggered automated flows consistently generate <strong>8x higher revenue per recipient</strong> than traditional manual broadcast blasts:
       </p>
@@ -1473,7 +1473,7 @@ export const articles: Article[] = [
         <li><strong>Spam Complaint Thresholds:</strong> Maintaining a spam complaint rate strictly beneath <strong>0.10%</strong> (1 in 1,000 recipients).</li>
       </ul>
 
-      <h2>6. Design Aesthetics: Balancing Rich Visual HTML with Plain-Text Intimacy</h2>
+      <h2>6. Design Aesthetics: Balancing Rich Visual HTML and Plain Text</h2>
       <p>
         High-performing brands avoid over-designed image-only templates that get clipped by Gmail's 102KB size limit. A balanced hybrid structure—combining lightweight responsive HTML, optimized product cards, and authentic, text-driven founder narratives—maximizes engagement, avoids the Promotions tab, and delivers flawless readability across mobile and desktop clients.
       </p>

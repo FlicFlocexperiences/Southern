@@ -107,9 +107,9 @@ export const DesktopServicesPage = () => {
               <div>
                 {/* Title and Tagline */}
                 <div className="flex flex-wrap items-baseline gap-x-4 gap-y-2 mb-4 md:mb-5">
-                  <h3 className="text-black text-[28px] md:text-[34px] font-medium tracking-tight leading-none">
+                  <h2 className="text-black text-[28px] md:text-[34px] font-medium tracking-tight leading-none">
                     {service.title}
-                  </h3>
+                  </h2>
                   {service.tagline && (
                     <span className="text-[#de5e18] italic text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-none">
                       {service.tagline}

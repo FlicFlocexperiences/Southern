@@ -56,32 +56,32 @@ export default function Home() {
   return (
     <div className="w-full min-h-screen bg-[#f2decc]">
       {/* Navigation */}
-      <div className="block md:hidden"><MobileNav /></div>
       <div className="hidden md:block"><DesktopNav /></div>
+      <div className="block md:hidden"><MobileNav /></div>
 
       {/* Hero */}
-      <div className="block md:hidden"><MobileHero /></div>
       <div className="hidden md:block"><DesktopHero /></div>
+      <div className="block md:hidden"><MobileHero /></div>
 
       {/* Integrations */}
-      <div className="block md:hidden"><MobileIntegrations /></div>
       <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopIntegrations /></div>
+      <div className="block md:hidden"><MobileIntegrations /></div>
 
       {/* Stats */}
-      <div className="block md:hidden"><MobileStats /></div>
       <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopStats /></div>
+      <div className="block md:hidden"><MobileStats /></div>
 
       {/* Comparison */}
-      <div className="block md:hidden"><MobileComparison /></div>
       <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopComparison /></div>
+      <div className="block md:hidden"><MobileComparison /></div>
 
       {/* Case Studies */}
-      <div className="block md:hidden"><MobileCaseStudies /></div>
       <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopCaseStudies /></div>
+      <div className="block md:hidden"><MobileCaseStudies /></div>
 
       {/* Services */}
-      <div className="block md:hidden"><MobileServices /></div>
       <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopServices /></div>
+      <div className="block md:hidden"><MobileServices /></div>
 
       {/* Shared Responsive Sections */}
       <div className="md:[zoom:0.8]"><WhyUs /></div>
@@ -90,15 +90,15 @@ export default function Home() {
       <div className="md:[zoom:0.8]"><Cta /></div>
 
       {/* FAQ */}
-      <div className="block md:hidden"><MobileFaq faqs={homeFaqs} /></div>
       <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopFaq faqs={homeFaqs} /></div>
+      <div className="block md:hidden"><MobileFaq faqs={homeFaqs} /></div>
 
       {/* Marquee (Desktop Only) */}
       <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopMarquee /></div>
 
       {/* Footer */}
-      <div className="block md:hidden"><MobileFooter /></div>
       <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopFooter /></div>
+      <div className="block md:hidden"><MobileFooter /></div>
     </div>
   );
 }

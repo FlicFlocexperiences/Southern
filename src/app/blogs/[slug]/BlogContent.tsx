@@ -4,6 +4,7 @@ import React, { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { Blog } from "@/data/blogs";
 import { AuthorCard } from "@/components/AuthorCard";
+import { cleanInternalNofollow } from "@/lib/seo-utils";
 
 interface BlogContentProps {
   blog: Blog;
@@ -52,7 +53,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
   // Process content to inject IDs and build TOC
   const { processedContent, sections } = useMemo(() => {
     const headings: { id: string; title: string }[] = [];
-    let content = blog.content || "";
+    let content = cleanInternalNofollow(blog.content || "");
 
     // Replace h2 and h3 tags, injecting an ID for scroll tracking
     const headingRegex = /(<h[23][^>]*>)(.*?)(<\/h[23]>)/gi;

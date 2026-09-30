@@ -48,24 +48,24 @@ export default function ServicesPage() {
   return (
     <div className="w-full min-h-screen bg-[#f2decc]">
       {/* Navigation */}
-      <div className="block md:hidden"><MobileNav /></div>
       <div className="hidden md:block"><DesktopNav /></div>
+      <div className="block md:hidden"><MobileNav /></div>
 
       {/* Services Content */}
-      <div className="block md:hidden"><MobileServicesPage /></div>
       <div className="hidden md:block"><DesktopServicesPage /></div>
+      <div className="block md:hidden"><MobileServicesPage /></div>
 
       {/* Shared Sections */}
       <div className="md:[zoom:0.8]"><Testimonials /></div>
       <div className="md:[zoom:0.8]"><Cta /></div>
 
       {/* FAQ */}
-      <div className="block md:hidden"><MobileFaq faqs={servicesFaqs} /></div>
       <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopFaq faqs={servicesFaqs} /></div>
+      <div className="block md:hidden"><MobileFaq faqs={servicesFaqs} /></div>
 
       {/* Footer */}
-      <div className="block md:hidden"><MobileFooter /></div>
       <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopFooter /></div>
+      <div className="block md:hidden"><MobileFooter /></div>
     </div>
   );
 }

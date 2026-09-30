@@ -54,9 +54,9 @@ export function PhoneQrButton({ phoneNumber, className }: PhoneQrButtonProps) {
             </button>
 
             {/* Content */}
-            <h3 className="text-[22px] font-bold text-black mb-2 mt-2 tracking-tight">
+            <p className="text-[22px] font-bold text-black mb-2 mt-2 tracking-tight">
               Scan to Call
-            </h3>
+            </p>
             <p className="text-[14px] text-black/60 mb-6 text-center leading-normal">
               Scan this QR code with your phone camera to call us instantly.
             </p>

@@ -13,10 +13,10 @@ export const MobileServicesPage = () => {
         
 
         {/* Main Heading */}
-        <h2 className="text-[38px] leading-[1.1] font-bold text-black tracking-tight mt-2">
+        <p className="text-[38px] leading-[1.1] font-bold text-black tracking-tight mt-2">
           Top Full Service<br />
           <span className="text-[#de5e18]">Digital Marketing Agency.</span>
-        </h2>
+        </p>
 
         {/* Paragraph & CTA Button */}
         <div className="flex flex-col items-start w-full gap-6">
@@ -117,9 +117,9 @@ export const MobileServicesPage = () => {
             {/* Title & Tagline & Description */}
             <div className="flex flex-col gap-3">
               <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
-                <h3 className="text-black text-[22px] font-medium tracking-tight">
+                <h2 className="text-black text-[22px] font-medium tracking-tight">
                   {service.title}
-                </h3>
+                </h2>
                 {service.tagline && (
                   <span className="text-[#de5e18] italic text-[14px] font-normal">
                     {service.tagline}

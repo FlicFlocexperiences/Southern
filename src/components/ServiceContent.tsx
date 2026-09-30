@@ -55,9 +55,9 @@ const FaqAccordion = ({ faqs }: { faqs: { question: string; answer: string }[] }
 
   return (
     <div className="w-full mt-10 mb-2">
-      <h3 id="faq" className="text-[26px] md:text-[32px] font-bold text-[#432d1c] tracking-tight mb-6 font-sans scroll-mt-28">
+      <h2 id="faq" className="text-[26px] md:text-[32px] font-bold text-[#432d1c] tracking-tight mb-6 font-sans scroll-mt-28">
         Frequently Asked Questions
-      </h3>
+      </h2>
       <div className="flex flex-col gap-3">
         {faqs.map((faq, index) => {
           const isOpen = openIndex === index;
@@ -258,13 +258,13 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
         sectionCounter++;
         const numStr = String(sectionCounter).padStart(2, "0");
         elements.push(
-          <h3
-            key={`h3-${index}`}
+          <h2
+            key={`h2-${index}`}
             id={id}
             className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28"
           >
             {text}
-          </h3>
+          </h2>
         );
       } else if (trimmed.startsWith("-")) {
         flushParagraph(index);
@@ -455,12 +455,12 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
             
             {/* Client Reviews Section */}
             <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-              <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+              <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
                 <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                 </svg>
                 Client Reviews
-              </h3>
+              </h2>
               
               <div className="flex flex-col gap-8">
                 <div className="border-b border-black/5 pb-6">
@@ -507,9 +507,9 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
           {/* Company Bio Card */}
           <div className="bg-white border border-black/10 rounded-xl p-6 text-[#0f0f0f] shadow-sm relative overflow-hidden group text-left">
             <div className="absolute top-[-20%] right-[-10%] w-[50%] aspect-square rounded-full bg-[#de5e18]/10 blur-[30px] pointer-events-none" />
-            <h3 className="text-[18px] font-bold mb-3 uppercase tracking-wide text-black">
+            <p className="text-[18px] font-bold mb-3 uppercase tracking-wide text-black">
               Southern Edge Marketing
-            </h3>
+            </p>
             <p className="text-[14px] text-black/75 leading-relaxed mb-6 font-light">
               We design, build, and optimize high-converting digital storefronts, corporate portals, and brand systems for ambitious companies.
             </p>
@@ -538,9 +538,9 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
 
           {/* Need Marketing Help Card */}
           <div className="bg-white border border-black/10 rounded-xl p-6 shadow-sm text-left">
-            <h3 className="text-[18px] font-bold text-black mb-3 uppercase tracking-wide">
+            <p className="text-[18px] font-bold text-black mb-3 uppercase tracking-wide">
               Start Your Digital Journey
-            </h3>
+            </p>
             <p className="text-[14px] text-black/75 leading-relaxed mb-6 font-light">
               Get in touch with our team to discuss custom Next.js engineering, Shopify architectures, or modern digital strategies.
             </p>
@@ -569,9 +569,9 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
 
           {/* Call Us Card - Web Only */}
           <div className="hidden lg:block bg-white border border-black/10 rounded-xl p-4 shadow-sm text-center">
-            <h3 className="text-[16px] font-bold text-black mb-2 uppercase tracking-wide">
+            <p className="text-[16px] font-bold text-black mb-2 uppercase tracking-wide">
               Prefer to Call?
-            </h3>
+            </p>
             <p className="text-[13px] text-black/75 leading-snug mb-4 font-light">
               Scan the QR code below or call us directly to discuss your digital strategy.
             </p>

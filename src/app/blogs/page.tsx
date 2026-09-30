@@ -51,7 +51,7 @@ function SeoContent() {
         A successful online presence requires more than just good looks. Our web design insights show you how to build fast and engaging sites. We pair this with deep dives into technical search engine optimization. You will find clear guides on how a tailored SEO strategy increases organic traffic. Our team breaks down complex digital marketing concepts into steps you can actually use.
       </p>
 
-      <h4 className="text-xl md:text-3xl font-bold mb-6">Driving Your Business Growth</h4>
+      <h3 className="text-xl md:text-3xl font-bold mb-6">Driving Your Business Growth</h3>
       <p className="md:text-lg leading-relaxed max-w-4xl">
         Our goal is to share reliable business growth tips for modern brands. Every post on our digital marketing agency blog is crafted to help you succeed. Discover how professional web design and targeted SEO campaigns can transform your revenue. Dive into our latest resources and start building a stronger digital footprint today.
       </p>
@@ -69,10 +69,10 @@ export default async function BlogsPage() {
     fetchedBlogs = snapshot.docs.map(doc => {
       const data = doc.data();
       const rawExcerpt = data.excerpt || data.description || "";
-      // Remove H2 and H3 tags and their content completely
-      let cleanExcerpt = rawExcerpt.replace(/<h[23][^>]*>[\s\S]*?<\/h[23]>/gi, "");
+      // Remove all heading tags (H1-H6) and their content completely
+      let cleanExcerpt = rawExcerpt.replace(/<h[1-6][^>]*>[\s\S]*?<\/h[1-6]>/gi, "");
       // Strip out all other HTML tags
-      cleanExcerpt = cleanExcerpt.replace(/<[^>]+>/g, "");
+      cleanExcerpt = stripHtml(cleanExcerpt);
       // Decode HTML entities
       cleanExcerpt = cleanExcerpt
         .replace(/&nbsp;/g, " ")
@@ -87,8 +87,8 @@ export default async function BlogsPage() {
         : trimmedExcerpt;
 
       return {
-        title: data.title || "Untitled",
-        category: data.category || "Article",
+        title: stripHtml(data.title || "Untitled"),
+        category: stripHtml(data.category || "Article"),
         excerpt: truncatedExcerpt,
         slug: data.slug || doc.id,
         image: data.image || "/photoshoot.jpg", // Default image if missing
@@ -102,20 +102,20 @@ export default async function BlogsPage() {
   return (
     <div className="w-full min-h-screen bg-[#f2decc]">
       {/* Navigation */}
-      <div className="block md:hidden"><MobileNav /></div>
       <div className="hidden md:block"><DesktopNav /></div>
+      <div className="block md:hidden"><MobileNav /></div>
 
       {/* Blogs Content */}
-      <div className="block md:hidden"><MobileBlogs blogs={fetchedBlogs} /></div>
       <div className="hidden md:block"><DesktopBlogs blogs={fetchedBlogs} /></div>
+      <div className="block md:hidden"><MobileBlogs blogs={fetchedBlogs} /></div>
 
       {/* Shared SEO Content & CTA */}
       <SeoContent />
       <div className="md:[zoom:0.8]"><Cta /></div>
 
       {/* Footer */}
-      <div className="block md:hidden"><MobileFooter /></div>
       <div className="hidden md:block" style={{ zoom: 0.8 }}><DesktopFooter /></div>
+      <div className="block md:hidden"><MobileFooter /></div>
     </div>
   );
 }

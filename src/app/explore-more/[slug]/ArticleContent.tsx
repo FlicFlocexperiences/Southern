@@ -4,6 +4,7 @@ import React, { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { Article } from "@/data/articles";
 import { AuthorCard } from "@/components/AuthorCard";
+import { cleanInternalNofollow } from "@/lib/seo-utils";
 
 interface ArticleContentProps {
   article: Article;
@@ -53,7 +54,7 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
   // Process content to inject IDs and build TOC
   const { processedContent, sections } = useMemo(() => {
     const headings: { id: string; title: string }[] = [];
-    let content = article.content || "";
+    let content = cleanInternalNofollow(article.content || "");
 
     // Replace h2 and h3 tags, injecting an ID for scroll tracking
     const headingRegex = /(<h[23][^>]*>)(.*?)(<\/h[23]>)/gi;
