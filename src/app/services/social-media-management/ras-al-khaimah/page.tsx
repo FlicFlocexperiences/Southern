@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/ras-al-khaimah',
   },
   title: "Social Media Agency in Ras Al Khaimah",
-  description: "Scale enterprise brand engagement across RAKEZ, Al Marjan Island, and Mina Al Arab. We engineer bilingual social campaigns, UAE Media Council compliance, and social commerce.",
+  description: "Top social media agency in Ras Al Khaimah. We create bilingual social campaigns, paid ad funnels, and creator partnerships for RAK businesses.",
   openGraph: {
     title: "Social Media Management in Ras Al Khaimah | Southern Edge",
-    description: "Scale enterprise brand engagement across RAKEZ, Al Marjan Island, and Mina Al Arab. We engineer bilingual social campaigns, UAE Media Council compliance, and social commerce.",
+    description: "Top social media agency in Ras Al Khaimah. We create bilingual social campaigns, paid ad funnels, and creator partnerships for RAK businesses.",
     url: "https://www.southernedgemarketing.com/services/social-media-management/ras-al-khaimah",
     siteName: "Southern Edge Marketing",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Social Media Management in Ras Al Khaimah | Southern Edge",
-    description: "Scale enterprise brand engagement across RAKEZ, Al Marjan Island, and Mina Al Arab. We engineer bilingual social campaigns, UAE Media Council compliance, and social commerce.",
+    description: "Top social media agency in Ras Al Khaimah. We create bilingual social campaigns, paid ad funnels, and creator partnerships for RAK businesses.",
     images: ["https://www.southernedgemarketing.com/images/infographics/social-media-management-ras-al-khaimah.jpg"],
   },
 };

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/ahmedabad',
   },
   title: "Web Development Company in Ahmedabad",
-  description: "Scale your business with the leading web development company in Ahmedabad. We build high-performance Next.js portals, custom B2B systems, and e-commerce apps."
+  description: "Leading web development company in Ahmedabad. We build fast Next.js websites, custom B2B web portals, and scalable e-commerce systems."
 };
 
 const tableOfContents = [

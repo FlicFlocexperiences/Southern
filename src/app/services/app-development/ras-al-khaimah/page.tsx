@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/app-development/ras-al-khaimah',
   },
   title: "App Development in Ras Al Khaimah",
-  description: "Enterprise app development company in Ras Al Khaimah. We engineer secure iOS, Android, and cross-platform mobile apps for RAK enterprises, RAKEZ, and luxury hospitality.",
+  description: "Top app development company in Ras Al Khaimah. We build secure iOS, Android, and cross-platform mobile apps for RAK enterprises and hospitality.",
   openGraph: {
     title: "App Development Company in Ras Al Khaimah | Southern Edge",
-    description: "Enterprise app development company in Ras Al Khaimah. We engineer secure iOS, Android, and cross-platform mobile apps for RAK enterprises, RAKEZ, and luxury hospitality.",
+    description: "Top app development company in Ras Al Khaimah. We build secure iOS, Android, and cross-platform mobile apps for RAK enterprises and hospitality.",
     url: "https://www.southernedgemarketing.com/services/app-development/ras-al-khaimah",
     siteName: "Southern Edge Marketing",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "App Development Company in Ras Al Khaimah | Southern Edge",
-    description: "Enterprise app development company in Ras Al Khaimah. We engineer secure iOS, Android, and cross-platform mobile apps for RAK enterprises, RAKEZ, and luxury hospitality.",
+    description: "Top app development company in Ras Al Khaimah. We build secure iOS, Android, and cross-platform mobile apps for RAK enterprises and hospitality.",
     images: ["https://www.southernedgemarketing.com/images/infographics/app-development-ras-al-khaimah.jpg"],
   },
 };

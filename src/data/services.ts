@@ -178,7 +178,7 @@ We have delivered robust mobile applications across a variety of sectors includi
     h1Title: "Social Media Management That Builds Communities",
     tagline: "Be talked about, not just scrolled past.",
     metaTitle: "Social Media Management Services",
-    metaDescription: "Grow your brand presence with data-driven social media management. We engineer targeted paid social campaigns and creative content.'t just about posting content—it's about building meaningful relationships with your audience. We develop data-driven social media strategies that increase brand awareness, engagement, and customer loyalty.",
+    metaDescription: "Grow your brand presence with data-driven social media management. We engineer targeted paid social campaigns and creative content.",
     description1: "Effective social media is about building a truly loyal community. We develop targeted content strategies that steadily increase brand awareness and audience engagement. By leveraging deep data analytics, we create compelling social campaigns that make your business the absolute center of attention.",
     description2: "We develop data-driven social media strategies that increase brand awareness, engagement, and customer loyalty across today's most influential platforms.",
     callout: "Attention is the currency of the digital age, we build content that makes your brand the center of attention.",

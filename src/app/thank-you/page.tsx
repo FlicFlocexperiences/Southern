@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     canonical: '/thank-you',
   },
   title: "Thank You",
-  description: "Thank you for getting in touch with us.",
+  description: "Thank you for reaching out to Southern Edge Marketing. Our strategy team will review your project requirements and respond within 24 hours.",
   robots: {
     index: false,
     follow: false,

@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/ras-al-khaimah',
   },
   title: "Web Development in Ras Al Khaimah",
-  description: "Enterprise web development in Ras Al Khaimah. We build high-performance Next.js websites, UAE PDPL compliant portals, and scalable cloud systems for RAK.",
+  description: "Top web development in Ras Al Khaimah. We build high-performance Next.js websites, custom portals, and scalable cloud solutions for RAK businesses.",
   openGraph: {
     title: "Web Development Company in Ras Al Khaimah | Southern Edge",
-    description: "Enterprise web development in Ras Al Khaimah. We build high-performance Next.js websites, UAE PDPL compliant portals, and scalable cloud systems for RAK.",
+    description: "Top web development in Ras Al Khaimah. We build high-performance Next.js websites, custom portals, and scalable cloud solutions for RAK businesses.",
     url: "https://www.southernedgemarketing.com/services/web-development/ras-al-khaimah",
     siteName: "Southern Edge Marketing",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Web Development Company in Ras Al Khaimah | Southern Edge",
-    description: "Enterprise web development in Ras Al Khaimah. We build high-performance Next.js websites, UAE PDPL compliant portals, and scalable cloud systems for RAK.",
+    description: "Top web development in Ras Al Khaimah. We build high-performance Next.js websites, custom portals, and scalable cloud solutions for RAK businesses.",
     images: ["https://www.southernedgemarketing.com/images/infographics/web-development-ras-al-khaimah.jpg"],
   },
 };

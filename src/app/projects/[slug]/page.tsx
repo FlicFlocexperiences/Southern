@@ -100,7 +100,9 @@ const projectMetaDescriptions: Record<string, string> = {
   "mr-pronto": "Explore our SEO and digital visibility campaign for Mr. Pronto, driving local search traffic for footwear restoration.",
   "rise": "Explore the brand architecture and dining identity project for Rise, creating an inviting visual language for hospitality.",
   "kamal": "Discover the commercial dealership platform built for Kamal Motors, simplifying vehicle discovery for Tata Motors fleets.",
-  "pehnavri": "Explore the vibrant ethnic wear e-commerce store designed for Pehnavri, showcasing handcrafted kurtis and festive couture."
+  "pehnavri": "Explore the vibrant ethnic wear e-commerce store designed for Pehnavri, showcasing handcrafted kurtis and festive couture.",
+  "credsettle": "Explore the secure fintech debt resolution platform built for CredSettle, featuring automated savings calculators and legal workflows.",
+  "xcel": "Explore the global logistics and freight forwarding portal built for Xcel, featuring interactive shipment tracking and rate estimators."
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {

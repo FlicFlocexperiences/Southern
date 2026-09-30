@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/branding/ahmedabad',
   },
   title: "Branding Company in Ahmedabad",
-  description: "Scale your business with the premier branding company in Ahmedabad. We design elite corporate identities for Gujarat's industrial hubs and GIFT City enterprises."
+  description: "Leading branding company in Ahmedabad. We craft high-impact brand identities and messaging systems for Gujarat enterprises and GIFT City firms."
 };
 
 const tableOfContents = [

@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/branding/ras-al-khaimah',
   },
   title: "Branding Company in Ras Al Khaimah",
-  description: "Enterprise branding company in Ras Al Khaimah. We build bilingual Arabic-English corporate identities, luxury hospitality branding, and RAK DAO Web3 positioning.",
+  description: "Top branding company in Ras Al Khaimah. We design bilingual Arabic-English corporate identities, luxury hospitality branding, and Web3 strategy.",
   openGraph: {
     title: "Branding Company in Ras Al Khaimah | Southern Edge",
-    description: "Enterprise branding company in Ras Al Khaimah. We build bilingual Arabic-English corporate identities, luxury hospitality branding, and RAK DAO Web3 positioning.",
+    description: "Top branding company in Ras Al Khaimah. We design bilingual Arabic-English corporate identities, luxury hospitality branding, and Web3 strategy.",
     url: "https://www.southernedgemarketing.com/services/branding/ras-al-khaimah",
     siteName: "Southern Edge Marketing",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Branding Company in Ras Al Khaimah | Southern Edge",
-    description: "Enterprise branding company in Ras Al Khaimah. We build bilingual Arabic-English corporate identities, luxury hospitality branding, and RAK DAO Web3 positioning.",
+    description: "Top branding company in Ras Al Khaimah. We design bilingual Arabic-English corporate identities, luxury hospitality branding, and Web3 strategy.",
     images: ["https://www.southernedgemarketing.com/images/infographics/branding-ras-al-khaimah.jpg"],
   },
 };

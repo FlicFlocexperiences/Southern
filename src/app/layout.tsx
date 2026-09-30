@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Digital Marketing Agency Delhi | Southern Edge",
-    description: "Digital Marketing Agency in Delhi, India",
+    description: "Southern Edge Marketing drives business with strategy, design, development, and marketing. Trusted by 100+ businesses across India. 5.0 rated.",
     images: ["/og-image.png"],
   },
 };

@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/seo/ras-al-khaimah',
   },
   title: "SEO Company in Ras Al Khaimah",
-  description: "Scale organic revenue across RAKEZ, Al Marjan Island, and Mina Al Arab. We engineer enterprise SEO, Generative Engine Optimization, and Arabic entity graphs.",
+  description: "Grow organic revenue across RAKEZ and Al Marjan Island. We build enterprise SEO, Generative Engine Optimization, and Arabic entity strategies.",
   openGraph: {
     title: "SEO Company in Ras Al Khaimah | Southern Edge",
-    description: "Scale organic revenue across RAKEZ, Al Marjan Island, and Mina Al Arab. We engineer enterprise SEO, Generative Engine Optimization, and Arabic entity graphs.",
+    description: "Grow organic revenue across RAKEZ and Al Marjan Island. We build enterprise SEO, Generative Engine Optimization, and Arabic entity strategies.",
     url: "https://www.southernedgemarketing.com/services/seo/ras-al-khaimah",
     siteName: "Southern Edge Marketing",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "SEO Company in Ras Al Khaimah | Southern Edge",
-    description: "Scale organic revenue across RAKEZ, Al Marjan Island, and Mina Al Arab. We engineer enterprise SEO, Generative Engine Optimization, and Arabic entity graphs.",
+    description: "Grow organic revenue across RAKEZ and Al Marjan Island. We build enterprise SEO, Generative Engine Optimization, and Arabic entity strategies.",
     images: ["https://www.southernedgemarketing.com/images/infographics/seo-ras-al-khaimah.jpg"],
   },
 };
