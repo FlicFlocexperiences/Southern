@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/london',
   },
-  title: "Social Media Marketing Company in London | Southern Edge Marketing",
+  title: "Social Media Management in London",
   description: "Partner with the premier social media marketing company in London. We engineer high-converting B2B campaigns, luxury social commerce, and FCA-compliant growth.",
 };
 

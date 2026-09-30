@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/web-development/new-york',
   },
-  title: "Web Development Company in New York | Southern Edge Marketing",
+  title: "Web Development Company in New York",
   description: "Partner with the premier web development company in New York. We engineer secure, ultra-low-latency Next.js platforms for Wall Street and Silicon Alley leaders.",
 };
 

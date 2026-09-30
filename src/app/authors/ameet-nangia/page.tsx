@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/authors/ameet-nangia",
   },
-  title: "Ameet Nangia - Founder & Lead Digital Strategist | Southern Edge Marketing",
+  title: "Ameet Nangia - Founder & Digital Strategist",
   description:
     "Learn about Ameet Nangia, Founder and Lead Digital Strategist at Southern Edge Marketing. Specialist in SEO, Digital Strategy, Google Adwords, and Enterprise Lead Generation.",
   openGraph: {
-    title: "Ameet Nangia - Founder & Lead Digital Strategist | Southern Edge Marketing",
+    title: "Ameet Nangia - Founder & Digital Strategist | Southern Edge",
     description:
       "Learn about Ameet Nangia, Founder and Lead Digital Strategist at Southern Edge Marketing. Specialist in SEO, Digital Strategy, Google Adwords, and Enterprise Lead Generation.",
     url: "https://www.southernedgemarketing.com/authors/ameet-nangia",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ameet Nangia - Founder & Lead Digital Strategist | Southern Edge Marketing",
+    title: "Ameet Nangia - Founder & Digital Strategist | Southern Edge",
     description:
       "Learn about Ameet Nangia, Founder and Lead Digital Strategist at Southern Edge Marketing. Specialist in SEO, Digital Strategy, Google Adwords, and Enterprise Lead Generation.",
     images: ["https://www.southernedgemarketing.com/assets/team/ameet.png"],

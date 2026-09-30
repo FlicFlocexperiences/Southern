@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/los-angeles',
   },
-  title: "Social Media Management in Los Angeles | Southern Edge Marketing",
+  title: "Social Media Management in Los Angeles",
   description: "Partner with Los Angeles's premier social media management agency. We engineer high-ROAS paid social campaigns, creator economy activations, and viral content strategies for Silicon Beach and Hollywood brands.",
   openGraph: {
-    title: "Social Media Management in Los Angeles | Southern Edge Marketing",
+    title: "Social Media Management in Los Angeles | Southern Edge",
     description: "Partner with Los Angeles's premier social media management agency. We engineer high-ROAS paid social campaigns, creator economy activations, and viral content strategies for Silicon Beach and Hollywood brands.",
     url: "https://www.southernedgemarketing.com/services/social-media-management/los-angeles",
     siteName: "Southern Edge Marketing",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Social Media Management in Los Angeles | Southern Edge Marketing",
+    title: "Social Media Management in Los Angeles | Southern Edge",
     description: "Partner with Los Angeles's premier social media management agency. We engineer high-ROAS paid social campaigns, creator economy activations, and viral content strategies for Silicon Beach and Hollywood brands.",
   },
   robots: {

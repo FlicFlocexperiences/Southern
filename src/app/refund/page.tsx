@@ -8,8 +8,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/refund',
   },
-  title: "Refund Policy",
-  description: "Information regarding refunds and cancellations for our services.",
+  title: "Refund & Cancellation Policy",
+  description: "Information regarding refunds and cancellations for our services at Southern Edge Marketing.",
+  openGraph: {
+    title: "Refund & Cancellation Policy | Southern Edge",
+    description: "Information regarding refunds and cancellations for our services at Southern Edge Marketing.",
+  },
 };
 
 export default function Refund() {

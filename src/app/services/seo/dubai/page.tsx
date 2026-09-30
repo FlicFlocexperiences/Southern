@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/seo/dubai',
   },
-  title: "SEO Company in Dubai | Southern Edge Marketing",
+  title: "SEO Company in Dubai",
   description: "Scale your organic pipeline with the leading SEO Company in Dubai. We design high-performance search architectures for luxury, fintech, and logistics brands.",
 };
 

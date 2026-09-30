@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/branding/surat',
   },
-  title: "Premium Branding Company in Surat",
+  title: "Branding Company in Surat",
   description: "Scale your business with the leading branding company in Surat. We design elite brand identity systems for diamond exporters and textile conglomerates."
 };
 

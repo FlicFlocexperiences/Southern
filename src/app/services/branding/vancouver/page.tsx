@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/branding/vancouver',
   },
-  title: "Branding Company in Vancouver | Brand Strategy & Identity | Southern Edge Marketing",
+  title: "Branding Company in Vancouver",
   description: "Partner with the premier branding company in Vancouver. We engineer bespoke corporate identities, brand strategies, and visual systems for BC market leaders.",
 };
 

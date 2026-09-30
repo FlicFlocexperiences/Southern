@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/web-development/lucknow',
   },
-  title: "Premium Web Development Company in Lucknow",
+  title: "Web Development Company in Lucknow",
   description: "Bespoke web development services in Lucknow. We engineer high-performance B2B portals, custom D2C e-commerce, & enterprise web solutions for growth.",
 };
 

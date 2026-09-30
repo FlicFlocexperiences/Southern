@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/app-development/abu-dhabi',
   },
-  title: "Expert App Developers in Abu Dhabi | Southern Edge",
+  title: "App Development Company in Abu Dhabi",
   description: "Top mobile app development company in Abu Dhabi. We build high-performance iOS and Android applications designed to scale your enterprise globally.",
 };
 

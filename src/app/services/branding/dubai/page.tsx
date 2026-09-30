@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/branding/dubai',
   },
-  title: "Branding Company in Dubai | Premium Identity Design | Southern Edge Marketing",
+  title: "Branding Company in Dubai",
   description: "Elevate your business with the premier branding company in Dubai. We design prestigious, bilingual corporate identities and brand strategy for UAE market leaders."
 };
 

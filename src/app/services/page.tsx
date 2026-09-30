@@ -17,10 +17,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services',
   },
-  title: "Our Services | Web, Branding, SEO, Ads & App Development",
+  title: "Our Services | Web, Branding, SEO & Apps",
   description: "Six capabilities, one growth system: websites, branding, Shopify, app development, SEO, performance marketing, and social media management.",
   openGraph: {
-    title: "Our Services | Web, Branding, SEO, Ads & App Development",
+    title: "Our Services | Web, Branding, SEO & Apps | Southern Edge",
     description: "Six capabilities, one growth system: websites, branding, Shopify, app development, SEO, performance marketing, and social media management.",
   },
 };

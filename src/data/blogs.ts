@@ -14,6 +14,7 @@ export interface Review {
 export interface Blog {
   slug: string;
   title: string;
+  metaTitle?: string;
   excerpt: string;
   content: string; // Markdown content
   publishedAt: string;
@@ -28,6 +29,7 @@ export const blogs: Blog[] = [
   {
     slug: "the-importance-of-mobile-first-design-in-2025",
     title: "The Importance of Mobile-First Design in 2025",
+    metaTitle: "Importance of Mobile Design in 2025",
     excerpt: "Explore why designing for mobile screens first revolutionized user experience, accessibility, and modern SEO rankings.",
     publishedAt: "Feb 26, 2025",
     category: "DESIGN",
@@ -48,6 +50,7 @@ Google uses mobile-first indexing, meaning its web crawler prioritizes indexing 
   {
     slug: "understanding-color-theory-in-digital-branding",
     title: "Understanding Color Theory in Digital Branding",
+    metaTitle: "Color Theory in Digital Branding",
     excerpt: "Learn how color choices affect human psychology, brand recognition, and conversions on digital storefronts.",
     publishedAt: "March 12, 2001",
     category: "BRANDING",

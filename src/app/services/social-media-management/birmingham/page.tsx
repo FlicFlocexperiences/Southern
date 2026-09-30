@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/birmingham',
   },
-  title: "Social Media Marketing Company in Birmingham | Southern Edge Marketing",
+  title: "Social Media Management in Birmingham",
   description: "Partner with the premier social media marketing company in Birmingham. We engineer B2B LinkedIn ABM, luxury social commerce, and short-form video growth.",
 };
 

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/branding/jaipur',
   },
-  title: "Professional Branding Company in Jaipur",
+  title: "Branding Company in Jaipur",
   description: "Scale your market influence with the premier branding company in Jaipur. We design elite corporate identities for gemstone exporters and tech firms in MWC."
 };
 

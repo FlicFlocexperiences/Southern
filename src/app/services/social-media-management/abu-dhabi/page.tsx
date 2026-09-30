@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/abu-dhabi',
   },
-  title: "Social Media Management Agency Abu Dhabi | Southern Edge",
+  title: "Social Media Management in Abu Dhabi",
   description: "Grow your brand in the UAE capital. Our social media management in Abu Dhabi drives engagement, builds communities, and generates real business results.",
 };
 

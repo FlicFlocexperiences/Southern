@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/web-development/san-francisco',
   },
-  title: "Web Development Company in San Francisco | Southern Edge Marketing",
+  title: "Web Development in San Francisco",
   description: "Partner with San Francisco premier enterprise web development company. We engineer high-velocity Next.js platforms, CCPA-compliant systems, and scalable APIs.",
   openGraph: {
-    title: "Web Development Company in San Francisco | Southern Edge Marketing",
+    title: "Web Development Company in San Francisco | Southern Edge",
     description: "Partner with San Francisco premier enterprise web development company. We engineer high-velocity Next.js platforms, CCPA-compliant systems, and scalable APIs.",
     url: "https://www.southernedgemarketing.com/services/web-development/san-francisco",
     siteName: "Southern Edge Marketing",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Development Company in San Francisco | Southern Edge Marketing",
+    title: "Web Development Company in San Francisco | Southern Edge",
     description: "Partner with San Francisco premier enterprise web development company. We engineer high-velocity Next.js platforms, CCPA-compliant systems, and scalable APIs.",
     images: ["https://www.southernedgemarketing.com/images/infographics/web-development-san-francisco.jpg"],
   },

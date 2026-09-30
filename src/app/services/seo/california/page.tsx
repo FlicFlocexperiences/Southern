@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/seo/california',
   },
-  title: "SEO Company in California | Southern Edge Marketing",
+  title: "SEO Company in California",
   description: "Accelerate your organic discovery with California leading enterprise SEO and Generative Engine Optimization (GEO) agency. High-performance Next.js architectures and CCPA compliance.",
   openGraph: {
-    title: "SEO Company in California | Southern Edge Marketing",
+    title: "SEO Company in California | Southern Edge",
     description: "Accelerate your organic discovery with California leading enterprise SEO and Generative Engine Optimization (GEO) agency. High-performance Next.js architectures and CCPA compliance.",
     url: "https://www.southernedgemarketing.com/services/seo/california",
     siteName: "Southern Edge Marketing",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO Company in California | Southern Edge Marketing",
+    title: "SEO Company in California | Southern Edge",
     description: "Accelerate your organic discovery with California leading enterprise SEO and Generative Engine Optimization (GEO) agency. High-performance Next.js architectures and CCPA compliance.",
     images: ["https://www.southernedgemarketing.com/images/infographics/seo-california.jpg"],
   },

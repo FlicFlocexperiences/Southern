@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/branding/toronto',
   },
-  title: "Branding Company in Toronto | Brand Strategy & Identity | Southern Edge Marketing",
+  title: "Branding Company in Toronto",
   description: "Scale your market presence with the premier branding company in Toronto. We engineer bespoke corporate identities, brand strategies, and visual systems for GTA leaders.",
 };
 

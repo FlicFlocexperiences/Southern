@@ -76,6 +76,18 @@ const getLiveBlog = cache(async (slug: string): Promise<Blog | null> => {
   return null;
 });
 
+const blogMetaTitleMap: Record<string, string> = {
+  "understanding-color-theory-in-digital-branding": "Color Theory in Digital Branding",
+  "the-importance-of-mobile-first-design-in-2025": "Importance of Mobile Design in 2025",
+  "best-website-developer-in-uk": "Best Website Developer in the UK",
+  "shopify-website-vs-custom-coded-website": "Shopify vs Custom Coded Websites",
+  "website-maintenance-cost-in-india-monthly": "Website Maintenance Cost in India",
+  "how-to-build-a-shopify-website": "How to Build a Shopify Website",
+  "top-15-shopify-clothing-stores-in-india": "Top 15 Shopify Clothing Stores in India",
+  "best-digital-marketing-company-gurgaon-gurugram": "Digital Marketing Company in Gurgaon",
+  "wordpress-vs-shopify-delhi-small-businesses": "WordPress vs Shopify: Delhi Businesses",
+};
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const blog = await getLiveBlog(slug);
@@ -90,8 +102,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     ? `https://www.southernedgemarketing.com${blog.image.startsWith("/") ? "" : "/"}${blog.image}`
     : "https://www.southernedgemarketing.com/photoshoot.jpg";
 
-  // Clean title: remove any pre-existing agency brand suffix to prevent duplicate stacking
-  const cleanTitle = blog.title.replace(/\s*\|\s*Southern Edge.*$/i, '').trim();
+  // Clean title: check metaTitle, slug map, or remove pre-existing agency brand suffix
+  const cleanTitle = blog.metaTitle || blogMetaTitleMap[slug] || blog.title.replace(/\s*\|\s*Southern Edge.*$/i, '').trim();
 
   return {
     title: cleanTitle,

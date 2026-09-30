@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/lucknow',
   },
-  title: "Social Media Management Company in Lucknow",
+  title: "Social Media Management in Lucknow",
   description: "Dominate with the leading social media management company in Lucknow. We scale IT firms, Chikan exporters, and real estate brands on social channels.",
 };
 

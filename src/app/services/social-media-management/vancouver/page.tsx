@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/vancouver',
   },
-  title: "Social Media Management Company in Vancouver | Southern Edge Marketing",
+  title: "Social Media Management in Vancouver",
   description: "Partner with the leading social media management company in Vancouver. We drive enterprise brand authority, BC PIPA-compliant social, and DTC social commerce.",
 };
 

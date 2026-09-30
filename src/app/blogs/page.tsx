@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/blogs',
   },
-  title: "Digital Marketing & Web Design Blog | Southern Edge",
+  title: "Digital Marketing & Web Design Blog",
   description: "Read the Southern Edge digital marketing agency blog. Discover actionable SEO strategy tips, web design insights, and business growth tactics today.",
   robots: {
     index: true,

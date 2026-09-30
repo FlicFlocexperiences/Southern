@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/toronto',
   },
-  title: "Social Media Management Company in Toronto | Southern Edge Marketing",
+  title: "Social Media Management in Toronto",
   description: "Partner with the premier social media management company in Toronto. We drive enterprise brand growth, CASL-compliant B2B social, and social commerce across the GTA.",
 };
 

@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/branding/brisbane',
   },
-  title: "Branding Company in Brisbane | Southern Edge Marketing",
+  title: "Branding Company in Brisbane",
   description: "Partner with Brisbane premier enterprise branding company. We engineer category-defining brand systems, IP Australia cleared trademarks, and living design tokens.",
   openGraph: {
-    title: "Branding Company in Brisbane | Southern Edge Marketing",
+    title: "Branding Company in Brisbane | Southern Edge",
     description: "Partner with Brisbane premier enterprise branding company. We engineer category-defining brand systems, IP Australia cleared trademarks, and living design tokens.",
     url: "https://www.southernedgemarketing.com/services/branding/brisbane",
     siteName: "Southern Edge Marketing",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Branding Company in Brisbane | Southern Edge Marketing",
+    title: "Branding Company in Brisbane | Southern Edge",
     description: "Partner with Brisbane premier enterprise branding company. We engineer category-defining brand systems, IP Australia cleared trademarks, and living design tokens.",
     images: ["https://www.southernedgemarketing.com/images/infographics/branding-brisbane.jpg"],
   },

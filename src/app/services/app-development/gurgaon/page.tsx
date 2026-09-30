@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/app-development/gurgaon',
   },
-  title: "Premium Mobile App Development Company in Gurgaon",
+  title: "App Development Company in Gurgaon",
   description: "Partner with Gurgaon's premier app development company. We build high-performance, secure custom mobile apps tailored for Cyber City's business ecosystem."
 };
 

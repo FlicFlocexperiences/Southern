@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/pune',
   },
-  title: "Social Media Agency in Pune",
+  title: "Social Media Management in Pune",
   description: "Dominate Pune's dynamic market with elite social media management. We build high-ROI digital campaigns for IT startups, manufacturing firms, and education.",
 };
 

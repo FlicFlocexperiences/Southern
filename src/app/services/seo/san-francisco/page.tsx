@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/seo/san-francisco',
   },
-  title: "SEO Company in San Francisco | Southern Edge Marketing",
+  title: "SEO Company in San Francisco",
   description: "Dominate organic search across SoMa, FiDi, and Mission Bay. We engineer enterprise SEO, Generative Engine Optimization (GEO), and schema graphs for SF leaders.",
   openGraph: {
-    title: "SEO Company in San Francisco | Southern Edge Marketing",
+    title: "SEO Company in San Francisco | Southern Edge",
     description: "Dominate organic search across SoMa, FiDi, and Mission Bay. We engineer enterprise SEO, Generative Engine Optimization (GEO), and schema graphs for SF leaders.",
     url: "https://www.southernedgemarketing.com/services/seo/san-francisco",
     siteName: "Southern Edge Marketing",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO Company in San Francisco | Southern Edge Marketing",
+    title: "SEO Company in San Francisco | Southern Edge",
     description: "Dominate organic search across SoMa, FiDi, and Mission Bay. We engineer enterprise SEO, Generative Engine Optimization (GEO), and schema graphs for SF leaders.",
     images: ["https://www.southernedgemarketing.com/images/infographics/seo-san-francisco.jpg"],
   },

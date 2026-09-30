@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/app-development/melbourne',
   },
-  title: "App Development Company in Melbourne | Southern Edge Marketing",
+  title: "App Development Company in Melbourne",
   description: "Partner with Melbourne's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native applications for Victorian enterprises.",
   openGraph: {
-    title: "App Development Company in Melbourne | Southern Edge Marketing",
+    title: "App Development Company in Melbourne | Southern Edge",
     description: "Partner with Melbourne's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native applications for Victorian enterprises.",
     url: "https://www.southernedgemarketing.com/services/app-development/melbourne",
     siteName: "Southern Edge Marketing",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App Development Company in Melbourne | Southern Edge Marketing",
+    title: "App Development Company in Melbourne | Southern Edge",
     description: "Partner with Melbourne's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native applications for Victorian enterprises.",
     images: ["https://www.southernedgemarketing.com/images/infographics/app-development-melbourne.jpg"],
   },

@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/seo/brisbane',
   },
-  title: "SEO Company in Brisbane | Southern Edge Marketing",
+  title: "SEO Company in Brisbane",
   description: "Scale organic pipeline with Brisbane premier enterprise SEO agency. We engineer generative engine optimization, entity graphs, and technical search platforms.",
   openGraph: {
-    title: "SEO Company in Brisbane | Southern Edge Marketing",
+    title: "SEO Company in Brisbane | Southern Edge",
     description: "Scale organic pipeline with Brisbane premier enterprise SEO agency. We engineer generative engine optimization, entity graphs, and technical search platforms.",
     url: "https://www.southernedgemarketing.com/services/seo/brisbane",
     siteName: "Southern Edge Marketing",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO Company in Brisbane | Southern Edge Marketing",
+    title: "SEO Company in Brisbane | Southern Edge",
     description: "Scale organic pipeline with Brisbane premier enterprise SEO agency. We engineer generative engine optimization, entity graphs, and technical search platforms.",
     images: ["https://www.southernedgemarketing.com/images/infographics/seo-brisbane.jpg"],
   },

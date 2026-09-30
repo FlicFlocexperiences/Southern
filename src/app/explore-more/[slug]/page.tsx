@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!article) return {};
   return {
     alternates: { canonical: `/explore-more/${slug}` },
-    title: `${article.title} | Southern Marketing`,
+    title: article.metaTitle || article.title,
     description: article.excerpt,
     openGraph: {
       title: article.title,

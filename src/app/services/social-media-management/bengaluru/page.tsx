@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/bengaluru',
   },
-  title: "Social Media Agency in Bengaluru",
+  title: "Social Media Management in Bengaluru",
   description: "Dominate India's tech hub with elite social media management in Bengaluru. We build highly engaged digital communities for startups and enterprise brands.",
 };
 

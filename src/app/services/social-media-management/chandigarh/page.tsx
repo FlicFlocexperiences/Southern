@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/chandigarh',
   },
-  title: "Social Media Management Company in Chandigarh",
+  title: "Social Media Management in Chandigarh",
   description: "Scale your Tricity business with premium social media management in Chandigarh. We build authoritative social campaigns for IT firms, B2B, & retail."
 };
 

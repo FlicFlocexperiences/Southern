@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/services/branding/san-francisco",
   },
-  title: "Branding Company in San Francisco | Southern Edge Marketing",
+  title: "Branding Company in San Francisco",
   description: "Partner with San Francisco premier enterprise branding company. We engineer category-defining brand systems, AI positioning, and scalable digital visual identities.",
   openGraph: {
-    title: "Branding Company in San Francisco | Southern Edge Marketing",
+    title: "Branding Company in San Francisco | Southern Edge",
     description: "Partner with San Francisco premier enterprise branding company. We engineer category-defining brand systems, AI positioning, and scalable digital visual identities.",
     url: "https://www.southernedgemarketing.com/services/branding/san-francisco",
     siteName: "Southern Edge Marketing",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Branding Company in San Francisco | Southern Edge Marketing",
+    title: "Branding Company in San Francisco | Southern Edge",
     description: "Partner with San Francisco premier enterprise branding company. We engineer category-defining brand systems, AI positioning, and scalable digital visual identities.",
     images: ["https://www.southernedgemarketing.com/images/infographics/branding-san-francisco.jpg"],
   },

@@ -87,7 +87,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!project) return {};
   return {
     alternates: { canonical: `/projects/${slug}` },
-    title: `${project.title} | Case Study | Southern Edge`,
+    title: `${project.title} | Case Study`,
     description: project.description?.slice(0, 160) || `Explore ${project.title} case study.`,
   };
 }

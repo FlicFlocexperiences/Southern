@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/branding/kolkata',
   },
-  title: "Premium Branding Company in Kolkata",
+  title: "Branding Company in Kolkata",
   description: "Scale your Kolkata enterprise with premium corporate branding. We build elite identity systems for Sector V tech firms, heritage tea brands, and manufacturers."
 };
 

@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/services/branding/california",
   },
-  title: "Branding Company in California | Southern Edge Marketing",
+  title: "Branding Company in California",
   description: "Scale your enterprise market authority with California premier branding agency. We engineer category-defining brand systems, AI positioning, and scalable design token architectures.",
   openGraph: {
-    title: "Branding Company in California | Southern Edge Marketing",
+    title: "Branding Company in California | Southern Edge",
     description: "Scale your enterprise market authority with California premier branding agency. We engineer category-defining brand systems, AI positioning, and scalable design token architectures.",
     url: "https://www.southernedgemarketing.com/services/branding/california",
     siteName: "Southern Edge Marketing",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Branding Company in California | Southern Edge Marketing",
+    title: "Branding Company in California | Southern Edge",
     description: "Scale your enterprise market authority with California premier branding agency. We engineer category-defining brand systems, AI positioning, and scalable design token architectures.",
     images: ["https://www.southernedgemarketing.com/images/infographics/branding-california.jpg"],
   },

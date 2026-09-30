@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/web-development/london',
   },
-  title: "Web Development Company in London | Southern Edge Marketing",
+  title: "Web Development Company in London",
   description: "Partner with the premier web development company in London. We engineer secure, ultra-low-latency Next.js platforms tailored to Square Mile and Mayfair enterprises.",
 };
 

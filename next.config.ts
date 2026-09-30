@@ -21,6 +21,10 @@ const nextConfig: NextConfig = {
         source: "/:path*",
         headers: [
           {
+            key: "X-Frame-Options",
+            value: "SAMEORIGIN",
+          },
+          {
             key: "Content-Security-Policy",
             value: "frame-ancestors 'self' https://www.facebook.com https://business.facebook.com https://*.facebook.com;",
           },
@@ -35,6 +39,14 @@ const nextConfig: NextConfig = {
           {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=()",
+          },
+          {
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains; preload",
+          },
+          {
+            key: "X-XSS-Protection",
+            value: "1; mode=block",
           },
         ],
       },

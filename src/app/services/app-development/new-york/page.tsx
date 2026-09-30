@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/app-development/new-york',
   },
-  title: "App Development Company in New York | Southern Edge Marketing",
+  title: "App Development Company in New York",
   description: "Partner with New York's premier app development company. We engineer secure, high-performance iOS and Android mobile applications for NYC enterprises and startups.",
   openGraph: {
-    title: "App Development Company in New York | Southern Edge Marketing",
+    title: "App Development Company in New York | Southern Edge",
     description: "Partner with New York's premier app development company. We engineer secure, high-performance iOS and Android mobile applications for NYC enterprises and startups.",
     url: "https://www.southernedgemarketing.com/services/app-development/new-york",
     siteName: "Southern Edge Marketing",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App Development Company in New York | Southern Edge Marketing",
+    title: "App Development Company in New York | Southern Edge",
     description: "Partner with New York's premier app development company. We engineer secure, high-performance iOS and Android mobile applications for NYC enterprises and startups.",
     images: ["https://www.southernedgemarketing.com/images/infographics/app-development-new-york.jpg"],
   },

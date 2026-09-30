@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/web-development/vancouver',
   },
-  title: "Web Development Company in Vancouver | Southern Edge Marketing",
+  title: "Web Development Company in Vancouver",
   description: "Partner with the premier web development company in Vancouver. We engineer secure, high-speed Next.js platforms built for BC enterprises and PIPA compliance.",
 };
 

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/branding/birmingham',
   },
-  title: "Branding Company in Birmingham | Southern Edge Marketing",
+  title: "Branding Company in Birmingham",
   description: "Partner with Birmingham's premier branding company. We engineer prestigious corporate brand systems, visual identities, and strategic positioning for UK enterprises.",
 };
 

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/app-development/london',
   },
-  title: "App Development Company in London | Southern Edge Marketing",
+  title: "App Development Company in London",
   description: "Partner with London's premier app development company. We engineer secure, high-performance iOS & Android applications for UK enterprises and tech scale-ups.",
 };
 

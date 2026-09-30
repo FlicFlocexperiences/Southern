@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/web-development/toronto',
   },
-  title: "Web Development Company in Toronto | Southern Edge Marketing",
+  title: "Web Development Company in Toronto",
   description: "Partner with the premier web development company in Toronto. We build secure, high-performance Next.js platforms tailored to Bay Street and GTA enterprises.",
 };
 

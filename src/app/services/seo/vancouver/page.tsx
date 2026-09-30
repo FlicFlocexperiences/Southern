@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/seo/vancouver',
   },
-  title: "SEO Company in Vancouver | Southern Edge Marketing",
+  title: "SEO Company in Vancouver",
   description: "Scale your organic pipeline with the leading SEO Company in Vancouver. We engineer enterprise search strategies for Cascadia tech, CleanTech, and B2B leaders.",
 };
 

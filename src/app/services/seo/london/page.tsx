@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/seo/london',
   },
-  title: "SEO Company in London | Southern Edge Marketing",
+  title: "SEO Company in London",
   description: "Scale your organic pipeline with the leading SEO company in London. We engineer enterprise search strategies for Square Mile fintech, tech hubs, and UK brands.",
 };
 

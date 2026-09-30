@@ -12,10 +12,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/contact',
   },
-  title: "Contact Us",
+  title: "Contact Us - Get a Free Consultation",
   description: "Ready to grow? Get in touch with Southern Edge Marketing for a free consultation on strategy, design, and marketing that drives results.",
   openGraph: {
-    title: "Contact Us | Southern Edge Marketing",
+    title: "Contact Us - Get a Free Consultation | Southern Edge",
     description: "Ready to grow? Get in touch with Southern Edge Marketing for a free consultation on strategy, design, and marketing that drives results.",
   },
 };

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/app-development/vancouver',
   },
-  title: "App Development Company in Vancouver | Southern Edge Marketing",
+  title: "App Development Company in Vancouver",
   description: "Partner with Vancouver's top app development company. We engineer high-performance, BC PIPA-compliant iOS & Android apps for Cascadia tech leaders.",
 };
 

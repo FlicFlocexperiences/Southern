@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/app-development/san-francisco',
   },
-  title: "App Development Company in San Francisco | Southern Edge Marketing",
+  title: "App Development in San Francisco",
   description: "Partner with San Francisco's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native apps for Bay Area enterprises.",
   openGraph: {
-    title: "App Development Company in San Francisco | Southern Edge Marketing",
+    title: "App Development Company in San Francisco | Southern Edge",
     description: "Partner with San Francisco's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native apps for Bay Area enterprises.",
     url: "https://www.southernedgemarketing.com/services/app-development/san-francisco",
     siteName: "Southern Edge Marketing",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App Development Company in San Francisco | Southern Edge Marketing",
+    title: "App Development Company in San Francisco | Southern Edge",
     description: "Partner with San Francisco's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native apps for Bay Area enterprises.",
     images: ["https://www.southernedgemarketing.com/images/infographics/app-development-san-francisco.jpg"],
   },

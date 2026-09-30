@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/seo/lucknow',
   },
-  title: "Professional SEO Company in Lucknow",
+  title: "SEO Company in Lucknow",
   description: "Scale your organic traffic with the premier SEO company in Lucknow. We build search strategies for Sultanpur Road IT firms and legacy export houses."
 };
 

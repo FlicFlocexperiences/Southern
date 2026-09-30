@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/app-development/sharjah',
   },
-  title: "Expert App Developers in Sharjah",
+  title: "App Development Company in Sharjah",
   description: "Leading app development company in Sharjah. We build intuitive, secure, and highly scalable iOS and Android applications for businesses across the emirate.",
 };
 

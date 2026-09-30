@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/melbourne',
   },
-  title: "Social Media Management Company in Melbourne | Southern Edge Marketing",
+  title: "Social Media Management in Melbourne",
   description: "Partner with Melbourne's leading social media management company. We engineer high-converting B2B LinkedIn campaigns, executive leadership, and paid acquisition.",
   openGraph: {
-    title: "Social Media Management Company in Melbourne | Southern Edge Marketing",
+    title: "Social Media Management in Melbourne | Southern Edge",
     description: "Partner with Melbourne's leading social media management company. We engineer high-converting B2B LinkedIn campaigns, executive leadership, and paid acquisition.",
     url: "https://www.southernedgemarketing.com/services/social-media-management/melbourne",
     siteName: "Southern Edge Marketing",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Social Media Management Company in Melbourne | Southern Edge Marketing",
+    title: "Social Media Management in Melbourne | Southern Edge",
     description: "Partner with Melbourne's leading social media management company. We engineer high-converting B2B LinkedIn campaigns, executive leadership, and paid acquisition.",
     images: ["https://www.southernedgemarketing.com/images/infographics/social-media-management-melbourne.jpg"],
   },

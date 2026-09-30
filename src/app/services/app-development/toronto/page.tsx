@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/app-development/toronto',
   },
-  title: "App Development Company in Toronto | Southern Edge Marketing",
+  title: "App Development Company in Toronto",
   description: "Partner with Toronto's leading app development company. We engineer secure, high-performance iOS & Android applications tailored for Canadian enterprises.",
 };
 

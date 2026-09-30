@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/chennai',
   },
-  title: "Social Media Agency in Chennai",
+  title: "Social Media Management in Chennai",
   description: "Dominate the Southern Indian market with elite social media management in Chennai. We build high-ROI campaigns for manufacturing, IT, and retail sectors.",
 };
 

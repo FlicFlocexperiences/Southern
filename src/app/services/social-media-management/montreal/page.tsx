@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/montreal',
   },
-  title: "Social Media Management Company in Montreal | Southern Edge Marketing",
+  title: "Social Media Management in Montreal",
   description: "Partner with the premier social media management company in Montreal. We drive enterprise brand authority, Bill 96 bilingual campaigns, and Law 25-compliant social growth.",
 };
 

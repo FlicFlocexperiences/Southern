@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/dubai',
   },
-  title: "Social Media Management Company in Dubai | Southern Edge Marketing",
+  title: "Social Media Management in Dubai",
   description: "Partner with the leading social media management company in Dubai. We drive enterprise brand growth, NMC-compliant influencer campaigns, and social commerce.",
 };
 

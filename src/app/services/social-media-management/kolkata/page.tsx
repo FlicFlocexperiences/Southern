@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/kolkata',
   },
-  title: "Social Media Agency in Kolkata",
+  title: "Social Media Management in Kolkata",
   description: "Grow your brand in Eastern India with expert social media management in Kolkata. We create culturally resonant campaigns for retail, education, and IT.",
 };
 

@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/california',
   },
-  title: "Social Media Management Company in California | Southern Edge Marketing",
+  title: "Social Media Management in California",
   description: "Scale your enterprise pipeline with California premier social media management agency. We engineer high-ROAS paid social, creator activations, and B2B ABM campaigns.",
   openGraph: {
-    title: "Social Media Management Company in California | Southern Edge Marketing",
+    title: "Social Media Management in California | Southern Edge",
     description: "Scale your enterprise pipeline with California premier social media management agency. We engineer high-ROAS paid social, creator activations, and B2B ABM campaigns.",
     url: "https://www.southernedgemarketing.com/services/social-media-management/california",
     siteName: "Southern Edge Marketing",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Social Media Management Company in California | Southern Edge Marketing",
+    title: "Social Media Management in California | Southern Edge",
     description: "Scale your enterprise pipeline with California premier social media management agency. We engineer high-ROAS paid social, creator activations, and B2B ABM campaigns.",
     images: ["https://www.southernedgemarketing.com/images/infographics/social-media-management-california.jpg"],
   },

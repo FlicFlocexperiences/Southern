@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/branding/mumbai',
   },
-  title: "Premium Branding Company in Mumbai",
+  title: "Branding Company in Mumbai",
   description: "Scale your brand with the leading branding company in Mumbai. We design elite identity systems for BKC financial firms, fintechs, & luxury developers."
 };
 

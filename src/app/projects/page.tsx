@@ -12,11 +12,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/projects',
   },
-  title: "Projects",
-  description: "Explore our latest web development, branding, and design projects.",
+  title: "Our Projects & Portfolio Showcase",
+  description: "Explore our latest web development, branding, and design projects at Southern Edge Marketing.",
   openGraph: {
-    title: "Projects",
-    description: "Explore our latest web development, branding, and design projects.",
+    title: "Our Projects & Portfolio Showcase | Southern Edge",
+    description: "Explore our latest web development, branding, and design projects at Southern Edge Marketing.",
   },
 };
 

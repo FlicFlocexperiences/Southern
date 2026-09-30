@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/mumbai',
   },
-  title: "Social Media Agency in Mumbai",
+  title: "Social Media Management in Mumbai",
   description: "Elevate your brand in India's commercial capital. We provide data-driven social media management in Mumbai for finance, retail, and corporate sectors.",
 };
 

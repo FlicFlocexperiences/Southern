@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/app-development/montreal',
   },
-  title: "App Development Company in Montreal | Southern Edge Marketing",
+  title: "App Development Company in Montreal",
   description: "Partner with Montreal's leading app development company. We engineer secure, Law 25-compliant iOS & Android apps for Quebec enterprises and AI pioneers.",
 };
 

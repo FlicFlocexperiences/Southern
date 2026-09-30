@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/seo/abu-dhabi',
   },
-  title: "Premium SEO Company in Abu Dhabi",
+  title: "SEO Company in Abu Dhabi",
   description: "Partner with the leading SEO company in Abu Dhabi to dominate search results. We provide elite, bilingual technical SEO strategies for UAE enterprises."
 };
 

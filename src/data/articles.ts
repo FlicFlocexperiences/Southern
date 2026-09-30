@@ -1,6 +1,7 @@
 export interface Article {
   slug: string;
   title: string;
+  metaTitle?: string;
   excerpt: string;
   content: string; // Rich HTML format
   publishedAt: string;
@@ -16,6 +17,7 @@ export const articles: Article[] = [
   {
     slug: "why-custom-code-better-than-wordpress",
     title: "Why Custom Code is Better than WordPress in 2026: Speed, Security & Scalability",
+    metaTitle: "Why Custom Code Beats WordPress 2026",
     excerpt: "Discover why hand-crafted Next.js applications outperform monolithic systems like WordPress in Core Web Vitals, enterprise security, and long-term business ROI.",
     publishedAt: "August 18, 2026",
     category: "WEB DEVELOPMENT",
@@ -140,6 +142,7 @@ export const articles: Article[] = [
   {
     slug: "why-shopify-good-for-ecommerce",
     title: "Why Shopify is the Ultimate Platform for High-Growth E-Commerce in 2026",
+    metaTitle: "Why Shopify is Best for E-Commerce",
     excerpt: "From Shop Pay 1-click checkouts to 99.99% server stability, discover why leading global DTC brands scale their online storefronts on Shopify and Shopify Plus.",
     publishedAt: "August 18, 2026",
     category: "E-COMMERCE",
@@ -246,6 +249,7 @@ export const articles: Article[] = [
   {
     slug: "power-of-nextjs-for-modern-websites",
     title: "The Power of Next.js: Engineering High-Performance Web Applications",
+    metaTitle: "The Power of Next.js for Modern Web",
     excerpt: "Explore how Next.js hybrid rendering (SSR, SSG, ISR, RSC), Core Web Vitals optimization, and modern full-stack App Router architecture dominate enterprise web development and SEO.",
     publishedAt: "August 18, 2026",
     category: "WEB DEVELOPMENT",
@@ -403,6 +407,7 @@ export const articles: Article[] = [
   {
     slug: "how-branding-dictates-business-success",
     title: "How Strategic Branding Dictates Pricing Power and Market Dominance",
+    metaTitle: "How Strategic Branding Drives Success",
     excerpt: "Discover how strategic brand identity, cognitive neuroscience, and visual design systems dictate pricing power, lower customer acquisition costs, and build enduring market dominance.",
     publishedAt: "August 18, 2026",
     category: "BRANDING",
@@ -549,6 +554,7 @@ export const articles: Article[] = [
   {
     slug: "future-of-headless-architecture",
     title: "The Future of Headless Architecture: Unlocking Omnichannel Agility",
+    metaTitle: "The Future of Headless Architecture",
     excerpt: "Understand how separating your content management from your design layer with modern Next.js and API-first MACH architecture enables hyper-fast, secure, and multi-channel digital experiences.",
     publishedAt: "August 18, 2026",
     category: "WEB DEVELOPMENT",
@@ -696,6 +702,7 @@ export const articles: Article[] = [
   {
     slug: "optimizing-page-speed-for-conversion",
     title: "Optimizing Page Speed for Conversion: Every Millisecond Counts",
+    metaTitle: "Optimizing Page Speed for Conversion",
     excerpt: "Discover the direct mathematical link between Google Core Web Vitals (LCP, INP, CLS), bounce rates, paid ad ROAS, and e-commerce checkout conversion rates.",
     publishedAt: "August 18, 2026",
     category: "PERFORMANCE",
@@ -828,6 +835,7 @@ export const articles: Article[] = [
   {
     slug: "role-of-seo-in-digital-growth",
     title: "The Role of SEO in Modern Digital Growth: Sustainable Compounding Traffic",
+    metaTitle: "The Role of SEO in Digital Growth",
     excerpt: "Learn how structured technical SEO, topical authority clusters, programmatic architecture, and Generative Engine Optimization (GEO) build an enduring organic growth flywheel.",
     publishedAt: "August 18, 2026",
     category: "SEO & STRATEGY",
@@ -959,6 +967,7 @@ export const articles: Article[] = [
   {
     slug: "maximizing-roas-on-meta-ads",
     title: "Maximizing ROAS on Meta Ads: Advanced Creative & Tracking Playbook",
+    metaTitle: "Maximizing ROAS on Meta Ads Playbook",
     excerpt: "Master creative testing frameworks, server-side Conversions API (CAPI) data hygiene, Advantage+ campaign architecture, and post-click landing page optimization to achieve 4x–8x ROAS.",
     publishedAt: "August 18, 2026",
     category: "PAID MARKETING",
@@ -1093,6 +1102,7 @@ export const articles: Article[] = [
   {
     slug: "importance-of-photography-for-luxury-brands",
     title: "Why High-End Photography is Essential for Luxury Brands",
+    metaTitle: "Luxury Brand Photography Guide",
     excerpt: "Discover why high-end photography, bespoke art direction, and tactile material capture dictate perceived value, reduce e-commerce returns, and elevate luxury brand equity.",
     publishedAt: "August 18, 2026",
     category: "CREATIVE & BRANDING",
@@ -1226,6 +1236,7 @@ export const articles: Article[] = [
   {
     slug: "psychology-of-high-converting-landing-pages",
     title: "The Psychology of High-Converting Landing Pages: Science Over Guesswork",
+    metaTitle: "Psychology of High-Converting Pages",
     excerpt: "From cognitive load reduction and F/Z-pattern scanning to behavioral biases and risk reversal, master the psychological triggers that turn visitors into high-value customers.",
     publishedAt: "August 18, 2026",
     category: "UI/UX & STRATEGY",
@@ -1365,6 +1376,7 @@ export const articles: Article[] = [
   {
     slug: "scaling-e-commerce-with-email-marketing",
     title: "Scaling E-Commerce with Automated Email Flows: The High-Margin Revenue Engine",
+    metaTitle: "Scaling E-Commerce with Email Flows",
     excerpt: "Learn how automated welcome flows, abandoned cart sequences, RFM customer segmentation, and technical deliverability standards drive 30%–45% of total e-commerce revenue.",
     publishedAt: "August 18, 2026",
     category: "RETENTION & CRM",
@@ -1497,6 +1509,7 @@ export const articles: Article[] = [
   {
     slug: "benefits-of-pwa-for-mobile-users",
     title: "Why Progressive Web Apps (PWAs) are the Future of Mobile Commerce in 2026",
+    metaTitle: "Benefits of PWAs for Mobile Commerce",
     excerpt: "Offline support, instant sub-second loading, web push notifications, and frictionless home screen installation make PWAs the ultimate mobile revenue engine.",
     publishedAt: "August 18, 2026",
     category: "MOBILE COMMERCE & ENGINEERING",

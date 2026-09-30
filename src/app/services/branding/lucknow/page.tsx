@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/branding/lucknow',
   },
-  title: "Premium Branding Company in Lucknow",
+  title: "Branding Company in Lucknow",
   description: "Scale your Lucknow enterprise with corporate branding. We build elite identity systems for Sultanpur Road IT firms, legacy Chikan exporters, and developers."
 };
 

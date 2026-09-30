@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/app-development/sydney',
   },
-  title: "App Development Company in Sydney | Southern Edge Marketing",
+  title: "App Development Company in Sydney",
   description: "Partner with Sydney's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native applications for Australian enterprises.",
   openGraph: {
-    title: "App Development Company in Sydney | Southern Edge Marketing",
+    title: "App Development Company in Sydney | Southern Edge",
     description: "Partner with Sydney's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native applications for Australian enterprises.",
     url: "https://www.southernedgemarketing.com/services/app-development/sydney",
     siteName: "Southern Edge Marketing",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App Development Company in Sydney | Southern Edge Marketing",
+    title: "App Development Company in Sydney | Southern Edge",
     description: "Partner with Sydney's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native applications for Australian enterprises.",
     images: ["https://www.southernedgemarketing.com/images/infographics/app-development-sydney.jpg"],
   },

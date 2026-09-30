@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/hyderabad',
   },
-  title: "Social Media Agency in Hyderabad",
+  title: "Social Media Management in Hyderabad",
   description: "Dominate the global and local market with elite social media management in Hyderabad. We build high-ROI campaigns for IT, real estate, and healthcare.",
 };
 

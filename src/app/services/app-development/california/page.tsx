@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/app-development/california',
   },
-  title: "App Development Company in California | Southern Edge Marketing",
+  title: "App Development Company in California",
   description: "Partner with California premier app development company. We engineer high-velocity iOS, Android, and React Native mobile platforms for enterprise scale.",
   openGraph: {
-    title: "App Development Company in California | Southern Edge Marketing",
+    title: "App Development Company in California | Southern Edge",
     description: "Partner with California premier app development company. We engineer high-velocity iOS, Android, and React Native mobile platforms for enterprise scale.",
     url: "https://www.southernedgemarketing.com/services/app-development/california",
     siteName: "Southern Edge Marketing",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App Development Company in California | Southern Edge Marketing",
+    title: "App Development Company in California | Southern Edge",
     description: "Partner with California premier app development company. We engineer high-velocity iOS, Android, and React Native mobile platforms for enterprise scale.",
     images: ["https://www.southernedgemarketing.com/images/infographics/app-development-california.jpg"],
   },

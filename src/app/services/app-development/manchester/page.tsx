@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/app-development/manchester',
   },
-  title: "App Development Company in Manchester | Southern Edge Marketing",
+  title: "App Development Company in Manchester",
   description: "Partner with the premier app development company in Manchester. We engineer high-performance iOS, Android, and cross-platform mobile apps for UK enterprises.",
 };
 

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/gurgaon',
   },
-  title: "Social Media Management Company in Gurgaon",
+  title: "Social Media Management in Gurgaon",
   description: "Scale your brand with the leading social media management company in Gurgaon. High-impact B2B growth and brand authority for Cyber City enterprises."
 };
 

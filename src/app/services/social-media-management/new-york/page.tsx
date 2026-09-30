@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/new-york',
   },
-  title: "Social Media Management Company in New York | Southern Edge Marketing",
+  title: "Social Media Management in New York",
   description: "Partner with the premier social media management company in New York. We engineer high-converting B2B campaigns, luxury social commerce, and institutional growth.",
 };
 

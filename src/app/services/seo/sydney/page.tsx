@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/seo/sydney',
   },
-  title: "SEO Company in Sydney | Southern Edge Marketing",
+  title: "SEO Company in Sydney",
   description: "Scale organic revenue with Sydney premier enterprise SEO agency. We engineer generative engine optimization, entity graphs, and technical search platforms.",
   openGraph: {
-    title: "SEO Company in Sydney | Southern Edge Marketing",
+    title: "SEO Company in Sydney | Southern Edge",
     description: "Scale organic revenue with Sydney premier enterprise SEO agency. We engineer generative engine optimization, entity graphs, and technical search platforms.",
     url: "https://www.southernedgemarketing.com/services/seo/sydney",
     siteName: "Southern Edge Marketing",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO Company in Sydney | Southern Edge Marketing",
+    title: "SEO Company in Sydney | Southern Edge",
     description: "Scale organic revenue with Sydney premier enterprise SEO agency. We engineer generative engine optimization, entity graphs, and technical search platforms.",
     images: ["https://www.southernedgemarketing.com/images/infographics/seo-sydney.jpg"],
   },

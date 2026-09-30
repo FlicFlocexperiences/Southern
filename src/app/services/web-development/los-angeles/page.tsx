@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/web-development/los-angeles',
   },
-  title: "Web Development Company in Los Angeles | Southern Edge Marketing",
+  title: "Web Development Company in Los Angeles",
   description: "Partner with the premier web development company in Los Angeles. We engineer ultra-fast Next.js platforms, headless Shopify stores, and enterprise portals for Silicon Beach and Hollywood leaders.",
   openGraph: {
-    title: "Web Development Company in Los Angeles | Southern Edge Marketing",
+    title: "Web Development Company in Los Angeles | Southern Edge",
     description: "Partner with the premier web development company in Los Angeles. We engineer ultra-fast Next.js platforms, headless Shopify stores, and enterprise portals for Silicon Beach and Hollywood leaders.",
     url: "https://www.southernedgemarketing.com/services/web-development/los-angeles",
     siteName: "Southern Edge Marketing",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Development Company in Los Angeles | Southern Edge Marketing",
+    title: "Web Development Company in Los Angeles | Southern Edge",
     description: "Partner with the premier web development company in Los Angeles. We engineer ultra-fast Next.js platforms, headless Shopify stores, and enterprise portals for Silicon Beach and Hollywood leaders.",
   },
   robots: {

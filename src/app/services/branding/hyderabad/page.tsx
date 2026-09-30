@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/branding/hyderabad',
   },
-  title: "Premium Branding Company in Hyderabad",
+  title: "Branding Company in Hyderabad",
   description: "Scale your Hyderabad enterprise with premium corporate branding. We build elite identity systems for IT leaders in HITEC City and pharma giants. Partner today."
 };
 

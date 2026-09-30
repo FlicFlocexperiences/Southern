@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/ahmedabad',
   },
-  title: "Social Media Management Company in Ahmedabad",
+  title: "Social Media Management in Ahmedabad",
   description: "Scale your brand with Ahmedabad's premier social media management company. We build authority for GIDC, GIFT City fintechs, and D2C textile brands."
 };
 

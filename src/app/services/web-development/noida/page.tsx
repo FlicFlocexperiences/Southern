@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/web-development/noida',
   },
-  title: "Premium Web Development Company in Noida",
+  title: "Web Development Company in Noida",
   description: "Bespoke web development services in Noida. We engineer high-performance, scalable corporate websites, B2B portals, and D2C platforms for enterprises.",
 };
 

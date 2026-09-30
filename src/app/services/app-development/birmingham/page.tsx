@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/app-development/birmingham',
   },
-  title: "App Development Company in Birmingham | Southern Edge Marketing",
+  title: "App Development Company in Birmingham",
   description: "Partner with Birmingham's premier app development company. We engineer secure, high-performance iOS, Android, and cross-platform mobile apps for West Midlands enterprises.",
 };
 

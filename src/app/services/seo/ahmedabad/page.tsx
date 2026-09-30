@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/seo/ahmedabad',
   },
-  title: "Premium SEO Company in Ahmedabad",
+  title: "SEO Company in Ahmedabad",
   description: "Scale your organic search presence with the premier SEO Company in Ahmedabad. We deliver elite search strategies for GIDC, GIFT City fintech, & startups."
 };
 

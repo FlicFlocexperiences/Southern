@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/sharjah',
   },
-  title: "Social Media Agency in Sharjah",
+  title: "Social Media Management in Sharjah",
   description: "Elevate your brand in Sharjah. Our expert social media management strategies build highly engaged communities and drive measurable sales for local businesses.",
 };
 

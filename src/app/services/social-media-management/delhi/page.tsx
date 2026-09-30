@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/social-media-management/delhi',
   },
-  title: "Social Media Agency in Delhi",
+  title: "Social Media Management in Delhi",
   description: "Dominate the NCR digital landscape with expert social media management in Delhi. We drive engagement and ROI across Instagram, LinkedIn, and Facebook.",
 };
 

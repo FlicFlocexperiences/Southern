@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/seo/sharjah',
   },
-  title: "SEO Company in Sharjah | Premium Search Optimization",
+  title: "SEO Company in Sharjah",
   description: "Accelerate your search visibility with the leading SEO company in Sharjah. We deliver bilingual search engine optimization for manufacturing hubs & free zones."
 };
 

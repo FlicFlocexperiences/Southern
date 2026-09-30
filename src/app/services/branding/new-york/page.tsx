@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/services/branding/new-york",
   },
-  title: "Branding Company in New York | Southern Edge Marketing",
+  title: "Branding Company in New York",
   description: "Partner with New York premier enterprise branding company. We engineer prestigious corporate brand systems, luxury visual identities, and category-defining positioning.",
   openGraph: {
-    title: "Branding Company in New York | Southern Edge Marketing",
+    title: "Branding Company in New York | Southern Edge",
     description: "Partner with New York premier enterprise branding company. We engineer prestigious corporate brand systems, luxury visual identities, and category-defining positioning.",
     url: "https://www.southernedgemarketing.com/services/branding/new-york",
     siteName: "Southern Edge Marketing",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Branding Company in New York | Southern Edge Marketing",
+    title: "Branding Company in New York | Southern Edge",
     description: "Partner with New York premier enterprise branding company. We engineer prestigious corporate brand systems, luxury visual identities, and category-defining positioning.",
     images: ["https://www.southernedgemarketing.com/images/infographics/branding-new-york.jpg"],
   },

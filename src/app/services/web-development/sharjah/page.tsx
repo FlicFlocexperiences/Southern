@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/web-development/sharjah',
   },
-  title: "Expert Web Development in Sharjah",
+  title: "Web Development Company in Sharjah",
   description: "Professional web development in Sharjah. We build fast, responsive, and SEO-optimized websites that drive measurable business growth for local enterprises.",
 };
 

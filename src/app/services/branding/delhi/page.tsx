@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/branding/delhi',
   },
-  title: "Premium Branding Company in Delhi",
+  title: "Branding Company in Delhi",
   description: "Transform your Delhi enterprise with elite branding services. We craft distinct market identities for traditional conglomerates and modern brands in NCR."
 };
 

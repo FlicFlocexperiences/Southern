@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/web-development/dubai',
   },
-  title: "Web Development Company in Dubai | Southern Edge Marketing",
+  title: "Web Development Company in Dubai",
   description: "Partner with the leading web development company in Dubai. We build secure, high-performance, and custom enterprise websites tailored to the UAE market.",
 };
 
