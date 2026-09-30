@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/bengaluru',
   },
   title: "Web Development Company in Bengaluru",
-  description: "Partner with Bengaluru's leading web development company. We build high-performance, scalable web architectures for startups and global tech enterprises.",
+  description: "Partner with Bengaluru's leading web development company. We build scalable, high-performance web platforms for tech enterprises.",
 };
 
 const tableOfContents = [

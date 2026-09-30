@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/vancouver',
   },
   title: "Social Media Management in Vancouver",
-  description: "Partner with the leading social media management company in Vancouver. We drive enterprise brand authority, BC PIPA-compliant social, and DTC social commerce.",
+  description: "Partner with Vancouver's leading social media management company. We drive brand authority, paid social, and DTC social commerce.",
 };
 
 const tableOfContents = [

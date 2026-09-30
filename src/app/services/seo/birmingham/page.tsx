@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/seo/birmingham',
   },
   title: "SEO Company in Birmingham",
-  description: "Scale your organic pipeline with the leading SEO company in Birmingham. We engineer technical search strategies for West Midlands manufacturing, finance, and tech leaders.",
+  description: "Scale your organic pipeline with Birmingham's leading SEO company. We engineer technical search strategies for West Midlands firms.",
 };
 
 const tableOfContents = [

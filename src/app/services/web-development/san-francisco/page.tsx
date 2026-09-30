@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/san-francisco',
   },
   title: "Web Development in San Francisco",
-  description: "Partner with San Francisco premier enterprise web development company. We engineer high-velocity Next.js platforms, CCPA-compliant systems, and scalable APIs.",
+  description: "Partner with San Francisco's premier web development company. We engineer fast Next.js platforms and scalable web apps in the Bay Area.",
   openGraph: {
     title: "Web Development Company in San Francisco | Southern Edge",
-    description: "Partner with San Francisco premier enterprise web development company. We engineer high-velocity Next.js platforms, CCPA-compliant systems, and scalable APIs.",
+    description: "Partner with San Francisco's premier web development company. We engineer fast Next.js platforms and scalable web apps in the Bay Area.",
     url: "https://www.southernedgemarketing.com/services/web-development/san-francisco",
     siteName: "Southern Edge Marketing",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Web Development Company in San Francisco | Southern Edge",
-    description: "Partner with San Francisco premier enterprise web development company. We engineer high-velocity Next.js platforms, CCPA-compliant systems, and scalable APIs.",
+    description: "Partner with San Francisco's premier web development company. We engineer fast Next.js platforms and scalable web apps in the Bay Area.",
     images: ["https://www.southernedgemarketing.com/images/infographics/web-development-san-francisco.jpg"],
   },
 };

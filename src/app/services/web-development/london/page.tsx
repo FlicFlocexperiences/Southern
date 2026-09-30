@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/london',
   },
   title: "Web Development Company in London",
-  description: "Partner with the premier web development company in London. We engineer secure, ultra-low-latency Next.js platforms tailored to Square Mile and Mayfair enterprises.",
+  description: "Partner with London's premier web development company. We engineer secure, ultra-fast Next.js platforms tailored to UK enterprises.",
 };
 
 const tableOfContents = [

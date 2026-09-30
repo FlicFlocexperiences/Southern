@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/seo/jaipur',
   },
   title: "SEO Company in Jaipur",
-  description: "Scale your organic search presence with the premier SEO Company in Jaipur. We deliver elite search strategies for heritage tourism, gem exports, and IT SEZs."
+  description: "Scale your organic presence with Jaipur's premier SEO company. We deliver targeted search strategies for gem exporters and IT firms."
 };
 
 const tableOfContents = [

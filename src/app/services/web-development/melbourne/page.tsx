@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/melbourne',
   },
   title: "Web Development Company in Melbourne",
-  description: "Partner with Melbourne premier enterprise web development company. We engineer high-velocity Next.js platforms, Privacy Act compliant systems, and scalable APIs.",
+  description: "Partner with Melbourne's leading web development company. We engineer high-velocity Next.js platforms and web applications in Victoria.",
   openGraph: {
     title: "Web Development Company in Melbourne | Southern Edge",
-    description: "Partner with Melbourne premier enterprise web development company. We engineer high-velocity Next.js platforms, Privacy Act compliant systems, and scalable APIs.",
+    description: "Partner with Melbourne's leading web development company. We engineer high-velocity Next.js platforms and web applications in Victoria.",
     url: "https://www.southernedgemarketing.com/services/web-development/melbourne",
     siteName: "Southern Edge Marketing",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Web Development Company in Melbourne | Southern Edge",
-    description: "Partner with Melbourne premier enterprise web development company. We engineer high-velocity Next.js platforms, Privacy Act compliant systems, and scalable APIs.",
+    description: "Partner with Melbourne's leading web development company. We engineer high-velocity Next.js platforms and web applications in Victoria.",
     images: ["https://www.southernedgemarketing.com/images/infographics/web-development-melbourne.jpg"],
   },
 };

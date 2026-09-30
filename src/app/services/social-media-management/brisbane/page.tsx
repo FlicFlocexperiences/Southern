@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/brisbane',
   },
   title: "Social Media Management in Brisbane",
-  description: "Partner with Brisbane's premier social media management company. We engineer high-converting B2B LinkedIn campaigns, executive thought leadership, and paid acquisition.",
+  description: "Partner with Brisbane's premier social media company. We engineer high-converting B2B campaigns, paid marketing, and brand visibility.",
   openGraph: {
     title: "Social Media Management in Brisbane | Southern Edge",
-    description: "Partner with Brisbane's premier social media management company. We engineer high-converting B2B LinkedIn campaigns, executive thought leadership, and paid acquisition.",
+    description: "Partner with Brisbane's premier social media company. We engineer high-converting B2B campaigns, paid marketing, and brand visibility.",
     url: "https://www.southernedgemarketing.com/services/social-media-management/brisbane",
     siteName: "Southern Edge Marketing",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Social Media Management in Brisbane | Southern Edge",
-    description: "Partner with Brisbane's premier social media management company. We engineer high-converting B2B LinkedIn campaigns, executive thought leadership, and paid acquisition.",
+    description: "Partner with Brisbane's premier social media company. We engineer high-converting B2B campaigns, paid marketing, and brand visibility.",
     images: ["https://www.southernedgemarketing.com/images/infographics/social-media-management-brisbane.jpg"],
   },
 };

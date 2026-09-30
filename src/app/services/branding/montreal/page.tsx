@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/branding/montreal',
   },
   title: "Branding Company in Montreal",
-  description: "Scale your market presence with the premier branding company in Montreal. We engineer bilingual corporate identities, brand strategies, and visual systems for Quebec leaders.",
+  description: "Scale your market presence with Montreal's premier branding company. We engineer bilingual corporate identities and visual systems.",
 };
 
 const tableOfContents = [

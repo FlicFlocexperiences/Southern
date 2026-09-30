@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/dubai',
   },
   title: "Social Media Management in Dubai",
-  description: "Partner with the leading social media management company in Dubai. We drive enterprise brand growth, NMC-compliant influencer campaigns, and social commerce.",
+  description: "Partner with Dubai's leading social media management company. We drive brand authority, influencer campaigns, and social commerce.",
 };
 
 const tableOfContents = [

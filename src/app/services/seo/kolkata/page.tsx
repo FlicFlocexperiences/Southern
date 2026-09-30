@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/seo/kolkata',
   },
   title: "SEO Company in Kolkata",
-  description: "Scale your organic traffic with the leading SEO company in Kolkata. We build high-performance search strategies for Sector V tech firms and legacy trade houses."
+  description: "Scale your organic traffic with Kolkata's leading SEO company. We build high-performance search strategies for Sector V tech and trade."
 };
 
 const tableOfContents = [

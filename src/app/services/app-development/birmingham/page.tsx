@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/app-development/birmingham',
   },
   title: "App Development Company in Birmingham",
-  description: "Partner with Birmingham's premier app development company. We engineer secure, high-performance iOS, Android, and cross-platform mobile apps for West Midlands enterprises.",
+  description: "Partner with Birmingham's premier app development company. We build secure, high-performance mobile apps for West Midlands businesses.",
 };
 
 const tableOfContents = [

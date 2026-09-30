@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/branding/vancouver',
   },
   title: "Branding Company in Vancouver",
-  description: "Partner with the premier branding company in Vancouver. We engineer bespoke corporate identities, brand strategies, and visual systems for BC market leaders.",
+  description: "Partner with Vancouver's premier branding company. We engineer bespoke corporate identities, brand strategies, and visual systems in BC.",
 };
 
 const tableOfContents = [

@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/sydney',
   },
   title: "Web Development Company in Sydney",
-  description: "Partner with Sydney premier enterprise web development company. We engineer high-velocity Next.js platforms, Privacy Act compliant systems, and scalable APIs.",
+  description: "Partner with Sydney's premier web development company. We engineer high-speed Next.js platforms and compliant systems in Australia.",
   openGraph: {
     title: "Web Development Company in Sydney | Southern Edge",
-    description: "Partner with Sydney premier enterprise web development company. We engineer high-velocity Next.js platforms, Privacy Act compliant systems, and scalable APIs.",
+    description: "Partner with Sydney's premier web development company. We engineer high-speed Next.js platforms and compliant systems in Australia.",
     url: "https://www.southernedgemarketing.com/services/web-development/sydney",
     siteName: "Southern Edge Marketing",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Web Development Company in Sydney | Southern Edge",
-    description: "Partner with Sydney premier enterprise web development company. We engineer high-velocity Next.js platforms, Privacy Act compliant systems, and scalable APIs.",
+    description: "Partner with Sydney's premier web development company. We engineer high-speed Next.js platforms and compliant systems in Australia.",
     images: ["https://www.southernedgemarketing.com/images/infographics/web-development-sydney.jpg"],
   },
 };

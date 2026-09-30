@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/melbourne',
   },
   title: "Social Media Management in Melbourne",
-  description: "Partner with Melbourne's leading social media management company. We engineer high-converting B2B LinkedIn campaigns, executive leadership, and paid acquisition.",
+  description: "Partner with Melbourne's leading social media company. We engineer high-converting B2B campaigns, paid social, and audience growth.",
   openGraph: {
     title: "Social Media Management in Melbourne | Southern Edge",
-    description: "Partner with Melbourne's leading social media management company. We engineer high-converting B2B LinkedIn campaigns, executive leadership, and paid acquisition.",
+    description: "Partner with Melbourne's leading social media company. We engineer high-converting B2B campaigns, paid social, and audience growth.",
     url: "https://www.southernedgemarketing.com/services/social-media-management/melbourne",
     siteName: "Southern Edge Marketing",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Social Media Management in Melbourne | Southern Edge",
-    description: "Partner with Melbourne's leading social media management company. We engineer high-converting B2B LinkedIn campaigns, executive leadership, and paid acquisition.",
+    description: "Partner with Melbourne's leading social media company. We engineer high-converting B2B campaigns, paid social, and audience growth.",
     images: ["https://www.southernedgemarketing.com/images/infographics/social-media-management-melbourne.jpg"],
   },
 };
@@ -106,7 +106,7 @@ export default function MelbourneSocialMediaManagementPage() {
         "@id": "https://www.southernedgemarketing.com/services/social-media-management/melbourne#webpage",
         "url": "https://www.southernedgemarketing.com/services/social-media-management/melbourne",
         "name": "Social Media Management Company in Melbourne | Southern Edge Marketing",
-        "description": "Partner with Melbourne's leading social media management company. We engineer high-converting B2B LinkedIn campaigns, executive leadership, and paid acquisition.",
+        "description": "Partner with Melbourne's leading social media company. We engineer high-converting B2B campaigns, paid social, and audience growth.",
         "inLanguage": "en-AU",
         "author": {
           "@type": "Person",

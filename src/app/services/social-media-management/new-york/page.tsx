@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/new-york',
   },
   title: "Social Media Management in New York",
-  description: "Partner with the premier social media management company in New York. We engineer high-converting B2B campaigns, luxury social commerce, and institutional growth.",
+  description: "Partner with New York's premier social media agency. We engineer high-converting B2B campaigns, luxury social commerce, and growth.",
 };
 
 const tableOfContents = [

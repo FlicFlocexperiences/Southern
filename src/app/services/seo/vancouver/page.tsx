@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/seo/vancouver',
   },
   title: "SEO Company in Vancouver",
-  description: "Scale your organic pipeline with the leading SEO Company in Vancouver. We engineer enterprise search strategies for Cascadia tech, CleanTech, and B2B leaders.",
+  description: "Scale your organic pipeline with Vancouver's leading SEO company. We engineer enterprise search strategies for Cascadia tech firms.",
 };
 
 const tableOfContents = [

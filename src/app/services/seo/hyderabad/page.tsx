@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/seo/hyderabad',
   },
   title: "SEO Company in Hyderabad",
-  description: "Scale your organic traffic with the premier SEO company in Hyderabad. We deliver technical search optimization for IT hubs, pharma giants, and enterprise SaaS."
+  description: "Scale your organic search traffic with Hyderabad's premier SEO company. We deliver technical search optimization for HITEC City firms."
 };
 
 const tableOfContents = [

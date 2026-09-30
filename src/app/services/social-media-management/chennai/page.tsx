@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/chennai',
   },
   title: "Social Media Management in Chennai",
-  description: "Dominate the Southern Indian market with elite social media management in Chennai. We build high-ROI campaigns for manufacturing, IT, and retail sectors.",
+  description: "Dominate the market with elite social media management in Chennai. We build high-ROI campaigns for manufacturing and retail brands.",
 };
 
 const tableOfContents = [

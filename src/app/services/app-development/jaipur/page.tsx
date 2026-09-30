@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/app-development/jaipur',
   },
   title: "App Development Company in Jaipur",
-  description: "Scale your Jaipur enterprise with the leading App Development Company in Jaipur. We build custom, secure, high-performance mobile apps for startups & retail."
+  description: "Scale your business with Jaipur's leading app development company. We build custom, secure mobile apps for startups and retail brands."
 };
 
 const tableOfContents = [

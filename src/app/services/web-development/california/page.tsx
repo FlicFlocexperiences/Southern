@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/california',
   },
   title: "Web Development Company in California",
-  description: "Scale your enterprise digital infrastructure with California premier web development agency. We engineer high-velocity Next.js platforms, CCPA-compliant systems, and scalable APIs.",
+  description: "Scale your online presence with California's premier web agency. We engineer high-velocity Next.js platforms and CCPA-compliant apps.",
   openGraph: {
     title: "Web Development Company in California | Southern Edge",
-    description: "Scale your enterprise digital infrastructure with California premier web development agency. We engineer high-velocity Next.js platforms, CCPA-compliant systems, and scalable APIs.",
+    description: "Scale your online presence with California's premier web agency. We engineer high-velocity Next.js platforms and CCPA-compliant apps.",
     url: "https://www.southernedgemarketing.com/services/web-development/california",
     siteName: "Southern Edge Marketing",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Web Development Company in California | Southern Edge",
-    description: "Scale your enterprise digital infrastructure with California premier web development agency. We engineer high-velocity Next.js platforms, CCPA-compliant systems, and scalable APIs.",
+    description: "Scale your online presence with California's premier web agency. We engineer high-velocity Next.js platforms and CCPA-compliant apps.",
     images: ["https://www.southernedgemarketing.com/images/infographics/web-development-california.jpg"],
   },
   robots: {

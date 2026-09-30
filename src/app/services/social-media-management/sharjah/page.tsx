@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/sharjah',
   },
   title: "Social Media Management in Sharjah",
-  description: "Elevate your brand in Sharjah. Our expert social media management strategies build highly engaged communities and drive measurable sales for local businesses.",
+  description: "Elevate your brand in Sharjah. Our expert social media management strategies build highly engaged communities and drive UAE sales.",
 };
 
 const tableOfContents = [

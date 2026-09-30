@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/manchester',
   },
   title: "Web Development Company in Manchester",
-  description: "Partner with the premier web development company in Manchester. We engineer secure, ultra-low-latency Next.js platforms tailored to North West enterprises.",
+  description: "Partner with Manchester's premier web development company. We engineer secure, fast Next.js platforms for North West enterprises.",
 };
 
 const tableOfContents = [

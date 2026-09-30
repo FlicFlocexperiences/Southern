@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/seo/london',
   },
   title: "SEO Company in London",
-  description: "Scale your organic pipeline with the leading SEO company in London. We engineer enterprise search strategies for Square Mile fintech, tech hubs, and UK brands.",
+  description: "Scale your organic pipeline with London's leading SEO company. We engineer enterprise search strategies for fintech and UK brands.",
 };
 
 const tableOfContents = [

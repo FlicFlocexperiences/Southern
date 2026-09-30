@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/app-development/brisbane',
   },
   title: "App Development Company in Brisbane",
-  description: "Partner with Brisbane's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native applications for Queensland enterprises.",
+  description: "Partner with Brisbane's premier app development company. We build secure, high-performance iOS and Android apps in Queensland.",
   openGraph: {
     title: "App Development Company in Brisbane | Southern Edge",
-    description: "Partner with Brisbane's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native applications for Queensland enterprises.",
+    description: "Partner with Brisbane's premier app development company. We build secure, high-performance iOS and Android apps in Queensland.",
     url: "https://www.southernedgemarketing.com/services/app-development/brisbane",
     siteName: "Southern Edge Marketing",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "App Development Company in Brisbane | Southern Edge",
-    description: "Partner with Brisbane's premier app development company. We engineer secure, high-performance iOS, Android, and AI-native applications for Queensland enterprises.",
+    description: "Partner with Brisbane's premier app development company. We build secure, high-performance iOS and Android apps in Queensland.",
     images: ["https://www.southernedgemarketing.com/images/infographics/app-development-brisbane.jpg"],
   },
 };

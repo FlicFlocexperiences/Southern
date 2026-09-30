@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/branding/kolkata',
   },
   title: "Branding Company in Kolkata",
-  description: "Scale your Kolkata enterprise with premium corporate branding. We build elite identity systems for Sector V tech firms, heritage tea brands, and manufacturers."
+  description: "Scale your business with Kolkata's premier branding company. We build elite identity systems for Sector V tech and heritage brands."
 };
 
 const tableOfContents = [

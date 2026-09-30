@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/jaipur',
   },
   title: "Web Development Company in Jaipur",
-  description: "Partner with Jaipur's premier web development company. We build high-performance e-commerce portals, custom SaaS apps, and booking systems for global markets."
+  description: "Partner with Jaipur's premier web development company. We build high-performance e-commerce stores, custom portals, and web apps."
 };
 
 const tableOfContents = [

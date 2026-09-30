@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/delhi',
   },
   title: "Social Media Management in Delhi",
-  description: "Dominate the NCR digital landscape with expert social media management in Delhi. We drive engagement and ROI across Instagram, LinkedIn, and Facebook.",
+  description: "Dominate the NCR digital landscape with expert social media management in Delhi. We drive high engagement and ROI across channels.",
 };
 
 const tableOfContents = [

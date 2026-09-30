@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/branding/dubai',
   },
   title: "Branding Company in Dubai",
-  description: "Elevate your business with the premier branding company in Dubai. We design prestigious, bilingual corporate identities and brand strategy for UAE market leaders."
+  description: "Elevate your business with Dubai's premier branding company. We design prestigious corporate identities and strategies for UAE leaders."
 };
 
 const tableOfContents = [

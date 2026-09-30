@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/birmingham',
   },
   title: "Web Development Company in Birmingham",
-  description: "Partner with the premier web development company in Birmingham. We engineer secure, ultra-low-latency Next.js platforms tailored to West Midlands enterprises.",
+  description: "Partner with Birmingham's leading web development company. We build fast, secure Next.js platforms for West Midlands businesses.",
 };
 
 const tableOfContents = [

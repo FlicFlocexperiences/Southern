@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/app-development/surat',
   },
   title: "App Development Company in Surat",
-  description: "Scale your diamond, textile, or logistics enterprise with the leading App Development Company in Surat. We build custom, secure, high-performance mobile apps."
+  description: "Scale your business with Surat's leading app development company. We build custom mobile apps for diamond exporters and textile firms."
 };
 
 const tableOfContents = [

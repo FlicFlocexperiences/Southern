@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/app-development/noida',
   },
   title: "App Development Company in Noida",
-  description: "Partner with Noida's premier app development company. We engineer high-performance mobile applications for IT services, electronics manufacturing, and startups."
+  description: "Partner with Noida's leading app development company. We engineer high-performance iOS and Android apps for IT services and startups."
 };
 
 const tableOfContents = [

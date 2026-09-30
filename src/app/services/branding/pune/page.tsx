@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/branding/pune',
   },
   title: "Branding Company in Pune",
-  description: "Scale your corporate identity with the premier branding company in Pune. We design elite brand systems for Hinjawadi tech leaders and Chakan manufacturers."
+  description: "Scale your corporate identity with Pune's premier branding company. We design elite brand systems for Hinjawadi tech and manufacturing."
 };
 
 const tableOfContents = [

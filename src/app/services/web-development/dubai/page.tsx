@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/dubai',
   },
   title: "Web Development Company in Dubai",
-  description: "Partner with the leading web development company in Dubai. We build secure, high-performance, and custom enterprise websites tailored to the UAE market.",
+  description: "Partner with Dubai's leading web development company. We build secure, high-performance custom websites for UAE enterprises.",
 };
 
 const tableOfContents = [

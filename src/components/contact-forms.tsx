@@ -377,7 +377,7 @@ export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string })
             </div>
           </div>
 
-          <h4 className="text-[22px] font-bold text-black tracking-tight mb-3">Prefer email or phone?</h4>
+          <p className="text-[22px] font-bold text-black tracking-tight mb-3">Prefer email or phone?</p>
           <p className="text-[15px] text-black/50 leading-relaxed max-w-[260px] mx-auto mb-8">
             Let's connect. Reach out and we'll help bring your ideas to life.
           </p>

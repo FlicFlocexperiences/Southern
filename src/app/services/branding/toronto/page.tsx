@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/branding/toronto',
   },
   title: "Branding Company in Toronto",
-  description: "Scale your market presence with the premier branding company in Toronto. We engineer bespoke corporate identities, brand strategies, and visual systems for GTA leaders.",
+  description: "Scale your market presence with Toronto's premier branding company. We engineer bespoke corporate identities and visual systems in the GTA.",
 };
 
 const tableOfContents = [

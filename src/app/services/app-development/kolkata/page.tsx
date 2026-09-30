@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/app-development/kolkata',
   },
   title: "App Development Company in Kolkata",
-  description: "Launch high-performance mobile apps with Kolkata's leading app development company. We build native and cross-platform solutions for startups and enterprises.",
+  description: "Launch high-performance mobile apps with Kolkata's leading app agency. We build native and cross-platform apps for enterprises.",
 };
 
 const tableOfContents = [

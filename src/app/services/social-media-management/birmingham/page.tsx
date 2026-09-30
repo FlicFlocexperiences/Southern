@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/birmingham',
   },
   title: "Social Media Management in Birmingham",
-  description: "Partner with the premier social media marketing company in Birmingham. We engineer B2B LinkedIn ABM, luxury social commerce, and short-form video growth.",
+  description: "Partner with Birmingham's premier social media agency. We engineer targeted B2B campaigns, luxury social commerce, and video growth.",
 };
 
 const tableOfContents = [

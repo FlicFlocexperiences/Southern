@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/surat',
   },
   title: "Web Development Company in Surat",
-  description: "Partner with the leading Web Development Company in Surat. We engineer secure B2B portals, high-performance D2C e-commerce, and enterprise web applications.",
+  description: "Partner with Surat's leading web development company. We engineer secure B2B portals, custom D2C stores, and web applications.",
 };
 
 const tableOfContents = [

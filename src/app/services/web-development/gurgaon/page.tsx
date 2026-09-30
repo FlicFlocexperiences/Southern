@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/gurgaon',
   },
   title: "Web Development Company in Gurgaon",
-  description: "Scale your Gurgaon enterprise with top-tier web development. We build high-performance, secure, custom digital platforms tailored for India's Millennium City.",
+  description: "Scale your Gurgaon business with expert web development. We build high-performance, secure, custom platforms for Millennium City firms.",
 };
 
 const tableOfContents = [

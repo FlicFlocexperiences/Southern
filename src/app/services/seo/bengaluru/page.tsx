@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/seo/bengaluru',
   },
   title: "SEO Company in Bengaluru",
-  description: "Scale your organic traffic with the premier SEO company in Bengaluru. We deliver high-performance technical search engine optimization for SaaS and enterprises."
+  description: "Scale your organic traffic with Bengaluru's premier SEO company. We deliver high-performance technical search optimization for tech hubs."
 };
 
 const tableOfContents = [

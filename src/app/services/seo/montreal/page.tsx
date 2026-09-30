@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/seo/montreal',
   },
   title: "SEO Company in Montreal",
-  description: "Scale your organic pipeline with the leading SEO Company in Montreal. We engineer enterprise search strategies for Quebec AI, aerospace, and B2B leaders.",
+  description: "Scale your organic pipeline with Montreal's leading SEO company. We engineer enterprise search strategies for Quebec tech and B2B leaders.",
 };
 
 const tableOfContents = [

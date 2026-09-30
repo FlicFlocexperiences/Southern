@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/montreal',
   },
   title: "Social Media Management in Montreal",
-  description: "Partner with the premier social media management company in Montreal. We drive enterprise brand authority, Bill 96 bilingual campaigns, and Law 25-compliant social growth.",
+  description: "Partner with Montreal's premier social media company. We drive enterprise brand authority, bilingual campaigns, and social growth.",
 };
 
 const tableOfContents = [

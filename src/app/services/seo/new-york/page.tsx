@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: "/services/seo/new-york",
   },
   title: "SEO Company in New York",
-  description: "Dominate organic search across Manhattan, Wall Street, and Silicon Alley. We engineer enterprise SEO and Generative Engine Optimization architectures for NYC leaders.",
+  description: "Dominate organic search in NYC. We engineer technical SEO, entity optimization, and local search architectures for New York firms.",
   openGraph: {
     title: "SEO Company in New York | Southern Edge",
-    description: "Dominate organic search across Manhattan, Wall Street, and Silicon Alley. We engineer enterprise SEO and Generative Engine Optimization architectures for NYC leaders.",
+    description: "Dominate organic search in NYC. We engineer technical SEO, entity optimization, and local search architectures for New York firms.",
     url: "https://www.southernedgemarketing.com/services/seo/new-york",
     siteName: "Southern Edge Marketing",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "SEO Company in New York | Southern Edge",
-    description: "Dominate organic search across Manhattan, Wall Street, and Silicon Alley. We engineer enterprise SEO and Generative Engine Optimization architectures for NYC leaders.",
+    description: "Dominate organic search in NYC. We engineer technical SEO, entity optimization, and local search architectures for New York firms.",
     images: ["https://www.southernedgemarketing.com/images/infographics/seo-new-york.jpg"],
   },
 };

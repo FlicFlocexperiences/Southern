@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/branding/birmingham',
   },
   title: "Branding Company in Birmingham",
-  description: "Partner with Birmingham's premier branding company. We engineer prestigious corporate brand systems, visual identities, and strategic positioning for UK enterprises.",
+  description: "Partner with Birmingham's premier branding company. We engineer corporate brand systems, visual identities, and market positioning.",
 };
 
 const tableOfContents = [

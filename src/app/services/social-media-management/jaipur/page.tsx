@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/jaipur',
   },
   title: "Social Media Management in Jaipur",
-  description: "Partner with the premier social media management company in Jaipur. We scale luxury gemstone exporters, heritage D2C textile brands, and MWC tech startups."
+  description: "Partner with Jaipur's premier social media company. We scale luxury gemstone exporters, heritage D2C textile brands, and local firms."
 };
 
 const tableOfContents = [

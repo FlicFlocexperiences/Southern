@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/app-development/los-angeles',
   },
   title: "App Development Company in Los Angeles",
-  description: "Partner with Los Angeles's premier app development company. We engineer secure, high-performance iOS, Android, and cross-platform mobile apps for Silicon Beach, Hollywood, and global enterprises.",
+  description: "Partner with Los Angeles's premier app development agency. We build high-speed iOS and Android mobile apps for LA brands and businesses.",
   openGraph: {
     title: "App Development Company in Los Angeles | Southern Edge",
-    description: "Partner with Los Angeles's premier app development company. We engineer secure, high-performance iOS, Android, and cross-platform mobile apps for Silicon Beach, Hollywood, and global enterprises.",
+    description: "Partner with Los Angeles's premier app development agency. We build high-speed iOS and Android mobile apps for LA brands and businesses.",
     url: "https://www.southernedgemarketing.com/services/app-development/los-angeles",
     siteName: "Southern Edge Marketing",
     locale: "en_US",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "App Development Company in Los Angeles | Southern Edge",
-    description: "Partner with Los Angeles's premier app development company. We engineer secure, high-performance iOS, Android, and cross-platform mobile apps for Silicon Beach, Hollywood, and global enterprises.",
+    description: "Partner with Los Angeles's premier app development agency. We build high-speed iOS and Android mobile apps for LA brands and businesses.",
   },
   robots: {
     index: true,

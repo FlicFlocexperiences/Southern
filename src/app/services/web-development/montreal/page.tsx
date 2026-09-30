@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/montreal',
   },
   title: "Web Development Company in Montreal",
-  description: "Partner with the premier web development company in Montreal. We engineer secure, high-speed Next.js platforms built for Quebec enterprises and Law 25 compliance.",
+  description: "Partner with Montreal's leading web development company. We build secure, high-speed Next.js platforms for Quebec enterprises.",
 };
 
 const tableOfContents = [

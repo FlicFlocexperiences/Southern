@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/app-development/toronto',
   },
   title: "App Development Company in Toronto",
-  description: "Partner with Toronto's leading app development company. We engineer secure, high-performance iOS & Android applications tailored for Canadian enterprises.",
+  description: "Partner with Toronto's leading app development company. We engineer secure, high-performance iOS and Android apps for Canadian brands.",
 };
 
 const tableOfContents = [

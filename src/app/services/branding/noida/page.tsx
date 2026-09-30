@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/branding/noida',
   },
   title: "Branding Company in Noida",
-  description: "Partner with the leading branding company in Noida to scale your enterprise identity. We build elite design systems for IT giants, manufacturers, and media hubs."
+  description: "Partner with Noida's leading branding company to scale your identity. We build elite design systems for IT giants and media hubs."
 };
 
 const tableOfContents = [

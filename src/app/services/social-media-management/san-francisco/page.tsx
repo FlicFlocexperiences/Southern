@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/san-francisco',
   },
   title: "Social Media Management in San Francisco",
-  description: "Partner with San Francisco premier social media management company. We engineer high-converting B2B campaigns, executive thought leadership, and paid acquisition.",
+  description: "Partner with San Francisco's premier social media company. We engineer high-converting B2B campaigns, paid acquisition, and branding.",
   openGraph: {
     title: "Social Media Management in San Francisco | Southern Edge",
-    description: "Partner with San Francisco premier social media management company. We engineer high-converting B2B campaigns, executive thought leadership, and paid acquisition.",
+    description: "Partner with San Francisco's premier social media company. We engineer high-converting B2B campaigns, paid acquisition, and branding.",
     url: "https://www.southernedgemarketing.com/services/social-media-management/san-francisco",
     siteName: "Southern Edge Marketing",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Social Media Management in San Francisco | Southern Edge",
-    description: "Partner with San Francisco premier social media management company. We engineer high-converting B2B campaigns, executive thought leadership, and paid acquisition.",
+    description: "Partner with San Francisco's premier social media company. We engineer high-converting B2B campaigns, paid acquisition, and branding.",
     images: ["https://www.southernedgemarketing.com/images/infographics/social-media-management-san-francisco.jpg"],
   },
 };

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/bengaluru',
   },
   title: "Social Media Management in Bengaluru",
-  description: "Dominate India's tech hub with elite social media management in Bengaluru. We build highly engaged digital communities for startups and enterprise brands.",
+  description: "Dominate India's tech capital with elite social media management in Bengaluru. We build engaged communities for startups and tech brands.",
 };
 
 const tableOfContents = [

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/pune',
   },
   title: "Social Media Management in Pune",
-  description: "Dominate Pune's dynamic market with elite social media management. We build high-ROI digital campaigns for IT startups, manufacturing firms, and education.",
+  description: "Dominate Pune's market with elite social media management. We build high-ROI digital campaigns for IT startups and manufacturers.",
 };
 
 const tableOfContents = [

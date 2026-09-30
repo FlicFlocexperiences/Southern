@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/app-development/dubai',
   },
   title: "App Development Company in Dubai",
-  description: "Partner with the leading app development company in Dubai. We build secure, high-performance iOS & Android applications tailored to the unique UAE market.",
+  description: "Partner with Dubai's leading app development company. We build secure, high-performance iOS and Android mobile apps for the UAE market.",
 };
 
 const tableOfContents = [

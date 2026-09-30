@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/seo/los-angeles',
   },
   title: "SEO Company in Los Angeles",
-  description: "Partner with Los Angeles's premier SEO company. We engineer data-driven organic search architectures, technical Next.js SEO, and high-authority link acquisition for Silicon Beach and Hollywood leaders.",
+  description: "Partner with Los Angeles's premier SEO company. We engineer data-driven search architectures, technical Next.js SEO, and link growth.",
   openGraph: {
     title: "SEO Company in Los Angeles | Southern Edge",
-    description: "Partner with Los Angeles's premier SEO company. We engineer data-driven organic search architectures, technical Next.js SEO, and high-authority link acquisition for Silicon Beach and Hollywood leaders.",
+    description: "Partner with Los Angeles's premier SEO company. We engineer data-driven search architectures, technical Next.js SEO, and link growth.",
     url: "https://www.southernedgemarketing.com/services/seo/los-angeles",
     siteName: "Southern Edge Marketing",
     locale: "en_US",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "SEO Company in Los Angeles | Southern Edge",
-    description: "Partner with Los Angeles's premier SEO company. We engineer data-driven organic search architectures, technical Next.js SEO, and high-authority link acquisition for Silicon Beach and Hollywood leaders.",
+    description: "Partner with Los Angeles's premier SEO company. We engineer data-driven search architectures, technical Next.js SEO, and link growth.",
   },
   robots: {
     index: true,

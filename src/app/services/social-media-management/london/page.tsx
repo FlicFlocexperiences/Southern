@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/london',
   },
   title: "Social Media Management in London",
-  description: "Partner with the premier social media marketing company in London. We engineer high-converting B2B campaigns, luxury social commerce, and FCA-compliant growth.",
+  description: "Partner with London's premier social media company. We engineer high-converting B2B campaigns, luxury social commerce, and brand growth.",
 };
 
 const tableOfContents = [

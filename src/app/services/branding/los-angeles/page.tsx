@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: "/services/branding/los-angeles",
   },
   title: "Branding Company in Los Angeles",
-  description: "Partner with Los Angeles's premier enterprise branding company. We engineer category-defining brand systems, visual identities, and market positioning for Silicon Beach, Hollywood, and global luxury brands.",
+  description: "Partner with Los Angeles's premier branding company. We engineer category-defining brand systems and visual identities in LA.",
   openGraph: {
     title: "Branding Company in Los Angeles | Southern Edge",
-    description: "Partner with Los Angeles's premier enterprise branding company. We engineer category-defining brand systems, visual identities, and market positioning for Silicon Beach, Hollywood, and global luxury brands.",
+    description: "Partner with Los Angeles's premier branding company. We engineer category-defining brand systems and visual identities in LA.",
     url: "https://www.southernedgemarketing.com/services/branding/los-angeles",
     siteName: "Southern Edge Marketing",
     locale: "en_US",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Branding Company in Los Angeles | Southern Edge",
-    description: "Partner with Los Angeles's premier enterprise branding company. We engineer category-defining brand systems, visual identities, and market positioning for Silicon Beach, Hollywood, and global luxury brands.",
+    description: "Partner with Los Angeles's premier branding company. We engineer category-defining brand systems and visual identities in LA.",
   },
   robots: {
     index: true,

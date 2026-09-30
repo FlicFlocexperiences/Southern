@@ -81,15 +81,48 @@ async function getLiveProject(slug: string): Promise<Project | null> {
   return null;
 }
 
+const projectMetaDescriptions: Record<string, string> = {
+  "ama": "Explore the modern legal services website built for AMA Legal Solutions, providing professional credibility and client intake.",
+  "sage-perfume": "Discover our product photography and brand visual identity project for SAGE Royal Ayurveda, capturing natural luxury.",
+  "adorna-casa": "Discover the luxury home decor e-commerce store designed for Adorna Casa, featuring curated fabrics and bespoke furnishings.",
+  "rockersjr": "Explore the modern B2B platform built for Rockers, showcasing kidswear manufacturing, textile production, and private labeling.",
+  "anyadha": "Explore the elegant jewellery e-commerce store designed for Anyadha, showcasing anti-tarnish pieces and seamless shopping.",
+  "gods-by-dmart": "Discover the luxury e-commerce store designed for Gods by D'mart, featuring handcrafted divine idols and spiritual gifting items.",
+  "sosha": "Explore our fashion e-commerce design and visual identity project for Sosha, highlighting contemporary ethnic silhouettes.",
+  "health": "Discover our commercial health photography project, combining natural ingredient imagery and visual storytelling.",
+  "trivora-jewels": "Explore the modern jewellery e-commerce store designed for Trivora Jewels, featuring curated collections and fast checkout.",
+  "vensa-skincare": "Discover the clean skincare e-commerce store built for Vensa, showcasing clinical dermal products with an intuitive interface.",
+  "rproyal": "Explore the B2B catalog and digital platform built for Royal Packaging, showcasing food-grade plastic packaging solutions.",
+  "bunt": "Explore the premium e-commerce website designed for BUNT India, showcasing handcrafted festive ethnic wear and lookbooks.",
+  "lynx": "Discover the visual identity and paid social campaign crafted for Lynx, establishing a luxury celestial aesthetic.",
+  "chavelle": "Explore our product photography campaign for Chavelle, showcasing premium travel luggage and lifestyle accessories.",
+  "house-of-nihal-khera": "Discover our e-commerce design and visual identity project for House Of Nihal Khera, celebrating organic farming heritage.",
+  "mr-pronto": "Explore our SEO and digital visibility campaign for Mr. Pronto, driving local search traffic for footwear restoration.",
+  "rise": "Explore the brand architecture and dining identity project for Rise, creating an inviting visual language for hospitality.",
+  "kamal": "Discover the commercial dealership platform built for Kamal Motors, simplifying vehicle discovery for Tata Motors fleets.",
+  "pehnavri": "Explore the vibrant ethnic wear e-commerce store designed for Pehnavri, showcasing handcrafted kurtis and festive couture."
+};
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const project = await getLiveProject(slug);
 
   if (!project) return {};
+  const metaDesc = projectMetaDescriptions[slug] || project.metaDescription || (project.description && project.description.length <= 150 ? project.description : `Explore the ${project.title} case study by Southern Edge Marketing.`);
+
   return {
     alternates: { canonical: `/projects/${slug}` },
     title: `${project.title} | Case Study`,
-    description: project.description?.slice(0, 160) || `Explore ${project.title} case study.`,
+    description: metaDesc,
+    openGraph: {
+      title: `${project.title} | Case Study`,
+      description: metaDesc,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | Case Study`,
+      description: metaDesc,
+    },
   };
 }
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/branding/abu-dhabi',
   },
   title: "Branding Company in Abu Dhabi",
-  description: "Elevate your enterprise with the premier branding company in Abu Dhabi. We design prestigious, bilingual brand systems for ADGM, Hub71, and global UAE brands."
+  description: "Elevate your enterprise with Abu Dhabi's premier branding company. We design prestigious, bilingual brand systems for UAE leaders."
 };
 
 const tableOfContents = [

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/app-development/lucknow',
   },
   title: "App Development Company in Lucknow",
-  description: "Partner with Lucknow's premier app development company. We build high-performance, secure custom mobile apps tailored for UP's growing digital economy."
+  description: "Partner with Lucknow's premier app development company. We build high-performance, secure mobile apps tailored for UP enterprises."
 };
 
 const tableOfContents = [

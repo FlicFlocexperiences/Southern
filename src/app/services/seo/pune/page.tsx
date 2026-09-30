@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/seo/pune',
   },
   title: "SEO Company in Pune",
-  description: "Scale your organic presence with the premier SEO company in Pune. We deliver technical search engine optimization for IT hubs and manufacturing enterprises."
+  description: "Scale your organic presence with Pune's premier SEO company. We deliver technical search engine optimization for IT and manufacturing."
 };
 
 const tableOfContents = [

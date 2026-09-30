@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/surat',
   },
   title: "Social Media Management in Surat",
-  description: "Scale your brand with the premier social media management company in Surat. We grow diamond exporters, D2C textile brands, and GIDC industrial enterprises."
+  description: "Scale your brand with Surat's premier social media management company. We grow diamond exporters, D2C textile labels, and local firms."
 };
 
 const tableOfContents = [

@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/seo/melbourne',
   },
   title: "SEO Company in Melbourne",
-  description: "Scale organic pipeline with Melbourne premier enterprise SEO agency. We engineer generative engine optimization, entity graphs, and technical search platforms.",
+  description: "Scale your organic pipeline with Melbourne's premier SEO agency. We engineer technical search strategies, entity graphs, and visibility.",
   openGraph: {
     title: "SEO Company in Melbourne | Southern Edge",
-    description: "Scale organic pipeline with Melbourne premier enterprise SEO agency. We engineer generative engine optimization, entity graphs, and technical search platforms.",
+    description: "Scale your organic pipeline with Melbourne's premier SEO agency. We engineer technical search strategies, entity graphs, and visibility.",
     url: "https://www.southernedgemarketing.com/services/seo/melbourne",
     siteName: "Southern Edge Marketing",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "SEO Company in Melbourne | Southern Edge",
-    description: "Scale organic pipeline with Melbourne premier enterprise SEO agency. We engineer generative engine optimization, entity graphs, and technical search platforms.",
+    description: "Scale your organic pipeline with Melbourne's premier SEO agency. We engineer technical search strategies, entity graphs, and visibility.",
     images: ["https://www.southernedgemarketing.com/images/infographics/seo-melbourne.jpg"],
   },
 };

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/manchester',
   },
   title: "Social Media Management in Manchester",
-  description: "Partner with the premier social media management company in Manchester. We engineer viral D2C social commerce, B2B LinkedIn ABM, and studio video growth.",
+  description: "Partner with Manchester's premier social media company. We engineer high-converting D2C social commerce, B2B campaigns, and video.",
 };
 
 const tableOfContents = [

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/noida',
   },
   title: "Social Media Management in Noida",
-  description: "Dominate the local market with the leading social media management company in Noida. We build B2B leads, real estate trust, and high-impact social campaigns.",
+  description: "Dominate the market with Noida's leading social media management company. We build B2B leads, brand trust, and social campaigns.",
 };
 
 const tableOfContents = [

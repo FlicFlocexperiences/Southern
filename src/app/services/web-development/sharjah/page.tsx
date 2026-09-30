@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/sharjah',
   },
   title: "Web Development Company in Sharjah",
-  description: "Professional web development in Sharjah. We build fast, responsive, and SEO-optimized websites that drive measurable business growth for local enterprises.",
+  description: "Professional web development in Sharjah. We build fast, responsive, and SEO-optimized websites that drive growth for UAE businesses.",
 };
 
 const tableOfContents = [

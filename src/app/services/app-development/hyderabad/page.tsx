@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/app-development/hyderabad',
   },
   title: "App Development Company in Hyderabad",
-  description: "Partner with Hyderabad's leading app development company. We engineer highly secure, scalable mobile applications for IT, healthcare, and global enterprises.",
+  description: "Partner with Hyderabad's leading app development company. We engineer secure, scalable mobile apps for HITEC City tech and healthcare.",
 };
 
 const tableOfContents = [

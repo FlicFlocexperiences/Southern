@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/branding/chennai',
   },
   title: "Branding Company in Chennai",
-  description: "Elevate your corporate identity with the leading branding company in Chennai. We design premium brand systems for manufacturing hubs and OMR tech parks."
+  description: "Elevate your corporate identity with Chennai's leading branding company. We design premium brand systems for manufacturing and tech firms."
 };
 
 const tableOfContents = [

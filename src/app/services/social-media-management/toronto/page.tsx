@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/social-media-management/toronto',
   },
   title: "Social Media Management in Toronto",
-  description: "Partner with the premier social media management company in Toronto. We drive enterprise brand growth, CASL-compliant B2B social, and social commerce across the GTA.",
+  description: "Partner with Toronto's premier social media company. We drive brand growth, targeted B2B social, and social commerce across the GTA.",
 };
 
 const tableOfContents = [

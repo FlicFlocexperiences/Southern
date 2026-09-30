@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/seo/dubai',
   },
   title: "SEO Company in Dubai",
-  description: "Scale your organic pipeline with the leading SEO Company in Dubai. We design high-performance search architectures for luxury, fintech, and logistics brands.",
+  description: "Scale your organic pipeline with Dubai's leading SEO company. We design high-performance search architectures for UAE luxury brands.",
 };
 
 const tableOfContents = [

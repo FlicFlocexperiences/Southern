@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/seo/toronto',
   },
   title: "SEO Company in Toronto",
-  description: "Scale your organic pipeline with the leading SEO Company in Toronto. We engineer enterprise search strategies for Bay Street, GTA tech, and industrial leaders.",
+  description: "Scale your organic pipeline with Toronto's leading SEO company. We engineer enterprise search strategies for Bay Street and GTA firms.",
 };
 
 const tableOfContents = [

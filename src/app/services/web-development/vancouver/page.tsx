@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/vancouver',
   },
   title: "Web Development Company in Vancouver",
-  description: "Partner with the premier web development company in Vancouver. We engineer secure, high-speed Next.js platforms built for BC enterprises and PIPA compliance.",
+  description: "Partner with Vancouver's premier web development company. We engineer secure, high-speed Next.js platforms built for BC enterprises.",
 };
 
 const tableOfContents = [

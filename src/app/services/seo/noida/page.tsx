@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/seo/noida',
   },
   title: "SEO Company in Noida",
-  description: "Scale your NCR business with the premier SEO company in Noida. We deliver technical, compliant organic search strategies for SaaS, IT hubs, and manufacturers."
+  description: "Scale your business with Noida's premier SEO company. We deliver technical organic search strategies for SaaS and NCR manufacturers."
 };
 
 const tableOfContents = [

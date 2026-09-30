@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/branding/sharjah',
   },
   title: "Branding Company in Sharjah",
-  description: "Elevate your business with the premier branding company in Sharjah. We craft prestigious, bilingual brand systems for SAIF Zone and Hamriyah Free Zone leaders."
+  description: "Elevate your business with Sharjah's premier branding company. We craft prestigious, bilingual brand systems and visual identities."
 };
 
 const tableOfContents = [

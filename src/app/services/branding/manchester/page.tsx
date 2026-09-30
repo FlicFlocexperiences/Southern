@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/branding/manchester',
   },
   title: "Branding Company in Manchester",
-  description: "Partner with Manchester's premier branding company. We engineer high-impact corporate brand systems, visual identities, and strategic positioning for UK enterprises.",
+  description: "Partner with Manchester's premier branding company. We engineer high-impact corporate brand systems, visual identities, and strategy.",
 };
 
 const tableOfContents = [

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/toronto',
   },
   title: "Web Development Company in Toronto",
-  description: "Partner with the premier web development company in Toronto. We build secure, high-performance Next.js platforms tailored to Bay Street and GTA enterprises.",
+  description: "Partner with Toronto's leading web development company. We build secure, high-speed Next.js websites for Bay Street and GTA firms.",
 };
 
 const tableOfContents = [

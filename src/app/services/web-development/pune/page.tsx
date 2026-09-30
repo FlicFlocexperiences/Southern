@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: '/services/web-development/pune',
   },
   title: "Web Development Company in Pune",
-  description: "Partner with Pune's premier web development company. We engineer highly secure, scalable digital platforms for IT, manufacturing, and educational sectors.",
+  description: "Partner with Pune's premier web development company. We engineer highly secure, scalable digital platforms for IT and manufacturing firms.",
 };
 
 const tableOfContents = [
