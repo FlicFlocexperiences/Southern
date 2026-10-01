@@ -10,10 +10,24 @@ import { LocationsGrid } from "@/components/LocationsGrid";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
+const staticFolderSlugs = new Set([
+  "web-development",
+  "app-development",
+  "social-media-management",
+  "seo",
+  "branding",
+  "shopify-agency-dubai",
+  "luxury-shopify-agency-uae",
+  "ios-app-development",
+  "influencer-marketing",
+]);
+
 export function generateStaticParams() {
-  return services.map((service) => ({
-    slug: service.slug,
-  }));
+  return services
+    .filter((service) => !staticFolderSlugs.has(service.slug))
+    .map((service) => ({
+      slug: service.slug,
+    }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
