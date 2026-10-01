@@ -36,12 +36,12 @@ export const metadata: Metadata = {
 
 const tableOfContents = [
   { id: "sydney-commercial-search-landscape", title: "1. The Sydney Commercial Landscape and Generative Search Dynamics" },
-  { id: "barangaroo-martin-place-financial-eeat", title: "2. Institutional E-E-A-T and Entity Authority for Barangaroo and Martin Place" },
-  { id: "tech-central-generative-engine-optimization", title: "3. Generative Engine Optimization (GEO) and AI Citations for Tech Central" },
-  { id: "greater-sydney-programmatic-local-seo", title: "4. Programmatic Local SEO and Google Map Pack Domination Across Greater Sydney" },
+  { id: "barangaroo-martin-place-financial-eeat", title: "2. Institutional E-E-A-T for Barangaroo Finance" },
+  { id: "tech-central-generative-engine-optimization", title: "3. GEO & AI Citations for Tech Central Innovators" },
+  { id: "greater-sydney-programmatic-local-seo", title: "4. Programmatic Local SEO Across Greater Sydney" },
   { id: "western-sydney-macquarie-park-b2b-seo", title: "5. B2B Industrial Search Capture for Western Sydney and Macquarie Park" },
-  { id: "oaic-privacy-and-accc-compliance", title: "6. Regulatory Data Governance, OAIC Privacy Compliance, and Ethical SEO" },
-  { id: "nsw-ix-peering-core-web-vitals", title: "7. NSW-IX Alexandria Peering, Sub-Second Edge Delivery, and Core Web Vitals" },
+  { id: "oaic-privacy-and-accc-compliance", title: "6. OAIC Privacy Compliance & Ethical SEO" },
+  { id: "nsw-ix-peering-core-web-vitals", title: "7. NSW-IX Alexandria Peering & Core Web Vitals" },
   { id: "closed-loop-crm-attribution-governance", title: "8. Closed-Loop CRM Attribution and Multi-Quarter Search Governance" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
@@ -236,8 +236,8 @@ export default function SydneySeoPage() {
 
         {/* SECTION 2 */}
         <h2 id="barangaroo-martin-place-financial-eeat" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Institutional E-E-A-T and Entity Authority for Barangaroo and Martin Place
-        </h2>
+              2. Institutional E-E-A-T for Barangaroo Finance
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Barangaroo and Martin Place anchor Australia financial services sector</strong>, accommodating major investment houses, private equity firms, and global banking institutions. Securing dominant search visibility within financial and wealth advisory verticals requires strict adherence to Google Experience, Expertise, Authoritativeness, and Trustworthiness guidelines for high-stakes topics. Our <strong className="font-semibold text-[#de5e18] tracking-tight">Sydney SEO agency</strong> produces compliance-reviewed content assets verified by recognized industry authorities. We build deep topical clusters that address complex institutional queries, establishing your enterprise as the undisputed authority within Australian commercial finance.
         </p>
@@ -247,8 +247,8 @@ export default function SydneySeoPage() {
 
         {/* SECTION 3 */}
         <h2 id="tech-central-generative-engine-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. Generative Engine Optimization (GEO) and AI Citations for Tech Central
-        </h2>
+              3. GEO & AI Citations for Tech Central Innovators
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The innovation district stretching from Surry Hills through Eveleigh to Tech Central</strong> represents Australia fastest-growing software and deep-tech ecosystem. For scale-ups and B2B SaaS firms, customer acquisition costs via paid search continue escalating, making organic discovery essential for balance sheet efficiency. Our <strong className="font-semibold text-[#de5e18] tracking-tight">enterprise SEO in Sydney</strong> engineers Generative Engine Optimization strategies that position software platforms as primary source citations within artificial intelligence engines like Perplexity, ChatGPT Search, and Google AI Overviews. We structure documentation, integration guides, and feature comparisons for machine retrieval.
         </p>
@@ -293,8 +293,8 @@ export default function SydneySeoPage() {
 
         {/* SECTION 4 */}
         <h2 id="greater-sydney-programmatic-local-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. Programmatic Local SEO and Google Map Pack Domination Across Greater Sydney
-        </h2>
+              4. Programmatic Local SEO Across Greater Sydney
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Greater Sydney spans distinct commercial submarkets across thirty-plus local government areas</strong>, from North Sydney and Bondi to Parramatta and Penrith. A single generic location profile cannot capture localized high-intent searches originating across these varied geographies. Our <strong className="font-semibold text-[#de5e18] tracking-tight">local SEO services in Sydney</strong> deploy synchronized Google Business Profile networks featuring verified physical addresses, accurate local coordinates, and consistent citations across premier Australian business directories. This structured approach captures high-conversion local queries, placing your business directly into the coveted Google Local 3-Pack.
         </p>
@@ -357,8 +357,8 @@ export default function SydneySeoPage() {
 
         {/* SECTION 6 */}
         <h2 id="oaic-privacy-and-accc-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Regulatory Data Governance, OAIC Privacy Compliance, and Ethical SEO
-        </h2>
+              6. OAIC Privacy Compliance & Ethical SEO
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Operating an enterprise digital presence in Sydney mandates strict compliance</strong> with Australian regulatory statutes and consumer protection laws. Our organic marketing practices adhere strictly to the Privacy Act 1988 and the Australian Privacy Principles overseen by the Office of the Australian Information Commissioner. We engineer privacy-first analytics infrastructures that eliminate unvetted tracking scripts, secure user consent dynamically, and prevent sensitive data leakage across public search engine telemetry conduits.
         </p>
@@ -368,8 +368,8 @@ export default function SydneySeoPage() {
 
         {/* SECTION 7 */}
         <h2 id="nsw-ix-peering-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. NSW-IX Alexandria Peering, Sub-Second Edge Delivery, and Core Web Vitals
-        </h2>
+              7. NSW-IX Alexandria Peering & Core Web Vitals
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Search algorithms heavily weight technical performance, responsive interactions, and page stability</strong> as primary ranking criteria under Google Core Web Vitals framework. Digital platforms that suffer from delayed server response times or erratic visual shifts experience ranking downgrades and elevated bounce rates. We configure ultra-fast edge routing peering directly with the New South Wales Internet Exchange managed by the <a href="https://www.internet.org.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Internet Association of Australia</a>, with points of presence across Equinix SY facilities in Alexandria and Global Switch Sydney.
         </p>

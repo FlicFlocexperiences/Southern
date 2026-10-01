@@ -117,9 +117,9 @@ export const MobileServicesPage = () => {
             {/* Title & Tagline & Description */}
             <div className="flex flex-col gap-3">
               <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
-                <h2 className="text-black text-[22px] font-medium tracking-tight">
+                <p className="text-black text-[22px] font-medium tracking-tight">
                   {service.title}
-                </h2>
+                </p>
                 {service.tagline && (
                   <span className="text-[#de5e18] italic text-[14px] font-normal">
                     {service.tagline}

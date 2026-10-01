@@ -23,7 +23,7 @@ const tableOfContents = [
   },
   {
     "id": "quebec-law-25-privacy-and-data-sovereignty",
-    "title": "Mandatory Quebec Law 25 Privacy Protocols and Canadian Data Sovereignty"
+    "title": "Quebec Law 25 Privacy & Canadian Data Sovereignty"
   },
   {
     "id": "bill-96-french-localization-and-multilingual-architecture",
@@ -31,15 +31,15 @@ const tableOfContents = [
   },
   {
     "id": "quebec-ecommerce-monetico-interac-and-qst-tax-automation",
-    "title": "Quebec E-Commerce, Desjardins Monetico, Interac, and QST/GST Tax Automation"
+    "title": "Quebec E-Commerce, Desjardins & Interac Rails"
   },
   {
     "id": "montreal-industrial-portals-and-supply-chain-modernization",
-    "title": "B2B Industrial Portals and Supply Chain Integration for Greater Montreal"
+    "title": "B2B Industrial Portals for Greater Montreal"
   },
   {
     "id": "qix-peering-and-hydro-quebec-cloud-performance",
-    "title": "QIX Edge Peering, Hydro-Québec Clean Cloud Hosting, and Sub-Millisecond Latency"
+    "title": "QIX Edge Peering & Clean Cloud Infrastructure"
   },
   {
     "id": "agile-delivery-and-enterprise-support-slas",
@@ -81,7 +81,7 @@ export default function MontrealWebDevelopmentPage() {
             </p>
 
             <h2 id="quebec-law-25-privacy-and-data-sovereignty" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Mandatory Quebec Law 25 Privacy Protocols and Canadian Data Sovereignty
+              Quebec Law 25 Privacy & Canadian Data Sovereignty
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               In Quebec, digital privacy compliance is governed by strict statutory mandates under <a href="https://www.cai.gouv.qc.ca/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Law 25 (Loi 25)</a>, enforced by the Commission d'accès à l'information (CAI). Any enterprise collecting personal data from Quebec residents must maintain granular opt-in consent mechanisms, automated privacy policy disclosures, and strict data destruction workflows to avoid heavy financial penalties. Our engineering team embeds Law 25 and PIPEDA compliance directly into the software architecture, deploying zero-trust access controls, database tokenization, and end-to-end cryptographic encryption using TLS 1.3 protocols. To ensure absolute data sovereignty, we provision dedicated cloud database infrastructure within domestic data centers, including AWS Canada Central located directly in Montreal and Microsoft Azure Canada East. <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise data security</strong> guarantees that proprietary business intelligence and consumer information remain fully protected on Canadian soil under strict provincial oversight. This unyielding commitment to legal compliance builds lasting credibility with institutional partners, corporate boards, and privacy-conscious Quebec consumers.
@@ -95,21 +95,21 @@ export default function MontrealWebDevelopmentPage() {
             </p>
 
             <h2 id="quebec-ecommerce-monetico-interac-and-qst-tax-automation" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Quebec E-Commerce, Desjardins Monetico, Interac, and QST/GST Tax Automation
+              Quebec E-Commerce, Desjardins & Interac Rails
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               Quebec's digital commerce sector possesses distinctive transactional preferences and regional fiscal requirements that demand bespoke checkout engineering. We build high-converting transactional storefronts and custom e-commerce engines integrated seamlessly with native Canadian payment gateways, including <a href="https://www.interac.ca/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Interac</a> e-Transfer, Desjardins Monetico, Lightspeed Payments, Nuvei, and Stripe Canada. Our platforms feature automated tax calculation engines that accurately compute the 9.975% Quebec Sales Tax (QST / TVQ) alongside the 5% federal GST, generating compliant digital invoices aligned with Revenu Québec standards. We engineer real-time API integrations with leading domestic fulfillment networks, including Canada Post, Purolator, Nationex, and GLS Canada for rapid parcel tracking across Greater Montreal and regional Quebec. <strong className="font-semibold text-[#de5e18] tracking-tight">Optimizing the transactional checkout journey</strong> drastically reduces cart abandonment and maximizes revenue velocity for Montreal retailers and B2C brands. Our team ensures that every transaction is processed through frictionless, mobile-optimized checkout flows that convert casual visitors into repeat buyers.
             </p>
 
             <h2 id="montreal-industrial-portals-and-supply-chain-modernization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              B2B Industrial Portals and Supply Chain Integration for Greater Montreal
+              B2B Industrial Portals for Greater Montreal
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               As a critical North American multimodal logistics gateway centered around the Port of Montreal and major transcontinental rail networks, Greater Montreal is home to world-class manufacturing and supply chain operators. Industrial leaders across Saint-Laurent, Laval, Boucherville, and Longueuil rely on custom web portals to coordinate complex supplier networks, wholesale purchasing, and freight logistics. We develop custom enterprise extranets, vendor management dashboards, and B2B ordering systems that integrate directly with ERP platforms such as SAP, Oracle NetSuite, and Microsoft Dynamics 365. These custom web applications automate tiered client pricing, electronic data interchange (EDI) workflows, bulk purchase order approvals, and localized warehouse inventory tracking. <strong className="font-semibold text-[#de5e18] tracking-tight">Replacing antiquated paper processes</strong> with secure, real-time web portals eliminates administrative bottlenecks and accelerates fulfillment times across the Saint Lawrence trade corridor. For organizations seeking companion mobile applications to empower field technicians and warehouse teams, explore our custom <Link href="/services/app-development" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">app development services</Link>.
             </p>
 
             <h2 id="qix-peering-and-hydro-quebec-cloud-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              QIX Edge Peering, Hydro-Québec Clean Cloud Hosting, and Sub-Millisecond Latency
+              QIX Edge Peering & Clean Cloud Infrastructure
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               Achieving ultra-low latency across Quebec requires a distributed network architecture optimized specifically for local telecommunications backbones, including Bell Canada, Vidéotron, and Telus. We configure global content delivery networks with edge caching nodes that peer directly at the <a href="https://www.qix.ca/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Quebec Internet Exchange (QIX)</a> in Montreal, ensuring that static assets and serverless edge functions execute with sub-millisecond response times. By deploying on cloud infrastructure powered by Hydro-Québec clean hydroelectric power, our hosting solutions combine maximum computational performance with sustainable, green digital engineering. Our optimization pipeline automates modern image compression (AVIF and WebP), eliminates render-blocking CSS, and implements aggressive browser caching protocols to maximize overall throughput. <strong className="font-semibold text-[#de5e18] tracking-tight">Relentless performance optimization</strong> directly elevates your organic search visibility through our advanced <Link href="/services/seo" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">SEO services</Link>, securing top rankings across Canadian Google search results. This engineering rigor ensures your web application stays fast and responsive even during high-traffic promotional events and breaking industry announcements.

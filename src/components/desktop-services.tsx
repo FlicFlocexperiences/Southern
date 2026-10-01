@@ -79,7 +79,7 @@ export const DesktopServices = () => {
           </p>
           
           <h2 className="text-[50px] xl:text-[70px] font-bold text-black leading-[0.9] tracking-tight mb-8">
-            EXPERT DIGITAL<br />MARKETING SERVICES<br />IN DELHI NCR
+            EXPERT DIGITAL <br />MARKETING SERVICES <br />IN DELHI NCR
           </h2>
           
           <p className="text-[18px] xl:text-[20px] text-black/65 font-normal leading-[1.4] max-w-[500px] mb-12">

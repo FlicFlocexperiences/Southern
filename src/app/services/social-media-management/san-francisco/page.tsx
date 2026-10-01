@@ -35,14 +35,14 @@ export const metadata: Metadata = {
 };
 
 const tableOfContents = [
-  { id: "san-francisco-commercial-landscape-and-social-architecture", title: "1. The San Francisco Commercial Landscape and Enterprise Social Architecture" },
-  { id: "executive-thought-leadership-linkedin-abm-fidi-sand-hill", title: "2. Executive Thought Leadership and B2B LinkedIn ABM for FiDi and Sand Hill Road" },
+  { id: "san-francisco-commercial-landscape-and-social-architecture", title: "1. San Francisco Enterprise Social Architecture" },
+  { id: "executive-thought-leadership-linkedin-abm-fidi-sand-hill", title: "2. LinkedIn ABM for FiDi & Sand Hill Road" },
   { id: "high-growth-saas-user-acquisition-developer-advocacy-soma", title: "3. High-Growth SaaS User Acquisition and Developer Advocacy in SoMa" },
-  { id: "privacy-governance-ccpa-cpra-meta-conversions-api", title: "4. Data Privacy Governance, CCPA/CPRA Compliance, and Meta Conversions API" },
+  { id: "privacy-governance-ccpa-cpra-meta-conversions-api", title: "4. CCPA/CPRA Privacy Governance & Meta CAPI" },
   { id: "cinematic-short-form-video-bay-area-creator-networks", title: "5. Cinematic Short-Form Video Production and Bay Area Creator Networks" },
-  { id: "statutory-ada-california-unruh-wcag-accessibility", title: "6. Statutory ADA Title III, California Unruh Act, and WCAG 2.2 AA Social Accessibility" },
-  { id: "sfmix-peering-200-paul-carrier-hotels-media-delivery", title: "7. SFMIX Peering, 200 Paul Carrier Hotels, and Pacific Rim Media Delivery" },
-  { id: "enterprise-attribution-data-lakehouses-san-francisco-slas", title: "8. Enterprise Multi-Touch Attribution, Data Lakehouses, and Dedicated San Francisco SLAs" },
+  { id: "statutory-ada-california-unruh-wcag-accessibility", title: "6. Unruh Act, ADA Title III & Social Accessibility" },
+  { id: "sfmix-peering-200-paul-carrier-hotels-media-delivery", title: "7. SFMIX Peering & 200 Paul Media Delivery" },
+  { id: "enterprise-attribution-data-lakehouses-san-francisco-slas", title: "8. Multi-Touch Attribution & Dedicated SF SLAs" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -208,8 +208,8 @@ export default function SanFranciscoSocialMediaManagementPage() {
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
         <h2 id="san-francisco-commercial-landscape-and-social-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          1. The San Francisco Commercial Landscape and Enterprise Social Architecture
-        </h2>
+              1. San Francisco Enterprise Social Architecture
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">San Francisco operates as the premier global epicenter of venture capital, artificial intelligence development, and enterprise software innovation</strong>. From the high-density engineering hubs of South of Market (SoMa) and Potrero Hill to investment fortresses lining Montgomery Street in the Financial District, local organizations operate within a fast-moving commercial arena. In this sophisticated ecosystem, generic stock imagery and superficial posting schedules fail to engage technical founders, venture partners, and corporate executives. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">social media management company in San Francisco</strong>, Southern Edge Marketing builds high-velocity social distribution engines.
         </p>
@@ -219,8 +219,8 @@ export default function SanFranciscoSocialMediaManagementPage() {
 
         {/* SECTION 2 */}
         <h2 id="executive-thought-leadership-linkedin-abm-fidi-sand-hill" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Executive Thought Leadership and B2B LinkedIn ABM for FiDi and Sand Hill Road
-        </h2>
+              2. LinkedIn ABM for FiDi & Sand Hill Road
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Operating within San Francisco financial corridors demands an authoritative, high-trust approach to executive communication. Managing partners, enterprise CTOs, and institutional investors actively utilize LinkedIn Marketing Solutions to evaluate strategic vendors and discover emerging opportunities. We architect B2B executive positioning frameworks that transform your leadership team into recognized industry authorities across AI, enterprise SaaS, and venture finance. Our specialized editorial copywriters produce rigorous whitepapers, macroeconomic commentary, and proprietary data visualizations that communicate your corporate perspective with intellectual clarity.
         </p>
@@ -276,8 +276,8 @@ export default function SanFranciscoSocialMediaManagementPage() {
 
         {/* SECTION 4 */}
         <h2 id="privacy-governance-ccpa-cpra-meta-conversions-api" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. Data Privacy Governance, CCPA/CPRA Compliance, and Meta Conversions API
-        </h2>
+              4. CCPA/CPRA Privacy Governance & Meta CAPI
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Operating digital marketing campaigns in California requires strict compliance with state privacy statutes and federal advertising guidelines. The <a href="https://cppa.ca.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">California Privacy Protection Agency</a> actively enforces the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA), mandating transparent consumer consent, opt-out mechanisms, and strict restrictions on cross-context behavioral tracking. In response to mobile browser cookie deprecation, our technical marketing engineers implement first-party server-side telemetry using the Meta Conversions API (CAPI), TikTok Events API, and LinkedIn Conversions API.
         </p>
@@ -340,8 +340,8 @@ export default function SanFranciscoSocialMediaManagementPage() {
 
         {/* SECTION 6 */}
         <h2 id="statutory-ada-california-unruh-wcag-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Statutory ADA Title III, California Unruh Act, and WCAG 2.2 AA Social Accessibility
-        </h2>
+              6. Unruh Act, ADA Title III & Social Accessibility
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility has become a critical legal and ethical requirement for modern enterprises operating in California. State courts enforce strict civil liability under the Unruh Civil Rights Act (Civil Code § 51), while federal regulators mandate equal access under <a href="https://www.ada.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">ADA Title III</a>. Social media assets that lack accessible design expose commercial enterprises to significant legal risk and alienate valuable customer segments. Our social production pipeline embeds accessibility compliance directly into every visual, video, and textual asset according to <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> guidelines.
         </p>
@@ -351,8 +351,8 @@ export default function SanFranciscoSocialMediaManagementPage() {
 
         {/* SECTION 7 */}
         <h2 id="sfmix-peering-200-paul-carrier-hotels-media-delivery" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. SFMIX Peering, 200 Paul Carrier Hotels, and Pacific Rim Media Delivery
-        </h2>
+              7. SFMIX Peering & 200 Paul Media Delivery
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Delivering high-resolution video reels, interactive social experiences, and rich landing page destinations across the San Francisco Bay Area requires edge infrastructure tuned to regional network backbones. We architect digital campaigns supported by distributed content delivery networks with direct edge peering at the <a href="https://www.sfmix.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">San Francisco Internet Exchange (SFMIX)</a> and premier carrier hotels located at 200 Paul Avenue and 365 Main Street. This edge peering architecture guarantees that rich media assets and campaign landing pages render within single-digit milliseconds for local users.
         </p>
@@ -362,8 +362,8 @@ export default function SanFranciscoSocialMediaManagementPage() {
 
         {/* SECTION 8 */}
         <h2 id="enterprise-attribution-data-lakehouses-san-francisco-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Enterprise Multi-Touch Attribution, Data Lakehouses, and Dedicated San Francisco SLAs
-        </h2>
+              8. Multi-Touch Attribution & Dedicated SF SLAs
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern enterprise CMOs and finance executives demand transparent, deterministic proof of marketing return on investment rather than vanity engagement metrics. We deploy sophisticated multi-touch attribution models that track the complete customer lifecycle from initial social impression to closed contract revenue. Our data engineers integrate social ad platforms directly with enterprise data lakehouses and customer data platforms, including Snowflake, Google BigQuery, Segment, and Salesforce. This provides executive leadership with real-time dashboards displaying blended customer acquisition cost, pipeline velocity, and customer lifetime value.
         </p>

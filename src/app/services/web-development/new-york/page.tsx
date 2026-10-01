@@ -19,11 +19,11 @@ const tableOfContents = [
   },
   {
     "id": "enterprise-nextjs-and-headless-architectures-for-nyc-enterprises",
-    "title": "Enterprise Next.js and Headless Architectures for Silicon Alley Scale-Ups"
+    "title": "Next.js & Headless Architecture for New York"
   },
   {
     "id": "fintech-security-nydfs-compliance-and-institutional-governance",
-    "title": "Wall Street FinTech Security, NYDFS 23 NYCRR 500, and Zero-Trust Governance"
+    "title": "FinTech Security, NYDFS 500 & Zero Trust"
   },
   {
     "id": "omnichannel-ecommerce-and-frictionless-payment-rails",
@@ -31,15 +31,15 @@ const tableOfContents = [
   },
   {
     "id": "b2b-portals-commercial-real-estate-and-enterprise-integrations",
-    "title": "B2B Portals, Commercial Real Estate, and Enterprise System Integrations"
+    "title": "B2B Portals & Real Estate Web Architecture"
   },
   {
     "id": "ada-title-iii-sdny-compliance-and-wcag-accessibility",
-    "title": "Statutory ADA Title III, SDNY Legal Precedent, and WCAG 2.2 Accessibility"
+    "title": "ADA Title III, SDNY Precedent & WCAG 2.2"
   },
   {
     "id": "nyiix-edge-peering-carrier-hotels-and-low-latency-hosting",
-    "title": "NYIIX Peering, 60 Hudson Carrier Hotels, and Ultra-Low-Latency Edge Hosting"
+    "title": "NYIIX Peering & 60 Hudson Low-Latency Hosting"
   },
   {
     "id": "agile-sprints-and-dedicated-new-york-support-slas",
@@ -74,14 +74,14 @@ export default function NewYorkWebDevelopmentPage() {
             </p>
 
             <h2 id="enterprise-nextjs-and-headless-architectures-for-nyc-enterprises" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Enterprise Next.js and Headless Architectures for Silicon Alley Scale-Ups
+              Next.js & Headless Architecture for New York
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               High-growth technology enterprises and venture-backed scale-ups across Silicon Alley, Flatiron, and DUMBO Brooklyn demand decoupled, composable web architectures that deliver near-instantaneous interaction speeds and seamless uptime during viral traffic spikes. We engineer high-velocity frontend interfaces powered by React and Next.js, utilizing server-side rendering, static site generation, and incremental static regeneration to eliminate rendering bottlenecks. By separating the user-facing presentation layer from complex backend databases and legacy content repositories, we significantly reduce page payloads and shrink vulnerability attack surfaces. This composable architecture empowers marketing and product teams to publish dynamic campaigns through headless content management systems like Sanity and Contentful without risking software instability or requiring developer intervention. <strong className="font-semibold text-[#de5e18] tracking-tight">Our precision frontend engineering</strong> eliminates extraneous JavaScript dependencies, guarantees superior Core Web Vitals scores, and maximizes conversion rates across all modern desktop and mobile viewports. Furthermore, our modular component architecture allows engineering teams to deploy continuous feature updates without interrupting core business workflows. To explore our core software development philosophy and enterprise performance standards, visit our <Link href="/about" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">about us</Link> page.
             </p>
 
             <h2 id="fintech-security-nydfs-compliance-and-institutional-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Wall Street FinTech Security, NYDFS 23 NYCRR 500, and Zero-Trust Governance
+              FinTech Security, NYDFS 500 & Zero Trust
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               Operating within the epicenter of global finance demands institutional-grade cyber resilience, zero-trust security frameworks, and strict regulatory alignment across every digital touchpoint. Our engineering lifecycle implements rigorous compliance protocols in alignment with the New York State Department of Financial Services (NYDFS) 23 NYCRR 500 cybersecurity regulations and the New York SHIELD Act. For private equity funds, hedge funds, wealth management firms, and fintech scale-ups across Manhattan, we architect zero-trust role-based access controls, multi-factor authentication protocols, automated cryptographic tokenization, and end-to-end TLS 1.3 data encryption. To satisfy stringent enterprise data residency and compliance guidelines, we provision isolated cloud database infrastructure strictly within certified US East availability zones, including AWS US East (N. Virginia / Ohio) and Microsoft Azure East US. <strong className="font-semibold text-[#de5e18] tracking-tight">Defensive software architecture</strong> ensures that your client records, proprietary analytics, and transaction logs remain impervious to unauthorized interception and fully compliant with state and federal oversight. We also integrate automated continuous vulnerability scanning and audit logging pipelines to catch potential risks before code reaches production environments. This uncompromising dedication to security cements trust with institutional investors and high-net-worth clients across New York and global financial centers.
@@ -95,21 +95,21 @@ export default function NewYorkWebDevelopmentPage() {
             </p>
 
             <h2 id="b2b-portals-commercial-real-estate-and-enterprise-integrations" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              B2B Portals, Commercial Real Estate, and Enterprise System Integrations
+              B2B Portals & Real Estate Web Architecture
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               Across Midtown corporate headquarters, Grand Central commercial towers, and industrial logistics corridors throughout Queens and Brooklyn, B2B enterprises and commercial real estate firms require modern web infrastructure to orchestrate high-volume operations. We design and construct custom client extranets, investor reporting portals, tenant experience platforms, and vendor management systems that connect directly with enterprise resource planning and CRM software such as Salesforce, HubSpot, SAP, Oracle NetSuite, and Yardi. These custom web applications automate tiered corporate pricing schedules, bulk purchase order approvals, dynamic investor document distribution, and secure tenant lease management. <strong className="font-semibold text-[#de5e18] tracking-tight">By replacing fragmented manual workflows and cumbersome spreadsheets</strong> with responsive, high-speed digital portals, our clients eliminate operational overhead and accelerate business execution. Our engineers design intuitive management dashboards that provide real-time portfolio visibility and granular permission hierarchies for enterprise teams. In addition, our robust API layers ensure secure data synchronization across all internal enterprise software stacks. For organizations seeking dedicated mobile applications for field operations and client engagement, examine our specialized <Link href="/services/app-development" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">app development services</Link>.
             </p>
 
             <h2 id="ada-title-iii-sdny-compliance-and-wcag-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Statutory ADA Title III, SDNY Legal Precedent, and WCAG 2.2 Accessibility
+              ADA Title III, SDNY Precedent & WCAG 2.2
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               Digital accessibility is a critical legal and commercial priority for New York businesses, as the U.S. District Court for the Southern District of New York (SDNY) handles more <a href="https://www.ada.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">ADA Title III</a> website accessibility litigation than almost any other federal jurisdiction in the United States. Commercial enterprises and institutional brands across New York face substantial legal exposure and financial liability if their digital properties fail to comply with <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> accessibility criteria. Rather than relying on superficial third-party widget overlays that fail judicial scrutiny, our engineering practice bakes native accessibility into every layer of our code architecture. We author clean semantic HTML5 markup, programmatic ARIA landmark roles, logical keyboard navigation flows, and full screen-reader compatibility for users relying on assistive technology. <strong className="font-semibold text-[#de5e18] tracking-tight">Investing in inclusive web engineering</strong> expands your accessible customer base across New York while safeguarding your organization from costly demand letters and civil litigation. Furthermore, our continuous deployment pipelines integrate automated accessibility testing linters and regular manual audits to prevent accessibility regressions during platform updates.
             </p>
 
             <h2 id="nyiix-edge-peering-carrier-hotels-and-low-latency-hosting" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              NYIIX Peering, 60 Hudson Carrier Hotels, and Ultra-Low-Latency Edge Hosting
+              NYIIX Peering & 60 Hudson Low-Latency Hosting
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               Delivering blazing interaction speeds across New York City, Long Island, Westchester, and Northern New Jersey requires edge caching infrastructure tuned specifically to regional telecommunications networks, including Verizon Fios, Charter Spectrum, and Optimum by Altice. We deploy globally distributed content delivery networks featuring direct edge peering at the <a href="https://www.nyiix.net/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">New York International Internet Exchange (NYIIX)</a> and major telecommunications carrier hotels at 60 Hudson Street and 111 8th Avenue in Manhattan. This localized edge routing guarantees that cached static assets, image files, and serverless compute functions execute within single-digit milliseconds of local end users. Primary cloud database environments are provisioned within secure US East cloud zones to eliminate cross-country routing latency and maximize data throughput. <strong className="font-semibold text-[#de5e18] tracking-tight">Our deep performance optimization protocols</strong> compress media into modern AVIF and WebP formats, eliminate render-blocking stylesheets, and leverage HTTP/3 protocol multiplexing. This rigorous focus on speed directly enhances your organic search visibility through our comprehensive <Link href="/services/seo" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">SEO services</Link>, ensuring dominant rankings on competitive New York Google search results.

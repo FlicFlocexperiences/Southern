@@ -78,9 +78,9 @@ export const MobileServices = () => {
             <span className="text-[#de5e18]">]</span>
           </p>
           
-          <h2 className="text-[44px] sm:text-[50px] font-bold text-black leading-[0.9] tracking-tight mb-6">
-            EXPERT DIGITAL<br />MARKETING SERVICES<br />IN DELHI NCR
-          </h2>
+          <p className="text-[44px] sm:text-[50px] font-bold text-black leading-[0.9] tracking-tight mb-6">
+            EXPERT DIGITAL <br />MARKETING SERVICES <br />IN DELHI NCR
+          </p>
           
           <p className="text-[16px] text-black/65 font-normal leading-[1.4] mb-8">
             In today's competitive landscape, having a beautiful website is not enough. You need a comprehensive approach to capture and convert your audience. As an experienced online marketing agency, we build custom campaigns tailored to your specific industry. We do not believe in generic solutions. Instead, we analyze your market, understand your customers, and deploy digital marketing services in Delhi NCR that generate sustainable, long term ROI.
@@ -119,7 +119,7 @@ export const MobileServices = () => {
 
                 {/* Content */}
                 <div className="flex flex-col">
-                  <h3 className="text-[24px] sm:text-[26px] font-medium text-black mb-3 leading-tight">{service.title}</h3>
+                  <p className="text-[24px] sm:text-[26px] font-medium text-black mb-3 leading-tight">{service.title}</p>
                   <p className="text-[18px] text-black/60 leading-[1.4] mb-6">{service.desc}</p>
 
                 </div>

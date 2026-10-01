@@ -132,14 +132,14 @@ export function MobileIntegrations() {
       {/* Text Details */}
       <div className="max-w-[440px] mx-auto relative z-20 w-full flex flex-col items-center pb-16 pt-4">
         <div className="text-center flex flex-col items-center">
-          <h2 className="flex flex-col gap-0 uppercase text-center font-sans tracking-tight">
+          <p className="flex flex-col gap-0 uppercase text-center font-sans tracking-tight">
             <span className="text-[28px] leading-[1.1] font-semibold text-[#A1A1A1]">
-              INTEGRATIONS THAT
+              INTEGRATIONS THAT{" "}
             </span>
             <span className="text-[32px] leading-[1.1] font-semibold text-[#0F0F0F] mt-1">
               SCALE WITH YOU
             </span>
-          </h2>
+          </p>
           <p className="max-w-[320px] text-[16px] leading-[22px] text-gray-600 font-normal font-sans mt-5 px-4">
             Seamlessly connecting platforms, automating processes, and building systems that grow with your business.
           </p>

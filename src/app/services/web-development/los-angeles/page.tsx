@@ -43,11 +43,11 @@ const tableOfContents = [
   },
   {
     "id": "enterprise-nextjs-and-headless-architectures-for-silicon-beach",
-    "title": "Enterprise Next.js and Headless Architectures for Silicon Beach Scale-Ups"
+    "title": "Next.js & Headless Systems for Silicon Beach"
   },
   {
     "id": "entertainment-media-streaming-and-high-concurrency-portals",
-    "title": "Hollywood Media Portals, Interactive Streaming Platforms, and Digital Rights Management"
+    "title": "Media Portals, Streaming & DRM Platforms"
   },
   {
     "id": "dtc-luxury-ecommerce-and-frictionless-checkout-rails",
@@ -55,15 +55,15 @@ const tableOfContents = [
   },
   {
     "id": "port-of-la-logistics-aerospace-and-b2b-enterprise-integrations",
-    "title": "Port of LA Logistics Portals, Aerospace Software, and Enterprise Integrations"
+    "title": "Port of LA Logistics & Aerospace Web Software"
   },
   {
     "id": "ccpa-cpra-compliance-california-unruh-act-and-wcag-accessibility",
-    "title": "CCPA / CPRA Privacy Compliance, Unruh Civil Rights Act, and WCAG 2.2 Accessibility"
+    "title": "CCPA/CPRA, Unruh Act & WCAG 2.2 Accessibility"
   },
   {
     "id": "any2ix-peering-one-wilshire-carrier-hotels-and-low-latency-hosting",
-    "title": "Any2IX Peering, One Wilshire Carrier Hotels, and Low-Latency Edge Hosting"
+    "title": "Any2IX Peering & One Wilshire Edge Hosting"
   },
   {
     "id": "agile-sprints-and-dedicated-los-angeles-support-slas",
@@ -152,14 +152,14 @@ export default function LosAngelesWebDevelopmentPage() {
             </p>
 
             <h2 id="enterprise-nextjs-and-headless-architectures-for-silicon-beach" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Enterprise Next.js and Headless Architectures for Silicon Beach Scale-Ups
+              Next.js & Headless Systems for Silicon Beach
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               Fast-scaling technology startups and venture-funded scale-ups across Santa Monica, Culver City, and Playa Vista demand composable, decoupled frontend architectures that guarantee instant page transitions and maximum developer agility. We engineer high-velocity interfaces utilizing React and Next.js, leveraging server-side rendering (SSR), static site generation (SSG), and incremental static regeneration (ISR) to eliminate server wait times. By decoupling the presentation layer from backend APIs and content databases, we reduce bundle payloads, improve security postures, and empower marketing teams to publish dynamic campaigns via headless CMS platforms like Sanity, Contentful, and Strapi. <strong className="font-semibold text-[#de5e18] tracking-tight">Our precision frontend engineering</strong> eliminates render-blocking dependencies, achieves pristine Core Web Vitals scores, and maximizes conversion rates across both mobile and desktop viewports. To explore our engineering philosophy and architectural standards, visit our <Link href="/about" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">about us</Link> page.
             </p>
 
             <h2 id="entertainment-media-streaming-and-high-concurrency-portals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Hollywood Media Portals, Interactive Streaming Platforms, and Digital Rights Management
+              Media Portals, Streaming & DRM Platforms
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               Operating in the global capital of entertainment requires web platforms that deliver immersive video streaming, dynamic media asset indexing, and impenetrable digital rights management. For entertainment studios, talent agencies, streaming startups, and production houses in Hollywood, Burbank, and Century City, we construct ultra-fast media portals capable of distributing high-bitrate video, interactive trailers, and gated digital content to millions of concurrent global viewers. Our engineering team integrates adaptive HLS/DASH video pipelines, secure tokenized URL distribution via AWS CloudFront and Cloudflare Stream, and encrypted asset access controls. <strong className="font-semibold text-[#de5e18] tracking-tight">Immersive digital storytelling</strong> combined with lightning-fast edge delivery ensures that your media assets captivate audiences worldwide without buffering or security leaks. To elevate your commercial identity with category-defining visuals, explore our bespoke <Link href="/services/branding" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">branding services</Link>.
@@ -173,21 +173,21 @@ export default function LosAngelesWebDevelopmentPage() {
             </p>
 
             <h2 id="port-of-la-logistics-aerospace-and-b2b-enterprise-integrations" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Port of LA Logistics Portals, Aerospace Software, and Enterprise Integrations
+              Port of LA Logistics & Aerospace Web Software
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               Anchored by the San Pedro Bay port complex—comprising the Port of Los Angeles and Port of Long Beach—and the thriving aerospace corridor in El Segundo, LA enterprises coordinate complex global logistics and advanced manufacturing operations. We build custom B2B web portals, supplier extranets, shipment tracking dashboards, and ERP integration layers that communicate directly with enterprise systems like SAP, Oracle NetSuite, Microsoft Dynamics 365, and Salesforce. These secure platforms automate freight quotation requests, bill of lading workflows, tiered customer pricing schedules, and real-time inventory telemetry. <strong className="font-semibold text-[#de5e18] tracking-tight">Replacing fragmented legacy spreadsheets with modern web applications</strong> eliminates administrative friction and gives executives real-time operational clarity across global supply chains.
             </p>
 
             <h2 id="ccpa-cpra-compliance-california-unruh-act-and-wcag-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              CCPA / CPRA Privacy Compliance, Unruh Civil Rights Act, and WCAG 2.2 Accessibility
+              CCPA/CPRA, Unruh Act & WCAG 2.2 Accessibility
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               Operating in California requires strict adherence to the most comprehensive consumer privacy and accessibility legal frameworks in the United States. Our web platforms are engineered to conform rigorously with the <a href="https://oag.ca.gov/privacy/ccpa" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA)</a>, incorporating automated consent management, granular data access request workflows, and "Do Not Sell or Share My Personal Information" mechanisms. Furthermore, to protect California businesses from statutory damages under the California Unruh Civil Rights Act and ADA Title III, we engineer native <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> accessibility into our core code. We implement clean semantic markup, descriptive ARIA landmarks, logical keyboard focus traps, and full screen-reader support, eliminating legal risk while ensuring every visitor enjoys an inclusive user experience.
             </p>
 
             <h2 id="any2ix-peering-one-wilshire-carrier-hotels-and-low-latency-hosting" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Any2IX Peering, One Wilshire Carrier Hotels, and Low-Latency Edge Hosting
+              Any2IX Peering & One Wilshire Edge Hosting
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               Delivering sub-second load times across Southern California requires edge infrastructure optimized for regional telecommunications backbones. We deploy distributed content delivery networks peering directly at the One Wilshire Carrier Hotel and the Any2Exchange (Any2 California) in Downtown Los Angeles. This localized routing ensures that static assets, media files, and serverless compute queries resolve within single-digit milliseconds for users across LA, Orange County, San Diego, and the Inland Empire. Combined with AVIF image optimization, HTTP/3 protocol support, and intelligent edge caching, our technical architecture satisfies Google's Core Web Vitals and maximizes organic visibility through our specialized <Link href="/services/seo" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">SEO services</Link>.

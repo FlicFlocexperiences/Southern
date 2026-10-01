@@ -36,13 +36,13 @@ export const metadata: Metadata = {
 
 const tableOfContents = [
   { id: "melbourne-commercial-dynamics-and-enterprise-social-architecture", title: "1. Melbourne Commercial Dynamics and Enterprise Social Architecture" },
-  { id: "executive-thought-leadership-linkedin-abm-collins-street-docklands", title: "2. Executive Thought Leadership and B2B LinkedIn ABM for Collins Street and Docklands" },
-  { id: "high-growth-tech-product-acquisition-developer-advocacy-cremorne", title: "3. High-Growth Tech Product Acquisition and Developer Advocacy in Cremorne" },
-  { id: "data-privacy-governance-privacy-act-1988-meta-capi", title: "4. Data Privacy Governance, Australian Privacy Principles, and Server-Side CAPI" },
-  { id: "cinematic-4k-video-production-accc-creator-governance", title: "5. Cinematic 4K Short-Form Video and ACCC Influencer Endorsement Governance" },
-  { id: "disability-discrimination-act-wcag-social-accessibility", title: "6. Statutory Disability Discrimination Act Compliance and WCAG 2.2 AA Accessibility" },
-  { id: "vic-ix-peering-equinix-port-melbourne-5g-distribution", title: "7. VIC-IX Peering, Equinix Port Melbourne Facilities, and 5G Media Delivery" },
-  { id: "enterprise-attribution-data-lakehouses-melbourne-slas", title: "8. Enterprise Multi-Touch Attribution, Data Lakehouses, and Dedicated Melbourne SLAs" },
+  { id: "executive-thought-leadership-linkedin-abm-collins-street-docklands", title: "2. LinkedIn ABM for Collins St & Docklands" },
+  { id: "high-growth-tech-product-acquisition-developer-advocacy-cremorne", title: "3. Tech Acquisition & Advocacy in Cremorne" },
+  { id: "data-privacy-governance-privacy-act-1988-meta-capi", title: "4. Privacy Act Governance & Server-Side CAPI" },
+  { id: "cinematic-4k-video-production-accc-creator-governance", title: "5. 4K Video Production & ACCC Creator Rules" },
+  { id: "disability-discrimination-act-wcag-social-accessibility", title: "6. DDA Compliance & WCAG Social Accessibility" },
+  { id: "vic-ix-peering-equinix-port-melbourne-5g-distribution", title: "7. VIC-IX Peering & 5G Media Delivery in Victoria" },
+  { id: "enterprise-attribution-data-lakehouses-melbourne-slas", title: "8. Multi-Touch Attribution & Melbourne SLAs" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -241,8 +241,8 @@ export default function MelbourneSocialMediaManagementPage() {
 
         {/* SECTION 2 */}
         <h2 id="executive-thought-leadership-linkedin-abm-collins-street-docklands" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Executive Thought Leadership and B2B LinkedIn ABM for Collins Street and Docklands
-        </h2>
+              2. LinkedIn ABM for Collins St & Docklands
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Navigating Melbourne&apos;s primary financial quarters demands an authoritative, high-trust approach to executive communication. Managing directors, investment committee chairs, and enterprise technology leaders actively utilize LinkedIn Marketing Solutions to discover strategic partners, evaluate software vendors, and recruit key executives. We build bespoke executive positioning frameworks that establish corporate leaders as recognized authorities across investment banking, superannuation, legal advisory, and wealth management. Our editorial team crafts whitepapers, industry analyses, and market commentaries that articulate corporate vision with clear authority.
         </p>
@@ -252,8 +252,8 @@ export default function MelbourneSocialMediaManagementPage() {
 
         {/* SECTION 3 */}
         <h2 id="high-growth-tech-product-acquisition-developer-advocacy-cremorne" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. High-Growth Tech Product Acquisition and Developer Advocacy in Cremorne
-        </h2>
+              3. Tech Acquisition & Advocacy in Cremorne
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The technology and creative ecosystem spanning Cremorne, Collingwood, and Docklands serves as the primary engine of Victorian digital product innovation. Ambitious tech companies and venture-backed software scale-ups require agile, full-funnel social marketing strategies to drive product adoption, expand active user communities, and secure capital investment. We architect integrated acquisition funnels across LinkedIn, YouTube, and digital developer channels, optimizing creative messaging for trial activations, software signups, and enterprise seat expansions.
         </p>
@@ -298,8 +298,8 @@ export default function MelbourneSocialMediaManagementPage() {
 
         {/* SECTION 4 */}
         <h2 id="data-privacy-governance-privacy-act-1988-meta-capi" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. Data Privacy Governance, Australian Privacy Principles, and Server-Side CAPI
-        </h2>
+              4. Privacy Act Governance & Server-Side CAPI
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Executing digital marketing campaigns across Australia requires strict compliance with federal privacy legislation and statutory consumer protections. The <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Office of the Australian Information Commissioner</a> enforces the Privacy Act 1988 alongside thirteen Australian Privacy Principles, governing the collection, processing, and storage of customer personal information. In response to mobile browser cookie limitations and heightened consumer privacy standards, our marketing engineers deploy first-party server-side telemetry using the <a href="https://developers.facebook.com/docs/marketing-api/conversions-api/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Meta Conversions API</a>, LinkedIn Conversions API, and Google Tag Manager Server Container.
         </p>
@@ -351,8 +351,8 @@ export default function MelbourneSocialMediaManagementPage() {
 
         {/* SECTION 5 */}
         <h2 id="cinematic-4k-video-production-accc-creator-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. Cinematic 4K Short-Form Video and ACCC Influencer Endorsement Governance
-        </h2>
+              5. 4K Video Production & ACCC Creator Rules
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Algorithmic feeds across TikTok, Instagram Reels, and YouTube Shorts make vertical short-form video the most effective medium for rapid brand recall and customer acquisition. Generic stock video and low-fidelity smartphone footage fail to resonate with discerning Victorian consumers and executive buyers. Our in-house creative production studio oversees every phase of production, from commercial scripting and on-location 4K cinematography across Melbourne landmarks to color grading, sound design, and kinetic typography optimized for muted mobile viewing.
         </p>
@@ -362,8 +362,8 @@ export default function MelbourneSocialMediaManagementPage() {
 
         {/* SECTION 6 */}
         <h2 id="disability-discrimination-act-wcag-social-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Statutory Disability Discrimination Act Compliance and WCAG 2.2 AA Accessibility
-        </h2>
+              6. DDA Compliance & WCAG Social Accessibility
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility represents a critical legal obligation and ethical imperative for commercial enterprises across Victoria. Under the federal Disability Discrimination Act 1992, public-facing digital communications must provide equal access to individuals with auditory, cognitive, visual, or neurological impairments. Social media campaigns published without inclusive design principles alienate valuable audiences and create corporate regulatory exposure. Our production pipeline embeds accessibility protocols into every creative asset in accordance with global <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> guidelines.
         </p>
@@ -373,8 +373,8 @@ export default function MelbourneSocialMediaManagementPage() {
 
         {/* SECTION 7 */}
         <h2 id="vic-ix-peering-equinix-port-melbourne-5g-distribution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. VIC-IX Peering, Equinix Port Melbourne Facilities, and 5G Media Delivery
-        </h2>
+              7. VIC-IX Peering & 5G Media Delivery in Victoria
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Delivering high-resolution video reels, dynamic campaign landing pages, and interactive social experiences across metropolitan Melbourne requires infrastructure optimized for regional telecommunications backbones. We architect campaign delivery pipelines with direct peering at the <a href="https://www.ix.asn.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">VIC-IX</a> internet exchange point and premier carrier facilities located in Equinix Port Melbourne data centers. This specialized peering architecture guarantees that rich media assets and transactional landing pages load within single-digit milliseconds for local users browsing on Telstra and Optus 5G mobile networks.
         </p>
@@ -384,8 +384,8 @@ export default function MelbourneSocialMediaManagementPage() {
 
         {/* SECTION 8 */}
         <h2 id="enterprise-attribution-data-lakehouses-melbourne-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Enterprise Multi-Touch Attribution, Data Lakehouses, and Dedicated Melbourne SLAs
-        </h2>
+              8. Multi-Touch Attribution & Melbourne SLAs
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Enterprise marketing and finance leaders require deterministic, audited verification of marketing return on investment rather than vanity metrics. We construct sophisticated multi-touch attribution models that trace user interactions across paid social, executive content, organic search, and direct conversion funnels. Our data team integrates social advertising telemetry directly with enterprise data warehouses, including Snowflake, Google BigQuery, and Salesforce CRM platforms, delivering executive dashboards that display real-time customer acquisition costs and pipeline velocity.
         </p>

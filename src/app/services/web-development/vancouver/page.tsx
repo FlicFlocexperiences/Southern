@@ -19,7 +19,7 @@ const tableOfContents = [
   },
   {
     "id": "nextjs-headless-architecture-for-cascadia-scale-platforms",
-    "title": "Next.js and Headless Web Architectures for High-Growth SaaS and Tech Brands"
+    "title": "Next.js & Headless Architectures for Vancouver SaaS"
   },
   {
     "id": "bc-pipa-privacy-and-canadian-data-residency",
@@ -31,7 +31,7 @@ const tableOfContents = [
   },
   {
     "id": "pacific-northwest-ecommerce-interac-and-bc-pst-tax-engines",
-    "title": "Cascadian E-Commerce, Interac Debit Rails, and BC PST/GST Tax Automation"
+    "title": "Cascadian E-Commerce, Interac & BC Tax Systems"
   },
   {
     "id": "port-of-vancouver-and-industrial-b2b-supply-chain-portals",
@@ -74,7 +74,7 @@ export default function VancouverWebDevelopmentPage() {
             </p>
 
             <h2 id="nextjs-headless-architecture-for-cascadia-scale-platforms" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Next.js and Headless Web Architectures for High-Growth SaaS and Tech Brands
+              Next.js & Headless Architectures for Vancouver SaaS
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               Ambitious tech companies throughout Metro Vancouver demand decoupled, composable web architectures that deliver immediate page responses and uninterrupted stability during high-volume traffic surges. We build high-velocity frontend interfaces powered by React and Next.js, utilizing server-side rendering, static site generation, and incremental static regeneration to eliminate rendering delays. By separating the user-facing presentation layer from complex backend databases and content repositories, we reduce client-side bundle payloads and enhance system security. This modern architectural approach enables marketing and product teams to publish dynamic campaigns through headless content management systems like Sanity and Contentful without risking code regressions. <strong className="font-semibold text-[#de5e18] tracking-tight">Our precision frontend engineering</strong> eliminates unnecessary script overhead, achieves flawless Core Web Vitals scores, and drives conversion rates across desktop and mobile devices. To learn more about our development standards and software philosophy, explore our <Link href="/about" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">about us</Link> page.
@@ -95,7 +95,7 @@ export default function VancouverWebDevelopmentPage() {
             </p>
 
             <h2 id="pacific-northwest-ecommerce-interac-and-bc-pst-tax-engines" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Cascadian E-Commerce, Interac Debit Rails, and BC PST/GST Tax Automation
+              Cascadian E-Commerce, Interac & BC Tax Systems
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               Vancouver is a globally celebrated center for outdoor lifestyle brands, direct-to-consumer innovators, and sustainable retail enterprises that demand sophisticated e-commerce engineering. We build high-converting transactional storefronts and headless Shopify Plus solutions integrated directly with Canadian payment channels, including <a href="https://www.interac.ca/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Interac</a> e-Transfer, Interac Online, Apple Pay, and Stripe Canada. Our platforms incorporate dynamic tax calculation logic that automatically computes British Columbia's 7% Provincial Sales Tax (PST) alongside the 5% federal GST, while dynamically adjusting tax rates for cross-provincial shipments across Canada. We also implement real-time shipping carrier integrations with Canada Post Developer APIs, Purolator, FedEx Canada, and regional Pacific Northwest courier services for transparent order tracking. <strong className="font-semibold text-[#de5e18] tracking-tight">Streamlining transactional workflows and mobile checkout speed</strong> significantly reduces cart abandonment and maximizes average order value. To complement your online platform with an authoritative visual identity that stands out in competitive markets, review our comprehensive <Link href="/services/branding" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">branding services</Link>.

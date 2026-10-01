@@ -1058,7 +1058,7 @@ export const articles: Article[] = [
         <li><strong>3. Retargeting & Customer LTV Expansion (10% of Budget):</strong> High-intent first-party audience segments (30-day website visitors, past purchasers, abandoned checkouts) targeted with limited-time VIP promotions, bundle discounts, and loyalty incentives.</li>
       </ul>
 
-      <h2>6. Post-Click Conversion Rate Optimization (CRO): The Message Match Rule</h2>
+      <h2>6. Post-Click CRO & the Message Match Rule</h2>
       <p>
         The most captivating ad creative in the world will fail if the destination page creates cognitive friction. Sending paid traffic to a cluttered homepage or a generic product template destroys conversion momentum.
       </p>
@@ -1264,7 +1264,7 @@ export const articles: Article[] = [
         <li><strong>The Z-Pattern (Visual & Hero Sections):</strong> Users scan from top-left (logo/tagline) to top-right (primary navigation CTA), diagonally down to bottom-left (core feature graphic/video), and across to the bottom-right (final conversion trigger). Structuring your hero elements along this path guarantees frictionless cognitive flow.</li>
       </ul>
 
-      <h2>3. Hick's Law: Eliminating Decision Paralysis Through Ruthless Simplicity</h2>
+      <h2>3. Hick's Law: Eliminating Decision Paralysis</h2>
       <p>
         Hick's Law dictates that the time required to make a decision increases logarithmically with the number and complexity of choices presented. When a landing page features secondary navigation links, header dropdowns, social media icons, and competing offers, conversion rates crater.
       </p>
@@ -1283,7 +1283,7 @@ export const articles: Article[] = [
         <li><strong>4. The Anchoring Heuristic:</strong> Introducing a premium enterprise tier or showing an original higher value anchor establishes high perceived worth before revealing your accessible core pricing.</li>
       </ul>
 
-      <h2>5. Comparison: Low-Converting Generic Page vs. Psychologically Optimized Funnel</h2>
+      <h2>5. Standard Generic Page vs. High-Converting Funnel</h2>
       <p>
         The table below contrasts the architectural and behavioral differences between standard corporate web pages and high-converting landing page funnels:
       </p>

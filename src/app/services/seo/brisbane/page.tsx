@@ -35,12 +35,12 @@ export const metadata: Metadata = {
 };
 
 const tableOfContents = [
-  { id: "brisbane-commercial-search-landscape", title: "1. The Brisbane Commercial Search Landscape and Generative Search Dynamics" },
-  { id: "eagle-street-financial-eeat", title: "2. Institutional E-E-A-T and Entity Authority for Eagle Street Financial Leaders" },
-  { id: "fortitude-valley-generative-engine-optimization", title: "3. Generative Engine Optimization and AI Citations for Fortitude Valley Tech Scale-Ups" },
-  { id: "greater-brisbane-programmatic-local-seo", title: "4. Programmatic Local SEO and Google Map Pack Domination Across Greater Brisbane" },
-  { id: "brisbane-tradecoast-b2b-seo", title: "5. B2B Industrial Search Capture for Brisbane TradeCoast and Logistics Corridors" },
-  { id: "oaic-privacy-and-accc-compliance", title: "6. Regulatory Data Governance, OAIC Privacy Compliance, and Ethical SEO" },
+  { id: "brisbane-commercial-search-landscape", title: "1. Brisbane Search & AI Search Dynamics" },
+  { id: "eagle-street-financial-eeat", title: "2. Institutional E-E-A-T for Eagle Street Leaders" },
+  { id: "fortitude-valley-generative-engine-optimization", title: "3. GEO & AI Citations for Fortitude Valley Tech" },
+  { id: "greater-brisbane-programmatic-local-seo", title: "4. Programmatic Local SEO & Brisbane Map Pack" },
+  { id: "brisbane-tradecoast-b2b-seo", title: "5. B2B Industrial Search for Brisbane TradeCoast" },
+  { id: "oaic-privacy-and-accc-compliance", title: "6. OAIC Privacy Compliance & Ethical SEO" },
   { id: "qld-ix-peering-core-web-vitals", title: "7. QLD-IX Peering, NextDC B1 and B2 Edge Delivery, and Core Web Vitals" },
   { id: "closed-loop-crm-attribution-governance", title: "8. Closed-Loop CRM Attribution and Multi-Quarter Search Governance" },
   { id: "reviews", title: "Reviews" },
@@ -225,8 +225,8 @@ export default function BrisbaneSeoPage() {
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
         <h2 id="brisbane-commercial-search-landscape" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          1. The Brisbane Commercial Search Landscape and Generative Search Dynamics
-        </h2>
+              1. Brisbane Search & AI Search Dynamics
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Brisbane represents an expanding economic powerhouse</strong> across the Asia-Pacific region, driving extensive corporate trade across the Eagle Street Golden Triangle and the Queen Street precinct. Ahead of the Brisbane 2032 Olympic Games, capital investments are accelerating across Queensland commercial industries. In this competitive business market, superficial keyword repetition fails to produce sustainable market share. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">SEO company in Brisbane</strong>, Southern Edge Marketing engineers technical search architectures designed for corporate enterprises. We examine the complex evaluation journeys of corporate buyers, structuring topical networks that convert organic discovery into qualified enterprise pipeline.
         </p>
@@ -236,8 +236,8 @@ export default function BrisbaneSeoPage() {
 
         {/* SECTION 2 */}
         <h2 id="eagle-street-financial-eeat" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Institutional E-E-A-T and Entity Authority for Eagle Street Financial Leaders
-        </h2>
+              2. Institutional E-E-A-T for Eagle Street Leaders
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Eagle Street financial corridor represents Queensland primary center</strong> for wealth management, private equity partnerships, resources capital, and corporate advisory institutions. Establishing search visibility across high-stakes financial topics requires strict alignment with Google Experience, Expertise, Authoritativeness, and Trustworthiness guidelines. Our <strong className="font-semibold text-[#de5e18] tracking-tight">Brisbane SEO agency</strong> builds compliance-vetted knowledge assets corroborated by recognized Australian economic authorities. We engineer connected entity clusters addressing complex institutional finance queries, establishing your firm as an indisputable authority across the Australian commercial financial ecosystem.
         </p>
@@ -247,8 +247,8 @@ export default function BrisbaneSeoPage() {
 
         {/* SECTION 3 */}
         <h2 id="fortitude-valley-generative-engine-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. Generative Engine Optimization and AI Citations for Fortitude Valley Tech Scale-Ups
-        </h2>
+              3. GEO & AI Citations for Fortitude Valley Tech
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Fortitude Valley technology precinct forms Queensland premier hub</strong> for software innovation, digital product scale-ups, and venture-backed enterprises. For expanding enterprise software platforms, rising digital advertising costs threaten customer acquisition economics, making organic discovery essential for healthy unit margins. Our <strong className="font-semibold text-[#de5e18] tracking-tight">enterprise SEO in Brisbane</strong> implements Generative Engine Optimization methodologies, positioning software platforms as primary source citations in artificial intelligence models including Perplexity, ChatGPT Search, and Google AI Overviews. We organize technical documentation, product capabilities, and comparative benchmarks for automated machine comprehension.
         </p>
@@ -293,8 +293,8 @@ export default function BrisbaneSeoPage() {
 
         {/* SECTION 4 */}
         <h2 id="greater-brisbane-programmatic-local-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. Programmatic Local SEO and Google Map Pack Domination Across Greater Brisbane
-        </h2>
+              4. Programmatic Local SEO & Brisbane Map Pack
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Greater Brisbane encompasses extensive commercial corridors</strong> across diverse municipal districts, from South Bank and West End to Milton, Chermside, and Mount Gravatt. A single generic directory listing cannot capture localized high-intent searches originating across these separate commercial areas. Our <strong className="font-semibold text-[#de5e18] tracking-tight">local SEO services in Brisbane</strong> construct synchronized Google Business Profile architectures featuring verified commercial facilities, accurate geographic coordinates, and consistent citations across trusted Australian business registries. This programmatic framework captures local commercial intent, securing dominant placements in the Google Local 3-Pack.
         </p>
@@ -346,8 +346,8 @@ export default function BrisbaneSeoPage() {
 
         {/* SECTION 5 */}
         <h2 id="brisbane-tradecoast-b2b-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. B2B Industrial Search Capture for Brisbane TradeCoast and Logistics Corridors
-        </h2>
+              5. B2B Industrial Search for Brisbane TradeCoast
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Brisbane TradeCoast industrial precinct around Pinkenba, Murarrie, and the Port</strong> represents a vital logistics gateway for eastern Australia. Corporate supply chain directors, industrial procurement managers, and freight operators rely on technical search discovery to find certified warehouse facilities, cold-chain operators, and specialized engineering contractors. Our <strong className="font-semibold text-[#de5e18] tracking-tight">B2B SEO in Brisbane</strong> organizes industrial product lines, freight capacities, and safety accreditations to capture high-value commercial search queries, converting complex enterprise procurement searches into verified requests for proposal.
         </p>
@@ -357,8 +357,8 @@ export default function BrisbaneSeoPage() {
 
         {/* SECTION 6 */}
         <h2 id="oaic-privacy-and-accc-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Regulatory Data Governance, OAIC Privacy Compliance, and Ethical SEO
-        </h2>
+              6. OAIC Privacy Compliance & Ethical SEO
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Operating an enterprise digital presence in Brisbane demands strict adherence</strong> to statutory privacy mandates and fair marketing standards. Our search optimization frameworks comply completely with the Privacy Act 1988 and the Australian Privacy Principles administered by the Office of the Australian Information Commissioner. We engineer privacy-first analytics implementations that eliminate unauthorized third-party telemetry, manage user cookies dynamically, and prevent confidential corporate data leakage across digital search engine conduits and advertising network scripts.
         </p>

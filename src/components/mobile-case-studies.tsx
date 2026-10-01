@@ -41,9 +41,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ slug, title, category, durati
       
       {/* Text Meta Container */}
       <div className="flex flex-col gap-2">
-        <h3 className="text-[24px] lg:text-[28px] font-bold text-[#0f0f0f] leading-none transition-colors duration-300">
+        <p className="text-[24px] lg:text-[28px] font-bold text-[#0f0f0f] leading-none transition-colors duration-300">
           {title}
-        </h3>
+        </p>
         
         {result && (
           <p className="text-[13px] lg:text-[14px] text-black/75 leading-relaxed font-normal">
@@ -120,9 +120,9 @@ export const MobileCaseStudies = () => {
         {/* Subtle divider line across the screen */}
         <div className="w-full h-px bg-black/5 mb-10 max-w-[1200px]" />
         
-        <h2 className="text-[60px] lg:text-[80px] xl:text-[104px] font-semibold text-black leading-none tracking-tight text-center uppercase">
+        <p className="text-[60px] lg:text-[80px] xl:text-[104px] font-semibold text-black leading-none tracking-tight text-center uppercase">
           CASE STUDIES
-        </h2>
+        </p>
       </div>
 
       {/* Grid of Cards */}

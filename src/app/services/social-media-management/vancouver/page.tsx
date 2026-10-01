@@ -19,7 +19,7 @@ const tableOfContents = [
   },
   {
     "id": "mount-pleasant-b2b-thought-leadership-and-linkedin-abm",
-    "title": "B2B Executive Thought Leadership and Account-Based Social for Tech Hubs"
+    "title": "LinkedIn ABM for Vancouver Tech Hub Leaders"
   },
   {
     "id": "cleantech-climate-and-esg-social-growth",
@@ -39,11 +39,11 @@ const tableOfContents = [
   },
   {
     "id": "cinematic-short-form-video-and-cascadian-creator-networks",
-    "title": "Cinematic Short-Form Video Production and Pacific Northwest Storytelling"
+    "title": "Cinematic Short-Form Video & Cascadian Creators"
   },
   {
     "id": "enterprise-analytics-multi-touch-attribution-and-roas",
-    "title": "Enterprise Attribution Modeling, CAC Optimization, and Transparent Reporting"
+    "title": "Attribution Modeling & CAC Optimization in Quebec"
   },
   {
     "id": "reviews",
@@ -74,8 +74,8 @@ export default function VancouverSocialMediaManagementPage() {
         </p>
 
         <h2 id="mount-pleasant-b2b-thought-leadership-and-linkedin-abm" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          B2B Executive Thought Leadership and Account-Based Social for Tech Hubs
-        </h2>
+              LinkedIn ABM for Vancouver Tech Hub Leaders
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Operating within Vancouver's thriving software ecosystem</strong> requires an authoritative, high-credibility approach to executive positioning and business development. B2B decision-makers, venture capital partners, and enterprise software buyers throughout British Columbia and the Pacific Northwest rely heavily on LinkedIn to discover innovative platforms, evaluate vendor credibility, and assess market leadership. We build high-impact executive thought leadership architectures that position your founders and C-suite leadership as recognized authorities across enterprise SaaS, artificial intelligence, and digital infrastructure. Our specialized technical copywriters craft data-backed whitepapers, industry analyses, proprietary research teardowns, and executive commentary that articulate complex product value propositions with clarity. To compress long enterprise sales cycles and accelerate deal velocity, we synchronize organic thought leadership with hyper-targeted Account-Based Marketing (ABM) paid campaigns directed at key stakeholders within Tier 1 Canadian and US enterprises. <strong className="font-semibold text-[#de5e18] tracking-tight">Our strategic B2B social frameworks</strong> nurture buying committees across multiple digital touchpoints, converting passive executive impressions into qualified institutional pipeline. To ensure your digital social presence is backed by high-conversion web infrastructure, explore our custom <Link href="/services/web-development" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">web development</Link> solutions engineered for enterprise scale.
         </p>
@@ -109,15 +109,15 @@ export default function VancouverSocialMediaManagementPage() {
         </p>
 
         <h2 id="cinematic-short-form-video-and-cascadian-creator-networks" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Cinematic Short-Form Video Production and Pacific Northwest Storytelling
-        </h2>
+              Cinematic Short-Form Video & Cascadian Creators
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Modern discovery algorithms on social platforms</strong> heavily favor vertical, high-retention video content that captures user attention immediately. Benefiting from Vancouver's world-class visual effects, digital media, and film production ecosystem, our in-house creative studio produces studio-quality short-form video assets tailored for maximum engagement on TikTok for Business, Instagram Reels, and YouTube Shorts. We handle every stage of the production pipeline, from conceptual scripting and storyboarding to on-location cinematography across iconic Vancouver backdrops, including Coal Harbour, Gastown, the North Shore mountains, and modern architectural spaces. We engineer dynamic video assets with compelling psychological hooks within the first two seconds, maintaining exceptional watch-through rates and triggering organic algorithmic distribution surges. In parallel with brand-owned creative production, we curate and manage high-impact creator partnerships with vetted Vancouver influencers whose authentic audiences match your target demographic. We oversee all creator outreach, contract negotiations, usage licensing, and performance tracking to ensure every collaborative campaign delivers verified social proof and measurable commercial reach. <strong className="font-semibold text-[#de5e18] tracking-tight">Our studio-grade short-form video production and creator network</strong> elevate brand perception and deliver a steady pipeline of high-converting creative assets for both organic and paid channels.
         </p>
 
         <h2 id="enterprise-analytics-multi-touch-attribution-and-roas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Enterprise Attribution Modeling, CAC Optimization, and Transparent Reporting
-        </h2>
+              Attribution Modeling & CAC Optimization in Quebec
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise marketing leadership requires definitive commercial verification</strong> rather than superficial vanity metrics such as follower counts or raw post impressions. At Southern Edge Marketing, we deploy advanced multi-touch attribution architectures to track exact lead trajectories, pipeline value, and customer acquisition costs. Our data analysts configure custom tracking models across LinkedIn, Meta, and Google Analytics 4, revealing how social touchpoints directly accelerate deal velocity and long-term customer lifetime value. We conduct continuous algorithmic bid optimizations, creative split testing, and audience refinement to maximize Return on Ad Spend across Canadian and international campaigns. Every enterprise partnership is backed by live interactive analytics dashboards and dedicated monthly strategic briefings led by senior growth directors operating on Pacific Time business hours. <strong className="font-semibold text-[#de5e18] tracking-tight">Our transparent, revenue-centric reporting</strong> ensures your marketing leadership maintains complete clarity on customer acquisition economics and commercial return. When you are ready to scale your brand with the leading <strong className="font-semibold text-[#de5e18] tracking-tight">social media management company in Vancouver</strong>, <Link href="/contact" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">contact our social media strategists</Link> to schedule a comprehensive digital audit and growth consultation.
         </p>

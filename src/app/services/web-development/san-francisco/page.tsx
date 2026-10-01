@@ -35,13 +35,13 @@ export const metadata: Metadata = {
 };
 
 const tableOfContents = [
-  { id: "san-francisco-commercial-landscape-and-enterprise-web-architecture", title: "1. The San Francisco Commercial Landscape and Enterprise Web Architecture" },
-  { id: "enterprise-nextjs-and-composable-headless-systems-for-silicon-valley", title: "2. Enterprise Next.js and Composable Headless Systems for Silicon Valley Scale-Ups" },
-  { id: "fintech-healthtech-compliance-ccpa-soc2-zero-trust-security", title: "3. FinTech and HealthTech Compliance: CCPA/CPRA, SOC 2, and Zero-Trust Security" },
-  { id: "high-concurrency-saas-platforms-graphql-microservices", title: "4. High-Concurrency SaaS Platforms, GraphQL Gateways, and Microservices Orchestration" },
-  { id: "statutory-ada-title-iii-california-unruh-act-wcag-accessibility", title: "5. Statutory ADA Title III, California Unruh Act, and WCAG 2.2 AA Accessibility" },
-  { id: "mission-bay-life-sciences-b2b-enterprise-portals-cloud-integrations", title: "6. Mission Bay Life Sciences, B2B Enterprise Portals, and Cloud Integrations" },
-  { id: "sfmix-peering-200-paul-carrier-hotels-pacific-rim-edge", title: "7. SFMIX Peering, 200 Paul Carrier Hotels, and Pacific Rim Edge Peering" },
+  { id: "san-francisco-commercial-landscape-and-enterprise-web-architecture", title: "1. San Francisco Commercial Landscape & Web Architecture" },
+  { id: "enterprise-nextjs-and-composable-headless-systems-for-silicon-valley", title: "2. Next.js & Headless Systems for Silicon Valley" },
+  { id: "fintech-healthtech-compliance-ccpa-soc2-zero-trust-security", title: "3. FinTech & HealthTech CCPA/CPRA and SOC 2 Security" },
+  { id: "high-concurrency-saas-platforms-graphql-microservices", title: "4. High-Concurrency SaaS & GraphQL Gateways" },
+  { id: "statutory-ada-title-iii-california-unruh-act-wcag-accessibility", title: "5. ADA Title III, Unruh Act & WCAG Accessibility" },
+  { id: "mission-bay-life-sciences-b2b-enterprise-portals-cloud-integrations", title: "6. Mission Bay Life Sciences & Enterprise Portals" },
+  { id: "sfmix-peering-200-paul-carrier-hotels-pacific-rim-edge", title: "7. SFMIX Peering & 200 Paul Edge Infrastructure" },
   { id: "agile-delivery-sprints-dedicated-san-francisco-support-slas", title: "8. Agile Delivery Sprints and Dedicated San Francisco Support SLAs" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
@@ -208,8 +208,8 @@ export default function SanFranciscoWebDevelopmentPage() {
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
         <h2 id="san-francisco-commercial-landscape-and-enterprise-web-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          1. The San Francisco Commercial Landscape and Enterprise Web Architecture
-        </h2>
+              1. San Francisco Commercial Landscape & Web Architecture
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">San Francisco operates as the premier global center of technology innovation and venture capital</strong>, generating exceptional economic output across the Bay Area. From engineering hubs in SoMa and Mission Bay to investment firms lining the Financial District along California Street, local enterprises demand high-scale web platforms. In this hyper-competitive market, bloated monolithic legacy websites create performance friction that damages enterprise sales pipelines. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">web development company in San Francisco</strong>, Southern Edge Marketing engineers custom web platforms and composable cloud systems purpose-built for Bay Area market leaders.
         </p>
@@ -219,8 +219,8 @@ export default function SanFranciscoWebDevelopmentPage() {
 
         {/* SECTION 2 */}
         <h2 id="enterprise-nextjs-and-composable-headless-systems-for-silicon-valley" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Enterprise Next.js and Composable Headless Systems for Silicon Valley Scale-Ups
-        </h2>
+              2. Next.js & Headless Systems for Silicon Valley
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           High-growth technology enterprises across SoMa, Jackson Square, and Silicon Valley demand decoupled web architectures that deliver near-instantaneous interaction speeds during viral traffic surges. We engineer high-velocity frontend interfaces powered by React and Next.js, utilizing server-side rendering, static site generation, and React Server Components to eliminate rendering bottlenecks. By separating the user presentation layer from backend databases, our team significantly reduces page payloads and minimizes vulnerability attack surfaces across all client endpoints.
         </p>
@@ -230,8 +230,8 @@ export default function SanFranciscoWebDevelopmentPage() {
 
         {/* SECTION 3 */}
         <h2 id="fintech-healthtech-compliance-ccpa-soc2-zero-trust-security" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. FinTech and HealthTech Compliance: CCPA/CPRA, SOC 2, and Zero-Trust Security
-        </h2>
+              3. FinTech & HealthTech CCPA/CPRA and SOC 2 Security
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Operating within San Francisco requires institutional cyber resilience, zero-trust security frameworks, and strict regulatory alignment across every digital touchpoint. Our engineering lifecycle implements rigorous compliance protocols in alignment with the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA) standards enforced by the <a href="https://cppa.ca.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">California Privacy Protection Agency</a>. For private equity funds, fintech scale-ups, and healthtech innovators, we architect role-based access controls, multi-factor authentication, cryptographic tokenization, and end-to-end TLS 1.3 encryption.
         </p>
@@ -276,8 +276,8 @@ export default function SanFranciscoWebDevelopmentPage() {
 
         {/* SECTION 4 */}
         <h2 id="high-concurrency-saas-platforms-graphql-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. High-Concurrency SaaS Platforms, GraphQL Gateways, and Microservices Orchestration
-        </h2>
+              4. High-Concurrency SaaS & GraphQL Gateways
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           San Francisco represents the global capital of software innovation, enterprise SaaS platforms, and artificial intelligence scale-ups. We develop custom digital application platforms, robust GraphQL API gateways, and high-concurrency microservices architectures engineered to process massive data throughput without latency degradation. Our transactional architectures integrate seamlessly with modern payment and billing rails, including Stripe Billing, Adyen, Apple Pay, and enterprise invoicing systems, delivering frictionless checkout experiences for B2B and consumer markets.
         </p>
@@ -329,8 +329,8 @@ export default function SanFranciscoWebDevelopmentPage() {
 
         {/* SECTION 5 */}
         <h2 id="statutory-ada-title-iii-california-unruh-act-wcag-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. Statutory ADA Title III, California Unruh Act, and WCAG 2.2 AA Accessibility
-        </h2>
+              5. ADA Title III, Unruh Act & WCAG Accessibility
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility is an urgent legal and commercial priority for San Francisco organizations, as California courts enforce strict liability under the Unruh Civil Rights Act (Civil Code § 51) and federal <a href="https://www.ada.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">ADA Title III</a> statutes. Commercial enterprises and technology providers face substantial legal exposure and financial liability if their digital properties fail to comply with <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> accessibility criteria. Rather than relying on superficial third-party widget overlays that fail judicial scrutiny, our engineering practice builds native accessibility into every layer of code architecture.
         </p>
@@ -340,8 +340,8 @@ export default function SanFranciscoWebDevelopmentPage() {
 
         {/* SECTION 6 */}
         <h2 id="mission-bay-life-sciences-b2b-enterprise-portals-cloud-integrations" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Mission Bay Life Sciences, B2B Enterprise Portals, and Cloud Integrations
-        </h2>
+              6. Mission Bay Life Sciences & Enterprise Portals
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Across Mission Bay biotechnology hubs, Financial District commercial towers, and industrial logistics corridors throughout the East Bay and Silicon Valley, B2B enterprises and life sciences organizations require modern web infrastructure to orchestrate high-volume operations. We design and construct custom client extranets, research reporting portals, HIPAA-compliant patient interfaces, and vendor management systems that connect directly with enterprise resource planning and CRM software such as Salesforce, HubSpot, SAP, Oracle NetSuite, and Veeva Systems.
         </p>
@@ -351,8 +351,8 @@ export default function SanFranciscoWebDevelopmentPage() {
 
         {/* SECTION 7 */}
         <h2 id="sfmix-peering-200-paul-carrier-hotels-pacific-rim-edge" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. SFMIX Peering, 200 Paul Carrier Hotels, and Pacific Rim Edge Peering
-        </h2>
+              7. SFMIX Peering & 200 Paul Edge Infrastructure
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Delivering blazing interaction speeds across San Francisco, the Peninsula, South Bay, and East Bay requires edge caching infrastructure tuned specifically to regional telecommunications backbones. We deploy globally distributed content delivery networks featuring direct edge peering at the <a href="https://www.sfmix.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">San Francisco Internet Exchange (SFMIX)</a> and premier carrier hotels at 200 Paul Avenue and 365 Main Street in San Francisco. This localized edge routing guarantees that cached static assets, image files, and serverless compute functions execute within single-digit milliseconds of local end users.
         </p>

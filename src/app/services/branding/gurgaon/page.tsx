@@ -43,7 +43,7 @@ const tableOfContents = [
   },
   {
     id: "commercial-growth-market-valuation",
-    title: "Driving Enterprise Valuation and Commercial Growth Through Brand Assets"
+    title: "Driving Valuation & Commercial Brand Growth"
   },
   {
     id: "reviews",
@@ -116,8 +116,8 @@ export default function GurgaonBrandingPage() {
         </p>
 
         <h2 id="commercial-growth-market-valuation" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Driving Enterprise Valuation and Commercial Growth Through Brand Assets
-        </h2>
+              Driving Valuation & Commercial Brand Growth
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Ultimately, an elite corporate brand identity is a primary driver of your company's overall financial valuation and market equity. We design professional brands that operate as valuable commercial assets, improving customer retention and attracting institutional investment. A recognizable, trusted brand name increases click-through rates on search platforms and boosts conversions on digital landing pages. We establish comprehensive brand governance systems to protect your intellectual property and manage assets consistently across all departments. This systematic standardization protects your corporate reputation and ensures a unified public image. We reference standard industry frameworks like the <a href="https://worlddesign.org" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">World Design Organization</a> to maintain global design standards. Partnering with our branding company in Gurgaon turns your identity into a high-performance engine for sustainable business growth.
         </p>

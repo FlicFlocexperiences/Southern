@@ -136,7 +136,7 @@ export const DesktopIntegrations = () => {
         <div className="text-center flex flex-col items-center">
           <h2 className="flex flex-col gap-0 uppercase text-center font-sans tracking-tight">
             <span className="text-[40px] lg:text-[54px] xl:text-[64px] leading-[1.1] font-semibold text-[#A1A1A1]">
-              INTEGRATIONS THAT
+              INTEGRATIONS THAT{" "}
             </span>
             <span className="text-[40px] lg:text-[54px] xl:text-[64px] leading-[1.1] font-semibold text-[#0F0F0F] mt-1">
               SCALE WITH YOU

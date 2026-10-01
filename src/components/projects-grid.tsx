@@ -494,9 +494,9 @@ export const ProjectsGrid = () => {
                 
                 {/* Content Body */}
                 <div className="flex flex-col p-6 lg:p-8 flex-1">
-                  <h2 className="text-[20px] lg:text-[24px] font-bold text-[#3e2723] mb-3">
+                  <h3 className="text-[20px] lg:text-[24px] font-bold text-[#3e2723] mb-3">
                     {project.title}
-                  </h2>
+                  </h3>
                   
                   <p className="text-[14px] text-gray-600 leading-relaxed mb-6 flex-1">
                     {project.description}

@@ -36,13 +36,13 @@ export const metadata: Metadata = {
 
 const tableOfContents = [
   { id: "rak-vision-2030-industrial-mobility-rakez", title: "1. RAK Vision 2030 and Industrial Enterprise Mobility Across RAKEZ" },
-  { id: "hospitality-proptech-al-marjan-wynn-ecosystem", title: "2. Hospitality, PropTech, and Luxury Mobility for Al Marjan Island and Wynn Ecosystem" },
-  { id: "rak-dao-web3-fintech-security-architecture", title: "3. RAK Digital Assets Oasis (RAK DAO) and High-Security FinTech Architecture" },
+  { id: "hospitality-proptech-al-marjan-wynn-ecosystem", title: "2. Hospitality & PropTech for Al Marjan Island" },
+  { id: "rak-dao-web3-fintech-security-architecture", title: "3. RAK DAO & High-Security FinTech Architecture" },
   { id: "bilingual-arabic-rtl-ux-engineering", title: "4. Bilingual Arabic RTL UX Engineering and Cultural Localization" },
-  { id: "compliance-tdra-uae-data-protection-law", title: "5. Compliance with TDRA Guidelines and UAE Personal Data Protection Law" },
-  { id: "low-latency-gcc-edge-hosting-uae-ix", title: "6. Low-Latency GCC Edge Hosting and UAE-IX Telecom Infrastructure Peering" },
-  { id: "industrial-iot-supply-chain-saqr-port", title: "7. Industrial IoT, Supply Chain Synchronization, and Port Logistics at Saqr Port" },
-  { id: "product-lifecycle-governance-enterprise-scale", title: "8. Full-Lifecycle Product Governance and Multi-Channel Enterprise Scale" },
+  { id: "compliance-tdra-uae-data-protection-law", title: "5. TDRA Compliance & UAE Data Protection Law" },
+  { id: "low-latency-gcc-edge-hosting-uae-ix", title: "6. Low-Latency GCC Edge Hosting & UAE-IX Peering" },
+  { id: "industrial-iot-supply-chain-saqr-port", title: "7. Industrial IoT & Logistics at Saqr Port" },
+  { id: "product-lifecycle-governance-enterprise-scale", title: "8. Product Lifecycle Governance & Enterprise Scale" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -219,8 +219,8 @@ export default function RasAlKhaimahAppDevelopmentPage() {
 
         {/* SECTION 2 */}
         <h2 id="hospitality-proptech-al-marjan-wynn-ecosystem" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Hospitality, PropTech, and Luxury Mobility for Al Marjan Island and Wynn Ecosystem
-        </h2>
+              2. Hospitality & PropTech for Al Marjan Island
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The luxury hospitality and real estate sectors in Ras Al Khaimah are experiencing unprecedented expansion, anchored by waterfront developments on <strong className="font-semibold text-[#de5e18] tracking-tight">Al Marjan Island</strong> and Mina Al Arab. With the arrival of the multi-billion dollar Wynn Al Marjan Island integrated resort, affluent international travelers and property investors expect seamless digital interactions. Luxury mobile applications must deliver effortless digital guest journeys, incorporating keyless room access via Bluetooth protocols, concierge messaging, interactive resort wayfinding, fine-dining reservations, and instant folio settlements.
         </p>
@@ -230,8 +230,8 @@ export default function RasAlKhaimahAppDevelopmentPage() {
 
         {/* SECTION 3 */}
         <h2 id="rak-dao-web3-fintech-security-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. RAK Digital Assets Oasis (RAK DAO) and High-Security FinTech Architecture
-        </h2>
+              3. RAK DAO & High-Security FinTech Architecture
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           With the official launch of the <strong className="font-semibold text-[#de5e18] tracking-tight">RAK Digital Assets Oasis (RAK DAO)</strong>, the world&apos;s first purpose-built free zone dedicated to virtual assets and Web3 enterprises, Ras Al Khaimah has established itself as an innovative center for digital finance. Engineering mobile software for this ecosystem demands deep technical mastery of distributed ledger technology, hardware cryptographic key custody, non-custodial wallet management, and secure smart contracts. Mobile applications operating within RAK DAO must maintain uncompromising defenses against sophisticated cyber threats.
         </p>
@@ -329,8 +329,8 @@ export default function RasAlKhaimahAppDevelopmentPage() {
 
         {/* SECTION 5 */}
         <h2 id="compliance-tdra-uae-data-protection-law" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. Compliance with TDRA Guidelines and UAE Personal Data Protection Law
-        </h2>
+              5. TDRA Compliance & UAE Data Protection Law
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Deploying enterprise digital services and commercial mobile applications across Ras Al Khaimah requires rigorous compliance with regulatory frameworks established by the <a href="https://tdra.gov.ae/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Telecommunications and Digital Government Regulatory Authority (TDRA)</a>. Furthermore, enterprise platforms must align with UAE Federal Decree-Law No. 45 of 2021 on Personal Data Protection, which imposes strict legal mandates concerning user consent capture, data sovereignty, international transfers, and automated breach notifications.
         </p>
@@ -340,8 +340,8 @@ export default function RasAlKhaimahAppDevelopmentPage() {
 
         {/* SECTION 6 */}
         <h2 id="low-latency-gcc-edge-hosting-uae-ix" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Low-Latency GCC Edge Hosting and UAE-IX Telecom Infrastructure Peering
-        </h2>
+              6. Low-Latency GCC Edge Hosting & UAE-IX Peering
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Mobile application responsiveness is directly correlated with user retention, transaction completion rates, and overall brand satisfaction. In the modern UAE economy, business executives, factory supervisors, and retail consumers expect mobile interactions to respond with near-instantaneous speed. When mobile applications rely on legacy cloud servers hosted overseas, network latency introduces perceptible lag spikes that disrupt operational communications. Modern mobile backends must integrate directly with regional telecommunications infrastructure across the Emirates.
         </p>
@@ -351,8 +351,8 @@ export default function RasAlKhaimahAppDevelopmentPage() {
 
         {/* SECTION 7 */}
         <h2 id="industrial-iot-supply-chain-saqr-port" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. Industrial IoT, Supply Chain Synchronization, and Port Logistics at Saqr Port
-        </h2>
+              7. Industrial IoT & Logistics at Saqr Port
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Ras Al Khaimah serves as a vital maritime and industrial gateway for the Middle East, anchored by <strong className="font-semibold text-[#de5e18] tracking-tight">Saqr Port</strong>, the largest bulk handling port in the region, alongside extensive manufacturing and logistics operations. Industrial facilities operating in these demanding physical environments require specialized mobile software capable of interfacing with Internet of Things sensors, automated weighbridges, RFID scanners, and GPS fleets, often operating in remote locations where cellular connectivity is intermittent.
         </p>
@@ -362,8 +362,8 @@ export default function RasAlKhaimahAppDevelopmentPage() {
 
         {/* SECTION 8 */}
         <h2 id="product-lifecycle-governance-enterprise-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Full-Lifecycle Product Governance and Multi-Channel Enterprise Scale
-        </h2>
+              8. Product Lifecycle Governance & Enterprise Scale
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Building a market-leading enterprise mobile application is an ongoing technological partnership that demands continuous governance, disciplined quality control, and strategic product evolution. From initial architectural discovery, technical proof-of-concept modeling, and human-centered UX design to automated continuous integration pipelines and seamless submissions to the Apple App Store and Google Play Store, our enterprise delivery framework eliminates friction. We conduct automated testing across physical devices to verify pristine performance before release.
         </p>

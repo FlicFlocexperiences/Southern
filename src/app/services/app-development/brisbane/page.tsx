@@ -36,13 +36,13 @@ export const metadata: Metadata = {
 
 const tableOfContents = [
   { id: "brisbane-enterprise-innovation-and-mobile-velocity", title: "1. Brisbane's Enterprise Innovation Ecosystem and Mobile Velocity" },
-  { id: "bank-grade-mobile-engineering-eagle-street", title: "2. Bank-Grade Mobile Engineering for Eagle Street Financial Institutions" },
-  { id: "privacy-act-apra-cps-234-and-data-sovereignty", title: "3. Australian Privacy Principles, APRA CPS 234, and Sovereign Data Governance" },
-  { id: "fortitude-valley-tech-hub-and-edge-ai-capabilities", title: "4. Fortitude Valley Tech Hub, High-Growth Scale-Ups, and Edge AI Capabilities" },
-  { id: "native-swift-kotlin-and-react-native-strategy", title: "5. Native Swift, Android Kotlin, and High-Performance React Native Strategy" },
+  { id: "bank-grade-mobile-engineering-eagle-street", title: "2. Bank-Grade Mobile Engineering for Eagle Street" },
+  { id: "privacy-act-apra-cps-234-and-data-sovereignty", title: "3. APRA CPS 234 & Sovereign Data Governance" },
+  { id: "fortitude-valley-tech-hub-and-edge-ai-capabilities", title: "4. Fortitude Valley Tech Hub & Edge AI Solutions" },
+  { id: "native-swift-kotlin-and-react-native-strategy", title: "Swift, Kotlin & React Native Strategy" },
   { id: "statutory-accessibility-dda-and-wcag-compliance", title: "6. Statutory Accessibility, DDA Section 24, and WCAG 2.2 Standards" },
   { id: "qld-ix-peering-nextdc-brisbane-and-5g-performance", title: "7. QLD-IX Peering, NEXTDC Brisbane Facilities, and 5G Edge Delivery" },
-  { id: "offline-first-cross-river-rail-and-transit-sync", title: "8. Offline-First Transit Synchronization for Cross River Rail and Brisbane Metro" },
+  { id: "offline-first-cross-river-rail-and-transit-sync", title: "8. Offline-First Transit Sync for Brisbane Metro" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -245,8 +245,8 @@ export default function BrisbaneAppDevelopmentPage() {
 
         {/* SECTION 2 */}
         <h2 id="bank-grade-mobile-engineering-eagle-street" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Bank-Grade Mobile Engineering for Eagle Street Financial Institutions
-        </h2>
+              2. Bank-Grade Mobile Engineering for Eagle Street
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Golden Triangle corridor anchored by Eagle Street and Queen Street</strong> serves as the command center for Queensland financial institutions, institutional fund managers, and private equity offices. Engineering transactional mobile software for Brisbane institutions requires mathematical precision, continuous availability, and cryptographic safeguards. Our specialized <strong className="font-semibold text-[#de5e18] tracking-tight">fintech app development in Brisbane</strong> implements defense-in-depth security architectures, including biometric verification through Apple Face ID and Android BiometricPrompt, Secure Enclave key storage, and mandatory TLS 1.3 encryption. We construct secure endpoints compliant with Australia&apos;s <a href="https://www.cdr.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Consumer Data Right</a> framework, facilitating open banking workflows.
         </p>
@@ -256,8 +256,8 @@ export default function BrisbaneAppDevelopmentPage() {
 
         {/* SECTION 3 */}
         <h2 id="privacy-act-apra-cps-234-and-data-sovereignty" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. Australian Privacy Principles, APRA CPS 234, and Sovereign Data Governance
-        </h2>
+              3. APRA CPS 234 & Sovereign Data Governance
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Queensland enterprises navigate strict statutory requirements</strong> for user privacy, auditability, and sovereign data custody. Our mobile engineering embeds security-by-design principles aligned with the <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Privacy Act 1988</a> and Australian Privacy Principles enforced by the Office of the Australian Information Commissioner. For institutions subject to prudential supervision, we construct mobile software architectures that fulfill the cyber resilience standards established by the <a href="https://www.apra.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Australian Prudential Regulation Authority</a> under Prudential Standard CPS 234, protecting customer records against unauthorized exposure.
         </p>
@@ -302,8 +302,8 @@ export default function BrisbaneAppDevelopmentPage() {
 
         {/* SECTION 4 */}
         <h2 id="fortitude-valley-tech-hub-and-edge-ai-capabilities" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. Fortitude Valley Tech Hub, High-Growth Scale-Ups, and Edge AI Capabilities
-        </h2>
+              4. Fortitude Valley Tech Hub & Edge AI Solutions
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Fortitude Valley technology precinct</strong>, anchored by The Precinct innovation hub and corridors in Newstead and Milton, drives Queensland&apos;s software commercialization. High-growth scale-ups and commercial operators require agile mobile teams capable of transforming complex roadmaps into high-converting user experiences. Our <strong className="font-semibold text-[#de5e18] tracking-tight">custom app development in Brisbane</strong> empowers product teams to validate hypotheses rapidly, streamline onboarding funnels, and improve engagement. We implement structured design tokens, reusable UI component systems, and event telemetry to provide decisive product intelligence.
         </p>
@@ -355,8 +355,8 @@ export default function BrisbaneAppDevelopmentPage() {
 
         {/* SECTION 5 */}
         <h2 id="native-swift-kotlin-and-react-native-strategy" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. Native Swift, Android Kotlin, and High-Performance React Native Strategy
-        </h2>
+              Swift, Kotlin & React Native Strategy
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Selecting the optimal software foundation represents a decisive architectural milestone</strong> for any enterprise mobile project. When an application demands intensive hardware acceleration, sustained background execution threads, or low-level graphics shaders, our mobile engineers craft fully native applications using Apple Swift for iOS and modern Kotlin for Android. Pure native engineering guarantees unrestricted access to device sensors, eliminates abstraction overhead, and delivers seamless 120Hz ProMotion screen rendering across the newest generation of mobile hardware.
         </p>
@@ -388,8 +388,8 @@ export default function BrisbaneAppDevelopmentPage() {
 
         {/* SECTION 8 */}
         <h2 id="offline-first-cross-river-rail-and-transit-sync" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Offline-First Transit Synchronization for Cross River Rail and Brisbane Metro
-        </h2>
+              8. Offline-First Transit Sync for Brisbane Metro
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Engineering mobile applications for the Brisbane metropolitan corridor</strong> requires practical architectural consideration of daily transit routines. Tens of thousands of business commuters travel through the underground rail corridors of the Cross River Rail project and ride along high-frequency Brisbane Metro routes where cellular coverage encounters temporary shadow zones. Our <strong className="font-semibold text-[#de5e18] tracking-tight">mobile app development in Brisbane</strong> integrates resilient offline-first data synchronization architectures using encrypted local SQLite storage paired with background transactional processing queues.
         </p>

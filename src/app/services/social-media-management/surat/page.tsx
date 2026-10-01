@@ -19,11 +19,11 @@ const tableOfContents = [
   },
   {
     "id": "textile-d2c-social-commerce",
-    "title": "Direct-to-Consumer (D2C) Scaling for Surat’s Textile and Fashion Brands"
+    "title": "D2C Social Scaling for Surat Textile Brands"
   },
   {
     "id": "industrial-b2b-social-marketing",
-    "title": "Industrial B2B Social Marketing for Sachin & Pandesara GIDC Enterprises"
+    "title": "Industrial B2B Social for Sachin & Pandesara GIDC"
   },
   {
     "id": "vesu-piplod-real-estate-campaigns",
@@ -73,15 +73,15 @@ export default function SuratSocialmediamanagementPage() {
         </p>
 
         <h2 id="textile-d2c-social-commerce" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Direct-to-Consumer (D2C) Scaling for Surat’s Textile and Fashion Brands
-        </h2>
+              D2C Social Scaling for Surat Textile Brands
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Surat&apos;s legendary textile hub, stretching from the bustling wholesale markets of Ring Road to the manufacturing units in Sachin GIDC, is undergoing a digital revolution. Traditional wholesale manufacturers are launching proprietary Direct-to-Consumer (D2C) ethnic wear, premium cotton apparel, and designer saree brands to capture higher profit margins. Our specialised <strong className="font-semibold text-[#de5e18] tracking-tight">social media management company in Surat</strong> crafts high-velocity social commerce campaigns that scale these local brands into national market leaders. We script and shoot highly engaging Instagram Reels, Pinterest boards, and TikTok-style content that capture the vibrancy, embroidery details, and quality of your textiles. Through rigorous A/B testing of social ad creatives, custom landing pages, and lookalike audiences, we drive high-volume online sales while keeping customer acquisition costs (CAC) exceptionally low. By transforming traditional fabric production into an aspirational digital fashion brand, we help Surat&apos;s textile entrepreneurs dominate India&apos;s e-commerce landscape.
         </p>
 
         <h2 id="industrial-b2b-social-marketing" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Industrial B2B Social Marketing for Sachin & Pandesara GIDC Enterprises
-        </h2>
+              Industrial B2B Social for Sachin & Pandesara GIDC
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The massive industrial clusters of Sachin GIDC, Pandesara GIDC, and the heavy manufacturing corridors of Hazira form the backbone of Surat&apos;s economic power. For these B2B enterprises, social media is not about chasing viral vanity metrics, but about proving supply chain reliability, technological scale, and regulatory compliance to national and international buyers. We design technical, highly informative content calendars that showcase your factory&apos;s automation, ISO certifications, safety standards, and raw material processing capacities. Our production crew visits your industrial facilities to capture high-definition, corporate-grade photography and video walkthroughs of your manufacturing processes. By distributing this professional content across LinkedIn, YouTube, and targeted industrial forums, we build credibility with procurement officers, corporate buyers, and distribution networks. This strategic B2B positioning establishes your manufacturing plant as a trusted industry leader, driving qualified commercial inquiries and streamlining your business-to-business sales pipeline.
         </p>

@@ -35,14 +35,14 @@ export const metadata: Metadata = {
 };
 
 const tableOfContents = [
-  { id: "melbourne-enterprise-innovation-and-mobile-velocity", title: "1. Melbourne's Enterprise Innovation Ecosystem and Mobile Velocity" },
-  { id: "bank-grade-mobile-engineering-collins-street", title: "2. Bank-Grade Mobile Engineering for Collins Street Financial Institutions" },
-  { id: "privacy-act-apra-cps-234-and-data-sovereignty", title: "3. Australian Privacy Principles, APRA CPS 234, and Sovereign Data Governance" },
+  { id: "melbourne-enterprise-innovation-and-mobile-velocity", title: "1. Melbourne Innovation & Mobile Velocity" },
+  { id: "bank-grade-mobile-engineering-collins-street", title: "2. Bank-Grade Mobile Engineering for Collins St" },
+  { id: "privacy-act-apra-cps-234-and-data-sovereignty", title: "3. APRA CPS 234 & Sovereign Data Governance" },
   { id: "cremorne-tech-hub-and-edge-ai-capabilities", title: "4. Cremorne Tech Hub, High-Growth Scale-Ups, and Edge AI Capabilities" },
-  { id: "native-swift-kotlin-and-react-native-strategy", title: "5. Native Swift, Android Kotlin, and High-Performance React Native Strategy" },
+  { id: "native-swift-kotlin-and-react-native-strategy", title: "Swift, Kotlin & React Native Strategy" },
   { id: "statutory-accessibility-dda-and-wcag-compliance", title: "6. Statutory Accessibility, DDA Section 24, and WCAG 2.2 Standards" },
   { id: "vic-ix-peering-equinix-melbourne-and-5g-performance", title: "7. VIC-IX Peering, Equinix Melbourne Facilities, and 5G Edge Delivery" },
-  { id: "offline-first-yarra-trams-and-metro-tunnel-sync", title: "8. Offline-First Transit Synchronization for Yarra Trams and Metro Tunnel" },
+  { id: "offline-first-yarra-trams-and-metro-tunnel-sync", title: "8. Offline-First Transit Sync for Yarra Trams" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -234,8 +234,8 @@ export default function MelbourneAppDevelopmentPage() {
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
         <h2 id="melbourne-enterprise-innovation-and-mobile-velocity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          1. Melbourne&apos;s Enterprise Innovation Ecosystem and Mobile Velocity
-        </h2>
+              1. Melbourne Innovation & Mobile Velocity
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Melbourne stands as Australia&apos;s center for commerce</strong>, institutional finance, and rapid technology innovation. From financial institutions along Collins Street to tech scale-ups in Cremorne and Docklands, Victorian enterprises compete actively. Modern consumers and enterprise workforces across Victoria expect instantaneous mobile interactions, establishing native mobile software as a vital driver of revenue growth. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">app development company in Melbourne</strong>, Southern Edge Marketing engineers scalable iOS and Android applications tailored to Victorian commercial dynamics.
         </p>
@@ -245,8 +245,8 @@ export default function MelbourneAppDevelopmentPage() {
 
         {/* SECTION 2 */}
         <h2 id="bank-grade-mobile-engineering-collins-street" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Bank-Grade Mobile Engineering for Collins Street Financial Institutions
-        </h2>
+              2. Bank-Grade Mobile Engineering for Collins St
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Western precinct of Collins Street serves as the command center</strong> for leading Australian asset managers, commercial banks, and private equity firms. Building transactional mobile applications for Melbourne financial institutions demands numerical precision, high availability, and cryptographic safeguards. Our specialized <strong className="font-semibold text-[#de5e18] tracking-tight">fintech app development in Melbourne</strong> implements defense-in-depth security architectures, including biometric verification through Apple Face ID and Android BiometricPrompt, Secure Enclave key storage, and mandatory TLS 1.3 encryption. We implement secure endpoints compliant with Australia&apos;s <a href="https://www.cdr.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Consumer Data Right</a> framework, facilitating rapid open banking workflows.
         </p>
@@ -256,8 +256,8 @@ export default function MelbourneAppDevelopmentPage() {
 
         {/* SECTION 3 */}
         <h2 id="privacy-act-apra-cps-234-and-data-sovereignty" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. Australian Privacy Principles, APRA CPS 234, and Sovereign Data Governance
-        </h2>
+              3. APRA CPS 234 & Sovereign Data Governance
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Victorian enterprises navigate strict requirements</strong> for user privacy, auditability, and domestic data custody. Our mobile engineering embeds security-by-design principles aligned with the <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Privacy Act 1988</a> and Australian Privacy Principles enforced by the Office of the Australian Information Commissioner. For institutions subject to prudential supervision, we construct mobile software architectures that fulfill the cyber resilience standards established by the <a href="https://www.apra.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Australian Prudential Regulation Authority</a> under Prudential Standard CPS 234.
         </p>
@@ -355,8 +355,8 @@ export default function MelbourneAppDevelopmentPage() {
 
         {/* SECTION 5 */}
         <h2 id="native-swift-kotlin-and-react-native-strategy" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. Native Swift, Android Kotlin, and High-Performance React Native Strategy
-        </h2>
+              Swift, Kotlin & React Native Strategy
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Choosing the appropriate software foundation represents a critical milestone</strong> in any enterprise mobile initiative. When a commercial application requires intensive computational power, background processing threads, or custom metal shaders, our software engineers build native applications using Apple Swift for iOS and modern Kotlin for Android. Native development guarantees complete access to device sensors, zero bridge overhead, and fluid 120Hz ProMotion animation rendering across modern smartphones.
         </p>
@@ -388,8 +388,8 @@ export default function MelbourneAppDevelopmentPage() {
 
         {/* SECTION 8 */}
         <h2 id="offline-first-yarra-trams-and-metro-tunnel-sync" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Offline-First Transit Synchronization for Yarra Trams and Metro Tunnel
-        </h2>
+              8. Offline-First Transit Sync for Yarra Trams
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Developing mobile software for Melbourne</strong> requires realistic consideration of the public transport commute. Hundreds of thousands of business professionals commute across the world&apos;s largest tram network operated by Yarra Trams and travel through underground transit stations within the Melbourne Metro Tunnel project where cellular reception encounters temporary blind spots. Our <strong className="font-semibold text-[#de5e18] tracking-tight">mobile app development in Melbourne</strong> incorporates resilient offline-first data caching architectures using encrypted local SQLite databases paired with background transactional synchronization queues.
         </p>

@@ -35,14 +35,14 @@ export const metadata: Metadata = {
 };
 
 const tableOfContents = [
-  { id: "melbourne-commercial-landscape-and-enterprise-brand-architecture", title: "1. The Melbourne Commercial Ecosystem and Enterprise Brand Architecture" },
-  { id: "cremorne-tech-cluster-scale-up-identity-and-venture-credibility", title: "2. Cremorne Tech Cluster, Scale-Up Identity, and Venture Capital Credibility" },
-  { id: "collins-street-and-docklands-institutional-financial-branding", title: "3. Institutional Authority for Collins Street and Docklands Financial Leaders" },
-  { id: "b2b-industrial-positioning-for-south-east-melbourne-and-parkville", title: "4. B2B Brand Positioning for South-East Melbourne and Biomedical Innovation Hubs" },
-  { id: "ip-australia-trademark-clearance-and-intellectual-property-governance", title: "5. IP Australia Trademark Clearance and Intellectual Property Governance" },
-  { id: "statutory-accessibility-dda-section-24-and-wcag-compliance", title: "6. Statutory Accessibility: DDA Section 24 and WCAG 2.2 Level AA Systems" },
-  { id: "high-dpi-vector-assets-variable-fonts-and-vic-ix-peering", title: "7. High-DPI Vector Asset Delivery and VIC-IX Sub-Millisecond Edge Peering" },
-  { id: "environmental-placemaking-cbd-signage-and-multichannel-scale", title: "8. Environmental Placemaking, Corporate Signage, and Multi-Channel Scale" },
+  { id: "melbourne-commercial-landscape-and-enterprise-brand-architecture", title: "1. Melbourne Enterprise Brand Architecture" },
+  { id: "cremorne-tech-cluster-scale-up-identity-and-venture-credibility", title: "2. Scale-Up Identity & VC Credibility in Cremorne" },
+  { id: "collins-street-and-docklands-institutional-financial-branding", title: "3. Institutional Authority for Collins Street" },
+  { id: "b2b-industrial-positioning-for-south-east-melbourne-and-parkville", title: "4. B2B Brand Positioning for Melbourne BioTech Hubs" },
+  { id: "ip-australia-trademark-clearance-and-intellectual-property-governance", title: "5. IP Australia Trademark Clearance & IP" },
+  { id: "statutory-accessibility-dda-section-24-and-wcag-compliance", title: "6. DDA Section 24 & WCAG 2.2 Level AA Systems" },
+  { id: "high-dpi-vector-assets-variable-fonts-and-vic-ix-peering", title: "7. High-DPI Vector Assets & VIC-IX Edge" },
+  { id: "environmental-placemaking-cbd-signage-and-multichannel-scale", title: "8. Environmental Signage & Multi-Channel Scale" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -225,8 +225,8 @@ export default function MelbourneBrandingPage() {
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
         <h2 id="melbourne-commercial-landscape-and-enterprise-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          1. The Melbourne Commercial Ecosystem and Enterprise Brand Architecture
-        </h2>
+              1. Melbourne Enterprise Brand Architecture
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Melbourne stands as the cultural, design, and commercial powerhouse of Australia</strong>, fostering high-growth corporate enterprises across Victoria. From historic boardrooms along the Paris End of Collins Street to expansive corporate headquarters in Docklands and Southbank, market differentiation is vital. Superficial design treatments fail to secure long-term commercial trust. Corporate procurement panels, institutional stakeholders, and enterprise buyers expect brand identities backed by structural discipline. As an experienced <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in Melbourne</strong>, Southern Edge Marketing develops full-stack brand architectures and corporate positioning systems that establish enduring market leadership across Australia.
         </p>
@@ -236,8 +236,8 @@ export default function MelbourneBrandingPage() {
 
         {/* SECTION 2 */}
         <h2 id="cremorne-tech-cluster-scale-up-identity-and-venture-credibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Cremorne Tech Cluster, Scale-Up Identity, and Venture Capital Credibility
-        </h2>
+              2. Scale-Up Identity & VC Credibility in Cremorne
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The technology corridor in Cremorne and Richmond</strong> serves as the premier innovation capital of Melbourne. For artificial intelligence pioneers, fintech disruptors, and enterprise software scale-ups, strategic brand positioning is essential for category creation. Engineering founders often excel at constructing sophisticated software backends, yet they frequently struggle to translate technical value for venture capital firms along Collins Street. Our <strong className="font-semibold text-[#de5e18] tracking-tight">tech branding specialists in Melbourne</strong> translate complex technical capabilities into authoritative corporate narratives that attract institutional funding and top engineering talent across Victoria.
         </p>
@@ -247,8 +247,8 @@ export default function MelbourneBrandingPage() {
 
         {/* SECTION 3 */}
         <h2 id="collins-street-and-docklands-institutional-financial-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. Institutional Authority for Collins Street and Docklands Financial Leaders
-        </h2>
+              3. Institutional Authority for Collins Street
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The financial district spanning Collins Street, Rialto Towers, and Docklands</strong> manages significant superannuation capital, sovereign funds, and private wealth portfolios. In this fiduciary landscape, visual identity directly communicates operational integrity, statutory compliance, and institutional stability. Creating brand identities for Victorian financial institutions requires deep familiarity with capital markets and regulatory expectations. Our <strong className="font-semibold text-[#de5e18] tracking-tight">corporate branding agency in Melbourne</strong> creates authoritative visual identities that inspire confidence across corporate boards, investment committees, and family office allocators.
         </p>
@@ -293,8 +293,8 @@ export default function MelbourneBrandingPage() {
 
         {/* SECTION 4 */}
         <h2 id="b2b-industrial-positioning-for-south-east-melbourne-and-parkville" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. B2B Brand Positioning for South-East Melbourne and Biomedical Innovation Hubs
-        </h2>
+              4. B2B Brand Positioning for Melbourne BioTech Hubs
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The commercial manufacturing corridor across Dandenong and the biomedical research cluster in Parkville</strong> represent vital engines of Victorian economic productivity. Encompassing precision engineering, pharmaceutical development, biotechnology, and advanced logistics, organizations in these sectors require sophisticated B2B brand architecture. Commercial procurement committees evaluate prospective suppliers based on operational dependability and technical excellence. Our Melbourne brand strategists build industrial positioning frameworks that clarify complex enterprise capabilities and strengthen supplier credibility across Australia.
         </p>
@@ -346,8 +346,8 @@ export default function MelbourneBrandingPage() {
 
         {/* SECTION 5 */}
         <h2 id="ip-australia-trademark-clearance-and-intellectual-property-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. IP Australia Trademark Clearance and Intellectual Property Governance
-        </h2>
+              5. IP Australia Trademark Clearance & IP
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Building a commercial brand without thorough intellectual property defense</strong> introduces severe operational risk, brand confusion, and expensive legal remediation. In Australia competitive business environment, securing early trademark priority is a critical corporate governance priority. Our branding methodology incorporates exhaustive clearance screening in collaboration with qualified trademark attorneys, validating proposed names, logomarks, and visual emblems against the official registers of <a href="https://www.ipaustralia.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">IP Australia</a> under the Trade Marks Act 1995.
         </p>
@@ -357,8 +357,8 @@ export default function MelbourneBrandingPage() {
 
         {/* SECTION 6 */}
         <h2 id="statutory-accessibility-dda-section-24-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Statutory Accessibility: DDA Section 24 and WCAG 2.2 Level AA Systems
-        </h2>
+              6. DDA Section 24 & WCAG 2.2 Level AA Systems
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Commercial organizations in Australia must satisfy strict digital accessibility standards</strong> established under Section 24 of the Disability Discrimination Act 1992. Inaccessible brand interfaces invite legal scrutiny, administrative complaints, and public reputational damage. Modern enterprise visual identity must be engineered for universal access from the start. Our Melbourne design practice develops corporate color palettes audited against the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">W3C Web Content Accessibility Guidelines (WCAG 2.2 Level AA)</a>, maintaining minimum 4.5:1 contrast ratios across user interfaces.
         </p>
@@ -368,8 +368,8 @@ export default function MelbourneBrandingPage() {
 
         {/* SECTION 7 */}
         <h2 id="high-dpi-vector-assets-variable-fonts-and-vic-ix-peering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. High-DPI Vector Asset Delivery and VIC-IX Sub-Millisecond Edge Peering
-        </h2>
+              7. High-DPI Vector Assets & VIC-IX Edge
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Modern enterprise digital applications require corporate visual assets</strong> that render with sharp clarity across high-density screens without increasing page weight or hurting Core Web Vitals metrics. Unoptimized image files, oversized fonts, and fragmented vector graphics introduce layout shifts and slow initial render times, diminishing user engagement and organic search rank. As a technical <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in Melbourne</strong>, Southern Edge Marketing engineers lightweight SVG asset packages, unified vector sprites, and modern variable font subsets configured for Next.js architectures.
         </p>
@@ -379,8 +379,8 @@ export default function MelbourneBrandingPage() {
 
         {/* SECTION 8 */}
         <h2 id="environmental-placemaking-cbd-signage-and-multichannel-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Environmental Placemaking, Corporate Signage, and Multi-Channel Scale
-        </h2>
+              8. Environmental Signage & Multi-Channel Scale
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Melbourne is celebrated for its distinctive architectural heritage</strong>, from Victorian landmark facades along Flinders Street to sleek commercial skyscrapers on William Street. For corporate headquarters, customer experience centers, and commercial flagships, brand identity must extend gracefully into three-dimensional space. Our environmental design specialists translate digital identity systems into exterior architectural signage, interior lobby installations, and intuitive wayfinding systems. We specify durable materials, precision metal fabrication, custom backlighting, and sustainable architectural finishes.
         </p>

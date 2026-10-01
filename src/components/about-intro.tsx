@@ -50,7 +50,7 @@ export function AboutIntro() {
               </div>
 
               <div>
-                <h3 className="text-[18px] md:text-[20px] font-semibold text-black mb-3">Comprehensive PPC Agency Services</h3>
+                <h2 className="text-[20px] md:text-[24px] font-semibold text-black mb-3">Comprehensive PPC Agency Services</h2>
                 <p>While organic growth is incredibly powerful, sometimes your business requires immediate visibility to capture active buyers. Our expertise as a premier PPC agency allows us to craft highly targeted ad campaigns that maximize your overall return on investment. We manage your advertising spend carefully to ensure every click brings you closer to your revenue targets.</p>
               </div>
 

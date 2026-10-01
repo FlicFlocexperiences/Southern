@@ -88,9 +88,9 @@ export const MobileFaq = ({ faqs: customFaqs }: MobileFaqProps) => {
       
       <div className="w-full max-w-[360px] h-[1px] bg-gray-200 mb-6"></div>
       
-      <h2 className="text-[54px] leading-[1.0] font-semibold text-black mb-12 text-center tracking-tight">
+      <p className="text-[54px] leading-[1.0] font-semibold text-black mb-12 text-center tracking-tight">
         COMMON<br/>QUERIES
-      </h2>
+      </p>
 
       {/* FAQ List */}
       <div className="w-full flex flex-col gap-2">

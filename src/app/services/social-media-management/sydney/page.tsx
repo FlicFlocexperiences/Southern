@@ -36,13 +36,13 @@ export const metadata: Metadata = {
 
 const tableOfContents = [
   { id: "sydney-commercial-dynamics-and-enterprise-social-architecture", title: "1. Sydney Commercial Dynamics and Enterprise Social Architecture" },
-  { id: "executive-thought-leadership-linkedin-abm-barangaroo-martin-place", title: "2. Executive Thought Leadership and B2B LinkedIn ABM for Barangaroo and Martin Place" },
-  { id: "high-growth-saas-user-acquisition-surry-hills-pyrmont", title: "3. High-Growth Tech Product Acquisition and Developer Advocacy in Surry Hills" },
-  { id: "data-privacy-governance-privacy-act-1988-meta-capi", title: "4. Data Privacy Governance, Australian Privacy Principles, and Server-Side CAPI" },
-  { id: "cinematic-4k-video-production-accc-creator-governance", title: "5. Cinematic 4K Short-Form Video and ACCC Influencer Endorsement Governance" },
-  { id: "disability-discrimination-act-wcag-social-accessibility", title: "6. Statutory Disability Discrimination Act Compliance and WCAG 2.2 AA Accessibility" },
-  { id: "nsw-ix-peering-equinix-alexandria-5g-distribution", title: "7. NSW-IX Peering, Equinix Alexandria Facilities, and 5G Media Delivery" },
-  { id: "enterprise-attribution-data-lakehouses-sydney-slas", title: "8. Enterprise Multi-Touch Attribution, Data Lakehouses, and Dedicated Sydney SLAs" },
+  { id: "executive-thought-leadership-linkedin-abm-barangaroo-martin-place", title: "2. LinkedIn ABM for Barangaroo & Martin Place" },
+  { id: "high-growth-saas-user-acquisition-surry-hills-pyrmont", title: "3. Product Acquisition in Surry Hills & Pyrmont" },
+  { id: "data-privacy-governance-privacy-act-1988-meta-capi", title: "4. Privacy Act Governance & Server-Side CAPI" },
+  { id: "cinematic-4k-video-production-accc-creator-governance", title: "5. 4K Video Production & ACCC Creator Rules" },
+  { id: "disability-discrimination-act-wcag-social-accessibility", title: "6. DDA Compliance & WCAG Social Accessibility" },
+  { id: "nsw-ix-peering-equinix-alexandria-5g-distribution", title: "7. NSW-IX Peering & 5G Media Delivery in Sydney" },
+  { id: "enterprise-attribution-data-lakehouses-sydney-slas", title: "8. Multi-Touch Attribution & Sydney Support SLAs" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -245,8 +245,8 @@ export default function SydneySocialMediaManagementPage() {
 
         {/* SECTION 2 */}
         <h2 id="executive-thought-leadership-linkedin-abm-barangaroo-martin-place" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Executive Thought Leadership and B2B LinkedIn ABM for Barangaroo and Martin Place
-        </h2>
+              2. LinkedIn ABM for Barangaroo & Martin Place
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Navigating Sydney&apos;s primary financial corridors demands an authoritative, high-trust approach to executive communication. Managing directors, investment partners, and enterprise chief technology officers actively use LinkedIn Marketing Solutions to discover innovative vendors and evaluate strategic partnerships. We construct bespoke B2B executive positioning frameworks that transform corporate leaders into verified industry authorities across banking, private equity, superannuation, and venture capital. Our editorial strategists craft in-depth whitepapers, industry analyses, and proprietary market charts that articulate your corporate vision with complete intellectual authority.
         </p>
@@ -256,8 +256,8 @@ export default function SydneySocialMediaManagementPage() {
 
         {/* SECTION 3 */}
         <h2 id="high-growth-saas-user-acquisition-surry-hills-pyrmont" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. High-Growth Tech Product Acquisition and Developer Advocacy in Surry Hills
-        </h2>
+              3. Product Acquisition in Surry Hills & Pyrmont
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The technology and creative ecosystem spanning Surry Hills, Pyrmont, and South Eveleigh forms the primary engine of Australian digital product innovation. Ambitious tech scale-ups and venture-backed software firms require agile, full-funnel social marketing strategies to drive product-led growth, expand user communities, and secure international venture backing. We architect multi-channel acquisition funnels across LinkedIn, YouTube, X, and interactive developer spaces, optimizing creative messaging for trial activations, product signups, and enterprise software seat expansions.
         </p>
@@ -302,8 +302,8 @@ export default function SydneySocialMediaManagementPage() {
 
         {/* SECTION 4 */}
         <h2 id="data-privacy-governance-privacy-act-1988-meta-capi" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. Data Privacy Governance, Australian Privacy Principles, and Server-Side CAPI
-        </h2>
+              4. Privacy Act Governance & Server-Side CAPI
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Executing digital marketing campaigns across Australia requires rigorous adherence to federal privacy legislation and statutory consumer protections. The <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Office of the Australian Information Commissioner</a> actively enforces the Privacy Act 1988 alongside thirteen statutory Australian Privacy Principles, governing the collection, storage, and cross-border disclosure of personal information. In response to mobile browser cookie restrictions and heightened consumer privacy awareness, our marketing engineers deploy first-party server-side telemetry using the <a href="https://developers.facebook.com/docs/marketing-api/conversions-api/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Meta Conversions API</a>, LinkedIn Conversions API, and Google Tag Manager Server Container.
         </p>
@@ -355,8 +355,8 @@ export default function SydneySocialMediaManagementPage() {
 
         {/* SECTION 5 */}
         <h2 id="cinematic-4k-video-production-accc-creator-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. Cinematic 4K Short-Form Video and ACCC Influencer Endorsement Governance
-        </h2>
+              5. 4K Video Production & ACCC Creator Rules
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Algorithmic feeds across TikTok, Instagram Reels, and YouTube Shorts make vertical short-form video the most effective medium for rapid brand recall and customer acquisition. Generic stock video and low-fidelity smartphone footage fail to resonate with discerning Australian consumers and executive buyers. Our in-house creative production studio oversees every phase of production, from commercial scripting and on-location 4K cinematography across Sydney landmarks to color grading, sound design, and kinetic typography optimized for muted mobile viewing.
         </p>
@@ -366,8 +366,8 @@ export default function SydneySocialMediaManagementPage() {
 
         {/* SECTION 6 */}
         <h2 id="disability-discrimination-act-wcag-social-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Statutory Disability Discrimination Act Compliance and WCAG 2.2 AA Accessibility
-        </h2>
+              6. DDA Compliance & WCAG Social Accessibility
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility represents a critical legal obligation and ethical imperative for commercial enterprises operating throughout New South Wales. Under the federal Disability Discrimination Act 1992, public-facing digital communications must provide equal access to individuals with auditory, cognitive, visual, or neurological impairments. Social media campaigns published without inclusive design principles alienate valuable audiences and create corporate regulatory exposure. Our production pipeline embeds accessibility protocols into every creative asset in accordance with global <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> guidelines.
         </p>
@@ -377,8 +377,8 @@ export default function SydneySocialMediaManagementPage() {
 
         {/* SECTION 7 */}
         <h2 id="nsw-ix-peering-equinix-alexandria-5g-distribution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. NSW-IX Peering, Equinix Alexandria Facilities, and 5G Media Delivery
-        </h2>
+              7. NSW-IX Peering & 5G Media Delivery in Sydney
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Delivering high-resolution video reels, dynamic campaign landing pages, and interactive social experiences across metropolitan Sydney requires infrastructure optimized for regional telecommunications backbones. We architect campaign delivery pipelines with direct peering at the <a href="https://www.ix.asn.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">NSW-IX</a> internet exchange point and premier carrier facilities located in Equinix Alexandria data centers. This specialized peering architecture guarantees that rich media assets and transactional landing pages load within single-digit milliseconds for local users browsing on Telstra and Optus high-speed 5G mobile networks.
         </p>
@@ -388,8 +388,8 @@ export default function SydneySocialMediaManagementPage() {
 
         {/* SECTION 8 */}
         <h2 id="enterprise-attribution-data-lakehouses-sydney-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Enterprise Multi-Touch Attribution, Data Lakehouses, and Dedicated Sydney SLAs
-        </h2>
+              8. Multi-Touch Attribution & Sydney Support SLAs
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Enterprise chief marketing officers and corporate finance leaders require deterministic, audited verification of marketing return on investment rather than vanity metrics. We construct sophisticated multi-touch attribution models that trace user interactions across paid social, executive content, organic search, and direct conversion funnels. Our data team integrates social advertising telemetry directly with enterprise data warehouses, including Snowflake, Google BigQuery, and Salesforce CRM platforms, delivering executive dashboards that display real-time customer acquisition costs and pipeline velocity.
         </p>

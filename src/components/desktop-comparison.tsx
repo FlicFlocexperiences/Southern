@@ -42,11 +42,11 @@ export const DesktopComparison = () => {
       
       {/* Intro Text */}
       <div className="max-w-[1200px] mb-12">
-        <h2 className="text-[32px] md:text-[38px] xl:text-[42px] leading-[1.3] text-black font-medium tracking-tight mb-10">
+        <p className="text-[32px] md:text-[38px] xl:text-[42px] leading-[1.3] text-black font-medium tracking-tight mb-10">
           We know choosing the right <span className={highlightClass}>digital partner</span> is difficult because many agencies <span className={highlightClass}>promise results</span> but few actually <span className={highlightClass}>deliver.</span>
           <br /><br />
           So we made it easy to <span className={highlightClass}>compare</span> what you get with us versus what most agencies <span className={highlightClass}>offer.</span>
-        </h2>
+        </p>
         
         {/* Custom Toggle Switch */}
         <div className="flex items-center gap-5">

@@ -47,13 +47,13 @@ export const metadata: Metadata = {
 
 const tableOfContents = [
   { id: "california-enterprise-economy-and-strategic-brand-architecture", title: "1. The California Enterprise Economy and Strategic Brand Architecture" },
-  { id: "silicon-valley-category-creation-and-ai-narrative-engineering", title: "2. Silicon Valley Category Creation, AI Narrative Engineering, and Venture Positioning" },
-  { id: "silicon-beach-direct-to-consumer-and-multimedia-lifestyle-branding", title: "3. Silicon Beach Direct-to-Consumer, Entertainment Media, and Lifestyle Brand Systems" },
-  { id: "biotech-and-deep-tech-positioning-across-san-diego-and-the-bay-area", title: "4. Biotechnology and Deep Tech Positioning Across San Diego and Bay Area Research Corridors" },
-  { id: "uspto-multi-class-trademark-defense-and-intellectual-property-governance", title: "5. USPTO Multi-Class Trademark Defense and Intellectual Property Governance" },
-  { id: "california-unruh-civil-rights-act-and-wcag-accessible-design-tokens", title: "6. California Unruh Civil Rights Act, ADA Title III, and Accessible Design Token Engineering" },
-  { id: "high-dpi-vector-asset-delivery-and-california-edge-peering-performance", title: "7. High-DPI Vector Asset Delivery, Variable Fonts, and California Edge Peering Performance" },
-  { id: "enterprise-brand-governance-corporate-placemaking-and-long-term-equity", title: "8. Enterprise Brand Governance, Corporate Placemaking, and Omnichannel Scaling" },
+  { id: "silicon-valley-category-creation-and-ai-narrative-engineering", title: "2. Silicon Valley Category Creation & AI Narrative" },
+  { id: "silicon-beach-direct-to-consumer-and-multimedia-lifestyle-branding", title: "3. Silicon Beach DTC & Media Brand Systems" },
+  { id: "biotech-and-deep-tech-positioning-across-san-diego-and-the-bay-area", title: "4. Biotech & Deep Tech Positioning for CA Corridors" },
+  { id: "uspto-multi-class-trademark-defense-and-intellectual-property-governance", title: "5. USPTO Multi-Class Trademark & IP Governance" },
+  { id: "california-unruh-civil-rights-act-and-wcag-accessible-design-tokens", title: "6. Unruh Act, ADA Title III & Accessible Design" },
+  { id: "high-dpi-vector-asset-delivery-and-california-edge-peering-performance", title: "7. High-DPI Vector Assets & Edge Peering Speed" },
+  { id: "enterprise-brand-governance-corporate-placemaking-and-long-term-equity", title: "8. Enterprise Brand Governance & Omnichannel Scale" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -247,8 +247,8 @@ export default function CaliforniaBrandingPage() {
 
         {/* SECTION 2 */}
         <h2 id="silicon-valley-category-creation-and-ai-narrative-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Silicon Valley Category Creation, AI Narrative Engineering, and Venture Positioning
-        </h2>
+              2. Silicon Valley Category Creation & AI Narrative
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Silicon Valley remains the global engine of technological disruption</strong>, setting the benchmark for venture-backed innovation across artificial intelligence, enterprise software, cloud infrastructure, and autonomous systems. In an environment where competing technical architectures emerge weekly, strategic positioning and narrative clarity serve as the primary determinants of commercial valuation. Deep-tech founders frequently build exceptional algorithmic models yet struggle to translate complex technical capabilities into compelling enterprise narratives that resonate with institutional buyers and top-tier venture firms. Our California brand strategists bridge this divide by converting intricate software architectures into authoritative category narratives.
         </p>
@@ -258,8 +258,8 @@ export default function CaliforniaBrandingPage() {
 
         {/* SECTION 3 */}
         <h2 id="silicon-beach-direct-to-consumer-and-multimedia-lifestyle-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. Silicon Beach Direct-to-Consumer, Entertainment Media, and Lifestyle Brand Systems
-        </h2>
+              3. Silicon Beach DTC & Media Brand Systems
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The creative and commercial ecosystem of Southern California</strong>, spanning Silicon Beach in Santa Monica, Venice, Culver City, and Century City, represents the pinnacle of consumer lifestyle branding and entertainment technology. In direct-to-consumer retail, streaming media, and gaming, brand equity depends on emotional resonance, visual magnetism, and rapid digital execution. Consumer audiences in California demand authentic narrative engagement paired with frictionless digital experiences. We design multisensory visual identities, bespoke typographic hierarchies, dynamic motion guidelines, and packaging systems that capture consumer attention and build enduring brand loyalty.
         </p>
@@ -304,8 +304,8 @@ export default function CaliforniaBrandingPage() {
 
         {/* SECTION 4 */}
         <h2 id="biotech-and-deep-tech-positioning-across-san-diego-and-the-bay-area" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. Biotechnology and Deep Tech Positioning Across San Diego and Bay Area Research Corridors
-        </h2>
+              4. Biotech & Deep Tech Positioning for CA Corridors
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">California is the global epicentre of life sciences and biotechnology</strong>, anchored by research clusters in Torrey Pines, Sorrento Valley, and Mission Bay. In computational genomics, precision therapeutics, and medical robotics, brand positioning must project deep intellectual rigor, regulatory compliance, and clinical credibility. Scientific organizations operate under intense scrutiny from research partners, institutional allocators, and global regulatory bodies. Brand systems in these sectors must articulate complex biophysical mechanisms with absolute precision while maintaining an approachable, authoritative visual presence that commands respect across international academic and medical consortia.
         </p>
@@ -357,8 +357,8 @@ export default function CaliforniaBrandingPage() {
 
         {/* SECTION 5 */}
         <h2 id="uspto-multi-class-trademark-defense-and-intellectual-property-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. USPTO Multi-Class Trademark Defense and Intellectual Property Governance
-        </h2>
+              5. USPTO Multi-Class Trademark & IP Governance
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Deploying an enterprise brand identity without rigorous trademark clearance</strong> creates catastrophic legal and financial risks, including sudden trademark infringement lawsuits, cease-and-desist orders, and expensive rebranding mandates. In California competitive markets, establishing intellectual property priority is a foundational requirement of enterprise risk management. Our brand development process integrates thorough trademark clearance auditing in direct collaboration with intellectual property attorneys, screening prospective nomenclature, logomarks, and visual assets against the official databases of the <a href="https://www.uspto.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">United States Patent and Trademark Office (USPTO)</a>.
         </p>
@@ -368,8 +368,8 @@ export default function CaliforniaBrandingPage() {
 
         {/* SECTION 6 */}
         <h2 id="california-unruh-civil-rights-act-and-wcag-accessible-design-tokens" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. California Unruh Civil Rights Act, ADA Title III, and Accessible Design Token Engineering
-        </h2>
+              6. Unruh Act, ADA Title III & Accessible Design
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Operating a commercial digital presence in California</strong> mandates strict compliance with statutory accessibility frameworks governed by Title III of the Americans with Disabilities Act and the California Unruh Civil Rights Act (California Civil Code Section 51). State and federal courts consistently interpret commercial digital properties as places of public accommodation, leaving organizations with inaccessible brand assets exposed to substantial legal penalties. Modern visual identity must be engineered for universal inclusion from its inception. We construct corporate color palettes that strictly adhere to the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">W3C Web Content Accessibility Guidelines (WCAG 2.2 Level AA)</a>, certifying mandatory 4.5:1 contrast ratios.
         </p>
@@ -379,8 +379,8 @@ export default function CaliforniaBrandingPage() {
 
         {/* SECTION 7 */}
         <h2 id="high-dpi-vector-asset-delivery-and-california-edge-peering-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. High-DPI Vector Asset Delivery, Variable Fonts, and California Edge Peering Performance
-        </h2>
+              7. High-DPI Vector Assets & Edge Peering Speed
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">In contemporary web applications and digital ecosystems</strong>, brand assets must render with instantaneous crispness without degrading Core Web Vitals metrics or application load speed. Heavy raster logos, unoptimized font binaries, and bloated icon packages introduce visual layout shifts and execution latency that frustrate users and degrade organic search rankings. As a technically driven branding agency, Southern Edge Marketing engineers precision vector SVG assets, responsive SVG icon sprites, and custom variable font subsets optimized specifically for Next.js architectures. By hardcoding exact viewBox dimensions and asset aspect ratios, we eliminate Cumulative Layout Shift entirely.
         </p>
@@ -390,8 +390,8 @@ export default function CaliforniaBrandingPage() {
 
         {/* SECTION 8 */}
         <h2 id="enterprise-brand-governance-corporate-placemaking-and-long-term-equity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Enterprise Brand Governance, Corporate Placemaking, and Omnichannel Scaling
-        </h2>
+              8. Enterprise Brand Governance & Omnichannel Scale
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">California commercial real estate encompasses world-renowned architecture</strong>, from the high-rise office towers of San Francisco and Century City to expansive corporate campuses across Silicon Valley and Irvine. For corporate headquarters, research labs, and executive briefing facilities, brand identity must extend beyond digital viewports to shape physical environments. Our environmental placemaking practice translates corporate visual identities into three-dimensional architectural signage, precision wayfinding systems, and branded workplace installations. We specify premium architectural materials, laser-cut metals, custom illumination, and sustainable fabrication methods tailored to modern corporate environments.
         </p>

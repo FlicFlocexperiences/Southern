@@ -35,14 +35,14 @@ export const metadata: Metadata = {
 };
 
 const tableOfContents = [
-  { id: "san-francisco-commercial-ecosystem-and-enterprise-brand-architecture", title: "1. The San Francisco Commercial Ecosystem and Enterprise Brand Architecture" },
-  { id: "silicon-valley-category-creation-ai-narrative-engineering-and-vc-readiness", title: "2. Silicon Valley Category Creation, AI Narrative Engineering, and VC Readiness" },
-  { id: "institutional-financial-identity-fintech-trust-and-montgomery-street-authority", title: "3. Institutional Financial Identity, FinTech Trust, and Montgomery Street Authority" },
-  { id: "mission-bay-life-sciences-deeptech-positioning-and-b2b-credibility", title: "4. Mission Bay Life Sciences, DeepTech Positioning, and B2B Credibility" },
+  { id: "san-francisco-commercial-ecosystem-and-enterprise-brand-architecture", title: "1. SF Commercial Ecosystem & Brand Architecture" },
+  { id: "silicon-valley-category-creation-ai-narrative-engineering-and-vc-readiness", title: "2. Silicon Valley Category Creation & AI Narrative" },
+  { id: "institutional-financial-identity-fintech-trust-and-montgomery-street-authority", title: "3. FinTech Trust & Montgomery Street Authority" },
+  { id: "mission-bay-life-sciences-deeptech-positioning-and-b2b-credibility", title: "4. Mission Bay Life Sciences & B2B Credibility" },
   { id: "uspto-multi-class-trademark-governance-and-bay-area-ip-protection", title: "5. USPTO Multi-Class Trademark Governance and Bay Area IP Protection" },
-  { id: "statutory-ada-title-iii-california-unruh-act-and-accessible-brand-systems", title: "6. Statutory ADA Title III, California Unruh Act, and Accessible Brand Systems" },
-  { id: "high-dpi-vector-asset-delivery-variable-fonts-and-sfmix-edge-optimization", title: "7. High-DPI Vector Asset Delivery, Variable Fonts, and SFMIX Edge Optimization" },
-  { id: "environmental-workplace-placemaking-tech-campus-signage-and-multi-channel-scale", title: "8. Environmental Workplace Placemaking, Tech Campus Signage, and Multi-Channel Scale" },
+  { id: "statutory-ada-title-iii-california-unruh-act-and-accessible-brand-systems", title: "6. ADA Title III, Unruh Act & Accessible Systems" },
+  { id: "high-dpi-vector-asset-delivery-variable-fonts-and-sfmix-edge-optimization", title: "7. High-DPI Vector Assets & SFMIX Edge Delivery" },
+  { id: "environmental-workplace-placemaking-tech-campus-signage-and-multi-channel-scale", title: "8. Tech Campus Placemaking & Multi-Channel Scale" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -208,8 +208,8 @@ export default function SanFranciscoBrandingPage() {
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
         <h2 id="san-francisco-commercial-ecosystem-and-enterprise-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          1. The San Francisco Commercial Ecosystem and Enterprise Brand Architecture
-        </h2>
+              1. SF Commercial Ecosystem & Brand Architecture
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">San Francisco represents the capital of global technology and venture finance</strong>, driving immense enterprise valuation across the Bay Area. From software scale-ups in South of Market (SoMa) to corporate institutions in the Financial District, market competition is intense. Generic visual templates fail to deliver distinction. Institutional investors and enterprise buyers require brand systems built with analytical rigor. As a premier <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in San Francisco</strong>, Southern Edge Marketing crafts full-stack brand architectures and positioning frameworks.
         </p>
@@ -219,8 +219,8 @@ export default function SanFranciscoBrandingPage() {
 
         {/* SECTION 2 */}
         <h2 id="silicon-valley-category-creation-ai-narrative-engineering-and-vc-readiness" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Silicon Valley Category Creation, AI Narrative Engineering, and VC Readiness
-        </h2>
+              2. Silicon Valley Category Creation & AI Narrative
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The technology corridor extending from SoMa to Silicon Valley</strong> houses the highest concentration of venture capital globally. For artificial intelligence pioneers and enterprise SaaS innovators, strategic brand positioning is the primary catalyst for category creation. Technical founders frequently excel at building neural architectures but struggle to translate capabilities into enterprise narratives. Our <strong className="font-semibold text-[#de5e18] tracking-tight">tech branding specialists in San Francisco</strong> convert software capabilities into value propositions that captivate Sand Hill Road venture firms.
         </p>
@@ -230,8 +230,8 @@ export default function SanFranciscoBrandingPage() {
 
         {/* SECTION 3 */}
         <h2 id="institutional-financial-identity-fintech-trust-and-montgomery-street-authority" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. Institutional Financial Identity, FinTech Trust, and Montgomery Street Authority
-        </h2>
+              3. FinTech Trust & Montgomery Street Authority
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The historic financial corridor along Montgomery Street and Financial District towers</strong> steward immense institutional capital, private equity reserves, and fintech platforms. In this fiduciary environment, corporate visual identity is a direct measure of institutional credibility and governance. Developing brand systems for San Francisco financial firms requires profound understanding of capital allocators and compliance. Our <strong className="font-semibold text-[#de5e18] tracking-tight">corporate branding agency in San Francisco</strong> engineers authoritative visual identities that project stability for executive boardrooms.
         </p>
@@ -276,8 +276,8 @@ export default function SanFranciscoBrandingPage() {
 
         {/* SECTION 4 */}
         <h2 id="mission-bay-life-sciences-deeptech-positioning-and-b2b-credibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. Mission Bay Life Sciences, DeepTech Positioning, and B2B Credibility
-        </h2>
+              4. Mission Bay Life Sciences & B2B Credibility
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Mission Bay innovation cluster and surrounding biotechnology hubs</strong> house world-renowned research institutes, clinical therapeutics developers, and computational biology leaders. In these scientific fields, brand architecture must convey deep intellectual authority and clinical precision. Scientific founders require visual identities communicating complex biomedical mechanisms to clinical partners, regulatory authorities, and healthcare investors. Our life sciences branding team in San Francisco translates breakthroughs into clear brand systems, developing molecular iconography.
         </p>
@@ -340,8 +340,8 @@ export default function SanFranciscoBrandingPage() {
 
         {/* SECTION 6 */}
         <h2 id="statutory-ada-title-iii-california-unruh-act-and-accessible-brand-systems" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Statutory ADA Title III, California Unruh Act, and Accessible Brand Systems
-        </h2>
+              6. ADA Title III, Unruh Act & Accessible Systems
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Operating within the jurisdiction of the Ninth Circuit and California</strong> requires strict adherence to digital accessibility mandates established under Title III of the Americans with Disabilities Act and the California Unruh Civil Rights Act (California Civil Code Section 51). Commercial enterprises face legal liability when digital brand assets fail accessibility standards. Modern enterprise visual identity must be engineered for universal inclusion. Our San Francisco design team crafts corporate color palettes verified against the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">W3C Web Content Accessibility Guidelines (WCAG 2.2 Level AA)</a>, enforcing 4.5:1 contrast ratios.
         </p>
@@ -351,8 +351,8 @@ export default function SanFranciscoBrandingPage() {
 
         {/* SECTION 7 */}
         <h2 id="high-dpi-vector-asset-delivery-variable-fonts-and-sfmix-edge-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. High-DPI Vector Asset Delivery, Variable Fonts, and SFMIX Edge Optimization
-        </h2>
+              7. High-DPI Vector Assets & SFMIX Edge Delivery
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">In modern digital ecosystems</strong>, corporate brand assets must render with instantaneous precision across diverse viewports without degrading web application speed or Core Web Vitals metrics. Bulky raster graphics, unoptimized font files, and poorly configured icon packages introduce layout instability and rendering latency that frustrate enterprise users and harm search rankings. As a technical <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in San Francisco</strong>, Southern Edge Marketing engineers vector SVG packages, responsive SVG icon sprites, and custom variable font subsets for Next.js architectures. We eliminate layout shifts by hardcoding viewBox dimensions.
         </p>
@@ -362,8 +362,8 @@ export default function SanFranciscoBrandingPage() {
 
         {/* SECTION 8 */}
         <h2 id="environmental-workplace-placemaking-tech-campus-signage-and-multi-channel-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Environmental Workplace Placemaking, Tech Campus Signage, and Multi-Channel Scale
-        </h2>
+              8. Tech Campus Placemaking & Multi-Channel Scale
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The physical architectural footprint of San Francisco encompasses celebrated commercial landmarks</strong>, from high-rise office towers in the Transbay district and historic creative lofts in Jackson Square to expansive technology campuses across the Peninsula. For corporate headquarters, venture incubators, and innovative commercial spaces, brand identity must transcend digital screens to shape physical environments. Our environmental design specialists translate brand identities into three-dimensional architectural signage, experiential lobby installations, precision wayfinding systems, and executive briefing centers. We specify durable materials, laser-cut metals, custom lighting, and sustainable fabrication methods.
         </p>

@@ -10,10 +10,10 @@ export function MobileStats() {
         
         {/* Heading Row */}
         <div className="flex justify-center mb-8 text-center">
-          <h2 className="text-[26px] leading-[1.2] font-semibold text-[#432d1c] font-sans tracking-tight">
+          <p className="text-[26px] leading-[1.2] font-semibold text-[#432d1c] font-sans tracking-tight">
             Digital Success,<br/>
             <span className="text-[#de5e18]">Delivered</span>
-          </h2>
+          </p>
         </div>
 
         {/* Counters Row */}

@@ -38,10 +38,10 @@ const tableOfContents = [
   { id: "manhattan-commercial-dominance-and-enterprise-search-architecture", title: "1. Manhattan Commercial Dominance and Enterprise Search Architecture" },
   { id: "wall-street-fintech-sec-compliance-and-entity-authority-graphs", title: "2. Wall Street FinTech, SEC Compliance, and Entity Authority Graphs" },
   { id: "madison-avenue-luxury-prestige-and-high-intent-organic-capture", title: "3. Madison Avenue Luxury Prestige and High-Intent Organic Capture" },
-  { id: "silicon-alley-saas-geo-vectoring-and-llm-search-engine-optimization", title: "4. Silicon Alley SaaS, GEO Vectoring, and LLM Search Engine Optimization" },
-  { id: "enterprise-knowledge-graphs-wikidata-and-semantic-schema-governance", title: "5. Enterprise Knowledge Graphs, Wikidata, and Semantic Schema Governance" },
-  { id: "statutory-ada-title-iii-sdny-precedent-and-accessible-search-signals", title: "6. Statutory ADA Title III, SDNY Legal Precedent, and Accessible Search Signals" },
-  { id: "sub-millisecond-edge-caching-60-hudson-carrier-hotels-and-core-web-vitals", title: "7. Sub-Millisecond Edge Caching, 60 Hudson Carrier Hotels, and Core Web Vitals" },
+  { id: "silicon-alley-saas-geo-vectoring-and-llm-search-engine-optimization", title: "4. Silicon Alley SaaS, GEO Vectoring & LLM SEO" },
+  { id: "enterprise-knowledge-graphs-wikidata-and-semantic-schema-governance", title: "5. Knowledge Graphs, Wikidata & Semantic Schema" },
+  { id: "statutory-ada-title-iii-sdny-precedent-and-accessible-search-signals", title: "6. ADA Title III, SDNY Precedent & Search Signals" },
+  { id: "sub-millisecond-edge-caching-60-hudson-carrier-hotels-and-core-web-vitals", title: "7. 60 Hudson Edge Caching & Core Web Vitals" },
   { id: "five-borough-local-pack-dominance-and-enterprise-scaling-retainers", title: "8. Five-Borough Local Pack Dominance and Enterprise Scaling Retainers" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
@@ -276,8 +276,8 @@ export default function NewYorkSeoPage() {
 
         {/* SECTION 4 */}
         <h2 id="silicon-alley-saas-geo-vectoring-and-llm-search-engine-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. Silicon Alley SaaS, GEO Vectoring, and LLM Search Engine Optimization
-        </h2>
+              4. Silicon Alley SaaS, GEO Vectoring & LLM SEO
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The technology corridor of Silicon Alley, spanning the Flatiron District, Chelsea, and DUMBO, is home to hyper-growth SaaS platforms, artificial intelligence pioneers, and venture-backed scale-ups. In this landscape, traditional search engine results pages represent only a fraction of the discovery equation. Modern tech buyers increasingly rely on generative artificial intelligence discovery engines to evaluate enterprise software. We engineer forward-looking Generative Engine Optimization strategies that position your technology directly inside synthesis answers across ChatGPT Search, Perplexity AI, Claude, and Google AI Overviews.
         </p>
@@ -329,8 +329,8 @@ export default function NewYorkSeoPage() {
 
         {/* SECTION 5 */}
         <h2 id="enterprise-knowledge-graphs-wikidata-and-semantic-schema-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. Enterprise Knowledge Graphs, Wikidata, and Semantic Schema Governance
-        </h2>
+              5. Knowledge Graphs, Wikidata & Semantic Schema
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern search engines operate as semantic knowledge engines interpreting relationships between real-world entities rather than analyzing isolated string queries. For New York enterprises, establishing an authoritative knowledge graph footprint is essential to monopolizing branded search engine results pages, rich snippets, and Google Knowledge Panels. We engineer interconnected schema markup architectures that map corporate executives, physical headquarters, patents, subsidiaries, and product catalogs directly into Wikidata and the global Semantic Web.
         </p>
@@ -340,8 +340,8 @@ export default function NewYorkSeoPage() {
 
         {/* SECTION 6 */}
         <h2 id="statutory-ada-title-iii-sdny-precedent-and-accessible-search-signals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Statutory ADA Title III, SDNY Legal Precedent, and Accessible Search Signals
-        </h2>
+              6. ADA Title III, SDNY Precedent & Search Signals
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility is both an algorithmic quality prerequisite and an urgent legal requirement for enterprises operating in New York. The United States District Court for the Southern District of New York is the national epicenter for website accessibility litigation under Title III of the Americans with Disabilities Act. Search engine algorithms prioritize digital properties that provide universal usability, clear semantic navigation hierarchies, and comprehensive assistive device compatibility, penalizing non-compliant websites through degraded search rankings.
         </p>
@@ -351,8 +351,8 @@ export default function NewYorkSeoPage() {
 
         {/* SECTION 7 */}
         <h2 id="sub-millisecond-edge-caching-60-hudson-carrier-hotels-and-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. Sub-Millisecond Edge Caching, 60 Hudson Carrier Hotels, and Core Web Vitals
-        </h2>
+              7. 60 Hudson Edge Caching & Core Web Vitals
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           In the hyper-accelerated New York commercial market, technical website performance directly dictates search engine crawl frequency, indexation velocity, and organic ranking position. Google algorithmically rewards websites achieving stellar Core Web Vitals metrics, including minimal Interaction to Next Paint, negligible Cumulative Layout Shift, and rapid Largest Contentful Paint. We deploy modern serverless edge architectures that position cached static assets and dynamic compute instances within sub-millisecond proximity to New York enterprise users.
         </p>

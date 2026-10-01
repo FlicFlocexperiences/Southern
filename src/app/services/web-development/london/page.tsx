@@ -19,15 +19,15 @@ const tableOfContents = [
   },
   {
     "id": "headless-nextjs-architecture-and-high-velocity-engineering",
-    "title": "Enterprise Next.js and Headless Architectures for London Tech Scale-Ups"
+    "title": "Next.js & Headless Architecture for London Tech"
   },
   {
     "id": "fca-compliance-uk-gdpr-and-institutional-security",
-    "title": "FinTech-Grade Security, FCA Operational Resilience, and UK GDPR Governance"
+    "title": "FinTech Security, FCA Resilience & UK GDPR"
   },
   {
     "id": "open-banking-multi-currency-ecommerce-and-hmrc-vat",
-    "title": "London E-Commerce, Open Banking Integrations, and Global Currency Rails"
+    "title": "London E-Commerce, Open Banking & Global Rails"
   },
   {
     "id": "b2b-extranets-and-london-logistics-modernization",
@@ -74,21 +74,21 @@ export default function LondonWebDevelopmentPage() {
             </p>
 
             <h2 id="headless-nextjs-architecture-and-high-velocity-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Enterprise Next.js and Headless Architectures for London Tech Scale-Ups
+              Next.js & Headless Architecture for London Tech
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               Modern enterprises throughout the London technology ecosystem demand decoupled, composable web architectures that deliver near-instantaneous interaction speeds and flawless uptime during traffic surges. We engineer high-velocity frontend interfaces powered by React and Next.js, utilizing server-side rendering, static site generation, and incremental static regeneration to eliminate render bottlenecks. By separating the user-facing presentation layer from monolithic backend databases and legacy content systems, we significantly reduce page payload sizes and shrink vulnerability attack surfaces. This composable architecture empowers growth marketing teams to publish dynamic digital campaigns through headless content management systems like Sanity and Contentful without risking code instability. <strong className="font-semibold text-[#de5e18] tracking-tight">Our precision frontend engineering</strong> eliminates extraneous JavaScript dependencies, guarantees superior Core Web Vitals scores, and drives conversion rates across all modern desktop and mobile viewports. Furthermore, our modular codebase allows engineering teams to deploy incremental feature updates without disrupting core business operations or third-party service integrations. To explore our core software development philosophy and high-performance standards, visit our <Link href="/about" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">about us</Link> page.
             </p>
 
             <h2 id="fca-compliance-uk-gdpr-and-institutional-security" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              FinTech-Grade Security, FCA Operational Resilience, and UK GDPR Governance
+              FinTech Security, FCA Resilience & UK GDPR
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               Operating within London's global financial center demands institutional-grade cyber resilience and rigorous regulatory alignment across every digital touchpoint. Our engineering lifecycle implements comprehensive compliance with the Data Protection Act 2018 and UK GDPR, adhering strictly to enforcement guidelines established by the <a href="https://ico.org.uk/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Information Commissioner's Office (ICO)</a>. For wealth management firms, private equity funds, and regulated fintech innovators, we engineer zero-trust role-based access architectures, automated cryptographic tokenization, and end-to-end TLS 1.3 encryption protocols aligned with <a href="https://www.fca.org.uk/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Financial Conduct Authority (FCA)</a> operational resilience mandates. To satisfy stringent UK data residency requirements, we provision isolated cloud database infrastructure strictly within domestic availability zones, including AWS Europe London (eu-west-2) and Microsoft Azure UK South. <strong className="font-semibold text-[#de5e18] tracking-tight">Defensive software architecture</strong> ensures that your client records and transaction logs remain impervious to unauthorized interception and fully compliant with statutory oversight. We also integrate comprehensive audit logging and automated vulnerability scanning pipelines to detect and mitigate anomalous behaviors before deployment. This uncompromising dedication to security cements trust with institutional investors and enterprise partners across the City of London and international markets.
             </p>
 
             <h2 id="open-banking-multi-currency-ecommerce-and-hmrc-vat" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              London E-Commerce, Open Banking Integrations, and Global Currency Rails
+              London E-Commerce, Open Banking & Global Rails
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               The London commercial landscape represents a premier global retail and B2B commerce hub, characterized by sophisticated purchasing behaviors and rapid adoption of frictionless payment technologies. We develop bespoke digital storefronts and transactional platforms integrated directly with modern UK payment rails, including <a href="https://www.openbanking.org.uk/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Open Banking</a> payment APIs (Pay by Bank), Faster Payments Service (FPS), Bacs Direct Debit, Stripe UK, Checkout.com, Apple Pay, and Klarna. Our transactional architectures feature automated tax calculation engines that handle standard twenty percent VAT, reduced rates, and zero-rated categories in full compliance with HMRC Making Tax Digital mandates. For luxury retailers in Mayfair and the West End targeting global shoppers, we engineer dynamic multi-currency settlement systems supporting real-time conversion between Pound Sterling, Euros, and US Dollars. We also build seamless API synchronization with major British logistics carriers, including Royal Mail Tracked, DPD UK, and DHL Parcel UK, providing real-time postcode lookup and automated consignment tracking. <strong className="font-semibold text-[#de5e18] tracking-tight">Streamlining transactional workflows and checkout performance</strong> dramatically reduces cart abandonment rates and boosts average order values for London merchants. To elevate your commercial identity and establish commanding visual resonance across competitive sectors, explore our bespoke <Link href="/services/branding" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">branding services</Link>.

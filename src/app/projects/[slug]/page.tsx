@@ -63,18 +63,22 @@ function getProjectImages(slug: string, gallery?: string[]): string[] {
 }
 
 async function getLiveProject(slug: string): Promise<Project | null> {
+  const staticProject = getProjectBySlug(slug);
   try {
     const q = query(collection(db, "projects"), where("slug", "==", slug));
     const querySnapshot = await getDocs(q);
     if (!querySnapshot.empty) {
       const docData = querySnapshot.docs[0].data() as Project;
-      return docData;
+      return {
+        ...staticProject,
+        ...docData,
+        h1: docData.h1 || staticProject?.h1,
+      };
     }
   } catch {
     // fallback
   }
 
-  const staticProject = getProjectBySlug(slug);
   if (staticProject) {
     return staticProject;
   }
@@ -320,14 +324,15 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
         {/* Hero Title & Headline */}
         <div className="text-center max-w-5xl mx-auto mb-10 md:mb-14">
-          <h1 className="text-[32px] sm:text-[44px] md:text-[54px] lg:text-[62px] font-extrabold text-[#3e2723] tracking-tight leading-[1.15] mb-6">
-            {project.title}
-            {project.description && (
-              <span className="font-normal text-[#5d4037]/85 block sm:inline">
-                , {project.description}
-              </span>
-            )}
+          <h1 className="text-[32px] sm:text-[44px] md:text-[54px] lg:text-[62px] font-extrabold text-[#3e2723] tracking-tight leading-[1.15] mb-5">
+            {project.h1 || (project.tag ? `${project.title} — ${project.tag}` : `${project.title} — ${project.category}`)}
           </h1>
+
+          {project.description && (
+            <p className="text-[17px] sm:text-[20px] md:text-[22px] font-normal text-[#5d4037]/85 max-w-3xl mx-auto leading-relaxed mb-6">
+              {project.description}
+            </p>
+          )}
 
           {/* Badges / Category Pills */}
           <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">

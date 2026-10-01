@@ -35,12 +35,12 @@ export const metadata: Metadata = {
 };
 
 const tableOfContents = [
-  { id: "ras-al-khaimah-economic-transformation-and-enterprise-web-engineering", title: "1. The Ras Al Khaimah Economic Transformation and Enterprise Web Engineering" },
-  { id: "enterprise-nextjs-and-composable-headless-architectures-for-rak-enterprises", title: "2. Enterprise Next.js and Composable Headless Architectures for RAK Enterprises" },
+  { id: "ras-al-khaimah-economic-transformation-and-enterprise-web-engineering", title: "1. RAK Economic Transformation & Web Engineering" },
+  { id: "enterprise-nextjs-and-composable-headless-architectures-for-rak-enterprises", title: "2. Next.js & Headless Architectures for RAK" },
   { id: "uae-pdpl-tdra-compliance-and-zero-trust-cloud-security", title: "3. UAE PDPL, TDRA Compliance, and Zero-Trust Cloud Security" },
   { id: "high-concurrency-hospitality-maritime-and-rakez-api-microservices", title: "4. High-Concurrency Hospitality, Maritime, and RAKEZ API Microservices" },
-  { id: "digital-asset-governance-rak-dao-web3-and-ip-protection", title: "5. Digital Asset Governance, RAK DAO Web3 Integration, and Intellectual Property" },
-  { id: "statutory-accessibility-bilingual-arabic-ux-and-wcag-standards", title: "6. Statutory Accessibility, Bilingual Arabic UX, and WCAG 2.2 AA Standards" },
+  { id: "digital-asset-governance-rak-dao-web3-and-ip-protection", title: "5. Digital Asset Governance & RAK DAO Web3" },
+  { id: "statutory-accessibility-bilingual-arabic-ux-and-wcag-standards", title: "6. Bilingual Arabic UX & WCAG 2.2 AA Standards" },
   { id: "uae-ix-peering-smarthub-kalba-and-northern-emirates-edge-latency", title: "7. UAE-IX Peering, SmartHub Kalba, and Northern Emirates Edge Latency" },
   { id: "agile-engineering-sprints-and-dedicated-rak-enterprise-support-slas", title: "8. Agile Engineering Sprints and Dedicated RAK Enterprise Support SLAs" },
   { id: "reviews", title: "Reviews" },
@@ -208,8 +208,8 @@ export default function RasAlKhaimahWebDevelopmentPage() {
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
         <h2 id="ras-al-khaimah-economic-transformation-and-enterprise-web-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          1. The Ras Al Khaimah Economic Transformation and Enterprise Web Engineering
-        </h2>
+              1. RAK Economic Transformation & Web Engineering
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Ras Al Khaimah is undergoing a historic economic transformation</strong>, establishing itself as an industrial titan, luxury tourism destination, and global investment center across the northern United Arab Emirates. From the multibillion-dollar resort developments reshaping Al Marjan Island and Mina Al Arab to high-output manufacturing facilities across the Ras Al Khaimah Economic Zone and maritime shipping hubs at Saqr Port, commercial enterprises require modern digital infrastructure. Outdated monolithic websites and slow content management systems create operational friction that restricts growth. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">web development company in Ras Al Khaimah</strong>, Southern Edge Marketing engineers custom web platforms and composable cloud architectures purpose-built for regional market leaders.
         </p>
@@ -219,8 +219,8 @@ export default function RasAlKhaimahWebDevelopmentPage() {
 
         {/* SECTION 2 */}
         <h2 id="enterprise-nextjs-and-composable-headless-architectures-for-rak-enterprises" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Enterprise Next.js and Composable Headless Architectures for RAK Enterprises
-        </h2>
+              2. Next.js & Headless Architectures for RAK
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Enterprises operating across Al Hamra, RAK Central, and the Al Ghail Industrial Zone require decoupled web architectures that deliver near-instantaneous interaction speeds across all international client devices. We build high-velocity frontend interfaces powered by React and <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Next.js</a>, utilizing server-side rendering, static site generation, and React Server Components to eliminate computational bottlenecks. Decoupling the visual presentation layer from underlying databases significantly reduces client page payloads and shrinks security attack surfaces across distributed digital endpoints.
         </p>
@@ -329,8 +329,8 @@ export default function RasAlKhaimahWebDevelopmentPage() {
 
         {/* SECTION 5 */}
         <h2 id="digital-asset-governance-rak-dao-web3-and-ip-protection" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. Digital Asset Governance, RAK DAO Web3 Integration, and Intellectual Property
-        </h2>
+              5. Digital Asset Governance & RAK DAO Web3
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Ras Al Khaimah is pioneering future-facing business environments through initiatives like RAK Digital Assets Oasis, the premier dedicated free zone for virtual assets, artificial intelligence, and decentralized technology companies. We architect specialized web platforms with cryptographic security integrations, decentralized identity protocols, and smart contract interface gateways. Our technical engineering adheres strictly to regional digital asset frameworks, enabling fintech innovators and modern technology ventures to launch secure web applications that command trust among global institutional investors.
         </p>
@@ -340,8 +340,8 @@ export default function RasAlKhaimahWebDevelopmentPage() {
 
         {/* SECTION 6 */}
         <h2 id="statutory-accessibility-bilingual-arabic-ux-and-wcag-standards" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Statutory Accessibility, Bilingual Arabic UX, and WCAG 2.2 AA Standards
-        </h2>
+              6. Bilingual Arabic UX & WCAG 2.2 AA Standards
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility and seamless bilingual user experience are essential requirements for modern enterprises operating in the United Arab Emirates. Commercial organizations face reputational and commercial friction when digital properties fail to comply with international accessibility standards. We build native compliance directly into our software following <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> specifications, avoiding superficial overlay widgets that fail technical audits and degrade mobile performance.
         </p>

@@ -37,12 +37,12 @@ export const metadata: Metadata = {
 const tableOfContents = [
   { id: "san-francisco-technology-market-and-enterprise-search-architecture", title: "1. San Francisco Technology Market and Enterprise Search Architecture" },
   { id: "fidi-fintech-venture-capital-and-sec-compliant-entity-graphs", title: "2. FiDi FinTech, Venture Capital, and SEC-Compliant Entity Graphs" },
-  { id: "soma-ai-scaleups-geo-vectoring-and-llm-search-engine-optimization", title: "3. SoMa AI Scale-Ups, GEO Vectoring, and LLM Search Engine Optimization" },
-  { id: "mission-bay-life-sciences-b2b-portals-and-technical-knowledge-graphs", title: "4. Mission Bay Life Sciences, B2B Portals, and Technical Knowledge Graphs" },
-  { id: "enterprise-knowledge-graphs-wikidata-and-semantic-schema-governance", title: "5. Enterprise Knowledge Graphs, Wikidata, and Semantic Schema Governance" },
-  { id: "statutory-ada-title-iii-california-unruh-act-and-wcag-accessibility", title: "6. Statutory ADA Title III, California Unruh Act, and WCAG 2.2 AA Accessibility" },
-  { id: "sub-millisecond-edge-caching-sfmix-200-paul-peering-and-core-web-vitals", title: "7. Sub-Millisecond Edge Caching, SFMIX 200 Paul Peering, and Core Web Vitals" },
-  { id: "bay-area-multi-district-local-pack-dominance-and-dedicated-support-slas", title: "8. Bay Area Multi-District Local Pack Dominance and Dedicated Support SLAs" },
+  { id: "soma-ai-scaleups-geo-vectoring-and-llm-search-engine-optimization", title: "3. SoMa AI Scale-Ups, GEO Vectoring & LLM SEO" },
+  { id: "mission-bay-life-sciences-b2b-portals-and-technical-knowledge-graphs", title: "4. Mission Bay Life Sciences & Knowledge Graphs" },
+  { id: "enterprise-knowledge-graphs-wikidata-and-semantic-schema-governance", title: "5. Knowledge Graphs, Wikidata & Semantic Schema" },
+  { id: "statutory-ada-title-iii-california-unruh-act-and-wcag-accessibility", title: "6. ADA Title III, Unruh Act & WCAG Accessibility" },
+  { id: "sub-millisecond-edge-caching-sfmix-200-paul-peering-and-core-web-vitals", title: "7. SFMIX 200 Paul Edge Caching & Core Web Vitals" },
+  { id: "bay-area-multi-district-local-pack-dominance-and-dedicated-support-slas", title: "8. Bay Area Local Pack Dominance & Dedicated SLAs" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -230,8 +230,8 @@ export default function SanFranciscoSeoPage() {
 
         {/* SECTION 3 */}
         <h2 id="soma-ai-scaleups-geo-vectoring-and-llm-search-engine-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. SoMa AI Scale-Ups, GEO Vectoring, and LLM Search Engine Optimization
-        </h2>
+              3. SoMa AI Scale-Ups, GEO Vectoring & LLM SEO
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The South of Market innovation corridor, spanning South Park, Folsom Street, and Potrero Hill, represents the global heart of artificial intelligence and enterprise SaaS innovation. In this rapidly evolving market, traditional search engine result pages represent only part of the modern customer discovery journey. Enterprise software evaluators increasingly use generative artificial intelligence engines to analyze technical vendors. We engineer advanced Generative Engine Optimization strategies that position your software platform directly within synthesized answer responses across ChatGPT Search, Perplexity AI, Claude, and Google AI Overviews.
         </p>
@@ -276,8 +276,8 @@ export default function SanFranciscoSeoPage() {
 
         {/* SECTION 4 */}
         <h2 id="mission-bay-life-sciences-b2b-portals-and-technical-knowledge-graphs" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. Mission Bay Life Sciences, B2B Portals, and Technical Knowledge Graphs
-        </h2>
+              4. Mission Bay Life Sciences & Knowledge Graphs
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Across the Mission Bay life sciences hub, UCSF medical research district, and industrial corridors throughout the East Bay, biotechnology leaders and B2B enterprises require authoritative search visibility to capture institutional partnerships and clinical collaborations. We design and deploy entity-driven search strategies that establish deep topical authority around complex therapeutic classes, medical device engineering, and specialized clinical pipelines, ensuring that search engines recognize your enterprise as the definitive scientific authority in your field.
         </p>
@@ -329,8 +329,8 @@ export default function SanFranciscoSeoPage() {
 
         {/* SECTION 5 */}
         <h2 id="enterprise-knowledge-graphs-wikidata-and-semantic-schema-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. Enterprise Knowledge Graphs, Wikidata, and Semantic Schema Governance
-        </h2>
+              5. Knowledge Graphs, Wikidata & Semantic Schema
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern search engines function as semantic knowledge engines that evaluate relational graphs between real-world entities rather than analyzing isolated string keywords. For San Francisco technology enterprises, building an authoritative Knowledge Graph presence is vital for capturing branded search results, Google Knowledge Panels, and rich snippet features. We build interconnected JSON-LD schema networks that link your corporate leadership, registered headquarters, software patents, and subsidiary brands directly into Wikidata and the global Semantic Web.
         </p>
@@ -340,8 +340,8 @@ export default function SanFranciscoSeoPage() {
 
         {/* SECTION 6 */}
         <h2 id="statutory-ada-title-iii-california-unruh-act-and-wcag-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Statutory ADA Title III, California Unruh Act, and WCAG 2.2 AA Accessibility
-        </h2>
+              6. ADA Title III, Unruh Act & WCAG Accessibility
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility is both a primary search engine ranking factor and an urgent legal necessity for enterprises operating in California. State and federal courts enforce strict liability under the California Unruh Civil Rights Act (Civil Code § 51) and federal <a href="https://www.ada.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-semibold underline underline-offset-4 hover:text-[#432d1c] transition-colors">ADA Title III</a> statutes. Search algorithms actively evaluate document accessibility, prioritizing platforms that provide universal usability and penalizing non-compliant websites through reduced crawl priority and ranking degradation.
         </p>
@@ -351,8 +351,8 @@ export default function SanFranciscoSeoPage() {
 
         {/* SECTION 7 */}
         <h2 id="sub-millisecond-edge-caching-sfmix-200-paul-peering-and-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. Sub-Millisecond Edge Caching, SFMIX 200 Paul Peering, and Core Web Vitals
-        </h2>
+              7. SFMIX 200 Paul Edge Caching & Core Web Vitals
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           In the fast-moving Bay Area economy, technical website performance directly dictates search engine crawl efficiency, indexation velocity, and organic ranking stability. Google algorithmically rewards web properties achieving optimal Core Web Vitals metrics, including minimal Interaction to Next Paint, zero Cumulative Layout Shift, and rapid Largest Contentful Paint. We deploy modern serverless edge architectures that position cached static assets and dynamic compute instances within sub-millisecond proximity to San Francisco and Silicon Valley enterprise users.
         </p>
@@ -362,8 +362,8 @@ export default function SanFranciscoSeoPage() {
 
         {/* SECTION 8 */}
         <h2 id="bay-area-multi-district-local-pack-dominance-and-dedicated-support-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Bay Area Multi-District Local Pack Dominance and Dedicated Support SLAs
-        </h2>
+              8. Bay Area Local Pack Dominance & Dedicated SLAs
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Capturing market share across San Francisco commercial hubs including SoMa, FiDi, Mission Bay, Jackson Square, and the Presidio requires an enterprise local search strategy. High-value B2B and commercial search queries trigger local map pack listings that dominate mobile and desktop viewports. We optimize multi-location Google Business Profiles, standardize localized citation ecosystems across authoritative California registries, and deploy location-specific schema architectures to guarantee top-three local pack visibility across targeted metropolitan commercial zip codes.
         </p>

@@ -35,13 +35,13 @@ export const metadata: Metadata = {
 };
 
 const tableOfContents = [
-  { id: "melbourne-commercial-search-landscape", title: "1. The Melbourne Commercial Search Landscape and Generative Search Dynamics" },
-  { id: "collins-street-financial-eeat", title: "2. Institutional E-E-A-T and Entity Authority for Collins Street Financial Leaders" },
-  { id: "cremorne-tech-generative-engine-optimization", title: "3. Generative Engine Optimization (GEO) and AI Citations for Cremorne Tech Scale-Ups" },
-  { id: "greater-melbourne-programmatic-local-seo", title: "4. Programmatic Local SEO and Google Map Pack Domination Across Greater Melbourne" },
-  { id: "melbourne-industrial-corridor-b2b-seo", title: "5. B2B Industrial Search Capture for Melbourne Manufacturing and Logistics Corridors" },
-  { id: "oaic-privacy-and-accc-compliance", title: "6. Regulatory Data Governance, OAIC Privacy Compliance, and Ethical SEO" },
-  { id: "vic-ix-peering-core-web-vitals", title: "7. VIC-IX Port Melbourne Peering, Sub-Second Edge Delivery, and Core Web Vitals" },
+  { id: "melbourne-commercial-search-landscape", title: "1. Melbourne Search & AI Search Dynamics" },
+  { id: "collins-street-financial-eeat", title: "2. E-E-A-T & Authority for Collins Street Finance" },
+  { id: "cremorne-tech-generative-engine-optimization", title: "3. GEO & AI Citations for Cremorne Tech Scale-Ups" },
+  { id: "greater-melbourne-programmatic-local-seo", title: "4. Programmatic Local SEO for Greater Melbourne" },
+  { id: "melbourne-industrial-corridor-b2b-seo", title: "5. B2B Industrial Search for Melbourne Corridors" },
+  { id: "oaic-privacy-and-accc-compliance", title: "6. OAIC Privacy Compliance & Ethical SEO" },
+  { id: "vic-ix-peering-core-web-vitals", title: "7. VIC-IX Peering, Sub-Second Edge & Web Vitals" },
   { id: "closed-loop-crm-attribution-governance", title: "8. Closed-Loop CRM Attribution and Multi-Quarter Search Governance" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
@@ -225,8 +225,8 @@ export default function MelbourneSeoPage() {
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
         <h2 id="melbourne-commercial-search-landscape" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          1. The Melbourne Commercial Search Landscape and Generative Search Dynamics
-        </h2>
+              1. Melbourne Search & AI Search Dynamics
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Melbourne commands a vital pillar of Australia commercial economy</strong>, generating over a quarter of national gross domestic product and hosting corporate headquarters across Collins Street and Docklands. In this contested marketplace, superficial keyword repetition fails to build organic dominance. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">SEO company in Melbourne</strong>, Southern Edge Marketing engineers technical search architectures designed for corporate enterprises. We analyze search journeys of institutional buyers, structuring topical networks that transform discovery into qualified enterprise pipeline.
         </p>
@@ -236,8 +236,8 @@ export default function MelbourneSeoPage() {
 
         {/* SECTION 2 */}
         <h2 id="collins-street-financial-eeat" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Institutional E-E-A-T and Entity Authority for Collins Street Financial Leaders
-        </h2>
+              2. E-E-A-T & Authority for Collins Street Finance
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Collins Street represents the epicenter of Victorian wealth management</strong>, hosting institutional banks, private equity syndicates, and corporate advisory partnerships. Achieving search visibility within financial sectors requires adherence to Google Experience, Expertise, Authoritativeness, and Trustworthiness guidelines for high-stakes topics. Our <strong className="font-semibold text-[#de5e18] tracking-tight">Melbourne SEO agency</strong> crafts compliance-reviewed knowledge assets corroborated by recognized Australian financial analysts. We build interconnected topical clusters resolving intricate institutional queries, establishing your enterprise as an undisputed authority across Australia financial ecosystem.
         </p>
@@ -247,8 +247,8 @@ export default function MelbourneSeoPage() {
 
         {/* SECTION 3 */}
         <h2 id="cremorne-tech-generative-engine-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. Generative Engine Optimization (GEO) and AI Citations for Cremorne Tech Scale-Ups
-        </h2>
+              3. GEO & AI Citations for Cremorne Tech Scale-Ups
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Cremorne technology precinct in Richmond represents Australia premier center</strong> for software innovation and venture capital expansion. For fast-growing enterprise software platforms, rising digital advertising costs threaten customer acquisition efficiency, making organic discovery vital for margins. Our <strong className="font-semibold text-[#de5e18] tracking-tight">enterprise SEO in Melbourne</strong> deploys Generative Engine Optimization strategies positioning software platforms as primary source citations within artificial intelligence engines like Perplexity, ChatGPT Search, and Google AI Overviews. We format documentation, API references, and comparative matrices for machine comprehension.
         </p>
@@ -293,8 +293,8 @@ export default function MelbourneSeoPage() {
 
         {/* SECTION 4 */}
         <h2 id="greater-melbourne-programmatic-local-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. Programmatic Local SEO and Google Map Pack Domination Across Greater Melbourne
-        </h2>
+              4. Programmatic Local SEO for Greater Melbourne
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Greater Melbourne encompasses diverse commercial districts</strong> across more than thirty municipal councils, from South Yarra and Hawthorn to Box Hill, Dandenong, and Tullamarine. A single generic directory listing cannot capture localized high-intent searches originating across these distinct commercial areas. Our <strong className="font-semibold text-[#de5e18] tracking-tight">local SEO services in Melbourne</strong> deploy synchronized Google Business Profile networks featuring verified physical locations, accurate geographic coordinates, and consistent citations across trusted Australian business registries. This programmatic framework captures local intent, placing your business in the Google Local 3-Pack.
         </p>
@@ -346,8 +346,8 @@ export default function MelbourneSeoPage() {
 
         {/* SECTION 5 */}
         <h2 id="melbourne-industrial-corridor-b2b-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. B2B Industrial Search Capture for Melbourne Manufacturing and Logistics Corridors
-        </h2>
+              5. B2B Industrial Search for Melbourne Corridors
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The manufacturing and logistics corridors spanning Laverton North, Truganina, and Dandenong South</strong> represent the industrial foundation of southeastern Australia. Corporate supply chain directors, freight managers, and industrial contractors depend on precise organic search to locate certified precision manufacturers, cold-storage logistics facilities, and specialized engineering suppliers. Our <strong className="font-semibold text-[#de5e18] tracking-tight">B2B SEO in Melbourne</strong> structures technical product specifications, logistics capabilities, and safety accreditations to capture high-value commercial search intent, turning complex procurement queries into qualified requests for proposal.
         </p>
@@ -357,8 +357,8 @@ export default function MelbourneSeoPage() {
 
         {/* SECTION 6 */}
         <h2 id="oaic-privacy-and-accc-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Regulatory Data Governance, OAIC Privacy Compliance, and Ethical SEO
-        </h2>
+              6. OAIC Privacy Compliance & Ethical SEO
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Managing an enterprise digital presence across Melbourne requires rigorous adherence</strong> to statutory privacy protections and fair trading legislation. Our digital optimization methodologies comply strictly with the Privacy Act 1988 and the Australian Privacy Principles regulated by the Office of the Australian Information Commissioner. We engineer privacy-conscious tracking architectures removing unauthorized third-party telemetry, managing user consent dynamically, and preventing sensitive enterprise data leaks through commercial search engine conduits and analytics tracking scripts.
         </p>
@@ -368,8 +368,8 @@ export default function MelbourneSeoPage() {
 
         {/* SECTION 7 */}
         <h2 id="vic-ix-peering-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. VIC-IX Port Melbourne Peering, Sub-Second Edge Delivery, and Core Web Vitals
-        </h2>
+              7. VIC-IX Peering, Sub-Second Edge & Web Vitals
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Search engine ranking algorithms place critical weight on server response velocity</strong>, interactive responsiveness, and visual stability under Google Core Web Vitals framework. Corporate platforms that suffer from bloated page code, slow server response times, or unexpected layout shifts face severe ranking penalties and user drop-off. We configure high-speed edge distribution peering directly with the Victorian Internet Exchange managed by the <a href="https://www.internet.org.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Internet Association of Australia</a>, utilizing carrier facilities across Equinix ME1 and NextDC M1 in Port Melbourne.
         </p>

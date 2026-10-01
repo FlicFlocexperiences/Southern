@@ -37,13 +37,13 @@ export const metadata: Metadata = {
 };
 
 const tableOfContents = [
-  { id: "los-angeles-commercial-landscape-and-enterprise-brand-architecture", title: "1. The Los Angeles Commercial Landscape and Enterprise Brand Architecture" },
+  { id: "los-angeles-commercial-landscape-and-enterprise-brand-architecture", title: "The Los Angeles Commercial Landscape and Enterprise Brand Architecture" },
   { id: "silicon-beach-category-creation-and-venture-readiness", title: "2. Silicon Beach Category Creation, Tech Narrative, and VC Readiness" },
-  { id: "entertainment-media-studio-identity-and-hollywood-authority", title: "3. Entertainment Studio Identity, Creator Economy, and Hollywood Authority" },
-  { id: "luxury-beverly-hills-fashion-and-dtla-lifestyle-branding", title: "4. Luxury Beverly Hills Fashion, DTLA Lifestyle Labels, and Sensory Packaging" },
+  { id: "entertainment-media-studio-identity-and-hollywood-authority", title: "Entertainment Studio & Creator Brand Identity" },
+  { id: "luxury-beverly-hills-fashion-and-dtla-lifestyle-branding", title: "Luxury Beverly Hills Fashion & Packaging Design" },
   { id: "aerospace-clean-tech-and-industrial-b2b-rebranding", title: "5. El Segundo Aerospace, Clean Tech, and B2B Industrial Modernization" },
   { id: "uspto-trademark-governance-and-california-ip-protection", title: "6. USPTO Multi-Class Trademark Governance and IP Protection" },
-  { id: "accessible-design-systems-and-california-unruh-compliance", title: "7. Accessible Design Systems, Unruh Civil Rights Act, and High-DPI Assets" },
+  { id: "accessible-design-systems-and-california-unruh-compliance", title: "Accessible Design Systems, Unruh Civil Rights Act, and High-DPI Assets" },
   { id: "environmental-placemaking-experiential-pop-ups-and-scale", title: "8. Environmental Placemaking, Experiential Retail Pop-Ups, and Scale" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
@@ -107,8 +107,8 @@ export default function LosAngelesBrandingPage() {
       <ServiceLayout sections={tableOfContents}>
 
         <h2 id="los-angeles-commercial-landscape-and-enterprise-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          The Los Angeles Commercial Landscape and Enterprise Brand Architecture
-        </h2>
+              The Los Angeles Commercial Landscape and Enterprise Brand Architecture
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Los Angeles stands as the storytelling capital of the world and an undisputed global trendsetter</strong>, generating over one trillion dollars in economic activity across technology, entertainment, fashion, and advanced manufacturing. In this visually sophisticated, culturally forward-leaning market, superficial logo design and generic stock templates fail to establish credibility with discerning consumers or institutional investors. As a premier <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in Los Angeles</strong>, Southern Edge Marketing engineers comprehensive corporate brand architectures, bespoke visual identity systems, and psychology-backed market positioning for category-leading brands. We deconstruct competitive whitespace, analyze consumer purchasing psychology, and articulate your core corporate vision into a distinctive, defensible market posture. Our strategic branding frameworks transform regional businesses into globally recognized category leaders capable of commanding premium pricing across competitive international markets. To ensure your brand identity translates seamlessly into high-converting digital storefronts and web infrastructure, explore our enterprise <Link href="/services/web-development" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">web development solutions</Link>.
         </p>
@@ -121,15 +121,15 @@ export default function LosAngelesBrandingPage() {
         </p>
 
         <h2 id="entertainment-media-studio-identity-and-hollywood-authority" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Entertainment Studio Identity, Creator Economy, and Hollywood Authority
-        </h2>
+              Entertainment Studio & Creator Brand Identity
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Anchored in the global heartland of cinema, television, and creator culture, Hollywood production studios, talent management firms, and digital media ventures require visual identities that exude creative authority and cultural relevance. We develop comprehensive brand guidelines, dynamic motion idents, title card animations, and multi-platform media collateral that resonate on IMAX screens, streaming dashboards, and social media feeds. Our designers balance cinematic grandeur with modern digital minimalism, ensuring your entertainment brand commands respect from studio executives and mass audiences alike.
         </p>
 
         <h2 id="luxury-beverly-hills-fashion-and-dtla-lifestyle-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Luxury Beverly Hills Fashion, DTLA Lifestyle Labels, and Sensory Packaging
-        </h2>
+              Luxury Beverly Hills Fashion & Packaging Design
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           From the haute couture houses lining Rodeo Drive in Beverly Hills to the avant-garde streetwear labels and sustainable lifestyle brands emerging from the DTLA Arts District, luxury branding requires exquisite attention to tactile and digital detail. We design custom typographic ligatures, tactile physical unboxing packaging specifications, and editorial lookbooks that evoke visceral desire. We ensure that your physical flagship presence harmonizes flawlessly with your digital luxury e-commerce experience, eliminating price resistance and cultivating enduring brand loyalty. To amplify your luxury brand positioning across affluent social audiences, explore our specialized <Link href="/services/social-media-management" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">social media management</Link> campaigns.
         </p>
@@ -149,8 +149,8 @@ export default function LosAngelesBrandingPage() {
         </p>
 
         <h2 id="accessible-design-systems-and-california-unruh-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Accessible Design Systems, Unruh Civil Rights Act, and High-DPI Assets
-        </h2>
+              Accessible Design Systems, Unruh Civil Rights Act, and High-DPI Assets
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           In alignment with the California Unruh Civil Rights Act and ADA Title III, all visual design systems are engineered to satisfy WCAG 2.2 Level AA accessibility criteria. We calibrate brand color palettes to guarantee minimum 4.5:1 contrast ratios for standard typography and 3:1 for large graphical elements. We deliver vector-based SVG assets, variable font packages, and responsive design systems optimized for high-DPI Retina displays and edge CDN distribution.
         </p>

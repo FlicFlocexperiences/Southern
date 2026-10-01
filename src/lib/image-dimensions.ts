@@ -120,8 +120,8 @@ export const KNOWN_IMAGE_DIMENSIONS: Record<string, ImageSize> = {
  * Resolves static paths, project SVGs (520x390), case study thumbnails (740x420),
  * infographics (850x474), Unsplash avatars, and provides a dependable fallback.
  */
-export function getImageDimensions(src?: string | null): ImageSize {
-  if (!src) return { width: 1200, height: 900 };
+export function getImageDimensions(src?: string | null, fallbackWidth?: number, fallbackHeight?: number): ImageSize {
+  if (!src) return { width: fallbackWidth ?? 1200, height: fallbackHeight ?? 900 };
 
   // 1. Direct exact lookup
   if (KNOWN_IMAGE_DIMENSIONS[src]) {
@@ -143,7 +143,7 @@ export function getImageDimensions(src?: string | null): ImageSize {
     return { width: 850, height: 474 };
   }
 
-  // 5. Unsplash avatars (w=100 or w=250)
+  // 5. Unsplash avatars (w=250 or w=100)
   if (src.includes("images.unsplash.com")) {
     if (src.includes("w=250")) return { width: 250, height: 250 };
     return { width: 100, height: 100 };
@@ -173,5 +173,5 @@ export function getImageDimensions(src?: string | null): ImageSize {
   }
 
   // 9. Standard default for blog/project hero/gallery images (e.g., Firebase storage)
-  return { width: 1200, height: 900 };
+  return { width: fallbackWidth ?? 1200, height: fallbackHeight ?? 900 };
 }

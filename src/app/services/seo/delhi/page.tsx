@@ -17,9 +17,9 @@ const tableOfContents = [
   { id: "manufacturing-logistics-seo", title: "Industrial Search Strategies for Delhi's Manufacturing Zones" },
   { id: "retail-ecommerce-search-dominance", title: "Digital Transformation for Delhi's Retail and D2C Brands" },
   { id: "bilingual-hinglish-search-intent", title: "Deciphering Hinglish and Multilingual Search Intent in the NCR" },
-  { id: "enterprise-technical-seo", title: "Next.js Performance and Crawl Budget Optimization for Delhi Conglomerates" },
+  { id: "enterprise-technical-seo", title: "Next.js Performance & Crawl Budget for Delhi Firms" },
   { id: "local-map-pack-dominance", title: "Dominating Local Search Packs Across Delhi's Commercial Corridors" },
-  { id: "eeat-authority-regulatory-compliance", title: "High-Authority Content Architectures and E-E-A-T for Capital Enterprises" },
+  { id: "eeat-authority-regulatory-compliance", title: "Content Architectures & E-E-A-T for Delhi Enterprises" },
   { id: "roi-measurement-crm-integration", title: "Closed-Loop CRM Analytics and Organic Search ROI in the NCR" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" }
@@ -64,8 +64,8 @@ export default function DelhiSeoPage() {
         </p>
 
         <h2 id="enterprise-technical-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Next.js Performance and Crawl Budget Optimization for Delhi Conglomerates
-        </h2>
+              Next.js Performance & Crawl Budget for Delhi Firms
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern search algorithms heavily prioritize site speed and technical performance, making clean code essential for search rankings. In Delhi's competitive corporate landscape, a slow website leads to immediate drops in search visibility and lost leads. We optimize Next.js setups, clean up javascript executions, and implement media asset optimization to improve <strong className="font-semibold text-[#de5e18] tracking-tight">Core Web Vitals</strong>. Our technical audits address cumulative layout shifts, server latency issues, and mobile rendering paths. We also implement structured JSON-LD schema layouts to help search engines index your corporate services accurately. This technical precision improves crawl efficiency, allowing search crawlers to index new pages faster and maintain ranking stability. A fast and modern code framework is crucial for keeping users engaged and improving overall organic performance. We ensure your <strong className="font-semibold text-[#de5e18] tracking-tight">digital assets</strong> are fully optimized to support your long-term organic growth.
         </p>
@@ -78,8 +78,8 @@ export default function DelhiSeoPage() {
         </p>
 
         <h2 id="eeat-authority-regulatory-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          High-Authority Content Architectures and E-E-A-T for Capital Enterprises
-        </h2>
+              Content Architectures & E-E-A-T for Delhi Enterprises
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Search engines evaluate website content based on real experience, deep expertise, authority, and trust. We write comprehensive, highly researched technical articles and guides that speak directly to industry experts and corporate executives. Our copywriters avoid generic text, focusing instead on detailed industry insights and practical case studies. We structure this content to answer complex procurement and trading questions, keeping visitors engaged on your website longer. This strategy signals to search algorithms that your website is a reliable source of professional industry knowledge. By establishing clear topical relevance, we help your brand build trust with B2B decision-makers. This authoritative presence converts standard search traffic into <strong className="font-semibold text-[#de5e18] tracking-tight">qualified business leads</strong> for your sales pipeline. We ensure that every piece of published content meets the highest standards of <strong className="font-semibold text-[#de5e18] tracking-tight">professional copy</strong>.
         </p>

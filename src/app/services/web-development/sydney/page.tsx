@@ -36,13 +36,13 @@ export const metadata: Metadata = {
 
 const tableOfContents = [
   { id: "sydney-commercial-landscape-and-enterprise-web-architecture", title: "1. The Sydney Commercial Landscape and Enterprise Web Architecture" },
-  { id: "enterprise-nextjs-and-composable-headless-systems-for-australian-scale-ups", title: "2. Enterprise Next.js and Composable Headless Systems for Australian Scale-Ups" },
-  { id: "regulatory-compliance-privacy-act-1988-apps-and-essential-eight-security", title: "3. Regulatory Compliance: Privacy Act 1988, APPs, and Essential Eight Security" },
-  { id: "high-concurrency-transaction-systems-graphql-gateways-and-microservices", title: "4. High-Concurrency Transaction Systems, GraphQL Gateways, and Microservices" },
-  { id: "statutory-accessibility-dda-section-24-and-wcag-22-level-aa-engineering", title: "5. Statutory Accessibility: DDA Section 24 and WCAG 2.2 Level AA Engineering" },
+  { id: "enterprise-nextjs-and-composable-headless-systems-for-australian-scale-ups", title: "2. Next.js & Composable Headless for Sydney" },
+  { id: "regulatory-compliance-privacy-act-1988-apps-and-essential-eight-security", title: "3. Privacy Act 1988 & Essential Eight Security" },
+  { id: "high-concurrency-transaction-systems-graphql-gateways-and-microservices", title: "4. High-Concurrency Web Systems & GraphQL APIs" },
+  { id: "statutory-accessibility-dda-section-24-and-wcag-22-level-aa-engineering", title: "5. DDA Section 24 & WCAG 2.2 Level AA Standards" },
   { id: "tech-central-macquarie-park-and-enterprise-b2b-custom-portals", title: "6. Tech Central, Macquarie Park, and Enterprise B2B Custom Portals" },
-  { id: "nsw-ix-peering-equinix-sy-data-centers-and-regional-edge-performance", title: "7. NSW-IX Peering, Equinix SY Data Centers, and Regional Edge Performance" },
-  { id: "agile-sprint-engineering-australian-support-slas-and-strategic-growth", title: "8. Agile Sprint Engineering, Australian Support SLAs, and Strategic Growth" },
+  { id: "nsw-ix-peering-equinix-sy-data-centers-and-regional-edge-performance", title: "7. NSW-IX Peering & Sydney Edge Infrastructure" },
+  { id: "agile-sprint-engineering-australian-support-slas-and-strategic-growth", title: "8. Agile Sprint Engineering & Australian SLAs" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -225,8 +225,8 @@ export default function SydneyWebDevelopmentPage() {
 
         {/* SECTION 2 */}
         <h2 id="enterprise-nextjs-and-composable-headless-systems-for-australian-scale-ups" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Enterprise Next.js and Composable Headless Systems for Australian Scale-Ups
-        </h2>
+              2. Next.js & Composable Headless for Sydney
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           High-growth technology enterprises across Surry Hills, Pyrmont, and Tech Central require decoupled web systems capable of maintaining instantaneous response times during traffic spikes. We build resilient frontend interfaces utilizing React and Next.js, utilizing server-side rendering, static generation, and React Server Components to eliminate hydration delays. By decoupling the presentation layer from transactional backends, our methodology reduces payload sizes, accelerates interactive metrics, and shrinks security exposure surfaces across Australian consumer touchpoints.
         </p>
@@ -236,8 +236,8 @@ export default function SydneyWebDevelopmentPage() {
 
         {/* SECTION 3 */}
         <h2 id="regulatory-compliance-privacy-act-1988-apps-and-essential-eight-security" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. Regulatory Compliance: Privacy Act 1988, APPs, and Essential Eight Security
-        </h2>
+              3. Privacy Act 1988 & Essential Eight Security
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Operating within Sydney requires unwavering cyber defense and strict alignment with national digital mandates. Our engineering lifecycle implements data protection measures aligned with the Australian Privacy Act 1988 and the Australian Privacy Principles governed by the <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Office of the Australian Information Commissioner</a>. For asset managers, fintech firms, and corporate entities in Barangaroo, we implement cyber mitigation frameworks defined by the <a href="https://www.cyber.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Australian Cyber Security Centre</a>, incorporating multi-factor verification, cryptographic tokenization, and end-to-end TLS 1.3 encryption.
         </p>
@@ -282,8 +282,8 @@ export default function SydneyWebDevelopmentPage() {
 
         {/* SECTION 4 */}
         <h2 id="high-concurrency-transaction-systems-graphql-gateways-and-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. High-Concurrency Transaction Systems, GraphQL Gateways, and Microservices
-        </h2>
+              4. High-Concurrency Web Systems & GraphQL APIs
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Sydney stands as the corporate center for enterprise finance, transactional commerce, and high-volume business platforms across Australia. We develop resilient web systems, GraphQL gateways, and microservices architectures capable of processing thousands of simultaneous transactions without performance degradation. Our checkout architectures integrate smoothly with Australian and global payment networks, including Stripe, Adyen, Apple Pay, and local payment mechanisms like BPAY. These workflows incorporate automated GST calculation compliant with Australian Taxation Office standards, delivering a dependable payment journey for institutional and retail users.
         </p>
@@ -335,8 +335,8 @@ export default function SydneyWebDevelopmentPage() {
 
         {/* SECTION 5 */}
         <h2 id="statutory-accessibility-dda-section-24-and-wcag-22-level-aa-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. Statutory Accessibility: DDA Section 24 and WCAG 2.2 Level AA Engineering
-        </h2>
+              5. DDA Section 24 & WCAG 2.2 Level AA Standards
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility represents an essential statutory obligation and commercial imperative for Australian organizations. Under Section 24 of the Disability Discrimination Act 1992 and Australian Human Rights Commission guidance, commercial websites must provide equal access. Australian organizations risk formal discrimination complaints and brand damage if their digital assets fail to meet <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> benchmarks. Rather than using superficial accessibility overlays that fail regulatory scrutiny, we build inclusive access directly into fundamental source code.
         </p>
@@ -357,8 +357,8 @@ export default function SydneyWebDevelopmentPage() {
 
         {/* SECTION 7 */}
         <h2 id="nsw-ix-peering-equinix-sy-data-centers-and-regional-edge-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. NSW-IX Peering, Equinix SY Data Centers, and Regional Edge Performance
-        </h2>
+              7. NSW-IX Peering & Sydney Edge Infrastructure
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Delivering exceptional interaction speeds across Greater Sydney, Parramatta, and regional New South Wales requires edge delivery infrastructure optimized for Australian telecommunications backbones. We deploy distributed content delivery networks featuring direct local peering at the New South Wales Internet Exchange managed by the <a href="https://www.internet.org.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Internet Association of Australia</a>, alongside high-density carrier facilities in Equinix SY data centers and Global Switch Sydney. This localized routing architecture ensures static assets, dynamic API responses, and serverless compute executions run within single-digit milliseconds of local Australian users.
         </p>
@@ -368,8 +368,8 @@ export default function SydneyWebDevelopmentPage() {
 
         {/* SECTION 8 */}
         <h2 id="agile-sprint-engineering-australian-support-slas-and-strategic-growth" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Agile Sprint Engineering, Australian Support SLAs, and Strategic Growth
-        </h2>
+              8. Agile Sprint Engineering & Australian SLAs
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Our client engagements operate on a structured, agile delivery framework that provides corporate leadership with complete clarity regarding sprint velocity, technical milestones, and launch timelines. From initial architectural discovery and interactive prototyping to automated regression testing and zero-downtime deployments, our engineering teams maintain meticulous development standards. Following production launch, we safeguard your digital investment through comprehensive enterprise service level agreements that incorporate round-the-clock uptime monitoring, automated system security patches, and daily encrypted cloud backups stored within sovereign Australian data facilities.
         </p>

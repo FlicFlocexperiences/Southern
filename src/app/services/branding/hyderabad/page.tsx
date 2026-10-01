@@ -35,7 +35,7 @@ const tableOfContents = [
   },
   {
     id: "real-estate-infrastructure-branding",
-    title: "Premium Branding for Hyderabad Real Estate and Infrastructure Developers"
+    title: "Premium Branding for Hyderabad Real Estate"
   },
   {
     id: "aspirational-consumer-demographics",
@@ -102,8 +102,8 @@ export default function HyderabadBrandingPage() {
         </p>
 
         <h2 id="real-estate-infrastructure-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Premium Branding for Hyderabad Real Estate and Infrastructure Developers
-        </h2>
+              Premium Branding for Hyderabad Real Estate
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The skyline of western Hyderabad</strong> is undergoing a massive transformation, with ultra-luxury residential projects and grade-A commercial towers rising in Kokapet, Neopolis, and the Financial District. Developers competing in this high-ticket market must build brand identities that convey security, opulence, and architectural excellence. We build premium branding systems for real estate leaders, crafting visual stories that justify premium square-foot pricing. Our team designs elite marketing suites, physical site signage, high-end brochures, and interactive digital walkthroughs that engage high-net-worth buyers. This spatial branding extends into lobby graphics and sales gallery interiors to create an immersive, unified customer journey. By positioning your development as an aspirational lifestyle choice, we accelerate pre-sales velocity and maximize development margins. Our branding company in Hyderabad helps developers turn concrete structures into iconic residential and commercial destinations. Partner with us to build a real estate brand that commands market authority and investor trust.
         </p>

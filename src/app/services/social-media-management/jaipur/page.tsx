@@ -31,7 +31,7 @@ const tableOfContents = [
   },
   {
     id: "mahindra-world-city-b2b-leads",
-    title: "B2B Lead Generation and Thought Leadership for Mahindra World City Tech"
+    title: "B2B Lead Generation for Jaipur Tech Parks"
   },
   {
     id: "hyperlocal-campaigns-regional-festivals",
@@ -39,7 +39,7 @@ const tableOfContents = [
   },
   {
     id: "influencer-campaigns-youth-demographics",
-    title: "Influencer Partnerships Targeting Jaipur's Aspirational Tech-Savvy Youth"
+    title: "Influencer Strategy for Jaipur Youth Hubs"
   },
   {
     id: "reputation-management-enterprise-growth",
@@ -94,8 +94,8 @@ export default function JaipurSocialmediamanagementPage() {
         </p>
 
         <h2 id="mahindra-world-city-b2b-leads" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          B2B Lead Generation and Thought Leadership for Mahindra World City Tech
-        </h2>
+              B2B Lead Generation for Jaipur Tech Parks
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The development of the Special Economic Zone at <a href="https://www.mahindraworldcity.com/jaipur/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Mahindra World City Jaipur</a> has established the city as a major hub for technology, IT services, and software startups in Northern India. Offshore development centers and custom software firms operating in this area need an authoritative digital presence to attract corporate buyers and enterprise clients in global markets. We design structured B2B thought-leadership campaigns on professional platforms like LinkedIn to build trust and show technical expertise. Our team translates complex software architectures, case studies, and compliance standards into clean, engaging visual posts and expert commentary. By sharing these insights with targeted decision-makers, we generate high-intent inquiries and build valuable business connections. To ensure these campaigns convert effectively, we can link them with custom <Link href="/services/app-development/jaipur" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">app development in Jaipur</Link> to provide clean digital portals for client onboarding. Our B2B strategies help your tech enterprise stand out and secure long-term consulting contracts.
         </p>
@@ -108,8 +108,8 @@ export default function JaipurSocialmediamanagementPage() {
         </p>
 
         <h2 id="influencer-campaigns-youth-demographics" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Influencer Partnerships Targeting Jaipur&apos;s Aspirational Tech-Savvy Youth
-        </h2>
+              Influencer Strategy for Jaipur Youth Hubs
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           With multiple university campuses and a growing startup community, Jaipur has a large population of young, tech-savvy consumers. Modern brands cannot reach this audience through traditional advertising; they must build trust through authentic local creators and trendsetters. We curate customized influencer marketing campaigns, matching your products with popular lifestyle, fashion, and tech influencers in Rajasthan. Our agency manages the entire partnership process, from finding the right creators and aligning content with your brand to contract negotiations and performance tracking. By naturally showing your products in local lifestyle vlogs, campus reels, and trending social challenges, we build strong word-of-mouth credibility. These influencer integrations drive high-intent traffic to your online store and increase foot traffic to physical retail outlets in premium shopping areas. We ensure all campaigns project a consistent, professional brand image that aligns with your core <Link href="/services/branding/jaipur" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">branding services in Jaipur</Link> for long-term market influence.
         </p>

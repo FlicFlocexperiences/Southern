@@ -47,13 +47,13 @@ export const metadata: Metadata = {
 
 const tableOfContents = [
   { id: "california-social-landscape-and-enterprise-digital-hegemony", title: "1. The California Social Landscape and Enterprise Digital Hegemony" },
-  { id: "executive-thought-leadership-silicon-valley-sand-hill-road", title: "2. Executive Thought Leadership and B2B Influence for Silicon Valley and Sand Hill Road" },
-  { id: "creator-economy-orchestration-silicon-beach-ugc-video", title: "3. Creator Economy Orchestration, Silicon Beach UGC, and High-Velocity Video Production" },
-  { id: "algorithmic-paid-performance-advertising-meta-tiktok-linkedin", title: "4. Algorithmic Paid Performance Advertising across Meta, TikTok, and LinkedIn Networks" },
-  { id: "regulatory-compliance-ccpa-enforcement-ftc-governance", title: "5. Regulatory Compliance, CCPA Enforcement, and FTC Endorsement Governance" },
-  { id: "statutory-california-unruh-act-wcag-social-accessibility", title: "6. Statutory California Unruh Act Mandates and WCAG 2.2 AA Social Accessibility" },
-  { id: "server-side-tracking-sfmix-edge-peering-identity-resolution", title: "7. Server-Side Tracking, SFMIX Edge Peering, and First-Party Identity Resolution" },
-  { id: "enterprise-multi-touch-attribution-incremental-lift-slas", title: "8. Enterprise Multi-Touch Attribution, Incremental Lift Testing, and California SLAs" },
+  { id: "executive-thought-leadership-silicon-valley-sand-hill-road", title: "2. Executive Thought Leadership for Silicon Valley" },
+  { id: "creator-economy-orchestration-silicon-beach-ugc-video", title: "3. Creator Partnerships & UGC Video in LA" },
+  { id: "algorithmic-paid-performance-advertising-meta-tiktok-linkedin", title: "4. Paid Social on Meta, TikTok & LinkedIn" },
+  { id: "regulatory-compliance-ccpa-enforcement-ftc-governance", title: "5. CCPA Enforcement & FTC Social Rules" },
+  { id: "statutory-california-unruh-act-wcag-social-accessibility", title: "6. Unruh Act & WCAG Social Accessibility" },
+  { id: "server-side-tracking-sfmix-edge-peering-identity-resolution", title: "7. Server-Side CAPI & SFMIX Edge Peering" },
+  { id: "enterprise-multi-touch-attribution-incremental-lift-slas", title: "8. Multi-Touch Attribution & California SLAs" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -247,8 +247,8 @@ export default function CaliforniaSocialMediaPage() {
 
         {/* SECTION 2 */}
         <h2 id="executive-thought-leadership-silicon-valley-sand-hill-road" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Executive Thought Leadership and B2B Influence for Silicon Valley and Sand Hill Road
-        </h2>
+              2. Executive Thought Leadership for Silicon Valley
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           In the competitive technology clusters of Palo Alto, Mountain View, and San Francisco&apos;s Financial District, enterprise decision-makers evaluate software vendors through personal executive credibility. We construct high-impact B2B thought leadership engines for founders, general partners, and C-suite executives on LinkedIn and X. Our editorial strategists distill complex artificial intelligence architectures, venture theses, and product roadmaps into authoritative editorial essays, data infographics, and strategic commentary that command the respect of institutional buyers and institutional investment committees.
         </p>
@@ -258,8 +258,8 @@ export default function CaliforniaSocialMediaPage() {
 
         {/* SECTION 3 */}
         <h2 id="creator-economy-orchestration-silicon-beach-ugc-video" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. Creator Economy Orchestration, Silicon Beach UGC, and High-Velocity Video Production
-        </h2>
+              3. Creator Partnerships & UGC Video in LA
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Southern California&apos;s Silicon Beach, spanning Santa Monica, Venice, and Culver City, is the undisputed capital of the global creator economy. Consumer brands operating in beauty, wellness, direct-to-consumer retail, and mobile technology must generate massive volumes of native short-form video to stay relevant. We manage end-to-end creator talent acquisition, negotiating comprehensive digital licensing rights, whitelisting permissions, and production deliverables that seamlessly blend raw authenticity with institutional brand standards.
         </p>
@@ -304,8 +304,8 @@ export default function CaliforniaSocialMediaPage() {
 
         {/* SECTION 4 */}
         <h2 id="algorithmic-paid-performance-advertising-meta-tiktok-linkedin" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. Algorithmic Paid Performance Advertising across Meta, TikTok, and LinkedIn Networks
-        </h2>
+              4. Paid Social on Meta, TikTok & LinkedIn
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern paid social media advertising is an algorithmic engineering discipline rather than a subjective artistic exercise. Operating across California&apos;s lucrative metropolitan areas requires sophisticated bid management, predictive audience modeling, and programmatic creative testing. We orchestrate enterprise-tier paid advertising budgets across Meta Advantage+, TikTok Smart Performance Campaigns, and LinkedIn Campaign Manager, applying rigorous statistical models to scale revenue without fatiguing core target demographics.
         </p>
@@ -357,8 +357,8 @@ export default function CaliforniaSocialMediaPage() {
 
         {/* SECTION 5 */}
         <h2 id="regulatory-compliance-ccpa-enforcement-ftc-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. Regulatory Compliance, CCPA Enforcement, and FTC Endorsement Governance
-        </h2>
+              5. CCPA Enforcement & FTC Social Rules
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Marketing in California requires unwavering compliance with the most stringent data privacy regulations in the United States. The California Consumer Privacy Act and the California Privacy Rights Act, rigorously enforced by the <a href="https://cppa.ca.gov" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-bold underline hover:text-[#432d1c]">California Privacy Protection Agency (CPPA)</a>, impose substantial civil penalties for non-compliant consumer tracking, retargeting without opt-out consent, and improper data sharing. We engineer privacy-first data infrastructures that protect enterprise balance sheets while preserving attribution accuracy.
         </p>
@@ -368,8 +368,8 @@ export default function CaliforniaSocialMediaPage() {
 
         {/* SECTION 6 */}
         <h2 id="statutory-california-unruh-act-wcag-social-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Statutory California Unruh Act Mandates and WCAG 2.2 AA Social Accessibility
-        </h2>
+              6. Unruh Act & WCAG Social Accessibility
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           California is subject to aggressive accessibility litigation under the California Unruh Civil Rights Act and federal mandates enforced by the <a href="https://www.ada.gov" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-bold underline hover:text-[#432d1c]">U.S. Department of Justice ADA Title III Regulations</a>. Corporate social media channels and their accompanying campaign landing pages are legally classified as public accommodations. Neglecting visual contrast, video captions, or assistive text descriptions exposes brands to statutory damages and reputational harm.
         </p>
@@ -379,8 +379,8 @@ export default function CaliforniaSocialMediaPage() {
 
         {/* SECTION 7 */}
         <h2 id="server-side-tracking-sfmix-edge-peering-identity-resolution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. Server-Side Tracking, SFMIX Edge Peering, and First-Party Identity Resolution
-        </h2>
+              7. Server-Side CAPI & SFMIX Edge Peering
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Sub-second digital performance is paramount when converting high-velocity mobile traffic generated by paid social campaigns. In California&apos;s hyper-connected tech corridors, page load delays directly degrade conversion rates. We leverage direct carrier peering through premier regional interconnection facilities, including the <a href="https://sfmix.org" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-bold underline hover:text-[#432d1c]">San Francisco Metropolitan Internet Exchange (SFMIX)</a>, 200 Paul Avenue in San Francisco, and the historic One Wilshire carrier hotel in downtown Los Angeles.
         </p>
@@ -390,8 +390,8 @@ export default function CaliforniaSocialMediaPage() {
 
         {/* SECTION 8 */}
         <h2 id="enterprise-multi-touch-attribution-incremental-lift-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Enterprise Multi-Touch Attribution, Incremental Lift Testing, and California SLAs
-        </h2>
+              8. Multi-Touch Attribution & California SLAs
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Executive leadership teams and corporate boards require absolute transparency regarding marketing capital efficiency. We replace simplistic last-click attribution models with sophisticated multi-touch attribution lakehouses and rigorous geo-matched incremental lift testing. By systematically evaluating synthetic baseline holdout groups against active campaign markets across Orange County, San Diego, and Silicon Valley, we isolate the exact incremental revenue generated by every paid dollar deployed.
         </p>

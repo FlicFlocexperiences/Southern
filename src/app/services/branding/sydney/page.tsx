@@ -36,13 +36,13 @@ export const metadata: Metadata = {
 
 const tableOfContents = [
   { id: "sydney-commercial-ecosystem-and-enterprise-brand-architecture", title: "1. The Sydney Commercial Ecosystem and Enterprise Brand Architecture" },
-  { id: "tech-central-scale-up-identity-and-venture-credibility", title: "2. Tech Central Innovation, Scale-Up Identity, and Venture Capital Credibility" },
-  { id: "barangaroo-martin-place-institutional-financial-branding", title: "3. Institutional Authority for Barangaroo and Martin Place Financial Institutions" },
-  { id: "macquarie-park-and-western-sydney-b2b-brand-positioning", title: "4. Brand Positioning for Macquarie Park and Western Sydney Enterprise Expansion" },
+  { id: "tech-central-scale-up-identity-and-venture-credibility", title: "2. Scale-Up Identity & VC Credibility in Sydney" },
+  { id: "barangaroo-martin-place-institutional-financial-branding", title: "3. Institutional Authority for Barangaroo Finance" },
+  { id: "macquarie-park-and-western-sydney-b2b-brand-positioning", title: "4. B2B Brand Positioning for Macquarie Park" },
   { id: "ip-australia-trademark-governance-and-brand-defense", title: "5. IP Australia Trademark Governance and Intellectual Property Defense" },
-  { id: "statutory-accessibility-dda-section-24-and-wcag-compliance", title: "6. Statutory Accessibility: DDA Section 24 and WCAG 2.2 Level AA Brand Systems" },
-  { id: "high-dpi-vector-assets-variable-fonts-and-nsw-ix-peering", title: "7. High-DPI Vector Asset Delivery and NSW-IX Sub-Millisecond Edge Peering" },
-  { id: "environmental-placemaking-cbd-signage-and-multichannel-scale", title: "8. Physical Environmental Placemaking, Corporate Signage, and Multi-Channel Scale" },
+  { id: "statutory-accessibility-dda-section-24-and-wcag-compliance", title: "6. DDA Section 24 & WCAG Accessible Brand Systems" },
+  { id: "high-dpi-vector-assets-variable-fonts-and-nsw-ix-peering", title: "7. High-DPI Vector Assets & NSW-IX Sub-Second Edge" },
+  { id: "environmental-placemaking-cbd-signage-and-multichannel-scale", title: "8. Environmental Signage & Multi-Channel Scale" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -236,8 +236,8 @@ export default function SydneyBrandingPage() {
 
         {/* SECTION 2 */}
         <h2 id="tech-central-scale-up-identity-and-venture-credibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Tech Central Innovation, Scale-Up Identity, and Venture Capital Credibility
-        </h2>
+              2. Scale-Up Identity & VC Credibility in Sydney
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The technology corridor extending from Surry Hills through South Eveleigh</strong> represents Australia premier innovation precinct. For artificial intelligence pioneers, enterprise software scale-ups, and fintech innovators, strategic brand positioning is the fundamental catalyst for category creation. Technical founders often excel at constructing software architectures but struggle to articulate value propositions that captivate venture capital firms along George Street. Our <strong className="font-semibold text-[#de5e18] tracking-tight">tech branding specialists in Sydney</strong> convert complex technical architectures into compelling enterprise narratives that attract premier engineering talent and secure investment from leading venture capital partnerships.
         </p>
@@ -247,8 +247,8 @@ export default function SydneyBrandingPage() {
 
         {/* SECTION 3 */}
         <h2 id="barangaroo-martin-place-institutional-financial-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. Institutional Authority for Barangaroo and Martin Place Financial Institutions
-        </h2>
+              3. Institutional Authority for Barangaroo Finance
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The premier financial corridor encompassing Barangaroo International Towers and Martin Place</strong> stewards immense institutional capital, superannuation reserves, and sovereign wealth portfolios. In this fiduciary environment, corporate visual identity serves as a direct indicator of institutional governance, operational security, and fiduciary stability. Developing brand systems for Sydney financial organizations demands profound understanding of capital markets and compliance expectations. Our <strong className="font-semibold text-[#de5e18] tracking-tight">corporate branding agency in Sydney</strong> creates authoritative visual identities that inspire absolute confidence across executive boards, investment committees, and institutional allocators.
         </p>
@@ -293,8 +293,8 @@ export default function SydneyBrandingPage() {
 
         {/* SECTION 4 */}
         <h2 id="macquarie-park-and-western-sydney-b2b-brand-positioning" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. Brand Positioning for Macquarie Park and Western Sydney Enterprise Expansion
-        </h2>
+              4. B2B Brand Positioning for Macquarie Park
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The commercial expansion across Macquarie Park and the Greater Western Sydney corridor around Parramatta Square</strong> represents a historic shift in regional economic power. Spanning advanced manufacturing, pharmaceutical research, biomedical engineering, and industrial logistics, enterprises across these innovation districts require sophisticated B2B brand positioning. Corporate procurement committees evaluate prospective suppliers based on operational dependability and technological maturity. Our Sydney brand strategists build industrial brand architectures that establish market leadership and simplify complex enterprise portfolios across high-growth commercial sectors.
         </p>
@@ -357,8 +357,8 @@ export default function SydneyBrandingPage() {
 
         {/* SECTION 6 */}
         <h2 id="statutory-accessibility-dda-section-24-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Statutory Accessibility: DDA Section 24 and WCAG 2.2 Level AA Brand Systems
-        </h2>
+              6. DDA Section 24 & WCAG Accessible Brand Systems
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Operating within Australia requires strict compliance with statutory digital accessibility mandates</strong> established under Section 24 of the Disability Discrimination Act 1992. Commercial enterprises face legal scrutiny and severe reputational damage when digital brand assets fail accessibility standards. Modern enterprise visual identity must be engineered for universal inclusion from inception. Our Sydney design team crafts corporate color palettes rigorously audited against the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">W3C Web Content Accessibility Guidelines (WCAG 2.2 Level AA)</a>, ensuring minimum 4.5:1 contrast ratios across all digital interfaces.
         </p>
@@ -368,8 +368,8 @@ export default function SydneyBrandingPage() {
 
         {/* SECTION 7 */}
         <h2 id="high-dpi-vector-assets-variable-fonts-and-nsw-ix-peering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. High-DPI Vector Asset Delivery and NSW-IX Sub-Millisecond Edge Peering
-        </h2>
+              7. High-DPI Vector Assets & NSW-IX Sub-Second Edge
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">In modern digital platforms</strong>, corporate visual assets must render with instantaneous sharpness across high-resolution displays without compromising load times or Core Web Vitals performance metrics. Heavy raster graphics, unoptimized font files, and disjointed icon packages introduce layout instability and rendering latency that degrade user engagement and search engine visibility. As a technical <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in Sydney</strong>, Southern Edge Marketing engineers vector SVG asset libraries, scalable icon sprites, and custom variable font subsets tailored for modern web frameworks.
         </p>
@@ -379,8 +379,8 @@ export default function SydneyBrandingPage() {
 
         {/* SECTION 8 */}
         <h2 id="environmental-placemaking-cbd-signage-and-multichannel-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Physical Environmental Placemaking, Corporate Signage, and Multi-Channel Scale
-        </h2>
+              8. Environmental Signage & Multi-Channel Scale
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The architectural footprint of Sydney encompasses celebrated commercial landmarks</strong>, from waterfront corporate towers along Circular Quay to heritage brick conversions in Pyrmont. For corporate headquarters, client briefing centers, and commercial retail spaces, brand identity must transcend digital screens to command physical environments. Our environmental design specialists translate corporate visual systems into dimensional architectural signage, experiential lobby installations, and precision wayfinding systems. We specify durable materials, brushed architectural metals, custom illumination, and sustainable fabrication methods.
         </p>

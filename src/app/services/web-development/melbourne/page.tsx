@@ -36,13 +36,13 @@ export const metadata: Metadata = {
 
 const tableOfContents = [
   { id: "melbourne-commercial-landscape-and-enterprise-web-architecture", title: "1. The Melbourne Commercial Landscape and Enterprise Web Architecture" },
-  { id: "enterprise-nextjs-and-composable-headless-systems-for-victorian-scale-ups", title: "2. Enterprise Next.js and Composable Headless Systems for Victorian Scale-Ups" },
-  { id: "regulatory-compliance-privacy-act-1988-apps-and-essential-eight-security", title: "3. Regulatory Compliance: Privacy Act 1988, APPs, and Essential Eight Security" },
-  { id: "high-concurrency-transaction-systems-graphql-gateways-and-microservices", title: "4. High-Concurrency Transaction Systems, GraphQL Gateways, and Microservices" },
-  { id: "statutory-accessibility-dda-section-24-and-wcag-22-level-aa-engineering", title: "5. Statutory Accessibility: DDA Section 24 and WCAG 2.2 Level AA Engineering" },
-  { id: "cremorne-tech-precinct-docklands-and-enterprise-b2b-custom-portals", title: "6. Cremorne Tech Precinct, Docklands, and Enterprise B2B Custom Portals" },
-  { id: "vic-ix-peering-equinix-me-data-centers-and-regional-edge-performance", title: "7. VIC-IX Peering, Equinix ME Data Centers, and Regional Edge Performance" },
-  { id: "agile-sprint-engineering-victorian-support-slas-and-strategic-growth", title: "8. Agile Sprint Engineering, Victorian Support SLAs, and Strategic Growth" },
+  { id: "enterprise-nextjs-and-composable-headless-systems-for-victorian-scale-ups", title: "2. Next.js & Composable Headless for Victoria" },
+  { id: "regulatory-compliance-privacy-act-1988-apps-and-essential-eight-security", title: "3. Privacy Act 1988 & Essential Eight Security" },
+  { id: "high-concurrency-transaction-systems-graphql-gateways-and-microservices", title: "4. High-Concurrency Web Systems & GraphQL APIs" },
+  { id: "statutory-accessibility-dda-section-24-and-wcag-22-level-aa-engineering", title: "5. DDA Section 24 & WCAG 2.2 Level AA Standards" },
+  { id: "cremorne-tech-precinct-docklands-and-enterprise-b2b-custom-portals", title: "6. Cremorne Tech Precinct & B2B Custom Portals" },
+  { id: "vic-ix-peering-equinix-me-data-centers-and-regional-edge-performance", title: "7. VIC-IX Peering & Melbourne Edge Performance" },
+  { id: "agile-sprint-engineering-victorian-support-slas-and-strategic-growth", title: "8. Agile Sprint Engineering & Victorian SLAs" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -225,8 +225,8 @@ export default function MelbourneWebDevelopmentPage() {
 
         {/* SECTION 2 */}
         <h2 id="enterprise-nextjs-and-composable-headless-systems-for-victorian-scale-ups" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Enterprise Next.js and Composable Headless Systems for Victorian Scale-Ups
-        </h2>
+              2. Next.js & Composable Headless for Victoria
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Fast-growing technology firms across Cremorne, Southbank, and Carlton require decoupled web infrastructure maintaining instantaneous response times during traffic surges. We engineer resilient presentation tiers utilizing React and Next.js, leveraging server-side rendering, static generation, and React Server Components to eliminate hydration delays. Decoupling visual interfaces from backend databases substantially reduces client payload weights, accelerates Core Web Vitals performance, and shrinks security attack surfaces across Australian digital channels. This approach delivers dependable operational stability during peak consumer activity.
         </p>
@@ -236,8 +236,8 @@ export default function MelbourneWebDevelopmentPage() {
 
         {/* SECTION 3 */}
         <h2 id="regulatory-compliance-privacy-act-1988-apps-and-essential-eight-security" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. Regulatory Compliance: Privacy Act 1988, APPs, and Essential Eight Security
-        </h2>
+              3. Privacy Act 1988 & Essential Eight Security
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Operating within Victoria demands robust cyber defense and adherence to federal statutory standards. Our development lifecycle incorporates data governance measures aligned with the Australian Privacy Act 1988 and Australian Privacy Principles enforced by the <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Office of the Australian Information Commissioner</a>. For financial institutions and legal partnerships situated on Collins Street, we integrate cyber mitigation strategies defined by the <a href="https://www.cyber.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Australian Cyber Security Centre</a> Essential Eight framework, incorporating multi-factor authentication, cryptographic tokenization, and end-to-end TLS 1.3 encryption.
         </p>
@@ -282,8 +282,8 @@ export default function MelbourneWebDevelopmentPage() {
 
         {/* SECTION 4 */}
         <h2 id="high-concurrency-transaction-systems-graphql-gateways-and-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. High-Concurrency Transaction Systems, GraphQL Gateways, and Microservices
-        </h2>
+              4. High-Concurrency Web Systems & GraphQL APIs
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Melbourne serves as the national center for major retailers and high-frequency digital commerce across Australia. We develop resilient transactional engines, GraphQL gateways, and microservices architectures capable of processing thousands of concurrent checkouts without performance degradation. Our checkout workflows integrate with leading payment gateways including Stripe, Adyen, Apple Pay, and trusted Australian rails like BPAY. These transaction paths feature automated Goods and Services Tax calculations compliant with Australian Taxation Office standards, delivering effortless purchasing experiences.
         </p>
@@ -335,8 +335,8 @@ export default function MelbourneWebDevelopmentPage() {
 
         {/* SECTION 5 */}
         <h2 id="statutory-accessibility-dda-section-24-and-wcag-22-level-aa-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. Statutory Accessibility: DDA Section 24 and WCAG 2.2 Level AA Engineering
-        </h2>
+              5. DDA Section 24 & WCAG 2.2 Level AA Standards
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility represents an essential statutory obligation and commitment for Australian organizations. Under Section 24 of the federal Disability Discrimination Act 1992 and guidance from the Australian Human Rights Commission, commercial web properties must offer equal access to all users. Australian enterprises face formal discrimination complaints and legal liabilities if their websites fail to achieve <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> benchmarks. Rather than using superficial accessibility overlays that fail technical audits, our team builds inclusive access directly into source code.
         </p>
@@ -346,8 +346,8 @@ export default function MelbourneWebDevelopmentPage() {
 
         {/* SECTION 6 */}
         <h2 id="cremorne-tech-precinct-docklands-and-enterprise-b2b-custom-portals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Cremorne Tech Precinct, Docklands, and Enterprise B2B Custom Portals
-        </h2>
+              6. Cremorne Tech Precinct & B2B Custom Portals
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Across the Cremorne technology precinct, Docklands corporate centers, and Southbank office towers, enterprises require sophisticated web portals to manage complex commercial partnerships. We architect secure client extranets, vendor management dashboards, and enterprise customer portals tailored to the operational realities of Australian commerce. These platforms integrate directly with corporate databases, enterprise software, and document storage systems, facilitating frictionless collaboration between internal teams, external partners, and corporate clients. Supplying intuitive self-service tools reduces support tickets while ensuring continuous availability for key commercial accounts.
         </p>
@@ -357,8 +357,8 @@ export default function MelbourneWebDevelopmentPage() {
 
         {/* SECTION 7 */}
         <h2 id="vic-ix-peering-equinix-me-data-centers-and-regional-edge-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. VIC-IX Peering, Equinix ME Data Centers, and Regional Edge Performance
-        </h2>
+              7. VIC-IX Peering & Melbourne Edge Performance
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Delivering instantaneous digital interactions across Greater Melbourne, Geelong, and regional Victoria requires network infrastructure optimized for Australian telecommunications backbones. We deploy distributed edge delivery pipelines with direct local peering at the Victorian Internet Exchange operated by the <a href="https://www.internet.org.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Internet Association of Australia</a>, alongside carrier-neutral facilities within NEXTDC M1 and Equinix ME1 data centers. This localized routing architecture ensures static assets, dynamic API responses, and serverless compute executions run within single-digit milliseconds of Victorian end users.
         </p>
@@ -368,8 +368,8 @@ export default function MelbourneWebDevelopmentPage() {
 
         {/* SECTION 8 */}
         <h2 id="agile-sprint-engineering-victorian-support-slas-and-strategic-growth" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Agile Sprint Engineering, Victorian Support SLAs, and Strategic Growth
-        </h2>
+              8. Agile Sprint Engineering & Victorian SLAs
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Our enterprise software engagements follow a disciplined, sprint-based agile delivery methodology that provides corporate executives with complete transparency into development progress, sprint velocity, and target deployment dates. From collaborative architectural planning and interactive prototyping to automated regression testing and zero-downtime deployments, our engineers maintain meticulous quality standards. Following platform launch, we safeguard your digital assets through comprehensive service level agreements featuring round-the-clock uptime monitoring, proactive security patches, and daily encrypted backups stored within sovereign Australian cloud infrastructure.
         </p>

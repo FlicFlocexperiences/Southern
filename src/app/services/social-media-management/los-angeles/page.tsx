@@ -41,8 +41,8 @@ const tableOfContents = [
   { id: "creator-partnerships-ugc-production-and-tiktok-reels", title: "2. Creator Partnerships, In-House UGC Production, and TikTok/Reels" },
   { id: "paid-social-performance-meta-tiktok-youtube-ads", title: "3. High-ROAS Paid Social Performance across Meta, TikTok, and YouTube" },
   { id: "hollywood-entertainment-launches-and-viral-cultural-moments", title: "4. Hollywood Entertainment Campaign Launches and Pop Culture Hooks" },
-  { id: "luxury-lifestyle-and-beverly-hills-social-clienteling", title: "5. Luxury Lifestyle, Beverly Hills Fashion, and High-Ticket Social Clienteling" },
-  { id: "b2b-executive-thought-leadership-on-linkedin-and-x", title: "6. B2B Executive Thought Leadership on LinkedIn and X for Silicon Beach" },
+  { id: "luxury-lifestyle-and-beverly-hills-social-clienteling", title: "Luxury Clienteling for Beverly Hills & LA Brands" },
+  { id: "b2b-executive-thought-leadership-on-linkedin-and-x", title: "Executive Thought Leadership for Silicon Beach" },
   { id: "hyper-localized-los-angeles-geo-clusters-and-event-activations", title: "7. Hyper-Localized LA Geo-Clusters and Experiential Pop-Up Activations" },
   { id: "multi-touch-attribution-data-clean-rooms-and-slas", title: "8. Multi-Touch Attribution, Data Clean Rooms, and Dedicated SLAs" },
   { id: "reviews", title: "Reviews" },
@@ -135,15 +135,15 @@ export default function LosAngelesSocialMediaPage() {
         </p>
 
         <h2 id="luxury-lifestyle-and-beverly-hills-social-clienteling" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Luxury Lifestyle, Beverly Hills Fashion, and High-Ticket Social Clienteling
-        </h2>
+              Luxury Clienteling for Beverly Hills & LA Brands
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           High-end fashion labels, boutique jewelry ateliers, and luxury hospitality venues across Beverly Hills and West Hollywood require an elevated, aesthetic social presence. We craft bespoke visual grids, editorial motion snippets, and private VIP social clienteling strategies via Instagram Direct Messages and WhatsApp VIP concierge conduits. This refined strategy bridges physical boutique visits on Rodeo Drive with global e-commerce shopping, maintaining brand prestige while driving high-ticket transactions.
         </p>
 
         <h2 id="b2b-executive-thought-leadership-on-linkedin-and-x" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          B2B Executive Thought Leadership on LinkedIn and X for Silicon Beach
-        </h2>
+              Executive Thought Leadership for Silicon Beach
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           For founders, venture capitalists, and C-suite executives across Silicon Beach and the South Bay aerospace corridor, personal executive presence is a primary channel for closing enterprise deals and hiring top tier talent. We ghostwrite high-conviction LinkedIn essays, data breakdown carousels, and X (Twitter) threads that establish market authority. We pair organic executive posting with targeted LinkedIn Sponsored Content to position your leaders directly in front of target enterprise decision-makers.
         </p>

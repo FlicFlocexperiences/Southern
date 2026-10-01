@@ -35,14 +35,14 @@ export const metadata: Metadata = {
 };
 
 const tableOfContents = [
-  { id: "rak-vision-2030-enterprise-brand-architecture", title: "1. RAK Vision 2030 and Enterprise Brand Architecture Across Northern Emirates" },
-  { id: "bilingual-arabic-english-typographic-systems", title: "2. Bilingual Arabic-English Typographic Systems and Dual-Script RTL Design Governance" },
-  { id: "luxury-hospitality-proptech-al-marjan-placemaking", title: "3. Luxury Hospitality, PropTech, and Al Marjan Island Environmental Placemaking" },
-  { id: "rak-dao-web3-digital-asset-identity", title: "4. RAK Digital Assets Oasis (RAK DAO), Web3 Identity, and Global Category Creation" },
-  { id: "uae-trademark-clearance-ministry-of-economy-ip", title: "5. UAE Trademark Clearance, Ministry of Economy IP Governance, and Asset Protection" },
-  { id: "digital-accessibility-wcag-2-2-aa-inclusivity", title: "6. Digital Accessibility, WCAG 2.2 AA Compliance, and Universal Multilingual Inclusivity" },
-  { id: "high-dpi-asset-delivery-variable-fonts-uae-ix", title: "7. High-DPI Vector Asset Delivery, Variable Fonts, and UAE-IX Edge Peering" },
-  { id: "industrial-manufacturing-saqr-port-brand-equity", title: "8. Industrial Manufacturing, Saqr Port Supply Chains, and Long-Term Brand Equity" },
+  { id: "rak-vision-2030-enterprise-brand-architecture", title: "1. RAK Vision 2030 & Enterprise Brand Architecture" },
+  { id: "bilingual-arabic-english-typographic-systems", title: "2. Bilingual Arabic-English Typographic Systems" },
+  { id: "luxury-hospitality-proptech-al-marjan-placemaking", title: "3. Luxury Hospitality & Al Marjan Placemaking" },
+  { id: "rak-dao-web3-digital-asset-identity", title: "4. RAK DAO Web3 Identity & Category Creation" },
+  { id: "uae-trademark-clearance-ministry-of-economy-ip", title: "5. UAE Trademark Clearance & IP Asset Protection" },
+  { id: "digital-accessibility-wcag-2-2-aa-inclusivity", title: "6. WCAG 2.2 AA Compliance & Multilingual Design" },
+  { id: "high-dpi-asset-delivery-variable-fonts-uae-ix", title: "7. High-DPI Vector Assets & UAE-IX Edge Peering" },
+  { id: "industrial-manufacturing-saqr-port-brand-equity", title: "8. Industrial Manufacturing & Saqr Port Equity" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -208,8 +208,8 @@ export default function RasAlKhaimahBrandingPage() {
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
         <h2 id="rak-vision-2030-enterprise-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          1. RAK Vision 2030 and Enterprise Brand Architecture Across Northern Emirates
-        </h2>
+              1. RAK Vision 2030 & Enterprise Brand Architecture
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The economic landscape of Ras Al Khaimah is undergoing a historic transformation driven by the strategic framework of RAK Vision 2030. The emirate is expanding rapidly from its established industrial and manufacturing foundation into a premier global destination for luxury hospitality, international trade, maritime commerce, and digital asset innovation. Operating successfully in this dynamic commercial environment demands an <strong>enterprise brand architecture</strong> that conveys institutional credibility, cross-cultural authority, and market leadership to both regional GCC partners and global institutional investors across RAKEZ business zones.
         </p>
@@ -219,8 +219,8 @@ export default function RasAlKhaimahBrandingPage() {
 
         {/* SECTION 2 */}
         <h2 id="bilingual-arabic-english-typographic-systems" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Bilingual Arabic-English Typographic Systems and Dual-Script RTL Design Governance
-        </h2>
+              2. Bilingual Arabic-English Typographic Systems
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Designing corporate visual identity in the United Arab Emirates requires specialized mastery of dual-script typography where Arabic and English share equal visual weight, optical balance, and cultural reverence. Many international brands make the mistake of treating Arabic as a secondary mechanical translation, resulting in distorted baseline alignments, conflicting font weights, and degraded typographic hierarchy. Our brand studio crafts bespoke bilingual typography that harmonizes classical Naskh and contemporary Kufic proportions with modern Latin geometric sans-serif typefaces for seamless harmony.
         </p>
@@ -230,8 +230,8 @@ export default function RasAlKhaimahBrandingPage() {
 
         {/* SECTION 3 */}
         <h2 id="luxury-hospitality-proptech-al-marjan-placemaking" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          3. Luxury Hospitality, PropTech, and Al Marjan Island Environmental Placemaking
-        </h2>
+              3. Luxury Hospitality & Al Marjan Placemaking
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The development of multi-billion-dollar integrated resort destinations on Al Marjan Island, headlined by the Wynn Al Marjan Resort and luxury waterfront master developments, has established Ras Al Khaimah as one of the most lucrative luxury real estate corridors in the Middle East. Capturing market share among ultra-high-net-worth investors, sovereign funds, and global hospitality travelers requires sophisticated sensory branding, evocative storytelling, and tactile environmental placemaking that elevates real estate developments into timeless lifestyle brands.
         </p>
@@ -276,8 +276,8 @@ export default function RasAlKhaimahBrandingPage() {
 
         {/* SECTION 4 */}
         <h2 id="rak-dao-web3-digital-asset-identity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          4. RAK Digital Assets Oasis (RAK DAO), Web3 Identity, and Global Category Creation
-        </h2>
+              4. RAK DAO Web3 Identity & Category Creation
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Ras Al Khaimah has firmly positioned itself at the frontier of global technological innovation with the creation of the RAK Digital Assets Oasis (RAK DAO), the first dedicated free zone in the world for non-regulated virtual assets, decentralized organizations, Web3 protocols, and artificial intelligence ventures. Startups and international foundations setting up within this pioneering ecosystem need a distinctive digital identity that establishes technological sophistication, investor confidence, and global category leadership.
         </p>
@@ -329,8 +329,8 @@ export default function RasAlKhaimahBrandingPage() {
 
         {/* SECTION 5 */}
         <h2 id="uae-trademark-clearance-ministry-of-economy-ip" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          5. UAE Trademark Clearance, Ministry of Economy IP Governance, and Asset Protection
-        </h2>
+              5. UAE Trademark Clearance & IP Asset Protection
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Building an enterprise brand requires substantial financial and strategic investment, which makes rigorous legal clearance and trademark protection an absolute necessity from day one. In the UAE, trademark registration and intellectual property governance are regulated under Federal Decree-Law No. 36 of 2021 on Trademarks. Launching an unvetted brand identity creates significant exposure to trademark infringement claims, mandatory rebrands, and costly disputes with competing regional enterprises.
         </p>
@@ -340,8 +340,8 @@ export default function RasAlKhaimahBrandingPage() {
 
         {/* SECTION 6 */}
         <h2 id="digital-accessibility-wcag-2-2-aa-inclusivity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Digital Accessibility, WCAG 2.2 AA Compliance, and Universal Multilingual Inclusivity
-        </h2>
+              6. WCAG 2.2 AA Compliance & Multilingual Design
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern corporate brand identities must be engineered for universal digital inclusivity. With the UAE Government actively championing digital inclusion and accessibility across public and private sector digital portals, enterprise brands must comply with internationally recognized accessibility benchmarks. Designing for accessibility requires rigorous mathematical color contrast validation, legible type scale architectures, and distinct focus indicator states across both English and Arabic language layouts.
         </p>
@@ -351,8 +351,8 @@ export default function RasAlKhaimahBrandingPage() {
 
         {/* SECTION 7 */}
         <h2 id="high-dpi-asset-delivery-variable-fonts-uae-ix" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          7. High-DPI Vector Asset Delivery, Variable Fonts, and UAE-IX Edge Peering
-        </h2>
+              7. High-DPI Vector Assets & UAE-IX Edge Peering
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           A brand identity is only as powerful as its technical execution across modern digital screens and devices. Slow-loading static graphics, pixelated raster logos, and unoptimized font files degrade user experience and inflict severe damage on search engine performance. In modern front-end web engineering, visual brand assets must be delivered as lightweight, scalable vector graphics (SVG) and modern WOFF2 variable font subsets that load instantaneously on high-DPI Retina displays.
         </p>
@@ -362,8 +362,8 @@ export default function RasAlKhaimahBrandingPage() {
 
         {/* SECTION 8 */}
         <h2 id="industrial-manufacturing-saqr-port-brand-equity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Industrial Manufacturing, Saqr Port Supply Chains, and Long-Term Brand Equity
-        </h2>
+              8. Industrial Manufacturing & Saqr Port Equity
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Ras Al Khaimah is the undisputed industrial powerhouse of the United Arab Emirates, home to premier ceramic manufacturers, pharmaceutical giants, aggregate exporters, and the bustling maritime trade operations of Saqr Port and RAK Ports. Industrial and B2B enterprises operating in these heavy sectors often neglect modern brand strategy, relying on outdated visual collateral that fails to reflect their true technical capabilities and environmental sustainability initiatives.
         </p>

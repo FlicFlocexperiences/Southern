@@ -35,14 +35,14 @@ export const metadata: Metadata = {
 };
 
 const tableOfContents = [
-  { id: "silicon-alley-enterprise-mobility-and-nyc-ecosystem", title: "1. Silicon Alley Velocity and Enterprise Mobile Architecture for New York City" },
+  { id: "silicon-alley-enterprise-mobility-and-nyc-ecosystem", title: "Mobile Architecture for Silicon Alley & NYC" },
   { id: "fintech-wealthtech-and-low-latency-financial-rails", title: "2. Bank-Grade FinTech and Low-Latency WealthTech for Wall Street" },
-  { id: "nydfs-part-500-cybersecurity-and-cloud-governance", title: "3. NYDFS Part 500 Compliance, SOC 2 Protocols, and US-East Cloud Infrastructure" },
-  { id: "omnichannel-luxury-retail-and-madison-avenue-mobility", title: "4. High-Volume Omnichannel Commerce and Luxury Clienteling for Madison Avenue" },
-  { id: "enterprise-proptech-and-smart-building-iot-conduits", title: "5. Next-Gen PropTech and Smart Building Mobile Conduits for Manhattan Real Estate" },
-  { id: "ada-title-iii-wcag-accessibility-and-sdny-compliance", title: "6. Statutory ADA Title III, SDNY Legal Precedents, and WCAG 2.2 Accessibility" },
-  { id: "low-latency-edge-routing-and-carrier-hotel-peering", title: "7. NYIIX Peering, 60 Hudson Carrier Hotels, and Ultra-Low-Latency Edge Hosting" },
-  { id: "offline-first-mta-subway-architecture-and-push-pipelines", title: "8. Offline-First MTA Subway Transit Architecture and High-Volume Push Pipelines" },
+  { id: "nydfs-part-500-cybersecurity-and-cloud-governance", title: "NYDFS Part 500 & SOC 2 Cloud Infrastructure" },
+  { id: "omnichannel-luxury-retail-and-madison-avenue-mobility", title: "Omnichannel Commerce & Clienteling for NYC Retail" },
+  { id: "enterprise-proptech-and-smart-building-iot-conduits", title: "PropTech & Smart Building IoT for Manhattan" },
+  { id: "ada-title-iii-wcag-accessibility-and-sdny-compliance", title: "ADA Title III, SDNY Precedents & WCAG 2.2" },
+  { id: "low-latency-edge-routing-and-carrier-hotel-peering", title: "NYIIX Peering & 60 Hudson Low-Latency Hosting" },
+  { id: "offline-first-mta-subway-architecture-and-push-pipelines", title: "Offline-First MTA Subway Transit Architecture" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -208,8 +208,8 @@ export default function NewYorkAppDevelopmentPage() {
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
         <h2 id="silicon-alley-enterprise-mobility-and-nyc-ecosystem" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Silicon Alley Velocity and Enterprise Mobile Architecture for New York City
-        </h2>
+              Mobile Architecture for Silicon Alley & NYC
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">New York City operates as the financial, cultural, and commercial epicentre of the global economy</strong>, generating over two trillion dollars in regional economic output. From the institutional trading fortresses of Wall Street to the hyper-growth startup clusters across Silicon Alley in Flatiron, SoHo, Chelsea, and DUMBO Brooklyn, New York businesses move at an unparalleled commercial velocity. High-net-worth consumers and demanding corporate decision-makers throughout Manhattan expect immediate, flawless digital execution on their mobile devices, leaving zero room for sluggish load times, frame drops, or clunky user interfaces. As a premier <strong className="font-semibold text-[#de5e18] tracking-tight">app development company in New York</strong>, Southern Edge Marketing engineers custom iOS and Android mobile software designed specifically to conquer the commercial complexities of the NYC marketplace. We do not assemble generic offshore templates or fragile hybrid wrappers. Instead, our senior software architects build enterprise-grade, cloud-native mobile applications that deliver measurable bottom-line growth.
         </p>
@@ -230,8 +230,8 @@ export default function NewYorkAppDevelopmentPage() {
 
         {/* SECTION 3 */}
         <h2 id="nydfs-part-500-cybersecurity-and-cloud-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          NYDFS Part 500 Compliance, SOC 2 Protocols, and US-East Cloud Infrastructure
-        </h2>
+              NYDFS Part 500 & SOC 2 Cloud Infrastructure
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise organizations based in New York State</strong> must adhere to some of the strictest cybersecurity and data protection mandates in the nation. Our mobile engineering lifecycle integrates comprehensive security-by-design principles compliant with NYDFS 23 NYCRR 500, the New York SHIELD Act, and SOC 2 Type II audit frameworks. To deliver sub-millisecond API response times for Tri-State area users, we provision dedicated cloud infrastructure across low-latency regional nodes, including <a href="https://aws.amazon.com/about-aws/global-infrastructure/regions_az/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">AWS US-East (N. Virginia &amp; Ohio)</a> and Google Cloud us-east4, complemented by Cloudflare Edge Points of Presence throughout the New York metropolitan area.
         </p>
@@ -276,8 +276,8 @@ export default function NewYorkAppDevelopmentPage() {
 
         {/* SECTION 4 */}
         <h2 id="omnichannel-luxury-retail-and-madison-avenue-mobility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          High-Volume Omnichannel Commerce and Luxury Clienteling for Madison Avenue
-        </h2>
+              Omnichannel Commerce & Clienteling for NYC Retail
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">From iconic flagship stores along Fifth Avenue and Madison Avenue to boutique designers across SoHo</strong>, New York defines global retail trends and luxury consumer behavior. Modern New York shoppers demand hyper-convenient digital purchasing journeys that blend digital shopping with physical boutique experiences. Our <strong className="font-semibold text-[#de5e18] tracking-tight">custom app development in New York</strong> delivers bespoke omnichannel e-commerce applications with native mobile checkouts that support Apple Pay, Google Pay, and real-time point-of-sale inventory synchronizations. We construct custom clienteling applications for luxury retail staff that utilize Bluetooth Low Energy (BLE) proximity telemetry and RFID scanning to identify high-value VIP customers upon entering a store.
         </p>
@@ -329,8 +329,8 @@ export default function NewYorkAppDevelopmentPage() {
 
         {/* SECTION 5 */}
         <h2 id="enterprise-proptech-and-smart-building-iot-conduits" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Next-Gen PropTech and Smart Building Mobile Conduits for Manhattan Real Estate
-        </h2>
+              PropTech & Smart Building IoT for Manhattan
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Managing premier commercial skyscrapers and luxury residential towers in Manhattan</strong> requires sophisticated digital coordination. New York&apos;s leading real estate investment trusts (REITs) and property management firms are actively modernizing tenant experiences through bespoke mobile platforms. As an established <strong className="font-semibold text-[#de5e18] tracking-tight">app development company in New York</strong>, we architect PropTech applications that integrate directly with smart building IoT systems, automated HVAC controls, and digital access hardware. We incorporate NFC Apple Wallet passes and Bluetooth credentialing, allowing corporate tenants to unlock turnstiles and elevator banks directly with their mobile devices.
         </p>
@@ -340,8 +340,8 @@ export default function NewYorkAppDevelopmentPage() {
 
         {/* SECTION 6 */}
         <h2 id="ada-title-iii-wcag-accessibility-and-sdny-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Statutory ADA Title III, SDNY Legal Precedents, and WCAG 2.2 Accessibility
-        </h2>
+              ADA Title III, SDNY Precedents & WCAG 2.2
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Under the statutory requirements of Americans with Disabilities Act (ADA) Title III</strong> and New York State human rights laws, digital applications deployed for public and corporate usage must be universally accessible. The U.S. District Court for the Southern District of New York (SDNY) processes a significant volume of federal digital accessibility lawsuits annually. Every mobile product we engineer adheres strictly to <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> specifications, incorporating structured accessibility hierarchies for Apple VoiceOver and Android TalkBack.
         </p>
@@ -351,8 +351,8 @@ export default function NewYorkAppDevelopmentPage() {
 
         {/* SECTION 7 */}
         <h2 id="low-latency-edge-routing-and-carrier-hotel-peering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          NYIIX Peering, 60 Hudson Carrier Hotels, and Ultra-Low-Latency Edge Hosting
-        </h2>
+              NYIIX Peering & 60 Hudson Low-Latency Hosting
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Delivering instantaneous mobile interaction speeds across the Tri-State area</strong> requires edge caching infrastructure tuned specifically to regional telecommunications carriers, including Verizon 5G Ultra Wideband, AT&amp;T Fiber, and T-Mobile. We deploy cloud backends with direct edge peering at the <a href="https://www.nyiix.net/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">New York International Internet Exchange (NYIIX)</a> and major Manhattan carrier hotels located at 60 Hudson Street and 111 8th Avenue. This localized edge routing guarantees that API payloads and media assets execute within single-digit milliseconds of local end users.
         </p>
@@ -362,8 +362,8 @@ export default function NewYorkAppDevelopmentPage() {
 
         {/* SECTION 8 */}
         <h2 id="offline-first-mta-subway-architecture-and-push-pipelines" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Offline-First MTA Subway Transit Architecture and High-Volume Push Pipelines
-        </h2>
+              Offline-First MTA Subway Transit Architecture
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Developing mobile software for New York City demands deep understanding of the local commuter transit environment</strong>. Over five million daily riders travel via the MTA Subway, PATH train, Long Island Rail Road (LIRR), and Metro-North Railroad, where subterranean tunnels cause intermittent cellular dropouts. Our <strong className="font-semibold text-[#de5e18] tracking-tight">mobile app development in New York</strong> integrates resilient offline-first caching architectures utilizing SQLite and encrypted Realm local storage engines paired with background synchronization queues. When users transition between underground stations and street-level connectivity, the application persists user workflows, form inputs, and transactional data locally.
         </p>

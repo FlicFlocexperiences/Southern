@@ -38,11 +38,11 @@ const tableOfContents = [
   { id: "new-york-commercial-arena-and-enterprise-brand-architecture", title: "1. The New York Commercial Arena and Enterprise Brand Architecture" },
   { id: "wall-street-institutional-identity-and-fiduciary-authority", title: "2. Wall Street Institutional Identity and Fiduciary Brand Authority" },
   { id: "luxury-prestige-haute-couture-and-fifth-avenue-sensory-branding", title: "3. Luxury Prestige, Haute Couture, and Fifth Avenue Sensory Branding" },
-  { id: "silicon-alley-tech-startups-saas-category-creation-and-vc-readiness", title: "4. Silicon Alley Tech Startups, SaaS Category Creation, and VC Readiness" },
-  { id: "uspto-trademark-governance-ip-security-and-asset-protection", title: "5. USPTO Trademark Governance, IP Security, and Multi-Class Asset Protection" },
-  { id: "statutory-ada-title-iii-sdny-precedent-and-accessible-design", title: "6. Statutory ADA Title III, SDNY Legal Precedent, and Accessible Brand Design" },
-  { id: "high-dpi-edge-asset-delivery-variable-fonts-and-nyiix-cdn", title: "7. High-DPI Edge Asset Delivery, Variable Fonts, and NYIIX CDN Optimization" },
-  { id: "commercial-real-estate-environmental-placemaking-and-scalability", title: "8. Commercial Real Estate, Environmental Placemaking, and Enterprise Scalability" },
+  { id: "silicon-alley-tech-startups-saas-category-creation-and-vc-readiness", title: "Silicon Alley Tech Startups, SaaS Category Creation, and VC Readiness" },
+  { id: "uspto-trademark-governance-ip-security-and-asset-protection", title: "USPTO Trademark Governance & Asset Protection" },
+  { id: "statutory-ada-title-iii-sdny-precedent-and-accessible-design", title: "ADA Title III, SDNY Precedent & Brand Design" },
+  { id: "high-dpi-edge-asset-delivery-variable-fonts-and-nyiix-cdn", title: "High-DPI Assets, Variable Fonts & NYIIX CDN" },
+  { id: "commercial-real-estate-environmental-placemaking-and-scalability", title: "Placemaking & Branding for Manhattan Realty" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -276,8 +276,8 @@ export default function NewYorkBrandingPage() {
 
         {/* SECTION 4 */}
         <h2 id="silicon-alley-tech-startups-saas-category-creation-and-vc-readiness" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Silicon Alley Tech Startups, SaaS Category Creation, and VC Readiness
-        </h2>
+              Silicon Alley Tech Startups, SaaS Category Creation, and VC Readiness
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The innovation corridor stretching across Silicon Alley</strong>, from Flatiron and Union Square to Chelsea, SoHo, and DUMBO Brooklyn, represents one of the most prolific venture capital hubs in the world. For high-growth SaaS scale-ups, fintech disruptors, and artificial intelligence innovators, brand positioning is the ultimate strategic lever for category creation and valuation expansion. Technical founders frequently struggle to articulate complex machine learning pipelines or cloud architectures to enterprise buyers and institutional investors. Our <strong className="font-semibold text-[#de5e18] tracking-tight">tech branding specialists in New York</strong> translate complex engineering into lucid category narratives that captivate tier-one venture capital firms such as Union Square Ventures and Insight Partners.
         </p>
@@ -329,8 +329,8 @@ export default function NewYorkBrandingPage() {
 
         {/* SECTION 5 */}
         <h2 id="uspto-trademark-governance-ip-security-and-asset-protection" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          USPTO Trademark Governance, IP Security, and Multi-Class Asset Protection
-        </h2>
+              USPTO Trademark Governance & Asset Protection
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Building substantial brand equity without rigorous legal protection</strong> exposes an enterprise to severe commercial vulnerabilities, including trademark infringement, dilution, and costly intellectual property disputes. In the competitive New York marketplace, establishing clear trademark priority and international brand defensibility is a fundamental prerequisite for enterprise risk mitigation. Our branding methodology incorporates exhaustive trademark clearance analyses in collaboration with leading intellectual property counsel, evaluating candidate brand names, logomarks, and taglines against the official database of the <a href="https://www.uspto.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">United States Patent and Trademark Office (USPTO)</a> across Class 9, Class 35, Class 36, and Class 42 classifications.
         </p>
@@ -340,8 +340,8 @@ export default function NewYorkBrandingPage() {
 
         {/* SECTION 6 */}
         <h2 id="statutory-ada-title-iii-sdny-precedent-and-accessible-design" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Statutory ADA Title III, SDNY Legal Precedent, and Accessible Brand Design
-        </h2>
+              ADA Title III, SDNY Precedent & Brand Design
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The United States District Court for the Southern District of New York (SDNY)</strong> has emerged as the national epicenter for digital accessibility enforcement under Title III of the Americans with Disabilities Act (ADA) and the New York State Human Rights Law. Commercial enterprises face frequent legal scrutiny when digital brand assets fail fundamental accessibility standards. Modern enterprise branding must be inclusive by design, ensuring visual assets, color palettes, typography systems, and iconography are fully accessible. Our design team engineers corporate brand palettes strictly verified against <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA accessibility guidelines</a>, enforcing rigorous 4.5:1 minimum contrast ratios for body typography.
         </p>
@@ -351,8 +351,8 @@ export default function NewYorkBrandingPage() {
 
         {/* SECTION 7 */}
         <h2 id="high-dpi-edge-asset-delivery-variable-fonts-and-nyiix-cdn" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          High-DPI Edge Asset Delivery, Variable Fonts, and NYIIX CDN Optimization
-        </h2>
+              High-DPI Assets, Variable Fonts & NYIIX CDN
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">In high-velocity digital ecosystems</strong>, brand assets must execute flawlessly across millions of client viewports without compromising application load times or Core Web Vitals performance. Heavy uncompressed logo assets, non-standard web fonts, and poorly configured graphical files introduce layout shifts and latency that damage user experience and degrade organic search rankings. As a technical <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in New York</strong>, Southern Edge Marketing engineers lightweight, high-DPI vector SVG asset suites, responsive iconography sprites, and next-generation variable typography subsets configured specifically for modern Next.js architectures. We eliminate Cumulative Layout Shift (CLS) by hardcoding precise viewBox dimensions and font-display rules.
         </p>
@@ -362,8 +362,8 @@ export default function NewYorkBrandingPage() {
 
         {/* SECTION 8 */}
         <h2 id="commercial-real-estate-environmental-placemaking-and-scalability" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Commercial Real Estate, Environmental Placemaking, and Enterprise Scalability
-        </h2>
+              Placemaking & Branding for Manhattan Realty
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">New York City&apos;s built environment features celebrated commercial real estate developments</strong>, spanning iconic Midtown office towers, modern architectural monuments across Hudson Yards, and adaptive industrial creative campuses at the Brooklyn Navy Yard. For premier property developers, real estate investment trusts (REITs), and corporate headquarters, brand architecture extends far beyond digital screens into physical spaces and urban landmarks. Our environmental design practice translates corporate identities into three-dimensional architectural signage, lobby installations, intuitive wayfinding systems, and tenant experiences. We select high-grade physical materials, bespoke metals, precision illumination, and sustainable fabrication methods that harmonize with Manhattan architecture.
         </p>

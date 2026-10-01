@@ -36,13 +36,13 @@ export const metadata: Metadata = {
 
 const tableOfContents = [
   { id: "brisbane-commercial-landscape-and-enterprise-brand-architecture", title: "1. The Brisbane Commercial Ecosystem and Enterprise Brand Architecture" },
-  { id: "fortitude-valley-and-milton-innovation-hubs-venture-scale-up-identity", title: "2. Fortitude Valley and Milton Innovation Hubs: Venture Scale-Up Identity" },
+  { id: "fortitude-valley-and-milton-innovation-hubs-venture-scale-up-identity", title: "2. Scale-Up Brand Identity for Brisbane Hubs" },
   { id: "golden-triangle-and-queen-street-institutional-corporate-authority", title: "3. Golden Triangle and Queen Street: Institutional Corporate Authority" },
   { id: "brisbane-2032-olympic-horizon-and-tradecoast-industrial-positioning", title: "4. Brisbane 2032 Olympic Horizon and TradeCoast Industrial Positioning" },
   { id: "ip-australia-trademark-clearance-and-multi-class-brand-governance", title: "5. IP Australia Trademark Clearance and Multi-Class Brand Governance" },
-  { id: "statutory-accessibility-dda-section-24-and-wcag-compliance", title: "6. Statutory Accessibility: DDA Section 24 and WCAG 2.2 Level AA Systems" },
+  { id: "statutory-accessibility-dda-section-24-and-wcag-compliance", title: "6. DDA Section 24 & WCAG 2.2 Level AA Systems" },
   { id: "high-dpi-vector-assets-and-bne-ix-sub-millisecond-peering", title: "7. High-DPI Vector Asset Delivery and BNE-IX Sub-Millisecond Peering" },
-  { id: "environmental-placemaking-commercial-signage-and-multichannel-scale", title: "8. Environmental Placemaking, Commercial Signage, and Multi-Channel Scale" },
+  { id: "environmental-placemaking-commercial-signage-and-multichannel-scale", title: "8. Environmental Placemaking & Commercial Signage" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -236,8 +236,8 @@ export default function BrisbaneBrandingPage() {
 
         {/* SECTION 2 */}
         <h2 id="fortitude-valley-and-milton-innovation-hubs-venture-scale-up-identity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          2. Fortitude Valley and Milton Innovation Hubs: Venture Scale-Up Identity
-        </h2>
+              2. Scale-Up Brand Identity for Brisbane Hubs
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The innovation precinct spanning Fortitude Valley, Milton, and Toowong</strong> serves as the primary technology engine of Brisbane. For artificial intelligence pioneers, fintech innovators, and enterprise cloud scale-ups, strategic brand positioning is essential for category leadership. Engineering founders frequently build sophisticated software architectures, yet struggle to convey commercial value to institutional investors along Queen Street. Our <strong className="font-semibold text-[#de5e18] tracking-tight">tech branding specialists in Brisbane</strong> translate complex engineering capabilities into compelling corporate narratives that secure venture capital backing and attract top-tier engineering talent.
         </p>
@@ -357,8 +357,8 @@ export default function BrisbaneBrandingPage() {
 
         {/* SECTION 6 */}
         <h2 id="statutory-accessibility-dda-section-24-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Statutory Accessibility: DDA Section 24 and WCAG 2.2 Level AA Systems
-        </h2>
+              6. DDA Section 24 & WCAG 2.2 Level AA Systems
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Commercial enterprises operating across Australia must comply with digital accessibility mandates</strong> set forth under Section 24 of the Disability Discrimination Act 1992. Inaccessible brand interfaces exclude valuable user demographics while creating substantial legal vulnerabilities and reputational risks. Modern visual identities must incorporate universal accessibility from inception. Our Brisbane design practice formulates corporate color palettes audited against <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">W3C Web Content Accessibility Guidelines (WCAG 2.2 Level AA)</a>, ensuring minimum 4.5:1 contrast ratios across user interfaces and digital applications.
         </p>
@@ -379,8 +379,8 @@ export default function BrisbaneBrandingPage() {
 
         {/* SECTION 8 */}
         <h2 id="environmental-placemaking-commercial-signage-and-multichannel-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Environmental Placemaking, Commercial Signage, and Multi-Channel Scale
-        </h2>
+              8. Environmental Placemaking & Commercial Signage
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Brisbane is celebrated for its distinctive subtropical architecture</strong>, from heritage brick facades along Edward Street to contemporary glass towers reshaping Eagle Street. For corporate headquarters, flagship retail environments, and customer innovation centers, brand identity must project seamlessly into physical environments. Our environmental design specialists translate digital identity systems into exterior architectural signage, interior lobby installations, and intuitive wayfinding systems. We specify weather-resistant materials, precision metal fabrication, custom LED backlighting, and sustainable manufacturing standards.
         </p>

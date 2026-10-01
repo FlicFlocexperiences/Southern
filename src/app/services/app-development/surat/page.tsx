@@ -39,7 +39,7 @@ const tableOfContents = [
   },
   {
     id: "offline-first-industrial-app-performance",
-    title: "Offline-First Capability & Performance Engineering for Industrial Belts"
+    title: "Offline-First Mobile Architecture for Surat Belts"
   },
   {
     id: "southern-edge-marketing-advantage-surat",
@@ -108,8 +108,8 @@ export default function SuratAppdevelopmentPage() {
         </p>
 
         <h2 id="offline-first-industrial-app-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Offline-First Capability & Performance Engineering for Industrial Belts
-        </h2>
+              Offline-First Mobile Architecture for Surat Belts
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">In Surat's industrial zones</strong> like Pandesara GIDC and Sachin GIDC, mobile network coverage can be inconsistent, which can disrupt standard app functions. We address this challenge by building mobile clients with a dedicated offline-first architecture, utilizing local databases like Realm or SQLite. This ensures that warehouse personnel, factory workers, and logistics team members can record inventory data and scan barcodes without a network connection. When the device reconnects to a stable network, our synchronization protocols merge the local updates with the central cloud database. We also implement asset optimizations, such as compressed image delivery and code splitting, to ensure the application remains fast and responsive. This technical design keeps your app functional and reliable, regardless of network conditions in industrial settings. Investing in a resilient app infrastructure ensures that your daily business operations continue smoothly without digital interruptions.
         </p>

@@ -16,9 +16,9 @@ const tableOfContents = [
   { id: "chandigarh-organic-search-landscape", title: "Dominating Organic Search in Chandigarh's Tri-City Corporate Landscape" },
   { id: "it-park-saas-enterprise-seo", title: "Enterprise SEO for SaaS and IT Exporters in Rajiv Gandhi Tech Park" },
   { id: "local-seo-education-consultants", title: "Hyper-Local SEO for Sector 34 Education and Study Abroad Consultants" },
-  { id: "healthcare-pharma-eeat-seo", title: "E-E-A-T and Compliance-Focused Search Optimization for Pharma and Healthcare" },
+  { id: "healthcare-pharma-eeat-seo", title: "E-E-A-T & Search Optimization for Pharma & Health" },
   { id: "b2b-manufacturing-logistics-seo", title: "B2B Lead Acquisition for Industrial Area Phase 1 and 2 Manufacturers" },
-  { id: "retail-ecommerce-elante-sector17", title: "E-Commerce Optimization for Premium Retailers in Sector 17 and Elante Mall" },
+  { id: "retail-ecommerce-elante-sector17", title: "E-Commerce SEO for Sector 17 & Elante Retailers" },
   { id: "technical-nextjs-speed-optimization", title: "Technical Next.js Site Architectures for Low-Latency Mobile Indexing" },
   { id: "closed-loop-crm-revenue-attribution", title: "Closed-Loop CRM Attribution and Measurable Organic Pipeline ROI" },
   { id: "reviews", title: "Reviews" },
@@ -57,8 +57,8 @@ export default function ChandigarhSeoPage() {
         </p>
 
         <h2 id="healthcare-pharma-eeat-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          E-E-A-T and Compliance-Focused Search Optimization for Pharma and Healthcare
-        </h2>
+              E-E-A-T & Search Optimization for Pharma & Health
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The pharmaceutical and healthcare sectors in the Tri-City area, including the Mohali-Baddi industrial corridor, operate under strict regulatory standards and search engine guidelines. Google evaluates medical and health-related websites with extreme scrutiny, requiring high standards of Experience, Expertise, Authoritativeness, and Trustworthiness. We optimize clinical and pharmaceutical portals to ensure full compliance with search engine guidelines and local healthcare regulations. Our content writers develop medically accurate content reviewed by qualified professionals to establish high levels of E-E-A-T. We manage your structured metadata, publisher profiles, and clinical schema to verify the authenticity of your medical research and services. This meticulous approach protects your digital assets from search algorithm updates while building consumer trust in your diagnostics and manufacturing. By implementing secure database integrations and encrypted data forms, we safeguard patient privacy and business data.
         </p>
@@ -71,8 +71,8 @@ export default function ChandigarhSeoPage() {
         </p>
 
         <h2 id="retail-ecommerce-elante-sector17" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          E-Commerce Optimization for Premium Retailers in Sector 17 and Elante Mall
-        </h2>
+              E-Commerce SEO for Sector 17 & Elante Retailers
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Retail brands operating showrooms in Sector 17 or Elante Mall compete for the attention of Chandigarh's high-income consumer demographic. To stand out, e-commerce storefronts and lifestyle brands must dominate search rankings for premium retail and fashion queries. We implement retail search optimization campaigns that optimize product pages, category structures, and brand collections to capture organic retail traffic. Our team deploys detailed product schema markups that help Google display pricing, stock availability, and user ratings directly in search results. We focus on high-conversion transactional search terms, helping your online store attract buyers who are ready to make a purchase. This retail strategy is designed to drive online sales and increase foot traffic to your physical showrooms. By optimizing your digital catalogs, we help you build a strong brand presence and bypass high marketplace commissions.
         </p>

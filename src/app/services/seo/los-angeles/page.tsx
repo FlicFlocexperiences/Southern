@@ -44,7 +44,7 @@ const tableOfContents = [
   { id: "dtc-luxury-ecommerce-seo-for-beverly-hills-and-dtla", title: "5. High-Intent DTC E-Commerce SEO for Luxury Apparel and Clean Beauty" },
   { id: "local-seo-and-hyper-targeted-los-angeles-geo-clusters", title: "6. Hyper-Targeted Local SEO across Westside, DTLA, and the Valley" },
   { id: "digital-pr-and-high-tier-california-editorial-backlinks", title: "7. Digital PR and High-Tier California Editorial Backlink Acquisition" },
-  { id: "ai-search-optimization-chatgpt-perplexity-and-google-gemini", title: "8. Generative AI Search Optimization (LLMO/GEO) for Gemini & Perplexity" },
+  { id: "ai-search-optimization-chatgpt-perplexity-and-google-gemini", title: "Generative AI Search Optimization (GEO) in LA" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -156,8 +156,8 @@ export default function LosAngelesSeoPage() {
         </p>
 
         <h2 id="ai-search-optimization-chatgpt-perplexity-and-google-gemini" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Generative AI Search Optimization (LLMO/GEO) for Gemini &amp; Perplexity
-        </h2>
+              Generative AI Search Optimization (GEO) in LA
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Search is rapidly expanding beyond traditional ten blue links into AI Overviews, ChatGPT Search, Perplexity AI, and Google Gemini citations. We optimize your digital presence for Generative Engine Optimization (GEO) and Large Language Model Optimization (LLMO). By structuring clear factual claims, authoritative schema relationships, and cited research statistics, we ensure your brand is cited as the primary recommendation when AI search engines generate answers for high-value commercial queries. When your enterprise is ready to dominate organic and AI search in Los Angeles, <Link href="/contact" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">contact our Los Angeles SEO team</Link> to schedule an initial technical audit.
         </p>

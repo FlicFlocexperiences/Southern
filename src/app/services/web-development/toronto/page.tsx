@@ -27,7 +27,7 @@ const tableOfContents = [
   },
   {
     "id": "bay-street-fintech-security-and-pipeda-compliance",
-    "title": "Fintech-Grade Security, PIPEDA Protocols, and Canadian Data Sovereignty"
+    "title": "Fintech Security, PIPEDA Protocols & Data Sovereignty"
   },
   {
     "id": "canadian-ecommerce-interac-and-hst-tax-automation",
@@ -88,7 +88,7 @@ export default function TorontoWebDevelopmentPage() {
             </p>
 
             <h2 id="bay-street-fintech-security-and-pipeda-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Fintech-Grade Security, PIPEDA Protocols, and Canadian Data Sovereignty
+              Fintech Security, PIPEDA Protocols & Data Sovereignty
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               Operating within Canada's primary financial district on Bay Street demands institutional-grade cyber resilience and rigorous regulatory alignment. Our engineering methodologies enforce strict compliance with the <a href="https://www.priv.gc.ca/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Personal Information Protection and Electronic Documents Act (PIPEDA)</a> alongside emerging Canadian consumer privacy mandates under Bill C-27. For wealth management firms, fintech innovators, and legal practices, we implement zero-trust role-based access architectures, automated cryptographic tokenization, and end-to-end TLS 1.3 data encryption protocols. To satisfy Canadian data sovereignty requirements, we provision isolated cloud database infrastructure strictly within domestic availability zones, such as AWS Canada Central in Montreal and Microsoft Azure Canada Central in Toronto. <strong className="font-semibold text-[#de5e18] tracking-tight">Defensive software architecture</strong> ensures that your client records and transaction logs remain impervious to unauthorized interception and fully compliant with federal oversight. This uncompromising dedication to security cements trust with institutional investors and enterprise partners across the Canadian financial landscape.

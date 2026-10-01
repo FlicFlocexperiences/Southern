@@ -17,7 +17,7 @@ const tableOfContents = [
   { id: "manufacturing-automotive-seo", title: "SEO Strategies for Chennai's Automotive and Heavy Industries" },
   { id: "saas-hub-topical-authority", title: "Building Global Topical Authority for Chennai's SaaS Pioneers" },
   { id: "multilingual-search-intent", title: "Bilingual Search Optimization: Tamil and English User Intent" },
-  { id: "technical-seo-core-web-vitals", title: "Next.js Performance and Core Web Vitals for Low-Latency Search Rankings" },
+  { id: "technical-seo-core-web-vitals", title: "Next.js Performance & Core Web Vitals in Chennai" },
   { id: "local-map-pack-dominance", title: "Local SEO for Commercial Corridors: OMR, T. Nagar, and Guindy" },
   { id: "content-authority-eeat", title: "High-Authority Content Architectures and E-E-A-T Compliance" },
   { id: "conversion-attribution-search-roi", title: "Granular Search Analytics and Organic Conversion Attribution" },
@@ -64,8 +64,8 @@ export default function ChennaiSeoPage() {
         </p>
 
         <h2 id="technical-seo-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Next.js Performance and Core Web Vitals for Low-Latency Search Rankings
-        </h2>
+              Next.js Performance & Core Web Vitals in Chennai
+            </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Modern search engines heavily prioritize</strong> technical site speed and user experience metrics, making high-performance codebases essential for visibility. In Chennai's competitive digital space, a slow-loading website leads to lost traffic and immediate drops in organic rankings. We optimize Next.js frameworks, clean up JavaScript execution, and implement efficient media optimization to improve Core Web Vitals. Our technical audits address cumulative layout shifts, server response latency, and mobile rendering paths. We also implement structured JSON-LD schema markup to help search crawlers accurately index your business services. This technical precision improves search crawl efficiency, leading to faster indexing of new pages and better ranking stability. A fast, modern technical foundation is crucial for keeping users engaged and improving overall organic performance.
         </p>
