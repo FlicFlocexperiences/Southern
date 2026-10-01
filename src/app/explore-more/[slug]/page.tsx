@@ -59,8 +59,39 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         "publisher": {
           "@type": "Organization",
           "name": "Southern Marketing",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.southernedgemarketing.com/LOGO_Final.svg",
+          },
         },
         "datePublished": article.publishedAt,
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": `https://www.southernedgemarketing.com/explore-more/${slug}`,
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.southernedgemarketing.com",
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explore More",
+            "item": "https://www.southernedgemarketing.com/explore-more",
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": article.title,
+            "item": `https://www.southernedgemarketing.com/explore-more/${slug}`,
+          },
+        ],
       },
       ...(article.faqs && article.faqs.length > 0
         ? [

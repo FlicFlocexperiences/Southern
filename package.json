@@ -36,6 +36,7 @@
     "firebase": "^12.15.0",
     "firebase-admin": "^14.1.0",
     "framer-motion": "^12.40.0",
+    "googleapis": "^182.0.0",
     "lowlight": "^3.3.0",
     "next": "16.2.9",
     "openai": "^6.45.0",

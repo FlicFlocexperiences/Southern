@@ -82,6 +82,8 @@ const getLiveBlog = cache(async (slug: string): Promise<Blog | null> => {
 });
 
 const blogMetaTitleMap: Record<string, string> = {
+  "on-page-seo-vs-off-page-seo-guide": "On-Page vs Off-Page SEO: 2026 Guide",
+  "best-shopify-agencies-uae": "Best Shopify Agencies in UAE (2026)",
   "understanding-color-theory-in-digital-branding": "Color Theory in Digital Branding",
   "the-importance-of-mobile-first-design-in-2025": "Importance of Mobile Design in 2025",
   "best-website-developer-in-uk": "Best Website Developer in the UK",
@@ -168,27 +170,69 @@ export default async function BlogSlugPage({ params }: { params: Promise<{ slug:
 
   const blogJsonLd = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: blog.title,
-    description: blog.excerpt,
-    image: blogImage,
-    datePublished: blog.publishedAt,
-    author: {
-      "@type": "Person",
-      name: blog.author || "Southern Marketing Team",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Southern Edge Marketing",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.southernedgemarketing.com/LOGO_Final.svg",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        headline: blog.title,
+        description: blog.excerpt,
+        image: blogImage,
+        datePublished: blog.publishedAt,
+        author: {
+          "@type": "Person",
+          name: blog.author || "Southern Marketing Team",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "Southern Edge Marketing",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://www.southernedgemarketing.com/LOGO_Final.svg",
+          },
+        },
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": `https://www.southernedgemarketing.com/blogs/${slug}`,
+        },
       },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://www.southernedgemarketing.com/blogs/${slug}`,
-    },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.southernedgemarketing.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Blogs",
+            item: "https://www.southernedgemarketing.com/blogs",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: blog.title,
+            item: `https://www.southernedgemarketing.com/blogs/${slug}`,
+          },
+        ],
+      },
+      ...(blog.faqs && blog.faqs.length > 0
+        ? [
+            {
+              "@type": "FAQPage",
+              mainEntity: blog.faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.answer,
+                },
+              })),
+            },
+          ]
+        : []),
+    ],
   };
 
   return (

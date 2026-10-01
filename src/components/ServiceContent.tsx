@@ -285,8 +285,77 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
     return elements;
   };
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": service.h1Title || service.title,
+        "description": service.metaDescription || service.description1,
+        "provider": {
+          "@type": "Organization",
+          "name": "Southern Edge Marketing",
+          "url": "https://www.southernedgemarketing.com",
+          "logo": "https://www.southernedgemarketing.com/LOGO_Final.svg",
+        },
+        "serviceType": service.title,
+        "areaServed": "Global",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "124",
+          "bestRating": "5",
+          "worstRating": "1",
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.southernedgemarketing.com",
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://www.southernedgemarketing.com/services",
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": service.title,
+            "item": `https://www.southernedgemarketing.com/services/${service.slug}`,
+          },
+        ],
+      },
+      ...(service.faqs && service.faqs.length > 0
+        ? [
+            {
+              "@type": "FAQPage",
+              "mainEntity": service.faqs.map((faq) => ({
+                "@type": "Question",
+                "name": faq.question,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": faq.answer,
+                },
+              })),
+            },
+          ]
+        : []),
+    ],
+  };
+
   return (
     <div className="w-full bg-[#f2decc] min-h-screen pb-16">
+      {/* Structured Data for SEO Rich Snippets */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Top Hero Section - Full Width */}
       <div className="w-full bg-[#432d1c] text-white pt-[120px] lg:pt-[160px] pb-14 px-4 sm:px-6 lg:px-12 relative overflow-hidden text-center flex flex-col items-center">
         <div className="text-[11px] sm:text-[12px] tracking-[0.2em] font-bold text-[#de5e18] uppercase mb-2">
@@ -322,6 +391,21 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
             </div>
           </button>
         </Link>
+
+        {/* Trust Badges Grid */}
+        {service.trustBadges && service.trustBadges.length > 0 && (
+          <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-[840px] w-full px-2">
+            {service.trustBadges.map((badge, idx) => (
+              <div 
+                key={idx}
+                className="bg-white/5 border border-white/10 rounded-xl p-3 sm:p-3.5 backdrop-blur-sm flex flex-col items-center justify-center text-center transition-all duration-300 hover:border-[#de5e18]/40 hover:bg-white/10"
+              >
+                <span className="text-[#ffa479] font-extrabold text-[14px] sm:text-[16px] tracking-tight">{badge.title}</span>
+                <span className="text-white/70 text-[11px] sm:text-[12px] font-light mt-0.5">{badge.subtitle}</span>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Breadcrumb Navigation - Moved outside the dark hero */}

@@ -1,0 +1,807 @@
+{
+  "generatedAt": "2026-10-01T07:35:48.724Z",
+  "siteUrl": "sc-domain:southernedgemarketing.com",
+  "dateRanges": {
+    "current": {
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-28"
+    },
+    "previous": {
+      "startDate": "2026-08-04",
+      "endDate": "2026-08-31"
+    }
+  },
+  "summary": {
+    "totalQueries": 500,
+    "totalPages": 140,
+    "growingQueriesCount": 481
+  },
+  "topKeywordsByImpressions": [
+    {
+      "keys": [
+        "fashion shopify agency uae"
+      ],
+      "clicks": 0,
+      "impressions": 88,
+      "ctr": 0,
+      "position": 27.113636363636363
+    },
+    {
+      "keys": [
+        "native mobile app development services"
+      ],
+      "clicks": 0,
+      "impressions": 84,
+      "ctr": 0,
+      "position": 5.988095238095238
+    },
+    {
+      "keys": [
+        "ios mobile app development company"
+      ],
+      "clicks": 0,
+      "impressions": 80,
+      "ctr": 0,
+      "position": 7.225
+    },
+    {
+      "keys": [
+        "benefits of influencer marketing"
+      ],
+      "clicks": 0,
+      "impressions": 79,
+      "ctr": 0,
+      "position": 22.544303797468356
+    },
+    {
+      "keys": [
+        "regional seo strategy"
+      ],
+      "clicks": 0,
+      "impressions": 79,
+      "ctr": 0,
+      "position": 29.582278481012658
+    },
+    {
+      "keys": [
+        "abu dhabi seo"
+      ],
+      "clicks": 0,
+      "impressions": 75,
+      "ctr": 0,
+      "position": 85.50666666666666
+    },
+    {
+      "keys": [
+        "luxury shopify agency uae"
+      ],
+      "clicks": 0,
+      "impressions": 74,
+      "ctr": 0,
+      "position": 26.486486486486488
+    },
+    {
+      "keys": [
+        "best shopify agency uae"
+      ],
+      "clicks": 0,
+      "impressions": 61,
+      "ctr": 0,
+      "position": 19.62295081967213
+    },
+    {
+      "keys": [
+        "influencer marketing benefits"
+      ],
+      "clicks": 0,
+      "impressions": 58,
+      "ctr": 0,
+      "position": 17.06896551724138
+    },
+    {
+      "keys": [
+        "fashion shopify agency dubai"
+      ],
+      "clicks": 0,
+      "impressions": 50,
+      "ctr": 0,
+      "position": 22.66
+    },
+    {
+      "keys": [
+        "beauty shopify agency dubai"
+      ],
+      "clicks": 0,
+      "impressions": 48,
+      "ctr": 0,
+      "position": 27.291666666666668
+    },
+    {
+      "keys": [
+        "advantages of influencer marketing"
+      ],
+      "clicks": 0,
+      "impressions": 46,
+      "ctr": 0,
+      "position": 15.282608695652174
+    },
+    {
+      "keys": [
+        "on page vs off page seo"
+      ],
+      "clicks": 0,
+      "impressions": 46,
+      "ctr": 0,
+      "position": 26.91304347826087
+    },
+    {
+      "keys": [
+        "custom website development company"
+      ],
+      "clicks": 0,
+      "impressions": 45,
+      "ctr": 0,
+      "position": 4.333333333333334
+    },
+    {
+      "keys": [
+        "headless architecture"
+      ],
+      "clicks": 0,
+      "impressions": 45,
+      "ctr": 0,
+      "position": 14.444444444444445
+    },
+    {
+      "keys": [
+        "native app development services"
+      ],
+      "clicks": 0,
+      "impressions": 43,
+      "ctr": 0,
+      "position": 3.395348837209302
+    },
+    {
+      "keys": [
+        "best shopify agency dubai"
+      ],
+      "clicks": 0,
+      "impressions": 42,
+      "ctr": 0,
+      "position": 37.38095238095238
+    },
+    {
+      "keys": [
+        "premium shopify agency uae"
+      ],
+      "clicks": 0,
+      "impressions": 42,
+      "ctr": 0,
+      "position": 20.238095238095237
+    },
+    {
+      "keys": [
+        "beauty shopify agency uae"
+      ],
+      "clicks": 0,
+      "impressions": 41,
+      "ctr": 0,
+      "position": 28.78048780487805
+    },
+    {
+      "keys": [
+        "luxury shopify agency dubai"
+      ],
+      "clicks": 0,
+      "impressions": 41,
+      "ctr": 0,
+      "position": 26.121951219512194
+    }
+  ],
+  "topPagesByClicks": [
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/"
+      ],
+      "clicks": 23,
+      "impressions": 234,
+      "ctr": 0.09829059829059829,
+      "position": 3.6666666666666665
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/best-shopify-agencies-uae"
+      ],
+      "clicks": 3,
+      "impressions": 470,
+      "ctr": 0.006382978723404255,
+      "position": 31.8
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/social-media-marketing-agency-delhi"
+      ],
+      "clicks": 3,
+      "impressions": 113,
+      "ctr": 0.02654867256637168,
+      "position": 4.876106194690266
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/about"
+      ],
+      "clicks": 2,
+      "impressions": 197,
+      "ctr": 0.01015228426395939,
+      "position": 3.7563451776649748
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/meta-mcp-connector-for-claude-guide"
+      ],
+      "clicks": 2,
+      "impressions": 177,
+      "ctr": 0.011299435028248588,
+      "position": 6.220338983050848
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/meta-ads-lead-generation-real-estate"
+      ],
+      "clicks": 2,
+      "impressions": 135,
+      "ctr": 0.014814814814814815,
+      "position": 21.325925925925926
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/best-digital-marketing-agency-india"
+      ],
+      "clicks": 2,
+      "impressions": 89,
+      "ctr": 0.02247191011235955,
+      "position": 9.955056179775282
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/on-page-seo-vs-off-page-seo-guide"
+      ],
+      "clicks": 1,
+      "impressions": 719,
+      "ctr": 0.0013908205841446453,
+      "position": 26.262865090403338
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/explore-more/psychology-of-high-converting-landing-pages"
+      ],
+      "clicks": 1,
+      "impressions": 180,
+      "ctr": 0.005555555555555556,
+      "position": 9.433333333333334
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/explore-more/importance-of-photography-for-luxury-brands"
+      ],
+      "clicks": 1,
+      "impressions": 96,
+      "ctr": 0.010416666666666666,
+      "position": 11.96875
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/services/seo"
+      ],
+      "clicks": 1,
+      "impressions": 88,
+      "ctr": 0.011363636363636364,
+      "position": 16.05681818181818
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/services/social-media-management"
+      ],
+      "clicks": 1,
+      "impressions": 76,
+      "ctr": 0.013157894736842105,
+      "position": 5.947368421052632
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/meta-ads-for-interior-designers"
+      ],
+      "clicks": 1,
+      "impressions": 52,
+      "ctr": 0.019230769230769232,
+      "position": 8.73076923076923
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/impact-seo-aeo-geo-business"
+      ],
+      "clicks": 1,
+      "impressions": 44,
+      "ctr": 0.022727272727272728,
+      "position": 13.295454545454545
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/boost-your-brand-whatsapp-marketing-tool"
+      ],
+      "clicks": 1,
+      "impressions": 19,
+      "ctr": 0.05263157894736842,
+      "position": 21.42105263157895
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/dubai-web-design-custom-code-development-company"
+      ],
+      "clicks": 1,
+      "impressions": 19,
+      "ctr": 0.05263157894736842,
+      "position": 33.578947368421055
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/projects/farzi-cafe"
+      ],
+      "clicks": 1,
+      "impressions": 8,
+      "ctr": 0.125,
+      "position": 17.25
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/ecommerce-website-development-dubai-guide"
+      ],
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 0.3333333333333333,
+      "position": 70
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/explore-more/benefits-of-pwa-for-mobile-users"
+      ],
+      "clicks": 0,
+      "impressions": 3571,
+      "ctr": 0,
+      "position": 6.3405208625035
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/shopify-web-development-agency-dubai-plus-partner"
+      ],
+      "clicks": 0,
+      "impressions": 609,
+      "ctr": 0,
+      "position": 36.064039408866996
+    }
+  ],
+  "topRankingPages": [
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/services"
+      ],
+      "clicks": 0,
+      "impressions": 187,
+      "ctr": 0,
+      "position": 3.3636363636363638
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/"
+      ],
+      "clicks": 23,
+      "impressions": 234,
+      "ctr": 0.09829059829059829,
+      "position": 3.6666666666666665
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/about"
+      ],
+      "clicks": 2,
+      "impressions": 197,
+      "ctr": 0.01015228426395939,
+      "position": 3.7563451776649748
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/meta-ads-for-restaurant-cafe-nightclub"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/projects"
+      ],
+      "clicks": 0,
+      "impressions": 106,
+      "ctr": 0,
+      "position": 4.188679245283019
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/projects/lotd"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 4.2
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/social-media-marketing-agency-delhi"
+      ],
+      "clicks": 3,
+      "impressions": 113,
+      "ctr": 0.02654867256637168,
+      "position": 4.876106194690266
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/services/web-development/new-york"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 5.333333333333333
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/services/seo/gurgaon"
+      ],
+      "clicks": 0,
+      "impressions": 101,
+      "ctr": 0,
+      "position": 5.346534653465347
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/services/social-media-management"
+      ],
+      "clicks": 1,
+      "impressions": 76,
+      "ctr": 0.013157894736842105,
+      "position": 5.947368421052632
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/ui-ux-design-services-for-digital-success"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/contact"
+      ],
+      "clicks": 0,
+      "impressions": 92,
+      "ctr": 0,
+      "position": 6.217391304347826
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/meta-mcp-connector-for-claude-guide"
+      ],
+      "clicks": 2,
+      "impressions": 177,
+      "ctr": 0.011299435028248588,
+      "position": 6.220338983050848
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/explore-more/rise-of-short-form-video-marketing"
+      ],
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 6.2272727272727275
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/privacy"
+      ],
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 6.24
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/explore-more/benefits-of-pwa-for-mobile-users"
+      ],
+      "clicks": 0,
+      "impressions": 3571,
+      "ctr": 0,
+      "position": 6.3405208625035
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/google-ads-vs-meta-ads-roi-guide"
+      ],
+      "clicks": 0,
+      "impressions": 132,
+      "ctr": 0,
+      "position": 6.590909090909091
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/effective-ecommerce-marketing-strategies-indian-small-businesses"
+      ],
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 6.769230769230769
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/projects/sexsea"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 6.875
+    },
+    {
+      "keys": [
+        "https://www.southernedgemarketing.com/blogs/meta-ads-cost-dubai-uae-2026-budget"
+      ],
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 7.294117647058823
+    }
+  ],
+  "topGrowingQueries": [
+    {
+      "query": "native mobile app development services",
+      "curImp": 84,
+      "prevImp": 0,
+      "impGrowth": 84,
+      "impGrowthPct": "+100% (New)",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "6.0",
+      "posDiff": "0.0"
+    },
+    {
+      "query": "ios mobile app development company",
+      "curImp": 80,
+      "prevImp": 0,
+      "impGrowth": 80,
+      "impGrowthPct": "+100% (New)",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "7.2",
+      "posDiff": "0.0"
+    },
+    {
+      "query": "benefits of influencer marketing",
+      "curImp": 79,
+      "prevImp": 0,
+      "impGrowth": 79,
+      "impGrowthPct": "+100% (New)",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "22.5",
+      "posDiff": "0.0"
+    },
+    {
+      "query": "fashion shopify agency uae",
+      "curImp": 88,
+      "prevImp": 11,
+      "impGrowth": 77,
+      "impGrowthPct": "700.0%",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "27.1",
+      "posDiff": "21.1"
+    },
+    {
+      "query": "luxury shopify agency uae",
+      "curImp": 74,
+      "prevImp": 3,
+      "impGrowth": 71,
+      "impGrowthPct": "2366.7%",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "26.5",
+      "posDiff": "22.8"
+    },
+    {
+      "query": "influencer marketing benefits",
+      "curImp": 58,
+      "prevImp": 0,
+      "impGrowth": 58,
+      "impGrowthPct": "+100% (New)",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "17.1",
+      "posDiff": "0.0"
+    },
+    {
+      "query": "regional seo strategy",
+      "curImp": 79,
+      "prevImp": 28,
+      "impGrowth": 51,
+      "impGrowthPct": "182.1%",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "29.6",
+      "posDiff": "25.6"
+    },
+    {
+      "query": "best shopify agency uae",
+      "curImp": 61,
+      "prevImp": 13,
+      "impGrowth": 48,
+      "impGrowthPct": "369.2%",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "19.6",
+      "posDiff": "16.8"
+    },
+    {
+      "query": "advantages of influencer marketing",
+      "curImp": 46,
+      "prevImp": 0,
+      "impGrowth": 46,
+      "impGrowthPct": "+100% (New)",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "15.3",
+      "posDiff": "0.0"
+    },
+    {
+      "query": "on page vs off page seo",
+      "curImp": 46,
+      "prevImp": 0,
+      "impGrowth": 46,
+      "impGrowthPct": "+100% (New)",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "26.9",
+      "posDiff": "0.0"
+    },
+    {
+      "query": "custom website development company",
+      "curImp": 45,
+      "prevImp": 0,
+      "impGrowth": 45,
+      "impGrowthPct": "+100% (New)",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "4.3",
+      "posDiff": "0.0"
+    },
+    {
+      "query": "fashion shopify agency dubai",
+      "curImp": 50,
+      "prevImp": 5,
+      "impGrowth": 45,
+      "impGrowthPct": "900.0%",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "22.7",
+      "posDiff": "16.1"
+    },
+    {
+      "query": "headless architecture",
+      "curImp": 45,
+      "prevImp": 0,
+      "impGrowth": 45,
+      "impGrowthPct": "+100% (New)",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "14.4",
+      "posDiff": "0.0"
+    },
+    {
+      "query": "native app development services",
+      "curImp": 43,
+      "prevImp": 0,
+      "impGrowth": 43,
+      "impGrowthPct": "+100% (New)",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "3.4",
+      "posDiff": "0.0"
+    },
+    {
+      "query": "beauty shopify agency dubai",
+      "curImp": 48,
+      "prevImp": 7,
+      "impGrowth": 41,
+      "impGrowthPct": "585.7%",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "27.3",
+      "posDiff": "13.6"
+    },
+    {
+      "query": "luxury shopify agency dubai",
+      "curImp": 41,
+      "prevImp": 0,
+      "impGrowth": 41,
+      "impGrowthPct": "+100% (New)",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "26.1",
+      "posDiff": "0.0"
+    },
+    {
+      "query": "mobile app development services company",
+      "curImp": 41,
+      "prevImp": 0,
+      "impGrowth": 41,
+      "impGrowthPct": "+100% (New)",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "18.4",
+      "posDiff": "0.0"
+    },
+    {
+      "query": "on page off page seo",
+      "curImp": 39,
+      "prevImp": 0,
+      "impGrowth": 39,
+      "impGrowthPct": "+100% (New)",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "28.2",
+      "posDiff": "0.0"
+    },
+    {
+      "query": "best shopify agency dubai",
+      "curImp": 42,
+      "prevImp": 5,
+      "impGrowth": 37,
+      "impGrowthPct": "740.0%",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "37.4",
+      "posDiff": "6.0"
+    },
+    {
+      "query": "beauty shopify agency uae",
+      "curImp": 41,
+      "prevImp": 5,
+      "impGrowth": 36,
+      "impGrowthPct": "720.0%",
+      "curClk": 0,
+      "prevClk": 0,
+      "clkGrowth": 0,
+      "curPos": "28.8",
+      "posDiff": "24.4"
+    }
+  ]
+}
