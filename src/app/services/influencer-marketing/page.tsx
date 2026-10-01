@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/influencer-marketing',
   },
   title: "Influencer Marketing Agency Dubai",
-  description: "Data-driven influencer marketing agency in Dubai & India. We connect brands with vetted creators, manage end-to-end campaigns, and maximize ROI on paid social.",
+  description: "Data-driven influencer marketing agency in Dubai & UAE. We connect brands with vetted creators, manage campaigns, and maximize paid social ROI.",
   openGraph: {
     title: "Influencer Marketing Agency Dubai | Southern Edge",
-    description: "Data-driven influencer marketing agency in Dubai & India. We connect brands with vetted creators, manage end-to-end campaigns, and maximize ROI on paid social.",
+    description: "Data-driven influencer marketing agency in Dubai & UAE. We connect brands with vetted creators, manage campaigns, and maximize paid social ROI.",
     url: "https://www.southernedgemarketing.com/services/influencer-marketing",
     siteName: "Southern Edge Marketing",
   },
@@ -71,7 +71,7 @@ export default function InfluencerMarketingPage() {
       { "@type": "Country", "name": "India" },
       { "@type": "AdministrativeArea", "name": "GCC" }
     ],
-    "description": "Data-driven influencer marketing agency in Dubai & India. We connect brands with vetted creators, manage end-to-end campaigns, and maximize ROI on paid social.",
+    "description": "Data-driven influencer marketing agency in Dubai & UAE. We connect brands with vetted creators, manage campaigns, and maximize paid social ROI.",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
@@ -127,9 +127,9 @@ export default function InfluencerMarketingPage() {
               We deploy proprietary audience intelligence software to rigorously evaluate potential creators across Instagram, TikTok, YouTube, and Snapchat. Our forensic vetting process inspects follower credibility scores, geographic audience density (ensuring genuine GCC or tier-1 Indian presence), historical engagement velocity, and commercial conversion benchmarks. By filtering out artificially inflated handles, we guarantee that every marketing dollar is deployed into authentic creator ecosystems with proven buyer intent.
             </p>
 
-            <h2 id="meta-partnership-whitelisting" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+            <h3 id="meta-partnership-whitelisting" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               Meta Partnership Ads &amp; Paid Social Whitelisting
-            </h2>
+            </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">Relying strictly on organic creator posts severely caps campaign return on investment.</strong> Due to social media algorithmic compression, even top-performing organic reels and stories rarely reach more than 8% to 12% of an influencer&apos;s total following. Through Meta Partnership Ads and paid social whitelisting (creator licensing), we merge the raw credibility of creator content with the hyper-targeting precision of paid performance marketing. Whitelisting empowers our media buyers to serve paid ads directly through the creator&apos;s authentic handle to targeted lookalike and custom audiences.
             </p>
@@ -137,9 +137,9 @@ export default function InfluencerMarketingPage() {
               This methodology provides unprecedented conversion advantages. We unlock creator pixel data, create high-converting dark posts that test multiple hooks, captions, and call-to-action buttons without altering the creator&apos;s public feed, and retarget engaged viewers across the purchase funnel. Brands utilizing our whitelisting architectures achieve an average of 5.4x Return on Ad Spend (ROAS) and a 42% reduction in Customer Acquisition Cost (CAC). To maximize paid social efficiency, integrate this with our <Link href="/services/social-media-management" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">social media management services</Link>.
             </p>
 
-            <h2 id="ugc-content-production" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+            <h3 id="ugc-content-production" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               High-Converting User-Generated Content Production
-            </h2>
+            </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">Modern digital consumers scroll past glossy corporate studio commercials in milliseconds,</strong> yet stop and engage with authentic, relatable User-Generated Content (UGC). Southern Edge Marketing operates an agile UGC production studio that pairs your brand with skilled content creators who produce high-converting, native-feeling video assets at scale. We design psychology-driven creative briefs centered around problem-agitation-solution angles, unboxing experiences, aesthetic GRWM formats, and compelling social proof demonstrations.
             </p>
@@ -147,9 +147,9 @@ export default function InfluencerMarketingPage() {
               Every asset is engineered with high-impact 3-second visual hooks, clear value props, native on-screen text overlays, and persuasive conversion triggers. We deliver expansive creative libraries in 9:16 vertical video format, fully optimized for TikTok Spark Ads, Instagram Reels, and YouTube Shorts. Crucially, our comprehensive talent contracts secure perpetual digital advertising usage rights, allowing you to repurpose top-performing creator assets across high-converting landing pages, email marketing funnels, and programmatic display ads.
             </p>
 
-            <h2 id="campaign-tracking-attribution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+            <h3 id="campaign-tracking-attribution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               Full-Funnel Campaign Tracking &amp; Revenue Attribution
-            </h2>
+            </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">We discard ambiguous vanity metrics like likes and video views</strong> in favor of verified financial returns. We architect enterprise-grade tracking systems that monitor every influencer collaboration from top-of-funnel reach down to exact pipeline revenue, qualified lead generation, and e-commerce transactions. We equip every creator with dedicated UTM parameters, dynamic deep links, and bespoke discount codes synchronized directly with Google Analytics 4 (GA4), Shopify backend analytics, and server-side tracking pipelines.
             </p>
@@ -157,9 +157,9 @@ export default function InfluencerMarketingPage() {
               Our live business intelligence dashboards provide transparent visibility into click-through rates (CTR), post-view conversions, blended ROAS, and customer lifetime value (LTV). By evaluating each creator against strict Cost-Per-Acquisition (CPA) thresholds, we scale winning ambassador partnerships and eliminate underperforming channels. To capture the compounding organic search demand sparked by creator viral reach, pair your influencer activations with our technical <Link href="/services/seo" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">SEO services</Link>.
             </p>
 
-            <h2 id="middle-east-global-management" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+            <h3 id="middle-east-global-management" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               Middle East &amp; Global Creator Campaign Management
-            </h2>
+            </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">Coordinating multi-tier creator campaigns across Dubai, Abu Dhabi, Saudi Arabia,</strong> and international markets requires meticulous operational logistics and regional cultural fluency. Southern Edge Marketing provides end-to-end turnkey campaign execution, eliminating administrative friction from your internal team. Our talent managers handle talent outreach, rate negotiations, gifting logistics, product seeding, contract execution, and content publishing schedules.
             </p>
@@ -167,9 +167,9 @@ export default function InfluencerMarketingPage() {
               We understand the unique regulatory landscape of Middle Eastern creator marketing. We ensure strict compliance with UAE National Media Council (NMC) licensing rules, regional advertising disclosure standards (#Ad / #Sponsored), and culturally authentic messaging. Whether executing an exclusive VIP event in Dubai Design District or managing a multi-city product rollout across the GCC, our dedicated campaign directors guarantee seamless delivery. If you are launching an e-commerce brand in the region, explore our specialized <Link href="/services/shopify-agency-dubai" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Shopify agency in Dubai</Link>.
             </p>
 
-            <h2 id="multi-platform-execution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+            <h3 id="multi-platform-execution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               Multi-Platform Execution: Instagram, TikTok &amp; YouTube
-            </h2>
+            </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">Each digital channel addresses distinct moments in the modern customer decision journey.</strong> A high-converting creator strategy orchestrates multi-platform synergy to engage prospects across their entire digital lifecycle. On Instagram, we deploy curated aesthetic feed carousels, interactive Stories with native product stickers, and high-energy Reels. On TikTok, our creators harness fast-moving sound trends, humor, and organic storytelling that ignites discovery among high-spending Gen Z and millennial demographics.
             </p>
@@ -179,12 +179,12 @@ export default function InfluencerMarketingPage() {
 
             {/* Client Reviews Section */}
             <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-              <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+              <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
                 <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                 </svg>
                 Client Reviews
-              </h2>
+              </h3>
               <div className="flex flex-col gap-8">
                 <div className="border-b border-black/5 pb-6">
                   <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -243,7 +243,7 @@ export default function InfluencerMarketingPage() {
             </div>
 
             <div className="w-full clear-both pt-8 mt-8 border-t border-black/10">
-              <FaqAccordion faqs={[
+              <FaqAccordion headingTag="h3" faqs={[
                 {
                   "question": "How do you vet influencers to avoid fake followers and engagement?",
                   "answer": "We use deep audience analytics to inspect follower authenticity, geography, engagement velocity, and past commercial conversion benchmarks."

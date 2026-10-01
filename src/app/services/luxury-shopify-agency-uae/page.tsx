@@ -126,9 +126,9 @@ export default function LuxuryShopifyAgencyUaePage() {
               We craft bespoke visual systems centered around editorial typography, cinematic video transitions, fluid micro-interactions, and curated product discovery paths. Our designers architect asymmetrical lookbooks, immersive runway collection showcases, and minimalist navigation hierarchies that place your artisanal creations front and center. Every interaction—from a subtle cursor hover effect to a bespoke drawer checkout—is calibrated to evoke luxury, build emotional desire, and elevate Average Order Value (AOV) across the UAE and GCC.
             </p>
 
-            <h2 id="vip-clienteling-showrooms" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+            <h3 id="vip-clienteling-showrooms" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               VIP Clienteling, Private Showrooms &amp; Concierge Access
-            </h2>
+            </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">True luxury e-commerce thrives on high-touch relationship building.</strong> In the GCC region, royal family members, high-net-worth individuals (HNWIs), and private collectors expect discreet, personalized attention when acquiring high-ticket items. We build dedicated VIP clienteling suites into Shopify Plus, enabling your personal shoppers, stylists, and brand ambassadors to curate customized digital lookbooks and private shopping carts directly for individual clients.
             </p>
@@ -136,9 +136,9 @@ export default function LuxuryShopifyAgencyUaePage() {
               Our engineers build password-protected virtual showrooms and token-gated private lounges for exclusive capsule drops, private trunk shows, and limited-edition fine jewelry previews. We integrate seamless WhatsApp Business API concierge channels, allowing VIP patrons in Downtown Dubai, Palm Jumeirah, and Emirates Hills to connect directly with senior advisors, schedule in-person boutique appointments, or complete purchases via customized, white-glove payment links. For broader Middle Eastern e-commerce engineering, explore our core <Link href="/services/shopify-agency-dubai" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Shopify agency in Dubai</Link> services.
             </p>
 
-            <h2 id="sub-second-mobile-commerce" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+            <h3 id="sub-second-mobile-commerce" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               Sub-Second Mobile Commerce for High-Net-Worth Shoppers
-            </h2>
+            </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">Over 88% of luxury e-commerce revenue in the UAE</strong> originates on mobile devices, predominantly modern iPhones and flagship screens. Affluent shoppers have zero patience for sluggish page loads, jittery layout shifts, or cumbersome checkout flows. By leveraging modern headless Shopify architectures with Next.js and Shopify Hydrogen, we deliver sub-second page loads and instantaneous page transitions without compromising on 4K imagery or editorial video media.
             </p>
@@ -146,9 +146,9 @@ export default function LuxuryShopifyAgencyUaePage() {
               Our headless storefronts are deployed across regional edge CDN nodes in Dubai (DXB) and Abu Dhabi (AUH), achieving a Time to First Byte (TTFB) under 50ms and perfect Core Web Vitals scores. We streamline the purchase pipeline with native 1-click Apple Pay, Google Pay, and localized Buy Now, Pay Later (BNPL) providers like Tabby and Tamara, alongside split-payment routing for high-ticket purchases exceeding single-transaction card limits. To discover how app-like web technology accelerates mobile buyer retention, read our guide on <Link href="/explore-more/benefits-of-pwa-for-mobile-users" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">the benefits of PWAs for mobile users</Link>.
             </p>
 
-            <h2 id="interactive-3d-ar-video" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+            <h3 id="interactive-3d-ar-video" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               Interactive 3D AR Product Viewers &amp; Video Commerce
-            </h2>
+            </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">Bridging the tactile gap between physical salons and digital screens</strong> requires immersive visual technology. When purchasing a bespoke evening gown, handcrafted leather handbag, or diamond timepiece online, clients must be able to inspect every stitch, gemstone setting, and texture with absolute clarity. We implement custom WebGL, Three.js, and Apple ARKit / ARCore augmented reality viewers that allow shoppers to project 3D models into their physical environment with realistic lighting, drape, and scale.
             </p>
@@ -156,9 +156,9 @@ export default function LuxuryShopifyAgencyUaePage() {
               Furthermore, we integrate interactive shoppable video commerce directly into collection pages and editorial landing experiences. Visitors can watch runway presentations or behind-the-scenes atelier craftsmanship documentaries and tap individual garments to view sizing, fabric compositions, and instant add-to-bag drawers without interrupting video playback. This delivers a dynamic, cinema-grade shopping experience that dramatically increases dwell time and conversion velocity.
             </p>
 
-            <h2 id="fragrance-jewelry-fashion" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+            <h3 id="fragrance-jewelry-fashion" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               Fragrance, High Jewelry &amp; Fashion E-Commerce Systems
-            </h2>
+            </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">Each luxury vertical possesses unique functional requirements.</strong> For luxury fragrance houses (Haute Parfumerie), we design interactive scent profile explorers, fragrance layering configurators, and curated sample discovery sets with automated post-purchase voucher credits. For high jewelry and horology brands, our stores feature custom ring sizing guides, gemstone certificate verification modules, and bespoke engraving preview tools that render personalized inscriptions in real time.
             </p>
@@ -166,9 +166,9 @@ export default function LuxuryShopifyAgencyUaePage() {
               On the operational backend, we build enterprise API middleware that synchronizes your Shopify Plus storefront with specialized luxury ERPs like SAP, Microsoft Dynamics 365, and Oracle NetSuite. We automate bonded warehouse logistics across JAFZA, DWC (Dubai South), and Dubai CommerCity, ensuring temperature-controlled fragrance storage compliance, insured courier handoffs with DHL Express and Aramex, and real-time white-glove delivery tracking. For cross-platform enterprise engineering, see our specialized <Link href="/services/web-development/dubai" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">web development company in Dubai</Link>.
             </p>
 
-            <h2 id="bilingual-editorial-storytelling" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+            <h3 id="bilingual-editorial-storytelling" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               Bilingual Arabic &amp; English Editorial Storytelling
-            </h2>
+            </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">In the luxury domain, linguistic prestige is paramount.</strong> A poorly translated storefront or misaligned Arabic layout instantly breaks brand trust and alienates elite regional patrons. Our UI/UX team architects authentic bilingual digital experiences where English and Right-to-Left (RTL) Arabic versions are designed as equal artistic expressions, featuring sophisticated Arabic typography stacks including Readex Pro, Cairo, and Amiri.
             </p>
@@ -178,12 +178,12 @@ export default function LuxuryShopifyAgencyUaePage() {
 
             {/* Client Reviews Section */}
             <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-              <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+              <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
                 <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                 </svg>
                 Client Reviews
-              </h2>
+              </h3>
               <div className="flex flex-col gap-8">
                 <div className="border-b border-black/5 pb-6">
                   <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -242,7 +242,7 @@ export default function LuxuryShopifyAgencyUaePage() {
             </div>
 
             <div className="w-full clear-both pt-8 mt-8 border-t border-black/10">
-              <FaqAccordion faqs={[
+              <FaqAccordion headingTag="h3" faqs={[
                 {
                   "question": "How do you maintain a luxury brand identity on an e-commerce store?",
                   "answer": "We avoid generic templates, instead creating bespoke editorial typography, cinematic video transitions, fluid micro-interactions, and curated product discovery journeys."

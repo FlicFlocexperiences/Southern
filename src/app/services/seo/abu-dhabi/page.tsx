@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     canonical: '/services/seo/abu-dhabi',
   },
   title: "Top SEO Services Agency Abu Dhabi",
-  description: "Dominate organic search rankings in Abu Dhabi & UAE. Our technical SEO, local search optimization, and digital PR strategies deliver compounding organic leads.",
+  description: "Dominate search rankings in Abu Dhabi & UAE. We deliver technical SEO, local Maps optimization, and digital PR for compounding organic leads.",
   openGraph: {
     title: "Top SEO Services Agency Abu Dhabi | Southern Edge",
-    description: "Dominate organic search rankings in Abu Dhabi & UAE. Our technical SEO, local search optimization, and digital PR strategies deliver compounding organic leads.",
+    description: "Dominate search rankings in Abu Dhabi & UAE. We deliver technical SEO, local Maps optimization, and digital PR for compounding organic leads.",
     url: "https://www.southernedgemarketing.com/services/seo/abu-dhabi",
     siteName: "Southern Edge Marketing",
   },
@@ -69,7 +69,7 @@ export default function AbuDhabiSeoPage() {
       { "@type": "Country", "name": "United Arab Emirates" },
       { "@type": "AdministrativeArea", "name": "GCC" }
     ],
-    "description": "Dominate organic search rankings in Abu Dhabi & UAE. Our technical SEO, local search optimization, and digital PR strategies deliver compounding organic leads.",
+    "description": "Dominate search rankings in Abu Dhabi & UAE. We deliver technical SEO, local Maps optimization, and digital PR for compounding organic leads.",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
@@ -125,9 +125,9 @@ export default function AbuDhabiSeoPage() {
               As the premier <strong className="font-semibold text-[#de5e18] tracking-tight">SEO agency in Abu Dhabi</strong>, Southern Edge Marketing executes forensic Google Business Profile (GBP) optimization and hyper-local citation structuring. We calibrate your Name, Address, and Phone Number (NAP) consistency across verified UAE business directories, embed geo-coordinates schema, build localized district landing pages, and implement structured review generation frameworks that propel your physical locations to the top of Google Maps search results.
             </p>
 
-            <h2 id="bilingual-search-strategy" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+            <h3 id="bilingual-search-strategy" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               Bilingual Arabic &amp; English Organic Search Strategy
-            </h2>
+            </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">Capturing total market share across the UAE capital demands</strong> a nuanced bilingual organic search engine strategy. The Abu Dhabi consumer and B2B demographic is uniquely split between native Emirati citizens searching in colloquial Khaleeji and Modern Standard Arabic (MSA), and international corporate executives and expatriates searching in English. Relying on automated machine translations creates keyword cannibalization, broken search intent, and low organic conversions.
             </p>
@@ -135,9 +135,9 @@ export default function AbuDhabiSeoPage() {
               Our native Arabic SEO linguists and technical search engineers craft dedicated, mirrored content architectures. We implement precise `hreflang` multi-language tags, configure independent URL silos (`/ar/` and `/en/`), and map keyword variations that reflect local search morphology. This dual-language search framework ensures that your brand ranks organically at the summit of Google for both high-intent English queries and native Arabic search terms across the Emirates.
             </p>
 
-            <h2 id="enterprise-technical-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+            <h3 id="enterprise-technical-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               Enterprise Technical SEO &amp; Core Web Vitals Audits
-            </h2>
+            </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">Search algorithms aggressively favor web platforms that deliver flawless technical performance.</strong> In the UAE, where mobile users browse on ultra-high-speed 5G networks provided by e&amp; and du, a delay of even 500 milliseconds elevates bounce rates and suppresses organic search visibility. Our technical SEO architects perform exhaustive site architecture audits to eliminate crawl waste, indexation bottlenecks, and code bloat.
             </p>
@@ -145,9 +145,9 @@ export default function AbuDhabiSeoPage() {
               We specialize in modern JavaScript frameworks (Next.js, React), implementing Server-Side Rendering (SSR), Static Site Generation (SSG), and edge CDN caching with local Middle East endpoints. We rigorously optimize Core Web Vitals—Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS)—and deploy advanced JSON-LD structured schema markup (Organization, Service, LocalBusiness, FAQPage) that wins rich snippets on Google SERPs. For complete web architecture builds, explore our <Link href="/services/web-development" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">custom web development services</Link>.
             </p>
 
-            <h2 id="high-authority-uae-backlinks" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+            <h3 id="high-authority-uae-backlinks" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               High-Authority UAE Backlinks &amp; Regional Digital PR
-            </h2>
+            </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">Domain authority in the Arabian Gulf is forged through high-trust regional link acquisition.</strong> Generic international backlinks carry minimal geographic relevance when competing for localized Abu Dhabi commercial terms. Our dedicated digital PR and outreach team secures high-authority editorial placements on prestigious UAE, GCC, and Middle Eastern publications, regional news outlets, and recognized industry journals.
             </p>
@@ -155,9 +155,9 @@ export default function AbuDhabiSeoPage() {
               We adhere strictly to Google&apos;s E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) quality rater guidelines and 100% white-hat acquisition practices. By producing data-driven industry reports, executive thought leadership articles, and original market analyses, we earn organic, contextual editorial backlinks that elevate your domain rating and protect your rankings against core algorithm updates. If you are also expanding into the Dubai market, explore our specialized <Link href="/services/shopify-agency-dubai" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Shopify agency in Dubai</Link>.
             </p>
 
-            <h2 id="data-backed-keyword-mapping" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+            <h3 id="data-backed-keyword-mapping" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               Data-Backed Keyword Mapping for Abu Dhabi Industries
-            </h2>
+            </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">Abu Dhabi&apos;s corporate landscape encompasses diverse, high-value commercial sectors</strong>—from sovereign finance, energy, and government infrastructure to industrial manufacturing in Khalifa Economic Zones Abu Dhabi (KEZAD) and hospitality on Yas Island. Each sector requires a tailored search intent map that targets transactional buyers rather than casual researchers.
             </p>
@@ -165,9 +165,9 @@ export default function AbuDhabiSeoPage() {
               We conduct forensic competitor keyword gap analyses to identify high-value long-tail search terms with strong commercial intent. We map these terms to dedicated service pillar pages, technical case studies, and conversion-optimized landing pages. Whether optimizing a B2B supply chain portal for industrial procurement officers or positioning a private wealth advisory for high-net-worth investors, our keyword strategy ensures you dominate the exact search terms that generate revenue. For omni-channel acquisition, pair this with our <Link href="/services/social-media-management" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">social media management services</Link>.
             </p>
 
-            <h2 id="transparent-seo-reporting" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+            <h3 id="transparent-seo-reporting" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               Transparent SEO Reporting &amp; Real Lead Attribution
-            </h2>
+            </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">We reject vague vanity metrics in favor of transparent, revenue-backed reporting.</strong> Organic search impressions and keyword rank movements only matter if they drive qualified inbound inquiries, booked consultations, and closed contracts. Southern Edge Marketing equips your leadership team with live, custom Google Search Console (GSC) and Google Analytics 4 (GA4) business intelligence dashboards.
             </p>
@@ -177,12 +177,12 @@ export default function AbuDhabiSeoPage() {
 
             {/* Client Reviews Section */}
             <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-              <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+              <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
                 <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                 </svg>
                 Client Reviews
-              </h2>
+              </h3>
               <div className="flex flex-col gap-8">
                 <div className="border-b border-black/5 pb-6">
                   <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -241,7 +241,7 @@ export default function AbuDhabiSeoPage() {
             </div>
 
             <div className="w-full clear-both pt-8 mt-8 border-t border-black/10">
-              <FaqAccordion faqs={[
+              <FaqAccordion headingTag="h3" faqs={[
                 {
                   "question": "Why is local SEO crucial for businesses in Abu Dhabi?",
                   "answer": "Over 76% of high-intent searches in Abu Dhabi result in a physical visit or direct inquiry via Google Maps and local search results."

@@ -169,7 +169,7 @@ PAGE 1: /services/shopify-agency-dubai
 • Primary Keywords: "best shopify agency dubai", "shopify agency uae", "premium shopify agency uae"
 • Meta Title: Shopify Agency Dubai & UAE (2026)
   (Renders as: Shopify Agency Dubai & UAE (2026) | Southern Edge -> 47 chars)
-• Meta Description: Premier Shopify Plus agency in Dubai & UAE. We engineer high-converting custom Shopify storefronts, bespoke apps, and ERP integrations for ambitious brands. (154 chars)
+• Meta Description: Premier Shopify Plus agency in Dubai & UAE. We build custom high-converting Shopify stores, bespoke apps, and ERP integrations for top brands. (142 chars)
 • Target H1: Shopify Web Development Agency in Dubai & UAE
 • Key Sections to Include:
   - Custom Shopify Plus Theme Development (Next.js Headless Shopify / Hydrogen)
@@ -215,7 +215,7 @@ PAGE 4: /services/influencer-marketing
 • Primary Keywords: "influencer marketing agency dubai", "benefits of influencer marketing", "influencer marketing services"
 • Meta Title: Influencer Marketing Agency Dubai
   (Renders as: Influencer Marketing Agency Dubai | Southern Edge -> 49 chars)
-• Meta Description: Data-driven influencer marketing agency in Dubai & India. We connect brands with vetted creators, manage end-to-end campaigns, and maximize ROI on paid social. (154 chars)
+• Meta Description: Data-driven influencer marketing agency in Dubai & UAE. We connect brands with vetted creators, manage campaigns, and maximize paid social ROI. (143 chars)
 • Target H1: Strategic Influencer Marketing & Creator Management
 • Key Sections to Include:
   - Vetted Creator & Micro-Influencer Discovery
@@ -230,7 +230,7 @@ PAGE 5: /services/seo/abu-dhabi
 • Primary Keywords: "abu dhabi seo", "seo agency abu dhabi", "seo services abu dhabi"
 • Meta Title: Top SEO Services Agency Abu Dhabi
   (Renders as: Top SEO Services Agency Abu Dhabi | Southern Edge -> 49 chars)
-• Meta Description: Dominate organic search rankings in Abu Dhabi & UAE. Our technical SEO, local search optimization, and digital PR strategies deliver compounding organic leads. (154 chars)
+• Meta Description: Dominate search rankings in Abu Dhabi & UAE. We deliver technical SEO, local Maps optimization, and digital PR for compounding organic leads. (141 chars)
 • Target H1: Search Engine Optimization (SEO) Services in Abu Dhabi
 • Key Sections to Include:
   - Local Pack & Google Maps Dominance for Abu Dhabi Businesses
@@ -425,7 +425,7 @@ PAGE 1: /services/shopify-agency-dubai
 • H1 Title: "Shopify Web Development Agency in Dubai & UAE" (45 chars)
 • Tagline: "High-converting storefronts engineered for the Middle East."
 • Meta Title: "Shopify Agency Dubai & UAE (2026)" (33 chars -> 49 chars with " | Southern Edge")
-• Meta Description: "Premier Shopify Plus agency in Dubai & UAE. We engineer high-converting custom Shopify storefronts, bespoke apps, and ERP integrations for ambitious brands." (154 chars)
+• Meta Description: "Premier Shopify Plus agency in Dubai & UAE. We build custom high-converting Shopify stores, bespoke apps, and ERP integrations for top brands." (142 chars)
 • Stat Value: "4.2x"
 • Stat Label: "AVERAGE REVENUE & CONVERSION MULTIPLIER"
 • Tags: ["Shopify Plus", "Dubai E-Commerce", "Headless Hydrogen", "Tabby & Tamara", "Arabic UX"]
@@ -553,7 +553,7 @@ PAGE 4: /services/influencer-marketing
 • H1 Title: "Strategic Influencer Marketing & Creator Management" (51 chars)
 • Tagline: "Turn creator credibility into compounding brand revenue."
 • Meta Title: "Influencer Marketing Agency Dubai" (32 chars -> 48 chars with " | Southern Edge")
-• Meta Description: "Data-driven influencer marketing agency in Dubai & India. We connect brands with vetted creators, manage end-to-end campaigns, and maximize ROI on paid social." (154 chars)
+• Meta Description: "Data-driven influencer marketing agency in Dubai & UAE. We connect brands with vetted creators, manage campaigns, and maximize paid social ROI." (143 chars)
 • Stat Value: "5.4x"
 • Stat Label: "AVERAGE ROAS ON PARTNERSHIP ADS"
 • Tags: ["Creator Management", "Meta Whitelisting", "UGC Production", "Dubai Influencers", "Paid Social"]
@@ -595,7 +595,7 @@ PAGE 5: /services/seo/abu-dhabi
 • H1 Title: "Search Engine Optimization (SEO) Services in Abu Dhabi" (54 chars)
 • Tagline: "Dominate Google search results across the UAE Capital."
 • Meta Title: "Top SEO Services Agency Abu Dhabi" (33 chars -> 49 chars with " | Southern Edge")
-• Meta Description: "Dominate organic search rankings in Abu Dhabi & UAE. Our technical SEO, local search optimization, and digital PR strategies deliver compounding organic leads." (154 chars)
+• Meta Description: "Dominate search rankings in Abu Dhabi & UAE. We deliver technical SEO, local Maps optimization, and digital PR for compounding organic leads." (141 chars)
 • Stat Value: "#1"
 • Stat Label: "RANKING ACCELERATION IN ABU DHABI 3-PACK"
 • Tags: ["Abu Dhabi SEO", "Google Maps Local Pack", "Arabic Search", "Technical SEO", "GCC Link Building"]

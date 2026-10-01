@@ -4,12 +4,15 @@ import React, { useState } from "react";
 
 interface FaqAccordionProps {
   faqs: { question: string; answer: string }[];
+  headingTag?: "h2" | "h3";
 }
 
-export function FaqAccordion({ faqs }: FaqAccordionProps) {
+export function FaqAccordion({ faqs, headingTag = "h2" }: FaqAccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   if (!faqs || faqs.length === 0) return null;
+
+  const HeadingTag = headingTag;
 
   return (
     <div className="w-full mt-10 mb-2">
@@ -30,9 +33,9 @@ export function FaqAccordion({ faqs }: FaqAccordionProps) {
           }),
         }}
       />
-      <h2 id="faq" className="text-[26px] md:text-[32px] font-bold text-[#432d1c] tracking-tight mb-6 font-sans scroll-mt-28">
+      <HeadingTag id="faq" className="text-[26px] md:text-[32px] font-bold text-[#432d1c] tracking-tight mb-6 font-sans scroll-mt-28">
         Frequently Asked Questions
-      </h2>
+      </HeadingTag>
       <div className="flex flex-col gap-3">
         {faqs.map((faq, index) => {
           const isOpen = openIndex === index;
