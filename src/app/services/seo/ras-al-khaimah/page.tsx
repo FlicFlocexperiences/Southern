@@ -213,9 +213,9 @@ export default function RasAlKhaimahSeoPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="rak-industrial-expansion-and-enterprise-search-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="rak-industrial-expansion-and-enterprise-search-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. RAK Industrial Expansion and Enterprise Search Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The economic landscape of Ras Al Khaimah is undergoing a massive industrial and infrastructural transformation. Propelled by expansive free zone incentives across the <strong>Ras Al Khaimah Economic Zone (RAKEZ)</strong>, major deep-water maritime logistics operating out of Saqr Port, and extensive manufacturing facilities in Al Ghail and Al Hamra, commercial organizations require an authoritative digital presence. Modern procurement directors, civil engineering contractors, and global supply chain managers no longer rely on paper directories. Instead, institutional decision-makers execute complex commercial searches and leverage artificial intelligence engines to identify specialized industrial manufacturers, heavy fabrication suppliers, and chemical exporters operating in the Northern Emirates.
         </p>
@@ -224,9 +224,9 @@ export default function RasAlKhaimahSeoPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="al-marjan-hospitality-luxury-real-estate-and-multilingual-geo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="al-marjan-hospitality-luxury-real-estate-and-multilingual-geo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Al Marjan Hospitality, Luxury Real Estate, and Multilingual GEO
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The rapid emergence of landmark tourism and ultra-luxury hospitality projects on <strong>Al Marjan Island</strong>, paired with high-end residential developments in Mina Al Arab and Al Hamra Village, has established Ras Al Khaimah as a global real estate capital. Securing high-net-worth property investors and international vacationers requires cutting-edge <strong>Generative Engine Optimization (GEO)</strong> deployed alongside traditional organic search. Modern luxury consumers do not browse single keywords; they query conversational AI assistants regarding waterfront rental yields, master-planned branded residences, and five-star resort amenities using multilingual conversational prompts across English, Arabic, Russian, and European languages.
         </p>
@@ -235,9 +235,9 @@ export default function RasAlKhaimahSeoPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="rak-dao-web3-discoverability-and-llm-entity-vectoring" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="rak-dao-web3-discoverability-and-llm-entity-vectoring" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. RAK DAO, Web3 Discoverability, and LLM Entity Vectoring
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The introduction of the <strong>RAK Digital Assets Oasis (RAK DAO)</strong> has positioned the emirate as the premier global jurisdiction for virtual assets, decentralized autonomous organizations, and artificial intelligence innovators. In this fast-moving technology ecosystem, conventional keyword density strategies fall flat. Decentralized finance protocols, enterprise blockchain service providers, and venture-backed software developers must establish validated cryptographic entity nodes across decentralized knowledge graphs, developer documentation repositories, and machine learning indexing pipelines to command institutional investor mindshare and developer trust.
         </p>
@@ -281,9 +281,9 @@ export default function RasAlKhaimahSeoPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="semantic-schema-wikidata-knowledge-graphs-and-tdra-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="semantic-schema-wikidata-knowledge-graphs-and-tdra-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Semantic Schema, Wikidata Knowledge Graphs, and TDRA Compliance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern enterprise search optimization operates through semantic entity mapping rather than primitive keyword frequency. To construct defensible organic authority across Google, Bing, and autonomous conversational engines, corporate entities must be authenticated within global knowledge graphs. We architect sophisticated <strong>JSON-LD structured schema graphs</strong> adhering strictly to technical specifications governed by <a href="https://schema.org" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-semibold underline decoration-[#de5e18]/40 hover:decoration-[#de5e18]">Schema.org documentation</a>. Our engineers connect your corporate leadership, regional trade licenses, and industrial manufacturing sites directly with recognized entity databases in <a href="https://www.wikidata.org" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-semibold underline decoration-[#de5e18]/40 hover:decoration-[#de5e18]">Wikidata knowledge registries</a>.
         </p>
@@ -302,9 +302,9 @@ export default function RasAlKhaimahSeoPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Enterprise SEO &amp; GEO Architecture: Ras Al Khaimah
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -316,10 +316,9 @@ export default function RasAlKhaimahSeoPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/seo-ras-al-khaimah.jpg"
-                alt="SEO in Ras Al Khaimah Technical Architecture Infographic"
+                alt="SEO in Ras Al Khaimah Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -335,9 +334,9 @@ export default function RasAlKhaimahSeoPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="algorithmic-voice-search-arabic-nlp-and-dialectal-routing" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="algorithmic-voice-search-arabic-nlp-and-dialectal-routing" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. Algorithmic Voice Search, Arabic NLP, and Dialectal Routing
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Consumer search habits throughout the United Arab Emirates are inherently bilingual, multi-device, and increasingly reliant on voice input. C-suite executives, local Emirati entrepreneurs, and international residents frequently issue complex voice queries through mobile interfaces and connected vehicle dashboards. Capturing this substantial commercial volume requires advanced <strong>Natural Language Processing (NLP)</strong> pipelines capable of accurately interpreting Gulf Arabic idioms alongside formal Modern Standard Arabic (Fus-ha) and specialized English commercial jargon without semantic distortion or context loss.
         </p>
@@ -346,9 +345,9 @@ export default function RasAlKhaimahSeoPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="statutory-wcag-accessibility-and-crawl-budget-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-wcag-accessibility-and-crawl-budget-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Statutory WCAG Accessibility and Crawl Budget Governance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Search engine algorithms prioritize websites that deliver exceptional, frictionless digital accessibility across every user touchpoint. Clean document structures, logical heading outlines, and strict compliance with the international <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-semibold underline decoration-[#de5e18]/40 hover:decoration-[#de5e18]">W3C WCAG 2.2 AA standards</a> directly enhance search engine indexing efficiency. When automated search crawlers inspect an enterprise web portal, a streamlined DOM architecture ensures spiders index critical product catalogs and services without getting trapped in convoluted JavaScript execution stacks.
         </p>
@@ -357,9 +356,9 @@ export default function RasAlKhaimahSeoPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="uae-ix-edge-peering-smarthub-and-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="uae-ix-edge-peering-smarthub-and-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. UAE-IX Edge Peering, SmartHub, and Core Web Vitals
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Server performance, render velocity, and interface stability are fundamental ranking criteria within Google Core Web Vitals metrics. Delivering exceptional web experiences to users in Ras Al Khaimah requires strategic proximity to regional telecommunications infrastructure. Routing traffic through distant European or North American cloud data centers introduces severe network latency that degrades Time to First Byte (TTFB) and damages Interaction to Next Paint (INP) scores, ultimately suppressing organic search rankings in local search result pages.
         </p>
@@ -368,9 +367,9 @@ export default function RasAlKhaimahSeoPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="northern-emirates-map-pack-dominance-and-enterprise-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="northern-emirates-map-pack-dominance-and-enterprise-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Northern Emirates Map Pack Dominance and Enterprise SLAs
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Capturing high-intent transactional local demand requires total prominence across Google Local Map Packs and regional mapping directories. Whether your organization operates headquarters in Al Nakheel, manufacturing warehouses in RAKEZ, or commercial showrooms along Khuzam Road, localized geographic authority drives verified phone calls, qualified walk-ins, and high-value RFP opportunities. Successful local SEO requires precise geographic coordinate validation, authoritative citation building across UAE directories, and structured review generation systems across both Arabic and English profiles.
         </p>
@@ -380,12 +379,12 @@ export default function RasAlKhaimahSeoPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -393,7 +392,7 @@ export default function RasAlKhaimahSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Tariq Al Mansoori" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Tariq Al Mansoori" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Tariq Al Mansoori</p>
@@ -407,7 +406,7 @@ export default function RasAlKhaimahSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Elena Rostova</p>

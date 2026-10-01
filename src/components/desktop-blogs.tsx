@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
+import { getImageDimensions } from "@/lib/image-dimensions";
 
 export interface BlogItem {
   title: string;
@@ -79,11 +80,18 @@ Explore articles on UI/UX design, modern web development, branding, performance,
           >
             {/* Featured Image with rounded corners and scale animation */}
             <div className="w-full rounded-[24px] md:rounded-[22px] overflow-hidden shadow-sm group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)] transition-all duration-500 relative z-20 flex bg-transparent">
-              <img 
-                src={featuredBlog.image} 
-                alt={featuredBlog.title}
-                className="w-full h-auto block group-hover:scale-[1.02] transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] drop-shadow-2xl" 
-              />
+              {(() => {
+                const dims = getImageDimensions(featuredBlog.image);
+                return (
+                  <img 
+                    src={featuredBlog.image} 
+                    alt={featuredBlog.title}
+                    width={dims.width}
+                    height={dims.height}
+                    className="w-full h-auto block group-hover:scale-[1.02] transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] drop-shadow-2xl" 
+                  />
+                );
+              })()}
             </div>
             {/* Featured Title */}
             <p className="font-semibold text-[22px] md:text-[26px] leading-[1.25] text-black mt-6 mb-3 transition-colors duration-300 group-hover:text-[#de5e18]">
@@ -150,20 +158,24 @@ Explore articles on UI/UX design, modern web development, branding, performance,
           <>
             {filteredAndSortedBlogs
               .slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE)
-              .map((blog, index) => (
-            <Link 
-              key={index} 
-              href={`/blogs/${blog.slug}`}
-              className="group flex flex-col w-full text-left cursor-pointer"
-            >
-              {/* Thumbnail Image */}
-              <div className="w-full rounded-[20px] overflow-hidden shadow-sm transition-all duration-500 group-hover:shadow-[0_12px_36px_rgba(0,0,0,0.06)] relative z-10 flex bg-transparent">
-                <img 
-                  src={blog.image} 
-                  alt={blog.title} 
-                  className="w-full h-auto block group-hover:scale-[1.02] transition-transform duration-500" 
-                />
-              </div>
+              .map((blog, index) => {
+                const dims = getImageDimensions(blog.image);
+                return (
+                  <Link 
+                    key={index} 
+                    href={`/blogs/${blog.slug}`}
+                    className="group flex flex-col w-full text-left cursor-pointer"
+                  >
+                    {/* Thumbnail Image */}
+                    <div className="w-full rounded-[20px] overflow-hidden shadow-sm transition-all duration-500 group-hover:shadow-[0_12px_36px_rgba(0,0,0,0.06)] relative z-10 flex bg-transparent">
+                      <img 
+                        src={blog.image} 
+                        alt={blog.title} 
+                        width={dims.width}
+                        height={dims.height}
+                        className="w-full h-auto block group-hover:scale-[1.02] transition-transform duration-500" 
+                      />
+                    </div>
 
               {/* Metadata Row */}
               <div className="text-[13px] md:text-[14px] text-black/45 font-semibold mt-4 mb-2 flex items-center gap-2 flex-wrap">
@@ -183,7 +195,8 @@ Explore articles on UI/UX design, modern web development, branding, performance,
                 {blog.title}
               </p>
             </Link>
-          ))}
+          );
+        })}
           
           {/* Pagination Controls */}
           {Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE) > 1 && (

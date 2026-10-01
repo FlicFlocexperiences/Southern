@@ -207,9 +207,9 @@ export default function NewYorkBrandingPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="new-york-commercial-arena-and-enterprise-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="new-york-commercial-arena-and-enterprise-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           The New York Commercial Arena and Enterprise Brand Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">New York City operates as the financial and commercial capital of the global economy</strong>, generating over two trillion dollars in regional economic output. From the institutional boardrooms of Wall Street and Midtown Manhattan to technology pioneers across Silicon Alley in Flatiron, Chelsea, and DUMBO, New York commands relentless market competition. In this saturated arena, generic graphic templates fail to establish enduring distinction. Sophisticated institutional buyers, venture capital partners, and affluent consumers demand brand architectures built with strategic purpose, intellectual rigor, and undeniable authority. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in New York</strong>, Southern Edge Marketing engineers comprehensive brand architectures, bespoke visual identities, and positioning strategies for ambitious enterprises.
         </p>
@@ -218,20 +218,20 @@ export default function NewYorkBrandingPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="wall-street-institutional-identity-and-fiduciary-authority" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="wall-street-institutional-identity-and-fiduciary-authority" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Wall Street Institutional Identity and Fiduciary Brand Authority
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Financial District and Midtown Manhattan anchor global capital markets</strong>, stewarding trillions in assets across private equity, hedge funds, investment banks, and wealth management institutions. In this elite corridor, corporate visual identity is a fundamental vector of fiduciary trust, institutional governance, and operational permanence. Constructing brand systems for Wall Street firms requires deep understanding of capital allocators, risk parameters, and financial oversight. Our specialized <strong className="font-semibold text-[#de5e18] tracking-tight">corporate branding agency in New York</strong> develops authoritative visual frameworks that project stability and intellectual leadership, engineering bespoke typography and data visualization guidelines for executive boardrooms, confidential offering memorandums, and investor prospectuses.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          Our corporate branding systems are structured to comply rigorously with institutional communication standards and regulatory frameworks established by the <a href="https://www.sec.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Securities and Exchange Commission (SEC)</a>, the Financial Industry Regulatory Authority (FINRA), and the <a href="https://en.wikipedia.org/wiki/New_York_State_Department_of_Financial_Services" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">New York Department of Financial Services (NYDFS)</a>. We balance financial sobriety with modern digital sophistication, ensuring all corporate collateral, investor portals, and executive communications project absolute confidence to institutional allocators and family offices. By establishing an unassailable corporate posture, our brand strategy eliminates cognitive friction during multimillion-dollar capital allocation decisions. Review our strategic philosophy and institutional design pedigree on our <Link href="/about" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">about us</Link> page.
+          Our corporate branding systems are structured to comply rigorously with institutional communication standards and regulatory frameworks established by the <a href="https://www.sec.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Securities and Exchange Commission (SEC)</a>, the Financial Industry Regulatory Authority (FINRA), and the New York Department of Financial Services (NYDFS). We balance financial sobriety with modern digital sophistication, ensuring all corporate collateral, investor portals, and executive communications project absolute confidence to institutional allocators and family offices. By establishing an unassailable corporate posture, our brand strategy eliminates cognitive friction during multimillion-dollar capital allocation decisions. Review our strategic philosophy and institutional design pedigree on our <Link href="/about" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">about us</Link> page.
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="luxury-prestige-haute-couture-and-fifth-avenue-sensory-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="luxury-prestige-haute-couture-and-fifth-avenue-sensory-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Luxury Prestige, Haute Couture, and Fifth Avenue Sensory Branding
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">New York City sets the benchmark for global luxury commerce</strong>, anchored by iconic retail corridors along Fifth Avenue, Madison Avenue, SoHo, and the Meatpacking District. In the luxury sector, brand equity is the primary driver of commercial valuation, allowing premier fashion houses, fine jewelry ateliers, and luxury hospitality destinations to command extraordinary pricing power. Discerning high-net-worth consumers invest in prestige, artistic heritage, and emotional elevation. We collaborate with luxury maisons and fashion designers aligned with the <a href="https://cfda.com/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Council of Fashion Designers of America (CFDA)</a> to craft magnetic, sensory-rich brand ecosystems, bespoke ligatures, and tactile packaging specifications.
         </p>
@@ -275,9 +275,9 @@ export default function NewYorkBrandingPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="silicon-alley-tech-startups-saas-category-creation-and-vc-readiness" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="silicon-alley-tech-startups-saas-category-creation-and-vc-readiness" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Silicon Alley Tech Startups, SaaS Category Creation, and VC Readiness
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The innovation corridor stretching across Silicon Alley</strong>, from Flatiron and Union Square to Chelsea, SoHo, and DUMBO Brooklyn, represents one of the most prolific venture capital hubs in the world. For high-growth SaaS scale-ups, fintech disruptors, and artificial intelligence innovators, brand positioning is the ultimate strategic lever for category creation and valuation expansion. Technical founders frequently struggle to articulate complex machine learning pipelines or cloud architectures to enterprise buyers and institutional investors. Our <strong className="font-semibold text-[#de5e18] tracking-tight">tech branding specialists in New York</strong> translate complex engineering into lucid category narratives that captivate tier-one venture capital firms such as Union Square Ventures and Insight Partners.
         </p>
@@ -296,9 +296,9 @@ export default function NewYorkBrandingPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Brand Strategy &amp; Architecture Delivery Matrix: New York City
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -310,10 +310,9 @@ export default function NewYorkBrandingPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/branding-new-york.jpg"
-                alt="Branding in New York Technical Architecture Infographic"
+                alt="Branding in New York Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -329,9 +328,9 @@ export default function NewYorkBrandingPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="uspto-trademark-governance-ip-security-and-asset-protection" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="uspto-trademark-governance-ip-security-and-asset-protection" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           USPTO Trademark Governance, IP Security, and Multi-Class Asset Protection
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Building substantial brand equity without rigorous legal protection</strong> exposes an enterprise to severe commercial vulnerabilities, including trademark infringement, dilution, and costly intellectual property disputes. In the competitive New York marketplace, establishing clear trademark priority and international brand defensibility is a fundamental prerequisite for enterprise risk mitigation. Our branding methodology incorporates exhaustive trademark clearance analyses in collaboration with leading intellectual property counsel, evaluating candidate brand names, logomarks, and taglines against the official database of the <a href="https://www.uspto.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">United States Patent and Trademark Office (USPTO)</a> across Class 9, Class 35, Class 36, and Class 42 classifications.
         </p>
@@ -340,9 +339,9 @@ export default function NewYorkBrandingPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="statutory-ada-title-iii-sdny-precedent-and-accessible-design" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-ada-title-iii-sdny-precedent-and-accessible-design" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Statutory ADA Title III, SDNY Legal Precedent, and Accessible Brand Design
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The United States District Court for the Southern District of New York (SDNY)</strong> has emerged as the national epicenter for digital accessibility enforcement under Title III of the Americans with Disabilities Act (ADA) and the New York State Human Rights Law. Commercial enterprises face frequent legal scrutiny when digital brand assets fail fundamental accessibility standards. Modern enterprise branding must be inclusive by design, ensuring visual assets, color palettes, typography systems, and iconography are fully accessible. Our design team engineers corporate brand palettes strictly verified against <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA accessibility guidelines</a>, enforcing rigorous 4.5:1 minimum contrast ratios for body typography.
         </p>
@@ -351,9 +350,9 @@ export default function NewYorkBrandingPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="high-dpi-edge-asset-delivery-variable-fonts-and-nyiix-cdn" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="high-dpi-edge-asset-delivery-variable-fonts-and-nyiix-cdn" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           High-DPI Edge Asset Delivery, Variable Fonts, and NYIIX CDN Optimization
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">In high-velocity digital ecosystems</strong>, brand assets must execute flawlessly across millions of client viewports without compromising application load times or Core Web Vitals performance. Heavy uncompressed logo assets, non-standard web fonts, and poorly configured graphical files introduce layout shifts and latency that damage user experience and degrade organic search rankings. As a technical <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in New York</strong>, Southern Edge Marketing engineers lightweight, high-DPI vector SVG asset suites, responsive iconography sprites, and next-generation variable typography subsets configured specifically for modern Next.js architectures. We eliminate Cumulative Layout Shift (CLS) by hardcoding precise viewBox dimensions and font-display rules.
         </p>
@@ -362,9 +361,9 @@ export default function NewYorkBrandingPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="commercial-real-estate-environmental-placemaking-and-scalability" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="commercial-real-estate-environmental-placemaking-and-scalability" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Commercial Real Estate, Environmental Placemaking, and Enterprise Scalability
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">New York City&apos;s built environment features celebrated commercial real estate developments</strong>, spanning iconic Midtown office towers, modern architectural monuments across Hudson Yards, and adaptive industrial creative campuses at the Brooklyn Navy Yard. For premier property developers, real estate investment trusts (REITs), and corporate headquarters, brand architecture extends far beyond digital screens into physical spaces and urban landmarks. Our environmental design practice translates corporate identities into three-dimensional architectural signage, lobby installations, intuitive wayfinding systems, and tenant experiences. We select high-grade physical materials, bespoke metals, precision illumination, and sustainable fabrication methods that harmonize with Manhattan architecture.
         </p>
@@ -374,12 +373,12 @@ export default function NewYorkBrandingPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -387,7 +386,7 @@ export default function NewYorkBrandingPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Julian Mercer" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Julian Mercer" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Julian Mercer</p>
@@ -401,7 +400,7 @@ export default function NewYorkBrandingPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Elena Rostova</p>

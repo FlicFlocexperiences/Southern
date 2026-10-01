@@ -35,70 +35,70 @@ export default function PuneSeoPage() {
       />
       
       <ServiceLayout sections={tableOfContents}>
-        <h3 id="pune-digital-economy-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="pune-digital-economy-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Dominating the Digital and IT Corridor in Maharashtra's Innovation Capital
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The commercial landscape in Pune has evolved from a quiet regional market into a high-octane economic center that demands a technically precise approach to organic search marketing. Businesses operating across Hinjawadi, Kharadi, and Magarpatta City operate in a dense corporate environment where traditional marketing efforts no longer deliver competitive advantage. Our tailored optimization strategies are engineered to position your enterprise at the top of search rankings, capturing high-value client acquisitions before your competitors. We build search architectures that align with the digital behavior of local consumers, corporate executives, and international buyers looking for specialized services. Partnering with a dedicated <strong className="font-semibold text-[#de5e18]">SEO Company in Pune</strong> ensures your website develops deep, search-engine-recognized authority that compounds over time. This organic growth converts your web presence into a major customer-acquisition channel, delivering stable business growth.
         </p>
 
-        <h3 id="enterprise-saas-it-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="enterprise-saas-it-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Enterprise SEO Strategies for SaaS Platforms and IT Service Providers
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The Baner-Balewadi startup corridor and Hinjawadi Rajiv Gandhi Infotech Park host many of India's leading software-as-a-service companies and enterprise IT firms. For these technology companies, global search presence is critical for scaling inbound trials, booking software demonstrations, and attracting enterprise customers. We implement advanced search engine optimization frameworks that focus on technical site architecture, dynamic index configurations, and structured schemas to improve crawl efficiency. Our specialized keyword research identifies high-intent B2B search terms used by global technology decision makers, bypassing general queries that drive low-value traffic. By building comprehensive content hubs that address complex technology issues, we establish your team as an industry leader in your specific technology domain. Connecting these campaigns with high-performance <Link href="/services/app-development/pune" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">app development in Pune</Link> provides a fast, integrated user experience that converts organic visitors into customers.
         </p>
 
-        <h3 id="b2b-industrial-automotive-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="b2b-industrial-automotive-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Modernizing Supply Chains and B2B Portals for Automotive and Manufacturing Hubs
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The industrial belts of Chakan MIDC, Bhosari, and Talegaon represent the engine of Pune's manufacturing and automotive sectors. For suppliers of automotive parts and heavy machinery components, B2B online visibility is essential to secure long-term contract logistics and export partnerships. We build customized search campaigns that optimize industrial product catalogs, part number index configurations, and bulk supply portals to connect directly with procurement officers. Our team secures high-authority backlinks from global industrial platforms and logistics directories to build domain reputation. These strategic links comply with official standards established by organizations like the <a href="https://www.midcindia.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Maharashtra Industrial Development Corporation</a>. This search-engine authority allows your manufacturing brand to bypass traditional brokers, driving B2B inquiries to your sales team through organic search results. Combining this optimization with specialized <Link href="/services/web-development/pune" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">web development in Pune</Link> ensures that incoming search traffic is converted into qualified requests for quotes.
         </p>
 
-        <h3 id="local-search-pune-behavior" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="local-search-pune-behavior" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Capturing Local Intent and Regional Consumer Search Behavior
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Pune's commercial geography includes historic central retail areas like Deccan Gymkhana, Laxmi Road, and Camp, alongside modern commercial developments in Viman Nagar and Koregaon Park. Capturing retail customers and corporate buyers across these different areas requires a detailed local search engine presence. We manage detailed Google Business Profiles for your locations with accurate geocoding and local citation matching to build strong trust signals. Our team creates specific location pages that address the interests and regional preferences of customers in Pune. This targeted optimization ensures your business ranks in the local map pack when customers look for your services in their immediate area. When combined with targeted <Link href="/services/social-media-management/pune" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">social media management in Pune</Link>, this local focus builds a strong brand presence that captures high-intent traffic.
         </p>
 
-        <h3 id="technical-seo-nextjs-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="technical-seo-nextjs-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Technical SEO and Next.js Performance for Hinjawadi and Magarpatta Commuters
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Commuters traveling along the Hinjawadi IT road or Pune-Mumbai Expressway often browse on mobile devices while navigating congested roads or using corporate transit. A slow-loading web page on a mobile network leads to high bounce rates and lost leads. We solve this problem by optimizing Next.js architectures to ensure quick loading speeds on mobile devices. Our development team prioritizes Core Web Vitals, focusing on fast Largest Contentful Paint and minimal Cumulative Layout Shift on mobile viewports. We implement advanced image compression, clean code structure, and local caching to deliver reliable performance even on poor 4G and 5G connections. This technical standard helps search engines crawl your site efficiently, leading to higher rankings and better user engagement.
         </p>
 
-        <h3 id="pune-education-hub-authority" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="pune-education-hub-authority" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Leveraging Academic Heritage to Build Topical Search Authority
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Pune is widely known as the Oxford of the East due to its large concentration of universities and research institutes. This academic heritage has created a highly educated consumer base and a rich talent pool that respects authoritative, research-backed content. We help your brand design content strategies that display deep expertise, satisfying Google's guidelines for experience, expertise, authoritativeness, and trustworthiness. Our writers build detailed resource guides, white papers, and industry reports that address the specific issues of your market. This educational approach builds high-quality backlinks from academic and research websites, which increases your overall search authority. By positioning your business as a trusted source of information, you earn search rankings and customer trust.
         </p>
 
-        <h3 id="programmatic-seo-pune-startups" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="programmatic-seo-pune-startups" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Programmatic SEO and Agile Search Scaling for Growing Technology Startups
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The technology startup community in Pune requires fast, scalable marketing strategies to compete with larger, established firms. We deploy programmatic search engine optimization that generates targeted landing pages to capture massive volumes of long-tail queries. This scalable methodology allows software companies to grow their organic visibility in weeks rather than months. We coordinate our search campaigns with your product releases to keep your website structure clean and optimized during updates. Our team tracks competitor movements and search trends to adjust keyword targeting and content production. This agile execution ensures your startup captures high-value search queries while lowering overall acquisition costs.
         </p>
 
-        <h3 id="crm-integration-roi-attribution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="crm-integration-roi-attribution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Closed-Loop CRM Attribution and Direct Measurement of Search Engine ROI
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           We focus on business growth, measuring the success of our campaigns through qualified leads and sales revenue rather than vanity metrics. Our team integrates search tracking tools with popular CRM platforms like HubSpot and Salesforce to monitor how organic visitors move through your sales funnel. We measure important metrics like keyword ranking speed, organic traffic volume, and lead conversion rates. This data allows us to identify high-performing content and optimize your search campaigns for maximum returns. We provide transparent monthly reports that clearly show how our search engine optimization work affects your business revenue. By combining technical execution with business intelligence, we ensure your investment in search visibility yields measurable, long-term returns.
         </p>
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -106,7 +106,7 @@ export default function PuneSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rajesh Kulkarni" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rajesh Kulkarni" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Rajesh Kulkarni</p>
@@ -120,7 +120,7 @@ export default function PuneSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Neha Ranade" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Neha Ranade" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Neha Ranade</p>

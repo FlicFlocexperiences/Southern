@@ -224,9 +224,9 @@ export default function MelbourneSeoPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="melbourne-commercial-search-landscape" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="melbourne-commercial-search-landscape" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. The Melbourne Commercial Search Landscape and Generative Search Dynamics
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Melbourne commands a vital pillar of Australia commercial economy</strong>, generating over a quarter of national gross domestic product and hosting corporate headquarters across Collins Street and Docklands. In this contested marketplace, superficial keyword repetition fails to build organic dominance. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">SEO company in Melbourne</strong>, Southern Edge Marketing engineers technical search architectures designed for corporate enterprises. We analyze search journeys of institutional buyers, structuring topical networks that transform discovery into qualified enterprise pipeline.
         </p>
@@ -235,9 +235,9 @@ export default function MelbourneSeoPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="collins-street-financial-eeat" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="collins-street-financial-eeat" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Institutional E-E-A-T and Entity Authority for Collins Street Financial Leaders
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Collins Street represents the epicenter of Victorian wealth management</strong>, hosting institutional banks, private equity syndicates, and corporate advisory partnerships. Achieving search visibility within financial sectors requires adherence to Google Experience, Expertise, Authoritativeness, and Trustworthiness guidelines for high-stakes topics. Our <strong className="font-semibold text-[#de5e18] tracking-tight">Melbourne SEO agency</strong> crafts compliance-reviewed knowledge assets corroborated by recognized Australian financial analysts. We build interconnected topical clusters resolving intricate institutional queries, establishing your enterprise as an undisputed authority across Australia financial ecosystem.
         </p>
@@ -246,9 +246,9 @@ export default function MelbourneSeoPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="cremorne-tech-generative-engine-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="cremorne-tech-generative-engine-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Generative Engine Optimization (GEO) and AI Citations for Cremorne Tech Scale-Ups
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Cremorne technology precinct in Richmond represents Australia premier center</strong> for software innovation and venture capital expansion. For fast-growing enterprise software platforms, rising digital advertising costs threaten customer acquisition efficiency, making organic discovery vital for margins. Our <strong className="font-semibold text-[#de5e18] tracking-tight">enterprise SEO in Melbourne</strong> deploys Generative Engine Optimization strategies positioning software platforms as primary source citations within artificial intelligence engines like Perplexity, ChatGPT Search, and Google AI Overviews. We format documentation, API references, and comparative matrices for machine comprehension.
         </p>
@@ -292,9 +292,9 @@ export default function MelbourneSeoPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="greater-melbourne-programmatic-local-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="greater-melbourne-programmatic-local-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Programmatic Local SEO and Google Map Pack Domination Across Greater Melbourne
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Greater Melbourne encompasses diverse commercial districts</strong> across more than thirty municipal councils, from South Yarra and Hawthorn to Box Hill, Dandenong, and Tullamarine. A single generic directory listing cannot capture localized high-intent searches originating across these distinct commercial areas. Our <strong className="font-semibold text-[#de5e18] tracking-tight">local SEO services in Melbourne</strong> deploy synchronized Google Business Profile networks featuring verified physical locations, accurate geographic coordinates, and consistent citations across trusted Australian business registries. This programmatic framework captures local intent, placing your business in the Google Local 3-Pack.
         </p>
@@ -313,9 +313,9 @@ export default function MelbourneSeoPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   SEO Architecture &amp; Delivery Matrix: Melbourne
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -327,10 +327,9 @@ export default function MelbourneSeoPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/seo-melbourne.jpg"
-                alt="SEO and Generative Engine Optimization in Melbourne Technical Architecture Infographic"
+                alt="SEO and Generative Engine Optimization in Melbourne Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -346,9 +345,9 @@ export default function MelbourneSeoPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="melbourne-industrial-corridor-b2b-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="melbourne-industrial-corridor-b2b-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. B2B Industrial Search Capture for Melbourne Manufacturing and Logistics Corridors
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The manufacturing and logistics corridors spanning Laverton North, Truganina, and Dandenong South</strong> represent the industrial foundation of southeastern Australia. Corporate supply chain directors, freight managers, and industrial contractors depend on precise organic search to locate certified precision manufacturers, cold-storage logistics facilities, and specialized engineering suppliers. Our <strong className="font-semibold text-[#de5e18] tracking-tight">B2B SEO in Melbourne</strong> structures technical product specifications, logistics capabilities, and safety accreditations to capture high-value commercial search intent, turning complex procurement queries into qualified requests for proposal.
         </p>
@@ -357,31 +356,31 @@ export default function MelbourneSeoPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="oaic-privacy-and-accc-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="oaic-privacy-and-accc-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Regulatory Data Governance, OAIC Privacy Compliance, and Ethical SEO
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          <strong className="font-semibold text-[#de5e18] tracking-tight">Managing an enterprise digital presence across Melbourne requires rigorous adherence</strong> to statutory privacy protections and fair trading legislation. Our digital optimization methodologies comply strictly with the Privacy Act 1988 and the Australian Privacy Principles regulated by the <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Office of the Australian Information Commissioner</a>. We engineer privacy-conscious tracking architectures removing unauthorized third-party telemetry, managing user consent dynamically, and preventing sensitive enterprise data leaks through commercial search engine conduits and analytics tracking scripts.
+          <strong className="font-semibold text-[#de5e18] tracking-tight">Managing an enterprise digital presence across Melbourne requires rigorous adherence</strong> to statutory privacy protections and fair trading legislation. Our digital optimization methodologies comply strictly with the Privacy Act 1988 and the Australian Privacy Principles regulated by the Office of the Australian Information Commissioner. We engineer privacy-conscious tracking architectures removing unauthorized third-party telemetry, managing user consent dynamically, and preventing sensitive enterprise data leaks through commercial search engine conduits and analytics tracking scripts.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          Furthermore, our content architectures and algorithmic techniques comply with Australian Consumer Law standards maintained by the <a href="https://www.accc.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Australian Competition and Consumer Commission</a>, eliminating misleading commercial claims or deceptive click-through manipulation. We maintain thorough technical audit documentation of schema metadata and publishing updates, giving corporate legal officers complete governance transparency. This ethical foundation protects your brand equity, shields your organization from statutory penalties, and builds durable organic market value that institutional stakeholders respect across multi-year operational cycles.
+          Furthermore, our content architectures and algorithmic techniques comply with Australian Consumer Law standards maintained by the Australian Competition and Consumer Commission, eliminating misleading commercial claims or deceptive click-through manipulation. We maintain thorough technical audit documentation of schema metadata and publishing updates, giving corporate legal officers complete governance transparency. This ethical foundation protects your brand equity, shields your organization from statutory penalties, and builds durable organic market value that institutional stakeholders respect across multi-year operational cycles.
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="vic-ix-peering-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="vic-ix-peering-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. VIC-IX Port Melbourne Peering, Sub-Second Edge Delivery, and Core Web Vitals
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Search engine ranking algorithms place critical weight on server response velocity</strong>, interactive responsiveness, and visual stability under Google Core Web Vitals framework. Corporate platforms that suffer from bloated page code, slow server response times, or unexpected layout shifts face severe ranking penalties and user drop-off. We configure high-speed edge distribution peering directly with the Victorian Internet Exchange managed by the <a href="https://www.internet.org.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Internet Association of Australia</a>, utilizing carrier facilities across Equinix ME1 and NextDC M1 in Port Melbourne.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          Serving pre-rendered assets within single-digit milliseconds of Victorian users minimizes Time to First Byte and accelerates Largest Contentful Paint benchmarks. We utilize server-side rendering through <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Next.js</a>, optimize critical rendering pathways, and enforce statutory digital accessibility standards aligned with <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> guidelines. This architectural rigor pleases search spiders, resulting in faster indexing frequency, superior user engagement signals, and permanent ranking dominance across desktop and mobile screens.
+          Serving pre-rendered assets within single-digit milliseconds of Victorian users minimizes Time to First Byte and accelerates Largest Contentful Paint benchmarks. We utilize server-side rendering through Next.js, optimize critical rendering pathways, and enforce statutory digital accessibility standards aligned with <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> guidelines. This architectural rigor pleases search spiders, resulting in faster indexing frequency, superior user engagement signals, and permanent ranking dominance across desktop and mobile screens.
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="closed-loop-crm-attribution-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="closed-loop-crm-attribution-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Closed-Loop CRM Attribution and Multi-Quarter Search Governance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Executive marketing directors demand verified commercial returns</strong> rather than speculative organic impression metrics. Our <strong className="font-semibold text-[#de5e18] tracking-tight">organic search strategy in Melbourne</strong> implements closed-loop revenue attribution connecting organic touchpoints directly with enterprise customer relationship management platforms including Salesforce, HubSpot, and Microsoft Dynamics. We deploy first-party tracking that traces enterprise buyer journeys from initial discovery through multi-month procurement cycles to completed contractual revenue. This data reveals the precise commercial yield of each search cluster and landing asset.
         </p>
@@ -391,12 +390,12 @@ export default function MelbourneSeoPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -404,7 +403,7 @@ export default function MelbourneSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Hamish MacIntyre" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Hamish MacIntyre" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Hamish MacIntyre</p>
@@ -418,7 +417,7 @@ export default function MelbourneSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Elena Rostova</p>

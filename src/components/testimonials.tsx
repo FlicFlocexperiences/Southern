@@ -84,6 +84,8 @@ export const Testimonials = () => {
                 <img 
                   src={current.avatar} 
                   alt={current.name} 
+                  width={100}
+                  height={100}
                   className="w-full h-full object-cover grayscale"
                 />
               </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { getImageDimensions } from "@/lib/image-dimensions";
 
 const desktopLogos = [
   // Row 1 (6)
@@ -57,13 +58,21 @@ const HexagonTile = ({ src, hasLogo }: { src?: string | null; hasLogo?: boolean 
     src.toLowerCase().includes('tik-tok') || 
     src.toLowerCase().includes('klaviyo')
   );
+  const dims = src ? getImageDimensions(src) : { width: 60, height: 60 };
+
   return (
     <div className="relative group w-[100px] h-[110px] md:w-[130px] md:h-[143px] flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
       <div className={`absolute inset-0 transition-opacity duration-500 ${hasLogo ? 'opacity-100' : 'opacity-40 group-hover:opacity-60'}`}>
         <HexagonSvg />
       </div>
       {hasLogo && src && (
-        <img src={src} alt="Integration Logo" className={`w-[45px] h-[45px] md:w-[60px] md:h-[60px] object-contain relative z-10 filter drop-shadow-sm group-hover:scale-110 transition-transform duration-300 ${isBlackBg ? 'mix-blend-screen' : ''}`} />
+        <img 
+          src={src} 
+          alt="Integration Logo" 
+          width={dims.width}
+          height={dims.height}
+          className={`w-[45px] h-[45px] md:w-[60px] md:h-[60px] object-contain relative z-10 filter drop-shadow-sm group-hover:scale-110 transition-transform duration-300 ${isBlackBg ? 'mix-blend-screen' : ''}`} 
+        />
       )}
     </div>
   );
@@ -84,7 +93,7 @@ export const DesktopIntegrations = () => {
       
       {/* Background Graphic Blend */}
       <div className="w-full absolute top-0 left-0 h-[800px] pointer-events-none overflow-hidden">
-         <img src="/bggradi.png" alt="Background gradient" className="absolute top-0 left-0 w-full h-full object-cover object-top" />
+         <img src="/bggradi.png" alt="Background gradient" width={1200} height={579} className="absolute top-0 left-0 w-full h-full object-cover object-top" />
          {/* Overlay to ensure smooth fade into the background color at the bottom */}
          <div className="absolute inset-0 bg-gradient-to-t from-[#fffff0] via-[#fffff0]/50 to-transparent" />
       </div>

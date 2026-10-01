@@ -207,9 +207,9 @@ export default function RasAlKhaimahWebDevelopmentPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="ras-al-khaimah-economic-transformation-and-enterprise-web-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="ras-al-khaimah-economic-transformation-and-enterprise-web-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. The Ras Al Khaimah Economic Transformation and Enterprise Web Engineering
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Ras Al Khaimah is undergoing a historic economic transformation</strong>, establishing itself as an industrial titan, luxury tourism destination, and global investment center across the northern United Arab Emirates. From the multibillion-dollar resort developments reshaping Al Marjan Island and Mina Al Arab to high-output manufacturing facilities across the Ras Al Khaimah Economic Zone and maritime shipping hubs at Saqr Port, commercial enterprises require modern digital infrastructure. Outdated monolithic websites and slow content management systems create operational friction that restricts growth. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">web development company in Ras Al Khaimah</strong>, Southern Edge Marketing engineers custom web platforms and composable cloud architectures purpose-built for regional market leaders.
         </p>
@@ -218,9 +218,9 @@ export default function RasAlKhaimahWebDevelopmentPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="enterprise-nextjs-and-composable-headless-architectures-for-rak-enterprises" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="enterprise-nextjs-and-composable-headless-architectures-for-rak-enterprises" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Enterprise Next.js and Composable Headless Architectures for RAK Enterprises
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Enterprises operating across Al Hamra, RAK Central, and the Al Ghail Industrial Zone require decoupled web architectures that deliver near-instantaneous interaction speeds across all international client devices. We build high-velocity frontend interfaces powered by React and <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Next.js</a>, utilizing server-side rendering, static site generation, and React Server Components to eliminate computational bottlenecks. Decoupling the visual presentation layer from underlying databases significantly reduces client page payloads and shrinks security attack surfaces across distributed digital endpoints.
         </p>
@@ -229,9 +229,9 @@ export default function RasAlKhaimahWebDevelopmentPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="uae-pdpl-tdra-compliance-and-zero-trust-cloud-security" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="uae-pdpl-tdra-compliance-and-zero-trust-cloud-security" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. UAE PDPL, TDRA Compliance, and Zero-Trust Cloud Security
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Operating in Ras Al Khaimah demands uncompromising cybersecurity standards, zero-trust architecture, and strict adherence to federal data sovereignty legislation. Our engineering lifecycle implements rigorous technical controls aligned with UAE Federal Decree-Law No. 45 of 2021 on Personal Data Protection, available via the <a href="https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">UAE Data Protection Laws</a> portal, as well as digital security standards established by the <a href="https://tdra.gov.ae/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Telecommunications and Digital Government Regulatory Authority</a>. For luxury resorts, maritime operators, and financial enterprises, we implement multi-factor authentication, cryptographic data tokenization, and end-to-end TLS 1.3 encryption.
         </p>
@@ -275,9 +275,9 @@ export default function RasAlKhaimahWebDevelopmentPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="high-concurrency-hospitality-maritime-and-rakez-api-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="high-concurrency-hospitality-maritime-and-rakez-api-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. High-Concurrency Hospitality, Maritime, and RAKEZ API Microservices
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Ras Al Khaimah hosts world-class industrial ecosystems, maritime logistics infrastructure, and expanding hospitality corridors on Al Marjan Island. We build custom web applications, robust GraphQL API gateways, and high-concurrency microservices architectures designed to handle substantial data throughput without performance degradation. Our transactional architectures integrate with prominent regional payment gateways, including Network International, Checkout.com, Telr, and Apple Pay, providing frictionless booking and procurement transactions for commercial clients across the Middle East.
         </p>
@@ -296,9 +296,9 @@ export default function RasAlKhaimahWebDevelopmentPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Web Development Architecture &amp; Delivery Matrix: Ras Al Khaimah
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -310,10 +310,9 @@ export default function RasAlKhaimahWebDevelopmentPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/web-development-ras-al-khaimah.jpg"
-                alt="Web Development in Ras Al Khaimah Technical Architecture Infographic"
+                alt="Web Development in Ras Al Khaimah Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -329,9 +328,9 @@ export default function RasAlKhaimahWebDevelopmentPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="digital-asset-governance-rak-dao-web3-and-ip-protection" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="digital-asset-governance-rak-dao-web3-and-ip-protection" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. Digital Asset Governance, RAK DAO Web3 Integration, and Intellectual Property
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Ras Al Khaimah is pioneering future-facing business environments through initiatives like RAK Digital Assets Oasis, the premier dedicated free zone for virtual assets, artificial intelligence, and decentralized technology companies. We architect specialized web platforms with cryptographic security integrations, decentralized identity protocols, and smart contract interface gateways. Our technical engineering adheres strictly to regional digital asset frameworks, enabling fintech innovators and modern technology ventures to launch secure web applications that command trust among global institutional investors.
         </p>
@@ -340,9 +339,9 @@ export default function RasAlKhaimahWebDevelopmentPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="statutory-accessibility-bilingual-arabic-ux-and-wcag-standards" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-accessibility-bilingual-arabic-ux-and-wcag-standards" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Statutory Accessibility, Bilingual Arabic UX, and WCAG 2.2 AA Standards
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility and seamless bilingual user experience are essential requirements for modern enterprises operating in the United Arab Emirates. Commercial organizations face reputational and commercial friction when digital properties fail to comply with international accessibility standards. We build native compliance directly into our software following <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> specifications, avoiding superficial overlay widgets that fail technical audits and degrade mobile performance.
         </p>
@@ -351,9 +350,9 @@ export default function RasAlKhaimahWebDevelopmentPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="uae-ix-peering-smarthub-kalba-and-northern-emirates-edge-latency" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="uae-ix-peering-smarthub-kalba-and-northern-emirates-edge-latency" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. UAE-IX Peering, SmartHub Kalba, and Northern Emirates Edge Latency
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Delivering rapid page response times across Ras Al Khaimah, the Northern Emirates, and the wider Gulf region requires content delivery infrastructure optimized for Middle Eastern telecommunications backbones. We deploy globally distributed edge delivery networks with direct peering at the <a href="https://www.uae-ix.net/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">UAE Internet Exchange (UAE-IX)</a> and carrier-neutral peering hubs like SmartHub Kalba and Datamena. This localized edge architecture ensures cached digital assets, images, and serverless compute executions reach end users with single-digit millisecond latency.
         </p>
@@ -362,9 +361,9 @@ export default function RasAlKhaimahWebDevelopmentPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="agile-engineering-sprints-and-dedicated-rak-enterprise-support-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="agile-engineering-sprints-and-dedicated-rak-enterprise-support-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Agile Engineering Sprints and Dedicated RAK Enterprise Support SLAs
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Our technical partnership utilizes a structured sprint-based agile delivery framework engineered to provide Ras Al Khaimah corporate leaders with transparent visibility into project velocity, development milestones, and launch schedules. From initial architectural discovery and interactive prototyping to automated testing suites and zero-downtime blue-green deployments, our engineers maintain uncompromising quality standards. Following production launch, we safeguard your digital platform with comprehensive service level agreements featuring 24/7 automated monitoring, proactive security updates, and daily encrypted cloud backups.
         </p>
@@ -374,12 +373,12 @@ export default function RasAlKhaimahWebDevelopmentPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -387,7 +386,7 @@ export default function RasAlKhaimahWebDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Tariq Al Qasimi" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Tariq Al Qasimi" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Tariq Al Qasimi</p>
@@ -401,7 +400,7 @@ export default function RasAlKhaimahWebDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Fatima Al Zaabi" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Fatima Al Zaabi" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Fatima Al Zaabi</p>

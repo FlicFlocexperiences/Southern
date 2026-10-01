@@ -213,9 +213,9 @@ export default function MelbourneWebDevelopmentPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="melbourne-commercial-landscape-and-enterprise-web-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="melbourne-commercial-landscape-and-enterprise-web-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. The Melbourne Commercial Landscape and Enterprise Web Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Melbourne represents a vital economic engine and technological center</strong>, generating substantial commercial output across financial services, retail, and biotechnology sectors. From institutional headquarters along Collins Street to rapid-growth software enterprises across Cremorne and Richmond, Victorian businesses require scalable digital infrastructure. Outdated monolithic architectures introduce delays that degrade conversion rates. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">web development company in Melbourne</strong>, Southern Edge Marketing builds custom web applications engineered for Victorian commercial leaders.
         </p>
@@ -224,20 +224,20 @@ export default function MelbourneWebDevelopmentPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="enterprise-nextjs-and-composable-headless-systems-for-victorian-scale-ups" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="enterprise-nextjs-and-composable-headless-systems-for-victorian-scale-ups" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Enterprise Next.js and Composable Headless Systems for Victorian Scale-Ups
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          Fast-growing technology firms across Cremorne, Southbank, and Carlton require decoupled web infrastructure maintaining instantaneous response times during traffic surges. We engineer resilient presentation tiers utilizing React and <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Next.js</a>, leveraging server-side rendering, static generation, and React Server Components to eliminate hydration delays. Decoupling visual interfaces from backend databases substantially reduces client payload weights, accelerates Core Web Vitals performance, and shrinks security attack surfaces across Australian digital channels. This approach delivers dependable operational stability during peak consumer activity.
+          Fast-growing technology firms across Cremorne, Southbank, and Carlton require decoupled web infrastructure maintaining instantaneous response times during traffic surges. We engineer resilient presentation tiers utilizing React and Next.js, leveraging server-side rendering, static generation, and React Server Components to eliminate hydration delays. Decoupling visual interfaces from backend databases substantially reduces client payload weights, accelerates Core Web Vitals performance, and shrinks security attack surfaces across Australian digital channels. This approach delivers dependable operational stability during peak consumer activity.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           This composable headless architecture enables enterprise marketing teams to manage content through platforms like Sanity and Contentful without risking production availability. Our frontend engineering removes unnecessary third-party scripts, satisfies Google Core Web Vitals thresholds, and maximizes user retention across mobile and desktop devices. Furthermore, modular component systems enable internal teams to deploy new pages without continuous developer support. For Victorian brands planning native mobile apps, review our specialized <Link href="/services/app-development" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">app development services</Link> engineered for Australian enterprise ecosystems.
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="regulatory-compliance-privacy-act-1988-apps-and-essential-eight-security" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="regulatory-compliance-privacy-act-1988-apps-and-essential-eight-security" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Regulatory Compliance: Privacy Act 1988, APPs, and Essential Eight Security
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Operating within Victoria demands robust cyber defense and adherence to federal statutory standards. Our development lifecycle incorporates data governance measures aligned with the Australian Privacy Act 1988 and Australian Privacy Principles enforced by the <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Office of the Australian Information Commissioner</a>. For financial institutions and legal partnerships situated on Collins Street, we integrate cyber mitigation strategies defined by the <a href="https://www.cyber.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Australian Cyber Security Centre</a> Essential Eight framework, incorporating multi-factor authentication, cryptographic tokenization, and end-to-end TLS 1.3 encryption.
         </p>
@@ -281,9 +281,9 @@ export default function MelbourneWebDevelopmentPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="high-concurrency-transaction-systems-graphql-gateways-and-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="high-concurrency-transaction-systems-graphql-gateways-and-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. High-Concurrency Transaction Systems, GraphQL Gateways, and Microservices
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Melbourne serves as the national center for major retailers and high-frequency digital commerce across Australia. We develop resilient transactional engines, GraphQL gateways, and microservices architectures capable of processing thousands of concurrent checkouts without performance degradation. Our checkout workflows integrate with leading payment gateways including Stripe, Adyen, Apple Pay, and trusted Australian rails like BPAY. These transaction paths feature automated Goods and Services Tax calculations compliant with Australian Taxation Office standards, delivering effortless purchasing experiences.
         </p>
@@ -302,9 +302,9 @@ export default function MelbourneWebDevelopmentPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Web Development Architecture &amp; Delivery Matrix: Melbourne
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -316,10 +316,9 @@ export default function MelbourneWebDevelopmentPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/web-development-melbourne.jpg"
-                alt="Web Development in Melbourne Technical Architecture Infographic"
+                alt="Web Development in Melbourne Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -335,9 +334,9 @@ export default function MelbourneWebDevelopmentPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="statutory-accessibility-dda-section-24-and-wcag-22-level-aa-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-accessibility-dda-section-24-and-wcag-22-level-aa-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. Statutory Accessibility: DDA Section 24 and WCAG 2.2 Level AA Engineering
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility represents an essential statutory obligation and commitment for Australian organizations. Under Section 24 of the federal Disability Discrimination Act 1992 and guidance from the Australian Human Rights Commission, commercial web properties must offer equal access to all users. Australian enterprises face formal discrimination complaints and legal liabilities if their websites fail to achieve <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> benchmarks. Rather than using superficial accessibility overlays that fail technical audits, our team builds inclusive access directly into source code.
         </p>
@@ -346,9 +345,9 @@ export default function MelbourneWebDevelopmentPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="cremorne-tech-precinct-docklands-and-enterprise-b2b-custom-portals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="cremorne-tech-precinct-docklands-and-enterprise-b2b-custom-portals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Cremorne Tech Precinct, Docklands, and Enterprise B2B Custom Portals
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Across the Cremorne technology precinct, Docklands corporate centers, and Southbank office towers, enterprises require sophisticated web portals to manage complex commercial partnerships. We architect secure client extranets, vendor management dashboards, and enterprise customer portals tailored to the operational realities of Australian commerce. These platforms integrate directly with corporate databases, enterprise software, and document storage systems, facilitating frictionless collaboration between internal teams, external partners, and corporate clients. Supplying intuitive self-service tools reduces support tickets while ensuring continuous availability for key commercial accounts.
         </p>
@@ -357,9 +356,9 @@ export default function MelbourneWebDevelopmentPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="vic-ix-peering-equinix-me-data-centers-and-regional-edge-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="vic-ix-peering-equinix-me-data-centers-and-regional-edge-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. VIC-IX Peering, Equinix ME Data Centers, and Regional Edge Performance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Delivering instantaneous digital interactions across Greater Melbourne, Geelong, and regional Victoria requires network infrastructure optimized for Australian telecommunications backbones. We deploy distributed edge delivery pipelines with direct local peering at the Victorian Internet Exchange operated by the <a href="https://www.internet.org.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Internet Association of Australia</a>, alongside carrier-neutral facilities within NEXTDC M1 and Equinix ME1 data centers. This localized routing architecture ensures static assets, dynamic API responses, and serverless compute executions run within single-digit milliseconds of Victorian end users.
         </p>
@@ -368,9 +367,9 @@ export default function MelbourneWebDevelopmentPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="agile-sprint-engineering-victorian-support-slas-and-strategic-growth" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="agile-sprint-engineering-victorian-support-slas-and-strategic-growth" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Agile Sprint Engineering, Victorian Support SLAs, and Strategic Growth
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Our enterprise software engagements follow a disciplined, sprint-based agile delivery methodology that provides corporate executives with complete transparency into development progress, sprint velocity, and target deployment dates. From collaborative architectural planning and interactive prototyping to automated regression testing and zero-downtime deployments, our engineers maintain meticulous quality standards. Following platform launch, we safeguard your digital assets through comprehensive service level agreements featuring round-the-clock uptime monitoring, proactive security patches, and daily encrypted backups stored within sovereign Australian cloud infrastructure.
         </p>
@@ -380,12 +379,12 @@ export default function MelbourneWebDevelopmentPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -393,7 +392,7 @@ export default function MelbourneWebDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Julian Sterling" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Julian Sterling" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Julian Sterling</p>
@@ -407,7 +406,7 @@ export default function MelbourneWebDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Eleni Rossi" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Eleni Rossi" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Eleni Rossi</p>

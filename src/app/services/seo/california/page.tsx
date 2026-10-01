@@ -235,9 +235,9 @@ export default function CaliforniaSeoPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="california-macro-economy-and-enterprise-search-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="california-macro-economy-and-enterprise-search-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. The California Macro-Economy, Algorithmic Discovery, and Enterprise Search Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           California represents the world fifth largest economy, powered by innovation across <strong>Silicon Valley</strong>, <strong>Silicon Beach</strong>, and the <strong>San Francisco Financial District</strong>. In this high-density ecosystem, organic search visibility demands technical rigor far beyond basic keyword placement. Enterprise organizations navigating California competitive digital landscape require search frameworks engineered to capture high-intent commercial queries across distributed demographics. Southern Edge Marketing builds resilient search architectures designed to sustain top organic rankings through algorithmic shifts, neural rankers, and multi-market updates.
         </p>
@@ -246,9 +246,9 @@ export default function CaliforniaSeoPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="generative-engine-optimization-llm-grounding-and-ai-overviews" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="generative-engine-optimization-llm-grounding-and-ai-overviews" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Generative Engine Optimization (GEO), LLM Grounding, and AI Overviews Integration
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Search behavior across California tech corridors has evolved beyond traditional ten blue links toward generative artificial intelligence engines and conversational surfaces. Enterprise visibility now depends on <strong>Generative Engine Optimization (GEO)</strong>, ensuring brand authority is cited within Google AI Overviews, OpenAI search models, Perplexity discovery surfaces, and Anthropic conversational agents. California technology buyers and institutional decision-makers rely on syntheses provided by large language models to evaluate platforms. Southern Edge Marketing structures brand entities, data attributes, and analytical citations so retrieval-augmented generation systems accurately extract your value proposition.
         </p>
@@ -257,9 +257,9 @@ export default function CaliforniaSeoPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="edge-crawl-efficiency-serverless-rendering-and-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="edge-crawl-efficiency-serverless-rendering-and-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Edge Crawl Efficiency, Serverless Rendering, and Silicon Valley Core Web Vitals
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Enterprise websites operating in California often suffer from crawl budget waste caused by unoptimized client-side JavaScript, deep facet navigation, and bloated asset bundles. Search engine bots allocate finite computational resources when indexing complex enterprise domains. Our engineering-led search team audits indexation paths, dynamic rendering pipelines, and server response metrics to ensure high-priority revenue pages are parsed instantly. Through headless architecture optimization and intelligent caching headers, we eliminate redundant crawler requests and accelerate the indexation of critical commercial URLs across multi-tenant platforms.
         </p>
@@ -303,9 +303,9 @@ export default function CaliforniaSeoPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="ccpa-cpra-and-privacy-first-technical-search-analytics" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="ccpa-cpra-and-privacy-first-technical-search-analytics" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. CCPA, CPRA, and Privacy-First Technical Search Analytics Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           California regulatory environment imposes strict consumer privacy protections through the California Consumer Privacy Act and the California Privacy Rights Act. Traditional search analytics workflows that rely on intrusive tracking mechanisms create substantial regulatory liability for enterprise operators. Southern Edge Marketing implements privacy-first search measurement systems governed by the statutory frameworks established by the <a href="https://cppa.ca.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-semibold hover:underline">California Privacy Protection Agency</a>. Our data engineers configure cookieless attribution models, server-side Google Tag Manager containers, and anonymized conversion telemetry to ensure complete regulatory compliance without sacrificing actionable intelligence.
         </p>
@@ -324,9 +324,9 @@ export default function CaliforniaSeoPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   SEO Architecture &amp; Delivery Matrix: California
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -338,10 +338,9 @@ export default function CaliforniaSeoPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/seo-california.jpg"
-                alt="SEO in California Technical Architecture Infographic"
+                alt="SEO in California Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -357,9 +356,9 @@ export default function CaliforniaSeoPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="multi-market-local-entity-seo-california-tech-corridors" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="multi-market-local-entity-seo-california-tech-corridors" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. Multi-Market Local Entity SEO for Silicon Beach, Silicon Valley, and FiDi
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           California diverse regional economies require distinct localized search strategies rather than generic statewide campaigns. The venture capital and deep-tech ecosystem in Menlo Park, Palo Alto, and Mountain View operates under entirely different commercial search patterns than the media and creative tech corridor of Silicon Beach in Santa Monica, Venice, and Culver City. Southern Edge Marketing designs multi-location entity hierarchies that establish authentic local relevance for every regional office, retail hub, or corporate campus across Southern and Northern California territories.
         </p>
@@ -368,9 +367,9 @@ export default function CaliforniaSeoPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="deep-semantic-schema-taxonomy-and-knowledge-graph-interlinking" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="deep-semantic-schema-taxonomy-and-knowledge-graph-interlinking" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Deep Semantic Schema Taxonomy and Knowledge Graph Entity Interlinking
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern search engines rely on semantic graphs to comprehend the real-world relationships between corporate entities, leadership teams, proprietary products, and industry accolades. Southern Edge Marketing engineers comprehensive JSON-LD structured data architectures aligned with formal <a href="https://schema.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-semibold hover:underline">Schema.org</a> vocabularies. We map your enterprise identity using precise RDF microdata, linking corporate entities, founders, executive contributors, patents, and software offerings into an interconnected knowledge web that search engines can parse without ambiguity or hallucination.
         </p>
@@ -379,9 +378,9 @@ export default function CaliforniaSeoPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="low-latency-edge-peering-via-sfmix-and-carrier-hotels" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="low-latency-edge-peering-via-sfmix-and-carrier-hotels" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. Low-Latency Edge Peering via SFMIX and Los Angeles Carrier Hotels
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Search bot latency and user time-to-first-byte are heavily governed by physical routing distance and internet exchange interconnects across the Pacific Rim. Serving California enterprise audiences demands strategic edge caching and direct peering near major telecommunications nodes. We architect content delivery strategies that leverage low-latency routing through regional peering hubs such as the <a href="https://www.sfmix.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-semibold hover:underline">San Francisco Metropolitan Internet Exchange</a> and the world-renowned One Wilshire carrier hotel in downtown Los Angeles.
         </p>
@@ -390,9 +389,9 @@ export default function CaliforniaSeoPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="enterprise-conversion-rate-optimization-and-organic-strategy" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="enterprise-conversion-rate-optimization-and-organic-strategy" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Enterprise Conversion Rate Optimization and Full-Lifecycle Organic Strategy
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Driving high volumes of organic traffic to your California digital properties generates value only when visitors convert into pipeline opportunities, registered users, or closed enterprise contracts. Southern Edge Marketing integrates conversion rate optimization directly into every phase of search strategy. We analyze user intent pathways, scroll depth, and interaction heatmaps to refine value propositions, remove friction from form submissions, and align landing page typography with the sophisticated expectations of California business executives.
         </p>
@@ -402,12 +401,12 @@ export default function CaliforniaSeoPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -415,7 +414,7 @@ export default function CaliforniaSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Marcus Vance</p>
@@ -429,7 +428,7 @@ export default function CaliforniaSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Elena Rostova</p>

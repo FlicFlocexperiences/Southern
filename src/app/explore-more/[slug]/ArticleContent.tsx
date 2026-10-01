@@ -310,7 +310,7 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
             {/* FAQs */}
             {article.faqs && article.faqs.length > 0 && (
               <div className="mt-14 pt-10 border-t border-black/10">
-                <h3 className="text-[26px] font-bold text-[#3e271a] mb-6">Frequently Asked Questions</h3>
+                <h2 className="text-[26px] font-bold text-[#3e271a] mb-6">Frequently Asked Questions</h2>
                 <div className="space-y-4">
                   {article.faqs.map((faq, index) => {
                     const isOpen = openFaq === index;
@@ -323,7 +323,7 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
                           onClick={() => toggleFaq(index)}
                           className="w-full text-left p-6 flex justify-between items-center focus:outline-none"
                         >
-                          <h4 className="text-[17px] sm:text-[18px] font-bold text-[#432d1c] pr-4">{faq.question}</h4>
+                          <h3 className="text-[17px] sm:text-[18px] font-bold text-[#432d1c] pr-4">{faq.question}</h3>
                           <span className="shrink-0 ml-4 text-[#de5e18]">
                             {isOpen ? (
                               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

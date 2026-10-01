@@ -207,9 +207,9 @@ export default function SanFranciscoBrandingPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="san-francisco-commercial-ecosystem-and-enterprise-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="san-francisco-commercial-ecosystem-and-enterprise-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. The San Francisco Commercial Ecosystem and Enterprise Brand Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">San Francisco represents the capital of global technology and venture finance</strong>, driving immense enterprise valuation across the Bay Area. From software scale-ups in South of Market (SoMa) to corporate institutions in the Financial District, market competition is intense. Generic visual templates fail to deliver distinction. Institutional investors and enterprise buyers require brand systems built with analytical rigor. As a premier <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in San Francisco</strong>, Southern Edge Marketing crafts full-stack brand architectures and positioning frameworks.
         </p>
@@ -218,9 +218,9 @@ export default function SanFranciscoBrandingPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="silicon-valley-category-creation-ai-narrative-engineering-and-vc-readiness" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="silicon-valley-category-creation-ai-narrative-engineering-and-vc-readiness" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Silicon Valley Category Creation, AI Narrative Engineering, and VC Readiness
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The technology corridor extending from SoMa to Silicon Valley</strong> houses the highest concentration of venture capital globally. For artificial intelligence pioneers and enterprise SaaS innovators, strategic brand positioning is the primary catalyst for category creation. Technical founders frequently excel at building neural architectures but struggle to translate capabilities into enterprise narratives. Our <strong className="font-semibold text-[#de5e18] tracking-tight">tech branding specialists in San Francisco</strong> convert software capabilities into value propositions that captivate Sand Hill Road venture firms.
         </p>
@@ -229,9 +229,9 @@ export default function SanFranciscoBrandingPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="institutional-financial-identity-fintech-trust-and-montgomery-street-authority" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="institutional-financial-identity-fintech-trust-and-montgomery-street-authority" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Institutional Financial Identity, FinTech Trust, and Montgomery Street Authority
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The historic financial corridor along Montgomery Street and Financial District towers</strong> steward immense institutional capital, private equity reserves, and fintech platforms. In this fiduciary environment, corporate visual identity is a direct measure of institutional credibility and governance. Developing brand systems for San Francisco financial firms requires profound understanding of capital allocators and compliance. Our <strong className="font-semibold text-[#de5e18] tracking-tight">corporate branding agency in San Francisco</strong> engineers authoritative visual identities that project stability for executive boardrooms.
         </p>
@@ -275,9 +275,9 @@ export default function SanFranciscoBrandingPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="mission-bay-life-sciences-deeptech-positioning-and-b2b-credibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="mission-bay-life-sciences-deeptech-positioning-and-b2b-credibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Mission Bay Life Sciences, DeepTech Positioning, and B2B Credibility
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Mission Bay innovation cluster and surrounding biotechnology hubs</strong> house world-renowned research institutes, clinical therapeutics developers, and computational biology leaders. In these scientific fields, brand architecture must convey deep intellectual authority and clinical precision. Scientific founders require visual identities communicating complex biomedical mechanisms to clinical partners, regulatory authorities, and healthcare investors. Our life sciences branding team in San Francisco translates breakthroughs into clear brand systems, developing molecular iconography.
         </p>
@@ -296,9 +296,9 @@ export default function SanFranciscoBrandingPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Brand Strategy &amp; Architecture Delivery Matrix: San Francisco
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -310,10 +310,9 @@ export default function SanFranciscoBrandingPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/branding-san-francisco.jpg"
-                alt="Branding in San Francisco Technical Architecture Infographic"
+                alt="Branding in San Francisco Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -329,9 +328,9 @@ export default function SanFranciscoBrandingPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="uspto-multi-class-trademark-governance-and-bay-area-ip-protection" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="uspto-multi-class-trademark-governance-and-bay-area-ip-protection" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. USPTO Multi-Class Trademark Governance and Bay Area IP Protection
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Building brand equity without rigorous intellectual property protection</strong> exposes an enterprise to severe commercial vulnerabilities, including trademark infringement disputes, brand dilution, and costly rebranding mandates. In the competitive San Francisco market, establishing early trademark priority is an essential component of enterprise risk management. Our branding process integrates trademark clearance screening in direct coordination with intellectual property attorneys, evaluating candidate names, logomarks, and nomenclatures against the database of the <a href="https://www.uspto.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">United States Patent and Trademark Office (USPTO)</a>.
         </p>
@@ -340,9 +339,9 @@ export default function SanFranciscoBrandingPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="statutory-ada-title-iii-california-unruh-act-and-accessible-brand-systems" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-ada-title-iii-california-unruh-act-and-accessible-brand-systems" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Statutory ADA Title III, California Unruh Act, and Accessible Brand Systems
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Operating within the jurisdiction of the Ninth Circuit and California</strong> requires strict adherence to digital accessibility mandates established under Title III of the Americans with Disabilities Act and the California Unruh Civil Rights Act (California Civil Code Section 51). Commercial enterprises face legal liability when digital brand assets fail accessibility standards. Modern enterprise visual identity must be engineered for universal inclusion. Our San Francisco design team crafts corporate color palettes verified against the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">W3C Web Content Accessibility Guidelines (WCAG 2.2 Level AA)</a>, enforcing 4.5:1 contrast ratios.
         </p>
@@ -351,9 +350,9 @@ export default function SanFranciscoBrandingPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="high-dpi-vector-asset-delivery-variable-fonts-and-sfmix-edge-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="high-dpi-vector-asset-delivery-variable-fonts-and-sfmix-edge-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. High-DPI Vector Asset Delivery, Variable Fonts, and SFMIX Edge Optimization
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">In modern digital ecosystems</strong>, corporate brand assets must render with instantaneous precision across diverse viewports without degrading web application speed or Core Web Vitals metrics. Bulky raster graphics, unoptimized font files, and poorly configured icon packages introduce layout instability and rendering latency that frustrate enterprise users and harm search rankings. As a technical <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in San Francisco</strong>, Southern Edge Marketing engineers vector SVG packages, responsive SVG icon sprites, and custom variable font subsets for Next.js architectures. We eliminate layout shifts by hardcoding viewBox dimensions.
         </p>
@@ -362,9 +361,9 @@ export default function SanFranciscoBrandingPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="environmental-workplace-placemaking-tech-campus-signage-and-multi-channel-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="environmental-workplace-placemaking-tech-campus-signage-and-multi-channel-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Environmental Workplace Placemaking, Tech Campus Signage, and Multi-Channel Scale
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The physical architectural footprint of San Francisco encompasses celebrated commercial landmarks</strong>, from high-rise office towers in the Transbay district and historic creative lofts in Jackson Square to expansive technology campuses across the Peninsula. For corporate headquarters, venture incubators, and innovative commercial spaces, brand identity must transcend digital screens to shape physical environments. Our environmental design specialists translate brand identities into three-dimensional architectural signage, experiential lobby installations, precision wayfinding systems, and executive briefing centers. We specify durable materials, laser-cut metals, custom lighting, and sustainable fabrication methods.
         </p>
@@ -374,12 +373,12 @@ export default function SanFranciscoBrandingPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -387,7 +386,7 @@ export default function SanFranciscoBrandingPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Marcus Vance</p>
@@ -401,7 +400,7 @@ export default function SanFranciscoBrandingPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Jonathan Hayes" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Jonathan Hayes" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Jonathan Hayes</p>

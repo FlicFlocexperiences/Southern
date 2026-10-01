@@ -68,6 +68,8 @@ export const DesktopAboutHero = () => {
         <img 
           src="/assets/about-hero-bg.png" 
           alt="Dark room background" 
+          width={1900}
+          height={828}
           className="w-full h-full object-cover object-center pointer-events-none"
         />
       </div>
@@ -79,6 +81,8 @@ export const DesktopAboutHero = () => {
           <img 
             src="/assets/about-hero-bg.png" 
             alt="Dark room background" 
+            width={1900}
+            height={828}
             className="w-full h-full object-cover pointer-events-none"
           />
         </div>
@@ -93,6 +97,8 @@ export const DesktopAboutHero = () => {
             key={`img-${currentSlide}`}
             src={slides[currentSlide].image}
             alt="Character stage"
+            width={182}
+            height={520}
             variants={imageVariants}
             initial="initial"
             animate="animate"

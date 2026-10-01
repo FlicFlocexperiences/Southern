@@ -233,9 +233,9 @@ export default function MelbourneAppDevelopmentPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="melbourne-enterprise-innovation-and-mobile-velocity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="melbourne-enterprise-innovation-and-mobile-velocity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. Melbourne&apos;s Enterprise Innovation Ecosystem and Mobile Velocity
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Melbourne stands as Australia&apos;s center for commerce</strong>, institutional finance, and rapid technology innovation. From financial institutions along Collins Street to tech scale-ups in Cremorne and Docklands, Victorian enterprises compete actively. Modern consumers and enterprise workforces across Victoria expect instantaneous mobile interactions, establishing native mobile software as a vital driver of revenue growth. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">app development company in Melbourne</strong>, Southern Edge Marketing engineers scalable iOS and Android applications tailored to Victorian commercial dynamics.
         </p>
@@ -244,9 +244,9 @@ export default function MelbourneAppDevelopmentPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="bank-grade-mobile-engineering-collins-street" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="bank-grade-mobile-engineering-collins-street" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Bank-Grade Mobile Engineering for Collins Street Financial Institutions
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Western precinct of Collins Street serves as the command center</strong> for leading Australian asset managers, commercial banks, and private equity firms. Building transactional mobile applications for Melbourne financial institutions demands numerical precision, high availability, and cryptographic safeguards. Our specialized <strong className="font-semibold text-[#de5e18] tracking-tight">fintech app development in Melbourne</strong> implements defense-in-depth security architectures, including biometric verification through Apple Face ID and Android BiometricPrompt, Secure Enclave key storage, and mandatory TLS 1.3 encryption. We implement secure endpoints compliant with Australia&apos;s <a href="https://www.cdr.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Consumer Data Right</a> framework, facilitating rapid open banking workflows.
         </p>
@@ -255,9 +255,9 @@ export default function MelbourneAppDevelopmentPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="privacy-act-apra-cps-234-and-data-sovereignty" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="privacy-act-apra-cps-234-and-data-sovereignty" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Australian Privacy Principles, APRA CPS 234, and Sovereign Data Governance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Victorian enterprises navigate strict requirements</strong> for user privacy, auditability, and domestic data custody. Our mobile engineering embeds security-by-design principles aligned with the <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Privacy Act 1988</a> and Australian Privacy Principles enforced by the Office of the Australian Information Commissioner. For institutions subject to prudential supervision, we construct mobile software architectures that fulfill the cyber resilience standards established by the <a href="https://www.apra.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Australian Prudential Regulation Authority</a> under Prudential Standard CPS 234.
         </p>
@@ -301,9 +301,9 @@ export default function MelbourneAppDevelopmentPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="cremorne-tech-hub-and-edge-ai-capabilities" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="cremorne-tech-hub-and-edge-ai-capabilities" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Cremorne Tech Hub, High-Growth Scale-Ups, and Edge AI Capabilities
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Cremorne precinct, Melbourne&apos;s primary technology corridor</strong>, drives rapid digital commercialization alongside scale-ups in Docklands and Collingwood. Modern venture-backed enterprises require adaptable software development teams capable of transforming complex requirements into high-converting applications. Our specialized <strong className="font-semibold text-[#de5e18] tracking-tight">custom app development in Melbourne</strong> empowers product teams to validate hypotheses efficiently, streamline user onboarding journeys, and improve retention. We implement modular design tokens, reusable UI component systems, and event telemetry to provide decisive product intelligence.
         </p>
@@ -322,9 +322,9 @@ export default function MelbourneAppDevelopmentPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Mobile App Architecture &amp; Delivery Matrix: Melbourne
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -336,10 +336,9 @@ export default function MelbourneAppDevelopmentPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/app-development-melbourne.jpg"
-                alt="App Development in Melbourne Technical Architecture Infographic"
+                alt="App Development in Melbourne Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -355,20 +354,20 @@ export default function MelbourneAppDevelopmentPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="native-swift-kotlin-and-react-native-strategy" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="native-swift-kotlin-and-react-native-strategy" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. Native Swift, Android Kotlin, and High-Performance React Native Strategy
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          <strong className="font-semibold text-[#de5e18] tracking-tight">Choosing the appropriate software foundation represents a critical milestone</strong> in any enterprise mobile initiative. When a commercial application requires intensive computational power, background processing threads, or custom metal shaders, our software engineers build native applications using <a href="https://developer.apple.com/swift/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Apple Swift</a> for iOS and modern <a href="https://kotlinlang.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Kotlin</a> for Android. Native development guarantees complete access to device sensors, zero bridge overhead, and fluid 120Hz ProMotion animation rendering across modern smartphones.
+          <strong className="font-semibold text-[#de5e18] tracking-tight">Choosing the appropriate software foundation represents a critical milestone</strong> in any enterprise mobile initiative. When a commercial application requires intensive computational power, background processing threads, or custom metal shaders, our software engineers build native applications using Apple Swift for iOS and modern Kotlin for Android. Native development guarantees complete access to device sensors, zero bridge overhead, and fluid 120Hz ProMotion animation rendering across modern smartphones.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          For Victorian enterprises targeting simultaneous multi-platform launches with unified business logic, our <a href="https://reactnative.dev/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">React Native</a> engineering practice delivers exceptional performance. Leveraging the React Native Fabric architecture and Hermes JavaScript runtime, we construct responsive 60fps applications while reducing initial capital expenditure and ongoing code maintenance by forty percent. Regardless of the chosen architecture, our <strong className="font-semibold text-[#de5e18] tracking-tight">Melbourne app developers</strong> enforce strict static typing, automated regression suites, and continuous deployment workflows to maintain production stability.
+          For Victorian enterprises targeting simultaneous multi-platform launches with unified business logic, our React Native engineering practice delivers exceptional performance. Leveraging the React Native Fabric architecture and Hermes JavaScript runtime, we construct responsive 60fps applications while reducing initial capital expenditure and ongoing code maintenance by forty percent. Regardless of the chosen architecture, our <strong className="font-semibold text-[#de5e18] tracking-tight">Melbourne app developers</strong> enforce strict static typing, automated regression suites, and continuous deployment workflows to maintain production stability.
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="statutory-accessibility-dda-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-accessibility-dda-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Statutory Accessibility, DDA Section 24, and WCAG 2.2 Standards
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Under Section 24 of the Australian Disability Discrimination Act 1992</strong>, applications deployed in Victoria must provide equitable access to users with visual, auditory, or physical impairments. Australian regulatory bodies enforce digital accessibility standards, establishing inclusive engineering as an essential business requirement. Every mobile application built by Southern Edge Marketing adheres to <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> guidelines, incorporating semantic accessibility structures that connect directly with Apple VoiceOver and Android TalkBack screen readers.
         </p>
@@ -377,9 +376,9 @@ export default function MelbourneAppDevelopmentPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="vic-ix-peering-equinix-melbourne-and-5g-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="vic-ix-peering-equinix-melbourne-and-5g-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. VIC-IX Peering, Equinix Melbourne Facilities, and 5G Edge Delivery
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Delivering responsive mobile experiences throughout Melbourne</strong> requires network infrastructure optimized for Australian telecommunications routing. We build mobile backends with direct edge peering through the Victorian Internet Exchange at NEXTDC M1 Port Melbourne and Equinix ME1 and ME2 data centers. This localized network topology guarantees that dynamic API queries, real-time database updates, and encrypted payloads transfer with single-digit millisecond latency to Victorian subscribers across Telstra, Optus, and TPG 5G mobile networks.
         </p>
@@ -388,9 +387,9 @@ export default function MelbourneAppDevelopmentPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="offline-first-yarra-trams-and-metro-tunnel-sync" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="offline-first-yarra-trams-and-metro-tunnel-sync" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Offline-First Transit Synchronization for Yarra Trams and Metro Tunnel
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Developing mobile software for Melbourne</strong> requires realistic consideration of the public transport commute. Hundreds of thousands of business professionals commute across the world&apos;s largest tram network operated by Yarra Trams and travel through underground transit stations within the Melbourne Metro Tunnel project where cellular reception encounters temporary blind spots. Our <strong className="font-semibold text-[#de5e18] tracking-tight">mobile app development in Melbourne</strong> incorporates resilient offline-first data caching architectures using encrypted local SQLite databases paired with background transactional synchronization queues.
         </p>
@@ -400,12 +399,12 @@ export default function MelbourneAppDevelopmentPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -413,7 +412,7 @@ export default function MelbourneAppDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Angus MacIntyre" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Angus MacIntyre" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Angus MacIntyre</p>
@@ -427,7 +426,7 @@ export default function MelbourneAppDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Claire Pendelton" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Claire Pendelton" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Claire Pendelton</p>

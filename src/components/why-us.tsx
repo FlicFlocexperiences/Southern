@@ -7,21 +7,29 @@ const whyUsPoints = [
     title: "Outcomes, Not Optics",
     desc: "We build for outcomes, not optics. Every campaign ties back to leads, sales, or bookings, not just likes.",
     icon: "/1 copy.svg",
+    width: 509,
+    height: 504,
   },
   {
     title: "Content That Travels",
     desc: "We know what makes content travel. Our team has engineered reach and virality for brands across F&B, e-commerce, and professional services: we know the difference between noise and momentum.",
     icon: "/2.svg",
+    width: 498,
+    height: 498,
   },
   {
     title: "One Team, Every Discipline",
     desc: "Strategy, design, dev, and marketing under one roof means nothing gets lost in translation between agencies.",
     icon: "/3.svg",
+    width: 481,
+    height: 483,
   },
   {
     title: "Dual-Market Experience",
     desc: "We've grown brands across India and Dubai, so we understand both markets' audiences, platforms, and buying behavior.",
     icon: "/4.svg",
+    width: 468,
+    height: 451,
   },
 ];
 
@@ -56,7 +64,7 @@ export const WhyUs = () => {
             >
               <div>
                 <div className="w-[80px] h-[80px] rounded-full border-[2px] border-black flex items-center justify-center mb-6 shrink-0 p-3">
-                  <img src={item.icon} alt={item.title} className="w-[50px] h-[50px] object-contain pointer-events-none select-none" />
+                  <img src={item.icon} alt={item.title} width={item.width} height={item.height} className="w-[50px] h-[50px] object-contain pointer-events-none select-none" />
                 </div>
                 <h3 className="text-[24px] md:text-[28px] font-bold text-[#0f0f0f] mb-4 leading-tight select-none">
                   {item.title}
@@ -84,7 +92,7 @@ export const WhyUs = () => {
               >
                 <div>
                   <div className="w-[80px] h-[80px] rounded-full border-[2px] border-black flex items-center justify-center mb-6 shrink-0 p-3">
-                    <img src={item.icon} alt={item.title} className="w-[50px] h-[50px] object-contain pointer-events-none select-none" />
+                    <img src={item.icon} alt={item.title} width={item.width} height={item.height} className="w-[50px] h-[50px] object-contain pointer-events-none select-none" />
                   </div>
                   <h3 className="text-[22px] font-bold text-[#0f0f0f] mb-4 leading-tight select-none">
                     {item.title}

@@ -6,6 +6,7 @@ import { projects as initialStaticProjects, Project, ProjectCategory } from "@/d
 import { motion, AnimatePresence } from "framer-motion";
 import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import { db } from "@/lib/firebase";
+import { getImageDimensions } from "@/lib/image-dimensions";
 
 // --- Icons ---
 const SearchIcon = () => (
@@ -465,6 +466,7 @@ export const ProjectsGrid = () => {
         ) : (
           filteredProjects.map((project, index) => {
             const badgeTag = project.tag || project.category.toUpperCase();
+            const dims = getImageDimensions(project.image);
 
             return (
               <Link 
@@ -477,6 +479,8 @@ export const ProjectsGrid = () => {
                   <img 
                     src={project.image} 
                     alt={project.title}
+                    width={dims.width}
+                    height={dims.height}
                     className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-105"
                   />
                   

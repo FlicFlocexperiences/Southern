@@ -233,9 +233,9 @@ export default function BrisbaneAppDevelopmentPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="brisbane-enterprise-innovation-and-mobile-velocity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="brisbane-enterprise-innovation-and-mobile-velocity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. Brisbane&apos;s Enterprise Innovation Ecosystem and Mobile Velocity
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Brisbane stands at the center of Australian economic expansion</strong>, resource commerce, and digital infrastructure investment. From financial firms along Eagle Street and Queen Street to ambitious software scale-ups across Fortitude Valley and Milton, Queensland enterprises compete aggressively for market share. Contemporary consumers and distributed enterprise workforces across South East Queensland expect instantaneous mobile experiences, establishing native applications as primary drivers of commercial revenue. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">app development company in Brisbane</strong>, Southern Edge Marketing engineers scalable iOS and Android applications tailored to Queensland business requirements.
         </p>
@@ -244,9 +244,9 @@ export default function BrisbaneAppDevelopmentPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="bank-grade-mobile-engineering-eagle-street" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="bank-grade-mobile-engineering-eagle-street" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Bank-Grade Mobile Engineering for Eagle Street Financial Institutions
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Golden Triangle corridor anchored by Eagle Street and Queen Street</strong> serves as the command center for Queensland financial institutions, institutional fund managers, and private equity offices. Engineering transactional mobile software for Brisbane institutions requires mathematical precision, continuous availability, and cryptographic safeguards. Our specialized <strong className="font-semibold text-[#de5e18] tracking-tight">fintech app development in Brisbane</strong> implements defense-in-depth security architectures, including biometric verification through Apple Face ID and Android BiometricPrompt, Secure Enclave key storage, and mandatory TLS 1.3 encryption. We construct secure endpoints compliant with Australia&apos;s <a href="https://www.cdr.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Consumer Data Right</a> framework, facilitating open banking workflows.
         </p>
@@ -255,9 +255,9 @@ export default function BrisbaneAppDevelopmentPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="privacy-act-apra-cps-234-and-data-sovereignty" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="privacy-act-apra-cps-234-and-data-sovereignty" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Australian Privacy Principles, APRA CPS 234, and Sovereign Data Governance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Queensland enterprises navigate strict statutory requirements</strong> for user privacy, auditability, and sovereign data custody. Our mobile engineering embeds security-by-design principles aligned with the <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Privacy Act 1988</a> and Australian Privacy Principles enforced by the Office of the Australian Information Commissioner. For institutions subject to prudential supervision, we construct mobile software architectures that fulfill the cyber resilience standards established by the <a href="https://www.apra.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Australian Prudential Regulation Authority</a> under Prudential Standard CPS 234, protecting customer records against unauthorized exposure.
         </p>
@@ -301,9 +301,9 @@ export default function BrisbaneAppDevelopmentPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="fortitude-valley-tech-hub-and-edge-ai-capabilities" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="fortitude-valley-tech-hub-and-edge-ai-capabilities" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Fortitude Valley Tech Hub, High-Growth Scale-Ups, and Edge AI Capabilities
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Fortitude Valley technology precinct</strong>, anchored by The Precinct innovation hub and corridors in Newstead and Milton, drives Queensland&apos;s software commercialization. High-growth scale-ups and commercial operators require agile mobile teams capable of transforming complex roadmaps into high-converting user experiences. Our <strong className="font-semibold text-[#de5e18] tracking-tight">custom app development in Brisbane</strong> empowers product teams to validate hypotheses rapidly, streamline onboarding funnels, and improve engagement. We implement structured design tokens, reusable UI component systems, and event telemetry to provide decisive product intelligence.
         </p>
@@ -322,9 +322,9 @@ export default function BrisbaneAppDevelopmentPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Mobile App Architecture &amp; Delivery Matrix: Brisbane
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -336,10 +336,9 @@ export default function BrisbaneAppDevelopmentPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/app-development-brisbane.jpg"
-                alt="App Development in Brisbane Technical Architecture Infographic"
+                alt="App Development in Brisbane Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -355,20 +354,20 @@ export default function BrisbaneAppDevelopmentPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="native-swift-kotlin-and-react-native-strategy" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="native-swift-kotlin-and-react-native-strategy" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. Native Swift, Android Kotlin, and High-Performance React Native Strategy
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          <strong className="font-semibold text-[#de5e18] tracking-tight">Selecting the optimal software foundation represents a decisive architectural milestone</strong> for any enterprise mobile project. When an application demands intensive hardware acceleration, sustained background execution threads, or low-level graphics shaders, our mobile engineers craft fully native applications using <a href="https://developer.apple.com/swift/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Apple Swift</a> for iOS and modern <a href="https://kotlinlang.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Kotlin</a> for Android. Pure native engineering guarantees unrestricted access to device sensors, eliminates abstraction overhead, and delivers seamless 120Hz ProMotion screen rendering across the newest generation of mobile hardware.
+          <strong className="font-semibold text-[#de5e18] tracking-tight">Selecting the optimal software foundation represents a decisive architectural milestone</strong> for any enterprise mobile project. When an application demands intensive hardware acceleration, sustained background execution threads, or low-level graphics shaders, our mobile engineers craft fully native applications using Apple Swift for iOS and modern Kotlin for Android. Pure native engineering guarantees unrestricted access to device sensors, eliminates abstraction overhead, and delivers seamless 120Hz ProMotion screen rendering across the newest generation of mobile hardware.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          For Queensland enterprises requiring concurrent multi-platform deployment with unified business logic, our <a href="https://reactnative.dev/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">React Native</a> engineering team delivers outstanding cross-platform performance. Leveraging the React Native Fabric architecture and the high-performance Hermes runtime engine, we construct fluid 60fps applications while reducing initial software capital expenditure and code maintenance costs by forty percent. Across every project, our <strong className="font-semibold text-[#de5e18] tracking-tight">Brisbane app developers</strong> implement strict static typing, automated unit suites, and continuous deployment automation to maintain production stability.
+          For Queensland enterprises requiring concurrent multi-platform deployment with unified business logic, our React Native engineering team delivers outstanding cross-platform performance. Leveraging the React Native Fabric architecture and the high-performance Hermes runtime engine, we construct fluid 60fps applications while reducing initial software capital expenditure and code maintenance costs by forty percent. Across every project, our <strong className="font-semibold text-[#de5e18] tracking-tight">Brisbane app developers</strong> implement strict static typing, automated unit suites, and continuous deployment automation to maintain production stability.
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="statutory-accessibility-dda-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-accessibility-dda-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Statutory Accessibility, DDA Section 24, and WCAG 2.2 Standards
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Under Section 24 of the Australian Disability Discrimination Act 1992</strong>, digital software deployed by Australian organizations must provide equitable access to individuals with visual, auditory, cognitive, or physical motor impairments. Australian regulatory bodies enforce stringent digital inclusion benchmarks, establishing accessibility as a core engineering responsibility. Every mobile application engineered by Southern Edge Marketing complies with <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> criteria, constructing semantic accessibility trees that integrate seamlessly with Apple VoiceOver and Android TalkBack screen readers.
         </p>
@@ -377,9 +376,9 @@ export default function BrisbaneAppDevelopmentPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="qld-ix-peering-nextdc-brisbane-and-5g-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="qld-ix-peering-nextdc-brisbane-and-5g-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. QLD-IX Peering, NEXTDC Brisbane Facilities, and 5G Edge Delivery
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Delivering responsive mobile experiences across South East Queensland</strong> requires infrastructure calibrated for Australian telecommunications topology. We engineer mobile application backends with direct edge peering through the Queensland Internet Exchange at NEXTDC B1 Wharf Street and NEXTDC B2 Fortitude Valley data centers. This strategic network routing guarantees that dynamic API requests, transactional payloads, and real-time notifications travel with minimal network hops to mobile users across Telstra, Optus, and TPG 5G mobile networks throughout the region.
         </p>
@@ -388,9 +387,9 @@ export default function BrisbaneAppDevelopmentPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="offline-first-cross-river-rail-and-transit-sync" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="offline-first-cross-river-rail-and-transit-sync" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Offline-First Transit Synchronization for Cross River Rail and Brisbane Metro
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Engineering mobile applications for the Brisbane metropolitan corridor</strong> requires practical architectural consideration of daily transit routines. Tens of thousands of business commuters travel through the underground rail corridors of the Cross River Rail project and ride along high-frequency Brisbane Metro routes where cellular coverage encounters temporary shadow zones. Our <strong className="font-semibold text-[#de5e18] tracking-tight">mobile app development in Brisbane</strong> integrates resilient offline-first data synchronization architectures using encrypted local SQLite storage paired with background transactional processing queues.
         </p>
@@ -400,12 +399,12 @@ export default function BrisbaneAppDevelopmentPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -413,7 +412,7 @@ export default function BrisbaneAppDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Lachlan Macpherson" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Lachlan Macpherson" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Lachlan Macpherson</p>
@@ -427,7 +426,7 @@ export default function BrisbaneAppDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Bronwyn Higgins" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Bronwyn Higgins" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Bronwyn Higgins</p>

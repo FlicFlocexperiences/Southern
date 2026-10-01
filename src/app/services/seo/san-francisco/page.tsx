@@ -207,9 +207,9 @@ export default function SanFranciscoSeoPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="san-francisco-technology-market-and-enterprise-search-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="san-francisco-technology-market-and-enterprise-search-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. San Francisco Technology Market and Enterprise Search Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">San Francisco operates as the primary epicenter of global technology innovation and venture capital</strong>, driving intense commercial rivalry across the Bay Area. From high-growth software clusters in SoMa and Jackson Square to private equity firms on Montgomery Street in the Financial District, local enterprises require high-performance organic search visibility. In this competitive landscape, outdated keyword tactics fail to capture high-value enterprise pipeline. As a premier <strong className="font-semibold text-[#de5e18] tracking-tight">SEO company in San Francisco</strong>, Southern Edge Marketing engineers scalable search architectures and Generative Engine Optimization systems tailored for Bay Area market leaders.
         </p>
@@ -218,9 +218,9 @@ export default function SanFranciscoSeoPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="fidi-fintech-venture-capital-and-sec-compliant-entity-graphs" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="fidi-fintech-venture-capital-and-sec-compliant-entity-graphs" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. FiDi FinTech, Venture Capital, and SEC-Compliant Entity Graphs
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Financial technology platforms, venture capital funds, and institutional asset managers operating along California Street and the Financial District require authoritative organic positioning backed by regulatory compliance. In these high-stakes sectors, search algorithms enforce rigorous Experience, Expertise, Authoritativeness, and Trustworthiness evaluation standards. We construct comprehensive entity authority graphs that anchor executive leadership, proprietary research publications, and corporate holdings to recognized global knowledge bases, establishing immutable topical authority that search engines reward with premier rankings for high-intent institutional queries.
         </p>
@@ -229,9 +229,9 @@ export default function SanFranciscoSeoPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="soma-ai-scaleups-geo-vectoring-and-llm-search-engine-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="soma-ai-scaleups-geo-vectoring-and-llm-search-engine-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. SoMa AI Scale-Ups, GEO Vectoring, and LLM Search Engine Optimization
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The South of Market innovation corridor, spanning South Park, Folsom Street, and Potrero Hill, represents the global heart of artificial intelligence and enterprise SaaS innovation. In this rapidly evolving market, traditional search engine result pages represent only part of the modern customer discovery journey. Enterprise software evaluators increasingly use generative artificial intelligence engines to analyze technical vendors. We engineer advanced Generative Engine Optimization strategies that position your software platform directly within synthesized answer responses across ChatGPT Search, Perplexity AI, Claude, and Google AI Overviews.
         </p>
@@ -275,9 +275,9 @@ export default function SanFranciscoSeoPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="mission-bay-life-sciences-b2b-portals-and-technical-knowledge-graphs" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="mission-bay-life-sciences-b2b-portals-and-technical-knowledge-graphs" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Mission Bay Life Sciences, B2B Portals, and Technical Knowledge Graphs
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Across the Mission Bay life sciences hub, UCSF medical research district, and industrial corridors throughout the East Bay, biotechnology leaders and B2B enterprises require authoritative search visibility to capture institutional partnerships and clinical collaborations. We design and deploy entity-driven search strategies that establish deep topical authority around complex therapeutic classes, medical device engineering, and specialized clinical pipelines, ensuring that search engines recognize your enterprise as the definitive scientific authority in your field.
         </p>
@@ -296,9 +296,9 @@ export default function SanFranciscoSeoPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   SEO &amp; Generative Engine Architecture: San Francisco
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -310,10 +310,9 @@ export default function SanFranciscoSeoPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/seo-san-francisco.jpg"
-                alt="Search Engine Optimization in San Francisco Technical Architecture Infographic"
+                alt="Search Engine Optimization in San Francisco Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -329,9 +328,9 @@ export default function SanFranciscoSeoPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="enterprise-knowledge-graphs-wikidata-and-semantic-schema-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="enterprise-knowledge-graphs-wikidata-and-semantic-schema-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. Enterprise Knowledge Graphs, Wikidata, and Semantic Schema Governance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern search engines function as semantic knowledge engines that evaluate relational graphs between real-world entities rather than analyzing isolated string keywords. For San Francisco technology enterprises, building an authoritative Knowledge Graph presence is vital for capturing branded search results, Google Knowledge Panels, and rich snippet features. We build interconnected JSON-LD schema networks that link your corporate leadership, registered headquarters, software patents, and subsidiary brands directly into Wikidata and the global Semantic Web.
         </p>
@@ -340,9 +339,9 @@ export default function SanFranciscoSeoPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="statutory-ada-title-iii-california-unruh-act-and-wcag-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-ada-title-iii-california-unruh-act-and-wcag-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Statutory ADA Title III, California Unruh Act, and WCAG 2.2 AA Accessibility
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility is both a primary search engine ranking factor and an urgent legal necessity for enterprises operating in California. State and federal courts enforce strict liability under the California Unruh Civil Rights Act (Civil Code § 51) and federal <a href="https://www.ada.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-semibold underline underline-offset-4 hover:text-[#432d1c] transition-colors">ADA Title III</a> statutes. Search algorithms actively evaluate document accessibility, prioritizing platforms that provide universal usability and penalizing non-compliant websites through reduced crawl priority and ranking degradation.
         </p>
@@ -351,9 +350,9 @@ export default function SanFranciscoSeoPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="sub-millisecond-edge-caching-sfmix-200-paul-peering-and-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="sub-millisecond-edge-caching-sfmix-200-paul-peering-and-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. Sub-Millisecond Edge Caching, SFMIX 200 Paul Peering, and Core Web Vitals
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           In the fast-moving Bay Area economy, technical website performance directly dictates search engine crawl efficiency, indexation velocity, and organic ranking stability. Google algorithmically rewards web properties achieving optimal Core Web Vitals metrics, including minimal Interaction to Next Paint, zero Cumulative Layout Shift, and rapid Largest Contentful Paint. We deploy modern serverless edge architectures that position cached static assets and dynamic compute instances within sub-millisecond proximity to San Francisco and Silicon Valley enterprise users.
         </p>
@@ -362,9 +361,9 @@ export default function SanFranciscoSeoPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="bay-area-multi-district-local-pack-dominance-and-dedicated-support-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="bay-area-multi-district-local-pack-dominance-and-dedicated-support-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Bay Area Multi-District Local Pack Dominance and Dedicated Support SLAs
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Capturing market share across San Francisco commercial hubs including SoMa, FiDi, Mission Bay, Jackson Square, and the Presidio requires an enterprise local search strategy. High-value B2B and commercial search queries trigger local map pack listings that dominate mobile and desktop viewports. We optimize multi-location Google Business Profiles, standardize localized citation ecosystems across authoritative California registries, and deploy location-specific schema architectures to guarantee top-three local pack visibility across targeted metropolitan commercial zip codes.
         </p>
@@ -374,12 +373,12 @@ export default function SanFranciscoSeoPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -387,7 +386,7 @@ export default function SanFranciscoSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Marcus Vance</p>
@@ -401,7 +400,7 @@ export default function SanFranciscoSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Elena Rostova" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Elena Rostova" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Dr. Elena Rostova</p>

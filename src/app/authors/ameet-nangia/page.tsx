@@ -133,6 +133,8 @@ export default function AmeetNangiaAuthorPage() {
                   <img
                     src="/assets/team/ameet.png"
                     alt="Ameet Nangia"
+                    width={600}
+                    height={400}
                     className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500"
                   />
                   <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-[#ffd1b8] to-transparent pointer-events-none" />

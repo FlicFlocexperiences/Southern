@@ -235,9 +235,9 @@ export default function CaliforniaWebDevelopmentPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="california-digital-economy-and-enterprise-web-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="california-digital-economy-and-enterprise-web-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. The California Digital Economy and Enterprise Web Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           California represents the world&apos;s premier innovation ecosystem, encompassing the technological epicenters of Silicon Valley, the vibrant media tech corridors of Silicon Beach, the biomedical research hubs of San Diego, and the enterprise powerhouses of San Francisco. In an economy powered by global capital and hyper-accelerated product cycles, enterprise digital infrastructure must satisfy rigorous operational demands. Modern organizations across the Golden State cannot rely on obsolete monoliths or fragmented templates. High-velocity market competition requires customized, scalable <Link href="/services/web-development" className="text-[#de5e18] font-semibold hover:underline">web development services</Link> that deliver sub-second rendering, uncompromising stability under viral traffic spikes, and seamless data orchestration across distributed cloud systems.
         </p>
@@ -246,20 +246,20 @@ export default function CaliforniaWebDevelopmentPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="enterprise-nextjs-and-composable-headless-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="enterprise-nextjs-and-composable-headless-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Enterprise Next.js 16 and Composable Headless Engineering for Silicon Valley Scale
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          Building software for the innovation capital requires embracing modern architectural paradigms like React Server Components and incremental static regeneration. According to official <a href="https://nextjs.org/docs" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-semibold hover:underline">Next.js documentation</a>, decoupling the user interface from backend data stores drastically minimizes client-side JavaScript execution, accelerating interaction times for end users across mobile and desktop devices. By implementing Next.js 16 alongside composable headless content management systems, we eliminate traditional monolithic bottlenecks. Engineering teams gain complete architectural freedom to update backend business logic, payment processors, or inventory databases without destabilizing the customer-facing interface, ensuring rapid development iteration cycles for aggressive market rollouts.
+          Building software for the innovation capital requires embracing modern architectural paradigms like React Server Components and incremental static regeneration. According to official Next.js documentation, decoupling the user interface from backend data stores drastically minimizes client-side JavaScript execution, accelerating interaction times for end users across mobile and desktop devices. By implementing Next.js 16 alongside composable headless content management systems, we eliminate traditional monolithic bottlenecks. Engineering teams gain complete architectural freedom to update backend business logic, payment processors, or inventory databases without destabilizing the customer-facing interface, ensuring rapid development iteration cycles for aggressive market rollouts.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Silicon Valley enterprises operating along Sand Hill Road and throughout the South Bay require web platforms engineered to handle immense concurrency with deterministic predictability. Our engineers structure composable web architectures utilizing modular micro-frontends, edge caching policies, and static asset distribution protocols. This modularity empowers marketing and product teams to launch new campaigns, publish localized landing pages, and test conversion funnels independently of core software releases. By combining composable frontend frameworks with our specialized <Link href="/services/seo" className="text-[#de5e18] font-semibold hover:underline">SEO services</Link>, California enterprises establish structural indexation advantages that maximize organic discoverability across search engines and AI answer engines alike.
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="ccpa-cpra-and-zero-trust-data-privacy-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="ccpa-cpra-and-zero-trust-data-privacy-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. CCPA, CPRA, and Zero-Trust Data Privacy Architecture for Golden State Enterprises
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Operating an enterprise web presence in California requires uncompromised adherence to the nation&apos;s strictest data privacy mandates. Enforced actively by the <a href="https://cppa.ca.gov" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-semibold hover:underline">California Privacy Protection Agency</a>, the California Consumer Privacy Act and California Privacy Rights Act impose comprehensive governance requirements regarding user consent, data categorization, and telemetry tracking. Failure to implement privacy-by-design principles exposes organizations to substantial statutory fines, legal scrutiny, and consumer distrust. We engineer automated consent management pipelines, granular server-side cookie controls, and encrypted data processing workflows that ensure full compliance with California statutory frameworks without compromising analytical visibility or marketing efficiency.
         </p>
@@ -303,9 +303,9 @@ export default function CaliforniaWebDevelopmentPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="high-throughput-api-gateways-graphql-mesh-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="high-throughput-api-gateways-graphql-mesh-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. High-Throughput API Gateways, GraphQL Mesh, and Microservices Orchestration
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Scalable enterprise applications require robust data aggregation layers that unify disparate backend services into cohesive digital experiences. We construct unified GraphQL schema meshes and resilient API gateways that federate microservices, customer relationship databases, ERPs, and third-party SaaS integrations into a single queryable endpoint. This architectural approach eliminates data over-fetching, slashes network round-trip latency, and accelerates page load execution. California technology organizations deploying our data federation layers benefit from streamlined frontend development, enabling product engineers to build feature-rich client experiences without managing cumbersome multi-endpoint REST orchestrations.
         </p>
@@ -324,9 +324,9 @@ export default function CaliforniaWebDevelopmentPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Web Development Architecture &amp; Delivery Matrix: California
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -338,10 +338,9 @@ export default function CaliforniaWebDevelopmentPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/web-development-california.jpg"
-                alt="Web Development in California Technical Architecture Infographic"
+                alt="Web Development in California Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -357,9 +356,9 @@ export default function CaliforniaWebDevelopmentPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="california-unruh-civil-rights-act-wcag-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="california-unruh-civil-rights-act-wcag-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. California Unruh Civil Rights Act and WCAG 2.2 AA Universal Accessibility Mandates
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility is not merely an ethical imperative in California; it is a strict legal requirement governed by the California Unruh Civil Rights Act and federal Americans with Disabilities Act Title III standards. California courts consistently rule that commercial websites represent public accommodations, subjecting non-compliant enterprises to statutory damages and predatory litigation. We engineer every digital asset in strict accordance with the official <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-semibold hover:underline">W3C Web Content Accessibility Guidelines 2.2</a>, certifying that contrast ratios, screen reader accessibility trees, and semantic document structures satisfy Level AA compliance from day one.
         </p>
@@ -368,9 +367,9 @@ export default function CaliforniaWebDevelopmentPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="silicon-beach-media-streaming-composable-commerce" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="silicon-beach-media-streaming-composable-commerce" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Silicon Beach, Media Streaming, and High-Conversion Composable Commerce
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The intersection of entertainment, digital media, and direct-to-consumer retail in Southern California demands web architectures capable of delivering rich interactive storytelling without performance degradation. From Venice and Santa Monica to Culver City, Silicon Beach brands rely on immersive video integration, real-time personalization algorithms, and frictionless checkout flows to monetize consumer attention. We build composable commerce engines integrating headless Shopify Plus, BigCommerce, and custom Stripe billing workflows, allowing lifestyle and media enterprises to execute flash sales and product drops with guaranteed 99.99% uptime and instantaneous page rendering.
         </p>
@@ -379,9 +378,9 @@ export default function CaliforniaWebDevelopmentPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="sfmix-peering-one-wilshire-edge-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="sfmix-peering-one-wilshire-edge-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. SFMIX Peering, One Wilshire Interconnects, and Pacific Rim Edge Performance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Millisecond latency reductions directly influence conversion rates and search rankings. To achieve world-class network velocity across California and the broader Pacific Rim, we architect our deployments across premier regional internet exchange facilities. We deploy edge routing optimized for direct peering at the <a href="https://www.sfmix.org" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-semibold hover:underline">San Francisco Metropolitan Internet Exchange</a> and the iconic One Wilshire carrier hotel in Los Angeles. By routing traffic through localized point-of-presence data centers at 200 Paul Avenue and Silicon Valley exchange fabrics, our platforms serve cached assets and serverless computations within single-digit milliseconds of prospective users.
         </p>
@@ -390,9 +389,9 @@ export default function CaliforniaWebDevelopmentPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="full-lifecycle-engineering-governance-dedicated-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="full-lifecycle-engineering-governance-dedicated-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Full-Lifecycle Engineering Governance, Dedicated SLAs, and Technical Advisory
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Enterprise web development does not conclude at code deployment; sustained commercial dominance requires continuous governance, infrastructure monitoring, and proactive architectural refinement. Southern Edge Marketing provides dedicated California enterprises with comprehensive service level agreements that guarantee round-the-clock uptime monitoring, automated security vulnerability patching, and rapid incident response protocols. Our senior engineers maintain continuous integration and continuous delivery pipelines with automated regression testing suites, ensuring that every code update, feature enhancement, or third-party dependency upgrade is validated in isolated staging environments prior to production rollout.
         </p>
@@ -402,12 +401,12 @@ export default function CaliforniaWebDevelopmentPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -415,7 +414,7 @@ export default function CaliforniaWebDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Elena Rostova</p>
@@ -429,7 +428,7 @@ export default function CaliforniaWebDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Marcus Sterling" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Marcus Sterling" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Marcus Sterling</p>

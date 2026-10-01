@@ -34,18 +34,20 @@ export const blogs: Blog[] = [
     publishedAt: "Feb 26, 2025",
     category: "DESIGN",
     image: "/photoshoot.jpg",
-    content: `In the early days of mobile internet, web developers designed exclusively for large desktop screens. Mobile layouts were merely scaled-down versions that forced users to pinch and zoom. That all changed when the mobile-first design philosophy emerged.
+    content: `<p>In the early days of mobile internet, web developers designed exclusively for large desktop screens. Mobile layouts were merely scaled-down versions that forced users to pinch and zoom. That all changed when the mobile-first design philosophy emerged.</p>
 
-### 1. Understanding Mobile-First
-Mobile-first design is a design philosophy that starts by designing for the smallest screen size first, and then scaling up to larger screens. It is about prioritizing essential content and features over visual decoration.
+<h2>1. Understanding Mobile-First</h2>
+<p>Mobile-first design is a design philosophy that starts by designing for the smallest screen size first, and then scaling up to larger screens. It is about prioritizing essential content and features over visual decoration.</p>
 
-### 2. Why It Matters for SEO
-Google uses mobile-first indexing, meaning its web crawler prioritizes indexing the mobile version of websites. A poor mobile layout directly hurts your rankings across all device screens.
+<h2>2. Why It Matters for SEO</h2>
+<p>Google uses mobile-first indexing, meaning its web crawler prioritizes indexing the mobile version of websites. A poor mobile layout directly hurts your rankings across all device screens.</p>
 
-### 3. Core Design Principles
-- **Touch-Friendly Targets**: Buttons and links must be large enough to tap easily without accidental clicks.
-- **Simplified Navigation**: Hamburger menus and sticky bars keep layouts clean and usable.
-- **Responsive Assets**: Images and videos must scale dynamically based on viewport widths.`
+<h2>3. Core Design Principles</h2>
+<ul>
+  <li><strong>Touch-Friendly Targets:</strong> Buttons and links must be large enough to tap easily without accidental clicks.</li>
+  <li><strong>Simplified Navigation:</strong> Hamburger menus and sticky bars keep layouts clean and usable.</li>
+  <li><strong>Responsive Assets:</strong> Images and videos must scale dynamically based on viewport widths.</li>
+</ul>`
   },
   {
     slug: "understanding-color-theory-in-digital-branding",
@@ -55,19 +57,21 @@ Google uses mobile-first indexing, meaning its web crawler prioritizes indexing 
     publishedAt: "March 12, 2001",
     category: "BRANDING",
     image: "/casestudies/2.jpg",
-    content: `Colors trigger subconscious responses and shape how customers perceive your brand value. Choosing a cohesive digital palette is key to building consumer trust and brand authority.
+    content: `<p>Colors trigger subconscious responses and shape how customers perceive your brand value. Choosing a cohesive digital palette is key to building consumer trust and brand authority.</p>
 
-### 1. The Psychology of Color
-Different colors evoke different emotions:
-- **Red/Orange**: Excitement, urgency, passion. Great for CTA buttons.
-- **Blue**: Trust, security, intelligence. Commonly used by financial systems.
-- **Green**: Growth, health, environment. Ideal for sustainable products.
+<h2>1. The Psychology of Color</h2>
+<p>Different colors evoke different emotions:</p>
+<ul>
+  <li><strong>Red &amp; Orange:</strong> Excitement, urgency, passion. Great for CTA buttons.</li>
+  <li><strong>Blue:</strong> Trust, security, intelligence. Commonly used by financial systems.</li>
+  <li><strong>Green:</strong> Growth, health, environment. Ideal for sustainable products.</li>
+</ul>
 
-### 2. Accessibility and Contrast
-Contrast is essential for readability. Text must contrast sufficiently with the background (WCAG AA standards) to ensure it is legible for users with visual impairments.
+<h2>2. Accessibility and Contrast</h2>
+<p>Contrast is essential for readability. Text must contrast sufficiently with the background (WCAG AA standards) to ensure it is legible for users with visual impairments.</p>
 
-### 3. Designing a Palette
-A typical layout uses a 60/30/10 color rule: 60% dominant color (neutral background), 30% secondary color (headers, cards), and 10% accent color (buttons, highlights).`
+<h2>3. Designing a Palette</h2>
+<p>A typical layout uses a 60/30/10 color rule: 60% dominant color (neutral background), 30% secondary color (headers, cards), and 10% accent color (buttons, highlights).</p>`
   },
   {
     slug: "how-ux-writing-shapes-user-behavior",
@@ -76,16 +80,16 @@ A typical layout uses a 60/30/10 color rule: 60% dominant color (neutral backgro
     publishedAt: "April 5, 2001",
     category: "STRATEGY",
     image: "/casestudies/5.jpg",
-    content: `UX writing is the practice of crafting the copy that guides users through a product interface. Clear, concise, and useful microcopy reduces cognitive load and directs conversions.
+    content: `<p>UX writing is the practice of crafting the copy that guides users through a product interface. Clear, concise, and useful microcopy reduces cognitive load and directs conversions.</p>
 
-### 1. Clarity Over Cleverness
-Avoid jargon and ambiguous terms. Buttons should clearly state what action happens next. For example, use 'Schedule Demo' instead of 'Submit'.
+<h2>1. Clarity Over Cleverness</h2>
+<p>Avoid jargon and ambiguous terms. Buttons should clearly state what action happens next. For example, use &apos;Schedule Demo&apos; instead of &apos;Submit&apos;.</p>
 
-### 2. Directing User Focus
-Guide the user sequentially. Use headers, bold typography, and visual cues to guide them from problem statements to call-to-actions.
+<h2>2. Directing User Focus</h2>
+<p>Guide the user sequentially. Use headers, bold typography, and visual cues to guide them from problem statements to call-to-actions.</p>
 
-### 3. Error Prevention
-Helpful error messages prevent frustration. Instead of saying 'Invalid Input', explain what is wrong and how the user can correct it.`
+<h2>3. Error Prevention</h2>
+<p>Helpful error messages prevent frustration. Instead of saying &apos;Invalid Input&apos;, explain what is wrong and how the user can correct it.</p>`
   },
   {
     slug: "the-rise-of-minimalist-web-design",
@@ -94,16 +98,16 @@ Helpful error messages prevent frustration. Instead of saying 'Invalid Input', e
     publishedAt: "May 18, 2001",
     category: "DESIGN",
     image: "/casestudies/8.jpg",
-    content: `Minimalism is not about empty space—it is about the intentional removal of distraction to focus attention on essential visual elements.
+    content: `<p>Minimalism is not about empty space—it is about the intentional removal of distraction to focus attention on essential visual elements.</p>
 
-### 1. Speed and Performance
-Fewer decorative graphics, fonts, and elements mean smaller bundle sizes. Faster loading times lead to better SEO and reduced bounce rates.
+<h2>1. Speed and Performance</h2>
+<p>Fewer decorative graphics, fonts, and elements mean smaller bundle sizes. Faster loading times lead to better SEO and reduced bounce rates.</p>
 
-### 2. High Visual Hierarchy
-Minimalist design uses whitespace, font sizing, and layout spacing to guide user eyes directly to your value proposition and main Call to Action.
+<h2>2. High Visual Hierarchy</h2>
+<p>Minimalist design uses whitespace, font sizing, and layout spacing to guide user eyes directly to your value proposition and main Call to Action.</p>
 
-### 3. Timeless Aesthetic
-By avoiding temporary design trends, minimalist layouts remain modern and premium for years, reducing the frequency of costly redesigns.`
+<h2>3. Timeless Aesthetic</h2>
+<p>By avoiding temporary design trends, minimalist layouts remain modern and premium for years, reducing the frequency of costly redesigns.</p>`
   },
   {
     slug: "essential-typography-rules-for-readability",
@@ -112,17 +116,19 @@ By avoiding temporary design trends, minimalist layouts remain modern and premiu
     publishedAt: "June 22, 2001",
     category: "TYPOGRAPHY",
     image: "/casestudies/11.jpg",
-    content: `Typography dictates how users read your content. Poor spacing, sizing, or font choices make long-form content tiring to read, causing users to leave your site.
+    content: `<p>Typography dictates how users read your content. Poor spacing, sizing, or font choices make long-form content tiring to read, causing users to leave your site.</p>
 
-### 1. Font Pairing
-Use a strong, modern Sans-Serif font for headers (such as Onest or Inter) and clean fonts for content copy to ensure readability on screens.
+<h2>1. Font Pairing</h2>
+<p>Use a strong, modern Sans-Serif font for headers (such as Onest or Inter) and clean fonts for content copy to ensure readability on screens.</p>
 
-### 2. Line Height and Length
-- **Line Length**: Keep text lines between 45 and 75 characters long. Lines that are too long make it hard for the eyes to track.
-- **Line Height**: Content text should have a line-height of 1.5 to 1.7 to allow visual breathing room between lines.
+<h2>2. Line Height and Length</h2>
+<ul>
+  <li><strong>Line Length:</strong> Keep text lines between 45 and 75 characters long. Lines that are too long make it hard for the eyes to track.</li>
+  <li><strong>Line Height:</strong> Content text should have a line-height of 1.5 to 1.7 to allow visual breathing room between lines.</li>
+</ul>
 
-### 3. Hierarchy and Contrast
-Create clear distinctions between h1, h2, h3, and body text using weight and font size variations, helping users scan pages easily.`
+<h2>3. Hierarchy and Contrast</h2>
+<p>Create clear distinctions between h1, h2, h3, and body text using weight and font size variations, helping users scan pages easily.</p>`
   }
 ];
 

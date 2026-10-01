@@ -10,6 +10,7 @@ import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { Metadata } from "next";
 import { cleanInternalNofollow } from "@/lib/seo-utils";
+import { getImageDimensions } from "@/lib/image-dimensions";
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
@@ -201,10 +202,7 @@ function ProjectGalleryView({ title, images }: { title: string; images: string[]
   if (images.length === 1) {
     return (
       <div className="w-full rounded-[24px] lg:rounded-[36px] overflow-hidden bg-white border border-gray-200/80 shadow-[0_10px_40px_rgba(0,0,0,0.04)] relative group p-3 sm:p-6 md:p-8 flex items-center justify-center">
-        <img 
-          src={images[0]} 
-          alt={`${title} Gallery`} 
-          className="w-full h-auto max-h-[850px] object-contain rounded-2xl transition-transform duration-700 ease-out group-hover:scale-[1.01]" 
+        <img src={images[0]} alt={`${title} Gallery`} width={getImageDimensions(images[0], 1200, 800).width} height={getImageDimensions(images[0], 1200, 800).height} className="w-full h-auto max-h-[850px] object-contain rounded-2xl transition-transform duration-700 ease-out group-hover:scale-[1.01]" 
         />
       </div>
     );
@@ -216,10 +214,7 @@ function ProjectGalleryView({ title, images }: { title: string; images: string[]
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
         {images.map((img, idx) => (
           <div key={idx} className="h-[280px] md:h-[480px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-white border border-gray-100 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group flex items-center justify-center p-2 sm:p-4">
-            <img 
-              src={img} 
-              alt={`${title} Gallery ${idx + 1}`} 
-              className="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105" 
+            <img src={img} alt={`${title} Gallery ${idx + 1}`} width={getImageDimensions(img, 1200, 800).width} height={getImageDimensions(img, 1200, 800).height} className="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105" 
             />
           </div>
         ))}
@@ -232,19 +227,13 @@ function ProjectGalleryView({ title, images }: { title: string; images: string[]
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
         <div className="md:col-span-2 h-[260px] md:h-[450px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-          <img 
-            src={images[0]} 
-            alt={`${title} Gallery 1`} 
-            className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
+          <img src={images[0]} alt={`${title} Gallery 1`} width={getImageDimensions(images[0], 1200, 800).width} height={getImageDimensions(images[0], 1200, 800).height} className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
           />
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
         </div>
         {images.slice(1).map((img, idx) => (
           <div key={idx} className="h-[240px] md:h-[380px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-            <img 
-              src={img} 
-              alt={`${title} Gallery ${idx + 2}`} 
-              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
+            <img src={img} alt={`${title} Gallery ${idx + 2}`} width={getImageDimensions(img, 1200, 800).width} height={getImageDimensions(img, 1200, 800).height} className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
           </div>
@@ -259,10 +248,7 @@ function ProjectGalleryView({ title, images }: { title: string; images: string[]
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
         {images.map((img, idx) => (
           <div key={idx} className="h-[240px] md:h-[380px] rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group">
-            <img 
-              src={img} 
-              alt={`${title} Gallery ${idx + 1}`} 
-              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
+            <img src={img} alt={`${title} Gallery ${idx + 1}`} width={getImageDimensions(img, 1200, 800).width} height={getImageDimensions(img, 1200, 800).height} className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
           </div>
@@ -292,10 +278,7 @@ function ProjectGalleryView({ title, images }: { title: string; images: string[]
             key={idx} 
             className={`${spanClass} rounded-[24px] lg:rounded-[36px] overflow-hidden bg-[#30261C]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group`}
           >
-            <img 
-              src={img} 
-              alt={`${title} Gallery ${idx + 1}`} 
-              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
+            <img src={img} alt={`${title} Gallery ${idx + 1}`} width={getImageDimensions(img, 1200, 800).width} height={getImageDimensions(img, 1200, 800).height} className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
           </div>
@@ -388,10 +371,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
             {/* Showcase Image Display */}
             <div className="w-full relative bg-[#f7f5f0] p-4 sm:p-8 flex items-center justify-center">
-              <img 
-                src={project.heroImage || project.image} 
-                alt={`${project.title} Showcase Mockup`} 
-                className="w-full h-auto max-h-[700px] object-contain rounded-2xl shadow-sm transition-transform duration-500 hover:scale-[1.01]"
+              <img src={project.heroImage || project.image} alt={`${project.title} Showcase Mockup`} width={getImageDimensions(project.heroImage || project.image, 1200, 800).width} height={getImageDimensions(project.heroImage || project.image, 1200, 800).height} className="w-full h-auto max-h-[700px] object-contain rounded-2xl shadow-sm transition-transform duration-500 hover:scale-[1.01]"
               />
             </div>
           </div>

@@ -207,9 +207,9 @@ export default function RasAlKhaimahBrandingPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="rak-vision-2030-enterprise-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="rak-vision-2030-enterprise-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. RAK Vision 2030 and Enterprise Brand Architecture Across Northern Emirates
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The economic landscape of Ras Al Khaimah is undergoing a historic transformation driven by the strategic framework of RAK Vision 2030. The emirate is expanding rapidly from its established industrial and manufacturing foundation into a premier global destination for luxury hospitality, international trade, maritime commerce, and digital asset innovation. Operating successfully in this dynamic commercial environment demands an <strong>enterprise brand architecture</strong> that conveys institutional credibility, cross-cultural authority, and market leadership to both regional GCC partners and global institutional investors across RAKEZ business zones.
         </p>
@@ -218,9 +218,9 @@ export default function RasAlKhaimahBrandingPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="bilingual-arabic-english-typographic-systems" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="bilingual-arabic-english-typographic-systems" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Bilingual Arabic-English Typographic Systems and Dual-Script RTL Design Governance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Designing corporate visual identity in the United Arab Emirates requires specialized mastery of dual-script typography where Arabic and English share equal visual weight, optical balance, and cultural reverence. Many international brands make the mistake of treating Arabic as a secondary mechanical translation, resulting in distorted baseline alignments, conflicting font weights, and degraded typographic hierarchy. Our brand studio crafts bespoke bilingual typography that harmonizes classical Naskh and contemporary Kufic proportions with modern Latin geometric sans-serif typefaces for seamless harmony.
         </p>
@@ -229,9 +229,9 @@ export default function RasAlKhaimahBrandingPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="luxury-hospitality-proptech-al-marjan-placemaking" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="luxury-hospitality-proptech-al-marjan-placemaking" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Luxury Hospitality, PropTech, and Al Marjan Island Environmental Placemaking
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The development of multi-billion-dollar integrated resort destinations on Al Marjan Island, headlined by the Wynn Al Marjan Resort and luxury waterfront master developments, has established Ras Al Khaimah as one of the most lucrative luxury real estate corridors in the Middle East. Capturing market share among ultra-high-net-worth investors, sovereign funds, and global hospitality travelers requires sophisticated sensory branding, evocative storytelling, and tactile environmental placemaking that elevates real estate developments into timeless lifestyle brands.
         </p>
@@ -275,9 +275,9 @@ export default function RasAlKhaimahBrandingPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="rak-dao-web3-digital-asset-identity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="rak-dao-web3-digital-asset-identity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. RAK Digital Assets Oasis (RAK DAO), Web3 Identity, and Global Category Creation
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Ras Al Khaimah has firmly positioned itself at the frontier of global technological innovation with the creation of the RAK Digital Assets Oasis (RAK DAO), the first dedicated free zone in the world for non-regulated virtual assets, decentralized organizations, Web3 protocols, and artificial intelligence ventures. Startups and international foundations setting up within this pioneering ecosystem need a distinctive digital identity that establishes technological sophistication, investor confidence, and global category leadership.
         </p>
@@ -296,9 +296,9 @@ export default function RasAlKhaimahBrandingPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Enterprise Branding Architecture &amp; Delivery Matrix: Ras Al Khaimah (RAK)
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -310,10 +310,9 @@ export default function RasAlKhaimahBrandingPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/branding-ras-al-khaimah.jpg"
-                alt="Enterprise Branding Architecture in Ras Al Khaimah Infographic Blueprint"
+                alt="Enterprise Branding Architecture in Ras Al Khaimah Infographic Blueprint" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -329,9 +328,9 @@ export default function RasAlKhaimahBrandingPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="uae-trademark-clearance-ministry-of-economy-ip" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="uae-trademark-clearance-ministry-of-economy-ip" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. UAE Trademark Clearance, Ministry of Economy IP Governance, and Asset Protection
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Building an enterprise brand requires substantial financial and strategic investment, which makes rigorous legal clearance and trademark protection an absolute necessity from day one. In the UAE, trademark registration and intellectual property governance are regulated under Federal Decree-Law No. 36 of 2021 on Trademarks. Launching an unvetted brand identity creates significant exposure to trademark infringement claims, mandatory rebrands, and costly disputes with competing regional enterprises.
         </p>
@@ -340,9 +339,9 @@ export default function RasAlKhaimahBrandingPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="digital-accessibility-wcag-2-2-aa-inclusivity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="digital-accessibility-wcag-2-2-aa-inclusivity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Digital Accessibility, WCAG 2.2 AA Compliance, and Universal Multilingual Inclusivity
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern corporate brand identities must be engineered for universal digital inclusivity. With the UAE Government actively championing digital inclusion and accessibility across public and private sector digital portals, enterprise brands must comply with internationally recognized accessibility benchmarks. Designing for accessibility requires rigorous mathematical color contrast validation, legible type scale architectures, and distinct focus indicator states across both English and Arabic language layouts.
         </p>
@@ -351,9 +350,9 @@ export default function RasAlKhaimahBrandingPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="high-dpi-asset-delivery-variable-fonts-uae-ix" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="high-dpi-asset-delivery-variable-fonts-uae-ix" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. High-DPI Vector Asset Delivery, Variable Fonts, and UAE-IX Edge Peering
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           A brand identity is only as powerful as its technical execution across modern digital screens and devices. Slow-loading static graphics, pixelated raster logos, and unoptimized font files degrade user experience and inflict severe damage on search engine performance. In modern front-end web engineering, visual brand assets must be delivered as lightweight, scalable vector graphics (SVG) and modern WOFF2 variable font subsets that load instantaneously on high-DPI Retina displays.
         </p>
@@ -362,9 +361,9 @@ export default function RasAlKhaimahBrandingPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="industrial-manufacturing-saqr-port-brand-equity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="industrial-manufacturing-saqr-port-brand-equity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Industrial Manufacturing, Saqr Port Supply Chains, and Long-Term Brand Equity
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Ras Al Khaimah is the undisputed industrial powerhouse of the United Arab Emirates, home to premier ceramic manufacturers, pharmaceutical giants, aggregate exporters, and the bustling maritime trade operations of Saqr Port and RAK Ports. Industrial and B2B enterprises operating in these heavy sectors often neglect modern brand strategy, relying on outdated visual collateral that fails to reflect their true technical capabilities and environmental sustainability initiatives.
         </p>
@@ -374,12 +373,12 @@ export default function RasAlKhaimahBrandingPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -387,7 +386,7 @@ export default function RasAlKhaimahBrandingPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Tariq Al-Nuaimi" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Tariq Al-Nuaimi" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Tariq Al-Nuaimi</p>
@@ -401,7 +400,7 @@ export default function RasAlKhaimahBrandingPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Mariam Al-Mansoor" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Mariam Al-Mansoor" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Dr. Mariam Al-Mansoor</p>

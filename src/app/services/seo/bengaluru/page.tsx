@@ -35,70 +35,70 @@ export default function BengaluruSeoPage() {
       />
       
       <ServiceLayout sections={tableOfContents}>
-        <h3 id="bengaluru-organic-ecosystem" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="bengaluru-organic-ecosystem" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Dominating Bengaluru's High-Velocity Digital Ecosystem
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The digital landscape</strong> in India's Silicon Valley demands an exceptionally sophisticated approach to search visibility. With every company from HSR Layout to Whitefield competing for online prominence, relying on basic keyword stuffing is no longer effective. Our tailored optimization strategies are engineered to position your enterprise at the forefront of this highly competitive market. We build comprehensive, multi-layered campaigns that enable local businesses to outrank massive unicorn startups and legacy corporate competitors. Our technical and content workflows are designed to match the rapid, mobile-first consumer habits that define the local tech economy. Partnering with a premier <strong className="font-semibold text-[#de5e18] tracking-tight">SEO company in Bengaluru</strong> ensures that your brand builds long-term topical authority that consistently compounds. This strategic foundation transforms your website from a quiet digital brochure into a highly active customer acquisition engine.
         </p>
 
-        <h3 id="b2b-saas-global-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="b2b-saas-global-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Global Search Architectures for B2B SaaS Scaleups
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">As the undisputed capital</strong> of India's SaaS ecosystem, Bengaluru houses platforms that serve global enterprise clients. For these companies, search strategies must transcend geographic boundaries to capture high-value buyers in North America, Europe, and Asia. We design custom international search frameworks that deploy clean language directories, correct hreflang attributes, and targeted metadata. Our specialized keyword research identifies commercial intent terms used by international decision-makers during their software procurement processes. We structure your site's architecture to build deep credibility, ensuring Google understands your platform's specific niche. By aligning high-quality documentation and product pages with the customer buying cycle, we generate predictable demo bookings. This comprehensive global optimization helps your business capture a larger share of the global software market.
         </p>
 
-        <h3 id="enterprise-gcc-topical-authority" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="enterprise-gcc-topical-authority" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Topical Authority for Global Capability Centers
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">With major tech hubs</strong> like Manyata Tech Park and Outer Ring Road hosting global centers, enterprise positioning is essential. Large IT services firms and Global Capability Centers require structured content architectures to demonstrate deep technical leadership. We construct sophisticated topical maps that align with enterprise solutions, cloud computing, and advanced AI technologies. Our editorial team produces detailed guides and technical papers that speak directly to Chief Technology Officers and procurement executives. We avoid basic marketing language, focus on professional insights, and build clear semantic networks around your primary services. This authoritative positioning signals search algorithms that your website is a trusted source of industry knowledge. Consequently, your enterprise secures premium organic rankings that support long-term sales cycles and institutional contracts.
         </p>
 
-        <h3 id="startup-growth-programmatic-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="startup-growth-programmatic-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Agile Search Optimization and Programmatic SEO
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Thriving startups</strong> in HSR Layout and Koramangala must scale their digital visibility rapidly to meet aggressive growth goals. We deploy agile SEO strategies that leverage programmatic page generation to capture long-tail search queries in real-time. This methodology allows fast-growing platforms in fintech, logistics, and e-commerce to build massive organic reach within weeks. Our teams monitor search algorithm shifts and user intent trends to adapt keyword targeting and content priorities dynamically. We integrate our search workflows directly with your agile development sprints, ensuring marketing updates never break crawl paths. This high-velocity execution ensures your business remains ahead of slower competitors in capturing transactional queries. By focusing on rapid scaling, we help your startup lower customer acquisition costs while building sustainable organic traffic.
         </p>
 
-        <h3 id="technical-seo-nextjs-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="technical-seo-nextjs-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Low-Latency Codebases and Core Web Vitals
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Bengaluru's tech-literate consumers</strong> expect instant, seamless digital interactions, making website performance a major ranking factor. Search engines prioritize fast-loading sites, which means your site's codebase must be optimized for Core Web Vitals. We work closely with your engineering teams to refine Next.js frameworks, reduce JavaScript execution times, and optimize image assets. Our technical audits address critical issues like cumulative layout shifts, server response latency, and crawl budget distribution. We implement structured JSON-LD schema markup to help search engine crawlers interpret and index your business data accurately. This technical precision leads to improved crawl efficiency, better indexation, and a noticeable boost in search visibility. A fast, modern technical foundation is crucial for keeping users engaged and improving organic rankings in competitive spaces.
         </p>
 
-        <h3 id="talent-acquisition-organic-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="talent-acquisition-organic-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Leveraging Organic Search for Tech Talent Acquisition
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The constant demand</strong> for engineering and product talent in Bengaluru makes recruitment a major business challenge. Enterprises and high-growth startups often rely on expensive recruiting agencies, ignoring the potential of organic search channels. We optimize your engineering blogs, career portals, and culture pages to rank for technical queries and career searches. By showcasing your company's technical achievements on search results, we attract inbound interest from top-tier developers. This specialized SEO approach appeals to graduates and experienced professionals from institutes like IISc, RVCE, and PES University. A highly visible, authoritative career portal builds a strong employer brand and reduces long-term cost-per-hire metrics. We help you transform your technical achievements into an active recruitment pipeline that draws top talent organically.
         </p>
 
-        <h3 id="hyperlocal-targeting-micro-markets" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="hyperlocal-targeting-micro-markets" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Hyperlocal Visibility Across Commercial Hubs
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">While global outreach</strong> is vital for SaaS firms, many local enterprises need to dominate specific geographic districts. We design hyper-local search strategies that target customers in key commercial areas, including Electronic City, Indiranagar, and Hebbal. Our team optimizes your Google Business Profile, manages local map listings, and reviews citation consistency across premium directories. We build localized landing pages that address the specific business needs and logistical contexts of different neighbourhoods. This targeted optimization captures search intent at the exact moment a customer is looking for nearby solutions. By securing prominent placement in the Google Local Map Pack, we drive foot traffic and inquiries directly to your offices. This hyper-local focus ensures that your business dominates search results in the specific areas where your services are needed.
         </p>
 
-        <h3 id="data-attribution-and-conversion-velocity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="data-attribution-and-conversion-velocity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Granular Search Analytics and Organic ROI Attribution
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">We prioritize real business outcomes</strong> over superficial metrics, focusing on qualified lead generation and pipeline velocity. Our team integrates advanced search analytics with your CRM systems to track how organic traffic translates into revenue. We monitor key performance indicators such as keyword ranking velocity, click-through rates, and organic attribution pathways in real-time. This analytical rigor allows us to identify high-performing content themes and optimize search campaigns for maximum returns. We provide transparent, detailed monthly reports that show the direct impact of our SEO efforts on your bottom line. Our compliance processes also ensure that your digital assets align with local data protection regulations and search standards. By combining technical expertise with business intelligence, we ensure your organic search investment delivers measurable, long-term ROI.
         </p>
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -106,7 +106,7 @@ export default function BengaluruSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Ananth Narayanan" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Ananth Narayanan" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Ananth Narayanan</p>
@@ -120,7 +120,7 @@ export default function BengaluruSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Divya Rao" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Divya Rao" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Divya Rao</p>

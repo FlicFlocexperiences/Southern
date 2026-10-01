@@ -235,9 +235,9 @@ export default function CaliforniaSocialMediaPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="california-social-landscape-and-enterprise-digital-hegemony" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="california-social-landscape-and-enterprise-digital-hegemony" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. The California Social Landscape and Enterprise Digital Hegemony
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           California represents the world&apos;s fifth-largest economy and the global nexus of digital innovation. From the venture capital corridors of Sand Hill Road in Menlo Park to the entertainment epicenters of Hollywood and Silicon Beach, commercial enterprises face an intensely saturated digital marketplace. Dominating this competitive terrain requires moving far beyond generic community posting. Modern enterprise brands must deploy full-funnel social architectures that blend predictive audience modeling, authentic cultural positioning, and quantitative performance engineering to capture sustainable market share across diverse commercial sectors.
         </p>
@@ -246,9 +246,9 @@ export default function CaliforniaSocialMediaPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="executive-thought-leadership-silicon-valley-sand-hill-road" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="executive-thought-leadership-silicon-valley-sand-hill-road" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Executive Thought Leadership and B2B Influence for Silicon Valley and Sand Hill Road
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           In the competitive technology clusters of Palo Alto, Mountain View, and San Francisco&apos;s Financial District, enterprise decision-makers evaluate software vendors through personal executive credibility. We construct high-impact B2B thought leadership engines for founders, general partners, and C-suite executives on LinkedIn and X. Our editorial strategists distill complex artificial intelligence architectures, venture theses, and product roadmaps into authoritative editorial essays, data infographics, and strategic commentary that command the respect of institutional buyers and institutional investment committees.
         </p>
@@ -257,9 +257,9 @@ export default function CaliforniaSocialMediaPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="creator-economy-orchestration-silicon-beach-ugc-video" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="creator-economy-orchestration-silicon-beach-ugc-video" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Creator Economy Orchestration, Silicon Beach UGC, and High-Velocity Video Production
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Southern California&apos;s Silicon Beach, spanning Santa Monica, Venice, and Culver City, is the undisputed capital of the global creator economy. Consumer brands operating in beauty, wellness, direct-to-consumer retail, and mobile technology must generate massive volumes of native short-form video to stay relevant. We manage end-to-end creator talent acquisition, negotiating comprehensive digital licensing rights, whitelisting permissions, and production deliverables that seamlessly blend raw authenticity with institutional brand standards.
         </p>
@@ -303,9 +303,9 @@ export default function CaliforniaSocialMediaPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="algorithmic-paid-performance-advertising-meta-tiktok-linkedin" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="algorithmic-paid-performance-advertising-meta-tiktok-linkedin" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Algorithmic Paid Performance Advertising across Meta, TikTok, and LinkedIn Networks
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern paid social media advertising is an algorithmic engineering discipline rather than a subjective artistic exercise. Operating across California&apos;s lucrative metropolitan areas requires sophisticated bid management, predictive audience modeling, and programmatic creative testing. We orchestrate enterprise-tier paid advertising budgets across Meta Advantage+, TikTok Smart Performance Campaigns, and LinkedIn Campaign Manager, applying rigorous statistical models to scale revenue without fatiguing core target demographics.
         </p>
@@ -324,9 +324,9 @@ export default function CaliforniaSocialMediaPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Social Media Performance Architecture &amp; Delivery Matrix: California
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -338,10 +338,9 @@ export default function CaliforniaSocialMediaPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/social-media-management-california.jpg"
-                alt="Social Media Management in California Technical Architecture Infographic"
+                alt="Social Media Management in California Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -357,9 +356,9 @@ export default function CaliforniaSocialMediaPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="regulatory-compliance-ccpa-enforcement-ftc-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="regulatory-compliance-ccpa-enforcement-ftc-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. Regulatory Compliance, CCPA Enforcement, and FTC Endorsement Governance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Marketing in California requires unwavering compliance with the most stringent data privacy regulations in the United States. The California Consumer Privacy Act and the California Privacy Rights Act, rigorously enforced by the <a href="https://cppa.ca.gov" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-bold underline hover:text-[#432d1c]">California Privacy Protection Agency (CPPA)</a>, impose substantial civil penalties for non-compliant consumer tracking, retargeting without opt-out consent, and improper data sharing. We engineer privacy-first data infrastructures that protect enterprise balance sheets while preserving attribution accuracy.
         </p>
@@ -368,9 +367,9 @@ export default function CaliforniaSocialMediaPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="statutory-california-unruh-act-wcag-social-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-california-unruh-act-wcag-social-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Statutory California Unruh Act Mandates and WCAG 2.2 AA Social Accessibility
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           California is subject to aggressive accessibility litigation under the California Unruh Civil Rights Act and federal mandates enforced by the <a href="https://www.ada.gov" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-bold underline hover:text-[#432d1c]">U.S. Department of Justice ADA Title III Regulations</a>. Corporate social media channels and their accompanying campaign landing pages are legally classified as public accommodations. Neglecting visual contrast, video captions, or assistive text descriptions exposes brands to statutory damages and reputational harm.
         </p>
@@ -379,9 +378,9 @@ export default function CaliforniaSocialMediaPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="server-side-tracking-sfmix-edge-peering-identity-resolution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="server-side-tracking-sfmix-edge-peering-identity-resolution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. Server-Side Tracking, SFMIX Edge Peering, and First-Party Identity Resolution
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Sub-second digital performance is paramount when converting high-velocity mobile traffic generated by paid social campaigns. In California&apos;s hyper-connected tech corridors, page load delays directly degrade conversion rates. We leverage direct carrier peering through premier regional interconnection facilities, including the <a href="https://sfmix.org" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-bold underline hover:text-[#432d1c]">San Francisco Metropolitan Internet Exchange (SFMIX)</a>, 200 Paul Avenue in San Francisco, and the historic One Wilshire carrier hotel in downtown Los Angeles.
         </p>
@@ -390,9 +389,9 @@ export default function CaliforniaSocialMediaPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="enterprise-multi-touch-attribution-incremental-lift-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="enterprise-multi-touch-attribution-incremental-lift-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Enterprise Multi-Touch Attribution, Incremental Lift Testing, and California SLAs
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Executive leadership teams and corporate boards require absolute transparency regarding marketing capital efficiency. We replace simplistic last-click attribution models with sophisticated multi-touch attribution lakehouses and rigorous geo-matched incremental lift testing. By systematically evaluating synthetic baseline holdout groups against active campaign markets across Orange County, San Diego, and Silicon Valley, we isolate the exact incremental revenue generated by every paid dollar deployed.
         </p>
@@ -402,12 +401,12 @@ export default function CaliforniaSocialMediaPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -415,7 +414,7 @@ export default function CaliforniaSocialMediaPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Marcus Vance</p>
@@ -429,7 +428,7 @@ export default function CaliforniaSocialMediaPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Elena Rostova</p>

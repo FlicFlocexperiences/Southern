@@ -66,70 +66,70 @@ export default function LondonBrandingPage() {
       
       <ServiceLayout sections={tableOfContents}>
 
-        <h3 id="london-commercial-landscape-and-corporate-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="london-commercial-landscape-and-corporate-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Navigating London&apos;s Commercial Landscape and Corporate Brand Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">London represents Europe&apos;s preeminent financial powerhouse and a commanding cultural capital</strong>, generating over twenty-two percent of the United Kingdom&apos;s gross value added. From the institutional wealth managers lining the historic Square Mile to the luxury maisons of Mayfair and the deep tech frontiers of King&apos;s Cross, the city demands an unmatched caliber of commercial positioning. In this hyper-competitive metropolitan ecosystem, commoditized visual identities and superficial design templates fail to build credibility with discerning British and international stakeholders. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in London</strong>, Southern Edge Marketing engineers comprehensive brand architectures, bespoke visual identity systems, and psychology-backed market positioning for high-growth enterprises. We dissect competitive whitespace, analyze institutional buyer psychology, and articulate your corporate purpose to establish commanding market authority. Our strategic branding frameworks transform businesses into recognizable category leaders capable of commanding premium pricing across the <a href="https://www.londonstockexchange.com/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">London Stock Exchange</a> and global capital markets. To ensure your brand identity translates seamlessly into high-converting digital infrastructure, discover our high-velocity <Link href="/services/web-development" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">web development solutions</Link>.
         </p>
 
-        <h3 id="institutional-authority-fca-compliance-city-canary-wharf" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="institutional-authority-fca-compliance-city-canary-wharf" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Institutional Authority and FCA Compliance for the City and Canary Wharf
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The City of London and Canary Wharf anchor the continent&apos;s most sophisticated capital markets</strong>, overseeing trillions in global assets across private equity, venture debt, and banking conglomerates. Operating within these institutional corridors requires a visual and verbal identity that radiates absolute fiduciary integrity, stability, and operational permanence. We construct corporate branding systems for asset managers, boutique investment houses, and fintech innovators that strictly respect financial promotions guidance from the <a href="https://www.fca.org.uk/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Financial Conduct Authority (FCA)</a>. Our design practice selects refined serif typography, authoritative color palettes, and bespoke data visualization frameworks tailored specifically for boardroom presentations and investor prospectuses. We balance conservative corporate sobriety with modern digital agility, ensuring your visual assets inspire confidence among institutional allocation committees. This institutional brand prestige works in close synergy with our secure <Link href="/services/app-development" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">app development services</Link> to ensure all client-facing digital conduits maintain world-class security standards. By establishing an unassailable corporate posture, our <strong className="font-semibold text-[#de5e18] tracking-tight">London branding agency</strong> helps financial leaders capture lucrative institutional mandates and scale internationally.
         </p>
 
-        <h3 id="luxury-heritage-bespoke-craftsmanship-mayfair-west-end" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="luxury-heritage-bespoke-craftsmanship-mayfair-west-end" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Luxury Heritage, Bespoke Craftsmanship, and West End Brand Prestige
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">London stands as the global epicenter of bespoke craftsmanship and timeless luxury</strong>, defined by iconic retail epicenters across Mayfair, New Bond Street, Savile Row, and Knightsbridge. In this elevated marketplace, modern affluent consumers demand an authentic synthesis of British heritage, uncompromising artistry, and contemporary sensory resonance. We collaborate with luxury houses, high-end hospitality groups, and couture fashion designers affiliated with the <a href="https://www.britishfashioncouncil.co.uk/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">British Fashion Council</a> to craft magnetic brand ecosystems. Our master designers create custom heraldic crests, bespoke typographic ligatures, tactile physical packaging specifications, and multi-sensory brand guidelines that evoke visceral emotional desire. We ensure that your physical flagship presence on Regent Street or Sloane Street is complemented by an equally breathtaking digital aesthetic. This seamless brand continuum justifies premium pricing tiers, eliminates price resistance, and cultivates fierce brand devotion among high-net-worth patrons worldwide. To amplify your luxury brand positioning across global high-net-worth audiences, explore our targeted <Link href="/services/social-media-management" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">social media management</Link> campaigns.
         </p>
 
-        <h3 id="deep-tech-ai-saas-category-creation-kings-cross-shoreditch" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="deep-tech-ai-saas-category-creation-kings-cross-shoreditch" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Deep Tech, AI, and SaaS Category Creation in King&apos;s Cross and Shoreditch
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The innovation corridor extending from Old Street&apos;s Silicon Roundabout to the King&apos;s Cross Knowledge Quarter</strong> represents Europe&apos;s most vibrant artificial intelligence and deep tech cluster. For disruptive startups and venture-backed scale-ups, building a differentiated brand identity is the single most critical factor in winning tier-one venture funding and enterprise customer contracts. Our <strong className="font-semibold text-[#de5e18] tracking-tight">London brand strategy specialists</strong> translate highly complex machine learning architectures, distributed cloud protocols, and technical roadmaps into lucid, emotionally compelling category narratives. We develop dynamic digital design systems, developer-friendly iconography, and high-energy motion design that communicate technological sophistication at first glance. By defining a proprietary brand archetype and distinct point of view, we help technical founders transcend crowded software verticals and claim undisputed category leadership. This strategic visual clarity makes your product memorable to chief information officers while positioning your enterprise as an irresistible destination for top-tier engineering talent. To ensure your breakthrough technology dominates organic search results across British and international markets, integrate our proven <Link href="/services/seo" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">SEO services</Link> directly into your growth engine.
         </p>
 
-        <h3 id="ukipo-trademark-governance-and-intellectual-property" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="ukipo-trademark-governance-and-intellectual-property" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           UKIPO Trademark Governance, Intellectual Property, and Brand Security
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">In a densely populated international market like London</strong>, constructing an exceptional visual identity requires rigorous legal protection and strict intellectual property governance. Brand equity cannot compound safely if visual assets, company nomenclature, or signature color combinations face trademark infringement challenges or dilution. Our branding lifecycle incorporates forensic linguistic analysis and visual distinctiveness checks aligned with registration standards defined by the <a href="https://www.gov.uk/government/organisations/intellectual-property-office" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">UK Intellectual Property Office (UKIPO)</a>. We design proprietary typographic marks and distinctive trade dress elements engineered for seamless international trademark filing under the Madrid Protocol. Following launch, we deliver exhaustive Brand Guidelines documents that strictly regulate color spaces, safe zones, digital typography licensing, and sub-brand relationships across internal departments and third-party vendors. This disciplined brand governance safeguards your corporate reputation against unauthorized use, preserving the commercial value of your intellectual property as your operations expand. By establishing bulletproof brand security from day one, your enterprise maintains absolute ownership over its market positioning and commercial goodwill.
         </p>
 
-        <h3 id="cross-cultural-resonance-multicultural-london-transatlantic" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="cross-cultural-resonance-multicultural-london-transatlantic" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Cross-Cultural Resonance for Multicultural London and Transatlantic Markets
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">London is one of the most culturally diverse metropolises on earth</strong>, home to over nine million citizens representing dozens of distinct cultural and linguistic backgrounds. A monolithic brand message will fail to connect across the nuanced lifestyles found throughout London boroughs, from Chelsea and Kensington to Shoreditch, Camden, and Greenwich. Our strategic creative team conducts extensive demographic research and cultural semiotics analysis to architect flexible brand messaging matrices that resonate universally. We balance cosmopolitan British understatement with international appeal, ensuring your brand transitions effortlessly into European hubs like Paris and Frankfurt or North American markets like New York. We formulate multilingual typographic hierarchies and culturally sensitive visual palettes that honor local heritage while projecting universal sophistication. This thoughtful cross-cultural positioning protects your organization from unintended cultural missteps and establishes deep emotional loyalty across international consumer segments. We empower your enterprise to communicate with authentic resonance whether addressing local corporate procurement boards or global retail consumers.
         </p>
 
-        <h3 id="esg-storytelling-sustainability-uk-corporate-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="esg-storytelling-sustainability-uk-corporate-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           ESG Storytelling, Sustainability, and Modern UK Corporate Governance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Corporate leadership across the United Kingdom</strong> is increasingly evaluated on environmental responsibility, social impact, and transparent corporate governance. Institutional investors and conscious consumers now actively reject superficial marketing slogans, demanding genuine proof of sustainable stewardship and ethical operations. We help London organizations articulate authentic Environmental, Social, and Governance (ESG) narratives through evidence-backed brand storytelling and sustainable design practices. Our creative teams implement eco-conscious design principles, specifying recycled print materials, vegetable-based inks, and energy-efficient digital assets aligned with standards from <a href="https://www.dandad.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">D&amp;AD</a>. We translate complex carbon-reduction metrics and community engagement programs into transparent, visually engaging annual reports and sustainability microsites. This strategic narrative clarity protects your enterprise against accusations of greenwashing while reinforcing your reputation as a forward-thinking corporate citizen. By embedding purposeful values into the DNA of your brand identity, we help your business attract socially conscious investors and build lasting stakeholder trust.
         </p>
 
-        <h3 id="strategic-collaboration-brand-equity-growth-london" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="strategic-collaboration-brand-equity-growth-london" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Strategic Collaboration and Measurable Brand Equity Growth in London
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Selecting the right branding partner</strong> is a pivotal strategic investment that dictates your corporate trajectory for the next decade. Southern Edge Marketing unites deep commercial intellect with world-class design mastery to build brand systems that drive quantifiable business expansion. We view branding not as a superficial aesthetic exercise, but as a foundational balance-sheet asset that widens profit margins, decreases customer acquisition costs, and shortens sales cycles. Our collaborative methodology involves intensive executive workshops, competitive market immersion, iterative stylescape prototyping, and turnkey asset production tailored to board-level expectations. We operate with complete transparency, providing your leadership team with dedicated strategic direction and rigorous quality control at every milestone. To understand our performance-first philosophy and meet our multidisciplinary leadership team, explore our <Link href="/about" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">about us</Link> page. When you are prepared to elevate your enterprise into a commanding market leader in the capital, <Link href="/contact" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">contact our London branding team</Link> to schedule an executive consultation.
         </p>
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -137,7 +137,7 @@ export default function LondonBrandingPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Alistair Sterling" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Alistair Sterling" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Alistair Sterling</p>
@@ -151,7 +151,7 @@ export default function LondonBrandingPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Lady Victoria Fairchild" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Lady Victoria Fairchild" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Lady Victoria Fairchild</p>

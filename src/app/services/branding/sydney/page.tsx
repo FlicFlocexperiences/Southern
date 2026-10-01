@@ -224,9 +224,9 @@ export default function SydneyBrandingPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="sydney-commercial-ecosystem-and-enterprise-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="sydney-commercial-ecosystem-and-enterprise-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. The Sydney Commercial Ecosystem and Enterprise Brand Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Sydney stands as the preeminent financial and corporate capital of Australia</strong>, driving immense enterprise valuation across the Asia-Pacific basin. From multinational banking headquarters lining Barangaroo to established commercial corporations across the central business district, differentiation is paramount. Generic visual styling fails to establish enduring commercial trust. Institutional investors, enterprise procurement panels, and corporate buyers demand brand identities constructed with analytical rigor. As a leading <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in Sydney</strong>, Southern Edge Marketing engineers full-stack brand architectures and corporate positioning systems that establish enduring market authority throughout New South Wales.
         </p>
@@ -235,9 +235,9 @@ export default function SydneyBrandingPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="tech-central-scale-up-identity-and-venture-credibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="tech-central-scale-up-identity-and-venture-credibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Tech Central Innovation, Scale-Up Identity, and Venture Capital Credibility
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The technology corridor extending from Surry Hills through South Eveleigh</strong> represents Australia premier innovation precinct. For artificial intelligence pioneers, enterprise software scale-ups, and fintech innovators, strategic brand positioning is the fundamental catalyst for category creation. Technical founders often excel at constructing software architectures but struggle to articulate value propositions that captivate venture capital firms along George Street. Our <strong className="font-semibold text-[#de5e18] tracking-tight">tech branding specialists in Sydney</strong> convert complex technical architectures into compelling enterprise narratives that attract premier engineering talent and secure investment from leading venture capital partnerships.
         </p>
@@ -246,9 +246,9 @@ export default function SydneyBrandingPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="barangaroo-martin-place-institutional-financial-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="barangaroo-martin-place-institutional-financial-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Institutional Authority for Barangaroo and Martin Place Financial Institutions
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The premier financial corridor encompassing Barangaroo International Towers and Martin Place</strong> stewards immense institutional capital, superannuation reserves, and sovereign wealth portfolios. In this fiduciary environment, corporate visual identity serves as a direct indicator of institutional governance, operational security, and fiduciary stability. Developing brand systems for Sydney financial organizations demands profound understanding of capital markets and compliance expectations. Our <strong className="font-semibold text-[#de5e18] tracking-tight">corporate branding agency in Sydney</strong> creates authoritative visual identities that inspire absolute confidence across executive boards, investment committees, and institutional allocators.
         </p>
@@ -292,9 +292,9 @@ export default function SydneyBrandingPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="macquarie-park-and-western-sydney-b2b-brand-positioning" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="macquarie-park-and-western-sydney-b2b-brand-positioning" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Brand Positioning for Macquarie Park and Western Sydney Enterprise Expansion
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The commercial expansion across Macquarie Park and the Greater Western Sydney corridor around Parramatta Square</strong> represents a historic shift in regional economic power. Spanning advanced manufacturing, pharmaceutical research, biomedical engineering, and industrial logistics, enterprises across these innovation districts require sophisticated B2B brand positioning. Corporate procurement committees evaluate prospective suppliers based on operational dependability and technological maturity. Our Sydney brand strategists build industrial brand architectures that establish market leadership and simplify complex enterprise portfolios across high-growth commercial sectors.
         </p>
@@ -313,9 +313,9 @@ export default function SydneyBrandingPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Brand Strategy &amp; Architecture Delivery Matrix: Sydney
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -327,10 +327,9 @@ export default function SydneyBrandingPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/branding-sydney.jpg"
-                alt="Branding in Sydney Technical Architecture Infographic"
+                alt="Branding in Sydney Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -346,9 +345,9 @@ export default function SydneyBrandingPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="ip-australia-trademark-governance-and-brand-defense" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="ip-australia-trademark-governance-and-brand-defense" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. IP Australia Trademark Governance and Intellectual Property Defense
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Building brand recognition without rigorous intellectual property defense</strong> exposes an enterprise to severe commercial vulnerabilities, trademark infringement disputes, and costly rebranding mandates. In the crowded Australian commercial landscape, establishing early trademark priority is fundamental to corporate risk management. Our brand development process integrates comprehensive trademark clearance screening in close coordination with specialized intellectual property attorneys, vetting prospective naming systems, logomarks, and visual emblems against the official registers of <a href="https://www.ipaustralia.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">IP Australia</a> under the Trade Marks Act 1995.
         </p>
@@ -357,9 +356,9 @@ export default function SydneyBrandingPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="statutory-accessibility-dda-section-24-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-accessibility-dda-section-24-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Statutory Accessibility: DDA Section 24 and WCAG 2.2 Level AA Brand Systems
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Operating within Australia requires strict compliance with statutory digital accessibility mandates</strong> established under Section 24 of the Disability Discrimination Act 1992. Commercial enterprises face legal scrutiny and severe reputational damage when digital brand assets fail accessibility standards. Modern enterprise visual identity must be engineered for universal inclusion from inception. Our Sydney design team crafts corporate color palettes rigorously audited against the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">W3C Web Content Accessibility Guidelines (WCAG 2.2 Level AA)</a>, ensuring minimum 4.5:1 contrast ratios across all digital interfaces.
         </p>
@@ -368,9 +367,9 @@ export default function SydneyBrandingPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="high-dpi-vector-assets-variable-fonts-and-nsw-ix-peering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="high-dpi-vector-assets-variable-fonts-and-nsw-ix-peering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. High-DPI Vector Asset Delivery and NSW-IX Sub-Millisecond Edge Peering
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">In modern digital platforms</strong>, corporate visual assets must render with instantaneous sharpness across high-resolution displays without compromising load times or Core Web Vitals performance metrics. Heavy raster graphics, unoptimized font files, and disjointed icon packages introduce layout instability and rendering latency that degrade user engagement and search engine visibility. As a technical <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in Sydney</strong>, Southern Edge Marketing engineers vector SVG asset libraries, scalable icon sprites, and custom variable font subsets tailored for modern web frameworks.
         </p>
@@ -379,9 +378,9 @@ export default function SydneyBrandingPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="environmental-placemaking-cbd-signage-and-multichannel-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="environmental-placemaking-cbd-signage-and-multichannel-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Physical Environmental Placemaking, Corporate Signage, and Multi-Channel Scale
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The architectural footprint of Sydney encompasses celebrated commercial landmarks</strong>, from waterfront corporate towers along Circular Quay to heritage brick conversions in Pyrmont. For corporate headquarters, client briefing centers, and commercial retail spaces, brand identity must transcend digital screens to command physical environments. Our environmental design specialists translate corporate visual systems into dimensional architectural signage, experiential lobby installations, and precision wayfinding systems. We specify durable materials, brushed architectural metals, custom illumination, and sustainable fabrication methods.
         </p>
@@ -391,12 +390,12 @@ export default function SydneyBrandingPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -404,7 +403,7 @@ export default function SydneyBrandingPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Marcus Vance</p>
@@ -418,7 +417,7 @@ export default function SydneyBrandingPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Jonathan Hayes" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Jonathan Hayes" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Jonathan Hayes</p>

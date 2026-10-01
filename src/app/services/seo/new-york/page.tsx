@@ -207,9 +207,9 @@ export default function NewYorkSeoPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="manhattan-commercial-dominance-and-enterprise-search-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="manhattan-commercial-dominance-and-enterprise-search-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. Manhattan Commercial Dominance and Enterprise Search Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Operating an enterprise in the New York metropolitan area demands an aggressive organic search presence that transcends conventional keyword optimization. Manhattan represents the most competitive commercial arena on earth, where Fortune 500 headquarters, premier venture funds, and multinational corporations compete for dominant placement on high-value commercial search queries. Capturing high-intent organic traffic in districts like Midtown and the Financial District requires a multi-layered technical search architecture. We engineer custom search strategies that prioritize high-converting transactional queries, establish unmatched domain authority, and secure decisive search equity across global commercial categories.
         </p>
@@ -218,20 +218,20 @@ export default function NewYorkSeoPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="wall-street-fintech-sec-compliance-and-entity-authority-graphs" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="wall-street-fintech-sec-compliance-and-entity-authority-graphs" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Wall Street FinTech, SEC Compliance, and Entity Authority Graphs
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Financial institutions, investment banking entities, hedge funds, and emerging FinTech scale-ups clustered around Wall Street and Hudson Yards operate under intense regulatory scrutiny. In these high-stakes commercial sectors, generic keyword ranking tactics fail because search algorithms demand strict proof of Experience, Expertise, Authoritativeness, and Trustworthiness. We construct comprehensive entity authority graphs that anchor your executive leadership, proprietary financial research, and corporate entity to recognized global knowledge bases, establishing immutable topical authority that search engines reward with premier visibility for institutional queries.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          Operating within financial verticals requires total alignment with strict statutory frameworks. Our editorial workflows and content indexing pipelines adhere rigorously to financial promotional guidelines established by the <a href="https://www.sec.gov" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-semibold underline underline-offset-4 hover:text-[#432d1c] transition-colors">Securities and Exchange Commission</a> as well as FINRA Rule 2210 financial communications governance. We also integrate technical data privacy standards aligned with <a href="https://en.wikipedia.org/wiki/New_York_State_Department_of_Financial_Services" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-semibold underline underline-offset-4 hover:text-[#432d1c] transition-colors">NYDFS 23 NYCRR 500</a> cybersecurity requirements. By embedding verified author entities, transparent disclaimers, and authoritative citations, we protect institutional reputation while systematically dominating organic search results across wealth management and FinTech markets.
+          Operating within financial verticals requires total alignment with strict statutory frameworks. Our editorial workflows and content indexing pipelines adhere rigorously to financial promotional guidelines established by the <a href="https://www.sec.gov" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-semibold underline underline-offset-4 hover:text-[#432d1c] transition-colors">Securities and Exchange Commission</a> as well as FINRA Rule 2210 financial communications governance. We also integrate technical data privacy standards aligned with NYDFS 23 NYCRR 500 cybersecurity requirements. By embedding verified author entities, transparent disclaimers, and authoritative citations, we protect institutional reputation while systematically dominating organic search results across wealth management and FinTech markets.
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="madison-avenue-luxury-prestige-and-high-intent-organic-capture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="madison-avenue-luxury-prestige-and-high-intent-organic-capture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Madison Avenue Luxury Prestige and High-Intent Organic Capture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The luxury retail, bespoke commerce, and haute horlogerie corridors of Fifth Avenue, SoHo, and Madison Avenue demand an organic search methodology reflecting refined elegance and brand prestige. Traditional search marketing often dilutes luxury positioning through generic keyword stuffing and discount-oriented metadata. We engineer sophisticated search positioning that captures ultra-high-net-worth clientele seeking exclusive products, private advisory services, and luxury experiences, ensuring your organic search presentation mirrors the craftsmanship and prestige of your physical flagship boutiques.
         </p>
@@ -275,9 +275,9 @@ export default function NewYorkSeoPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="silicon-alley-saas-geo-vectoring-and-llm-search-engine-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="silicon-alley-saas-geo-vectoring-and-llm-search-engine-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Silicon Alley SaaS, GEO Vectoring, and LLM Search Engine Optimization
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The technology corridor of Silicon Alley, spanning the Flatiron District, Chelsea, and DUMBO, is home to hyper-growth SaaS platforms, artificial intelligence pioneers, and venture-backed scale-ups. In this landscape, traditional search engine results pages represent only a fraction of the discovery equation. Modern tech buyers increasingly rely on generative artificial intelligence discovery engines to evaluate enterprise software. We engineer forward-looking Generative Engine Optimization strategies that position your technology directly inside synthesis answers across ChatGPT Search, Perplexity AI, Claude, and Google AI Overviews.
         </p>
@@ -296,9 +296,9 @@ export default function NewYorkSeoPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Search Engine Optimization &amp; Generative Engine Architecture: New York City
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -310,10 +310,9 @@ export default function NewYorkSeoPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/seo-new-york.jpg"
-                alt="Search Engine Optimization in New York Technical Architecture Infographic"
+                alt="Search Engine Optimization in New York Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -329,9 +328,9 @@ export default function NewYorkSeoPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="enterprise-knowledge-graphs-wikidata-and-semantic-schema-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="enterprise-knowledge-graphs-wikidata-and-semantic-schema-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. Enterprise Knowledge Graphs, Wikidata, and Semantic Schema Governance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern search engines operate as semantic knowledge engines interpreting relationships between real-world entities rather than analyzing isolated string queries. For New York enterprises, establishing an authoritative knowledge graph footprint is essential to monopolizing branded search engine results pages, rich snippets, and Google Knowledge Panels. We engineer interconnected schema markup architectures that map corporate executives, physical headquarters, patents, subsidiaries, and product catalogs directly into Wikidata and the global Semantic Web.
         </p>
@@ -340,9 +339,9 @@ export default function NewYorkSeoPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="statutory-ada-title-iii-sdny-precedent-and-accessible-search-signals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-ada-title-iii-sdny-precedent-and-accessible-search-signals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Statutory ADA Title III, SDNY Legal Precedent, and Accessible Search Signals
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility is both an algorithmic quality prerequisite and an urgent legal requirement for enterprises operating in New York. The United States District Court for the Southern District of New York is the national epicenter for website accessibility litigation under Title III of the Americans with Disabilities Act. Search engine algorithms prioritize digital properties that provide universal usability, clear semantic navigation hierarchies, and comprehensive assistive device compatibility, penalizing non-compliant websites through degraded search rankings.
         </p>
@@ -351,9 +350,9 @@ export default function NewYorkSeoPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="sub-millisecond-edge-caching-60-hudson-carrier-hotels-and-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="sub-millisecond-edge-caching-60-hudson-carrier-hotels-and-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. Sub-Millisecond Edge Caching, 60 Hudson Carrier Hotels, and Core Web Vitals
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           In the hyper-accelerated New York commercial market, technical website performance directly dictates search engine crawl frequency, indexation velocity, and organic ranking position. Google algorithmically rewards websites achieving stellar Core Web Vitals metrics, including minimal Interaction to Next Paint, negligible Cumulative Layout Shift, and rapid Largest Contentful Paint. We deploy modern serverless edge architectures that position cached static assets and dynamic compute instances within sub-millisecond proximity to New York enterprise users.
         </p>
@@ -362,9 +361,9 @@ export default function NewYorkSeoPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="five-borough-local-pack-dominance-and-enterprise-scaling-retainers" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="five-borough-local-pack-dominance-and-enterprise-scaling-retainers" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Five-Borough Local Pack Dominance and Enterprise Scaling Retainers
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Capturing regional market share across Manhattan, Brooklyn, Queens, Staten Island, and the Bronx requires an enterprise local search strategy. High-value B2B and consumer search queries frequently trigger local map pack results dominating the mobile and desktop viewport. We optimize multi-location Google Business Profiles, standardize localized citation ecosystems across authoritative New York registries, and deploy location-specific schema architectures to guarantee top-three local pack visibility across targeted metropolitan commercial zip codes.
         </p>
@@ -374,12 +373,12 @@ export default function NewYorkSeoPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -387,7 +386,7 @@ export default function NewYorkSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Marcus Vance</p>
@@ -401,7 +400,7 @@ export default function NewYorkSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Elena Rostova</p>

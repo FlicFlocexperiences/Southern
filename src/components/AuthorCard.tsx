@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import { getImageDimensions } from "@/lib/image-dimensions";
 
 export interface AuthorCardProps {
   name?: string;
@@ -18,6 +19,7 @@ export function AuthorCard({
   image = "/assets/team/ameet.png",
   shortBio = "Founder & Lead Digital Strategist driving performance marketing, technical SEO, and scalable enterprise growth.",
 }: AuthorCardProps) {
+  const dims = getImageDimensions(image);
   return (
     <div className="bg-white border border-black/10 rounded-xl p-6 text-[#0f0f0f] shadow-sm relative overflow-hidden group text-left">
       <div className="absolute top-[-20%] right-[-10%] w-[50%] aspect-square rounded-full bg-[#de5e18]/10 blur-[30px] pointer-events-none" />
@@ -28,6 +30,8 @@ export function AuthorCard({
           <img
             src={image}
             alt={name}
+            width={dims.width}
+            height={dims.height}
             className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-300"
           />
         </div>

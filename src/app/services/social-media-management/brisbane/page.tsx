@@ -233,9 +233,9 @@ export default function BrisbaneSocialMediaManagementPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="brisbane-commercial-acceleration-and-enterprise-social-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="brisbane-commercial-acceleration-and-enterprise-social-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. Brisbane Commercial Acceleration and Enterprise Social Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Brisbane stands as Queensland&apos;s premier economic powerhouse and commercial center</strong>, generating extraordinary momentum across mining, biotechnology, logistics, and property development. From the corporate towers of the Golden Triangle along Eagle Street to creative hubs in Fortitude Valley, local enterprises operate in an increasingly sophisticated market. In this competitive landscape, basic scheduling tools and superficial stock imagery fail to capture the attention of corporate decision-makers and high-net-worth consumers. As a leading <strong className="font-semibold text-[#de5e18] tracking-tight">social media management company in Brisbane</strong>, Southern Edge Marketing engineers high-impact social distribution systems.
         </p>
@@ -244,20 +244,20 @@ export default function BrisbaneSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="executive-thought-leadership-linkedin-abm-golden-triangle" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="executive-thought-leadership-linkedin-abm-golden-triangle" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Executive Thought Leadership and B2B LinkedIn ABM for the Golden Triangle
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          Navigating Brisbane&apos;s primary financial corridors demands an authoritative, high-trust approach to executive communication. Managing directors, resource executives, and enterprise chief technology officers actively use <a href="https://business.linkedin.com/marketing-solutions" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">LinkedIn Marketing Solutions</a> to discover innovative vendors and evaluate strategic partnerships. We construct bespoke B2B executive positioning frameworks that transform corporate leaders into verified industry authorities across mining, private equity, infrastructure, and agriculture. Our editorial strategists craft in-depth whitepapers, industry analyses, and proprietary market charts that articulate your corporate vision with complete intellectual authority.
+          Navigating Brisbane&apos;s primary financial corridors demands an authoritative, high-trust approach to executive communication. Managing directors, resource executives, and enterprise chief technology officers actively use LinkedIn Marketing Solutions to discover innovative vendors and evaluate strategic partnerships. We construct bespoke B2B executive positioning frameworks that transform corporate leaders into verified industry authorities across mining, private equity, infrastructure, and agriculture. Our editorial strategists craft in-depth whitepapers, industry analyses, and proprietary market charts that articulate your corporate vision with complete intellectual authority.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           To convert executive visibility into measurable pipeline revenue, we pair organic thought leadership with precision Account-Based Marketing paid campaigns across enterprise networks. By leveraging granular job title, seniority, and company size targeting, our paid campaigns engage key decision-makers across ASX 200 enterprises, institutional funds, and commercial firms throughout Queensland. This systematic approach nurtures complex buying committees across lengthy procurement cycles, turning social impressions into high-value boardroom presentations. To ensure social traffic converts on responsive digital platforms, discover our high-performance <Link href="/services/web-development" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">web development services</Link>.
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="tech-ecosystem-acquisition-fortitude-valley-newstead" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="tech-ecosystem-acquisition-fortitude-valley-newstead" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Tech Ecosystem Acquisition and Community Growth in Fortitude Valley and Newstead
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The technology and creative ecosystem spanning Fortitude Valley, Newstead, and Milton forms the primary engine of Queensland digital product innovation. Ambitious tech scale-ups and venture-backed software firms require agile, full-funnel social marketing strategies to drive product-led growth, expand user communities, and secure international venture capital. We architect multi-channel acquisition funnels across LinkedIn, YouTube, X, and interactive developer spaces, optimizing creative messaging for trial activations, product signups, and enterprise software seat expansions.
         </p>
@@ -301,9 +301,9 @@ export default function BrisbaneSocialMediaManagementPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="statutory-privacy-governance-australian-privacy-principles-server-side-capi" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-privacy-governance-australian-privacy-principles-server-side-capi" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Statutory Privacy Governance, Australian Privacy Principles, and Server-Side CAPI
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Executing digital marketing campaigns across Queensland requires rigorous adherence to federal privacy legislation and statutory consumer protections. The <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Office of the Australian Information Commissioner</a> actively enforces the Privacy Act 1988 alongside thirteen statutory Australian Privacy Principles, governing the collection, storage, and cross-border disclosure of personal information. In response to mobile browser cookie restrictions and heightened consumer privacy awareness, our marketing engineers deploy first-party server-side telemetry using the <a href="https://developers.facebook.com/docs/marketing-api/conversions-api/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Meta Conversions API</a>, LinkedIn Conversions API, and Google Tag Manager Server Container.
         </p>
@@ -322,9 +322,9 @@ export default function BrisbaneSocialMediaManagementPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Social Media Architecture &amp; Multi-Channel Delivery Matrix: Brisbane
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -336,10 +336,9 @@ export default function BrisbaneSocialMediaManagementPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/social-media-management-brisbane.jpg"
-                alt="Social Media Management in Brisbane Technical Architecture Infographic"
+                alt="Social Media Management in Brisbane Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -355,9 +354,9 @@ export default function BrisbaneSocialMediaManagementPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="broadcast-4k-vertical-video-accc-influencer-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="broadcast-4k-vertical-video-accc-influencer-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. Broadcast-Quality 4K Vertical Video and ACCC Influencer Endorsement Governance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Algorithmic feeds across TikTok, Instagram Reels, and YouTube Shorts make vertical short-form video the most effective medium for rapid brand recall and customer acquisition. Generic stock video and low-fidelity smartphone footage fail to resonate with discerning Queensland consumers and executive buyers. Our in-house creative production studio oversees every phase of production, from commercial scripting and on-location 4K cinematography across Brisbane landmarks to color grading, sound design, and kinetic typography optimized for muted mobile viewing.
         </p>
@@ -366,9 +365,9 @@ export default function BrisbaneSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="disability-discrimination-act-wcag-universal-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="disability-discrimination-act-wcag-universal-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Statutory Disability Discrimination Act Compliance and WCAG 2.2 AA Accessibility
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility represents a critical legal obligation and ethical imperative for commercial enterprises operating throughout Queensland. Under the federal Disability Discrimination Act 1992, public-facing digital communications must provide equal access to individuals with auditory, cognitive, visual, or neurological impairments. Social media campaigns published without inclusive design principles alienate valuable audiences and create corporate regulatory exposure. Our production pipeline embeds accessibility protocols into every creative asset in accordance with global <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> guidelines.
         </p>
@@ -377,9 +376,9 @@ export default function BrisbaneSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="qld-ix-edge-peering-nextdc-data-centers-5g-distribution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="qld-ix-edge-peering-nextdc-data-centers-5g-distribution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. QLD-IX Edge Peering, NEXTDC Data Centers, and 5G Content Distribution
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Delivering high-resolution video reels, dynamic campaign landing pages, and interactive social experiences across metropolitan Brisbane requires infrastructure optimized for regional telecommunications backbones. We architect campaign delivery pipelines with direct peering at the <a href="https://www.ix.asn.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">QLD-IX</a> internet exchange point and premier carrier facilities located in NEXTDC B1 and B2 data centers. This specialized peering architecture guarantees that rich media assets and transactional landing pages load within single-digit milliseconds for local users browsing on Telstra and Optus high-speed 5G mobile networks.
         </p>
@@ -388,9 +387,9 @@ export default function BrisbaneSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="enterprise-attribution-data-lakehouses-brisbane-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="enterprise-attribution-data-lakehouses-brisbane-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Enterprise Multi-Touch Attribution, Data Lakehouses, and Dedicated Brisbane SLAs
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Enterprise chief marketing officers and corporate finance leaders require deterministic, audited verification of marketing return on investment rather than vanity metrics. We construct sophisticated multi-touch attribution models that trace user interactions across paid social, executive content, organic search, and direct conversion funnels. Our data team integrates social advertising telemetry directly with enterprise data warehouses, including Snowflake, Google BigQuery, and Salesforce CRM platforms, delivering executive dashboards that display real-time customer acquisition costs and pipeline velocity.
         </p>
@@ -400,12 +399,12 @@ export default function BrisbaneSocialMediaManagementPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -413,7 +412,7 @@ export default function BrisbaneSocialMediaManagementPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Lachlan Henderson" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Lachlan Henderson" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Lachlan Henderson</p>
@@ -427,7 +426,7 @@ export default function BrisbaneSocialMediaManagementPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Sienna Gallagher" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Sienna Gallagher" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Sienna Gallagher</p>

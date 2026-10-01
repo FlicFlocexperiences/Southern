@@ -224,9 +224,9 @@ export default function MelbourneBrandingPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="melbourne-commercial-landscape-and-enterprise-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="melbourne-commercial-landscape-and-enterprise-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. The Melbourne Commercial Ecosystem and Enterprise Brand Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Melbourne stands as the cultural, design, and commercial powerhouse of Australia</strong>, fostering high-growth corporate enterprises across Victoria. From historic boardrooms along the Paris End of Collins Street to expansive corporate headquarters in Docklands and Southbank, market differentiation is vital. Superficial design treatments fail to secure long-term commercial trust. Corporate procurement panels, institutional stakeholders, and enterprise buyers expect brand identities backed by structural discipline. As an experienced <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in Melbourne</strong>, Southern Edge Marketing develops full-stack brand architectures and corporate positioning systems that establish enduring market leadership across Australia.
         </p>
@@ -235,9 +235,9 @@ export default function MelbourneBrandingPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="cremorne-tech-cluster-scale-up-identity-and-venture-credibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="cremorne-tech-cluster-scale-up-identity-and-venture-credibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Cremorne Tech Cluster, Scale-Up Identity, and Venture Capital Credibility
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The technology corridor in Cremorne and Richmond</strong> serves as the premier innovation capital of Melbourne. For artificial intelligence pioneers, fintech disruptors, and enterprise software scale-ups, strategic brand positioning is essential for category creation. Engineering founders often excel at constructing sophisticated software backends, yet they frequently struggle to translate technical value for venture capital firms along Collins Street. Our <strong className="font-semibold text-[#de5e18] tracking-tight">tech branding specialists in Melbourne</strong> translate complex technical capabilities into authoritative corporate narratives that attract institutional funding and top engineering talent across Victoria.
         </p>
@@ -246,9 +246,9 @@ export default function MelbourneBrandingPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="collins-street-and-docklands-institutional-financial-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="collins-street-and-docklands-institutional-financial-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Institutional Authority for Collins Street and Docklands Financial Leaders
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The financial district spanning Collins Street, Rialto Towers, and Docklands</strong> manages significant superannuation capital, sovereign funds, and private wealth portfolios. In this fiduciary landscape, visual identity directly communicates operational integrity, statutory compliance, and institutional stability. Creating brand identities for Victorian financial institutions requires deep familiarity with capital markets and regulatory expectations. Our <strong className="font-semibold text-[#de5e18] tracking-tight">corporate branding agency in Melbourne</strong> creates authoritative visual identities that inspire confidence across corporate boards, investment committees, and family office allocators.
         </p>
@@ -292,9 +292,9 @@ export default function MelbourneBrandingPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="b2b-industrial-positioning-for-south-east-melbourne-and-parkville" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="b2b-industrial-positioning-for-south-east-melbourne-and-parkville" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. B2B Brand Positioning for South-East Melbourne and Biomedical Innovation Hubs
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The commercial manufacturing corridor across Dandenong and the biomedical research cluster in Parkville</strong> represent vital engines of Victorian economic productivity. Encompassing precision engineering, pharmaceutical development, biotechnology, and advanced logistics, organizations in these sectors require sophisticated B2B brand architecture. Commercial procurement committees evaluate prospective suppliers based on operational dependability and technical excellence. Our Melbourne brand strategists build industrial positioning frameworks that clarify complex enterprise capabilities and strengthen supplier credibility across Australia.
         </p>
@@ -313,9 +313,9 @@ export default function MelbourneBrandingPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Brand Strategy &amp; Architecture Delivery Matrix: Melbourne
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -327,10 +327,9 @@ export default function MelbourneBrandingPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/branding-melbourne.jpg"
-                alt="Branding in Melbourne Technical Architecture Infographic"
+                alt="Branding in Melbourne Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -346,9 +345,9 @@ export default function MelbourneBrandingPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="ip-australia-trademark-clearance-and-intellectual-property-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="ip-australia-trademark-clearance-and-intellectual-property-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. IP Australia Trademark Clearance and Intellectual Property Governance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Building a commercial brand without thorough intellectual property defense</strong> introduces severe operational risk, brand confusion, and expensive legal remediation. In Australia competitive business environment, securing early trademark priority is a critical corporate governance priority. Our branding methodology incorporates exhaustive clearance screening in collaboration with qualified trademark attorneys, validating proposed names, logomarks, and visual emblems against the official registers of <a href="https://www.ipaustralia.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">IP Australia</a> under the Trade Marks Act 1995.
         </p>
@@ -357,9 +356,9 @@ export default function MelbourneBrandingPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="statutory-accessibility-dda-section-24-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-accessibility-dda-section-24-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Statutory Accessibility: DDA Section 24 and WCAG 2.2 Level AA Systems
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Commercial organizations in Australia must satisfy strict digital accessibility standards</strong> established under Section 24 of the Disability Discrimination Act 1992. Inaccessible brand interfaces invite legal scrutiny, administrative complaints, and public reputational damage. Modern enterprise visual identity must be engineered for universal access from the start. Our Melbourne design practice develops corporate color palettes audited against the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">W3C Web Content Accessibility Guidelines (WCAG 2.2 Level AA)</a>, maintaining minimum 4.5:1 contrast ratios across user interfaces.
         </p>
@@ -368,9 +367,9 @@ export default function MelbourneBrandingPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="high-dpi-vector-assets-variable-fonts-and-vic-ix-peering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="high-dpi-vector-assets-variable-fonts-and-vic-ix-peering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. High-DPI Vector Asset Delivery and VIC-IX Sub-Millisecond Edge Peering
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Modern enterprise digital applications require corporate visual assets</strong> that render with sharp clarity across high-density screens without increasing page weight or hurting Core Web Vitals metrics. Unoptimized image files, oversized fonts, and fragmented vector graphics introduce layout shifts and slow initial render times, diminishing user engagement and organic search rank. As a technical <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in Melbourne</strong>, Southern Edge Marketing engineers lightweight SVG asset packages, unified vector sprites, and modern variable font subsets configured for Next.js architectures.
         </p>
@@ -379,9 +378,9 @@ export default function MelbourneBrandingPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="environmental-placemaking-cbd-signage-and-multichannel-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="environmental-placemaking-cbd-signage-and-multichannel-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Environmental Placemaking, Corporate Signage, and Multi-Channel Scale
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Melbourne is celebrated for its distinctive architectural heritage</strong>, from Victorian landmark facades along Flinders Street to sleek commercial skyscrapers on William Street. For corporate headquarters, customer experience centers, and commercial flagships, brand identity must extend gracefully into three-dimensional space. Our environmental design specialists translate digital identity systems into exterior architectural signage, interior lobby installations, and intuitive wayfinding systems. We specify durable materials, precision metal fabrication, custom backlighting, and sustainable architectural finishes.
         </p>
@@ -391,12 +390,12 @@ export default function MelbourneBrandingPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -404,7 +403,7 @@ export default function MelbourneBrandingPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Liam Sutherland" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Liam Sutherland" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Liam Sutherland</p>
@@ -418,7 +417,7 @@ export default function MelbourneBrandingPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Elena Rostova</p>

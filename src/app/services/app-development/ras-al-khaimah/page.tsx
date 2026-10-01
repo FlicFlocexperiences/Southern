@@ -207,9 +207,9 @@ export default function RasAlKhaimahAppDevelopmentPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="rak-vision-2030-industrial-mobility-rakez" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="rak-vision-2030-industrial-mobility-rakez" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. RAK Vision 2030 and Industrial Enterprise Mobility Across RAKEZ
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Ras Al Khaimah is advancing rapidly under <strong className="font-semibold text-[#de5e18] tracking-tight">RAK Vision 2030</strong>, establishing the emirate as a premier manufacturing and industrial powerhouse in the UAE. Across the <strong className="font-semibold text-[#de5e18] tracking-tight">Ras Al Khaimah Economic Zone (RAKEZ)</strong>, including active industrial parks in Al Hamra, Al Ghail, and Al Hulaila, modern enterprises require custom mobile architectures to streamline production, track physical assets, and coordinate distributed personnel. Mobile applications provide real-time visibility into factory metrics, replacing manual paperwork with automated digital workflows that improve operational productivity across the northern Emirates.
         </p>
@@ -218,9 +218,9 @@ export default function RasAlKhaimahAppDevelopmentPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="hospitality-proptech-al-marjan-wynn-ecosystem" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="hospitality-proptech-al-marjan-wynn-ecosystem" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Hospitality, PropTech, and Luxury Mobility for Al Marjan Island and Wynn Ecosystem
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The luxury hospitality and real estate sectors in Ras Al Khaimah are experiencing unprecedented expansion, anchored by waterfront developments on <strong className="font-semibold text-[#de5e18] tracking-tight">Al Marjan Island</strong> and Mina Al Arab. With the arrival of the multi-billion dollar Wynn Al Marjan Island integrated resort, affluent international travelers and property investors expect seamless digital interactions. Luxury mobile applications must deliver effortless digital guest journeys, incorporating keyless room access via Bluetooth protocols, concierge messaging, interactive resort wayfinding, fine-dining reservations, and instant folio settlements.
         </p>
@@ -229,9 +229,9 @@ export default function RasAlKhaimahAppDevelopmentPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="rak-dao-web3-fintech-security-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="rak-dao-web3-fintech-security-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. RAK Digital Assets Oasis (RAK DAO) and High-Security FinTech Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           With the official launch of the <strong className="font-semibold text-[#de5e18] tracking-tight">RAK Digital Assets Oasis (RAK DAO)</strong>, the world&apos;s first purpose-built free zone dedicated to virtual assets and Web3 enterprises, Ras Al Khaimah has established itself as an innovative center for digital finance. Engineering mobile software for this ecosystem demands deep technical mastery of distributed ledger technology, hardware cryptographic key custody, non-custodial wallet management, and secure smart contracts. Mobile applications operating within RAK DAO must maintain uncompromising defenses against sophisticated cyber threats.
         </p>
@@ -275,9 +275,9 @@ export default function RasAlKhaimahAppDevelopmentPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="bilingual-arabic-rtl-ux-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="bilingual-arabic-rtl-ux-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Bilingual Arabic RTL UX Engineering and Cultural Localization
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Deploying commercial mobile platforms in the United Arab Emirates requires an authentic commitment to linguistic precision and cultural resonance. While English serves as a vital international business medium in Ras Al Khaimah, Arabic is the primary language of government, enterprise leadership, and Emirati daily life. Effective localization extends far beyond literal translations; it demands comprehensive bidirectional engineering where user interfaces seamlessly transform to support Right-to-Left (RTL) reading patterns, intuitive gestures, and balanced typographic hierarchy.
         </p>
@@ -296,9 +296,9 @@ export default function RasAlKhaimahAppDevelopmentPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Mobile Application Architecture &amp; Delivery Matrix: Ras Al Khaimah (RAK)
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -310,10 +310,9 @@ export default function RasAlKhaimahAppDevelopmentPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/app-development-ras-al-khaimah.jpg"
-                alt="App Development in Ras Al Khaimah Technical Architecture Infographic"
+                alt="App Development in Ras Al Khaimah Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -329,9 +328,9 @@ export default function RasAlKhaimahAppDevelopmentPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="compliance-tdra-uae-data-protection-law" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="compliance-tdra-uae-data-protection-law" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. Compliance with TDRA Guidelines and UAE Personal Data Protection Law
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Deploying enterprise digital services and commercial mobile applications across Ras Al Khaimah requires rigorous compliance with regulatory frameworks established by the <a href="https://tdra.gov.ae/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Telecommunications and Digital Government Regulatory Authority (TDRA)</a>. Furthermore, enterprise platforms must align with UAE Federal Decree-Law No. 45 of 2021 on Personal Data Protection, which imposes strict legal mandates concerning user consent capture, data sovereignty, international transfers, and automated breach notifications.
         </p>
@@ -340,9 +339,9 @@ export default function RasAlKhaimahAppDevelopmentPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="low-latency-gcc-edge-hosting-uae-ix" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="low-latency-gcc-edge-hosting-uae-ix" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Low-Latency GCC Edge Hosting and UAE-IX Telecom Infrastructure Peering
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Mobile application responsiveness is directly correlated with user retention, transaction completion rates, and overall brand satisfaction. In the modern UAE economy, business executives, factory supervisors, and retail consumers expect mobile interactions to respond with near-instantaneous speed. When mobile applications rely on legacy cloud servers hosted overseas, network latency introduces perceptible lag spikes that disrupt operational communications. Modern mobile backends must integrate directly with regional telecommunications infrastructure across the Emirates.
         </p>
@@ -351,9 +350,9 @@ export default function RasAlKhaimahAppDevelopmentPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="industrial-iot-supply-chain-saqr-port" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="industrial-iot-supply-chain-saqr-port" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. Industrial IoT, Supply Chain Synchronization, and Port Logistics at Saqr Port
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Ras Al Khaimah serves as a vital maritime and industrial gateway for the Middle East, anchored by <strong className="font-semibold text-[#de5e18] tracking-tight">Saqr Port</strong>, the largest bulk handling port in the region, alongside extensive manufacturing and logistics operations. Industrial facilities operating in these demanding physical environments require specialized mobile software capable of interfacing with Internet of Things sensors, automated weighbridges, RFID scanners, and GPS fleets, often operating in remote locations where cellular connectivity is intermittent.
         </p>
@@ -362,9 +361,9 @@ export default function RasAlKhaimahAppDevelopmentPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="product-lifecycle-governance-enterprise-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="product-lifecycle-governance-enterprise-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Full-Lifecycle Product Governance and Multi-Channel Enterprise Scale
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Building a market-leading enterprise mobile application is an ongoing technological partnership that demands continuous governance, disciplined quality control, and strategic product evolution. From initial architectural discovery, technical proof-of-concept modeling, and human-centered UX design to automated continuous integration pipelines and seamless submissions to the Apple App Store and Google Play Store, our enterprise delivery framework eliminates friction. We conduct automated testing across physical devices to verify pristine performance before release.
         </p>
@@ -374,12 +373,12 @@ export default function RasAlKhaimahAppDevelopmentPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -387,7 +386,7 @@ export default function RasAlKhaimahAppDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Tariq Al-Nuaimi" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Tariq Al-Nuaimi" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Tariq Al-Nuaimi</p>
@@ -401,7 +400,7 @@ export default function RasAlKhaimahAppDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Rashid Al-Ghafli" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Rashid Al-Ghafli" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Dr. Rashid Al-Ghafli</p>

@@ -4,38 +4,43 @@ import React from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { getImageDimensions } from "@/lib/image-dimensions";
 
-const TeamCard = ({ name, role1, role2, image, linkedinUrl, heightClass = "h-[320px] lg:h-[350px]", imageClassName = "" }: { name: string, role1: string, role2?: string, image: string, linkedinUrl?: string, heightClass?: string, imageClassName?: string }) => (
-  <div className={`bg-gradient-to-b from-white via-white to-[#ffd1b8] rounded-[20px] ${heightClass} w-full relative overflow-hidden flex flex-col justify-end group shrink-0 cursor-pointer shadow-[0_10px_30px_rgba(0,0,0,0.1),inset_0_2px_4px_rgba(255,255,255,0.6)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.25),inset_0_2px_4px_rgba(255,255,255,0.8)] hover:-translate-y-3 transition-all duration-[600ms] ease-[cubic-bezier(0.23,1,0.32,1)] border border-black/5`}>
-    <img 
-      src={image} 
-      alt={name} 
-      className={`absolute inset-0 w-full h-full object-cover object-top grayscale transition-transform duration-[800ms] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-110 ${imageClassName}`} 
-    />
+const TeamCard = ({ name, role1, role2, image, linkedinUrl, heightClass = "h-[320px] lg:h-[350px]", imageClassName = "" }: { name: string, role1: string, role2?: string, image: string, linkedinUrl?: string, heightClass?: string, imageClassName?: string }) => {
+  const dims = getImageDimensions(image);
+  return (
+    <div className={`bg-gradient-to-b from-white via-white to-[#ffd1b8] rounded-[20px] ${heightClass} w-full relative overflow-hidden flex flex-col justify-end group shrink-0 cursor-pointer shadow-[0_10px_30px_rgba(0,0,0,0.1),inset_0_2px_4px_rgba(255,255,255,0.6)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.25),inset_0_2px_4px_rgba(255,255,255,0.8)] hover:-translate-y-3 transition-all duration-[600ms] ease-[cubic-bezier(0.23,1,0.32,1)] border border-black/5`}>
+      <img 
+        src={image} 
+        alt={name} 
+        width={dims.width}
+        height={dims.height}
+        className={`absolute inset-0 w-full h-full object-cover object-top grayscale transition-transform duration-[800ms] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-110 ${imageClassName}`} 
+      />
     {/* Very soft peach/orange gradient overlay matching the uploaded shading */}
     <div className="absolute inset-x-0 bottom-0 h-[60%] bg-gradient-to-t from-[#ffd1b8] via-[#ffe4d6]/90 to-transparent pointer-events-none transition-opacity duration-300" />
     
     {/* LinkedIn Icon on Hover */}
-    <a 
-      href={linkedinUrl || "#"}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={`${name} LinkedIn Profile`}
-      className="absolute top-6 right-6 z-20 w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center opacity-0 transform translate-y-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:scale-110"
-      onClick={(e) => {
-        if (!linkedinUrl) e.preventDefault();
-      }}
-    >
-      <FontAwesomeIcon icon={faLinkedinIn} className="text-[#de5e18] text-[20px]" />
-    </a>
+    {linkedinUrl && (
+      <a 
+        href={linkedinUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`${name} LinkedIn Profile`}
+        className="absolute top-6 right-6 z-20 w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center opacity-0 transform translate-y-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:scale-110"
+      >
+        <FontAwesomeIcon icon={faLinkedinIn} className="text-[#de5e18] text-[20px]" />
+      </a>
+    )}
 
     <div className="relative z-10 p-6 lg:p-8 w-full transition-transform duration-500 group-hover:translate-y-[-4px]">
       <h4 className="text-[#0f0f0f] text-[28px] lg:text-[32px] font-medium leading-tight mb-1">{name}</h4>
       <p className="text-[#0f0f0f]/80 text-[16px] lg:text-[18px] leading-snug">{role1}</p>
       {role2 && <p className="text-[#0f0f0f]/70 text-[13px] lg:text-[14px] leading-snug">{role2}</p>}
     </div>
-  </div>
-);
+    </div>
+  );
+};
 
 export const DesktopAboutTeam = () => {
   return (
@@ -70,14 +75,13 @@ export const DesktopAboutTeam = () => {
             role1="Founder" 
             role2="Driving performance marketing and brand growth strategies." 
             image="/assets/team/ameet.png"
-            linkedinUrl="https://linkedin.com/"
+            linkedinUrl="https://www.linkedin.com/in/ameet-nangia-b231b864/"
           />
           <TeamCard 
             name="Ankita Malik" 
             role1="Website Developer" 
             role2="Building high-converting, scalable web applications."
             image="/assets/team/ankita.png"
-            linkedinUrl="https://linkedin.com/"
             imageClassName="scale-[1.3] group-hover:!scale-[1.35] origin-bottom"
           />
         </div>
@@ -126,7 +130,6 @@ export const DesktopAboutTeam = () => {
               role1="Software Developer" 
               role2="Engineering full-stack web and mobile software solutions."
               image="/assets/team/bhavya.png"
-              linkedinUrl="https://linkedin.com/"
               heightClass="h-[320px] lg:h-full lg:min-h-[460px]"
             />
             <TeamCard 
@@ -134,7 +137,6 @@ export const DesktopAboutTeam = () => {
               role1="UX/UI Designer" 
               role2="Designing intuitive, user-centered digital interfaces."
               image="/assets/team/zaib.png"
-              linkedinUrl="https://linkedin.com/"
               heightClass="h-[320px] lg:h-full lg:min-h-[460px]"
             />
           </div>

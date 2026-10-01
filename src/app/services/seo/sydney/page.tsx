@@ -224,9 +224,9 @@ export default function SydneySeoPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="sydney-commercial-search-landscape" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="sydney-commercial-search-landscape" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. The Sydney Commercial Landscape and Generative Search Dynamics
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Sydney commands the premier position in the Australian economy</strong>, producing one third of national gross domestic product and hosting multinational corporate headquarters across Barangaroo, Martin Place, and North Sydney. In this contested commercial marketplace, superficial keyword stuffing cannot build sustainable organic dominance. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">SEO company in Sydney</strong>, Southern Edge Marketing engineers technical search architectures designed for corporate leaders. We map search intents of executive buyers, building topical authority hubs that transform organic discovery into qualified pipeline revenue.
         </p>
@@ -235,9 +235,9 @@ export default function SydneySeoPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="barangaroo-martin-place-financial-eeat" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="barangaroo-martin-place-financial-eeat" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Institutional E-E-A-T and Entity Authority for Barangaroo and Martin Place
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Barangaroo and Martin Place anchor Australia financial services sector</strong>, accommodating major investment houses, private equity firms, and global banking institutions. Securing dominant search visibility within financial and wealth advisory verticals requires strict adherence to Google Experience, Expertise, Authoritativeness, and Trustworthiness guidelines for high-stakes topics. Our <strong className="font-semibold text-[#de5e18] tracking-tight">Sydney SEO agency</strong> produces compliance-reviewed content assets verified by recognized industry authorities. We build deep topical clusters that address complex institutional queries, establishing your enterprise as the undisputed authority within Australian commercial finance.
         </p>
@@ -246,9 +246,9 @@ export default function SydneySeoPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="tech-central-generative-engine-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="tech-central-generative-engine-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Generative Engine Optimization (GEO) and AI Citations for Tech Central
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The innovation district stretching from Surry Hills through Eveleigh to Tech Central</strong> represents Australia fastest-growing software and deep-tech ecosystem. For scale-ups and B2B SaaS firms, customer acquisition costs via paid search continue escalating, making organic discovery essential for balance sheet efficiency. Our <strong className="font-semibold text-[#de5e18] tracking-tight">enterprise SEO in Sydney</strong> engineers Generative Engine Optimization strategies that position software platforms as primary source citations within artificial intelligence engines like Perplexity, ChatGPT Search, and Google AI Overviews. We structure documentation, integration guides, and feature comparisons for machine retrieval.
         </p>
@@ -292,9 +292,9 @@ export default function SydneySeoPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="greater-sydney-programmatic-local-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="greater-sydney-programmatic-local-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Programmatic Local SEO and Google Map Pack Domination Across Greater Sydney
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Greater Sydney spans distinct commercial submarkets across thirty-plus local government areas</strong>, from North Sydney and Bondi to Parramatta and Penrith. A single generic location profile cannot capture localized high-intent searches originating across these varied geographies. Our <strong className="font-semibold text-[#de5e18] tracking-tight">local SEO services in Sydney</strong> deploy synchronized Google Business Profile networks featuring verified physical addresses, accurate local coordinates, and consistent citations across premier Australian business directories. This structured approach captures high-conversion local queries, placing your business directly into the coveted Google Local 3-Pack.
         </p>
@@ -313,9 +313,9 @@ export default function SydneySeoPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   SEO Architecture &amp; Delivery Matrix: Sydney
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -327,10 +327,9 @@ export default function SydneySeoPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/seo-sydney.jpg"
-                alt="SEO and Generative Engine Optimization in Sydney Technical Architecture Infographic"
+                alt="SEO and Generative Engine Optimization in Sydney Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -346,9 +345,9 @@ export default function SydneySeoPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="western-sydney-macquarie-park-b2b-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="western-sydney-macquarie-park-b2b-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. B2B Industrial Search Capture for Western Sydney and Macquarie Park
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The industrial manufacturing corridor expanding across Western Sydney, the Aerotropolis precinct, and Macquarie Park</strong> represents Australia vital logistics and engineering center. Enterprise procurement directors, supply chain executives, and commercial contractors rely on precise organic search to discover verified equipment manufacturers, cold-storage operators, and specialized engineering partners. Our <strong className="font-semibold text-[#de5e18] tracking-tight">B2B SEO in Sydney</strong> structures technical product specifications, capability matrices, and trade credentials to capture high-value commercial search intent, turning complex procurement queries into direct contractual pipelines.
         </p>
@@ -357,31 +356,31 @@ export default function SydneySeoPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="oaic-privacy-and-accc-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="oaic-privacy-and-accc-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Regulatory Data Governance, OAIC Privacy Compliance, and Ethical SEO
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          <strong className="font-semibold text-[#de5e18] tracking-tight">Operating an enterprise digital presence in Sydney mandates strict compliance</strong> with Australian regulatory statutes and consumer protection laws. Our organic marketing practices adhere strictly to the Privacy Act 1988 and the Australian Privacy Principles overseen by the <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Office of the Australian Information Commissioner</a>. We engineer privacy-first analytics infrastructures that eliminate unvetted tracking scripts, secure user consent dynamically, and prevent sensitive data leakage across public search engine telemetry conduits.
+          <strong className="font-semibold text-[#de5e18] tracking-tight">Operating an enterprise digital presence in Sydney mandates strict compliance</strong> with Australian regulatory statutes and consumer protection laws. Our organic marketing practices adhere strictly to the Privacy Act 1988 and the Australian Privacy Principles overseen by the Office of the Australian Information Commissioner. We engineer privacy-first analytics infrastructures that eliminate unvetted tracking scripts, secure user consent dynamically, and prevent sensitive data leakage across public search engine telemetry conduits.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          Furthermore, our content architectures and algorithmic optimization techniques comply with Australian Consumer Law standards established by the <a href="https://www.accc.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Australian Competition and Consumer Commission</a>, eliminating misleading digital claims or artificial click-through manipulation. We maintain detailed audit trails of digital metadata and content updates, providing corporate compliance officers with complete transparency. This principled governance safeguards your corporate reputation, insulates your domain against statutory penalties, and builds durable organic equity that institutional stakeholders trust across multi-year commercial horizons.
+          Furthermore, our content architectures and algorithmic optimization techniques comply with Australian Consumer Law standards established by the Australian Competition and Consumer Commission, eliminating misleading digital claims or artificial click-through manipulation. We maintain detailed audit trails of digital metadata and content updates, providing corporate compliance officers with complete transparency. This principled governance safeguards your corporate reputation, insulates your domain against statutory penalties, and builds durable organic equity that institutional stakeholders trust across multi-year commercial horizons.
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="nsw-ix-peering-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="nsw-ix-peering-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. NSW-IX Alexandria Peering, Sub-Second Edge Delivery, and Core Web Vitals
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Search algorithms heavily weight technical performance, responsive interactions, and page stability</strong> as primary ranking criteria under Google Core Web Vitals framework. Digital platforms that suffer from delayed server response times or erratic visual shifts experience ranking downgrades and elevated bounce rates. We configure ultra-fast edge routing peering directly with the New South Wales Internet Exchange managed by the <a href="https://www.internet.org.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Internet Association of Australia</a>, with points of presence across Equinix SY facilities in Alexandria and Global Switch Sydney.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          By deploying cached digital assets within single-digit milliseconds of local Australian visitors, our engineering minimizes Time to First Byte and accelerates Largest Contentful Paint. We implement modern server-side rendering with <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Next.js</a>, optimize critical rendering paths, and enforce strict accessibility standards compliant with <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a>. This technical excellence satisfies search crawlers, resulting in deeper indexation efficiency, superior user engagement metrics, and sustainable ranking dominance across all desktop and mobile viewport form factors.
+          By deploying cached digital assets within single-digit milliseconds of local Australian visitors, our engineering minimizes Time to First Byte and accelerates Largest Contentful Paint. We implement modern server-side rendering with Next.js, optimize critical rendering paths, and enforce strict accessibility standards compliant with <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a>. This technical excellence satisfies search crawlers, resulting in deeper indexation efficiency, superior user engagement metrics, and sustainable ranking dominance across all desktop and mobile viewport form factors.
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="closed-loop-crm-attribution-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="closed-loop-crm-attribution-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Closed-Loop CRM Attribution and Multi-Quarter Search Governance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise marketing leaders require precise commercial validation</strong> rather than speculative traffic estimates. Our <strong className="font-semibold text-[#de5e18] tracking-tight">organic search strategy in Sydney</strong> integrates closed-loop revenue attribution connecting organic touchpoints directly with enterprise customer relationship management platforms like Salesforce, HubSpot, and Microsoft Dynamics. We deploy first-party server-side telemetry that tracks buyer journeys from initial query discovery through multi-month evaluation cycles to signed contract agreements. This granular visibility reveals the exact revenue yield of every commercial search cluster and localized landing page.
         </p>
@@ -391,12 +390,12 @@ export default function SydneySeoPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -404,7 +403,7 @@ export default function SydneySeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Alister Thorne" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Alister Thorne" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Alister Thorne</p>
@@ -418,7 +417,7 @@ export default function SydneySeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Belinda Sutherland" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Belinda Sutherland" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Belinda Sutherland</p>

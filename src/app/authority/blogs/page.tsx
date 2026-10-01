@@ -995,6 +995,8 @@ const BlogsDashboard = () => {
                                                         <img
                                                             src={blog.image || "/logo_qa.png"}
                                                             alt={blog.title}
+                                                            width={64}
+                                                            height={40}
                                                             className="w-16 h-10 object-cover rounded-lg bg-black/5 border border-black/20/50 shadow-none"
                                                         />
                                                     </td>
@@ -1432,6 +1434,8 @@ const BlogsDashboard = () => {
                                 <img
                                     src={generatedImageUrl}
                                     alt={generatedImageAlt || "AI Generated Cover"}
+                                    width={448}
+                                    height={208}
                                     className="w-full max-w-md h-52 object-cover rounded-xl border border-amber-200/80 shadow-md"
                                 />
 
@@ -1474,6 +1478,8 @@ const BlogsDashboard = () => {
                                 <img
                                     src={imagePreview}
                                     alt="cover preview"
+                                    width={384}
+                                    height={160}
                                     className="w-full max-w-sm h-40 object-cover rounded-xl border border-black/20 shadow-none"
                                 />
                             </div>

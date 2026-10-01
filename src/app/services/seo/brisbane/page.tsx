@@ -224,9 +224,9 @@ export default function BrisbaneSeoPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="brisbane-commercial-search-landscape" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="brisbane-commercial-search-landscape" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. The Brisbane Commercial Search Landscape and Generative Search Dynamics
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Brisbane represents an expanding economic powerhouse</strong> across the Asia-Pacific region, driving extensive corporate trade across the Eagle Street Golden Triangle and the Queen Street precinct. Ahead of the Brisbane 2032 Olympic Games, capital investments are accelerating across Queensland commercial industries. In this competitive business market, superficial keyword repetition fails to produce sustainable market share. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">SEO company in Brisbane</strong>, Southern Edge Marketing engineers technical search architectures designed for corporate enterprises. We examine the complex evaluation journeys of corporate buyers, structuring topical networks that convert organic discovery into qualified enterprise pipeline.
         </p>
@@ -235,9 +235,9 @@ export default function BrisbaneSeoPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="eagle-street-financial-eeat" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="eagle-street-financial-eeat" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Institutional E-E-A-T and Entity Authority for Eagle Street Financial Leaders
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Eagle Street financial corridor represents Queensland primary center</strong> for wealth management, private equity partnerships, resources capital, and corporate advisory institutions. Establishing search visibility across high-stakes financial topics requires strict alignment with Google Experience, Expertise, Authoritativeness, and Trustworthiness guidelines. Our <strong className="font-semibold text-[#de5e18] tracking-tight">Brisbane SEO agency</strong> builds compliance-vetted knowledge assets corroborated by recognized Australian economic authorities. We engineer connected entity clusters addressing complex institutional finance queries, establishing your firm as an indisputable authority across the Australian commercial financial ecosystem.
         </p>
@@ -246,9 +246,9 @@ export default function BrisbaneSeoPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="fortitude-valley-generative-engine-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="fortitude-valley-generative-engine-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Generative Engine Optimization and AI Citations for Fortitude Valley Tech Scale-Ups
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Fortitude Valley technology precinct forms Queensland premier hub</strong> for software innovation, digital product scale-ups, and venture-backed enterprises. For expanding enterprise software platforms, rising digital advertising costs threaten customer acquisition economics, making organic discovery essential for healthy unit margins. Our <strong className="font-semibold text-[#de5e18] tracking-tight">enterprise SEO in Brisbane</strong> implements Generative Engine Optimization methodologies, positioning software platforms as primary source citations in artificial intelligence models including Perplexity, ChatGPT Search, and Google AI Overviews. We organize technical documentation, product capabilities, and comparative benchmarks for automated machine comprehension.
         </p>
@@ -292,9 +292,9 @@ export default function BrisbaneSeoPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="greater-brisbane-programmatic-local-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="greater-brisbane-programmatic-local-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Programmatic Local SEO and Google Map Pack Domination Across Greater Brisbane
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Greater Brisbane encompasses extensive commercial corridors</strong> across diverse municipal districts, from South Bank and West End to Milton, Chermside, and Mount Gravatt. A single generic directory listing cannot capture localized high-intent searches originating across these separate commercial areas. Our <strong className="font-semibold text-[#de5e18] tracking-tight">local SEO services in Brisbane</strong> construct synchronized Google Business Profile architectures featuring verified commercial facilities, accurate geographic coordinates, and consistent citations across trusted Australian business registries. This programmatic framework captures local commercial intent, securing dominant placements in the Google Local 3-Pack.
         </p>
@@ -313,9 +313,9 @@ export default function BrisbaneSeoPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   SEO Architecture &amp; Delivery Matrix: Brisbane
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -327,10 +327,9 @@ export default function BrisbaneSeoPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/seo-brisbane.jpg"
-                alt="SEO and Generative Engine Optimization in Brisbane Technical Architecture Infographic"
+                alt="SEO and Generative Engine Optimization in Brisbane Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -346,9 +345,9 @@ export default function BrisbaneSeoPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="brisbane-tradecoast-b2b-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="brisbane-tradecoast-b2b-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. B2B Industrial Search Capture for Brisbane TradeCoast and Logistics Corridors
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Brisbane TradeCoast industrial precinct around Pinkenba, Murarrie, and the Port</strong> represents a vital logistics gateway for eastern Australia. Corporate supply chain directors, industrial procurement managers, and freight operators rely on technical search discovery to find certified warehouse facilities, cold-chain operators, and specialized engineering contractors. Our <strong className="font-semibold text-[#de5e18] tracking-tight">B2B SEO in Brisbane</strong> organizes industrial product lines, freight capacities, and safety accreditations to capture high-value commercial search queries, converting complex enterprise procurement searches into verified requests for proposal.
         </p>
@@ -357,31 +356,31 @@ export default function BrisbaneSeoPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="oaic-privacy-and-accc-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="oaic-privacy-and-accc-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Regulatory Data Governance, OAIC Privacy Compliance, and Ethical SEO
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          <strong className="font-semibold text-[#de5e18] tracking-tight">Operating an enterprise digital presence in Brisbane demands strict adherence</strong> to statutory privacy mandates and fair marketing standards. Our search optimization frameworks comply completely with the Privacy Act 1988 and the Australian Privacy Principles administered by the <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Office of the Australian Information Commissioner</a>. We engineer privacy-first analytics implementations that eliminate unauthorized third-party telemetry, manage user cookies dynamically, and prevent confidential corporate data leakage across digital search engine conduits and advertising network scripts.
+          <strong className="font-semibold text-[#de5e18] tracking-tight">Operating an enterprise digital presence in Brisbane demands strict adherence</strong> to statutory privacy mandates and fair marketing standards. Our search optimization frameworks comply completely with the Privacy Act 1988 and the Australian Privacy Principles administered by the Office of the Australian Information Commissioner. We engineer privacy-first analytics implementations that eliminate unauthorized third-party telemetry, manage user cookies dynamically, and prevent confidential corporate data leakage across digital search engine conduits and advertising network scripts.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          Our content architectures and algorithmic methods also satisfy Australian Consumer Law principles enforced by the <a href="https://www.accc.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Australian Competition and Consumer Commission</a>, eliminating deceptive commercial claims or aggressive click manipulation. We produce comprehensive technical audit logs for all schema markup and content modifications, providing corporate compliance officers with complete governance visibility. This rigorous posture protects your brand equity, eliminates statutory regulatory exposure, and builds enduring organic market value that institutional stakeholders highly value across multi-year operational cycles.
+          Our content architectures and algorithmic methods also satisfy Australian Consumer Law principles enforced by the Australian Competition and Consumer Commission, eliminating deceptive commercial claims or aggressive click manipulation. We produce comprehensive technical audit logs for all schema markup and content modifications, providing corporate compliance officers with complete governance visibility. This rigorous posture protects your brand equity, eliminates statutory regulatory exposure, and builds enduring organic market value that institutional stakeholders highly value across multi-year operational cycles.
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="qld-ix-peering-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="qld-ix-peering-core-web-vitals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. QLD-IX Peering, NextDC B1 and B2 Edge Delivery, and Core Web Vitals
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Modern search ranking algorithms place immense priority on server responsiveness</strong>, visual stability, and interaction latency evaluated by Google Core Web Vitals. Enterprise platforms with bulky application code, slow response times, or abrupt layout shifts experience ranking declines and reduced user engagement. We configure edge delivery networks peering directly with the Queensland Internet Exchange operated by the <a href="https://www.internet.org.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Internet Association of Australia</a>, utilizing carrier-neutral data centers across NextDC B1, NextDC B2, and Equinix BR facilities in Brisbane.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          Delivering pre-rendered pages within single-digit milliseconds of South East Queensland users minimizes Time to First Byte and improves Largest Contentful Paint metrics. We utilize server-rendered web architectures via <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Next.js</a>, streamline critical rendering resources, and implement statutory accessibility standards defined by <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> specifications. This technical performance satisfies search engine crawlers, producing faster indexing rates, elevated user session metrics, and durable top ranking positions across both desktop and mobile devices.
+          Delivering pre-rendered pages within single-digit milliseconds of South East Queensland users minimizes Time to First Byte and improves Largest Contentful Paint metrics. We utilize server-rendered web architectures via Next.js, streamline critical rendering resources, and implement statutory accessibility standards defined by <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> specifications. This technical performance satisfies search engine crawlers, producing faster indexing rates, elevated user session metrics, and durable top ranking positions across both desktop and mobile devices.
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="closed-loop-crm-attribution-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="closed-loop-crm-attribution-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Closed-Loop CRM Attribution and Multi-Quarter Search Governance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Executive leadership teams require verifiable commercial revenue</strong> rather than vanity search impression counts. Our <strong className="font-semibold text-[#de5e18] tracking-tight">organic search strategy in Brisbane</strong> establishes closed-loop attribution models that link organic discovery sessions directly with enterprise customer relationship management platforms including Salesforce, HubSpot, and Microsoft Dynamics. We implement compliant first-party tracking that monitors buyer progression from initial search impressions through multi-month evaluation cycles to signed enterprise contracts. This business intelligence quantifies the exact financial return generated by each topical content cluster and landing page.
         </p>
@@ -391,12 +390,12 @@ export default function BrisbaneSeoPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -404,7 +403,7 @@ export default function BrisbaneSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Lachlan Briggs" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Lachlan Briggs" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Lachlan Briggs</p>
@@ -418,7 +417,7 @@ export default function BrisbaneSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Sienna Chen" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Sienna Chen" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Sienna Chen</p>

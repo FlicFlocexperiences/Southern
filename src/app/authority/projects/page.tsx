@@ -792,6 +792,8 @@ export default function AuthorityProjectsPage() {
                                                                 <img
                                                                     src={project.image || "/photoshoot.jpg"}
                                                                     alt={project.title}
+                                                                    width={64}
+                                                                    height={48}
                                                                     className="w-full h-full object-cover"
                                                                 />
                                                             </div>
@@ -1214,6 +1216,8 @@ export default function AuthorityProjectsPage() {
                                                 <img
                                                     src={mainImagePreview || newProject.image}
                                                     alt="Thumbnail Preview"
+                                                    width={400}
+                                                    height={300}
                                                     className="w-full h-full object-cover"
                                                 />
                                             ) : (
@@ -1324,6 +1328,8 @@ export default function AuthorityProjectsPage() {
                                                     <img 
                                                         src={imgUrl} 
                                                         alt={`Gallery slot ${idx + 1}`} 
+                                                        width={300}
+                                                        height={225}
                                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                                     />
                                                     {/* Slot Index Badge */}

@@ -35,70 +35,70 @@ export default function ChandigarhSeoPage() {
       />
       
       <ServiceLayout sections={tableOfContents}>
-        <h3 id="chandigarh-organic-search-landscape" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="chandigarh-organic-search-landscape" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Dominating Organic Search in Chandigarh's Tri-City Corporate Landscape
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The corporate landscape of Chandigarh and the surrounding Tri-City region of Mohali and Panchkula is undergoing a rapid digital maturation. As the administrative capital of two states, Chandigarh serves as the regional headquarters for major enterprises that can no longer rely on traditional offline broker networks to sustain growth. Our premium <strong className="text-[#de5e18] font-semibold">SEO Company in Chandigarh</strong> creates advanced organic strategies designed to position your brand at the forefront of this digital shift. We build robust search authority that allows local enterprises to capture high-intent commercial queries before their competitors do. By targeting buyers who are actively searching for enterprise solutions, we transform organic search into a predictable channel for new business opportunities. Integrating search engine optimization with high-performance <Link href="/services/web-development/chandigarh" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">web development in Chandigarh</Link> ensures that your digital assets deliver both visibility and seamless user experiences. Partnering with Southern Edge Marketing provides your business with the strategic visibility required to lead the competitive regional market.
         </p>
 
-        <h3 id="it-park-saas-enterprise-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="it-park-saas-enterprise-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Enterprise SEO for SaaS and IT Exporters in Rajiv Gandhi Tech Park
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          The development of the <a href="https://en.wikipedia.org/wiki/Rajiv_Gandhi_Chandigarh_Technology_Park" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Rajiv Gandhi Chandigarh Technology Park</a> has positioned the city as a leading destination for IT consultants and B2B SaaS exporters. For software development houses and outsourcing firms looking to secure clients in North America and Western Europe, ranking for global search terms is essential. We create targeted B2B organic search campaigns that establish your technical capabilities and showcase your custom software expertise to international buyers. Our team targets complex search terms related to offshore engineering, cloud migrations, and specialized software integrations to attract decision-makers. We build domain authority by acquiring high-quality backlinks from reputable global technology publications and industry forums. This high-level search presence is supported by our specialized <Link href="/services/app-development/chandigarh" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">app development in Chandigarh</Link>, ensuring your client-facing applications perform flawlessly. By establishing your firm as an industry thought leader on search engines, we help you build a consistent pipeline of global enterprise inquiries.
+          The development of the Rajiv Gandhi Chandigarh Technology Park has positioned the city as a leading destination for IT consultants and B2B SaaS exporters. For software development houses and outsourcing firms looking to secure clients in North America and Western Europe, ranking for global search terms is essential. We create targeted B2B organic search campaigns that establish your technical capabilities and showcase your custom software expertise to international buyers. Our team targets complex search terms related to offshore engineering, cloud migrations, and specialized software integrations to attract decision-makers. We build domain authority by acquiring high-quality backlinks from reputable global technology publications and industry forums. This high-level search presence is supported by our specialized <Link href="/services/app-development/chandigarh" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">app development in Chandigarh</Link>, ensuring your client-facing applications perform flawlessly. By establishing your firm as an industry thought leader on search engines, we help you build a consistent pipeline of global enterprise inquiries.
         </p>
 
-        <h3 id="local-seo-education-consultants" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="local-seo-education-consultants" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Hyper-Local SEO for Sector 34 Education and Study Abroad Consultants
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Sector 34 in Chandigarh is widely recognized as the primary hub for educational institutions, test preparation centers, and study abroad consultants in northern India. In this crowded commercial sector, standing out in local maps searches is crucial for driving student enrollment and consultant inquiries. We design localized search engine optimization strategies that target regional search queries from students across Punjab, Haryana, and Himachal Pradesh. Our team optimizes your Google Business Profile and maps coordinates to secure top positions in Google Map Packs for high-intent search terms. We deploy local schema markup and review structured data to display student testimonials directly on search engine results pages, boosting click-through rates. This targeted local presence works in tandem with strategic <Link href="/services/social-media-management/chandigarh" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">social media management in Chandigarh</Link> to build trust and brand familiarity among prospective students. Our campaigns are designed to reduce your dependence on expensive print ads and generate direct, high-value student inquiries.
         </p>
 
-        <h3 id="healthcare-pharma-eeat-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="healthcare-pharma-eeat-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           E-E-A-T and Compliance-Focused Search Optimization for Pharma and Healthcare
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The pharmaceutical and healthcare sectors in the Tri-City area, including the Mohali-Baddi industrial corridor, operate under strict regulatory standards and search engine guidelines. Google evaluates medical and health-related websites with extreme scrutiny, requiring high standards of Experience, Expertise, Authoritativeness, and Trustworthiness. We optimize clinical and pharmaceutical portals to ensure full compliance with search engine guidelines and local healthcare regulations. Our content writers develop medically accurate content reviewed by qualified professionals to establish high levels of E-E-A-T. We manage your structured metadata, publisher profiles, and clinical schema to verify the authenticity of your medical research and services. This meticulous approach protects your digital assets from search algorithm updates while building consumer trust in your diagnostics and manufacturing. By implementing secure database integrations and encrypted data forms, we safeguard patient privacy and business data.
         </p>
 
-        <h3 id="b2b-manufacturing-logistics-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="b2b-manufacturing-logistics-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           B2B Lead Acquisition for Industrial Area Phase 1 and 2 Manufacturers
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Industrial Area Phase 1 and Phase 2 of Chandigarh host a diverse range of light engineering, auto component, and industrial manufacturing firms. Traditional B2B procurement managers and logistics heads now use search engines to discover and verify new manufacturing partners before initiating contact. We optimize industrial websites for highly specific B2B keywords, targeting phrases related to custom fabrication, component supply, and high-volume export capacities. Our team builds digital authority by securing backlinks from trade directories, logistics portals, and manufacturing publications. We optimize your B2B catalog structures to ensure search engines can index your technical specifications and certifications easily. This organic visibility helps manufacturers bypass traditional broker networks and build direct commercial partnerships. By improving your search presence, we help you acquire qualified commercial leads and scale your operations across northern India.
         </p>
 
-        <h3 id="retail-ecommerce-elante-sector17" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="retail-ecommerce-elante-sector17" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           E-Commerce Optimization for Premium Retailers in Sector 17 and Elante Mall
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Retail brands operating showrooms in Sector 17 or Elante Mall compete for the attention of Chandigarh's high-income consumer demographic. To stand out, e-commerce storefronts and lifestyle brands must dominate search rankings for premium retail and fashion queries. We implement retail search optimization campaigns that optimize product pages, category structures, and brand collections to capture organic retail traffic. Our team deploys detailed product schema markups that help Google display pricing, stock availability, and user ratings directly in search results. We focus on high-conversion transactional search terms, helping your online store attract buyers who are ready to make a purchase. This retail strategy is designed to drive online sales and increase foot traffic to your physical showrooms. By optimizing your digital catalogs, we help you build a strong brand presence and bypass high marketplace commissions.
         </p>
 
-        <h3 id="technical-nextjs-speed-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="technical-nextjs-speed-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Technical Next.js Site Architectures for Low-Latency Mobile Indexing
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           High-resolution image galleries and interactive catalogs can slow down mobile loading speeds, leading to higher bounce rates and lower search engine rankings. We resolve these performance issues by building custom Next.js websites that prioritize speed, clean code, and mobile-first indexing. Our technical SEO services focus on optimizing Core Web Vitals, ensuring that your pages load in under a second on mobile connections. We implement advanced server-side rendering, configure dynamic image optimization, and remove scripts that block page rendering. This modern technical setup allows search engine crawlers to read and index your catalog pages quickly and efficiently. A fast website provides an excellent user experience, helping to convert mobile visitors into active leads and customers. We maintain a clean, optimized codebase that keeps your digital assets performing at their best.
         </p>
 
-        <h3 id="closed-loop-crm-revenue-attribution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="closed-loop-crm-revenue-attribution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Closed-Loop CRM Attribution and Measurable Organic Pipeline ROI
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           At Southern Edge Marketing, we focus on driving measurable business growth and sales revenue rather than simple search impressions. We link your search tracking tools directly with leading CRM systems like HubSpot and Salesforce to track how organic visitors convert into closed business. This closed-loop tracking configuration lets you monitor the direct return on investment of your search marketing campaigns. We track essential performance indicators, including keyword ranking progress, organic click-through rates, and lead conversion metrics. We also coordinate our digital campaigns with regional trade updates from groups like the <a href="https://www.phdcci.in/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">PHD Chamber of Commerce and Industry</a> to keep your business aligned with local market trends. Our detailed monthly reports provide transparent insights into how our search optimization efforts are affecting your bottom line. We ensure your investment in search engine optimization produces consistent and verifiable financial returns.
         </p>
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -106,7 +106,7 @@ export default function ChandigarhSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Jagjit Singh" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Jagjit Singh" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Jagjit Singh</p>
@@ -120,7 +120,7 @@ export default function ChandigarhSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Shruti Sharma" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Shruti Sharma" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Dr. Shruti Sharma</p>

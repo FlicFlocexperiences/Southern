@@ -66,70 +66,70 @@ export default function JaipurBrandingPage() {
       
       <ServiceLayout sections={tableOfContents}>
         
-        <h3 id="jaipur-corporate-landscape" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="jaipur-corporate-landscape" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Strategic Corporate Identity in the Evolving Jaipur Business Landscape
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Rajasthan's capital has evolved from a historic heritage trading post into a sophisticated, multi-faceted economic engine that demands high-caliber corporate positioning. Modern enterprises across the city, from upscale retail outlets in Malviya Nagar to consulting firms in C-Scheme, can no longer rely on legacy reputation alone to capture market share. As national and international competition enters the regional market, local businesses must establish a distinct visual presence that communicates immediate authority and credibility. Our premier <strong className="text-[#de5e18] font-semibold">branding company in Jaipur</strong> helps corporations navigate this transition by designing unified identity systems that bridge regional heritage with modern aesthetics. We develop comprehensive brand style guides that outline precise corporate typography, custom iconography, and professional layout standards to ensure a consistent presence across all platforms. These refined assets help traditional businesses project professional agility and secure the trust of modern consumers. By aligning physical marketing materials, corporate websites, and stakeholder presentations, we create a unified brand voice that resonates in competitive environments.
         </p>
 
-        <h3 id="gemstone-jewelry-export-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="gemstone-jewelry-export-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Global Positioning for Gemstone and Jewelry Exporters in Sitapura and Johri Bazar
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Jaipur is recognized globally as the preeminent hub for cutting, polishing, and trading colored gemstones, particularly emeralds and custom silver jewelry. For exporters operating out of the historic lanes of Johri Bazar and the manufacturing units of the Sitapura Industrial Area, transitioning from anonymous suppliers to recognized international brands is crucial for long-term growth. We design luxury jewelry branding systems that help exporters build credibility and directly attract retail jewelry designers in major hubs like London, New York, and Paris. Our team collaborates with exporters to highlight ethical sourcing practices and gemstone certification standards, which are highly valued by international buyers. We align these branding campaigns with targeted <Link href="/services/seo/jaipur" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">SEO services in Jaipur</Link> to ensure your global digital catalog ranks for high-intent wholesale keywords. By creating premium product packaging, elegant digital lookbooks, and professional collateral for international trade shows, we elevate your business above standard commodity trading. Partnering with us allows export houses to align with guidelines from the <a href="https://gjepc.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Gem & Jewellery Export Promotion Council</a> while commanding higher margins in global markets.
         </p>
 
-        <h3 id="textile-handicraft-d2c-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="textile-handicraft-d2c-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Crafting Narrative-Driven Identities for Sanganer and Bagru Textile D2C Brands
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The traditional hand-block printing industries of Sanganer and Bagru form a significant segment of Rajasthan's artisan economy and direct-to-consumer retail market. To stand out in a crowded digital space, brands selling heritage home furnishings and handcrafted apparel must build narrative-driven identities that justify premium pricing. We develop cohesive brand stories that focus on the heritage, sustainability, and skilled craftsmanship of local artisans, creating a strong connection with conscious buyers. Our designers create modern packaging, elegant typography systems, and high-quality photography guidelines that elevate traditional craft to a luxury standard. We ensure this identity is consistently represented across all online platforms, which can be further optimized through advanced <Link href="/services/app-development/jaipur" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">app development in Jaipur</Link> to deliver a smooth digital retail experience. By building trust through authentic visual storytelling, we help artisanal businesses bypass crowded online marketplaces and establish direct relationships with consumers. Our comprehensive branding services ensure your brand maintains a professional, premium presence from initial digital touchpoint to final product delivery.
         </p>
 
-        <h3 id="mahindra-world-city-tech-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="mahindra-world-city-tech-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Enterprise B2B Tech Branding for IT and Software Firms in Mahindra World City
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The development of the Special Economic Zone at <a href="https://www.mahindraworldcity.com/jaipur/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Mahindra World City Jaipur</a> has established the city as a major technology hub in Northern India. Tech startups, offshore development centers, and software-as-a-service enterprises in this hub require an authoritative brand presence to compete with international technology firms. We design structured enterprise B2B brand architectures that project high security, operational scale, and advanced technical capabilities. Our team designs professional corporate profiles, white paper templates, and clean website user interfaces that reflect data security and corporate compliance. This professional approach helps software firms build credibility with corporate buyers in the United States, Europe, and other global markets. We create clear visual guidelines that define professional color palettes and typography structures, ensuring design consistency across all corporate portals and sales materials. Our specialized B2B branding strategies help your technology company build a strong reputation and win high-value consulting contracts.
         </p>
 
-        <h3 id="hospitality-spatial-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="hospitality-spatial-branding" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Immersive Spatial Branding for Luxury Heritage Hotels and Boutique Resorts
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           As a world-renowned tourism destination, Jaipur welcomes millions of domestic and international travelers to its palaces, forts, and luxury boutique hotels. For hospitality brands, delivering a cohesive visual and spatial experience is key to building customer loyalty and attracting high-value bookings. We design comprehensive spatial branding systems that translate your digital visual identity into premium physical spaces. Our creative team develops elegant in-room collateral, bespoke restaurant menus, customized guest stationery, and unified staff uniform guidelines. We focus on creating immersive physical touchpoints that reflect the rich history and luxury of your heritage property. This detailed design approach ensures that your brand projects prestige at every stage of the guest journey, from arrival to departure. By building a memorable and unified physical brand, we help hospitality businesses increase direct bookings and command premium seasonal rates.
         </p>
 
-        <h3 id="rajasthan-cultural-branding-psychology" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="rajasthan-cultural-branding-psychology" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Aligning Identity with Regional Culture and Consumer Psychology in Rajasthan
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Building a successful consumer brand in Rajasthan requires a deep understanding of local consumer psychology, which values trade history, community trust, and cultural relevance. Local consumers respond strongly to brands that honor regional traditions while meeting modern international standards. We integrate regional design themes, classic typography styles, and curated color palettes (featuring saffrons, terracottas, and royal blues) into high-impact visual systems that resonate with the local market. This cultural alignment is highly effective during major regional celebrations like Diwali, Teej, and Gangaur, when consumer purchasing rises and brand visibility is critical. Our team balances these traditional motifs with clean, minimal layout designs to ensure your products look premium on retail shelves and digital storefronts. We also align our campaigns with trade patterns monitored by regional networks like the <a href="https://www.rajchamber.com" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Rajasthan Chamber of Commerce and Industry</a>. This careful approach helps your business build lasting goodwill, establish local trust, and maintain a competitive position in the market.
         </p>
 
-        <h3 id="employer-branding-talent-acquisition" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="employer-branding-talent-acquisition" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Employer Branding to Secure Top Talent in Jaipur's Competitive Tech Corridors
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Attracting and retaining high-performing software developers, creative designers, and corporate managers is a major challenge for growing enterprises in Rajasthan. With major IT parks expanding and the proximity of Delhi NCR, local companies must build a strong employer brand to prevent talent drain to larger metros. We design comprehensive employer branding strategies that showcase your organization as a premier workplace with a clear mission and positive culture. Our team develops professional recruitment marketing assets, internal onboarding kits, and employee value proposition guidelines that build team alignment and pride. This structured identity is supported by clean developer-ready designs that render perfectly on internal portals and careers pages, which can be implemented through our custom technical solutions. By presenting an innovative and supportive workplace culture, you can attract top graduates from prestigious local institutions like the <a href="https://www.mnit.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Malviya National Institute of Technology Jaipur</a>. A cohesive employer brand reduces candidate acquisition costs and builds a loyal workforce committed to your company's growth.
         </p>
 
-        <h3 id="brand-governance-valuation" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="brand-governance-valuation" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Brand Governance and Corporate Valuation for National and Global Scale
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          A structured, professional brand identity is an invaluable corporate asset that directly affects business valuation and investor confidence. We help businesses in Jaipur build structured brand architectures that facilitate entry into new domestic and international markets. Our team designs trademark-ready logos, establishes comprehensive brand governance systems, and provides digital-first style manuals. This high level of standardization protects your corporate reputation and ensures design consistency across all digital channels, trade shows, and retail packaging. We reference standard industry design specifications, such as those verified by platforms like <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Google Fonts</a>, to ensure technical scalability and cross-platform compatibility. By implementing consistent corporate branding, your business can command higher equity and lower overall customer acquisition costs. Partnering with Southern Edge Marketing turns your visual identity into a strategic asset that supports long-term commercial expansion.
+          A structured, professional brand identity is an invaluable corporate asset that directly affects business valuation and investor confidence. We help businesses in Jaipur build structured brand architectures that facilitate entry into new domestic and international markets. Our team designs trademark-ready logos, establishes comprehensive brand governance systems, and provides digital-first style manuals. This high level of standardization protects your corporate reputation and ensures design consistency across all digital channels, trade shows, and retail packaging. We reference standard industry design specifications, such as those verified by platforms like Google Fonts, to ensure technical scalability and cross-platform compatibility. By implementing consistent corporate branding, your business can command higher equity and lower overall customer acquisition costs. Partnering with Southern Edge Marketing turns your visual identity into a strategic asset that supports long-term commercial expansion.
         </p>
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -137,7 +137,7 @@ export default function JaipurBrandingPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Amit Soni" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Amit Soni" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Amit Soni</p>
@@ -151,7 +151,7 @@ export default function JaipurBrandingPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Devika Shekhawat" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Devika Shekhawat" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Devika Shekhawat</p>

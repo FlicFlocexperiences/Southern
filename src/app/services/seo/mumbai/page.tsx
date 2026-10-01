@@ -35,70 +35,70 @@ export default function MumbaiSeoPage() {
       />
       
       <ServiceLayout sections={tableOfContents}>
-        <h3 id="mumbai-digital-economy-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="mumbai-digital-economy-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Dominating the Financial Capital's High-Velocity Digital Ecosystem
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The commercial environment in India's financial capital requires a highly strategic and technically precise approach to organic search marketing. Companies operating from Nariman Point to the Bandra Kurla Complex find themselves in a dense and competitive landscape where generic digital approaches yield minimal returns. Our custom optimization frameworks are designed to position your enterprise at the peak of search results, helping your brand capture qualified business leads ahead of competitors. We build search architectures that reflect the rapid, mobile-first search behaviors of local consumers and enterprise decision makers. Partnering with a premier <strong className="font-semibold text-[#de5e18]">SEO Company in Mumbai</strong> ensures that your digital assets build long-term topical authority that compounds over time. This foundational visibility transforms your website from a passive corporate profile into an active pipeline for high-value client acquisition. By aligning your search strategy with local economic drivers, we help you secure a commanding share of voice in the regional market.
         </p>
 
-        <h3 id="fintech-bfsi-compliance-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="fintech-bfsi-compliance-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Enterprise Search Strategies and Security Compliance for BFSI and Fintech
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Mumbai serves as the center of India's banking, financial services, and insurance sectors, where web platforms must meet strict data security and compliance standards. We design specialized search campaigns that align with <a href="https://www.rbi.org.in/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">RBI</a> and <a href="https://www.sebi.gov.in/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">SEBI</a> digital compliance guidelines, ensuring your website remains highly secure while ranking for competitive terms. Our technical optimization focuses on establishing robust trust signals, implementing secure socket layer protocols, and deploying advanced schema markup. We construct comprehensive content hubs that address complex financial queries, positioning your company as an elite authority in retail banking, asset management, and fintech. Our editorial team writes with high technical precision, avoiding generic marketing phrases to satisfy strict regulatory requirements and search engine evaluation guidelines. By optimizing for user intent and data privacy, we help your brand attract institutional partners and retail clients. Implementing these strategies alongside custom <Link href="/services/app-development/mumbai" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">app development in Mumbai</Link> creates a cohesive digital experience that fosters user trust.
         </p>
 
-        <h3 id="jnpt-logistics-supply-chain-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="jnpt-logistics-supply-chain-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Modernizing Supply Chains and B2B Portals for Maritime and Trade Logistics
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The logistics corridors connecting the <a href="https://www.jnport.gov.in/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Jawaharlal Nehru Port Authority</a> with warehouses in Bhiwandi form the backbone of regional trade and supply chain operations. For industrial suppliers and freight forwarding companies in this sector, B2B digital visibility is critical to securing modern contract logistics agreements. We implement advanced search strategies that optimize product directories, maritime freight service catalogs, and trade portals to attract wholesale procurement managers. Our specialized keyword research targets specific commercial queries used by international supply chain officers who search for trusted logistics hubs. We build high-authority backlink profiles from industrial journals and international shipping networks to establish deep domain credibility. This organic prominence helps your logistics brand bypass traditional intermediaries and connect directly with enterprise exporters. By optimizing site structure and product specifications, we ensure your trade portal ranks at the top of relevant B2B searches. Coupling this with reliable <Link href="/services/web-development/mumbai" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">web development in Mumbai</Link> guarantees that incoming traffic is converted into qualified requests for proposal.
         </p>
 
-        <h3 id="media-entertainment-d2c-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="media-entertainment-d2c-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Capturing High-Volume Consumer Intent for Media, Entertainment, and D2C Brands
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           As the entertainment capital of the nation, Mumbai houses prominent media conglomerates, production houses in Andheri, and rapidly growing direct-to-consumer brands. Capturing high-velocity consumer search trends in these industries requires an agile and highly scalable approach to content optimization. We design dynamic search engine strategies that leverage trending queries, structured video metadata, and rich media snippets to maximize impressions. Our team monitors real-time search trends to align your editorial output with the rapid shifts in pop culture and entertainment consumption. We optimize brand landing pages and digital portfolios to convert casual search traffic into loyal subscribers and active buyers. This high-impact visibility is coupled with robust on-page search strategies that protect your brand's digital identity across search engines. By establishing your platform as a primary source of cultural content, we drive sustained consumer engagement for your brand.
         </p>
 
-        <h3 id="mobile-commuter-performance-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="mobile-commuter-performance-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Mobile-First Next.js Optimization for Mumbai's On-the-Go Commuters
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Mumbai's professionals spend hours commuting on local trains and congested expressways, making mobile search performance a critical business metric. A slow-loading website leads to high bounce rates and lost opportunities as commuters navigate patchy cellular networks on their journeys. We address these local transit dynamics by working closely with your development team to refine Next.js architectures and reduce JavaScript execution. We focus on enhancing Core Web Vitals, prioritizing rapid Largest Contentful Paint and minimizing Cumulative Layout Shift for mobile viewports. Our team implements local edge caching and image compression to ensure your pages load instantly even on limited 4G and 5G connections. This technical rigor improves crawl efficiency, allowing search engines to index your pages rapidly and reward your site with higher rankings. A fast mobile experience keeps users engaged, driving conversion rates and improving overall search performance.
         </p>
 
-        <h3 id="hyperlocal-conglomerate-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="hyperlocal-conglomerate-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Hyperlocal SEO for Multi-Location Conglomerates and Real Estate Giants
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Major real estate developers and massive corporate conglomerates in Lower Parel and Worli require a sophisticated approach to localized search visibility. We design hyper-local search strategies that target high-net-worth individuals and corporate tenants in specific commercial micro-markets. Our team optimizes your Google Business Profiles with precise geographical coordinates, managing consistent citations across premium property and corporate directories. We build localized landing pages that address the distinct socio-economic profiles and development updates of areas like Prabhadevi, Powai, and Malad. This targeted optimization captures high-intent searches at the exact moment prospects seek premium commercial or residential spaces. By securing prominent placements in local map packs, we drive valuable inquiries directly to your leasing and sales offices. Integrating these efforts with targeted <Link href="/services/social-media-management/mumbai" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">social media management in Mumbai</Link> builds a powerful brand presence that captures local intent.
         </p>
 
-        <h3 id="powai-startup-programmatic-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="powai-startup-programmatic-seo" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Programmatic SEO and Agile Search Scaling for Powai Startups
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The vibrant startup hub in Powai requires rapid and scalable digital growth strategies to compete with well-funded market entrants. We deploy programmatic search engine optimization that generates targeted landing pages to capture massive volumes of long-tail queries. This data-driven methodology allows growing platforms in SaaS, fintech, and on-demand delivery to scale their organic reach in weeks. We align our search workflows with your agile product development cycles, ensuring site structure remains optimized through frequent software releases. Our teams monitor keyword competition and user search behavior to adjust content priorities and technical assets dynamically. This high-velocity execution ensures your startup stays ahead of larger, slower competitors in capturing transactional queries. By focusing on scalable growth, we help you reduce acquisition costs while building a sustainable flow of organic traffic.
         </p>
 
-        <h3 id="crm-analytics-organic-roi" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="crm-analytics-organic-roi" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Closed-Loop CRM Attribution and Organic ROI Measurement
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           We prioritize actual business growth over superficial search metrics, focusing on qualified lead generation and sales pipeline velocity. Our team integrates search analytics with major CRM systems like Salesforce and HubSpot to track how organic traffic converts into revenue. We monitor key metrics such as keyword ranking speed, click-through rates, and landing page conversions to evaluate campaign health. This analytical rigor allows us to identify high-performing content themes and optimize search assets for maximum business impact. We provide transparent monthly reports that detail how our optimization efforts influence your bottom line. Our compliance frameworks also ensure that all data collection practices align with local privacy regulations and search standards. By combining technical execution with business intelligence, we ensure your organic search investment delivers measurable and lasting returns.
         </p>
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -106,7 +106,7 @@ export default function MumbaiSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Vikram Mehta" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Vikram Mehta" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Vikram Mehta</p>
@@ -120,7 +120,7 @@ export default function MumbaiSeoPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Meera Deshmukh" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Meera Deshmukh" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Meera Deshmukh</p>

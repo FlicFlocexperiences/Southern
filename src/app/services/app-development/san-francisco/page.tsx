@@ -207,9 +207,9 @@ export default function SanFranciscoAppDevelopmentPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="silicon-valley-velocity-and-enterprise-mobile-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="silicon-valley-velocity-and-enterprise-mobile-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. Silicon Valley Velocity and Enterprise Mobile Architecture for San Francisco
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">San Francisco stands as the global epicenter of venture capital, software innovation, and artificial intelligence</strong>. From tech clusters in SoMa and South Park to venture firms in Jackson Square, Bay Area enterprises build software under intense competition. Demanding mobile users across Northern California expect instantaneous performance on smartphones, tolerating zero latency. As a premier <strong className="font-semibold text-[#de5e18] tracking-tight">app development company in San Francisco</strong>, Southern Edge Marketing engineers custom iOS and Android applications tailored to Silicon Valley. We build cloud-native applications that deliver measurable market authority.
         </p>
@@ -218,9 +218,9 @@ export default function SanFranciscoAppDevelopmentPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="fintech-and-ai-native-mobile-infrastructure-fidi" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="fintech-and-ai-native-mobile-infrastructure-fidi" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Bank-Grade FinTech and AI-Native Mobile Infrastructure for the Financial District
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Financial District of San Francisco and Montgomery Street</strong> host an exceptional concentration of investment firms, asset managers, and pioneering FinTech scale-ups. Building transactional mobile software for Bay Area financial institutions requires mathematical precision, data integrity, and impenetrable cryptographic defenses. Our specialized <strong className="font-semibold text-[#de5e18] tracking-tight">fintech app development in San Francisco</strong> deploys defense-in-depth security architectures, including hardware-isolated key storage, secure enclave biometrics through Apple Face ID and Android BiometricPrompt, and TLS 1.3 encryption. We integrate directly with banking rails via <a href="https://plaid.com/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Plaid</a>, Stripe, and clearing protocols.
         </p>
@@ -229,9 +229,9 @@ export default function SanFranciscoAppDevelopmentPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="cpra-data-privacy-soc2-and-us-west-cloud" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="cpra-data-privacy-soc2-and-us-west-cloud" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. CPRA Data Privacy Governance, SOC 2 Protocols, and US-West Cloud Infrastructure
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Technology companies and enterprise operators headquartered in California</strong> operate under the most stringent digital privacy legislation in the United States. Our mobile engineering lifecycle integrates privacy-by-design frameworks that fully satisfy statutory requirements of the California Consumer Privacy Act and California Privacy Rights Act administered by the <a href="https://cppa.ca.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">California Privacy Protection Agency</a>. To deliver single-digit millisecond API response times for Bay Area users, we provision dedicated cloud infrastructure across regional availability zones, including <a href="https://aws.amazon.com/about-aws/global-infrastructure/regions_az/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">AWS US-West</a> and Google Cloud us-west1, coupled with Cloudflare Edge nodes.
         </p>
@@ -275,9 +275,9 @@ export default function SanFranciscoAppDevelopmentPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="mission-bay-healthtech-hipaa-and-clinical-workflows" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="mission-bay-healthtech-hipaa-and-clinical-workflows" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Mission Bay HealthTech Mobility, HIPAA Security, and Clinical Workflow Engines
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Mission Bay and the UCSF medical innovation cluster</strong> represent the premier global intersection of biotechnology, life sciences, and mobile health technology. Engineering clinical mobile applications for Bay Area healthcare providers and digital therapeutics innovators requires strict regulatory compliance and absolute operational reliability. Our specialized <strong className="font-semibold text-[#de5e18] tracking-tight">healthtech app development in San Francisco</strong> constructs patient-facing and clinician-facing mobile tools compliant with HIPAA, HITECH, and FDA software standards. We implement AES-256 local database encryption, secure biometric timeouts, and verified audit logs.
         </p>
@@ -296,9 +296,9 @@ export default function SanFranciscoAppDevelopmentPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Mobile App Architecture &amp; Delivery Matrix: San Francisco
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -310,10 +310,9 @@ export default function SanFranciscoAppDevelopmentPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/app-development-san-francisco.jpg"
-                alt="App Development in San Francisco Technical Architecture Infographic"
+                alt="App Development in San Francisco Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -329,20 +328,20 @@ export default function SanFranciscoAppDevelopmentPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="native-swift-kotlin-and-react-native-architectures" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="native-swift-kotlin-and-react-native-architectures" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. Native Swift, Android Kotlin, and High-Throughput React Native Architectures
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          <strong className="font-semibold text-[#de5e18] tracking-tight">Choosing the optimal architectural paradigm</strong> is a critical strategic decision for San Francisco technology companies balancing performance demands against capital efficiency. For applications demanding direct hardware acceleration, intensive local machine learning inference via Apple CoreML, or bespoke metal graphics shaders, our engineers write native compiled code in <a href="https://developer.apple.com/swift/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Apple Swift</a> and modern <a href="https://kotlinlang.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Kotlin</a> for Android. Native development ensures zero bridge overhead, complete platform API support on release day, and fluid 120Hz ProMotion animation curves.
+          <strong className="font-semibold text-[#de5e18] tracking-tight">Choosing the optimal architectural paradigm</strong> is a critical strategic decision for San Francisco technology companies balancing performance demands against capital efficiency. For applications demanding direct hardware acceleration, intensive local machine learning inference via Apple CoreML, or bespoke metal graphics shaders, our engineers write native compiled code in Apple Swift and modern Kotlin for Android. Native development ensures zero bridge overhead, complete platform API support on release day, and fluid 120Hz ProMotion animation curves.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          For enterprises and venture-backed scale-ups requiring rapid simultaneous deployment across iOS and Android with unified business logic, our <a href="https://reactnative.dev/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">React Native</a> engineering practice delivers exceptional results. Utilizing React Native modern Fabric renderer and Hermes JavaScript engine, we achieve native 60fps performance while reducing initial engineering expenditure and ongoing feature maintenance overhead by up to 40%. Our team establishes scalable design token repositories, component libraries, and automated CI/CD deployment pipelines using Fastlane.
+          For enterprises and venture-backed scale-ups requiring rapid simultaneous deployment across iOS and Android with unified business logic, our React Native engineering practice delivers exceptional results. Utilizing React Native modern Fabric renderer and Hermes JavaScript engine, we achieve native 60fps performance while reducing initial engineering expenditure and ongoing feature maintenance overhead by up to 40%. Our team establishes scalable design token repositories, component libraries, and automated CI/CD deployment pipelines using Fastlane.
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="unruh-act-ada-title-iii-and-wcag-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="unruh-act-ada-title-iii-and-wcag-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Statutory Unruh Civil Rights Act, ADA Title III, and WCAG 2.2 Accessibility
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Under statutory requirements of the California Unruh Civil Rights Act</strong> and Americans with Disabilities Act Title III, commercial mobile applications deployed for public and corporate usage must provide equal access to individuals with disabilities. Federal and state courts throughout California enforce strict accessibility mandates, making universal accessibility a critical operational priority. Every mobile platform engineered by Southern Edge Marketing complies fully with <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> guidelines, establishing comprehensive semantic accessibility trees for Apple VoiceOver and Android TalkBack.
         </p>
@@ -351,9 +350,9 @@ export default function SanFranciscoAppDevelopmentPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="sfmix-peering-365-main-carrier-hotels-and-edge-hosting" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="sfmix-peering-365-main-carrier-hotels-and-edge-hosting" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. SFMIX Peering, 365 Main Carrier Hotels, and Ultra-Low-Latency Edge Hosting
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Delivering instantaneous mobile responsiveness across the San Francisco Bay Area</strong> requires edge infrastructure tuned specifically to regional telecommunications carriers and optical fiber backbones. We architect distributed mobile backends with direct edge interconnection at the <a href="https://sfmix.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">San Francisco Metropolitan Internet Exchange</a> and primary carrier hotels located at 365 Main Street and 200 Paul Avenue. This localized peering infrastructure ensures that API requests, dynamic graph queries, and media assets execute within single-digit milliseconds of Bay Area users on 5G networks.
         </p>
@@ -362,9 +361,9 @@ export default function SanFranciscoAppDevelopmentPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="offline-first-bart-caltrain-sync-and-push-pipelines" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="offline-first-bart-caltrain-sync-and-push-pipelines" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Offline-First BART and Caltrain Commuter Synchronization and Push Pipelines
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Engineering successful mobile software for San Francisco</strong> requires deep architectural awareness of the local commuter transit ecosystem. Hundreds of thousands of tech professionals and corporate commuters travel daily via BART through the Transbay Tube, Caltrain along the Peninsula corridor, and Muni Metro tunnels where cellular connectivity frequently drops. Our <strong className="font-semibold text-[#de5e18] tracking-tight">mobile app development in San Francisco</strong> incorporates resilient offline-first data caching architectures using SQLite and encrypted Realm local storage engines paired with background reconciliation queues.
         </p>
@@ -374,12 +373,12 @@ export default function SanFranciscoAppDevelopmentPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -387,7 +386,7 @@ export default function SanFranciscoAppDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Brandon Hayes" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Brandon Hayes" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Brandon Hayes</p>
@@ -401,7 +400,7 @@ export default function SanFranciscoAppDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Elena Rostova" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Elena Rostova" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Dr. Elena Rostova</p>

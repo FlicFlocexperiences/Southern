@@ -124,7 +124,7 @@ export default function ThankYouPage() {
           {/* While you wait section */}
           <div className="w-full max-w-[800px]">
             <div className="flex items-center gap-3 mb-6">
-              <h3 className="text-[22px] font-bold text-[#2a1c17]">While you wait</h3>
+              <h2 className="text-[22px] font-bold text-[#2a1c17]">While you wait</h2>
               <p className="text-[#2a1c17]/60 text-[17px] mt-[3px]">Get a feel for how we think and what we've shipped.</p>
             </div>
 
@@ -136,7 +136,7 @@ export default function ThankYouPage() {
                     <FolderIcon />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#2a1c17] text-[18px]">Recent projects</h4>
+                    <h3 className="font-bold text-[#2a1c17] text-[18px]">Recent projects</h3>
                     <p className="text-[#2a1c17]/60 text-[15px]">Brands we've grown across Dubai and India.</p>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ export default function ThankYouPage() {
                     <PencilIcon />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#2a1c17] text-[18px]">Read the blog</h4>
+                    <h3 className="font-bold text-[#2a1c17] text-[18px]">Read the blog</h3>
                     <p className="text-[#2a1c17]/60 text-[15px]">Playbooks and ideas from our strategy team.</p>
                   </div>
                 </div>
@@ -164,7 +164,7 @@ export default function ThankYouPage() {
                     <InstagramCardIcon />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#2a1c17] text-[18px]">Follow us</h4>
+                    <h3 className="font-bold text-[#2a1c17] text-[18px]">Follow us</h3>
                     <p className="text-[#2a1c17]/60 text-[15px]">Behind the scenes and fresh work, daily.</p>
                   </div>
                 </div>

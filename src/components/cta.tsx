@@ -20,13 +20,13 @@ export const Cta = () => {
               <div className="absolute bottom-0 right-0 w-[1200px] h-[1200px] bg-[radial-gradient(circle_at_bottom_right,_rgba(222,94,24,0.35)_0%,_rgba(222,94,24,0.15)_30%,_transparent_70%)] pointer-events-none z-0 translate-x-[20%] translate-y-[20%]" />
               
               <div className="absolute h-[543px] w-[1188px] left-[calc(100%-449px)] top-[229px] z-10">
-                <img alt="Decorative curved wave background vector" className="block max-w-none size-full" src="/assets/vector9.svg" />
+                <img alt="Decorative curved wave background vector" width={2256} height={1611} className="block max-w-none size-full" src="/assets/vector9.svg" />
               </div>
               <div className="absolute left-1/2 -translate-x-1/2 w-[714px] h-[714px] top-[-547px] z-10">
-                <img alt="Decorative ellipse background shape" className="absolute block inset-0 max-w-none size-full" src="/assets/ellipse6.svg" />
+                <img alt="Decorative ellipse background shape" width={714} height={714} className="absolute block inset-0 max-w-none size-full" src="/assets/ellipse6.svg" />
               </div>
               <div className="absolute left-[calc(50%+467px)] -translate-x-1/2 w-[714px] h-[714px] top-[348px] z-10">
-                <img alt="Decorative glowing ellipse pattern" className="absolute block inset-0 max-w-none size-full" src="/assets/ellipse6.svg" />
+                <img alt="Decorative glowing ellipse pattern" width={714} height={714} className="absolute block inset-0 max-w-none size-full" src="/assets/ellipse6.svg" />
               </div>
             </div>
 
@@ -60,6 +60,8 @@ export const Cta = () => {
                         <img 
                           src="/assets/chatgpt-profile.png"
                           alt="Profile" 
+                          width={300}
+                          height={200}
                           className="absolute inset-0 size-full max-w-none object-cover pointer-events-none"
                         />
                       </div>

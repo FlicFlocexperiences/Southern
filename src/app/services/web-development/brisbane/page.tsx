@@ -213,9 +213,9 @@ export default function BrisbaneWebDevelopmentPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="brisbane-commercial-landscape-and-enterprise-web-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="brisbane-commercial-landscape-and-enterprise-web-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. The Brisbane Commercial Landscape and Enterprise Web Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Brisbane has evolved into a premier economic powerhouse</strong> across Australia and the Asia-Pacific region. Ahead of the Brisbane 2032 Olympic Games, capital investments transform commercial operations throughout the Eagle Street financial precinct, Howard Smith Wharves, and the Fortitude Valley tech cluster. In this expanding commercial market, outdated monolithic platforms create sluggish load times that stifle enterprise conversions. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">web development company in Brisbane</strong>, Southern Edge Marketing engineers custom web platforms built specifically for ambitious Queensland corporate organizations.
         </p>
@@ -224,20 +224,20 @@ export default function BrisbaneWebDevelopmentPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="enterprise-nextjs-and-composable-headless-systems-for-queensland-scale-ups" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="enterprise-nextjs-and-composable-headless-systems-for-queensland-scale-ups" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Enterprise Next.js and Composable Headless Systems for Queensland Scale-Ups
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          High-growth software enterprises and fintech pioneers across Fortitude Valley require decoupled web systems capable of handling traffic spikes effortlessly. We construct decoupled web systems using React and <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Next.js</a>, leveraging server-side rendering, static generation, and React Server Components to eliminate hydration delays. By decoupling the presentation layer from transactional databases, our methodology reduces payload sizes, accelerates interactive metrics, and shrinks security exposure surfaces across Queensland consumer touchpoints.
+          High-growth software enterprises and fintech pioneers across Fortitude Valley require decoupled web systems capable of handling traffic spikes effortlessly. We construct decoupled web systems using React and Next.js, leveraging server-side rendering, static generation, and React Server Components to eliminate hydration delays. By decoupling the presentation layer from transactional databases, our methodology reduces payload sizes, accelerates interactive metrics, and shrinks security exposure surfaces across Queensland consumer touchpoints.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           This composable headless architecture enables marketing teams to manage content through platforms like Sanity and Contentful without compromising production stability. Our frontend engineering eliminates excessive script dependencies, achieves superior Google Core Web Vitals ratings, and increases user retention across mobile and desktop viewports. Furthermore, modular UI component patterns allow corporate teams to deploy rapid digital enhancements without service interruption. For organizations expanding into mobile environments, explore our specialized <Link href="/services/app-development" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">app development services</Link> tailored for Australian enterprises.
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="regulatory-compliance-privacy-act-1988-apps-and-essential-eight-security" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="regulatory-compliance-privacy-act-1988-apps-and-essential-eight-security" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Regulatory Compliance: Privacy Act 1988, APPs, and Essential Eight Security
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Operating within Brisbane requires stringent cyber defense architectures and strict alignment with national digital mandates. Our engineering lifecycle implements data protection measures aligned with the Privacy Act 1988 and the Australian Privacy Principles governed by the <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Office of the Australian Information Commissioner</a>. For asset managers, fintech firms, and corporate entities in the Brisbane CBD, we implement cyber mitigation frameworks defined by the <a href="https://www.cyber.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Australian Cyber Security Centre</a>, incorporating role-based permissions, cryptographic tokenization, and end-to-end TLS 1.3 encryption.
         </p>
@@ -281,9 +281,9 @@ export default function BrisbaneWebDevelopmentPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="high-concurrency-transaction-systems-graphql-gateways-and-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="high-concurrency-transaction-systems-graphql-gateways-and-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. High-Concurrency Transaction Systems, GraphQL Gateways, and Microservices
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Brisbane serves as the commercial center for Queensland resource extraction, export logistics, institutional finance, and high-volume e-commerce platforms. We develop resilient web systems, GraphQL gateways, and microservices architectures capable of processing thousands of simultaneous transactions without performance degradation. Our checkout architectures integrate smoothly with Australian and global payment networks, including Stripe, Adyen, Apple Pay, and BPAY. These workflows incorporate automated GST calculation compliant with Australian Taxation Office standards, delivering a dependable payment journey for institutional and retail users.
         </p>
@@ -302,9 +302,9 @@ export default function BrisbaneWebDevelopmentPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Web Development Architecture &amp; Delivery Matrix: Brisbane
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -316,10 +316,9 @@ export default function BrisbaneWebDevelopmentPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/web-development-brisbane.jpg"
-                alt="Web Development in Brisbane Technical Architecture Infographic"
+                alt="Web Development in Brisbane Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -335,9 +334,9 @@ export default function BrisbaneWebDevelopmentPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="statutory-accessibility-dda-section-24-and-wcag-22-level-aa-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-accessibility-dda-section-24-and-wcag-22-level-aa-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. Statutory Accessibility: DDA Section 24 and WCAG 2.2 Level AA Engineering
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility represents an essential statutory obligation and commercial imperative for Australian organizations. Under Section 24 of the Disability Discrimination Act 1992 and Australian Human Rights Commission guidance, commercial websites must provide equal access. Queensland enterprises risk formal discrimination complaints and brand damage if their digital assets fail to meet <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> benchmarks. Rather than using superficial accessibility overlays that fail regulatory scrutiny, we build inclusive access directly into fundamental source code.
         </p>
@@ -346,9 +345,9 @@ export default function BrisbaneWebDevelopmentPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="fortitude-valley-innovation-hub-milton-and-custom-b2b-portals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="fortitude-valley-innovation-hub-milton-and-custom-b2b-portals" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Fortitude Valley Innovation Hub, Milton, and Custom B2B Portals
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Across Fortitude Valley, Milton, and South Bank, enterprises require specialized platforms to manage complex corporate relationships. We architect custom business extranets, secure client portals, and partner portals tailored to the operational demands of Queensland industries. These platforms integrate directly with internal databases, document repositories, and operational infrastructure, facilitating secure data exchange between corporate stakeholders, external auditors, and enterprise clients. Providing intuitive self-service interfaces reduces support overhead while ensuring continuous availability for commercial accounts.
         </p>
@@ -357,9 +356,9 @@ export default function BrisbaneWebDevelopmentPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="qld-ix-peering-nextdc-and-equinix-br-data-centers-and-regional-edge-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="qld-ix-peering-nextdc-and-equinix-br-data-centers-and-regional-edge-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. QLD-IX Peering, NextDC and Equinix BR Data Centers, and Regional Edge Performance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Delivering exceptional interaction speeds across Greater Brisbane and regional Queensland requires edge delivery infrastructure optimized for Australian telecommunications backbones. We deploy distributed content delivery networks featuring direct local peering at the Queensland Internet Exchange managed by the <a href="https://www.internet.org.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Internet Association of Australia</a>, alongside high-density carrier facilities in Equinix BR and NextDC B2 data centers. This localized routing architecture ensures static assets, dynamic API responses, and serverless compute executions run within single-digit milliseconds of local Australian users.
         </p>
@@ -368,9 +367,9 @@ export default function BrisbaneWebDevelopmentPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="agile-sprint-delivery-queensland-support-slas-and-strategic-growth" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="agile-sprint-delivery-queensland-support-slas-and-strategic-growth" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Agile Sprint Delivery, Queensland Support SLAs, and Strategic Growth
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Our client engagements operate on a structured, agile delivery framework that provides corporate leadership with complete clarity regarding sprint velocity, technical milestones, and launch timelines. From initial architectural discovery and interactive prototyping to automated regression testing and zero-downtime deployments, our engineering teams maintain meticulous development standards. Following production launch, we safeguard your digital investment through comprehensive enterprise service level agreements that incorporate round-the-clock uptime monitoring, automated system security patches, and daily encrypted cloud backups stored within sovereign Australian data facilities.
         </p>
@@ -380,12 +379,12 @@ export default function BrisbaneWebDevelopmentPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -393,7 +392,7 @@ export default function BrisbaneWebDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Sterling" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Sterling" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Marcus Sterling</p>
@@ -407,7 +406,7 @@ export default function BrisbaneWebDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Sarah Thornton" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Sarah Thornton" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Sarah Thornton</p>

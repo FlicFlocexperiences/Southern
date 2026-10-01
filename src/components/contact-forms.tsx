@@ -6,6 +6,7 @@ import { PhoneInput } from "@/components/phone-input";
 import { CountryCodeSelect } from "@/components/country-code-select";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { getImageDimensions } from "@/lib/image-dimensions";
 
 // Local Social Icons
 const InstagramIcon = () => (
@@ -323,6 +324,8 @@ export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string })
             <img 
               src="/SemBeige.svg" 
               alt="Southern Edge Marketing Badge" 
+              width={1000}
+              height={1000}
               className="w-[44px] h-[44px] md:w-[52px] md:h-[52px] object-contain select-none shadow-sm rounded-full" 
             />
           </div>
@@ -343,9 +346,11 @@ export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string })
               <div className="animate-logo-slide flex items-center w-max" style={{ animationDuration: '50s' }}>
                 {Array.from({ length: 15 }).map((_, index) => {
                   const logoIndex = (index % 5) + 1; // 1 to 5
+                  const src = `/clientlogo/logo-${logoIndex}.png`;
+                  const dims = getImageDimensions(src);
                   return (
                     <div key={`l1-${index}`} className="h-[35px] md:h-[45px] w-[100px] md:w-[130px] mx-[15px] relative flex items-center justify-center shrink-0">
-                      <img src={`/clientlogo/logo-${logoIndex}.png`} alt={`Client Logo ${logoIndex}`} className="max-h-full max-w-full object-contain mix-blend-multiply" />
+                      <img src={src} alt={`Client Logo ${logoIndex}`} width={dims.width} height={dims.height} className="max-h-full max-w-full object-contain mix-blend-multiply" />
                     </div>
                   );
                 })}
@@ -355,9 +360,11 @@ export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string })
               <div className="animate-logo-slide flex items-center w-max" style={{ animationDuration: '60s', animationDirection: 'reverse' }}>
                 {Array.from({ length: 15 }).map((_, index) => {
                   const logoIndex = (index % 5) + 6; // 6 to 10
+                  const src = `/clientlogo/logo-${logoIndex}.png`;
+                  const dims = getImageDimensions(src);
                   return (
                     <div key={`l2-${index}`} className="h-[35px] md:h-[45px] w-[100px] md:w-[130px] mx-[15px] relative flex items-center justify-center shrink-0">
-                      <img src={`/clientlogo/logo-${logoIndex}.png`} alt={`Client Logo ${logoIndex}`} className="max-h-full max-w-full object-contain mix-blend-multiply" />
+                      <img src={src} alt={`Client Logo ${logoIndex}`} width={dims.width} height={dims.height} className="max-h-full max-w-full object-contain mix-blend-multiply" />
                     </div>
                   );
                 })}
@@ -367,9 +374,11 @@ export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string })
               <div className="animate-logo-slide flex items-center w-max" style={{ animationDuration: '55s' }}>
                 {Array.from({ length: 15 }).map((_, index) => {
                   const logoIndex = (index % 5) + 11; // 11 to 15
+                  const src = `/clientlogo/logo-${logoIndex}.png`;
+                  const dims = getImageDimensions(src);
                   return (
                     <div key={`l3-${index}`} className="h-[35px] md:h-[45px] w-[100px] md:w-[130px] mx-[15px] relative flex items-center justify-center shrink-0">
-                      <img src={`/clientlogo/logo-${logoIndex}.png`} alt={`Client Logo ${logoIndex}`} className="max-h-full max-w-full object-contain mix-blend-multiply" />
+                      <img src={src} alt={`Client Logo ${logoIndex}`} width={dims.width} height={dims.height} className="max-h-full max-w-full object-contain mix-blend-multiply" />
                     </div>
                   );
                 })}

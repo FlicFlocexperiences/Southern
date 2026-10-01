@@ -55,6 +55,9 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
     const headings: { id: string; title: string }[] = [];
     let content = cleanInternalNofollow(blog.content || "");
 
+    // Normalize markdown headings (### or ##) to <h2> tags if plain markdown was provided
+    content = content.replace(/^###?\s+(.+)$/gm, '<h2>$1</h2>');
+
     // Replace h2 and h3 tags, injecting an ID for scroll tracking
     const headingRegex = /(<h[23][^>]*>)(.*?)(<\/h[23]>)/gi;
     const idCounts: Record<string, number> = {};
@@ -312,7 +315,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
             {/* FAQs */}
             {blog.faqs && blog.faqs.length > 0 && (
               <div className="mt-12 pt-8 border-t border-black/10">
-                <h3 className="text-[24px] font-bold text-[#0f0f0f] mb-6">Frequently Asked Questions</h3>
+                <h2 className="text-[24px] font-bold text-[#0f0f0f] mb-6">Frequently Asked Questions</h2>
                 <div className="space-y-4">
                   {blog.faqs.map((faq, index) => {
                     const isOpen = openFaq === index;
@@ -322,7 +325,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
                           onClick={() => toggleFaq(index)}
                           className="w-full text-left p-6 flex justify-between items-center focus:outline-none"
                         >
-                          <h4 className="text-[18px] font-bold text-[#432d1c] pr-4">{faq.question}</h4>
+                          <h3 className="text-[18px] font-bold text-[#432d1c] pr-4">{faq.question}</h3>
                           <span className="shrink-0 ml-4 text-[#de5e18]">
                             {isOpen ? (
                               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

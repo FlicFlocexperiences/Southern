@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import { getImageDimensions } from "@/lib/image-dimensions";
 
 interface ProjectCardProps {
   slug: string;
@@ -14,6 +15,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ slug, title, category, duration, image, result }) => {
   const isPhotography = false;
+  const dims = getImageDimensions(image);
   return (
     <Link 
       href={`/projects/${slug}`}
@@ -24,6 +26,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ slug, title, category, durati
         <img 
           src={image} 
           alt={`${title} Case Study`}
+          width={dims.width}
+          height={dims.height}
           className={`transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-105 ${
             isPhotography 
               ? "max-w-full max-h-full w-auto h-auto object-contain" 

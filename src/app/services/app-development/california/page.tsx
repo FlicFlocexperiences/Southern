@@ -235,9 +235,9 @@ export default function CaliforniaAppDevelopmentPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="california-mobile-innovation-and-enterprise-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="california-mobile-innovation-and-enterprise-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. The California Mobile Innovation Economy and Enterprise Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">California stands as the global epicenter of technology innovation and venture capital</strong>. From the software corridors of Sand Hill Road in Menlo Park to the digital media clusters of Silicon Beach in Santa Monica, California enterprises operate within a demanding commercial arena. Organizations across the Golden State cannot afford sluggish hybrid wrappers that falter under viral scale. Discerning mobile users across Northern and Southern California expect instantaneous interactions, zero latency, and flawless reliability. As a premier <strong className="font-semibold text-[#de5e18] tracking-tight">app development company in California</strong>, Southern Edge Marketing engineers cloud-native mobile applications designed to capture decisive market authority.
         </p>
@@ -246,20 +246,20 @@ export default function CaliforniaAppDevelopmentPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="native-swift-kotlin-and-react-native-fabric-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="native-swift-kotlin-and-react-native-fabric-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Native Swift, Kotlin, and React Native Fabric Engineering for High-Velocity Scaling
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          <strong className="font-semibold text-[#de5e18] tracking-tight">Selecting the optimal mobile engineering architecture</strong> represents a foundational strategic choice for California technology leaders balancing development speed, graphics fidelity, and capital efficiency. When applications demand intensive local device processing, low-level Bluetooth connectivity, or on-device machine learning inference via Apple CoreML, our engineers write native compiled code in <a href="https://developer.apple.com/swift/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Apple Swift</a> for iOS and modern <a href="https://kotlinlang.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Android Kotlin</a> with Jetpack Compose. Native development guarantees direct hardware access, zero runtime bridge overhead, and fluid 120Hz ProMotion animation curves.
+          <strong className="font-semibold text-[#de5e18] tracking-tight">Selecting the optimal mobile engineering architecture</strong> represents a foundational strategic choice for California technology leaders balancing development speed, graphics fidelity, and capital efficiency. When applications demand intensive local device processing, low-level Bluetooth connectivity, or on-device machine learning inference via Apple CoreML, our engineers write native compiled code in Apple Swift for iOS and modern Android Kotlin with Jetpack Compose. Native development guarantees direct hardware access, zero runtime bridge overhead, and fluid 120Hz ProMotion animation curves.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          For enterprise scale-ups and consumer brands requiring simultaneous multi-platform deployment with unified business logic, our <a href="https://reactnative.dev/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">React Native</a> practice offers extraordinary velocity. Implementing the modern Fabric architecture and Hermes bytecode engine, we deliver fluid 60fps frame rates while reducing ongoing engineering overhead by up to 40%. We establish shared component design systems, strict TypeScript standards, and automated CI/CD deployment pipelines using Fastlane to accelerate release cycles. Learn more about our technical philosophy on the <Link href="/about" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">about us</Link> page.
+          For enterprise scale-ups and consumer brands requiring simultaneous multi-platform deployment with unified business logic, our React Native practice offers extraordinary velocity. Implementing the modern Fabric architecture and Hermes bytecode engine, we deliver fluid 60fps frame rates while reducing ongoing engineering overhead by up to 40%. We establish shared component design systems, strict TypeScript standards, and automated CI/CD deployment pipelines using Fastlane to accelerate release cycles. Learn more about our technical philosophy on the <Link href="/about" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">about us</Link> page.
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="cpra-ccpa-and-zero-trust-mobile-security-frameworks" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="cpra-ccpa-and-zero-trust-mobile-security-frameworks" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. CPRA, CCPA, and Zero-Trust Mobile Security Frameworks for California Enterprises
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Deploying commercial mobile applications across California</strong> requires strict adherence to the most rigorous data privacy laws in North America. Enforced by the <a href="https://cppa.ca.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">California Privacy Protection Agency</a>, the California Consumer Privacy Act and California Privacy Rights Act mandate comprehensive controls over personal data handling, geolocation tracking, and third-party analytics. Non-compliance exposes enterprises to severe statutory penalties and audits. Our engineers embed privacy-by-design principles across every layer of the mobile software stack, ensuring automated consumer consent handling, encrypted data isolation, and granular telemetry controls.
         </p>
@@ -303,9 +303,9 @@ export default function CaliforniaAppDevelopmentPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="fintech-biotech-and-silicon-beach-application-ecosystems" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="fintech-biotech-and-silicon-beach-application-ecosystems" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. FinTech, BioTech, and Silicon Beach Media Application Ecosystems
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">California diverse regional economies present specialized challenges</strong> requiring deep domain expertise. In the Financial District of San Francisco and Century City in Los Angeles, our specialized <strong className="font-semibold text-[#de5e18] tracking-tight">fintech app development in California</strong> engineers bank-grade wealth management apps, investment portals, and secure payment gateways integrating directly with Plaid and Stripe. Across biotechnology hubs in Torrey Pines and Mission Bay, we construct clinical digital health platforms compliant with HIPAA, HITECH, and FDA standards, enabling secure patient vitals tracking via Apple HealthKit and HL7 FHIR protocols.
         </p>
@@ -324,9 +324,9 @@ export default function CaliforniaAppDevelopmentPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Mobile App Architecture &amp; Delivery Matrix: California
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -338,10 +338,9 @@ export default function CaliforniaAppDevelopmentPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/app-development-california.jpg"
-                alt="App Development in California Technical Architecture Infographic"
+                alt="App Development in California Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -357,9 +356,9 @@ export default function CaliforniaAppDevelopmentPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="california-unruh-act-and-wcag-mobile-accessibility-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="california-unruh-act-and-wcag-mobile-accessibility-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. California Unruh Act and WCAG 2.2 Mobile Accessibility Compliance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Mobile digital accessibility in California</strong> is a strict statutory requirement governed by the California Unruh Civil Rights Act and ADA Title III. California courts consistently rule that commercial mobile applications constitute public accommodations, exposing organizations with inaccessible interfaces to statutory damages and legal defense costs. Every mobile platform engineered by Southern Edge Marketing complies fully with <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">W3C WCAG 2.2 Level AA</a> standards from initial wireframing to production deployment.
         </p>
@@ -368,9 +367,9 @@ export default function CaliforniaAppDevelopmentPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="high-throughput-graphql-mesh-and-event-driven-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="high-throughput-graphql-mesh-and-event-driven-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. High-Throughput GraphQL Mesh and Event-Driven Microservices Backends
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise mobile applications require scalable, resilient backend infrastructure</strong> capable of orchestrating complex data pipelines with minimal network round trips. We engineer federated GraphQL schema meshes and high-throughput gRPC API gateways that aggregate enterprise microservices, customer databases, legacy ERPs, and cloud storage into a unified data query layer. This architectural pattern eliminates over-fetching, minimizes battery consumption on mobile devices, and accelerates screen rendering speeds across cellular connections throughout California.
         </p>
@@ -379,9 +378,9 @@ export default function CaliforniaAppDevelopmentPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="sfmix-one-wilshire-edge-peering-and-offline-first-sync" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="sfmix-one-wilshire-edge-peering-and-offline-first-sync" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. SFMIX Peering, One Wilshire Interconnects, and Offline-First Transit Sync
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Delivering instantaneous mobile responsiveness across California</strong> requires edge infrastructure optimized specifically for West Coast telecommunications backbones. We provision cloud infrastructure across AWS US-West availability zones in Northern California and Oregon, coupled with direct edge peering at the <a href="https://sfmix.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">San Francisco Metropolitan Internet Exchange</a> and the One Wilshire carrier hotel in Los Angeles. This localized peering infrastructure ensures that mobile API calls, real-time telemetry, and media assets execute within single-digit milliseconds of California users on 5G networks.
         </p>
@@ -390,9 +389,9 @@ export default function CaliforniaAppDevelopmentPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="full-lifecycle-mobile-governance-and-enterprise-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="full-lifecycle-mobile-governance-and-enterprise-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Full-Lifecycle Mobile Governance, Dedicated SLAs, and App Store Mastery
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise mobile application engineering extends far beyond code deployment</strong>; sustained market dominance requires continuous lifecycle governance, automated monitoring, and proactive architectural evolution. Southern Edge Marketing provides California corporations with comprehensive Service Level Agreements covering 24/7 uptime monitoring, rapid vulnerability patching, operating system upgrade compatibility, and third-party SDK maintenance. Our continuous integration pipelines automate regression testing across dozens of physical device configurations, guaranteeing that new operating system updates from Apple and Google never disrupt your production users.
         </p>
@@ -402,12 +401,12 @@ export default function CaliforniaAppDevelopmentPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -415,7 +414,7 @@ export default function CaliforniaAppDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Brandon Hayes" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Brandon Hayes" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Brandon Hayes</p>
@@ -429,7 +428,7 @@ export default function CaliforniaAppDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Elena Rostova" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Elena Rostova" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Dr. Elena Rostova</p>

@@ -207,9 +207,9 @@ export default function SanFranciscoWebDevelopmentPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="san-francisco-commercial-landscape-and-enterprise-web-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="san-francisco-commercial-landscape-and-enterprise-web-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. The San Francisco Commercial Landscape and Enterprise Web Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">San Francisco operates as the premier global center of technology innovation and venture capital</strong>, generating exceptional economic output across the Bay Area. From engineering hubs in SoMa and Mission Bay to investment firms lining the Financial District along California Street, local enterprises demand high-scale web platforms. In this hyper-competitive market, bloated monolithic legacy websites create performance friction that damages enterprise sales pipelines. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">web development company in San Francisco</strong>, Southern Edge Marketing engineers custom web platforms and composable cloud systems purpose-built for Bay Area market leaders.
         </p>
@@ -218,20 +218,20 @@ export default function SanFranciscoWebDevelopmentPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="enterprise-nextjs-and-composable-headless-systems-for-silicon-valley" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="enterprise-nextjs-and-composable-headless-systems-for-silicon-valley" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Enterprise Next.js and Composable Headless Systems for Silicon Valley Scale-Ups
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          High-growth technology enterprises across SoMa, Jackson Square, and Silicon Valley demand decoupled web architectures that deliver near-instantaneous interaction speeds during viral traffic surges. We engineer high-velocity frontend interfaces powered by React and <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Next.js</a>, utilizing server-side rendering, static site generation, and React Server Components to eliminate rendering bottlenecks. By separating the user presentation layer from backend databases, our team significantly reduces page payloads and minimizes vulnerability attack surfaces across all client endpoints.
+          High-growth technology enterprises across SoMa, Jackson Square, and Silicon Valley demand decoupled web architectures that deliver near-instantaneous interaction speeds during viral traffic surges. We engineer high-velocity frontend interfaces powered by React and Next.js, utilizing server-side rendering, static site generation, and React Server Components to eliminate rendering bottlenecks. By separating the user presentation layer from backend databases, our team significantly reduces page payloads and minimizes vulnerability attack surfaces across all client endpoints.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           This composable architecture empowers marketing teams to publish dynamic campaigns through headless content management systems like Sanity and Contentful without risking software instability. Our precision frontend engineering eliminates extraneous JavaScript dependencies, guarantees superior Core Web Vitals scores, and maximizes conversion rates across desktop and mobile viewports. Furthermore, our modular component architecture allows engineering teams to deploy continuous feature updates without downtime. For organizations seeking native mobile applications, explore our specialized <Link href="/services/app-development" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">app development services</Link>.
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="fintech-healthtech-compliance-ccpa-soc2-zero-trust-security" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="fintech-healthtech-compliance-ccpa-soc2-zero-trust-security" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. FinTech and HealthTech Compliance: CCPA/CPRA, SOC 2, and Zero-Trust Security
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Operating within San Francisco requires institutional cyber resilience, zero-trust security frameworks, and strict regulatory alignment across every digital touchpoint. Our engineering lifecycle implements rigorous compliance protocols in alignment with the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA) standards enforced by the <a href="https://cppa.ca.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">California Privacy Protection Agency</a>. For private equity funds, fintech scale-ups, and healthtech innovators, we architect role-based access controls, multi-factor authentication, cryptographic tokenization, and end-to-end TLS 1.3 encryption.
         </p>
@@ -275,9 +275,9 @@ export default function SanFranciscoWebDevelopmentPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="high-concurrency-saas-platforms-graphql-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="high-concurrency-saas-platforms-graphql-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. High-Concurrency SaaS Platforms, GraphQL Gateways, and Microservices Orchestration
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           San Francisco represents the global capital of software innovation, enterprise SaaS platforms, and artificial intelligence scale-ups. We develop custom digital application platforms, robust GraphQL API gateways, and high-concurrency microservices architectures engineered to process massive data throughput without latency degradation. Our transactional architectures integrate seamlessly with modern payment and billing rails, including Stripe Billing, Adyen, Apple Pay, and enterprise invoicing systems, delivering frictionless checkout experiences for B2B and consumer markets.
         </p>
@@ -296,9 +296,9 @@ export default function SanFranciscoWebDevelopmentPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Web Development Architecture &amp; Delivery Matrix: San Francisco
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -310,10 +310,9 @@ export default function SanFranciscoWebDevelopmentPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/web-development-san-francisco.jpg"
-                alt="Web Development in San Francisco Technical Architecture Infographic"
+                alt="Web Development in San Francisco Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -329,9 +328,9 @@ export default function SanFranciscoWebDevelopmentPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="statutory-ada-title-iii-california-unruh-act-wcag-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-ada-title-iii-california-unruh-act-wcag-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. Statutory ADA Title III, California Unruh Act, and WCAG 2.2 AA Accessibility
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility is an urgent legal and commercial priority for San Francisco organizations, as California courts enforce strict liability under the Unruh Civil Rights Act (Civil Code § 51) and federal <a href="https://www.ada.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">ADA Title III</a> statutes. Commercial enterprises and technology providers face substantial legal exposure and financial liability if their digital properties fail to comply with <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> accessibility criteria. Rather than relying on superficial third-party widget overlays that fail judicial scrutiny, our engineering practice builds native accessibility into every layer of code architecture.
         </p>
@@ -340,9 +339,9 @@ export default function SanFranciscoWebDevelopmentPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="mission-bay-life-sciences-b2b-enterprise-portals-cloud-integrations" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="mission-bay-life-sciences-b2b-enterprise-portals-cloud-integrations" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Mission Bay Life Sciences, B2B Enterprise Portals, and Cloud Integrations
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Across Mission Bay biotechnology hubs, Financial District commercial towers, and industrial logistics corridors throughout the East Bay and Silicon Valley, B2B enterprises and life sciences organizations require modern web infrastructure to orchestrate high-volume operations. We design and construct custom client extranets, research reporting portals, HIPAA-compliant patient interfaces, and vendor management systems that connect directly with enterprise resource planning and CRM software such as Salesforce, HubSpot, SAP, Oracle NetSuite, and Veeva Systems.
         </p>
@@ -351,9 +350,9 @@ export default function SanFranciscoWebDevelopmentPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="sfmix-peering-200-paul-carrier-hotels-pacific-rim-edge" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="sfmix-peering-200-paul-carrier-hotels-pacific-rim-edge" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. SFMIX Peering, 200 Paul Carrier Hotels, and Pacific Rim Edge Peering
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Delivering blazing interaction speeds across San Francisco, the Peninsula, South Bay, and East Bay requires edge caching infrastructure tuned specifically to regional telecommunications backbones. We deploy globally distributed content delivery networks featuring direct edge peering at the <a href="https://www.sfmix.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">San Francisco Internet Exchange (SFMIX)</a> and premier carrier hotels at 200 Paul Avenue and 365 Main Street in San Francisco. This localized edge routing guarantees that cached static assets, image files, and serverless compute functions execute within single-digit milliseconds of local end users.
         </p>
@@ -362,9 +361,9 @@ export default function SanFranciscoWebDevelopmentPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="agile-delivery-sprints-dedicated-san-francisco-support-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="agile-delivery-sprints-dedicated-san-francisco-support-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Agile Delivery Sprints and Dedicated San Francisco Support SLAs
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Our engineering partnership follows a transparent, sprint-based agile delivery framework engineered to provide Bay Area executives with total visibility into project milestones, sprint velocity, and deterministic launch dates. From initial architectural blueprinting and interactive Figma prototyping to automated integration testing and zero-downtime blue-green deployments, our team maintains uncompromising software standards. Following production rollout, we safeguard your digital investment with comprehensive enterprise service level agreements that feature 24/7 automated uptime monitoring, proactive security patching, and daily encrypted cloud backups.
         </p>
@@ -374,12 +373,12 @@ export default function SanFranciscoWebDevelopmentPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -387,7 +386,7 @@ export default function SanFranciscoWebDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Marcus Vance</p>
@@ -401,7 +400,7 @@ export default function SanFranciscoWebDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Elena Rostova" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Elena Rostova" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Dr. Elena Rostova</p>

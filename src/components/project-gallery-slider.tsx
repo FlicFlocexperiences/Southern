@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
+import { getImageDimensions } from "@/lib/image-dimensions";
 
 interface ProjectGallerySliderProps {
   images: string[];
@@ -155,19 +156,24 @@ export const ProjectGallerySlider: React.FC<ProjectGallerySliderProps> = ({ imag
         className="w-full overflow-x-auto flex gap-6 md:gap-8 pb-4 cursor-grab active:cursor-grabbing select-none scrollbar-none snap-x snap-mandatory"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
-        {displayedImages.map((image, index) => (
-          <div
-            key={index}
-            className="snap-start shrink-0 w-[260px] sm:w-[320px] md:w-[400px] aspect-[3/4] rounded-[20px] md:rounded-[28px] overflow-hidden bg-[#432d1c]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group"
-          >
-            <img
-              src={image}
-              alt={`Gallery Image ${(index % images.length) + 1}`}
-              className="w-full h-full object-cover pointer-events-none transition-transform duration-700 ease-out group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500 pointer-events-none" />
-          </div>
-        ))}
+        {displayedImages.map((image, index) => {
+          const dims = getImageDimensions(image);
+          return (
+            <div
+              key={index}
+              className="snap-start shrink-0 w-[260px] sm:w-[320px] md:w-[400px] aspect-[3/4] rounded-[20px] md:rounded-[28px] overflow-hidden bg-[#432d1c]/5 shadow-[0_4px_30px_rgba(0,0,0,0.02)] relative group"
+            >
+              <img
+                src={image}
+                alt={`Gallery Image ${(index % images.length) + 1}`}
+                width={dims.width}
+                height={dims.height}
+                className="w-full h-full object-cover pointer-events-none transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500 pointer-events-none" />
+            </div>
+          );
+        })}
       </div>
     </div>
   );

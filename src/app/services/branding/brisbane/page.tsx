@@ -224,9 +224,9 @@ export default function BrisbaneBrandingPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="brisbane-commercial-landscape-and-enterprise-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="brisbane-commercial-landscape-and-enterprise-brand-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. The Brisbane Commercial Ecosystem and Enterprise Brand Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Brisbane stands as one of Australia&apos;s fastest growing commercial capitals</strong>, experiencing corporate maturation and substantial capital investment across South East Queensland. From heritage boardrooms across the Golden Triangle on Queen Street to corporate headquarters along the Brisbane River, distinct market positioning is vital. Superficial design treatments fail to secure enterprise authority. Corporate procurement panels and institutional boards demand structural discipline. As an established <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in Brisbane</strong>, Southern Edge Marketing develops comprehensive brand architectures that establish enduring commercial leadership.
         </p>
@@ -235,9 +235,9 @@ export default function BrisbaneBrandingPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="fortitude-valley-and-milton-innovation-hubs-venture-scale-up-identity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="fortitude-valley-and-milton-innovation-hubs-venture-scale-up-identity" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Fortitude Valley and Milton Innovation Hubs: Venture Scale-Up Identity
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The innovation precinct spanning Fortitude Valley, Milton, and Toowong</strong> serves as the primary technology engine of Brisbane. For artificial intelligence pioneers, fintech innovators, and enterprise cloud scale-ups, strategic brand positioning is essential for category leadership. Engineering founders frequently build sophisticated software architectures, yet struggle to convey commercial value to institutional investors along Queen Street. Our <strong className="font-semibold text-[#de5e18] tracking-tight">tech branding specialists in Brisbane</strong> translate complex engineering capabilities into compelling corporate narratives that secure venture capital backing and attract top-tier engineering talent.
         </p>
@@ -246,9 +246,9 @@ export default function BrisbaneBrandingPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="golden-triangle-and-queen-street-institutional-corporate-authority" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="golden-triangle-and-queen-street-institutional-corporate-authority" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Golden Triangle and Queen Street: Institutional Corporate Authority
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The corporate core centered along Queen Street, Eagle Street, and Waterfront Brisbane</strong> stewards billions in resources, commercial infrastructure, and private wealth. In this fiduciary landscape, visual identity functions as direct proof of operational stability, statutory compliance, and executive integrity. Creating brand identities for Queensland financial institutions and legal partnerships demands deep familiarity with regulatory governance. Our <strong className="font-semibold text-[#de5e18] tracking-tight">corporate branding agency in Brisbane</strong> crafts authoritative visual identities that inspire confidence across boardrooms, audit committees, and institutional allocators.
         </p>
@@ -292,9 +292,9 @@ export default function BrisbaneBrandingPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="brisbane-2032-olympic-horizon-and-tradecoast-industrial-positioning" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="brisbane-2032-olympic-horizon-and-tradecoast-industrial-positioning" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Brisbane 2032 Olympic Horizon and TradeCoast Industrial Positioning
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The economic horizon leading toward the Brisbane 2032 Olympic and Paralympic Games</strong> presents historic expansion opportunities for Queensland enterprises. Concurrently, the Brisbane TradeCoast, Pinkenba logistics hub, and Eagle Farm industrial corridor anchor major supply chains, civil infrastructure contractors, and advanced manufacturing operations. Organizations in these high-stakes sectors require sophisticated B2B brand architecture. Industrial procurement committees evaluate prospective partners based on technical capability and demonstrated reliability. Our brand strategists build industrial positioning frameworks that strengthen supplier credibility.
         </p>
@@ -313,9 +313,9 @@ export default function BrisbaneBrandingPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Brand Strategy &amp; Architecture Delivery Matrix: Brisbane
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -327,10 +327,9 @@ export default function BrisbaneBrandingPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/branding-brisbane.jpg"
-                alt="Branding in Brisbane Technical Architecture Infographic"
+                alt="Branding in Brisbane Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -346,9 +345,9 @@ export default function BrisbaneBrandingPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="ip-australia-trademark-clearance-and-multi-class-brand-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="ip-australia-trademark-clearance-and-multi-class-brand-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. IP Australia Trademark Clearance and Multi-Class Brand Governance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Deploying a commercial brand without thorough intellectual property defense</strong> introduces severe operational risk, trademark disputes, and expensive legal remediation. In Queensland&apos;s crowded corporate landscape, securing statutory trademark priority represents an essential governance priority. Our branding methodology incorporates exhaustive clearance screening alongside licensed trademark attorneys, validating proposed enterprise names, logomarks, and visual emblems against official registers of <a href="https://www.ipaustralia.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">IP Australia</a> under statutory provisions of the Trade Marks Act 1995.
         </p>
@@ -357,9 +356,9 @@ export default function BrisbaneBrandingPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="statutory-accessibility-dda-section-24-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-accessibility-dda-section-24-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Statutory Accessibility: DDA Section 24 and WCAG 2.2 Level AA Systems
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Commercial enterprises operating across Australia must comply with digital accessibility mandates</strong> set forth under Section 24 of the Disability Discrimination Act 1992. Inaccessible brand interfaces exclude valuable user demographics while creating substantial legal vulnerabilities and reputational risks. Modern visual identities must incorporate universal accessibility from inception. Our Brisbane design practice formulates corporate color palettes audited against <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">W3C Web Content Accessibility Guidelines (WCAG 2.2 Level AA)</a>, ensuring minimum 4.5:1 contrast ratios across user interfaces and digital applications.
         </p>
@@ -368,9 +367,9 @@ export default function BrisbaneBrandingPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="high-dpi-vector-assets-and-bne-ix-sub-millisecond-peering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="high-dpi-vector-assets-and-bne-ix-sub-millisecond-peering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. High-DPI Vector Asset Delivery and BNE-IX Sub-Millisecond Peering
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Modern enterprise applications require visual brand assets</strong> that render with surgical sharpness across high-density displays without increasing bundle weight or hurting Core Web Vitals metrics. Unoptimized raster graphics, oversized typography files, and unminified vectors trigger layout shifts and degrade user retention across Queensland networks. As a technical <strong className="font-semibold text-[#de5e18] tracking-tight">branding company in Brisbane</strong>, Southern Edge Marketing engineers lightweight SVG asset packages, consolidated symbol sprites, and variable font subsets configured specifically for Next.js architectures.
         </p>
@@ -379,9 +378,9 @@ export default function BrisbaneBrandingPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="environmental-placemaking-commercial-signage-and-multichannel-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="environmental-placemaking-commercial-signage-and-multichannel-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Environmental Placemaking, Commercial Signage, and Multi-Channel Scale
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Brisbane is celebrated for its distinctive subtropical architecture</strong>, from heritage brick facades along Edward Street to contemporary glass towers reshaping Eagle Street. For corporate headquarters, flagship retail environments, and customer innovation centers, brand identity must project seamlessly into physical environments. Our environmental design specialists translate digital identity systems into exterior architectural signage, interior lobby installations, and intuitive wayfinding systems. We specify weather-resistant materials, precision metal fabrication, custom LED backlighting, and sustainable manufacturing standards.
         </p>
@@ -391,12 +390,12 @@ export default function BrisbaneBrandingPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -404,7 +403,7 @@ export default function BrisbaneBrandingPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Lachlan Sterling" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Lachlan Sterling" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Lachlan Sterling</p>
@@ -418,7 +417,7 @@ export default function BrisbaneBrandingPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Camilla Henderson" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Camilla Henderson" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Camilla Henderson</p>

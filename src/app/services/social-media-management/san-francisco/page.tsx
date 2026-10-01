@@ -207,9 +207,9 @@ export default function SanFranciscoSocialMediaManagementPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="san-francisco-commercial-landscape-and-social-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="san-francisco-commercial-landscape-and-social-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. The San Francisco Commercial Landscape and Enterprise Social Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">San Francisco operates as the premier global epicenter of venture capital, artificial intelligence development, and enterprise software innovation</strong>. From the high-density engineering hubs of South of Market (SoMa) and Potrero Hill to investment fortresses lining Montgomery Street in the Financial District, local organizations operate within a fast-moving commercial arena. In this sophisticated ecosystem, generic stock imagery and superficial posting schedules fail to engage technical founders, venture partners, and corporate executives. As an elite <strong className="font-semibold text-[#de5e18] tracking-tight">social media management company in San Francisco</strong>, Southern Edge Marketing builds high-velocity social distribution engines.
         </p>
@@ -218,20 +218,20 @@ export default function SanFranciscoSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="executive-thought-leadership-linkedin-abm-fidi-sand-hill" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="executive-thought-leadership-linkedin-abm-fidi-sand-hill" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Executive Thought Leadership and B2B LinkedIn ABM for FiDi and Sand Hill Road
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          Operating within San Francisco financial corridors demands an authoritative, high-trust approach to executive communication. Managing partners, enterprise CTOs, and institutional investors actively utilize <a href="https://business.linkedin.com/marketing-solutions" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">LinkedIn Marketing Solutions</a> to evaluate strategic vendors and discover emerging opportunities. We architect B2B executive positioning frameworks that transform your leadership team into recognized industry authorities across AI, enterprise SaaS, and venture finance. Our specialized editorial copywriters produce rigorous whitepapers, macroeconomic commentary, and proprietary data visualizations that communicate your corporate perspective with intellectual clarity.
+          Operating within San Francisco financial corridors demands an authoritative, high-trust approach to executive communication. Managing partners, enterprise CTOs, and institutional investors actively utilize LinkedIn Marketing Solutions to evaluate strategic vendors and discover emerging opportunities. We architect B2B executive positioning frameworks that transform your leadership team into recognized industry authorities across AI, enterprise SaaS, and venture finance. Our specialized editorial copywriters produce rigorous whitepapers, macroeconomic commentary, and proprietary data visualizations that communicate your corporate perspective with intellectual clarity.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           To accelerate high-value institutional pipeline opportunities, we combine organic thought leadership with hyper-targeted Account-Based Marketing (ABM) paid distribution across enterprise networks. By leveraging precision corporate targeting parameters, our paid campaigns engage verified decision-makers across Fortune 500 enterprises, prominent private equity firms, and Bay Area technology innovators. Our B2B social architecture systematically nurtures complex multi-stakeholder buying committees throughout long enterprise sales cycles, converting digital impressions into qualified corporate meetings. To ensure your social campaigns drive high-intent traffic to resilient, high-speed conversion platforms, explore our enterprise <Link href="/services/web-development" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">web development</Link> solutions.
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="high-growth-saas-user-acquisition-developer-advocacy-soma" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="high-growth-saas-user-acquisition-developer-advocacy-soma" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. High-Growth SaaS User Acquisition and Developer Advocacy in SoMa
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The software startup ecosystem spanning SoMa, Jackson Square, and Silicon Valley represents the most dynamic software development community in the world. High-growth technology scale-ups and venture-backed SaaS innovators require agile, full-funnel social marketing strategies to accelerate self-serve product adoption, expand open-source repositories, and cultivate passionate developer communities. We execute multi-platform user acquisition funnels across LinkedIn, X (Twitter), YouTube, and interactive developer forums, optimizing creative assets for qualified free trial activations, product signups, and annual recurring contract expansions.
         </p>
@@ -275,9 +275,9 @@ export default function SanFranciscoSocialMediaManagementPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="privacy-governance-ccpa-cpra-meta-conversions-api" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="privacy-governance-ccpa-cpra-meta-conversions-api" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Data Privacy Governance, CCPA/CPRA Compliance, and Meta Conversions API
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Operating digital marketing campaigns in California requires strict compliance with state privacy statutes and federal advertising guidelines. The <a href="https://cppa.ca.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">California Privacy Protection Agency</a> actively enforces the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA), mandating transparent consumer consent, opt-out mechanisms, and strict restrictions on cross-context behavioral tracking. In response to mobile browser cookie deprecation, our technical marketing engineers implement first-party server-side telemetry using the Meta Conversions API (CAPI), TikTok Events API, and LinkedIn Conversions API.
         </p>
@@ -296,9 +296,9 @@ export default function SanFranciscoSocialMediaManagementPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Social Media Architecture &amp; Multi-Channel Delivery Matrix: San Francisco
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -310,10 +310,9 @@ export default function SanFranciscoSocialMediaManagementPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/social-media-management-san-francisco.jpg"
-                alt="Social Media Management in San Francisco Technical Architecture Infographic"
+                alt="Social Media Management in San Francisco Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -329,9 +328,9 @@ export default function SanFranciscoSocialMediaManagementPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="cinematic-short-form-video-bay-area-creator-networks" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="cinematic-short-form-video-bay-area-creator-networks" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. Cinematic Short-Form Video Production and Bay Area Creator Networks
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern algorithmic feeds across TikTok, Instagram Reels, and YouTube Shorts have made short-form vertical video the most potent medium for brand discovery and rapid customer acquisition. Generic stock footage and low-budget smartphone clips fail to resonate with discerning San Francisco consumers and corporate executives. Our creative production studio handles every phase of video creation, from scriptwriting and professional 4K cinematography to motion design, color grading, and dynamic kinetic typography tailored for sound-off mobile viewing environments.
         </p>
@@ -340,9 +339,9 @@ export default function SanFranciscoSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="statutory-ada-california-unruh-wcag-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="statutory-ada-california-unruh-wcag-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Statutory ADA Title III, California Unruh Act, and WCAG 2.2 AA Social Accessibility
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility has become a critical legal and ethical requirement for modern enterprises operating in California. State courts enforce strict civil liability under the Unruh Civil Rights Act (Civil Code § 51), while federal regulators mandate equal access under <a href="https://www.ada.gov/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">ADA Title III</a>. Social media assets that lack accessible design expose commercial enterprises to significant legal risk and alienate valuable customer segments. Our social production pipeline embeds accessibility compliance directly into every visual, video, and textual asset according to <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> guidelines.
         </p>
@@ -351,9 +350,9 @@ export default function SanFranciscoSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="sfmix-peering-200-paul-carrier-hotels-media-delivery" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="sfmix-peering-200-paul-carrier-hotels-media-delivery" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. SFMIX Peering, 200 Paul Carrier Hotels, and Pacific Rim Media Delivery
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Delivering high-resolution video reels, interactive social experiences, and rich landing page destinations across the San Francisco Bay Area requires edge infrastructure tuned to regional network backbones. We architect digital campaigns supported by distributed content delivery networks with direct edge peering at the <a href="https://www.sfmix.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">San Francisco Internet Exchange (SFMIX)</a> and premier carrier hotels located at 200 Paul Avenue and 365 Main Street. This edge peering architecture guarantees that rich media assets and campaign landing pages render within single-digit milliseconds for local users.
         </p>
@@ -362,9 +361,9 @@ export default function SanFranciscoSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="enterprise-attribution-data-lakehouses-san-francisco-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="enterprise-attribution-data-lakehouses-san-francisco-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Enterprise Multi-Touch Attribution, Data Lakehouses, and Dedicated San Francisco SLAs
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern enterprise CMOs and finance executives demand transparent, deterministic proof of marketing return on investment rather than vanity engagement metrics. We deploy sophisticated multi-touch attribution models that track the complete customer lifecycle from initial social impression to closed contract revenue. Our data engineers integrate social ad platforms directly with enterprise data lakehouses and customer data platforms, including Snowflake, Google BigQuery, Segment, and Salesforce. This provides executive leadership with real-time dashboards displaying blended customer acquisition cost, pipeline velocity, and customer lifetime value.
         </p>
@@ -374,12 +373,12 @@ export default function SanFranciscoSocialMediaManagementPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -387,7 +386,7 @@ export default function SanFranciscoSocialMediaManagementPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Marcus Vance</p>
@@ -401,7 +400,7 @@ export default function SanFranciscoSocialMediaManagementPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Elena Rostova" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Elena Rostova" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Dr. Elena Rostova</p>

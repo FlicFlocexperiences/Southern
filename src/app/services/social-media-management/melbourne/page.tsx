@@ -229,9 +229,9 @@ export default function MelbourneSocialMediaManagementPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="melbourne-commercial-dynamics-and-enterprise-social-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="melbourne-commercial-dynamics-and-enterprise-social-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. Melbourne Commercial Dynamics and Enterprise Social Architecture
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Melbourne serves as Australia&apos;s cultural capital and primary financial center</strong>, generating immense commercial momentum across Victoria. From heritage facades along Collins Street to high-growth tech scale-ups across Cremorne and Collingwood, local enterprises compete in a mature digital market. In this discerning commercial landscape, generic social posts and superficial photography fail to engage executive stakeholders. As a leading <strong className="font-semibold text-[#de5e18] tracking-tight">social media management company in Melbourne</strong>, Southern Edge Marketing engineers performance-driven social distribution systems.
         </p>
@@ -240,20 +240,20 @@ export default function MelbourneSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="executive-thought-leadership-linkedin-abm-collins-street-docklands" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="executive-thought-leadership-linkedin-abm-collins-street-docklands" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Executive Thought Leadership and B2B LinkedIn ABM for Collins Street and Docklands
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          Navigating Melbourne&apos;s primary financial quarters demands an authoritative, high-trust approach to executive communication. Managing directors, investment committee chairs, and enterprise technology leaders actively utilize <a href="https://business.linkedin.com/marketing-solutions" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">LinkedIn Marketing Solutions</a> to discover strategic partners, evaluate software vendors, and recruit key executives. We build bespoke executive positioning frameworks that establish corporate leaders as recognized authorities across investment banking, superannuation, legal advisory, and wealth management. Our editorial team crafts whitepapers, industry analyses, and market commentaries that articulate corporate vision with clear authority.
+          Navigating Melbourne&apos;s primary financial quarters demands an authoritative, high-trust approach to executive communication. Managing directors, investment committee chairs, and enterprise technology leaders actively utilize LinkedIn Marketing Solutions to discover strategic partners, evaluate software vendors, and recruit key executives. We build bespoke executive positioning frameworks that establish corporate leaders as recognized authorities across investment banking, superannuation, legal advisory, and wealth management. Our editorial team crafts whitepapers, industry analyses, and market commentaries that articulate corporate vision with clear authority.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           To transform executive visibility into tangible pipeline revenue, we connect organic executive profiles with precision Account-Based Marketing paid campaigns across enterprise networks. By deploying granular demographic targeting encompassing job seniorities, corporate sizes, and industry classifications, our campaigns reach vital buying committees across ASX 200 enterprises and major Victorian employers. This structured process nurtures complex institutional buyer journeys across extended procurement cycles, turning social impressions into executive presentations. To ensure social traffic converts on responsive web platforms, discover our high-performance <Link href="/services/web-development" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">web development services</Link>.
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="high-growth-tech-product-acquisition-developer-advocacy-cremorne" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="high-growth-tech-product-acquisition-developer-advocacy-cremorne" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. High-Growth Tech Product Acquisition and Developer Advocacy in Cremorne
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The technology and creative ecosystem spanning Cremorne, Collingwood, and Docklands serves as the primary engine of Victorian digital product innovation. Ambitious tech companies and venture-backed software scale-ups require agile, full-funnel social marketing strategies to drive product adoption, expand active user communities, and secure capital investment. We architect integrated acquisition funnels across LinkedIn, YouTube, and digital developer channels, optimizing creative messaging for trial activations, software signups, and enterprise seat expansions.
         </p>
@@ -297,9 +297,9 @@ export default function MelbourneSocialMediaManagementPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="data-privacy-governance-privacy-act-1988-meta-capi" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="data-privacy-governance-privacy-act-1988-meta-capi" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. Data Privacy Governance, Australian Privacy Principles, and Server-Side CAPI
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Executing digital marketing campaigns across Australia requires strict compliance with federal privacy legislation and statutory consumer protections. The <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Office of the Australian Information Commissioner</a> enforces the Privacy Act 1988 alongside thirteen Australian Privacy Principles, governing the collection, processing, and storage of customer personal information. In response to mobile browser cookie limitations and heightened consumer privacy standards, our marketing engineers deploy first-party server-side telemetry using the <a href="https://developers.facebook.com/docs/marketing-api/conversions-api/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Meta Conversions API</a>, LinkedIn Conversions API, and Google Tag Manager Server Container.
         </p>
@@ -318,9 +318,9 @@ export default function MelbourneSocialMediaManagementPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Social Media Architecture &amp; Delivery Matrix: Melbourne
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -332,10 +332,9 @@ export default function MelbourneSocialMediaManagementPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/social-media-management-melbourne.jpg"
-                alt="Social Media Management in Melbourne Technical Architecture Infographic"
+                alt="Social Media Management in Melbourne Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -351,9 +350,9 @@ export default function MelbourneSocialMediaManagementPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="cinematic-4k-video-production-accc-creator-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="cinematic-4k-video-production-accc-creator-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. Cinematic 4K Short-Form Video and ACCC Influencer Endorsement Governance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Algorithmic feeds across TikTok, Instagram Reels, and YouTube Shorts make vertical short-form video the most effective medium for rapid brand recall and customer acquisition. Generic stock video and low-fidelity smartphone footage fail to resonate with discerning Victorian consumers and executive buyers. Our in-house creative production studio oversees every phase of production, from commercial scripting and on-location 4K cinematography across Melbourne landmarks to color grading, sound design, and kinetic typography optimized for muted mobile viewing.
         </p>
@@ -362,9 +361,9 @@ export default function MelbourneSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="disability-discrimination-act-wcag-social-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="disability-discrimination-act-wcag-social-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Statutory Disability Discrimination Act Compliance and WCAG 2.2 AA Accessibility
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility represents a critical legal obligation and ethical imperative for commercial enterprises across Victoria. Under the federal Disability Discrimination Act 1992, public-facing digital communications must provide equal access to individuals with auditory, cognitive, visual, or neurological impairments. Social media campaigns published without inclusive design principles alienate valuable audiences and create corporate regulatory exposure. Our production pipeline embeds accessibility protocols into every creative asset in accordance with global <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> guidelines.
         </p>
@@ -373,9 +372,9 @@ export default function MelbourneSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="vic-ix-peering-equinix-port-melbourne-5g-distribution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="vic-ix-peering-equinix-port-melbourne-5g-distribution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. VIC-IX Peering, Equinix Port Melbourne Facilities, and 5G Media Delivery
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Delivering high-resolution video reels, dynamic campaign landing pages, and interactive social experiences across metropolitan Melbourne requires infrastructure optimized for regional telecommunications backbones. We architect campaign delivery pipelines with direct peering at the <a href="https://www.ix.asn.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">VIC-IX</a> internet exchange point and premier carrier facilities located in Equinix Port Melbourne data centers. This specialized peering architecture guarantees that rich media assets and transactional landing pages load within single-digit milliseconds for local users browsing on Telstra and Optus 5G mobile networks.
         </p>
@@ -384,9 +383,9 @@ export default function MelbourneSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="enterprise-attribution-data-lakehouses-melbourne-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="enterprise-attribution-data-lakehouses-melbourne-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Enterprise Multi-Touch Attribution, Data Lakehouses, and Dedicated Melbourne SLAs
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Enterprise marketing and finance leaders require deterministic, audited verification of marketing return on investment rather than vanity metrics. We construct sophisticated multi-touch attribution models that trace user interactions across paid social, executive content, organic search, and direct conversion funnels. Our data team integrates social advertising telemetry directly with enterprise data warehouses, including Snowflake, Google BigQuery, and Salesforce CRM platforms, delivering executive dashboards that display real-time customer acquisition costs and pipeline velocity.
         </p>
@@ -396,12 +395,12 @@ export default function MelbourneSocialMediaManagementPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -409,7 +408,7 @@ export default function MelbourneSocialMediaManagementPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Julian Vance-Moreau" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Julian Vance-Moreau" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Julian Vance-Moreau</p>
@@ -423,7 +422,7 @@ export default function MelbourneSocialMediaManagementPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Saskia Holst" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Saskia Holst" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Dr. Saskia Holst</p>

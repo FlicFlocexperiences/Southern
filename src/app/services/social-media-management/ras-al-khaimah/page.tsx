@@ -213,9 +213,9 @@ export default function RasAlKhaimahSocialMediaManagementPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="rakez-industrial-commerce-and-b2b-social-lead-generation" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="rakez-industrial-commerce-and-b2b-social-lead-generation" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           1. RAKEZ Industrial Commerce and B2B Social Lead Generation
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The industrial expansion across the <strong>Ras Al Khaimah Economic Zone (RAKEZ)</strong>, Saqr Port maritime facilities, and Al Ghail Industrial Area requires a sophisticated B2B social architecture. Modern procurement officers and commercial developers evaluate corporate credibility on digital channels before initiating vendor discussions. Generic marketing announcements fail to engage these institutional buyers. To capture high-value contracts across the GCC, industrial enterprises in Ras Al Khaimah require data-driven social strategies highlighting technical precision, manufacturing scale, and supply chain reliability.
         </p>
@@ -224,9 +224,9 @@ export default function RasAlKhaimahSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="al-marjan-island-luxury-hospitality-and-international-guest-acquisition" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="al-marjan-island-luxury-hospitality-and-international-guest-acquisition" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           2. Al Marjan Island Luxury Hospitality and International Guest Acquisition
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           The transformation of <strong>Al Marjan Island</strong> into a premier destination for luxury hospitality, integrated gaming resorts, and waterfront residences drives intense competition for international traveler mindshare. Capturing affluent tourists from Europe, the United Kingdom, CIS nations, and GCC weekend travelers demands compelling visual storytelling and frictionless digital booking paths. Modern leisure travelers discover destinations through curated feeds and immersive video walkthroughs. Hospitality operators in Mina Al Arab and Al Hamra Village must present world-class digital experiences to sustain high occupancy rates and premium revenue.
         </p>
@@ -235,9 +235,9 @@ export default function RasAlKhaimahSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="bilingual-arabic-and-english-community-architecture-for-the-northern-emirates" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="bilingual-arabic-and-english-community-architecture-for-the-northern-emirates" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           3. Bilingual Arabic and English Community Architecture for the Northern Emirates
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Navigating the multicultural demographics of Ras Al Khaimah requires an authentic, nuanced bilingual content strategy. Automated direct translations consistently alienate local Emirati audiences and fail to capture regional colloquial subtleties. High-net-worth local consumers, government stakeholders, and corporate leaders across Al Nakheel and Khuzam expect communication tailored to their cultural values and linguistic preferences. Brands relying on superficial English-only messaging miss significant market share in the Northern Emirates, while poorly translated Arabic copy damages corporate reputation and institutional credibility.
         </p>
@@ -281,9 +281,9 @@ export default function RasAlKhaimahSocialMediaManagementPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="high-performance-short-form-video-and-visual-content-production-pipelines" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="high-performance-short-form-video-and-visual-content-production-pipelines" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           4. High-Performance Short-Form Video and Visual Content Production Pipelines
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Social media algorithms on Instagram, TikTok, and YouTube prioritize high-retention short-form video over static graphic design. For enterprises in Ras Al Khaimah, capturing attention in fast-scrolling feeds requires professional cinematic production, dynamic pacing, and immediate value delivery in the opening seconds. Whether highlighting industrial automation in RAKEZ, luxury waterfront living on Al Marjan Island, or adventure tourism around Jebel Jais, low-quality smartphone clips undermine brand prestige and yield poor algorithmic distribution across the United Arab Emirates.
         </p>
@@ -302,9 +302,9 @@ export default function RasAlKhaimahSocialMediaManagementPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Social Media Management Architecture &amp; Delivery Matrix: Ras Al Khaimah
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -316,10 +316,9 @@ export default function RasAlKhaimahSocialMediaManagementPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/social-media-management-ras-al-khaimah.jpg"
-                alt="Social Media Management in Ras Al Khaimah Technical Architecture Infographic"
+                alt="Social Media Management in Ras Al Khaimah Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -335,9 +334,9 @@ export default function RasAlKhaimahSocialMediaManagementPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="uae-media-council-influencer-licensing-and-statutory-advertising-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="uae-media-council-influencer-licensing-and-statutory-advertising-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           5. UAE Media Council Influencer Licensing and Statutory Advertising Compliance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Influencer marketing in the United Arab Emirates is governed by rigorous legal standards enforced by the <a href="https://uaemc.gov.ae/en/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] font-semibold underline decoration-[#de5e18]/40 hover:decoration-[#de5e18]">UAE Media Council</a>. Commercial creators and digital personalities must hold valid governmental advertising licenses to promote commercial enterprises legally. Engaging unlicensed influencers or publishing sponsored campaigns without transparent commercial disclosures exposes enterprise brands in Ras Al Khaimah to substantial administrative fines and reputational damage. Corporate marketing leaders require institutional compliance frameworks that insulate their organizations from legal liability.
         </p>
@@ -346,9 +345,9 @@ export default function RasAlKhaimahSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="social-commerce-storefronts-and-omnichannel-conversion-funnels" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="social-commerce-storefronts-and-omnichannel-conversion-funnels" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           6. Social Commerce Storefronts and Omnichannel Conversion Funnels
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Consumer buying behavior in the United Arab Emirates has transitioned from conventional browsing to native in-app social commerce. Platforms like Instagram Shopping and TikTok Shop allow users to discover, evaluate, and purchase luxury products directly within their social streams. For commercial retailers and direct-to-consumer brands in Ras Al Khaimah, friction during checkout leads to abandoned transactions. Establishing native social storefronts synchronized with enterprise inventory systems is essential to capture immediate impulse purchasing decisions from affluent local and regional shoppers.
         </p>
@@ -357,9 +356,9 @@ export default function RasAlKhaimahSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="real-time-reputation-monitoring-and-uae-pdpl-data-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="real-time-reputation-monitoring-and-uae-pdpl-data-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           7. Real-Time Reputation Monitoring and UAE PDPL Data Governance
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Public brand perception can fluctuate rapidly in the digital sphere, making proactive reputation governance indispensable for enterprises in Ras Al Khaimah. Customer inquiries, public reviews, and user discussions across social channels demand immediate, professional attention. Furthermore, marketing data collection must comply strictly with UAE Federal Decree-Law No. 45 of 2021 regarding Personal Data Protection. Organizations that mishandle customer feedback or violate consumer privacy standards face severe regulatory penalties and lasting brand damage across the Gulf region.
         </p>
@@ -368,9 +367,9 @@ export default function RasAlKhaimahSocialMediaManagementPage() {
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="enterprise-analytics-uae-ix-peering-infrastructure-and-growth-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="enterprise-analytics-uae-ix-peering-infrastructure-and-growth-slas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           8. Enterprise Analytics, UAE-IX Peering Infrastructure, and Growth SLAs
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern enterprise marketing requires rigorous accountability and transparent performance measurement. Traditional marketing reports focusing on vanity metrics fail to demonstrate tangible business impact. Executive leadership in Ras Al Khaimah requires granular visibility into customer acquisition costs, pipeline attribution, and ad conversion efficiency. Furthermore, paid social ad funnels depend on high-speed edge infrastructure to deliver sub-second landing page load times for regional mobile users connected via Etisalat e&amp; and du telecommunications networks.
         </p>
@@ -380,12 +379,12 @@ export default function RasAlKhaimahSocialMediaManagementPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -393,7 +392,7 @@ export default function RasAlKhaimahSocialMediaManagementPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Tariq Al-Nuaimi" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Tariq Al-Nuaimi" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Tariq Al-Nuaimi</p>
@@ -407,7 +406,7 @@ export default function RasAlKhaimahSocialMediaManagementPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Elena Rostova</p>

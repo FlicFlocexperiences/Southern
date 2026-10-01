@@ -207,9 +207,9 @@ export default function NewYorkAppDevelopmentPage() {
       
       <ServiceLayout sections={tableOfContents}>
         {/* SECTION 1 */}
-        <h3 id="silicon-alley-enterprise-mobility-and-nyc-ecosystem" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="silicon-alley-enterprise-mobility-and-nyc-ecosystem" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Silicon Alley Velocity and Enterprise Mobile Architecture for New York City
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">New York City operates as the financial, cultural, and commercial epicentre of the global economy</strong>, generating over two trillion dollars in regional economic output. From the institutional trading fortresses of Wall Street to the hyper-growth startup clusters across Silicon Alley in Flatiron, SoHo, Chelsea, and DUMBO Brooklyn, New York businesses move at an unparalleled commercial velocity. High-net-worth consumers and demanding corporate decision-makers throughout Manhattan expect immediate, flawless digital execution on their mobile devices, leaving zero room for sluggish load times, frame drops, or clunky user interfaces. As a premier <strong className="font-semibold text-[#de5e18] tracking-tight">app development company in New York</strong>, Southern Edge Marketing engineers custom iOS and Android mobile software designed specifically to conquer the commercial complexities of the NYC marketplace. We do not assemble generic offshore templates or fragile hybrid wrappers. Instead, our senior software architects build enterprise-grade, cloud-native mobile applications that deliver measurable bottom-line growth.
         </p>
@@ -218,9 +218,9 @@ export default function NewYorkAppDevelopmentPage() {
         </p>
 
         {/* SECTION 2 */}
-        <h3 id="fintech-wealthtech-and-low-latency-financial-rails" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="fintech-wealthtech-and-low-latency-financial-rails" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Bank-Grade FinTech and Low-Latency WealthTech for Wall Street
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The Financial District and Midtown Manhattan represent the undisputed capital of global finance</strong>, housing the world&apos;s largest investment banks, hedge funds, private equity sponsors, and next-generation FinTech disruptors. Developing transactional mobile software for Wall Street firms requires absolute precision, zero-tolerance latency control, and impenetrable cryptographic security. Our specialized <strong className="font-semibold text-[#de5e18] tracking-tight">fintech app development in New York</strong> implements institutional security models, including hardware-isolated key storage, secure enclave biometrics via Apple Face ID and Android BiometricPrompt, and end-to-end TLS 1.3 encryption for every payload. We integrate directly with modern financial data rails and instant settlement networks through <a href="https://plaid.com/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Plaid</a>, Stripe Financial Connections, and FedNow enabled banking APIs.
         </p>
@@ -229,11 +229,11 @@ export default function NewYorkAppDevelopmentPage() {
         </p>
 
         {/* SECTION 3 */}
-        <h3 id="nydfs-part-500-cybersecurity-and-cloud-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="nydfs-part-500-cybersecurity-and-cloud-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           NYDFS Part 500 Compliance, SOC 2 Protocols, and US-East Cloud Infrastructure
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise organizations based in New York State</strong> must adhere to some of the strictest cybersecurity and data protection mandates in the nation. Our mobile engineering lifecycle integrates comprehensive security-by-design principles compliant with <a href="https://en.wikipedia.org/wiki/New_York_State_Department_of_Financial_Services" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">NYDFS 23 NYCRR 500</a>, the New York SHIELD Act, and SOC 2 Type II audit frameworks. To deliver sub-millisecond API response times for Tri-State area users, we provision dedicated cloud infrastructure across low-latency regional nodes, including <a href="https://aws.amazon.com/about-aws/global-infrastructure/regions_az/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">AWS US-East (N. Virginia &amp; Ohio)</a> and Google Cloud us-east4, complemented by Cloudflare Edge Points of Presence throughout the New York metropolitan area.
+          <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise organizations based in New York State</strong> must adhere to some of the strictest cybersecurity and data protection mandates in the nation. Our mobile engineering lifecycle integrates comprehensive security-by-design principles compliant with NYDFS 23 NYCRR 500, the New York SHIELD Act, and SOC 2 Type II audit frameworks. To deliver sub-millisecond API response times for Tri-State area users, we provision dedicated cloud infrastructure across low-latency regional nodes, including <a href="https://aws.amazon.com/about-aws/global-infrastructure/regions_az/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">AWS US-East (N. Virginia &amp; Ohio)</a> and Google Cloud us-east4, complemented by Cloudflare Edge Points of Presence throughout the New York metropolitan area.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Our <strong className="font-semibold text-[#de5e18] tracking-tight">app development company in New York</strong> deploys zero-trust security frameworks, automated cryptographic key rotation, and granular access controls across all GraphQL and RESTful API endpoints. We conduct automated static application security testing (SAST), dynamic application security testing (DAST), and comprehensive third-party penetration testing prior to submitting any production build to the Apple App Store or Google Play Store. Following deployment, our automated monitoring systems provide continuous vulnerability scanning, immutable audit logging, and 99.99% uptime guarantees to safeguard your corporate brand equity.
@@ -275,14 +275,14 @@ export default function NewYorkAppDevelopmentPage() {
         </div>
 
         {/* SECTION 4 */}
-        <h3 id="omnichannel-luxury-retail-and-madison-avenue-mobility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="omnichannel-luxury-retail-and-madison-avenue-mobility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           High-Volume Omnichannel Commerce and Luxury Clienteling for Madison Avenue
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">From iconic flagship stores along Fifth Avenue and Madison Avenue to boutique designers across SoHo</strong>, New York defines global retail trends and luxury consumer behavior. Modern New York shoppers demand hyper-convenient digital purchasing journeys that blend digital shopping with physical boutique experiences. Our <strong className="font-semibold text-[#de5e18] tracking-tight">custom app development in New York</strong> delivers bespoke omnichannel e-commerce applications with native mobile checkouts that support Apple Pay, Google Pay, and real-time point-of-sale inventory synchronizations. We construct custom clienteling applications for luxury retail staff that utilize Bluetooth Low Energy (BLE) proximity telemetry and RFID scanning to identify high-value VIP customers upon entering a store.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          We engineer headless mobile commerce backends integrated directly with enterprise platforms such as <a href="https://www.shopify.com/enterprise" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Shopify Plus</a>, commercetools, and Salesforce Commerce Cloud. For fast-paced urban retail operators managing multi-borough fulfillment, our mobile applications streamline courier coordination, automated order dispatch, and curbside pickup routing. To strengthen your brand identity and craft a compelling visual presence that resonates with sophisticated New York consumers, discover our bespoke <Link href="/services/branding" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">branding services</Link>.
+          We engineer headless mobile commerce backends integrated directly with enterprise platforms such as Shopify Plus, commercetools, and Salesforce Commerce Cloud. For fast-paced urban retail operators managing multi-borough fulfillment, our mobile applications streamline courier coordination, automated order dispatch, and curbside pickup routing. To strengthen your brand identity and craft a compelling visual presence that resonates with sophisticated New York consumers, discover our bespoke <Link href="/services/branding" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">branding services</Link>.
         </p>
 
         {/* Dedicated High-Impact Infographic Banner */}
@@ -296,9 +296,9 @@ export default function NewYorkAppDevelopmentPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#ffa479] block">
                   Strategic Engineering Blueprint
                 </span>
-                <h4 className="text-sm md:text-base font-bold text-white leading-tight">
+                <h3 className="text-sm md:text-base font-bold text-white leading-tight">
                   Mobile App Architecture &amp; Delivery Matrix: New York City
-                </h4>
+                </h3>
               </div>
             </div>
             <span className="text-xs text-[#ffa479] font-medium hidden sm:inline">
@@ -310,10 +310,9 @@ export default function NewYorkAppDevelopmentPage() {
             <div className="rounded-xl overflow-hidden border border-black/10 bg-white">
               <img
                 src="/images/infographics/app-development-new-york.jpg"
-                alt="App Development in New York Technical Architecture Infographic"
+                alt="App Development in New York Technical Architecture Infographic" width={850} height={474}
                 className="w-full h-auto object-contain max-h-[440px] mx-auto hover:scale-[1.01] transition-transform duration-300"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
@@ -329,9 +328,9 @@ export default function NewYorkAppDevelopmentPage() {
         </div>
 
         {/* SECTION 5 */}
-        <h3 id="enterprise-proptech-and-smart-building-iot-conduits" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="enterprise-proptech-and-smart-building-iot-conduits" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Next-Gen PropTech and Smart Building Mobile Conduits for Manhattan Real Estate
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Managing premier commercial skyscrapers and luxury residential towers in Manhattan</strong> requires sophisticated digital coordination. New York&apos;s leading real estate investment trusts (REITs) and property management firms are actively modernizing tenant experiences through bespoke mobile platforms. As an established <strong className="font-semibold text-[#de5e18] tracking-tight">app development company in New York</strong>, we architect PropTech applications that integrate directly with smart building IoT systems, automated HVAC controls, and digital access hardware. We incorporate NFC Apple Wallet passes and Bluetooth credentialing, allowing corporate tenants to unlock turnstiles and elevator banks directly with their mobile devices.
         </p>
@@ -340,9 +339,9 @@ export default function NewYorkAppDevelopmentPage() {
         </p>
 
         {/* SECTION 6 */}
-        <h3 id="ada-title-iii-wcag-accessibility-and-sdny-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="ada-title-iii-wcag-accessibility-and-sdny-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Statutory ADA Title III, SDNY Legal Precedents, and WCAG 2.2 Accessibility
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Under the statutory requirements of Americans with Disabilities Act (ADA) Title III</strong> and New York State human rights laws, digital applications deployed for public and corporate usage must be universally accessible. The U.S. District Court for the Southern District of New York (SDNY) processes a significant volume of federal digital accessibility lawsuits annually. Every mobile product we engineer adheres strictly to <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> specifications, incorporating structured accessibility hierarchies for Apple VoiceOver and Android TalkBack.
         </p>
@@ -351,20 +350,20 @@ export default function NewYorkAppDevelopmentPage() {
         </p>
 
         {/* SECTION 7 */}
-        <h3 id="low-latency-edge-routing-and-carrier-hotel-peering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="low-latency-edge-routing-and-carrier-hotel-peering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           NYIIX Peering, 60 Hudson Carrier Hotels, and Ultra-Low-Latency Edge Hosting
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Delivering instantaneous mobile interaction speeds across the Tri-State area</strong> requires edge caching infrastructure tuned specifically to regional telecommunications carriers, including Verizon 5G Ultra Wideband, AT&amp;T Fiber, and T-Mobile. We deploy cloud backends with direct edge peering at the <a href="https://www.nyiix.net/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">New York International Internet Exchange (NYIIX)</a> and major Manhattan carrier hotels located at 60 Hudson Street and 111 8th Avenue. This localized edge routing guarantees that API payloads and media assets execute within single-digit milliseconds of local end users.
         </p>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-          When building native mobile architectures, we write compiled Swift via <a href="https://developer.apple.com/swift/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Apple Swift</a> and modern <a href="https://kotlinlang.org/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Kotlin</a>, as well as unified cross-platform solutions using <a href="https://reactnative.dev/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">React Native</a>. By pairing compiled native frontends with HTTP/3 multiplexing and regional edge servers, our mobile applications eliminate cold-start lag and network latency. This relentless focus on speed directly enhances your brand reputation and supports customer retention. To capture high-intent organic search queries across New York, combine your mobile apps with our data-driven <Link href="/services/seo" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">SEO services</Link>.
+          When building native mobile architectures, we write compiled Swift via Apple Swift and modern Kotlin, as well as unified cross-platform solutions using React Native. By pairing compiled native frontends with HTTP/3 multiplexing and regional edge servers, our mobile applications eliminate cold-start lag and network latency. This relentless focus on speed directly enhances your brand reputation and supports customer retention. To capture high-intent organic search queries across New York, combine your mobile apps with our data-driven <Link href="/services/seo" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">SEO services</Link>.
         </p>
 
         {/* SECTION 8 */}
-        <h3 id="offline-first-mta-subway-architecture-and-push-pipelines" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
+        <h2 id="offline-first-mta-subway-architecture-and-push-pipelines" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
           Offline-First MTA Subway Transit Architecture and High-Volume Push Pipelines
-        </h3>
+        </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Developing mobile software for New York City demands deep understanding of the local commuter transit environment</strong>. Over five million daily riders travel via the MTA Subway, PATH train, Long Island Rail Road (LIRR), and Metro-North Railroad, where subterranean tunnels cause intermittent cellular dropouts. Our <strong className="font-semibold text-[#de5e18] tracking-tight">mobile app development in New York</strong> integrates resilient offline-first caching architectures utilizing SQLite and encrypted Realm local storage engines paired with background synchronization queues. When users transition between underground stations and street-level connectivity, the application persists user workflows, form inputs, and transactional data locally.
         </p>
@@ -374,12 +373,12 @@ export default function NewYorkAppDevelopmentPage() {
 
         {/* Client Reviews Section */}
         <div className="w-full bg-white border border-black/10 rounded-2xl p-8 shadow-sm text-left mt-10 mb-6">
-          <h3 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
+          <h2 id="reviews" className="text-[22px] font-bold text-black mb-6 uppercase tracking-wide flex items-center gap-2 scroll-mt-28">
             <svg className="w-6 h-6 text-[#de5e18]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             Client Reviews
-          </h3>
+          </h2>
           <div className="flex flex-col gap-8">
             <div className="border-b border-black/5 pb-6">
               <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
@@ -387,7 +386,7 @@ export default function NewYorkAppDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Marcus Vance</p>
@@ -401,7 +400,7 @@ export default function NewYorkAppDevelopmentPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Danielle Roth" className="w-full h-full object-cover object-center grayscale" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Danielle Roth" width={100} height={100} className="w-full h-full object-cover object-center grayscale" />
                 </div>
                 <div>
                   <p className="text-[14px] font-bold text-black">Danielle Roth</p>

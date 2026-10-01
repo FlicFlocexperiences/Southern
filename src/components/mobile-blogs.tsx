@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
+import { getImageDimensions } from "@/lib/image-dimensions";
 import { BlogItem } from "./desktop-blogs";
 
 export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
@@ -69,11 +70,18 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
           className="group flex flex-col w-full text-left cursor-pointer bg-white rounded-[20px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-black/5"
         >
           <div className="w-full relative flex bg-transparent">
-            <img 
-              src={featuredBlog.image} 
-              alt={featuredBlog.title} 
-              className="w-full h-auto block drop-shadow-lg" 
-            />
+            {(() => {
+              const dims = getImageDimensions(featuredBlog.image);
+              return (
+                <img 
+                  src={featuredBlog.image} 
+                  alt={featuredBlog.title} 
+                  width={dims.width}
+                  height={dims.height}
+                  className="w-full h-auto block drop-shadow-lg" 
+                />
+              );
+            })()}
             {/* 3 min read pill */}
             <div className="absolute top-4 left-4 bg-white px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-600">
@@ -164,26 +172,30 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
           <>
             {filteredAndSortedBlogs
               .slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE)
-              .map((blog, index) => (
-            <Link 
-              key={index} 
-              href={`/blogs/${blog.slug}`}
-              className="group flex flex-col w-full text-left cursor-pointer bg-white rounded-[20px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-black/5"
-            >
-              <div className="w-full relative flex bg-transparent">
-                <img 
-                  src={blog.image} 
-                  alt={blog.title} 
-                  className="w-full h-auto block drop-shadow-lg" 
-                />
-                <div className="absolute top-4 left-4 bg-white px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-600">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
-                  </svg>
-                  <span className="text-[12px] font-medium text-gray-700">3 min read</span>
-                </div>
-              </div>
+              .map((blog, index) => {
+                const dims = getImageDimensions(blog.image);
+                return (
+                  <Link 
+                    key={index} 
+                    href={`/blogs/${blog.slug}`}
+                    className="group flex flex-col w-full text-left cursor-pointer bg-white rounded-[20px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-black/5"
+                  >
+                    <div className="w-full relative flex bg-transparent">
+                      <img 
+                        src={blog.image} 
+                        alt={blog.title} 
+                        width={dims.width}
+                        height={dims.height}
+                        className="w-full h-auto block drop-shadow-lg" 
+                      />
+                      <div className="absolute top-4 left-4 bg-white px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-600">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span className="text-[12px] font-medium text-gray-700">3 min read</span>
+                      </div>
+                    </div>
               
               <div className="p-5 flex flex-col">
                 <div className="flex justify-between items-start gap-4 mb-3">
@@ -214,7 +226,8 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
                 </div>
               </div>
             </Link>
-          ))}
+          );
+        })}
           
           {/* Pagination Controls */}
           {Math.ceil(filteredAndSortedBlogs.length / ITEMS_PER_PAGE) > 1 && (

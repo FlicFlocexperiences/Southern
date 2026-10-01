@@ -30,9 +30,9 @@ export function FaqAccordion({ faqs }: FaqAccordionProps) {
           }),
         }}
       />
-      <h3 id="faq" className="text-[26px] md:text-[32px] font-bold text-[#432d1c] tracking-tight mb-6 font-sans scroll-mt-28">
+      <h2 id="faq" className="text-[26px] md:text-[32px] font-bold text-[#432d1c] tracking-tight mb-6 font-sans scroll-mt-28">
         Frequently Asked Questions
-      </h3>
+      </h2>
       <div className="flex flex-col gap-3">
         {faqs.map((faq, index) => {
           const isOpen = openIndex === index;
