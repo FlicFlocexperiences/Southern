@@ -96,7 +96,7 @@ export default function ShopifyAgencyDubaiPage() {
               <div className="bg-white/90 border border-black/10 rounded-xl p-4 text-center shadow-xs">
                 <p className="text-[20px] md:text-[24px] font-black text-[#de5e18] tracking-tight">100+</p>
                 <p className="text-[12px] md:text-[13px] font-bold text-[#432d1c] uppercase tracking-wide mt-1">Stores Built</p>
-                <p className="text-[11px] text-black/60 hidden sm:block mt-0.5">Enterprise & Brands</p>
+                <p className="text-[11px] text-black/60 hidden sm:block mt-0.5">Enterprise &amp; Brands</p>
               </div>
               <div className="bg-white/90 border border-black/10 rounded-xl p-4 text-center shadow-xs">
                 <p className="text-[20px] md:text-[24px] font-black text-[#de5e18] tracking-tight">Official</p>
@@ -111,68 +111,68 @@ export default function ShopifyAgencyDubaiPage() {
               <div className="bg-white/90 border border-black/10 rounded-xl p-4 text-center shadow-xs">
                 <p className="text-[20px] md:text-[24px] font-black text-[#de5e18] tracking-tight">4.2x</p>
                 <p className="text-[12px] md:text-[13px] font-bold text-[#432d1c] uppercase tracking-wide mt-1">AOV Multiplier</p>
-                <p className="text-[11px] text-black/60 hidden sm:block mt-0.5">Tamara & Tabby</p>
+                <p className="text-[11px] text-black/60 hidden sm:block mt-0.5">Tamara &amp; Tabby</p>
               </div>
             </div>
 
             <h2 id="enterprise-shopify-development" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Enterprise Shopify & Shopify Plus Store Development
+              Enterprise Shopify &amp; Shopify Plus Store Development
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              <strong className="font-semibold text-[#de5e18] tracking-tight">The United Arab Emirates is the premier e-commerce capital</strong> of the Middle East, propelled by the Dubai Economic Agenda D33 and dedicated logistics hubs like Dubai CommerCity and Dubai Internet City. In a market where high-net-worth consumers in Downtown Dubai, Business Bay, and Dubai Marina demand effortless digital shopping experiences, standard off-the-shelf templates simply do not suffice. As a leading <strong className="font-semibold text-[#de5e18] tracking-tight">Shopify agency in Dubai</strong>, Southern Edge Marketing engineers custom Shopify and Shopify Plus storefronts tailored specifically for high-growth direct-to-consumer (D2C) and omnichannel enterprise brands. We build bespoke Liquid themes and modular architectures from the ground up, ensuring your digital storefront reflects the luxury, sophistication, and speed that GCC consumers expect.
+              <strong className="font-semibold text-[#de5e18] tracking-tight">The UAE is the top online shopping hub</strong> in the Middle East. Growth is backed by the Dubai Economic Agenda D33. Key logistics hubs like Dubai CommerCity and Dubai Internet City speed up shipping. Shoppers in Downtown Dubai, Business Bay, and Dubai Marina expect fast, smooth online stores. Basic templates cannot deliver this level of quality. As a leading <strong className="font-semibold text-[#de5e18] tracking-tight">Shopify agency in Dubai</strong>, Southern Edge Marketing builds custom Shopify and Shopify Plus stores. We help growing direct-to-consumer (D2C) and retail brands scale online. We build custom Liquid themes from scratch. Every store delivers the speed, style, and reliability that GCC shoppers expect.
             </p>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              Our engineering team unlocks the full power of the Shopify Plus ecosystem. We configure <strong className="font-semibold text-[#de5e18] tracking-tight">Shopify Flow</strong> to automate complex business logic, such as instant VIP customer tiering, automated fraud risk tagging, and inventory re-order alerts. Using <strong className="font-semibold text-[#de5e18] tracking-tight">Shopify Launchpad</strong>, we enable seamless scheduling for high-velocity flash sales during major regional shopping events like White Friday, the Dubai Shopping Festival, and Ramadan. Furthermore, with modern Checkout Extensibility, we integrate custom delivery time slot selectors, emirate-specific address fields, and personalized post-purchase upsells directly within a secure, high-converting checkout pipeline.
+              Our team helps you get the most from Shopify Plus. We use <strong className="font-semibold text-[#de5e18] tracking-tight">Shopify Flow</strong> to automate daily tasks. This includes VIP customer tiers, fraud checks, and low-stock alerts. During big sales like White Friday, the Dubai Shopping Festival, and Ramadan, store traffic surges. We set up <strong className="font-semibold text-[#de5e18] tracking-tight">Shopify Launchpad</strong> to schedule flash sales and product drops with ease. We also use Checkout Extensibility to upgrade your checkout. You can offer custom delivery slots, UAE emirate address fields, and upsells that boost cart value.
             </p>
 
             <h3 id="arabic-rtl-localization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Arabic RTL Localization & GCC Shopper Experience
+              Arabic RTL Localization &amp; GCC Shopper Experience
             </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              <strong className="font-semibold text-[#de5e18] tracking-tight">True localization goes far beyond direct translation.</strong> In the UAE, Saudi Arabia, and across the broader GCC, digital shoppers expect an intuitive, culturally authentic Right-to-Left (RTL) browsing experience. Many global themes suffer from broken layouts, mirrored icons that lose their contextual meaning, and clumsy Arabic typography when translated automatically. Our developers craft true bilingual Shopify storefronts where every visual element, navigation drawer, carousel slider, and checkout field is meticulously mirrored for native Arabic speakers using modern typography stacks like Cairo, Readex Pro, and Tajawal.
+              <strong className="font-semibold text-[#de5e18] tracking-tight">True localization goes beyond simple word translation.</strong> Online shoppers in the UAE, Saudi Arabia, and the wider GCC expect a smooth Right-to-Left (RTL) layout. Standard themes often break when translated into Arabic. Icons can flip the wrong way, and layouts often look messy. Our team builds true bilingual Shopify stores. We mirror every layout part, menu, slider, and checkout field for native Arabic users. We also use clean Arabic fonts like Cairo, Readex Pro, and Tajawal for easy reading.
             </p>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              We implement comprehensive multi-currency switching across AED, SAR, QAR, KWD, BHD, and OMR with automated Geo-IP detection, dynamic rounding rules, and full compliance with UAE Federal Tax Authority (FTA) 5% VAT invoice regulations. With more than 85% of regional e-commerce transactions originating on mobile devices, our <strong className="font-semibold text-[#de5e18] tracking-tight">mobile-first UX architecture</strong> places key navigation elements and instant WhatsApp checkout assistance directly within thumb reach, turning local traffic into loyal repeat buyers. To complement your regional online store, explore our specialized <Link href="/services/web-development/dubai" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">web development company in Dubai</Link> services for multi-platform digital solutions.
+              We set up multi-currency pricing for AED, SAR, QAR, KWD, BHD, and OMR. The store detects visitor location, applies local rounding, and follows UAE FTA 5% VAT tax rules. Over 85% of regional purchases happen on phones. Our <strong className="font-semibold text-[#de5e18] tracking-tight">mobile-first UX design</strong> keeps menus, buttons, and WhatsApp chat support within easy thumb reach. This helps turn local visitors into regular buyers. For wider digital needs, explore our <Link href="/services/web-development/dubai" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">web development company in Dubai</Link> services.
             </p>
 
             <h3 id="gcc-payments-erp-integrations" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Seamless GCC Payment Gateways & ERP Integrations
+              Seamless GCC Payment Gateways &amp; ERP Integrations
             </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              <strong className="font-semibold text-[#de5e18] tracking-tight">Payment preferences in the Middle East</strong> require specialized regional integrations to eliminate checkout friction and maximize average order value (AOV). We integrate leading regional Buy Now, Pay Later (BNPL) providers including <strong className="font-semibold text-[#de5e18] tracking-tight">Tabby and Tamara</strong>, which have been proven to lift conversion rates by up to 35% and increase cart sizes across the GCC. Additionally, we connect your Shopify store to trusted payment gateways such as Network International (N-Genius), Checkout.com, Telr, PayTabs, and Amazon Payment Services (APS), alongside frictionless native 1-click Apple Pay and Google Pay checkouts.
+              <strong className="font-semibold text-[#de5e18] tracking-tight">Middle East shoppers have distinct payment preferences.</strong> Offering the right payment options removes friction at checkout and lifts average order value (AOV). We integrate top Buy Now, Pay Later (BNPL) options like <strong className="font-semibold text-[#de5e18] tracking-tight">Tabby and Tamara</strong>. These options can raise sales by up to 35% across the GCC. We also connect your store with trusted payment gateways. These include Checkout.com, Network International (N-Genius), Telr, PayTabs, and Amazon Payment Services (APS). We also enable fast 1-click payments with Apple Pay and Google Pay.
             </p>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              For brands managing high volumes of orders, backend automation is essential. We build custom private Shopify apps and enterprise API middleware connecting your store directly with regional ERPs and warehouse management systems such as <strong className="font-semibold text-[#de5e18] tracking-tight">Microsoft Dynamics 365, SAP, Oracle NetSuite, and Odoo</strong>. We also automate 3PL logistics and last-mile courier fulfillment with providers like Aramex, Shipa, Fetchr, and DHL Express UAE. This eliminates manual data entry, prevents inventory stockouts, and delivers automated real-time SMS and WhatsApp tracking notifications directly to your customers.
+              Growing stores need reliable backend tools. We build custom Shopify apps and API links that connect your store directly to your ERP. We support systems like <strong className="font-semibold text-[#de5e18] tracking-tight">Microsoft Dynamics 365, SAP, Oracle NetSuite, and Odoo</strong>. We also connect shipping with local couriers like Aramex, Shipa, Fetchr, and DHL Express UAE. This stops manual order entry, prevents out-of-stock orders, and sends live tracking updates to customers via SMS and WhatsApp.
             </p>
 
             <h3 id="headless-shopify-hydrogen" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Headless Shopify Architecture & Next.js Hydrogen
+              Headless Shopify Architecture &amp; Next.js Hydrogen
             </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              <strong className="font-semibold text-[#de5e18] tracking-tight">For forward-thinking brands that demand sub-second load speeds</strong> and complete design freedom, headless commerce represents the ultimate technological advantage. By decoupling the frontend user interface from the Shopify backend engine using <strong className="font-semibold text-[#de5e18] tracking-tight">Shopify Hydrogen</strong> and <strong className="font-semibold text-[#de5e18] tracking-tight">Next.js</strong>, we eliminate the performance bottlenecks associated with legacy theme architectures and excess third-party JavaScript apps.
+              <strong className="font-semibold text-[#de5e18] tracking-tight">Brands that want ultra-fast load speeds</strong> and custom layouts often choose headless commerce. We separate the front storefront from the backend using <strong className="font-semibold text-[#de5e18] tracking-tight">Shopify Hydrogen</strong> and <strong className="font-semibold text-[#de5e18] tracking-tight">Next.js</strong>. This removes extra code and allows pages to load in under a second.
             </p>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              Our headless Shopify architectures communicate with the Shopify Storefront GraphQL API to deliver instant page transitions, custom 3D/AR interactive product viewers, immersive video commerce lookbooks, and personalized subscription portals. Deployed on global edge cloud networks with endpoints across the Middle East, our headless builds guarantee Time to First Byte (TTFB) under 50ms and perfect 100/100 Google Core Web Vitals scores. For businesses interested in native app-like mobile browsing, read our comprehensive guide on <Link href="/explore-more/benefits-of-pwa-for-mobile-users" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">the benefits of Progressive Web Apps (PWAs)</Link>.
+              Our headless stores connect to the Shopify Storefront API. This allows instant page clicks, 3D product previews, video lookbooks, and custom accounts. We host storefronts on cloud edge networks near Middle East users. This delivers fast server response times and strong Core Web Vitals scores. To learn more about app-like web experiences, read our guide on <Link href="/explore-more/benefits-of-pwa-for-mobile-users" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">the benefits of Progressive Web Apps (PWAs)</Link>.
             </p>
 
             <h3 id="ecommerce-cro-growth" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              E-Commerce Conversion Rate Optimization & Growth
+              E-Commerce Conversion Rate Optimization &amp; Growth
             </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              <strong className="font-semibold text-[#de5e18] tracking-tight">Driving qualified traffic to your store is only half the battle;</strong> converting high-intent visitors into repeat buyers is where sustained profitability is forged. Our e-commerce growth team implements continuous, data-driven Conversion Rate Optimization (CRO) frameworks engineered specifically for Middle Eastern consumer psychology. Through rigorous qualitative user heatmapping, session replay analysis, and continuous multivariate A/B testing, we identify and dismantle checkout friction points.
+              <strong className="font-semibold text-[#de5e18] tracking-tight">Bringing visitors to your store is only the first step.</strong> Turning those visitors into paying buyers is what drives profit. Our team uses data-backed conversion rate optimization methods tailored for Middle East shoppers. We study user heatmaps, review buyer paths, and run A/B tests to find and fix drop-off points.
             </p>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              We implement high-impact conversion mechanics including sticky smart add-to-cart bars, tiered bundle volume discounts, dynamic free shipping progress bars customized for all seven UAE emirates, and automated abandoned cart recovery sequences via SMS and email. Furthermore, to fuel your customer acquisition pipeline with high-ranking organic traffic, our team integrates advanced <Link href="/services/seo" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">SEO services</Link> that position your product collections at the very top of Google search results for competitive commercial keywords across Dubai and the GCC.
+              We add proven sales features to your store. These include sticky add-to-cart bars, bundle discounts, free shipping bars for the UAE emirates, and automated cart recovery via SMS and email. To drive steady organic buyers, we also provide advanced <Link href="/services/seo" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">SEO services</Link>. We help your product pages rank high on Google for top search terms across Dubai and the GCC.
             </p>
 
             <h3 id="shopify-plus-migration" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               End-to-End Migration to Shopify Plus Platform
             </h3>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              <strong className="font-semibold text-[#de5e18] tracking-tight">Outgrowing legacy e-commerce platforms</strong> like Magento (Adobe Commerce), WooCommerce, Salesforce Commerce Cloud, or custom PHP monoliths is a natural milestone for scaling enterprises. However, executing a platform migration without losing organic search rankings, historic customer records, or active revenue streams requires surgical engineering precision. Southern Edge Marketing provides zero-downtime migration protocols that safeguard your entire digital business throughout the transition.
+              <strong className="font-semibold text-[#de5e18] tracking-tight">Scaling brands often outgrow older platforms</strong> like Magento, WooCommerce, or custom PHP systems. Moving to Shopify Plus gives your team greater speed and lower upkeep costs. Our migration process protects your sales, customer data, and search rankings with zero downtime.
             </p>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
-              We execute comprehensive data ETL (Extract, Transform, Load) pipelines to safely migrate product catalogs, high-resolution media assets, complex variant structures, historic order histories, customer accounts, and custom discount rules. Crucially, our SEO engineers create automated 1-to-1 301 URL redirect maps and schema parity audits, preserving 100% of your hard-earned organic domain equity and search rankings. Ready to modernize your online retail store? <Link href="/contact" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Contact our Shopify developers today</Link> to schedule your discovery session.
+              We safely transfer your product catalog, media assets, order history, customer accounts, and discount rules. Our team tests every data point to ensure nothing gets lost. Our SEO specialists map exact 301 redirects for every old URL. This preserves your organic rankings and traffic. Ready to upgrade your store? <Link href="/contact" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Contact our Shopify developers today</Link> to plan your project.
             </p>
 
             {/* Client Reviews Section */}
@@ -186,7 +186,7 @@ export default function ShopifyAgencyDubaiPage() {
               <div className="flex flex-col gap-8">
                 <div className="border-b border-black/5 pb-6">
                   <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
-                    "Southern Edge transformed our luxury fragrance business in Dubai Mall. They built a bilingual Arabic and English Shopify Plus storefront integrated seamlessly with Tabby, Tamara, and our SAP ERP in JAFZA. Our mobile conversion rate jumped by 58% within 60 days of launch, and the RTL Arabic typography is flawless."
+                    &quot;Southern Edge transformed our fragrance brand in Dubai Mall. They built a bilingual Arabic and English Shopify Plus store with Tabby, Tamara, and our SAP ERP in JAFZA. Our mobile sales rate rose by 58% in 60 days, and the Arabic text is clean and easy to read.&quot;
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
@@ -200,7 +200,7 @@ export default function ShopifyAgencyDubaiPage() {
                 </div>
                 <div>
                   <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
-                    "Migrating from a legacy Magento 2 setup to Shopify Plus seemed daunting with over 40,000 SKUs and customer records. The Southern Edge team executed the entire migration with zero downtime, flawless 301 redirects that preserved all our Google rankings, and an automated Aramex shipping integration that saves our warehouse team hours every day."
+                    &quot;Migrating 40,000 products from Magento to Shopify Plus seemed difficult. Southern Edge managed the move with zero downtime. Their 301 redirects preserved all our Google rankings, and the Aramex shipping links save our warehouse team hours every day.&quot;
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
@@ -219,7 +219,7 @@ export default function ShopifyAgencyDubaiPage() {
             <div className="w-full bg-[#ede0d4]/80 border border-black/10 rounded-2xl p-6 my-8">
               <h3 className="text-[18px] font-bold text-[#432d1c] mb-3">Explore Related Digital Solutions</h3>
               <p className="text-[15px] text-[#432d1c]/80 leading-relaxed mb-4">
-                Scale your brand across the Middle East with our unified growth services:
+                Grow your brand across the Middle East with our full suite of digital services:
               </p>
               <div className="flex flex-wrap gap-2.5">
                 <Link href="/services/luxury-shopify-agency-uae" className="inline-flex items-center px-3.5 py-1.5 rounded-lg bg-white border border-black/10 text-[13px] font-semibold text-[#432d1c] hover:text-[#de5e18] hover:border-[#de5e18] transition-colors">
@@ -244,23 +244,23 @@ export default function ShopifyAgencyDubaiPage() {
               <FaqAccordion headingTag="h3" faqs={[
                 {
                   "question": "Why should we choose a specialized Dubai Shopify agency?",
-                  "answer": "Operating in the UAE requires bilingual Arabic (RTL) capabilities, deep integration with regional payment gateways like Tabby and Tamara, and optimization for high-AOV GCC mobile shoppers."
+                  "answer": "Selling in the UAE requires bilingual Arabic (RTL) design, local payment options like Tabby and Tamara, and fast mobile experiences for GCC shoppers."
                 },
                 {
                   "question": "Can you migrate our existing WooCommerce or Magento store to Shopify?",
-                  "answer": "Yes, we handle complete, zero-downtime migrations including customer accounts, order history, product catalogs, and 301 SEO redirects to preserve your organic rankings."
+                  "answer": "Yes. We handle full migrations with zero downtime. We move your customer accounts, order history, and products while using 301 redirects to protect your SEO rankings."
                 },
                 {
                   "question": "Do you support Arabic and English bilingual Shopify setups?",
-                  "answer": "Absolutely. We build true multi-language storefronts with proper hreflang tags, seamless RTL switching, and localized currency options."
+                  "answer": "Yes. We build bilingual stores with clean RTL layout switching, correct language tags, and local currency display for all GCC countries."
                 },
                 {
                   "question": "What is the average timeline for launching a custom Shopify Plus store?",
-                  "answer": "Bespoke theme builds typically take 4 to 8 weeks, while complex headless platforms with custom ERP integrations take 8 to 12 weeks."
+                  "answer": "Custom theme builds usually take 4 to 8 weeks. Larger headless builds with custom ERP links take about 8 to 12 weeks."
                 },
                 {
                   "question": "Do you provide post-launch Shopify maintenance and CRO support?",
-                  "answer": "Yes, we provide continuous A/B testing, speed optimizations, app updates, and monthly conversion enhancements."
+                  "answer": "Yes. We provide ongoing support, speed checks, app updates, and monthly conversion testing to help your store grow."
                 }
               ]} />
             </div>
