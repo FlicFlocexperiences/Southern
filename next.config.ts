@@ -6,9 +6,6 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   reactCompiler: true,
   images: {
     remotePatterns: [
@@ -121,6 +118,87 @@ const nextConfig: NextConfig = {
       {
         source: "/projects/oud",
         destination: "/projects/oudqua",
+        permanent: true,
+      },
+      // --- Legacy & Blog Service Slug 301 Redirects ---
+      {
+        source: "/services/branding-and-creative-strategy",
+        destination: "/services/branding",
+        permanent: true,
+      },
+      {
+        source: "/services/branding-and-creative-strategy/:slug*",
+        destination: "/services/branding/:slug*",
+        permanent: true,
+      },
+      {
+        source: "/services/strategic-branding-and-creative-strategy",
+        destination: "/services/branding",
+        permanent: true,
+      },
+      {
+        source: "/services/website-and-app-development",
+        destination: "/services/web-development",
+        permanent: true,
+      },
+      {
+        source: "/services/website-and-app-development/:slug*",
+        destination: "/services/web-development/:slug*",
+        permanent: true,
+      },
+      {
+        source: "/services/custom-software-development",
+        destination: "/services/web-development",
+        permanent: true,
+      },
+      {
+        source: "/services/ui-ux-planning",
+        destination: "/services/web-development",
+        permanent: true,
+      },
+      {
+        source: "/services/application-development",
+        destination: "/services/app-development",
+        permanent: true,
+      },
+      {
+        source: "/services/application-development/:slug*",
+        destination: "/services/app-development/:slug*",
+        permanent: true,
+      },
+      {
+        source: "/services/scalable-application-development-solutions",
+        destination: "/services/app-development",
+        permanent: true,
+      },
+      {
+        source: "/services/photography-and-videography",
+        destination: "/services/social-media-management",
+        permanent: true,
+      },
+      {
+        source: "/services/photography-and-videography/:slug*",
+        destination: "/services/social-media-management/:slug*",
+        permanent: true,
+      },
+      {
+        source: "/services/targeted-social-media-management",
+        destination: "/services/social-media-management",
+        permanent: true,
+      },
+      {
+        source: "/services/lead-generation-sales-campaigns",
+        destination: "/services/social-media-management",
+        permanent: true,
+      },
+      {
+        source: "/services/advanced-search-engine-optimization-services",
+        destination: "/services/seo",
+        permanent: true,
+      },
+      {
+        source: "/digital-marketing-agency-dubai",
+        destination: "/services/web-development/dubai",
         permanent: true,
       },
       // --- Explore-More Legacy Articles 301 Redirects ---
