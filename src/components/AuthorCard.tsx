@@ -14,10 +14,10 @@ export interface AuthorCardProps {
 
 export function AuthorCard({
   name = "Ameet Nangia",
-  role = "Digital Marketer | SEO | Adwords",
+  role = "SEO & Web Lead",
   authorSlug = "/authors/ameet-nangia",
   image = "/assets/team/ameet.png",
-  shortBio = "Founder & Lead Digital Strategist driving performance marketing, technical SEO, and scalable enterprise growth.",
+  shortBio = "Founder and team lead. We build fast sites, rank pages, and help firms grow.",
 }: AuthorCardProps) {
   const dims = getImageDimensions(image);
   return (

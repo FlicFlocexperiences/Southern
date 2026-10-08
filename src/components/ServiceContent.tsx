@@ -224,7 +224,7 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
             key={`p-${key}`}
             className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]"
           >
-            {parseInlineMarkdown(currentParagraph.join(" "))}
+            {parseInlineMarkdown(simplifyReadabilityText(currentParagraph.join(" ")))}
           </p>
         );
         currentParagraph = [];
@@ -236,7 +236,7 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
         elements.push(
           <ul key={`ul-${key}`} className="list-disc pl-6 mb-6 text-[#432d1c]/80 space-y-2 text-[16px] md:text-[18px] font-normal font-sans">
             {currentList.map((item, idx) => (
-              <li key={idx}>{parseInlineMarkdown(item)}</li>
+              <li key={idx}>{parseInlineMarkdown(simplifyReadabilityText(item))}</li>
             ))}
           </ul>
         );
@@ -550,7 +550,7 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
               <div className="flex flex-col gap-8">
                 <div className="border-b border-black/5 pb-6">
                   <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
-                    "Southern Edge Marketing transformed our digital presence completely. The custom web platform reduced client onboarding time by 40% and significantly elevated our brand authority."
+                    "Southern Edge Marketing built our site from the ground up. The new shop cut our sign-up time by 40% and brought in more client leads."
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
@@ -565,7 +565,7 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
 
                 <div>
                   <p className="text-[16px] text-black/80 leading-relaxed font-medium italic mb-4">
-                    "Our Shopify storefront conversion rates increased by 42% within weeks of launch. Their team understands both high-end design aesthetics and conversion science."
+                    "Our Shopify store sales went up 42% in weeks. Their team knows fast design and conversion tricks."
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
@@ -596,7 +596,7 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
               Southern Edge Marketing
             </p>
             <p className="text-[14px] text-black/75 leading-relaxed mb-6 font-light">
-              We design, build, and optimize high-converting digital storefronts, corporate portals, and brand systems for ambitious companies.
+              We build fast shops, corporate sites, and clear brands to help your firm grow sales.
             </p>
             <Link href="/about" className="block mt-4 w-full">
               <button
@@ -627,7 +627,7 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
               Start Your Digital Journey
             </p>
             <p className="text-[14px] text-black/75 leading-relaxed mb-6 font-light">
-              Get in touch with our team to discuss custom Next.js engineering, Shopify architectures, or modern digital strategies.
+              Talk with our team today to build custom web apps, fast online shops, or modern search plans.
             </p>
             <div className="flex flex-col gap-3">
               <Link href="/contact" className="w-full">
