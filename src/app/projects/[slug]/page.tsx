@@ -9,7 +9,7 @@ import { Cta } from "@/components/cta";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { Metadata } from "next";
-import { cleanInternalNofollow } from "@/lib/seo-utils";
+import { cleanInternalNofollow, simplifyHtmlReadability } from "@/lib/seo-utils";
 import { getImageDimensions } from "@/lib/image-dimensions";
 import Link from "next/link";
 import fs from "fs";
@@ -302,7 +302,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
   // Gather images from the project gallery or fallback
   const galleryImages = getProjectImages(slug, project.gallery);
-  const caseStudyHtml = cleanInternalNofollow(getProjectCaseStudyContent(project));
+  const caseStudyHtml = cleanInternalNofollow(simplifyHtmlReadability(getProjectCaseStudyContent(project)));
 
   return (
     <div className="w-full min-h-screen bg-[#fdfaf6] text-[#3e2723]">

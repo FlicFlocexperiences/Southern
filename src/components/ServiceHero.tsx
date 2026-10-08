@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { simplifyReadabilityText } from '@/lib/seo-utils';
 
 interface ServiceHeroProps {
   title: string;
@@ -21,7 +22,7 @@ export function ServiceHero({ title, tagline, breadcrumbTitle }: ServiceHeroProp
         </h1>
 
         <p className="text-[13px] sm:text-[15px] text-white/70 max-w-[600px] leading-relaxed mb-5 font-light">
-          {tagline || "Engineered to convert visitors into customers, not just look good. High-performance, mobile-first growth systems."}
+          {simplifyReadabilityText(tagline || "Engineered to convert visitors into customers, not just look good. High-performance, mobile-first growth systems.")}
         </p>
 
         <Link href="/contact" className="inline-block">

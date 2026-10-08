@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { simplifyReadabilityText } from "@/lib/seo-utils";
 
 interface FaqAccordionProps {
   faqs: { question: string; answer: string }[];
@@ -27,7 +28,7 @@ export function FaqAccordion({ faqs, headingTag = "h2" }: FaqAccordionProps) {
               name: faq.question,
               acceptedAnswer: {
                 "@type": "Answer",
-                text: faq.answer,
+                text: simplifyReadabilityText(faq.answer),
               },
             })),
           }),
@@ -39,6 +40,7 @@ export function FaqAccordion({ faqs, headingTag = "h2" }: FaqAccordionProps) {
       <div className="flex flex-col gap-3">
         {faqs.map((faq, index) => {
           const isOpen = openIndex === index;
+          const displayAnswer = simplifyReadabilityText(faq.answer);
           return (
             <div 
               key={index} 
@@ -57,7 +59,7 @@ export function FaqAccordion({ faqs, headingTag = "h2" }: FaqAccordionProps) {
               </button>
               <div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
                 <p className="px-5 pb-5 text-[16px] text-black/75 leading-relaxed">
-                  {faq.answer}
+                  {displayAnswer}
                 </p>
               </div>
             </div>

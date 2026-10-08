@@ -4,7 +4,7 @@ import React, { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { Blog } from "@/data/blogs";
 import { AuthorCard } from "@/components/AuthorCard";
-import { cleanInternalNofollow } from "@/lib/seo-utils";
+import { cleanInternalNofollow, simplifyHtmlReadability, simplifyReadabilityText } from "@/lib/seo-utils";
 
 interface BlogContentProps {
   blog: Blog;
@@ -86,7 +86,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
       return match;
     });
 
-    return { processedContent: newContent, sections: headings };
+    return { processedContent: simplifyHtmlReadability(newContent), sections: headings };
   }, [blog.content]);
 
   // Track active section on scroll
@@ -343,7 +343,7 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
                             isOpen ? "max-h-[500px] pb-6 opacity-100" : "max-h-0 py-0 opacity-0"
                           }`}
                         >
-                          <p className="text-[15.5px] text-[#432d1c]/80 leading-relaxed font-light">{faq.answer}</p>
+                          <p className="text-[15.5px] text-[#432d1c]/80 leading-relaxed font-light">{simplifyReadabilityText(faq.answer)}</p>
                         </div>
                       </div>
                     );

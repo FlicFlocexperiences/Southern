@@ -11,7 +11,7 @@ import { Metadata } from "next";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 
-import { cleanInternalNofollow, calibrateMetaDescription, calibrateMetaTitle } from "@/lib/seo-utils";
+import { cleanInternalNofollow, calibrateMetaDescription, calibrateMetaTitle, simplifyReadabilityText } from "@/lib/seo-utils";
 
 export const revalidate = 60; // Revalidate every 60 seconds
 
@@ -264,7 +264,7 @@ export default async function BlogSlugPage({ params }: { params: Promise<{ slug:
                 name: faq.question,
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: faq.answer,
+                  text: simplifyReadabilityText(faq.answer),
                 },
               })),
             },

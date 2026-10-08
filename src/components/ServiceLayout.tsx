@@ -3,6 +3,41 @@
 import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { AuthorCard } from "./AuthorCard";
+import { simplifyReadabilityText } from "@/lib/seo-utils";
+
+function processChildren(node: React.ReactNode): React.ReactNode {
+  if (typeof node === "string") {
+    return simplifyReadabilityText(node);
+  }
+  if (typeof node === "number" || typeof node === "boolean" || node === null || node === undefined) {
+    return node;
+  }
+  if (Array.isArray(node)) {
+    return React.Children.map(node, processChildren);
+  }
+  if (React.isValidElement(node)) {
+    const type = node.type;
+    // Retain headings (h1-h6) and links (a, Link) exactly as-is to preserve exact IDs, TOC anchors, and SERP targets
+    if (
+      typeof type === "string" &&
+      /^(h[1-6]|a|script|code|pre|svg|style)$/i.test(type)
+    ) {
+      return node;
+    }
+    if (type === Link || (typeof type === "function" && (type as any).name === "Link")) {
+      return node;
+    }
+
+    if (node.props && "children" in node.props && node.props.children !== undefined) {
+      return React.cloneElement(node, {
+        ...node.props,
+        children: processChildren(node.props.children),
+      });
+    }
+    return node;
+  }
+  return node;
+}
 
 export interface Section {
   id: string;
@@ -205,7 +240,7 @@ export function ServiceLayout({ sections, children }: ServiceLayoutProps) {
         {/* Article Content Container */}
         <article className="w-full bg-white border border-black/8 rounded-xl p-6 md:p-8 lg:p-10 shadow-sm">
           <div className="prose prose-lg max-w-none text-[#432d1c] font-sans text-left">
-            {children}
+            {processChildren(children)}
           </div>
 
           {/* Share Post */}
