@@ -87,6 +87,7 @@ const getLiveBlog = cache(async (slug: string): Promise<Blog | null> => {
 });
 
 const blogMetaTitleMap: Record<string, string> = {
+  "whatsapp-api-and-rcs-sms-in-india": "WhatsApp API & RCS SMS in India",
   "chatgpt-ads-india-guide": "ChatGPT Ads in India: Full Guide",
   "on-page-seo-vs-off-page-seo-guide": "On-Page vs Off-Page SEO: 2026 Guide",
   "best-shopify-agencies-uae": "Best Shopify Agencies in UAE (2026)",
@@ -105,21 +106,22 @@ const blogMetaTitleMap: Record<string, string> = {
 };
 
 const blogMetaDescriptionMap: Record<string, string> = {
-  "chatgpt-ads-india-guide": "Discover how to leverage ChatGPT Ads for Indian markets. Master AI ad formats, audience targeting, ROI metrics, and conversion tactics to scale in India.",
-  "on-page-seo-vs-off-page-seo-guide": "Learn the key differences between on-page and off-page SEO with actionable checklists, ranking factors, and proven strategies to increase search traffic.",
-  "best-shopify-agencies-uae": "Discover the top-rated Shopify and Shopify Plus agencies in UAE for 2026. Compare features, pricing, luxury design expertise, and custom app capabilities.",
+  "whatsapp-api-and-rcs-sms-in-india": "Scale conversions with WhatsApp API & RCS SMS in India. Discover enterprise messaging tactics, rich media features, and practical automations.",
+  "chatgpt-ads-india-guide": "Learn how to use ChatGPT Ads for Indian markets. Master AI ad formats, audience targeting, ROI metrics, and conversion tactics to scale in India.",
+  "on-page-seo-vs-off-page-seo-guide": "Learn the differences between on-page and off-page SEO with actionable checklists, ranking factors, and proven tactics to grow search traffic.",
+  "best-shopify-agencies-uae": "Explore top-rated Shopify and Shopify Plus agencies in UAE for 2026. Compare features, pricing, luxury design expertise, and custom apps.",
   "understanding-color-theory-in-digital-branding": "Discover how color choices affect human psychology, brand recognition, and conversions across digital storefronts and web apps. Explore our guide.",
   "the-importance-of-mobile-first-design-in-2025": "Explore why designing for mobile screens first revolutionized user experience, Core Web Vitals speed, and organic search engine rankings in 2026.",
   "how-ux-writing-shapes-user-behavior": "Discover how microcopy on buttons, labels, and forms guides user decisions, eliminates interface friction, and increases website conversion rates.",
   "the-rise-of-minimalist-web-design": "Learn how minimalist web design eliminates visual clutter, boosts Core Web Vitals page speed, and keeps visitors focused on high-value conversions.",
   "essential-typography-rules-for-readability": "Master line heights, letter spacing, and font hierarchies to ensure maximum content readability, lower bounce rates, and improve user engagement.",
-  "best-website-developer-in-uk": "Looking for the best website developer in the UK? Discover top custom web design, Next.js engineering, and high-converting e-commerce development.",
+  "best-website-developer-in-uk": "Looking for the best website developer in the UK? Discover top custom web design, Next.js engineering, and fast e-commerce development.",
   "shopify-website-vs-custom-coded-website": "Shopify vs custom coded website: Compare costs, scalability, performance, SEO flexibility, and maintenance to choose the best option for your brand.",
-  "website-maintenance-cost-in-india-monthly": "Explore monthly website maintenance costs in India for 2026. Learn about security updates, server upkeep, CMS patches, and support pricing packages.",
-  "how-to-build-a-shopify-website": "Step-by-step guide on how to build a high-converting Shopify website in 2026. Learn theme setup, product catalog optimization, and payment gateways.",
+  "website-maintenance-cost-in-india-monthly": "Explore website maintenance costs in India for 2026. Learn about security updates, server upkeep, CMS patches, and support pricing packages.",
+  "how-to-build-a-shopify-website": "Step-by-step guide on how to build a high-converting Shopify store in 2026. Learn theme setup, product catalog tactics, and payment gateways.",
   "top-15-shopify-clothing-stores-in-india": "Explore the top 15 Shopify clothing and fashion stores in India. Discover modern UI/UX design, mobile commerce tactics, and brand growth strategies.",
-  "best-digital-marketing-company-gurgaon-gurugram": "Discover the best digital marketing company in Gurgaon (Gurugram). Drive scalable business growth with forensic SEO, paid performance, and web design.",
-  "wordpress-vs-shopify-delhi-small-businesses": "WordPress vs Shopify for Delhi small businesses: Compare setup costs, ease of use, e-commerce features, and SEO capabilities to make the best choice.",
+  "best-digital-marketing-company-gurgaon-gurugram": "Find the best digital marketing company in Gurgaon. Drive scalable business growth with forensic SEO, paid performance, and web design.",
+  "wordpress-vs-shopify-delhi-small-businesses": "WordPress vs Shopify for Delhi businesses: Compare setup costs, ease of use, e-commerce features, and SEO capabilities to make the best choice.",
 };
 
 function getCalibratedBlogMeta(slug: string, blog: Blog) {

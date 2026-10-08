@@ -60,9 +60,62 @@ export function cleanInternalNofollow(html: string): string {
 }
 
 /**
+ * Standard Arial 13px character widths matching Screaming Frog & Google SERP snippet calculation.
+ */
+const ARIAL_SERP_WIDTHS: Record<string, number> = {
+  ' ': 3.9, '!': 3.9, '"': 5.0, '#': 7.9, '$': 7.9, '%': 12.7, '&': 9.5, "'": 2.8,
+  '(': 4.7, ')': 4.7, '*': 5.6, '+': 8.3, ',': 3.9, '-': 4.7, '.': 3.9, '/': 3.9,
+  '0': 7.9, '1': 7.9, '2': 7.9, '3': 7.9, '4': 7.9, '5': 7.9, '6': 7.9, '7': 7.9,
+  '8': 7.9, '9': 7.9, ':': 3.9, ';': 3.9, '<': 8.3, '=': 8.3, '>': 8.3, '?': 7.9,
+  '@': 14.4, 'A': 9.5, 'B': 9.5, 'C': 10.3, 'D': 10.3, 'E': 9.5, 'F': 8.6, 'G': 11.0,
+  'H': 10.3, 'I': 3.9, 'J': 7.1, 'K': 9.5, 'L': 7.9, 'M': 11.9, 'N': 10.3, 'O': 11.0,
+  'P': 9.5, 'Q': 11.0, 'R': 10.3, 'S': 9.5, 'T': 8.6, 'U': 10.3, 'V': 9.5, 'W': 13.5,
+  'X': 9.5, 'Y': 9.5, 'Z': 8.6, '[': 4.7, '\\': 3.9, ']': 4.7, '^': 8.3, '_': 7.9,
+  '`': 4.7, 'a': 7.9, 'b': 7.9, 'c': 7.1, 'd': 7.9, 'e': 7.9, 'f': 3.9, 'g': 7.9,
+  'h': 7.9, 'i': 3.2, 'j': 3.2, 'k': 7.1, 'l': 3.2, 'm': 11.9, 'n': 7.9, 'o': 7.9,
+  'p': 7.9, 'q': 7.9, 'r': 4.7, 's': 7.1, 't': 3.9, 'u': 7.9, 'v': 7.1, 'w': 10.3,
+  'x': 7.1, 'y': 7.1, 'z': 7.1, '{': 4.7, '|': 3.9, '}': 4.7, '~': 8.3
+};
+
+/**
+ * Accurately estimates pixel width of snippet text for Screaming Frog SERP audits.
+ */
+export function estimateMetaDescriptionPixels(text: string): number {
+  if (!text) return 0;
+  let width = 0;
+  for (const ch of text) {
+    width += ARIAL_SERP_WIDTHS[ch] || 7.9;
+  }
+  return Math.round(width);
+}
+
+function trimToPixelAndCharLimit(text: string, maxChars = 145, maxPixels = 940): string {
+  let s = text.trim();
+  if (s.length <= maxChars && estimateMetaDescriptionPixels(s) <= maxPixels) {
+    return s.endsWith('.') ? s : `${s}.`;
+  }
+
+  // Check if removing a trailing sentence (e.g. " Learn more!", " Click here.") solves it cleanly
+  const sentenceMatch = s.match(/^(.*[.!?])\s+[^.!?]+[.!?]?$/);
+  if (sentenceMatch && sentenceMatch[1]) {
+    const candidate = sentenceMatch[1].trim();
+    if (candidate.length >= 120 && estimateMetaDescriptionPixels(candidate) <= maxPixels) {
+      return candidate.endsWith('.') ? candidate : `${candidate}.`;
+    }
+  }
+
+  // Word-boundary trimming
+  while ((s.length > maxChars || estimateMetaDescriptionPixels(s + '.') > maxPixels) && s.includes(' ')) {
+    s = s.substring(0, s.lastIndexOf(' ')).trim();
+  }
+  s = s.replace(/[.,;:\-–—\s]+$/, '').trim();
+  return s.endsWith('.') ? s : `${s}.`;
+}
+
+/**
  * Calibrates meta descriptions to strictly satisfy Screaming Frog SEO rules:
  * - Optimal Character Count: 120 - 150 characters (never < 70 chars, never > 155 chars)
- * - Safe Estimated Pixels: 700 - 920 pixels (never < 400 pixels, never > 960 pixels)
+ * - Safe Estimated Pixels: 700 - 940 pixels (never < 400 pixels, never > 960/985 pixels)
  * - Avoids broken fragments and incomplete sentences
  */
 export function calibrateMetaDescription(
@@ -75,52 +128,46 @@ export function calibrateMetaDescription(
     .replace(/\s+/g, " ")
     .trim();
 
-  // If already in the ideal SERP sweet spot (120 to 155 characters)
-  if (cleaned.length >= 120 && cleaned.length <= 155) {
+  // If already in the ideal SERP sweet spot (120 to 150 characters AND <= 940 pixels)
+  if (cleaned.length >= 120 && cleaned.length <= 150 && estimateMetaDescriptionPixels(cleaned) <= 940) {
     return cleaned;
   }
 
-  // If too long (> 155 characters): trim at word boundary safely without breaking words
-  if (cleaned.length > 155) {
-    const trimmed = cleaned.substring(0, 150).replace(/\s+\S*$/, "").trim();
-    return trimmed.endsWith(".") ? trimmed : `${trimmed}.`;
+  // If 120-155+ characters but exceeds 940 pixels or 150 chars: safely trim
+  if (cleaned.length >= 120) {
+    const trimmed = trimToPixelAndCharLimit(cleaned, 145, 940);
+    if (trimmed.length >= 120 && estimateMetaDescriptionPixels(trimmed) <= 940) {
+      return trimmed;
+    }
   }
 
   // If moderately short (70 to 119 characters): expand cleanly with brand value context
   if (cleaned.length >= 70 && cleaned.length < 120) {
     const base = cleaned.replace(/[.]+$/, "").trim();
     const withSuffix = `${base}. Learn proven strategies with Southern Edge Marketing.`;
-    if (withSuffix.length <= 155 && withSuffix.length >= 120) {
+    if (withSuffix.length <= 150 && estimateMetaDescriptionPixels(withSuffix) <= 940 && withSuffix.length >= 120) {
       return withSuffix;
     }
     const shortSuffix = `${base}. Read our expert guide at Southern Edge.`;
-    if (shortSuffix.length <= 155 && shortSuffix.length >= 120) {
+    if (shortSuffix.length <= 150 && estimateMetaDescriptionPixels(shortSuffix) <= 940 && shortSuffix.length >= 120) {
       return shortSuffix;
     }
-    if (withSuffix.length > 155) {
-      const cut = withSuffix.substring(0, 150).replace(/\s+\S*$/, "").trim();
-      return cut.endsWith(".") ? cut : `${cut}.`;
-    }
-    return withSuffix;
+    const cut = trimToPixelAndCharLimit(withSuffix, 145, 940);
+    return cut;
   }
 
   // If very short (< 70 chars) or empty (prevents "Below 400 Pixels" / "Below 70 Characters")
   const primaryTemplate = `Explore our expert guide on ${cleanTitle}. Discover actionable insights, proven marketing frameworks, and growth tactics.`;
-  if (primaryTemplate.length >= 120 && primaryTemplate.length <= 155) {
+  if (primaryTemplate.length >= 120 && primaryTemplate.length <= 150 && estimateMetaDescriptionPixels(primaryTemplate) <= 940) {
     return primaryTemplate;
   }
 
   const secondaryTemplate = `Master ${cleanTitle} with actionable strategies, expert frameworks, and step-by-step insights from Southern Edge Marketing.`;
-  if (secondaryTemplate.length >= 120 && secondaryTemplate.length <= 155) {
+  if (secondaryTemplate.length >= 120 && secondaryTemplate.length <= 150 && estimateMetaDescriptionPixels(secondaryTemplate) <= 940) {
     return secondaryTemplate;
   }
 
-  if (primaryTemplate.length > 155) {
-    const cut = primaryTemplate.substring(0, 150).replace(/\s+\S*$/, "").trim();
-    return cut.endsWith(".") ? cut : `${cut}.`;
-  }
-
-  return `Explore actionable strategies and proven frameworks for ${cleanTitle.substring(0, 45)}. Scale your growth with Southern Edge Marketing.`;
+  return trimToPixelAndCharLimit(`Explore actionable strategies and proven frameworks for ${cleanTitle.substring(0, 45)}. Scale your growth with Southern Edge Marketing.`, 145, 940);
 }
 
 /**
