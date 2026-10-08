@@ -364,179 +364,67 @@ const READABILITY_REPLACEMENTS: [RegExp, string][] = [
   [/\bprospect\b/gi, 'buyer'],
   [/\binitiatives\b/gi, 'projects'],
   [/\binitiative\b/gi, 'project'],
-  // Comprehensive Syllable Reducers (Multi-syllable -> 1 or 2 Syllables)
-  [/\btechnological(ly)?\b/gi, 'tech'],
-  [/\btechnolog(y|ies)\b/gi, 'tech'],
-  [/\barchitectur(e|es|al)\b/gi, 'setup'],
-  [/\binfrastructur(e|es)\b/gi, 'systems'],
-  [/\benterprise(s)?\b/gi, 'firms'],
-  [/\bcommercial(ly)?\b/gi, 'business'],
-  [/\binstitutional(ly)?\b/gi, 'corporate'],
-  [/\boperational(ly)?\b/gi, 'daily'],
-  [/\bcryptographic(ally)?\b/gi, 'secure'],
-  [/\btokenization\b/gi, 'tokens'],
-  [/\bencryption\b/gi, 'safety'],
-  [/\bresilience\b/gi, 'strength'],
-  [/\bresilient\b/gi, 'strong'],
-  [/\bregulatory\b/gi, 'legal'],
-  [/\bcompliance\b/gi, 'rules'],
-  [/\bgovernance\b/gi, 'rules'],
-  [/\baccessibility\b/gi, 'access'],
-  [/\baccessible\b/gi, 'open'],
-  [/\bdiscrimination\b/gi, 'bias'],
-  [/\bcompatibility\b/gi, 'fit'],
-  [/\btelecommunications\b/gi, 'telecom'],
-  [/\btelecommunication\b/gi, 'telecom'],
-  [/\bauthentication\b/gi, 'logins'],
-  [/\bdistribution\b/gi, 'shipping'],
-  [/\bfulfillment\b/gi, 'shipping'],
-  [/\bprocurement\b/gi, 'buying'],
-  [/\bhierarch(y|ies)\b/gi, 'ranks'],
-  [/\bauthoritative\b/gi, 'trusted'],
-  [/\bauthorit(y|ies)\b/gi, 'trust'],
-  [/\bcompetitive(ly)?\b/gi, 'market'],
-  [/\benvironment(s)?\b/gi, 'space'],
-  [/\bextraordinary\b/gi, 'huge'],
-  [/\bvelocit(y|ies)\b/gi, 'speed'],
-  [/\bfortress(es)?\b/gi, 'hubs'],
-  [/\bvulnerabilit(y|ies)\b/gi, 'flaws'],
-  [/\bdependenc(y|ies)\b/gi, 'tools'],
-  [/\bintegration(s)?\b/gi, 'links'],
-  [/\btransactional\b/gi, 'sales'],
-  [/\btransaction(s)?\b/gi, 'deals'],
-  [/\bpurchasing\b/gi, 'buying'],
-  [/\bmonolithic\b/gi, 'old'],
-  [/\bsubstantially\b/gi, 'greatly'],
-  [/\bsubstantial\b/gi, 'large'],
-  [/\bdiscerning\b/gi, 'smart'],
-  [/\bmethodolog(y|ies)\b/gi, 'methods'],
-  [/\bfunctionalit(y|ies)\b/gi, 'features'],
-  [/\bspecification(s)?\b/gi, 'specs'],
-  [/\bresponsiveness\b/gi, 'speed'],
-  [/\bcomprehensive(ly)?\b/gi, 'complete'],
-  [/\bsophisticated\b/gi, 'modern'],
-  [/\bcapabilit(y|ies)\b/gi, 'skills'],
-  [/\bpredominant(ly)?\b/gi, 'mostly'],
-  [/\bdemographic(s)?\b/gi, 'audience'],
-  [/\binstantaneous(ly)?\b/gi, 'instantly'],
-  [/\bexponential(ly)?\b/gi, 'rapidly'],
-  [/\bsynchronization\b/gi, 'syncing'],
-  [/\bcountermeasure(s)?\b/gi, 'shields'],
-  [/\bcustomization(s)?\b/gi, 'options'],
-  [/\bconglomerate(s)?\b/gi, 'big firms'],
-  [/\bconsultation(s)?\b/gi, 'consults'],
-  [/\bconsulting\b/gi, 'advisory'],
-  [/\bprospective\b/gi, 'future'],
-  [/\binitiative(s)?\b/gi, 'plans'],
-  [/\binnovation(s)?\b/gi, 'tools'],
-  [/\bmeasurable\b/gi, 'clear'],
-  [/\bobjective(s)?\b/gi, 'goals'],
-  [/\bphotograph(y|er|ers)?\b/gi, 'photos'],
-  [/\bmonetization\b/gi, 'earnings'],
-  [/\boptimization(s)?\b/gi, 'gains'],
-  [/\boptimizing\b/gi, 'boosting'],
-  [/\boptimize(s|d)?\b/gi, 'boosts'],
-  [/\bconversion(s)?\b/gi, 'sales'],
-  [/\becosystem(s)?\b/gi, 'market'],
-  [/\bdecoupled\b/gi, 'split'],
-  [/\binteraction(s)?\b/gi, 'actions'],
+  [/\binfluential\b/gi, 'leading'],
+  [/\btechnological\b/gi, 'tech'],
+  [/\btechnologies\b/gi, 'tech tools'],
+  [/\btechnology\b/gi, 'tech'],
+  [/\bextraordinary\b/gi, 'strong'],
+  [/\bcommercial velocity\b/gi, 'market speed'],
+  [/\boperational friction\b/gi, 'delays'],
+  [/\bmarket expansion\b/gi, 'growth'],
+  [/\bcloud-native applications\b/gi, 'cloud apps'],
+  [/\bcloud-native application\b/gi, 'cloud app'],
+  [/\bcloud-native\b/gi, 'cloud'],
+  [/\bresilient digital infrastructure\b/gi, 'reliable digital setups'],
+  [/\bresilient digital systems\b/gi, 'reliable digital systems'],
+  [/\bresilient\b/gi, 'reliable'],
+  [/\binstitutional client acquisition\b/gi, 'client growth'],
+  [/\bclient acquisition\b/gi, 'client growth'],
+  [/\bsensitive transaction pipelines\b/gi, 'secure payment flows'],
+  [/\btransaction pipelines\b/gi, 'payment flows'],
+  [/\bsustainable market dominance\b/gi, 'lasting market lead'],
+  [/\bmarket dominance\b/gi, 'market lead'],
+  [/\bdependable technical precision\b/gi, 'proven tech quality'],
+  [/\btechnical precision\b/gi, 'tech quality'],
+  [/\bundisputed digital authority\b/gi, 'strong market presence'],
+  [/\bdigital authority\b/gi, 'market presence'],
+  [/\bnear-instantaneous\b/gi, 'instant'],
+  [/\bpresentation layer\b/gi, 'frontend'],
   [/\bextraneous\b/gi, 'extra'],
-  [/\bbottleneck(s)?\b/gi, 'delays'],
-  [/\bpreservation\b/gi, 'saving'],
-  [/\btransformation(s)?\b/gi, 'shifts'],
-  [/\bimplementation(s)?\b/gi, 'setups'],
-  [/\binvestor(s)?\b/gi, 'backers'],
-  [/\borchestrate(s|d|ing)?\b/gi, 'runs'],
-  [/\bjurisdiction(s)?\b/gi, 'regions'],
+  [/\bdependencies\b/gi, 'tools'],
+  [/\bdependency\b/gi, 'tool'],
+  [/\binstitutional-grade\b/gi, 'enterprise'],
+  [/\bcyber resilience\b/gi, 'cyber safety'],
+  [/\bregulatory alignment\b/gi, 'compliance'],
+  [/\bstatutory oversight\b/gi, 'regulations'],
+  [/\bstatutory obligation\b/gi, 'legal duty'],
   [/\bstatutory\b/gi, 'legal'],
-  [/\bobligation(s)?\b/gi, 'duties'],
-  [/\binterception\b/gi, 'leaks'],
-  [/\banomalous\b/gi, 'odd'],
-  [/\bconsignment(s)?\b/gi, 'shipments'],
-  [/\bfulfillment\b/gi, 'shipping'],
-  [/\bheadquarters\b/gi, 'main hub'],
-  [/\bconsistently\b/gi, 'always'],
-  [/\binterconnected\b/gi, 'linked'],
-  [/\bmodernization\b/gi, 'updates'],
-  [/\bdeliverable(s)?\b/gi, 'outputs'],
-  [/\bdocumentation\b/gi, 'docs'],
-  [/\btransparency\b/gi, 'openness'],
-  [/\butilization\b/gi, 'use'],
-  [/\butiliz(e|es|ed|ing)\b/gi, 'use'],
-  [/\bleverag(e|es|ed|ing)\b/gi, 'use'],
-  [/\bfacilitat(e|es|ed|ing)\b/gi, 'help'],
-  [/\bincorporat(e|es|ed|ing)\b/gi, 'include'],
-  [/\bsubsequently\b/gi, 'later'],
-  [/\bfurthermore\b/gi, 'also'],
-  [/\badditionally\b/gi, 'also'],
-  [/\bconsequently\b/gi, 'so'],
-  [/\bsignificant(ly)?\b/gi, 'major'],
-  [/\bexceptional(ly)?\b/gi, 'great'],
-  [/\bexperienced\b/gi, 'proven'],
-  [/\bprofessional(ly)?\b/gi, 'expert'],
-  [/\bmanagement\b/gi, 'lead'],
-  [/\bdevelopment\b/gi, 'build'],
-  [/\bapplication(s)?\b/gi, 'apps'],
-  [/\bmarketing\b/gi, 'growth'],
-  [/\bsolution(s)?\b/gi, 'tools'],
-  [/\bstrateg(y|ies)\b/gi, 'plans'],
-  [/\bstrategic(ally)?\b/gi, 'smart'],
-  [/\breputation\b/gi, 'name'],
-  [/\bcommunication(s)?\b/gi, 'contact'],
-  [/\brelationship(s)?\b/gi, 'ties'],
-  [/\bacquisition(s)?\b/gi, 'growth'],
-  [/\binnovative\b/gi, 'fresh'],
-  [/\bdifferentiator(s)?\b/gi, 'edge'],
-  [/\bdifferentiation\b/gi, 'edge'],
-  [/\bsustainable\b/gi, 'steady'],
-  [/\bsustainability\b/gi, 'staying power'],
-  [/\bmonetiz(e|es|ed|ing)\b/gi, 'earn from'],
-  [/\bnavigat(e|es|ed|ing)\b/gi, 'guide'],
-  [/\bparameter(s)?\b/gi, 'limits'],
-  [/\baccelerat(e|es|ed|ing)\b/gi, 'speed up'],
-  [/\bdefensive\b/gi, 'safe'],
-  [/\bimpervious\b/gi, 'immune'],
-  [/\bunauthorized\b/gi, 'unapproved'],
-  [/\bmandate(s)?\b/gi, 'rules'],
-  [/\bresidency\b/gi, 'home'],
-  [/\bmitigat(e|es|ed|ing|ion)\b/gi, 'cut'],
-  [/\bstreamlin(e|es|ed|ing)\b/gi, 'speed up'],
-  [/\bextranet(s)?\b/gi, 'portals'],
-  [/\binventor(y|ies)\b/gi, 'stock'],
-  [/\bassistive\b/gi, 'helper'],
-  [/\binterconnection(s)?\b/gi, 'links'],
-  [/\bdeterministic\b/gi, 'clear'],
-  [/\bcontinuous(ly)?\b/gi, 'ongoing'],
-  [/\bdistributor(s)?\b/gi, 'sellers'],
-  [/\bwholesaler(s)?\b/gi, 'sellers'],
-  [/\bwholesale\b/gi, 'bulk'],
-  [/\bexecutive(s)?\b/gi, 'leaders'],
-  [/\bdemonstrated\b/gi, 'proven'],
-  [/\bspecialization(s)?\b/gi, 'focus'],
-  [/\bspecialt(y|ies)\b/gi, 'focus'],
-  [/\bconfidential(ly)?\b/gi, 'private'],
-  [/\bmediation\b/gi, 'talks'],
-  [/\bpartnership(s)?\b/gi, 'ties'],
-  [/\bresonance\b/gi, 'appeal'],
-  [/\boperation(s)?\b/gi, 'work'],
-  [/\bindustrial\b/gi, 'factory'],
-  [/\bindustr(y|ies)\b/gi, 'field'],
-  [/\bcorporate\b/gi, 'business'],
-  [/\bsector(s)?\b/gi, 'field'],
-  [/\baudience(s)?\b/gi, 'buyers'],
-  [/\bcustom-coded\b/gi, 'custom'],
-  [/\bcustom-built\b/gi, 'custom'],
-  [/\bpurpose-built\b/gi, 'made'],
-  [/\bhigh-performance\b/gi, 'fast'],
-  [/\bhigh-converting\b/gi, 'top-selling'],
-  [/\bhigh-velocity\b/gi, 'fast'],
-  [/\bultra-fast\b/gi, 'fast'],
-  [/\bultra-low-latency\b/gi, 'fast'],
-  [/\brevenue-driven\b/gi, 'growth'],
-  [/\bperformance-driven\b/gi, 'proven'],
-  [/\bresults-driven\b/gi, 'proven'],
-  [/\bdata-driven\b/gi, 'smart'],
-  [/\bclient-centric\b/gi, 'caring']
+  [/\bunauthorized interception\b/gi, 'data leaks'],
+  [/\banomalous behaviors\b/gi, 'threats'],
+  [/\banomalous\b/gi, 'unusual'],
+  [/\buncompromising dedication\b/gi, 'strong commitment'],
+  [/\bfrictionless\b/gi, 'smooth'],
+  [/\btransactional architectures\b/gi, 'payment setups'],
+  [/\btransactional architecture\b/gi, 'payment setup'],
+  [/\btransactional platforms\b/gi, 'payment portals'],
+  [/\btransactional platform\b/gi, 'payment portal'],
+  [/\bcommercial landscape\b/gi, 'business sector'],
+  [/\bprocurement departments\b/gi, 'purchasing teams'],
+  [/\bprocurement department\b/gi, 'purchasing team'],
+  [/\bprocurement\b/gi, 'purchasing'],
+  [/\bassistive technologies\b/gi, 'assistive tools'],
+  [/\bassistive technology\b/gi, 'assistive tool'],
+  [/\btelecommunications infrastructure\b/gi, 'telecom networks'],
+  [/\btelecommunications\b/gi, 'telecom'],
+  [/\binterconnection\b/gi, 'network links'],
+  [/\binterconnections\b/gi, 'network links'],
+  [/\bdeterministic\b/gi, 'reliable'],
+  [/\bcontinuous conversion rate optimization\b/gi, 'ongoing conversion growth'],
+  [/\bcontinuous conversion optimization\b/gi, 'ongoing conversion growth'],
+  [/\bconversion rate optimization\b/gi, 'conversion growth'],
+  [/\bconversion optimization\b/gi, 'conversion growth'],
+  [/\barchitectural consultation\b/gi, 'tech consult'],
+  [/\barchitectural discovery\b/gi, 'initial discovery']
 ];
 
 const READABILITY_SPLITS: [RegExp, string][] = [
@@ -624,89 +512,6 @@ const READABILITY_SPLITS: [RegExp, string][] = [
 ];
 
 /**
- * Splits sentences longer than maxWords to ensure Screaming Frog Average Words Per Sentence
- * stays strictly between 8 and 13 words.
- */
-function breakLongSentences(text: string, maxWords = 14): string {
-  if (!text || typeof text !== "string") return text;
-
-  let current = text;
-  for (let pass = 0; pass < 2; pass++) {
-    const sentenceRegex = /([^.!?]+[.!?]+|\S[^.!?]*$)/g;
-    const sentences = current.match(sentenceRegex) || [current];
-    let changed = false;
-
-    const processed = sentences.map((sent) => {
-      const trimmed = sent.trim();
-      if (!trimmed) return sent;
-
-      const words = trimmed.split(/\s+/);
-      if (words.length <= maxWords) return sent;
-
-      // 1. Semicolons
-      if (trimmed.includes("; ")) {
-        changed = true;
-        return trimmed.split("; ").map((part, idx) => {
-          const clean = part.trim();
-          if (idx === 0) return clean.endsWith(".") ? clean : `${clean}.`;
-          const cap = clean.charAt(0).toUpperCase() + clean.slice(1);
-          return cap.endsWith(".") ? cap : `${cap}.`;
-        }).join(" ");
-      }
-
-      // 2. Comma + conjunction or participle
-      const conjMatch = trimmed.match(/,\s+(and|but|which|while|so|where|with|as|because|enabling|allowing|helping|generating)\s+/i);
-      if (conjMatch && conjMatch.index) {
-        changed = true;
-        const idx = conjMatch.index;
-        const first = trimmed.slice(0, idx).trim();
-        let second = trimmed.slice(idx + conjMatch[0].length).trim();
-        const conj = conjMatch[1].toLowerCase();
-
-        if (conj === "which" || conj === "enabling" || conj === "allowing" || conj === "helping" || conj === "generating") {
-          second = `This ${second}`;
-        } else {
-          second = second.charAt(0).toUpperCase() + second.slice(1);
-        }
-
-        const p1 = first.endsWith(".") ? first : `${first}.`;
-        const p2 = second.endsWith(".") ? second : `${second}.`;
-        return `${p1} ${p2}`;
-      }
-
-      // 3. Comma near midpoint (between 4 words and length - 4 words)
-      const commas = [];
-      let cIdx = -1;
-      while ((cIdx = trimmed.indexOf(", ", cIdx + 1)) !== -1) {
-        const wordsBefore = trimmed.slice(0, cIdx).trim().split(/\s+/).length;
-        if (wordsBefore >= 4 && wordsBefore <= words.length - 4) {
-          commas.push({ index: cIdx, diff: Math.abs(wordsBefore - words.length / 2) });
-        }
-      }
-
-      if (commas.length > 0) {
-        changed = true;
-        commas.sort((a, b) => a.diff - b.diff);
-        const splitAt = commas[0].index;
-        const first = trimmed.slice(0, splitAt).trim();
-        let second = trimmed.slice(splitAt + 2).trim();
-        second = second.charAt(0).toUpperCase() + second.slice(1);
-        const p1 = first.endsWith(".") ? first : `${first}.`;
-        const p2 = second.endsWith(".") ? second : `${second}.`;
-        return `${p1} ${p2}`;
-      }
-
-      return sent;
-    });
-
-    current = processed.join(" ");
-    if (!changed) break;
-  }
-
-  return current;
-}
-
-/**
  * Transforms complex sentences and industry jargon into accessible, plain English
  * to ensure high Flesch Reading Ease scores on Screaming Frog crawls.
  */
@@ -724,11 +529,9 @@ export function simplifyReadabilityText(text: string): string {
     s = s.replace(re, rep);
   }
 
-  s = breakLongSentences(s, 14);
-
-  let result = s.replace(/\.\./g, ".").replace(/\s+/g, " ").trim();
-  if (hasLeadingSpace) result = " " + result;
-  if (hasTrailingSpace) result = result + " ";
+  let result = s.replace(/\.\./g, '.').replace(/\s+/g, ' ').trim();
+  if (hasLeadingSpace) result = ' ' + result;
+  if (hasTrailingSpace) result = result + ' ';
   return result;
 }
 

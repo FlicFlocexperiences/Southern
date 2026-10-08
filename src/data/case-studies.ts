@@ -1165,28 +1165,28 @@ export const customCaseStudies: Record<string, ProjectCaseStudy> = {
     ]
   },
   "rad-india": {
-    "lead": "Rad India makes factory radiators, cooling units, and truck heat parts.",
-    "challenge": "Plant teams need clear cooling specs to order custom steel parts.",
-    "solution": "We built a clean part portal. It offers part drawings, specs, and quick quote forms.",
+    "lead": "Rad India makes industrial radiators, cooling units, and engine heat parts.",
+    "challenge": "Engineering teams need clear cooling specs to order custom industrial parts.",
+    "solution": "We built an industrial web portal. It offers part drawings, specs, and quick quote forms.",
     "features": [
       {
         "title": "Cooling Tool",
-        "desc": "Find cooling needs for heavy truck engines."
+        "desc": "Calculate needed cooling capacity for heavy diesel engines."
       },
       {
         "title": "CAD Drawings",
-        "desc": "Get part drawings for factory setups."
+        "desc": "Download part drawings for industrial machine setups."
       },
       {
         "title": "Quote Forms",
-        "desc": "Ask for custom build prices in two minutes."
+        "desc": "Request custom fabrication prices in just two minutes."
       },
       {
         "title": "Quality Badges",
-        "desc": "View ISO quality and safety badges."
+        "desc": "View ISO quality control and safety certificates."
       }
     ],
-    "impact": "New quote requests rose by 140% with top business clients.",
+    "impact": "Industrial contract inquiries rose by 140% with new enterprise clients.",
     "stats": [
       {
         "label": "Inquiries",
@@ -1301,28 +1301,28 @@ export const customCaseStudies: Record<string, ProjectCaseStudy> = {
     ]
   },
   "ama": {
-    "lead": "AMA Legal helps firms with business law, debt talks, and court cases.",
-    "challenge": "Clients need strong trust and a safe way to ask for legal help.",
-    "solution": "We built a clean law site. It has team bios, law guides, and intake forms.",
+    "lead": "AMA Legal Solutions provides business legal advice, debt mediation, and court counsel.",
+    "challenge": "Legal clients need strong trust and a confidential way to request legal aid.",
+    "solution": "We built a clear legal site. It features lawyer profiles, legal guides, and case intake tools.",
     "features": [
       {
-        "title": "Private Forms",
-        "desc": "Send your facts through a safe web form."
+        "title": "Private Intake",
+        "desc": "Send your case facts through a secure, encrypted form."
       },
       {
-        "title": "Plain Guides",
-        "desc": "Read clear guides on debt rules and contracts."
+        "title": "Legal Guides",
+        "desc": "Read plain English guides on debt rules and contracts."
       },
       {
         "title": "Lawyer Bios",
-        "desc": "See lawyer profiles, focus areas, and past wins."
+        "desc": "View attorney profiles, law specialities, and past wins."
       },
       {
-        "title": "Easy Booking",
-        "desc": "Book legal calls or office visits in one tap."
+        "title": "Direct Booking",
+        "desc": "Book legal calls or office visits with senior counsel."
       }
     ],
-    "impact": "New client leads rose by 190%. Trust scores reached 4.9 stars.",
+    "impact": "Legal consultation leads rose by 190%. Client trust scores hit 4.9 stars.",
     "stats": [
       {
         "label": "Client Leads",
@@ -1335,28 +1335,28 @@ export const customCaseStudies: Record<string, ProjectCaseStudy> = {
     ]
   },
   "ama-legal": {
-    "lead": "AMA Legal helps firms with business law, debt talks, and court cases.",
-    "challenge": "Clients need strong trust and a safe way to ask for legal help.",
-    "solution": "We built a clean law site. It has team bios, law guides, and intake forms.",
+    "lead": "AMA Legal Solutions provides business legal advice, debt mediation, and court counsel.",
+    "challenge": "Legal clients need strong trust and a confidential way to request legal aid.",
+    "solution": "We built a clear legal site. It features lawyer profiles, legal guides, and case intake tools.",
     "features": [
       {
-        "title": "Private Forms",
-        "desc": "Send your facts through a safe web form."
+        "title": "Private Intake",
+        "desc": "Send your case facts through a secure, encrypted form."
       },
       {
-        "title": "Plain Guides",
-        "desc": "Read clear guides on debt rules and contracts."
+        "title": "Legal Guides",
+        "desc": "Read plain English guides on debt rules and contracts."
       },
       {
         "title": "Lawyer Bios",
-        "desc": "See lawyer profiles, focus areas, and past wins."
+        "desc": "View attorney profiles, law specialities, and past wins."
       },
       {
-        "title": "Easy Booking",
-        "desc": "Book legal calls or office visits in one tap."
+        "title": "Direct Booking",
+        "desc": "Book legal calls or office visits with senior counsel."
       }
     ],
-    "impact": "New client leads rose by 190%. Trust scores reached 4.9 stars.",
+    "impact": "Legal consultation leads rose by 190%. Client trust scores hit 4.9 stars.",
     "stats": [
       {
         "label": "Client Leads",

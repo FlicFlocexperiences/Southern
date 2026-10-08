@@ -836,23 +836,23 @@ export const articles: Article[] = [
     faqs: [
       {
         question: "How does custom luxury photography directly increase Average Order Value (AOV)?",
-        answer: "Great photos show the true value and quality of your goods. They help buyers trust your shop. When buyers see crisp details, they feel safe spending more on higher-value sets."
+        answer: "High-end editorial imagery elevates the perceived craftsmanship, exclusivity, and prestige of your products. This justifies premium price points, builds tangible buyer confidence, and encourages clients to purchase higher-tier SKUs and complementary bundles."
       },
       {
         question: "What is the key difference between e-commerce packshots and editorial campaign shoots?",
-        answer: "Store shots are clean photos on plain backdrops that show size, color, and texture. Story shots show models using goods in real-world scenes to spark deep desire."
+        answer: "E-commerce packshots are clean, color-accurate studio captures designed for product pages to showcase exact construction, dimensions, and texture. Editorial campaigns are thematic, lifestyle-driven shoots focused on narrative storytelling, aspirational settings, and emotional brand resonance."
       },
       {
         question: "How do photographers handle highly reflective surfaces like luxury jewelry and timepieces?",
-        answer: "Shooting shiny goods takes soft lights, glare shields, and dark cards to shape highlights. We blend multiple shots so every facet stays razor sharp."
+        answer: "Photographing reflective items requires complex multi-point diffused light tents, polarizing filters, magnetic black-and-white flag setups to shape specular highlights, and precision focus-stacking to ensure razor-sharp focus across every facet."
       },
       {
         question: "How many deliverable assets are typically produced during a multi-day luxury photoshoot?",
-        answer: "A full multi-day brand shoot gives you 75 to 150 finished photos. These include site banners, close-up texture views, catalog shots, and print-ready files."
+        answer: "A comprehensive multi-day brand shoot typically produces 75 to 150+ color-graded, high-resolution assets, including wide website hero banners, macro texture details, multi-angle product catalog shots, video micro-clips, and print-ready editorial compositions."
       },
       {
         question: "Why is color management and monitor calibration so critical for luxury e-commerce?",
-        answer: "Mismatched colors cause shoppers to send goods back. We tune our screens and lights so web photos match the true colors of leather, gems, and cloth in person."
+        answer: "Color discrepancies between online images and delivered physical products are the primary cause of luxury e-commerce returns. Hardware-calibrated color workflows guarantee exact chromatic accuracy across silk, leather, precious gemstones, and fine metals."
       }
     ]
   },

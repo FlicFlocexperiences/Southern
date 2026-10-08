@@ -58,39 +58,39 @@ export default function AmeetNangiaAuthorPage() {
     "sameAs": [
       "https://www.linkedin.com/in/ameet-nangia-b231b864/"
     ],
-    "description": "Ameet guides digital growth and marketing. He has led sales teams in construction and tech. His main skills are SEO, paid ads, brand reach, and new client leads."
+    "description": "A Digital Marketer with hands-on Business Development Management with a demonstrated history of working in the construction industry. Skilled in Digital Strategy, Search Engine Optimization (SEO), Communication, Influencer Marketing, and Lead Generation."
   };
 
   const expertiseAreas = [
     {
-      title: "Search Optimization (SEO)",
-      description: "We run tech audits and build top links. Our content helps you reach real buyers.",
-      tag: "Search Rank"
+      title: "Search Engine Optimization (SEO)",
+      description: "Running technical audits, building quality backlinks, and optimizing search content to capture high-intent enterprise buyers.",
+      tag: "Organic Growth"
     },
     {
-      title: "Google Ads & Paid Search",
-      description: "We run paid ads with smart bids. Clear tracking helps you gain more sales.",
-      tag: "Paid Ads"
+      title: "Google AdWords & PPC Performance",
+      description: "Managing high-return paid search ads with smart bidding, clear conversion tracking, and multi-market sales funnels.",
+      tag: "Paid Acquisition"
     },
     {
-      title: "Growth Strategy & Sales",
-      description: "We connect smart brand design with clear sales steps. This lifts lifetime value.",
-      tag: "Growth Plans"
+      title: "Digital Strategy & Business Development",
+      description: "Connecting creative brand design with clear sales pipelines to grow revenue and lift customer lifetime value.",
+      tag: "Growth Strategy"
     },
     {
-      title: "Brand Reach & Trust",
-      description: "We craft clear brand stories and creator ties. This builds strong buyer trust.",
-      tag: "Brand Trust"
+      title: "Influencer Marketing & Brand Authority",
+      description: "Crafting genuine brand stories and creator partnerships that build trust and long-term market authority.",
+      tag: "Brand Resonance"
     },
     {
       title: "B2B Lead Generation",
-      description: "We build fast landing pages and CRM flows. They bring steady client leads.",
-      tag: "Client Leads"
+      description: "Building reliable lead systems, automated CRM workflows, and high-converting digital landing funnels.",
+      tag: "Revenue Operations"
     },
     {
-      title: "Enterprise Growth",
-      description: "We have a proven history of driving sales in construction and trade.",
-      tag: "Industry Skills"
+      title: "Industry & Enterprise Marketing",
+      description: "Proven track record of driving commercial sales and business growth across industrial, construction, and corporate sectors.",
+      tag: "Sector Expertise"
     }
   ];
 
@@ -188,7 +188,7 @@ export default function AmeetNangiaAuthorPage() {
                   About
                 </h2>
                 <p className="text-[16px] sm:text-[17px] text-[#432d1c]/90 leading-[1.7] font-normal mb-8 max-w-[760px]">
-                  Ameet guides digital growth and marketing. He has led sales teams in construction and tech. His main skills are SEO, paid ads, brand reach, and new client leads.
+                  A Digital Marketer with hands-on Business Development Management with a demonstrated history of working in the construction industry. Skilled in Digital Strategy, Search Engine Optimization (SEO), Communication, Influencer Marketing, and Lead Generation.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-4">
@@ -232,14 +232,14 @@ export default function AmeetNangiaAuthorPage() {
             <div className="flex flex-col items-start mb-8">
               <p className="font-medium text-[20px] text-black uppercase tracking-tight">
                 <span className="text-[#de5e18]">[</span>
-                <span className="mx-3 tracking-[-0.48px]">Core Skills</span>
+                <span className="mx-3 tracking-[-0.48px]">Core Capabilities</span>
                 <span className="text-[#de5e18]">]</span>
               </p>
               <h2 className="text-[32px] sm:text-[40px] font-bold text-[#432d1c] mt-2">
-                Core Work and Focus Areas
+                Areas of Strategic Specialization
               </h2>
               <p className="text-[16px] text-black/70 max-w-[720px] mt-2">
-                We use search data, clean web code, and proven plans to help bold firms grow.
+                Leveraging data intelligence, search engine architecture, and hands-on business growth methodologies to scale category-defining brands.
               </p>
             </div>
 
@@ -273,13 +273,13 @@ export default function AmeetNangiaAuthorPage() {
           {/* Editorial Leadership & Agency Mission */}
           <div className="bg-white border border-black/10 rounded-[24px] p-8 sm:p-10 shadow-sm text-left mb-12">
             <h2 className="text-[26px] sm:text-[32px] font-bold text-[#432d1c] mb-4">
-              Our Vision and Team Leadership
+              Strategic Vision &amp; Editorial Leadership
             </h2>
             <p className="text-[16px] sm:text-[17px] text-[#432d1c]/90 leading-[1.8] font-normal mb-6">
-              Ameet Nangia leads our digital teams at Southern Edge Marketing. He guides our web builds, SEO audits, and ad plans. His goal is to bring real sales gains for every client.
+              As the Founder of Southern Edge Marketing, Ameet Nangia guides our digital marketing, web engineering, and conversion strategies. With deep experience in business growth, industrial marketing, and e-commerce, his framework is built on delivering clear ROI for every client.
             </p>
             <p className="text-[16px] sm:text-[17px] text-[#432d1c]/90 leading-[1.8] font-normal mb-8">
-              Under his lead, our team builds fast Next.js websites and smart search setups. We help growing firms in India, Dubai, the US, and the UK win more business online.
+              Under his direction, Southern Edge Marketing builds fast web applications, headless architectures, and modern SEO systems. These solutions help ambitious businesses across India, Dubai, the United States, and the United Kingdom gain a lasting competitive edge.
             </p>
 
             <div className="border-t border-black/10 pt-6 flex flex-wrap items-center justify-between gap-4 text-sm text-black/70">

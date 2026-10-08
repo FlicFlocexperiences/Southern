@@ -20,7 +20,7 @@ export const DesktopFooter = () => {
           />
         </Link>
         <p className="text-[17px] lg:text-[19px] text-black/75 max-w-2xl leading-relaxed font-normal">
-          We build fast web apps and smart plans that help bold firms grow.
+          Building high-performance digital platforms, custom websites, and revenue-driven growth strategies that help ambitious businesses dominate their industry.
         </p>
       </div>
 

@@ -153,16 +153,16 @@ function getProjectCaseStudyContent(project: Project): string {
     return `
       <p class="lead">${study.lead}</p>
       
-      <h2>The Main Goal for ${project.title}</h2>
+      <h2>The Strategic Challenge for ${project.title}</h2>
       <p>${study.challenge}</p>
       
-      <h2>Our Plan for ${project.title}</h2>
+      <h2>The Southern Edge Solution for ${project.title}</h2>
       <p>${study.solution}</p>
       
-      <h2>Key Features for ${project.title}</h2>
+      <h2>Key Innovations for ${project.title}</h2>
       ${featuresList}
       
-      <h2>Real Results for ${project.title}</h2>
+      <h2>Measurable Impact for ${project.title}</h2>
       <p>${study.impact}</p>
     `;
   }

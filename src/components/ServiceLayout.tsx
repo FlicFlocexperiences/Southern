@@ -292,7 +292,7 @@ export function ServiceLayout({ sections, children }: ServiceLayoutProps) {
             Southern Edge Marketing
           </p>
           <p className="text-[14px] text-black/75 leading-relaxed mb-6 font-light">
-            We build fast web stores, apps, and brands for growing firms.
+            We design, build, and optimize high-converting digital storefronts, corporate portals, and brand systems for ambitious companies.
           </p>
           <Link href="/about" className="block mt-4 w-full">
             <button
@@ -316,10 +316,10 @@ export function ServiceLayout({ sections, children }: ServiceLayoutProps) {
 
         <div className="bg-white border border-black/10 rounded-xl p-6 shadow-sm text-left">
           <p className="text-[18px] font-bold text-black mb-3 uppercase tracking-wide">
-            Start Your Growth Plan
+            Start Your Digital Journey
           </p>
           <p className="text-[14px] text-black/75 leading-relaxed mb-6 font-light">
-            Talk with our team about Next.js apps, Shopify shops, or growth plans.
+            Get in touch with our team to discuss custom Next.js engineering, Shopify architectures, or modern digital strategies.
           </p>
           <div className="flex flex-col gap-3">
             <Link href="/contact" className="w-full">

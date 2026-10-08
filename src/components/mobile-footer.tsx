@@ -140,7 +140,7 @@ export const MobileFooter = () => {
           />
         </Link>
         <p className="text-[14px] leading-relaxed text-black/75">
-          We build fast web apps and smart plans that help bold firms grow.
+          Building brands, websites, and growth strategies that help ambitious businesses stand out, scale faster, and stay ahead in a digital-first world.
         </p>
       </div>
 
