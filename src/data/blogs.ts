@@ -267,7 +267,7 @@ export const blogs: Blog[] = [
   <div class="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
     <div>
       <span class="text-[#de5e18] font-bold text-xs uppercase tracking-widest block mb-1">Featured Growth Partner</span>
-      <h3 class="text-xl font-bold text-white mb-2">Looking for a Premier Shopify Plus Agency in Dubai?</h3>
+      <p class="text-xl font-bold text-white mb-2">Looking for a Premier Shopify Plus Agency in Dubai?</p>
       <p class="text-white/80 text-sm max-w-xl">Southern Edge Marketing designs bespoke luxury Shopify stores with bilingual Arabic RTL support, sub-50ms TTFB speed, and high-converting checkout flows.</p>
     </div>
     <a href="/services/web-development" class="shrink-0 inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-[#ffa479] to-[#de5e18] text-white font-semibold text-sm hover:shadow-lg transition-all">

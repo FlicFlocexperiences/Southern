@@ -34,7 +34,7 @@ const TeamCard = ({ name, role1, role2, image, linkedinUrl, heightClass = "h-[32
     )}
 
     <div className="relative z-10 p-6 lg:p-8 w-full transition-transform duration-500 group-hover:translate-y-[-4px]">
-      <h4 className="text-[#0f0f0f] text-[28px] lg:text-[32px] font-medium leading-tight mb-1">{name}</h4>
+      <h3 className="text-[#0f0f0f] text-[28px] lg:text-[32px] font-medium leading-tight mb-1">{name}</h3>
       <p className="text-[#0f0f0f]/80 text-[16px] lg:text-[18px] leading-snug">{role1}</p>
       {role2 && <p className="text-[#0f0f0f]/70 text-[13px] lg:text-[14px] leading-snug">{role2}</p>}
     </div>
