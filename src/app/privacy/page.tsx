@@ -33,48 +33,48 @@ export default function PrivacyPolicy() {
         <h1 className="text-4xl md:text-5xl font-bold text-[#0f0f0f] mb-6">Privacy Policy</h1>
         
         <p className="text-lg text-[#828282] mb-12">
-          Learn how Southern Edge Marketing collects, manages, processes, and protects your corporate data inputs. Last revised: May 19, 2026.
+          Learn how Southern Edge Marketing collects, uses, and safeguards your data. Last revised: May 19, 2026.
         </p>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">Our Commitment to Your Privacy</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            At Southern Edge Marketing, trust is the foundation of our engineering partnerships. We build state-of-the-art digital storefronts, Next.js applications, and custom enterprise portals with security as a native, non-negotiable architectural layer. This Privacy Policy documents how we process customer information when you use our website, custom client dashboards, or consult with our development team.
+            At Southern Edge Marketing, trust is central to our client partnerships. We build modern online stores, Next.js applications, and custom business portals with built-in data security. This Privacy Policy explains how we handle your information when you visit our site, use our client tools, or speak with our team.
           </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">1. Information We Collect</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            At Southern Edge Marketing, we collect information that you directly provide to us when interacting with our platform, submitting project inquiries, or engaging with our digital resources. This includes personally identifiable information such as your name, corporate email address, business telephone number, and company name. We also automatically gather standard analytical metadata, including device type, operating system, IP address, referral sources, and browse duration, to evaluate application performance and speed configurations.
+            We collect the information you share directly with us when requesting a quote or contacting our team. This includes your name, work email address, phone number, and company name. We also collect standard site metrics such as your browser type, device, IP address, and pages visited to help us keep our website fast and reliable.
           </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">2. How We Use Your Information</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            The gathered datasets are processed exclusively to optimize your business engagement and deliver state-of-the-art web products. We use your data to respond to customized software requests, send project updates, process transactions, perform system diagnostic analyses, and improve client-side interactivity on our Next.js platforms. We do not sell, rent, or lease your private personal details to third-party brokers under any circumstances.
+            We use your data only to deliver our digital services and support your business goals. This includes answering your questions, sending project updates, processing payments, and improving our Next.js platforms. We do not sell, rent, or trade your personal information to third parties.
           </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">3. Data Retention & Security</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            We implement robust enterprise-grade security protocols, including Transport Layer Security (TLS/HTTPS) encryption, to safeguard all data inputs. Your personal database records are retained only for as long as necessary to fulfill the legal requirements of your custom service agreements or to resolve technical audits. Client source files, design layouts, and production code bases are securely isolated and protected from unauthorized external access.
+            We protect your data using industry-standard security practices, including TLS/HTTPS encryption. We keep your records only as long as needed to fulfill your project agreement or meet legal standards. All client design files, project data, and source code are securely stored with restricted access.
           </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">4. Third-Party Integrations</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            Our services utilize standard third-party tools (such as Google Analytics, Vercel performance monitoring, and secure payment processing gateways) to maintain site scalability. These tools handle data strictly in accordance with their respective compliance policies. If you interact with our integrated WhatsApp community linkages, your phone number and chat identifiers are governed directly by WhatsApp's native security policies.
+            We use trusted third-party tools like Google Analytics, Vercel analytics, and secure payment providers to run our platform smoothly. These services process data in line with their own strict privacy standards. If you message us via WhatsApp, your contact details follow WhatsApp's privacy rules.
           </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">5. Contact & Regulatory Rights</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            You hold the absolute right to request access to, correction of, or erasure of any personal records stored within our databases. If you wish to execute your data protection rights, or if you have questions regarding this Privacy Policy statement, please contact our data compliance officer directly at info@southernedgemarketing.com. We will respond to and address your requests within 10 business days.
+            You have the right to view, update, or delete the personal data we hold about you. To request changes or ask questions about this policy, email us at info@southernedgemarketing.com. Our compliance team will review and respond to your request within 10 business days.
           </p>
         </section>
 

@@ -64,32 +64,32 @@ export default function AmeetNangiaAuthorPage() {
   const expertiseAreas = [
     {
       title: "Search Engine Optimization (SEO)",
-      description: "Architecting data-driven technical audits, authoritative link graphs, and Generative Engine Optimization (GEO) strategies that capture high-intent enterprise search traffic.",
+      description: "Running technical audits, building quality backlinks, and optimizing search content to capture high-intent enterprise buyers.",
       tag: "Organic Growth"
     },
     {
       title: "Google AdWords & PPC Performance",
-      description: "Managing high-efficiency paid acquisition campaigns with advanced bid strategy modeling, conversion tracking, and multi-market funnel optimization.",
+      description: "Managing high-return paid search ads with smart bidding, clear conversion tracking, and multi-market sales funnels.",
       tag: "Paid Acquisition"
     },
     {
       title: "Digital Strategy & Business Development",
-      description: "Bridging creative branding with quantifiable commercial pipelines to scale enterprise revenue and maximize customer lifetime value.",
+      description: "Connecting creative brand design with clear sales pipelines to grow revenue and lift customer lifetime value.",
       tag: "Growth Strategy"
     },
     {
       title: "Influencer Marketing & Brand Authority",
-      description: "Building influential brand narratives and strategic partnerships that cultivate authentic market resonance and industry leadership.",
+      description: "Crafting genuine brand stories and creator partnerships that build trust and long-term market authority.",
       tag: "Brand Resonance"
     },
     {
       title: "B2B Lead Generation",
-      description: "Engineering predictable client acquisition engines, automated CRM pipelines, and conversion-optimized digital funnels.",
+      description: "Building reliable lead systems, automated CRM workflows, and high-converting digital landing funnels.",
       tag: "Revenue Operations"
     },
     {
       title: "Industry & Enterprise Marketing",
-      description: "Demonstrated history of driving commercial growth and business development across complex industrial, construction, and corporate sectors.",
+      description: "Proven track record of driving commercial sales and business growth across industrial, construction, and corporate sectors.",
       tag: "Sector Expertise"
     }
   ];
@@ -276,10 +276,10 @@ export default function AmeetNangiaAuthorPage() {
               Strategic Vision &amp; Editorial Leadership
             </h2>
             <p className="text-[16px] sm:text-[17px] text-[#432d1c]/90 leading-[1.8] font-normal mb-6">
-              As the Founder of Southern Edge Marketing, Ameet Nangia directs the agency&apos;s technical marketing methodologies, search intelligence, and conversion engineering frameworks. With substantial background spanning high-stakes industrial business development, construction sector expansion, and international direct-to-consumer funnels, his strategic framework is built on deterministic ROI rather than superficial metrics.
+              As the Founder of Southern Edge Marketing, Ameet Nangia guides our digital marketing, web engineering, and conversion strategies. With deep experience in business growth, industrial marketing, and e-commerce, his framework is built on delivering clear ROI for every client.
             </p>
             <p className="text-[16px] sm:text-[17px] text-[#432d1c]/90 leading-[1.8] font-normal mb-8">
-              Under his guidance, Southern Edge Marketing crafts enterprise web applications, headless architectures, and Generative Engine Optimization (GEO) blueprints that equip companies across India, Dubai, the United States, and the United Kingdom with durable competitive advantages.
+              Under his direction, Southern Edge Marketing builds fast web applications, headless architectures, and modern SEO systems. These solutions help ambitious businesses across India, Dubai, the United States, and the United Kingdom gain a lasting competitive edge.
             </p>
 
             <div className="border-t border-black/10 pt-6 flex flex-wrap items-center justify-between gap-4 text-sm text-black/70">

@@ -43,17 +43,17 @@ function SeoContent() {
     <section className="px-6 py-12 md:pt-12 md:pb-24 max-w-7xl mx-auto text-[#1a1a1a]">
       <h2 className="text-3xl md:text-5xl font-bold mb-6">Expert Digital Marketing Blog</h2>
       <p className="mb-8 md:text-lg leading-relaxed max-w-4xl">
-        Welcome to the Southern Edge digital marketing agency blog. Our industry experts share proven SEO strategy tips, modern web design insights, and effective digital marketing tactics. We focus on giving you the knowledge needed to stay competitive. Whether you want custom website design advice or local SEO best practices, our detailed articles provide real value. Learn how to optimize your online presence and reach your target audience more effectively.
+        Welcome to the Southern Edge digital marketing blog. Our team shares practical SEO tips, web design insights, and growth advice. We focus on giving you clear steps to stay ahead. Whether you need custom web design tips or local SEO guides, our articles provide real value. Learn how to build a faster website and reach more buyers online.
       </p>
 
       <h3 className="text-2xl md:text-4xl font-bold mb-6">Actionable SEO Strategy Tips</h3>
       <p className="mb-8 md:text-lg leading-relaxed max-w-4xl">
-        A successful online presence requires more than just good looks. Our web design insights show you how to build fast and engaging sites. We pair this with deep dives into technical search engine optimization. You will find clear guides on how a tailored SEO strategy increases organic traffic. Our team breaks down complex digital marketing concepts into steps you can actually use.
+        A great website needs speed and clarity. Our design guides show you how to build fast and helpful user experiences. We pair this with clear advice on search optimization. You will find straightforward steps to grow organic search traffic and turn visitors into customers.
       </p>
 
       <h3 className="text-xl md:text-3xl font-bold mb-6">Driving Your Business Growth</h3>
       <p className="md:text-lg leading-relaxed max-w-4xl">
-        Our goal is to share reliable business growth tips for modern brands. Every post on our digital marketing agency blog is crafted to help you succeed. Discover how professional web design and targeted SEO campaigns can transform your revenue. Dive into our latest resources and start building a stronger digital footprint today.
+        We share reliable growth tips for ambitious brands. Every post on our blog is written to help your business win. Learn how custom web development and targeted SEO can grow your revenue. Explore our latest guides and start building a stronger digital footprint today.
       </p>
     </section>
   );

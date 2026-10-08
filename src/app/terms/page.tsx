@@ -33,48 +33,48 @@ export default function Terms() {
         <h1 className="text-4xl md:text-5xl font-bold text-[#0f0f0f] mb-6">Terms & Conditions</h1>
         
         <p className="text-lg text-[#828282] mb-12">
-          Read the corporate regulations, intellectual property protections, and service agreements governing our software partnership. Last revised: May 19, 2026.
+          Review the terms, ownership rules, and service policies for working with Southern Edge Marketing. Last revised: May 19, 2026.
         </p>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">Service Agreement Principles</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            Welcome to the development services platform of <span className="font-bold">Southern Edge Marketing</span>. By contracting our team for custom Next.js development, e-commerce engineering, headless architectures, or user experience design, you consent to comply with the terms set forth below. These terms regulate our delivery standards, code handoff conditions, payment structures, and legal rights.
+            Welcome to <span className="font-bold">Southern Edge Marketing</span>. When you hire our team for Next.js development, e-commerce stores, headless web apps, or UI/UX design, you agree to these terms. These rules explain our work standards, code handoff, payment terms, and client rights.
           </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">1. Agreement to Terms</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            By accessing our website, contracting our software development services, or registering for client portals provided by <span className="font-bold">Southern Edge Marketing</span>, you agree to be fully bound by these Terms & Conditions. If you do not agree to all provisions within this document, you are explicitly prohibited from using our site and services and must cease interaction immediately.
+            By visiting our site, using our client tools, or hiring <span className="font-bold">Southern Edge Marketing</span> for digital services, you agree to these Terms & Conditions. If you do not agree with any part of this agreement, please stop using our website and services right away.
           </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">2. Intellectual Property Rights</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            Unless otherwise specified in custom project agreement riders, all creative assets, proprietary source codebases, visual elements, graphics, user interface designs, and architectural frameworks engineered by <span className="font-bold">Southern Edge Marketing</span> are our exclusive intellectual property. Client deliverables (such as compiled final HTML, CSS, custom Next.js builds, or Shopify configurations) are transferred to client ownership only upon receipt of complete and final project milestone payments.
+            Unless stated in your custom service contract, all design files, source code, graphics, and interface assets created by <span className="font-bold">Southern Edge Marketing</span> remain our intellectual property until paid in full. Once you complete all final project payments, full ownership of the completed deliverables (like HTML, CSS, custom Next.js builds, or Shopify setups) transfers directly to you.
           </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">3. Payment Milestones & Fees</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            Client projects are executed under standard milestone-based payment schedules. Retainers and deposit fees are strictly non-refundable and serve to reserve engineering bandwidth. Subsequent payments must be settled within 14 calendar days of milestone completion. Late payments are subject to a standard 1.5% compounding monthly surcharge, and we reserve the right to temporarily suspend project hosting or active support in the event of default.
+            We structure client projects around clear milestones. Upfront deposits and retainer fees are non-refundable and hold your spot on our development calendar. You must settle subsequent milestone invoices within 14 calendar days. Invoices paid late may incur a 1.5% monthly late fee, and we may pause active site support or hosting until balances are settled.
           </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">4. Limitation of Liability</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            Under no circumstances shall <span className="font-bold">Southern Edge Marketing</span>, its developers, directors, or partners be liable for any indirect, consequential, special, or punitive damages—including lost business profits, data leakage, hosting service disruptions, or hardware malfunctions—arising from the use of our services or developed code bases. Our absolute maximum cumulative liability shall not exceed the total fees paid by the client under their respective service contract.
+            <span className="font-bold">Southern Edge Marketing</span> and its team are not liable for any indirect, special, or consequential damages. This includes lost profits, third-party server outages, or hardware failures related to using our software. In all cases, our total liability is limited to the actual amount you paid us under your service agreement.
           </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">5. Dispute Resolution & Governing Law</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            These Terms & Conditions are governed by and construed in accordance with the laws of the jurisdiction of our corporate registration. Any legal disputes, claims, or regulatory disagreements arising from these provisions shall be settled exclusively through binding corporate arbitration before courts of competent jurisdiction, with the prevailing party entitled to recover reasonable legal and attorney fees.
+            These Terms & Conditions follow the laws of our registered business location. If any dispute arises under this agreement, both parties agree to resolve it through binding arbitration in courts with proper jurisdiction. The prevailing party can recover reasonable legal fees.
           </p>
         </section>
 

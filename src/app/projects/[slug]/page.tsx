@@ -176,26 +176,26 @@ function getProjectCaseStudyContent(project: Project): string {
   const services = project.services || "Digital Strategy, UI/UX Architecture, Custom Engineering";
 
   return `
-    <p class="lead">${project.title} is a premier ${category.toLowerCase()} platform engineered by Southern Edge to deliver a high-converting digital home tailored for ${project.client || project.title}.</p>
+    <p class="lead">Southern Edge engineered a modern ${category.toLowerCase()} platform for ${project.client || project.title} to deliver a fast, high-converting digital experience.</p>
     
     <h2>Project Objectives for ${project.title}</h2>
-    <p>${project.description || `Delivering an industry-leading digital presence with streamlined user journeys, lightning-fast rendering, and intuitive navigation.`}</p>
+    <p>${project.description || `Delivering a modern digital presence with fast page loads, clear user journeys, and intuitive navigation.`}</p>
     
     <h2>Delivered Architecture for ${project.title}</h2>
-    <p>Our multidisciplinary team developed a customized technical stack including ${services}. Every layout and interactive flow was purpose-built to guide visitors seamlessly from initial curiosity to verified conversion.</p>
+    <p>Our team built a custom technical stack including ${services}. Every layout is designed to guide visitors smoothly from discovery to conversion.</p>
     
     <h2>Key Highlights for ${project.title}</h2>
     <div style="margin-bottom: 1.25rem;">
       <h3 style="font-size: 1.15rem; font-weight: 700; color: #3e2723; margin-bottom: 0.25rem;">✦ Custom Brand Aesthetic</h3>
-      <p style="margin-top: 0; color: #5d4037;">A bespoke design language reflecting the distinct identity and premium stature of ${project.client || project.title}.</p>
+      <p style="margin-top: 0; color: #5d4037;">A clean visual design reflecting the distinct identity of ${project.client || project.title}.</p>
     </div>
     <div style="margin-bottom: 1.25rem;">
-      <h3 style="font-size: 1.15rem; font-weight: 700; color: #3e2723; margin-bottom: 0.25rem;">✦ Frictionless Mobile Checkout & Intake</h3>
-      <p style="margin-top: 0; color: #5d4037;">Thumb-friendly UI patterns and minimal step transitions engineered for high mobile conversion rates.</p>
+      <h3 style="font-size: 1.15rem; font-weight: 700; color: #3e2723; margin-bottom: 0.25rem;">✦ Fast Mobile Experience</h3>
+      <p style="margin-top: 0; color: #5d4037;">Thumb-friendly navigation and streamlined steps built for high mobile conversions.</p>
     </div>
     
     <h2>Measurable Outcomes for ${project.title}</h2>
-    <p>The platform achieved exceptional performance metrics with sub-second page loads, significant reductions in bounce rates, and a measurable increase in qualified client inquiries.</p>
+    <p>The platform delivers fast sub-second page loads, lower bounce rates, and steady growth in qualified client inquiries.</p>
   `;
 }
 

@@ -28,19 +28,19 @@ export const metadata: Metadata = {
 const servicesFaqs = [
   {
     question: "Do you offer custom web development or template-based solutions?",
-    answer: "We specialize in custom web development tailored to your specific business needs. We avoid cookie-cutter templates to ensure your digital presence is unique, scalable, and perfectly aligned with your brand identity."
+    answer: "We build custom websites suited to your business goals. We avoid generic templates so your site stays fast, unique, and true to your brand."
   },
   {
     question: "Can you handle both design and development for an app?",
-    answer: "Yes, we provide end-to-end app development services. Our team includes expert UI/UX designers and skilled developers who work together seamlessly to deliver high-performance, user-centric mobile and web applications."
+    answer: "Yes, we handle complete app development from concept to launch. Our UI/UX designers and engineers build fast, easy-to-use mobile and web apps."
   },
   {
     question: "What does your performance marketing service include?",
-    answer: "Our performance marketing covers a wide range of channels including Google Ads, Facebook & Instagram Ads, and LinkedIn Ads. We focus on data-driven strategies, continuous optimization, and maximizing your Return on Ad Spend (ROAS)."
+    answer: "Our performance marketing covers Google, Meta (Facebook and Instagram), and LinkedIn Ads. We focus on clean data, continuous testing, and strong return on ad spend."
   },
   {
     question: "How do you measure the success of an SEO campaign?",
-    answer: "We track key metrics such as organic traffic growth, keyword rankings, conversion rates, and overall domain authority. You'll receive comprehensive monthly reports detailing our progress and the tangible impact on your business."
+    answer: "We track organic traffic, keyword positions, conversion rates, and lead quality. You receive clear monthly reports showing real business progress."
   }
 ];
 

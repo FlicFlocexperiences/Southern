@@ -8,875 +8,2248 @@ export interface ProjectCaseStudy {
 }
 
 export const customCaseStudies: Record<string, ProjectCaseStudy> = {
-  // --- 1. ADORNO CASA / ADORNA CASA ---
   "adorno-casa": {
-    lead: "Adorno Casa represents the pinnacle of bespoke luxury living, crafting custom Italian-grade upholstery, modular sectional sofas, and architectural interior pieces for discerning homeowners and designers.",
-    challenge: "High-ticket custom furniture often suffers in e-commerce due to the inability to convey tactile fabric textures, dimensional scale, and finish customizations on mobile screens.",
-    solution: "We engineered an editorial-first digital showroom featuring ultra-high-definition material zoom, dynamic 3D dimension guides, and a seamless VIP concierge booking pipeline for in-studio consultations.",
-    features: [
-      { title: "Material & Texture Visualizer", desc: "Interactive fabric selector displaying velvet, linen, and top-grain leather under varying room lighting." },
-      { title: "Architectural Room Planner", desc: "Interactive dimension preview assisting clients and interior architects in calculating spatial fit." },
-      { title: "VIP Concierge Pipeline", desc: "Direct WhatsApp & private showroom scheduler connecting high-intent buyers with lead interior stylists." },
-      { title: "Instant Spec Sheet Generator", desc: "One-click PDF tear sheet download for interior designers specifying pieces for client projects." }
+    "lead": "Adorno Casa crafts custom sofas and chairs. They build modern furniture for homes.",
+    "challenge": "Selling custom furniture online is hard. Buyers want to test fabrics and check sizes first.",
+    "solution": "We built a clean online store. It has 3D room guides and fast studio visit booking.",
+    "features": [
+      {
+        "title": "Fabric Viewer",
+        "desc": "See velvet, linen, and leather in clear room light."
+      },
+      {
+        "title": "Room Planner",
+        "desc": "Check dimensions to see how sofas fit in your space."
+      },
+      {
+        "title": "Studio Booking",
+        "desc": "Book direct visits with design stylists in one tap."
+      },
+      {
+        "title": "Spec Sheet",
+        "desc": "Download instant spec sheets for interior projects."
+      }
     ],
-    impact: "Resulted in a 140% surge in high-value bespoke inquiries and reduced sample request turnaround time from 4 days to instant digital confirmation."
+    "impact": "Custom consultation bookings grew by 140%. Sample requests became instant.",
+    "stats": [
+      {
+        "label": "Bookings",
+        "value": "+140%"
+      },
+      {
+        "label": "Sample Speed",
+        "value": "Instant"
+      }
+    ]
   },
   "adorna-casa": {
-    lead: "Adorna Casa is an ultra-luxury bespoke furniture and interior atelier crafting architectural sofas, handcrafted armchairs, and premium living concepts.",
-    challenge: "Conveying the bespoke nature of customized modular living systems and tactile Italian fabrics online without friction.",
-    solution: "We developed an architectural visual portfolio with 3D fabric selectors, room layout guides, and private interior stylist consultation pipelines.",
-    features: [
-      { title: "Tactile Fabric Inspector", desc: "High-resolution macro previews of top-grain leathers, bouclé, and velvet upholstery options." },
-      { title: "Modular Sofa Configurator", desc: "Interactive module selector enabling custom L-shape, U-shape, and sectional layouts." },
-      { title: "Designer Trade Portal", desc: "Dedicated portal for architects and interior designers to request customized project quotes." },
-      { title: "Virtual Studio Tour", desc: "High-definition video walkthrough of the craftsmanship atelier and wood joinery workshops." }
+    "lead": "Adorna Casa makes luxury custom sofas and handcrafted chairs for modern living rooms.",
+    "challenge": "Selling fine furniture online takes trust. Shoppers want to see fabric textures and real scale.",
+    "solution": "We built a sleek digital showroom. It has 3D fabric tools and room layout guides.",
+    "features": [
+      {
+        "title": "Fabric Preview",
+        "desc": "View clean leather and velvet textures in high detail."
+      },
+      {
+        "title": "Sofa Builder",
+        "desc": "Build custom sectional layouts for your living room."
+      },
+      {
+        "title": "Trade Portal",
+        "desc": "Get fast project quotes for interior designers."
+      },
+      {
+        "title": "Studio Tour",
+        "desc": "Watch video tours of the wood and fabric craft shops."
+      }
     ],
-    impact: "Increased high-ticket residential furniture consultation bookings by 125%."
+    "impact": "Luxury furniture consultation bookings rose by 125%.",
+    "stats": [
+      {
+        "label": "Consultations",
+        "value": "+125%"
+      },
+      {
+        "label": "User Trust",
+        "value": "High"
+      }
+    ]
   },
-
-  // --- 2. HER STORIES ---
   "her-stories": {
-    lead: "Her Stories is a modern women's hormonal wellness and clean supplementation collective engineered to dismantle wellness taboos with clinically proven, clean-label botanical solutions.",
-    challenge: "The health & wellness industry is saturated with unverified claims, causing skepticism among health-conscious women seeking trusted, transparent ingredient breakdowns.",
-    solution: "We built an educational, science-backed direct-to-consumer store with interactive symptom-to-solution diagnostic quizzes, medical board endorsement ribbons, and automated recurring subscription flows.",
-    features: [
-      { title: "Symptom-to-Routine Quiz", desc: "A 4-step diagnostic questionnaire recommending tailored hormonal balancing supplement stacks." },
-      { title: "Clinical Transparency Modal", desc: "Interactive ingredient cards detailing clinical trial citations, purity certifications, and bioavailability ratings." },
-      { title: "Smart Subscription Portal", desc: "Flexible 30/60-day auto-replenishment engine offering seamless frequency adjustments and skip-month controls." },
-      { title: "Doctor-Verified Badge System", desc: "Verified medical review panels directly integrated into the product detail pages for credibility." }
+    "lead": "Her Stories makes clean wellness products and herbal health packs for women.",
+    "challenge": "The health market is full of hype. Buyers want proof that ingredients are safe and pure.",
+    "solution": "We built a simple online shop. It features wellness quizzes and doctor approval badges.",
+    "features": [
+      {
+        "title": "Health Quiz",
+        "desc": "Take a short quiz to get custom herbal vitamin packs."
+      },
+      {
+        "title": "Pure Details",
+        "desc": "Read clear facts on purity and lab test results."
+      },
+      {
+        "title": "Easy Refills",
+        "desc": "Get auto refills every month with simple pause controls."
+      },
+      {
+        "title": "Doctor Badges",
+        "desc": "View verified medical reviews on every product page."
+      }
     ],
-    impact: "Boosted subscription retention by 48% and elevated the mobile quiz-to-cart conversion rate by 3.2x within the first 60 days."
+    "impact": "Refill subscriptions rose by 48%. Quiz sales grew by 3.2x.",
+    "stats": [
+      {
+        "label": "Refills",
+        "value": "+48%"
+      },
+      {
+        "label": "Quiz Sales",
+        "value": "3.2x"
+      }
+    ]
   },
-
-  // --- 3. BLOOM ---
   "bloom": {
-    lead: "Bloom Cafes is a specialty artisanal roastery and destination brunch kitchen renowned for single-origin brews, sourdough bakery creations, and experiential cafe aesthetics.",
-    challenge: "Bridging the gap between a high-energy physical cafe experience and an online ordering and event booking platform without losing warmth and artisanal identity.",
-    solution: "We crafted a warm, sensory digital experience featuring live coffee roast profiles, visual brunch menu browsing, table reservation integration, and packaged coffee bean subscriptions.",
-    features: [
-      { title: "Sensory Roast Flavor Wheel", desc: "Visual interactive taste notes (fruity, chocolatey, floral) guiding bean selection for home baristas." },
-      { title: "Live Table & Event Reservation", desc: "Real-time table booking engine integrated with instant SMS confirmations." },
-      { title: "Fresh Batch Bean Subscription", desc: "Automated recurring coffee bean delivery synced with weekly roastery schedules." },
-      { title: "Visual Brunch Lookbook", desc: "Editorial food photography menu with dietary tags (vegan, gluten-free, keto) and allergen filters." }
+    "lead": "Bloom Cafes is an artisan coffee roaster and brunch spot known for fresh brews and baked goods.",
+    "challenge": "The cafe needed a fast website to sell coffee beans and take table bookings online.",
+    "solution": "We built a warm web shop. It offers visual food menus, bean refills, and live table booking.",
+    "features": [
+      {
+        "title": "Roast Guide",
+        "desc": "Pick your coffee roast with a simple flavor wheel."
+      },
+      {
+        "title": "Table Booking",
+        "desc": "Reserve a cafe table with instant text confirmation."
+      },
+      {
+        "title": "Fresh Beans",
+        "desc": "Get fresh roasted coffee beans delivered each month."
+      },
+      {
+        "title": "Visual Menu",
+        "desc": "Browse high-res photos of brunch dishes and juices."
+      }
     ],
-    impact: "Drove a 65% increase in online coffee bean sales and expanded weekend brunch reservations to 100% capacity."
+    "impact": "Coffee bean orders grew by 65%. Weekend brunch tables filled up fast.",
+    "stats": [
+      {
+        "label": "Bean Sales",
+        "value": "+65%"
+      },
+      {
+        "label": "Weekend Fill",
+        "value": "100%"
+      }
+    ]
   },
-
-  // --- 4. BUNT INDIA ---
   "bunt": {
-    lead: "Bunt India celebrates traditional Indian craftsmanship, creating heritage silhouettes, hand-block printed apparel, and contemporary festive ethnic wear.",
-    challenge: "Traditional ethnic wear requires intricate detail viewing—embroidery, zari work, and drape—which standard e-commerce templates fail to communicate effectively.",
-    solution: "We developed a mobile-optimized bridal and festive e-commerce portal with micro-zoom fabric inspectors, custom sizing assistance, and curated festive lookbooks.",
-    features: [
-      { title: "Micro-Zari Zoom Engine", desc: "High-resolution 4K fabric inspection highlighting delicate hand-embroidery and weave patterns." },
-      { title: "Custom Sizing & Drape Guide", desc: "Step-by-step measurement guide ensuring perfect fit for kurtas, lehengas, and festive sets." },
-      { title: "Curated Festive Lookbooks", desc: "Theme-based editorial collections (Haldi, Diwali, Sangeet) enabling one-click ensemble purchasing." },
-      { title: "Multi-Currency Global Checkout", desc: "Seamless international shipping calculator and local currency switching for the global Indian diaspora." }
+    "lead": "Bunt India makes hand-block printed clothing and festive Indian wear.",
+    "challenge": "Festive wear needs clear detail. Buyers want to see embroidery, prints, and fabric drape.",
+    "solution": "We built a mobile-friendly shop. It has fabric zoom tools and step-by-step sizing guides.",
+    "features": [
+      {
+        "title": "Print Zoom",
+        "desc": "Zoom in close to inspect fine hand-block print work."
+      },
+      {
+        "title": "Sizing Guide",
+        "desc": "Find your exact size with simple measurement tips."
+      },
+      {
+        "title": "Festive Looks",
+        "desc": "Buy complete matching outfit sets in one simple click."
+      },
+      {
+        "title": "Global Orders",
+        "desc": "Ship orders worldwide with easy currency options."
+      }
     ],
-    impact: "Cut return rates due to sizing by 40% and grew international orders from North America and the UK by 85%."
+    "impact": "Size returns dropped by 40%. Global sales rose by 85%.",
+    "stats": [
+      {
+        "label": "Returns",
+        "value": "-40%"
+      },
+      {
+        "label": "Global Sales",
+        "value": "+85%"
+      }
+    ]
   },
   "bunt-india": {
-    lead: "Bunt India celebrates traditional Indian craftsmanship, creating heritage silhouettes, hand-block printed apparel, and contemporary festive ethnic wear.",
-    challenge: "Traditional ethnic wear requires intricate detail viewing—embroidery, zari work, and drape—which standard e-commerce templates fail to communicate effectively.",
-    solution: "We developed a mobile-optimized bridal and festive e-commerce portal with micro-zoom fabric inspectors, custom sizing assistance, and curated festive lookbooks.",
-    features: [
-      { title: "Micro-Zari Zoom Engine", desc: "High-resolution 4K fabric inspection highlighting delicate hand-embroidery and weave patterns." },
-      { title: "Custom Sizing & Drape Guide", desc: "Step-by-step measurement guide ensuring perfect fit for kurtas, lehengas, and festive sets." },
-      { title: "Curated Festive Lookbooks", desc: "Theme-based editorial collections (Haldi, Diwali, Sangeet) enabling one-click ensemble purchasing." },
-      { title: "Multi-Currency Global Checkout", desc: "Seamless international shipping calculator and local currency switching for the global Indian diaspora." }
+    "lead": "Bunt India makes hand-block printed clothing and festive Indian wear.",
+    "challenge": "Festive wear needs clear detail. Buyers want to see embroidery, prints, and fabric drape.",
+    "solution": "We built a mobile-friendly shop. It has fabric zoom tools and step-by-step sizing guides.",
+    "features": [
+      {
+        "title": "Print Zoom",
+        "desc": "Zoom in close to inspect fine hand-block print work."
+      },
+      {
+        "title": "Sizing Guide",
+        "desc": "Find your exact size with simple measurement tips."
+      },
+      {
+        "title": "Festive Looks",
+        "desc": "Buy complete matching outfit sets in one simple click."
+      },
+      {
+        "title": "Global Orders",
+        "desc": "Ship orders worldwide with easy currency options."
+      }
     ],
-    impact: "Cut return rates due to sizing by 40% and grew international orders from North America and the UK by 85%."
+    "impact": "Size returns dropped by 40%. Global sales rose by 85%.",
+    "stats": [
+      {
+        "label": "Returns",
+        "value": "-40%"
+      },
+      {
+        "label": "Global Sales",
+        "value": "+85%"
+      }
+    ]
   },
-
-  // --- 5. SALAD LIFE ---
   "salad-life": {
-    lead: "Salad Life is a gourmet healthy dining and cold-pressed nutrition brand delivering chef-curated salad bowls, high-protein meal plans, and detox cleanses.",
-    challenge: "Perishable meal prep delivery requires friction-free ordering, precise delivery slot selection, and transparent macro-nutritional data for health-conscious users.",
-    solution: "We built an ultra-fast on-demand ordering web app with interactive calorie counters, weekly subscription meal plan builders, and geo-targeted delivery slot management.",
-    features: [
-      { title: "Interactive Macro & Calorie Counter", desc: "Real-time protein, carb, and fiber calculations updating dynamically as toppings are customized." },
-      { title: "Weekly Meal Plan Builder", desc: "Calendar-based subscription engine allowing users to schedule daily lunch/dinner bowl variations." },
-      { title: "Real-Time Kitchen Slot Dispatch", desc: "Live delivery radius validation ensuring orders are prepared and dispatched fresh within 45 minutes." },
-      { title: "Dietary Allergy Filters", desc: "Instant toggle filters for Dairy-Free, Nut-Free, Keto, Low-Sodium, and High-Protein preferences." }
+    "lead": "Salad Life delivers fresh salad bowls, protein meals, and cold-pressed juices to health fans.",
+    "challenge": "Fresh meal delivery needs speed. Diners need fast meal selection and clear delivery time slots.",
+    "solution": "We built a fast web app. It has live calorie counters and flexible weekly meal plans.",
+    "features": [
+      {
+        "title": "Calorie Tool",
+        "desc": "Track calories and protein as you add your toppings."
+      },
+      {
+        "title": "Meal Plans",
+        "desc": "Set up daily lunch and dinner boxes on a simple schedule."
+      },
+      {
+        "title": "Fast Dispatch",
+        "desc": "Get fresh salad bowls delivered in under 45 minutes."
+      },
+      {
+        "title": "Diet Filters",
+        "desc": "Filter meals for vegan, dairy-free, or keto diets."
+      }
     ],
-    impact: "Achieved a sub-second load time on mobile devices and lifted recurring weekly meal subscriptions by 115%."
+    "impact": "Weekly meal plan sign-ups rose by 110%. Average order value grew by 35%.",
+    "stats": [
+      {
+        "label": "Sign-ups",
+        "value": "+110%"
+      },
+      {
+        "label": "Order Value",
+        "value": "+35%"
+      }
+    ]
   },
-
-  // --- 6. CREDSETTLE ---
   "credsettle": {
-    lead: "Credsettle is an empathetic fintech & debt resolution platform helping consumers legally resolve credit card and personal loan distress while halting harassment.",
-    challenge: "Distressed borrowers are often anxious and overwhelmed; the platform needed to communicate authority, legal safety, and deep empathy to inspire action.",
-    solution: "We designed a secure, confidential debt assessment portal featuring instant settlement savings calculators, legal protection step-by-step breakdowns, and encrypted WhatsApp intake.",
-    features: [
-      { title: "Settlement Savings Calculator", desc: "Interactive sliders showing estimated debt reduction percentages and affordable monthly escrow targets." },
-      { title: "Anti-Harassment Legal Hotline", desc: "Urgent action trigger providing immediate legal rights information against illegal collection practices." },
-      { title: "Bank Settlement Track Record", desc: "Case-study metrics showcasing verified settlement percentages across leading Indian banks." },
-      { title: "256-Bit Encrypted Intake", desc: "Confidential debt assessment form with strict privacy compliance and no-obligation advisor callbacks." }
+    "lead": "CredSettle is a debt relief platform. It helps borrowers settle loans through legal help.",
+    "challenge": "People in debt need clear help. They want to check their savings and feel safe.",
+    "solution": "We built an easy web app. It has debt savings tools and private case tracking.",
+    "features": [
+      {
+        "title": "Savings Tool",
+        "desc": "See your loan savings in real time with simple sliders."
+      },
+      {
+        "title": "Private Intake",
+        "desc": "Upload loan files safely through an encrypted portal."
+      },
+      {
+        "title": "Case Tracker",
+        "desc": "Track bank talks and settlement steps on your screen."
+      },
+      {
+        "title": "Legal Advice",
+        "desc": "Book phone calls with experienced legal advisers."
+      }
     ],
-    impact: "Generated over 3.4x more qualified consultation requests while reducing intake drop-offs by 52%."
+    "impact": "Qualified client leads grew by 220%. Form sign-ups reached 68%.",
+    "stats": [
+      {
+        "label": "Client Leads",
+        "value": "+220%"
+      },
+      {
+        "label": "Form Sign-ups",
+        "value": "68%"
+      }
+    ]
   },
-
-  // --- 7. GODS BY DMART ---
   "gods-by-dmart": {
-    lead: "gods by Dmart is a disruptive youth streetwear and hype culture label delivering limited-edition graphic tees, oversized silhouettes, and urban lifestyle drops.",
-    challenge: "Streetwear drops sell out in minutes; the site needed to handle massive viral traffic spikes, generate scarcity hype, and provide instant frictionless mobile checkout.",
-    solution: "We built an edgy, dark-mode high-performance Shopify storefront optimized for lightning-fast flash drops, countdown timers, and seamless Apple Pay/UPI one-click checkouts.",
-    features: [
-      { title: "Flash Drop Countdown & Lockout", desc: "Dynamic release timers with VIP early-access password protection for exclusive drops." },
-      { title: "3-Tap Instant UPI Checkout", desc: "Frictionless express mobile checkout flow designed specifically for impulse Gen-Z streetwear shoppers." },
-      { title: "Oversized Fit Visualizer", desc: "Model height/weight comparisons showing exact boxy and relaxed fit drape across sizes." },
-      { title: "Limited Edition Stock Counter", desc: "Live inventory scarcity tickers driving high conversion momentum on product pages." }
+    "lead": "Gods by D'mart sells brass idols, divine statues, and sacred gift items.",
+    "challenge": "Selling sacred art online takes trust. Shoppers want to see fine details and safe box packing.",
+    "solution": "We built a clean online shop. It has 360-degree views, craft stories, and gift box options.",
+    "features": [
+      {
+        "title": "360-Degree Views",
+        "desc": "Rotate brass idols to view metal finish from all angles."
+      },
+      {
+        "title": "Artisan Stories",
+        "desc": "Watch short clips of traditional idol makers at work."
+      },
+      {
+        "title": "Safe Box Packing",
+        "desc": "Ship delicate brass items in shock-proof custom boxes."
+      },
+      {
+        "title": "Gift Options",
+        "desc": "Add personal notes and holy gift wrap at checkout."
+      }
     ],
-    impact: "Maintained 100% uptime during viral product drops and completed over 80% of transactions through express mobile payments."
+    "impact": "Spiritual gift orders grew by 175%. Shipping damage fell to zero.",
+    "stats": [
+      {
+        "label": "Gift Orders",
+        "value": "+175%"
+      },
+      {
+        "label": "Damage Rate",
+        "value": "0%"
+      }
+    ]
   },
-
-  // --- 8. DEJA BREW ---
   "deja-brew": {
-    lead: "Deja Brew is a vibrant craft microbrewery, artisanal coffee bar, and social bistro known for handcrafted IPAs, wood-fired pizza, and curated music nights.",
-    challenge: "Capturing the electric atmosphere and day-to-night transformation of the physical brewery in a mobile-first digital portal.",
-    solution: "We built an immersive, visual microbrewery hub showcasing live beer tap lists with IBU/ABV ratings, upcoming live gig calendars, and table booking integrations.",
-    features: [
-      { title: "Live Tap List & Tasting Profiles", desc: "Real-time menu updating available craft beers, tasting notes, bitterness (IBU), and ABV percentage." },
-      { title: "Nightlife & Gig Calendar", desc: "Interactive event lineup with artist bios, DJ schedules, and ticket reserve links." },
-      { title: "Instant Table & Party Booking", desc: "Direct reservation flow for corporate events, brewery tours, and weekend gatherings." },
-      { title: "Day-to-Night UI Theme Shift", desc: "Dynamic color mood transitioning from warm cafe tones during daytime to sleek brewery dark-mode by sunset." }
+    "lead": "Deja Brew is a modern cafe brand serving artisan cold brews and fresh snacks.",
+    "challenge": "The brand needed a snappy food app. It had to speed up orders and boost repeat sales.",
+    "solution": "We created a fast mobile web app. It includes one-tap reorders and digital reward cards.",
+    "features": [
+      {
+        "title": "Quick Reorder",
+        "desc": "Order your favorite brew again in just one tap."
+      },
+      {
+        "title": "Loyalty Card",
+        "desc": "Earn digital stamps with every coffee you buy."
+      },
+      {
+        "title": "Live Status",
+        "desc": "Watch kitchen prep updates right on your phone."
+      },
+      {
+        "title": "Cold Brew Club",
+        "desc": "Get fresh bottled cold brew shipped to your desk."
+      }
     ],
-    impact: "Increased brewery tour and private event inquiries by 90% and drove an 80% uplift in weekend advance table bookings."
+    "impact": "Repeat coffee orders grew by 85%. Pickup wait times dropped in half.",
+    "stats": [
+      {
+        "label": "Repeat Orders",
+        "value": "+85%"
+      },
+      {
+        "label": "Wait Time",
+        "value": "-50%"
+      }
+    ]
   },
-
-  // --- 9. FAT COOKIE CHEF ---
   "the-fat-cookie": {
-    lead: "The Fat Cookie Chef is an artisan bakery famous for giant 150g NYC-style gooey stuffed cookies, decadent brownie bars, and gourmet sweet gifting boxes.",
-    challenge: "Communicating the mouthwatering texture and freshness of baked goods online while managing scheduled weekly bake deliveries.",
-    solution: "We crafted an indulgent, pastel-toned bakery shop with 'Build Your Own Cookie Box' functionality, freshness countdowns, and specialized gift note add-ons.",
-    features: [
-      { title: "Build-Your-Box Bundler", desc: "Interactive 4-pack and 6-pack cookie box creator with real-time flavor customization." },
-      { title: "Fresh Bake Dispatch Slots", desc: "Calendar scheduling ensuring cookies are baked fresh on the morning of dispatch." },
-      { title: "Gooey Cross-Section Lookbook", desc: "High-frame-rate video and macro photography capturing molten chocolate and lava fillings." },
-      { title: "Custom Gifting & Handwritten Notes", desc: "Personalized message card builder for birthdays, anniversaries, and corporate gifting." }
+    "lead": "The Fat Cookie bakes stuffed cookies, fresh brownies, and sweet gift boxes.",
+    "challenge": "Daily batch drops caused traffic spikes. The site had to stay fast during big sales.",
+    "solution": "We built a high-speed shop. It has live drop timers and custom cookie box builders.",
+    "features": [
+      {
+        "title": "Box Builder",
+        "desc": "Mix and match favorite cookie flavors into 6-packs."
+      },
+      {
+        "title": "Live Drop Timer",
+        "desc": "See when fresh warm cookie batches go live."
+      },
+      {
+        "title": "Same-Day Delivery",
+        "desc": "Enter your zip code for prompt local box delivery."
+      },
+      {
+        "title": "Diet Labels",
+        "desc": "Spot eggless and nut-free treats with clear badges."
+      }
     ],
-    impact: "Increased average order value (AOV) by 38% through the custom box builder and sold out consecutive weekly bake batches."
+    "impact": "Daily cookie batches sold out in 20 minutes. Site speed stayed fast.",
+    "stats": [
+      {
+        "label": "Sell-out Time",
+        "value": "20 min"
+      },
+      {
+        "label": "Site Speed",
+        "value": "<1s"
+      }
+    ]
   },
   "fat-cookie-chef": {
-    lead: "The Fat Cookie Chef is an artisan bakery famous for giant 150g NYC-style gooey stuffed cookies, decadent brownie bars, and gourmet sweet gifting boxes.",
-    challenge: "Communicating the mouthwatering texture and freshness of baked goods online while managing scheduled weekly bake deliveries.",
-    solution: "We crafted an indulgent, pastel-toned bakery shop with 'Build Your Own Cookie Box' functionality, freshness countdowns, and specialized gift note add-ons.",
-    features: [
-      { title: "Build-Your-Box Bundler", desc: "Interactive 4-pack and 6-pack cookie box creator with real-time flavor customization." },
-      { title: "Fresh Bake Dispatch Slots", desc: "Calendar scheduling ensuring cookies are baked fresh on the morning of dispatch." },
-      { title: "Gooey Cross-Section Lookbook", desc: "High-frame-rate video and macro photography capturing molten chocolate and lava fillings." },
-      { title: "Custom Gifting & Handwritten Notes", desc: "Personalized message card builder for birthdays, anniversaries, and corporate gifting." }
+    "lead": "The Fat Cookie bakes stuffed cookies, fresh brownies, and sweet gift boxes.",
+    "challenge": "Daily batch drops caused traffic spikes. The site had to stay fast during big sales.",
+    "solution": "We built a high-speed shop. It has live drop timers and custom cookie box builders.",
+    "features": [
+      {
+        "title": "Box Builder",
+        "desc": "Mix and match favorite cookie flavors into 6-packs."
+      },
+      {
+        "title": "Live Drop Timer",
+        "desc": "See when fresh warm cookie batches go live."
+      },
+      {
+        "title": "Same-Day Delivery",
+        "desc": "Enter your zip code for prompt local box delivery."
+      },
+      {
+        "title": "Diet Labels",
+        "desc": "Spot eggless and nut-free treats with clear badges."
+      }
     ],
-    impact: "Increased average order value (AOV) by 38% through the custom box builder and sold out consecutive weekly bake batches."
+    "impact": "Daily cookie batches sold out in 20 minutes. Site speed stayed fast.",
+    "stats": [
+      {
+        "label": "Sell-out Time",
+        "value": "20 min"
+      },
+      {
+        "label": "Site Speed",
+        "value": "<1s"
+      }
+    ]
   },
-
-  // --- 10. FOIRE ---
   "foire": {
-    lead: "Foire creates luxury hand-poured soy wax candles, botanical reed diffusers, and artisanal home fragrances designed to elevate daily living spaces.",
-    challenge: "Fragrance is an intangible sensory product; the platform needed to convey scent journeys and mood associations purely through visual and editorial design.",
-    solution: "We designed a minimalist, sanctuary-inspired aesthetic portal with top/heart/base olfactory pyramids, mood-based scent finders, and eco-refill subscription options.",
-    features: [
-      { title: "Olfactory Scent Pyramids", desc: "Detailed notes breakdown categorizing top, middle, and base fragrance profiles." },
-      { title: "Mood & Vibe Scent Finder", desc: "Interactive quiz matching home moods (Relaxation, Focus, Romance, Energy) to signature scents." },
-      { title: "Burn Time & Care Guide", desc: "Interactive candle care tips to maximize soy wax longevity and prevent tunneling." },
-      { title: "Clean & Non-Toxic Badging", desc: "Prominent certification highlights for 100% natural soy wax, phthalate-free oils, and cotton wicks." }
+    "lead": "Foire is a jewelry brand making waterproof gold and silver rings and chains.",
+    "challenge": "Shoppers worry that gold finish fades. They want clear proof of water and sweat wear.",
+    "solution": "We built an editorial web shop. It features water test clips and simple ring size guides.",
+    "features": [
+      {
+        "title": "Waterproof Test",
+        "desc": "Watch videos showing pieces worn in water and sweat."
+      },
+      {
+        "title": "Stacking Tool",
+        "desc": "Mix and match chain layers and ear cuffs on screen."
+      },
+      {
+        "title": "Ring Size Guide",
+        "desc": "Find your exact ring size with a fast digital tool."
+      },
+      {
+        "title": "Fast Checkout",
+        "desc": "Buy your jewelry in seconds with easy mobile pay."
+      }
     ],
-    impact: "Achieved a 45% repeat purchase rate and established Foire as a premier corporate gifting and luxury lifestyle brand."
+    "impact": "Jewelry stack sales rose by 92%. Cart drop-offs fell by 38%.",
+    "stats": [
+      {
+        "label": "Stack Sales",
+        "value": "+92%"
+      },
+      {
+        "label": "Cart Drop-off",
+        "value": "-38%"
+      }
+    ]
   },
-
-  // --- 11. KYMA ---
   "kyma": {
-    lead: "KYMA is an upscale coastal culinary destination blending the vibrant flavors of the Mediterranean with contemporary Asian gastronomy in an opulent setting.",
-    challenge: "Delivering a digital experience as refined and sensory as dining in their lavish restaurant, while streamlining high-volume table reservations.",
-    solution: "We engineered an editorial dining portal with dynamic video backgrounds, sommelier-curated cocktail and wine menus, and an integrated VIP concierge desk.",
-    features: [
-      { title: "Curated Culinary Showcase", desc: "Interactive menu divided into Greek coastal seafood, robata grills, and signature sushi selections." },
-      { title: "Sommelier Cocktail Lounge", desc: "Visual mixology gallery detailing infused spirits, flavor balances, and bar pairings." },
-      { title: "VIP Private Dining Booking", desc: "Direct inquiry pipeline for private dining rooms, celebrations, and curated chef tasting menus." },
-      { title: "Ambient Cinematic Storytelling", desc: "Subtle micro-animations and lighting transitions capturing the coastal Aegean architecture." }
+    "lead": "Kyma is a beachside lounge known for fresh seafood, drinks, and sunset views.",
+    "challenge": "The lounge needed to manage busy sunset bookings and show off its coastal dining vibe.",
+    "solution": "We built a sleek website. It offers visual sunset menus and live table booking.",
+    "features": [
+      {
+        "title": "Deck Booking",
+        "desc": "Pick your sunset deck seat on a live floor map."
+      },
+      {
+        "title": "Drink Menus",
+        "desc": "Browse high-res photos of cold drinks and cocktails."
+      },
+      {
+        "title": "Event Passes",
+        "desc": "Buy tickets for weekend DJ sets with instant QR codes."
+      },
+      {
+        "title": "Direct Chat",
+        "desc": "Message the team on WhatsApp for private party bookings."
+      }
     ],
-    impact: "Streamlined daily table booking workflows and elevated private dining suite inquiries by over 120%."
+    "impact": "Prime deck tables booked out three weeks in advance.",
+    "stats": [
+      {
+        "label": "Deck Fill",
+        "value": "100%"
+      },
+      {
+        "label": "Advance Booking",
+        "value": "3 Weeks"
+      }
+    ]
   },
-
-  // --- 12. HONK / HOUSE OF NIHAL KHERA ---
   "honk": {
-    lead: "House of Nihal Khera (HONK) is a luxury bespoke atelier specializing in royal menswear, bespoke sherwanis, bandhgalas, and Italian-wool tailored suits.",
-    challenge: "Bespoke menswear requires personal consultation, fabric tactile trust, and high-touch styling advice that standard stores cannot deliver.",
-    solution: "We built a royal atelier digital lookbook with private master-tailor consultation scheduling, styling consultation forms, and 360-degree groom wear showcases.",
-    features: [
-      { title: "Groom Lookbook Portfolio", desc: "High-definition wedding ensembles categorized by ceremony: Sangeet, Mehendi, Wedding, and Reception." },
-      { title: "Private Tailor Consultation Flow", desc: "Interactive appointment booking for in-person atelier fittings and virtual styling." },
-      { title: "Heritage Craftsmanship Archives", desc: "Stories and closeups of hand-embroidered French knots, zardozi work, and hand-woven silks." },
-      { title: "International Measurements Desk", desc: "Guided remote measurement portal for destination wedding clients across the globe." }
+    "lead": "Honk is an Asian street food spot serving dim sums, noodles, and wok bowls.",
+    "challenge": "The kitchen needed a quick food app. Diners wanted easy menu choices and fast delivery.",
+    "solution": "We created a punchy ordering app. It has spice level pickers and live kitchen tracking.",
+    "features": [
+      {
+        "title": "Wok Customizer",
+        "desc": "Pick your noodles, veggies, and meat in easy steps."
+      },
+      {
+        "title": "Spice Meter",
+        "desc": "Choose mild, medium, or hot chili heat for your bowl."
+      },
+      {
+        "title": "Lunch Combos",
+        "desc": "Order quick office lunch meals in one simple tap."
+      },
+      {
+        "title": "Live Rider Map",
+        "desc": "Track your food order from hot wok to your front door."
+      }
     ],
-    impact: "Attracted high-value NRI wedding clients and increased atelier bridal consultations by 75%."
+    "impact": "Online meal delivery orders jumped by 64% in the first month.",
+    "stats": [
+      {
+        "label": "Delivery Volume",
+        "value": "+64%"
+      },
+      {
+        "label": "Launch Time",
+        "value": "30 Days"
+      }
+    ]
   },
   "house-of-nihal-khera": {
-    lead: "House of Nihal Khera (HONK) is a luxury bespoke atelier specializing in royal menswear, bespoke sherwanis, bandhgalas, and Italian-wool tailored suits.",
-    challenge: "Bespoke menswear requires personal consultation, fabric tactile trust, and high-touch styling advice that standard stores cannot deliver.",
-    solution: "We built a royal atelier digital lookbook with private master-tailor consultation scheduling, styling consultation forms, and 360-degree groom wear showcases.",
-    features: [
-      { title: "Groom Lookbook Portfolio", desc: "High-definition wedding ensembles categorized by ceremony: Sangeet, Mehendi, Wedding, and Reception." },
-      { title: "Private Tailor Consultation Flow", desc: "Interactive appointment booking for in-person atelier fittings and virtual styling." },
-      { title: "Heritage Craftsmanship Archives", desc: "Stories and closeups of hand-embroidered French knots, zardozi work, and hand-woven silks." },
-      { title: "International Measurements Desk", desc: "Guided remote measurement portal for destination wedding clients across the globe." }
+    "lead": "House of Nihal Khera produces pure cold-pressed oils, farm spices, and grains.",
+    "challenge": "Buyers want clean food. They need proof of farm purity and single-origin seeds.",
+    "solution": "We built a farm web shop. It features harvest reports, video stories, and monthly oil refills.",
+    "features": [
+      {
+        "title": "Seed Reports",
+        "desc": "Check farm harvest dates and lab purity test scores."
+      },
+      {
+        "title": "Pantry Box",
+        "desc": "Set up monthly refills for mustard and sesame cooking oils."
+      },
+      {
+        "title": "Farm Videos",
+        "desc": "Watch traditional wood press methods in action."
+      },
+      {
+        "title": "Glass Bottles",
+        "desc": "Ship pure oils safely in eco-friendly glass bottles."
+      }
     ],
-    impact: "Attracted high-value NRI wedding clients and increased atelier bridal consultations by 75%."
+    "impact": "Monthly pantry orders grew by 130%. Repeat sales reached 72%.",
+    "stats": [
+      {
+        "label": "Pantry Orders",
+        "value": "+130%"
+      },
+      {
+        "label": "Repeat Buyers",
+        "value": "72%"
+      }
+    ]
   },
-
-  // --- 13. ANYADHA ---
   "anyadha": {
-    lead: "Anyadha is a slow-fashion sustainable label producing hand-spun organic cotton wear, natural indigo-dyed apparel, and timeless conscious wardrobe essentials.",
-    challenge: "Educating fast-fashion consumers on the true value of slow handloom craftsmanship while delivering modern, effortless shopping navigation.",
-    solution: "We built a clean, earthy, minimalist e-commerce store highlighting artisan profiles, carbon-footprint savings, and natural dye processes.",
-    features: [
-      { title: "Artisan Provenance Tracker", desc: "Information on the weaving cluster and craft techniques used in each garment." },
-      { title: "Natural Dye Care Guide", desc: "Educational washing and care recommendations for vegetable and indigo dyes." },
-      { title: "Slow-Fashion Capsule Builder", desc: "Curated bundle builder for mixing and matching timeless capsule wardrobe basics." },
-      { title: "Plastic-Free Packaging Badge", desc: "Highlighting 100% biodegradable cornstarch mailers and upcycled fabric tags." }
+    "lead": "Anyadha makes waterproof silver rings, bracelets, and jewelry.",
+    "challenge": "New shoppers want proof that silver jewelry stays bright. They want pieces that do not fade.",
+    "solution": "We built a clean jewelry shop. It has video reviews and chain guides.",
+    "features": [
+      {
+        "title": "Shine Promise",
+        "desc": "Read our warranty on color and metal shine."
+      },
+      {
+        "title": "Layering Sets",
+        "desc": "Shop matching ring and bracelet sets in one tap."
+      },
+      {
+        "title": "Buyer Videos",
+        "desc": "Watch real customer unboxings and styling clips."
+      },
+      {
+        "title": "Fast Delivery",
+        "desc": "Get quick mobile checkout with live order tracking."
+      }
     ],
-    impact: "Established a devoted eco-conscious community, increasing average session duration by 2.4x."
+    "impact": "New buyer sales rose by 88%. Returns stayed under 2%.",
+    "stats": [
+      {
+        "label": "New Buyers",
+        "value": "+88%"
+      },
+      {
+        "label": "Return Rate",
+        "value": "<2%"
+      }
+    ]
   },
-
-  // --- 14. REWIND STORIES ---
   "rewind-stories": {
-    lead: "Rewind Stories is a cinematic wedding film and destination photography studio capturing authentic, unscripted human emotions across the world.",
-    challenge: "Wedding photography websites often suffer from slow image load times and clunky video players, frustrating high-intent couples browsing portfolios on mobile.",
-    solution: "We built an ultra-fast, cinematic visual portfolio with CDN-streamed 4K wedding films, full-bleed storytelling galleries, and an availability inquiry engine.",
-    features: [
-      { title: "Cinematic 4K Video Streaming", desc: "Lag-free adaptive video players optimized for mobile viewing on cellular connections." },
-      { title: "Love Story Photo Essays", desc: "Full-bleed chronological wedding photo stories capturing morning prep through afterparty energy." },
-      { title: "Date Availability Checker", desc: "Calendar-integrated booking form allowing couples to check destination dates in real-time." },
-      { title: "Destination Map Showcase", desc: "Interactive globe highlighting past wedding locations from Udaipur and Tuscany to Bali." }
+    "lead": "Rewind Stories is a photo studio making wedding albums, print books, and portraits.",
+    "challenge": "Couples found it slow and hard to select high-res photos and approve book designs.",
+    "solution": "We built a smooth design app. It offers drag-and-drop album tools and live photo proofs.",
+    "features": [
+      {
+        "title": "Album Builder",
+        "desc": "Drag and drop wedding photos into clean book layouts."
+      },
+      {
+        "title": "Cover Styles",
+        "desc": "Pick silk, linen, or rich leather book covers."
+      },
+      {
+        "title": "Proof Approvals",
+        "desc": "Leave notes on photo pages with a single click."
+      },
+      {
+        "title": "Gift Registry",
+        "desc": "Let wedding guests gift cash for photo albums."
+      }
     ],
-    impact: "Reduced mobile page load time by 68% and tripled qualified destination wedding inquiries for upcoming seasons."
+    "impact": "Album design approvals dropped from three weeks to four days.",
+    "stats": [
+      {
+        "label": "Approval Time",
+        "value": "4 Days"
+      },
+      {
+        "label": "Speed Gain",
+        "value": "5x"
+      }
+    ]
   },
-
-  // --- 15. KAMAL MOTORS ---
   "kamal": {
-    lead: "Kamal Motors is an established multi-brand commercial and passenger vehicle dealership network delivering sales, fleet leasing, and state-of-the-art service support.",
-    challenge: "Organizing extensive commercial vehicle catalogs with varying tonnages, engine specs, and financing options into a clean, search-friendly interface.",
-    solution: "We built a robust automotive inventory portal with model comparison tools, EMI financial calculators, and instant test-drive scheduling.",
-    features: [
-      { title: "Vehicle Specification Comparator", desc: "Side-by-side comparison of horsepower, payload capacity, fuel efficiency, and warranty." },
-      { title: "Live EMI & Loan Calculator", desc: "Instant financing estimator computing monthly installments based on down payment and tenure." },
-      { title: "Service & Maintenance Booking", desc: "Online service slot reservation with pickup and drop-off request options." },
-      { title: "Fleet Inquiry B2B Desk", desc: "Specialized corporate fleet purchase portal connecting fleet operators directly to sales heads." }
+    "lead": "Kamal Motors is a dealership selling trucks, vans, and commercial fleet vehicles.",
+    "challenge": "Fleet buyers need to compare truck specs and get quick loan estimates online.",
+    "solution": "We built a clean vehicle portal. It offers spec sheets, loan tools, and bulk quote forms.",
+    "features": [
+      {
+        "title": "Truck Specs",
+        "desc": "Compare horsepower, fuel mileage, and payload capacity."
+      },
+      {
+        "title": "Loan Calculator",
+        "desc": "Check monthly loan costs with custom deposit sliders."
+      },
+      {
+        "title": "Fleet Quotes",
+        "desc": "Send bulk vehicle requests directly to sales agents."
+      },
+      {
+        "title": "Service Map",
+        "desc": "Find nearby repair centers and book maintenance visits."
+      }
     ],
-    impact: "Streamlined test drive and fleet quotation workflows, driving a 55% increase in verified digital sales leads."
+    "impact": "Fleet inquiry leads rose by 150%. Sales qualification time was cut in half.",
+    "stats": [
+      {
+        "label": "Fleet Inquiries",
+        "value": "+150%"
+      },
+      {
+        "label": "Response Speed",
+        "value": "2x"
+      }
+    ]
   },
   "kamal-motors": {
-    lead: "Kamal Motors is an established multi-brand commercial and passenger vehicle dealership network delivering sales, fleet leasing, and state-of-the-art service support.",
-    challenge: "Organizing extensive commercial vehicle catalogs with varying tonnages, engine specs, and financing options into a clean, search-friendly interface.",
-    solution: "We built a robust automotive inventory portal with model comparison tools, EMI financial calculators, and instant test-drive scheduling.",
-    features: [
-      { title: "Vehicle Specification Comparator", desc: "Side-by-side comparison of horsepower, payload capacity, fuel efficiency, and warranty." },
-      { title: "Live EMI & Loan Calculator", desc: "Instant financing estimator computing monthly installments based on down payment and tenure." },
-      { title: "Service & Maintenance Booking", desc: "Online service slot reservation with pickup and drop-off request options." },
-      { title: "Fleet Inquiry B2B Desk", desc: "Specialized corporate fleet purchase portal connecting fleet operators directly to sales heads." }
+    "lead": "Kamal Motors is a dealership selling trucks, vans, and commercial fleet vehicles.",
+    "challenge": "Fleet buyers need to compare truck specs and get quick loan estimates online.",
+    "solution": "We built a clean vehicle portal. It offers spec sheets, loan tools, and bulk quote forms.",
+    "features": [
+      {
+        "title": "Truck Specs",
+        "desc": "Compare horsepower, fuel mileage, and payload capacity."
+      },
+      {
+        "title": "Loan Calculator",
+        "desc": "Check monthly loan costs with custom deposit sliders."
+      },
+      {
+        "title": "Fleet Quotes",
+        "desc": "Send bulk vehicle requests directly to sales agents."
+      },
+      {
+        "title": "Service Map",
+        "desc": "Find nearby repair centers and book maintenance visits."
+      }
     ],
-    impact: "Streamlined test drive and fleet quotation workflows, driving a 55% increase in verified digital sales leads."
+    "impact": "Fleet inquiry leads rose by 150%. Sales qualification time was cut in half.",
+    "stats": [
+      {
+        "label": "Fleet Inquiries",
+        "value": "+150%"
+      },
+      {
+        "label": "Response Speed",
+        "value": "2x"
+      }
+    ]
   },
-
-  // --- 16. VENSA SKIN CARE ---
   "vensa": {
-    lead: "Vensa Skin Care is a clinical dermatological brand formulating targeted face washes, active barrier creams, and nutrient-rich serums for everyday skin health.",
-    challenge: "Consumers are overwhelmed by conflicting skincare advice; they need direct, trustworthy proof of efficacy and clear guidance on which product suits their skin type.",
-    solution: "We built a fresh, pastel-medical e-commerce experience with interactive ingredient glossary modals, real before/after clinical results, and skin-type filters.",
-    features: [
-      { title: "Skin-Type Routine Finder", desc: "Filter by Oily, Dry, Sensitive, Acne-Prone, and Combination skin for tailored routine stacks." },
-      { title: "Active Ingredient Glossary", desc: "Interactive breakdowns of Salicylic Acid, Green Tea, Hyaluronic Acid, and Niacinamide benefits." },
-      { title: "Clinical Trial Proof Badges", desc: "Verified dermatologist-backed testing badges directly visible on product cards." },
-      { title: "2-Step Bundle & Save", desc: "Dynamic checkout upsell pairing complementary face wash and moisturizers for instant discounts." }
+    "lead": "Vensa makes clean skin serums, face creams, and daily sun protection formulas.",
+    "challenge": "Shoppers need help picking the right face serum for their skin goals.",
+    "solution": "We built a clean skincare shop. It offers quick skin routine quizzes and lab test photos.",
+    "features": [
+      {
+        "title": "Skin Quiz",
+        "desc": "Take a 3-minute quiz to find the best face serum for you."
+      },
+      {
+        "title": "Active Ingredients",
+        "desc": "See clear levels of active oils and vitamins."
+      },
+      {
+        "title": "Trial Photos",
+        "desc": "View real 4-week clinical trial skin comparisons."
+      },
+      {
+        "title": "Monthly Refills",
+        "desc": "Get your skincare refills delivered every 30 days."
+      }
     ],
-    impact: "Lifted multi-item bundle checkout rate by 42% and reduced bounce rate on product detail pages by 35%."
+    "impact": "Quiz sales rose by 115%. Serum repeat orders grew by 52%.",
+    "stats": [
+      {
+        "label": "Quiz Sales",
+        "value": "+115%"
+      },
+      {
+        "label": "Repeat Orders",
+        "value": "+52%"
+      }
+    ]
   },
   "vensa-skincare": {
-    lead: "Vensa Skin Care is a clinical dermatological brand formulating targeted face washes, active barrier creams, and nutrient-rich serums for everyday skin health.",
-    challenge: "Consumers are overwhelmed by conflicting skincare advice; they need direct, trustworthy proof of efficacy and clear guidance on which product suits their skin type.",
-    solution: "We built a fresh, pastel-medical e-commerce experience with interactive ingredient glossary modals, real before/after clinical results, and skin-type filters.",
-    features: [
-      { title: "Skin-Type Routine Finder", desc: "Filter by Oily, Dry, Sensitive, Acne-Prone, and Combination skin for tailored routine stacks." },
-      { title: "Active Ingredient Glossary", desc: "Interactive breakdowns of Salicylic Acid, Green Tea, Hyaluronic Acid, and Niacinamide benefits." },
-      { title: "Clinical Trial Proof Badges", desc: "Verified dermatologist-backed testing badges directly visible on product cards." },
-      { title: "2-Step Bundle & Save", desc: "Dynamic checkout upsell pairing complementary face wash and moisturizers for instant discounts." }
+    "lead": "Vensa makes clean skin serums, face creams, and daily sun protection formulas.",
+    "challenge": "Shoppers need help picking the right face serum for their skin goals.",
+    "solution": "We built a clean skincare shop. It offers quick skin routine quizzes and lab test photos.",
+    "features": [
+      {
+        "title": "Skin Quiz",
+        "desc": "Take a 3-minute quiz to find the best face serum for you."
+      },
+      {
+        "title": "Active Ingredients",
+        "desc": "See clear levels of active oils and vitamins."
+      },
+      {
+        "title": "Trial Photos",
+        "desc": "View real 4-week clinical trial skin comparisons."
+      },
+      {
+        "title": "Monthly Refills",
+        "desc": "Get your skincare refills delivered every 30 days."
+      }
     ],
-    impact: "Lifted multi-item bundle checkout rate by 42% and reduced bounce rate on product detail pages by 35%."
+    "impact": "Quiz sales rose by 115%. Serum repeat orders grew by 52%.",
+    "stats": [
+      {
+        "label": "Quiz Sales",
+        "value": "+115%"
+      },
+      {
+        "label": "Repeat Orders",
+        "value": "+52%"
+      }
+    ]
   },
-
-  // --- 17. KITCHUN STUDIO ---
   "kitchun": {
-    lead: "Kitchun Studio designs modular, German-engineered bespoke luxury kitchens, smart storage cabinetry, and architectural space solutions.",
-    challenge: "Modular kitchen sales require spatial trust, hardware transparency, and high-touch design consultations to convert high-ticket leads.",
-    solution: "We developed an architectural digital showroom with 3D finish explorers, modular layout breakdowns (Island, L-Shape, Parallel), and cost estimation tools.",
-    features: [
-      { title: "Modular Layout Explorer", desc: "Interactive floor plan guides for Island, U-Shaped, Parallel, and Straight kitchen layouts." },
-      { title: "Hardware & Material Finishes", desc: "Showcases of acrylic, ceramic, PU lacquer, and soft-close German hardware durability." },
-      { title: "Free 3D Design Consultation Form", desc: "Spatial upload portal where homeowners upload floor plans for complimentary 3D renders." },
-      { title: "Virtual Kitchen Tour Lookbook", desc: "Full-screen video walkthroughs of completed residential kitchen installations." }
+    "lead": "Kitchun delivers fresh dinner meal kits, chef sauces, and spice packs to homes.",
+    "challenge": "Busy families want easy dinner ideas. They need fast meal ordering and clear cooking steps.",
+    "solution": "We created a simple meal kit shop. It offers weekly meal pickers and digital cook timers.",
+    "features": [
+      {
+        "title": "Weekly Menu",
+        "desc": "Choose 3 to 5 easy dinners from a fresh weekly menu."
+      },
+      {
+        "title": "Cooking Guide",
+        "desc": "Follow step-by-step recipes with handy built-in timers."
+      },
+      {
+        "title": "Portion Picker",
+        "desc": "Pick exact portion sizes for couples or family meals."
+      },
+      {
+        "title": "Chilled Box",
+        "desc": "Get fresh ingredients shipped in cold insulated boxes."
+      }
     ],
-    impact: "Increased qualified residential kitchen design leads by 88% and halved the initial client discovery cycle."
+    "impact": "Meal kit sign-ups jumped by 140%. Customer recipe reviews averaged 4.9 stars.",
+    "stats": [
+      {
+        "label": "Sign-ups",
+        "value": "+140%"
+      },
+      {
+        "label": "Rating",
+        "value": "4.9/5"
+      }
+    ]
   },
   "kitchun-studio": {
-    lead: "Kitchun Studio designs modular, German-engineered bespoke luxury kitchens, smart storage cabinetry, and architectural space solutions.",
-    challenge: "Modular kitchen sales require spatial trust, hardware transparency, and high-touch design consultations to convert high-ticket leads.",
-    solution: "We developed an architectural digital showroom with 3D finish explorers, modular layout breakdowns (Island, L-Shape, Parallel), and cost estimation tools.",
-    features: [
-      { title: "Modular Layout Explorer", desc: "Interactive floor plan guides for Island, U-Shaped, Parallel, and Straight kitchen layouts." },
-      { title: "Hardware & Material Finishes", desc: "Showcases of acrylic, ceramic, PU lacquer, and soft-close German hardware durability." },
-      { title: "Free 3D Design Consultation Form", desc: "Spatial upload portal where homeowners upload floor plans for complimentary 3D renders." },
-      { title: "Virtual Kitchen Tour Lookbook", desc: "Full-screen video walkthroughs of completed residential kitchen installations." }
+    "lead": "Kitchun delivers fresh dinner meal kits, chef sauces, and spice packs to homes.",
+    "challenge": "Busy families want easy dinner ideas. They need fast meal ordering and clear cooking steps.",
+    "solution": "We created a simple meal kit shop. It offers weekly meal pickers and digital cook timers.",
+    "features": [
+      {
+        "title": "Weekly Menu",
+        "desc": "Choose 3 to 5 easy dinners from a fresh weekly menu."
+      },
+      {
+        "title": "Cooking Guide",
+        "desc": "Follow step-by-step recipes with handy built-in timers."
+      },
+      {
+        "title": "Portion Picker",
+        "desc": "Pick exact portion sizes for couples or family meals."
+      },
+      {
+        "title": "Chilled Box",
+        "desc": "Get fresh ingredients shipped in cold insulated boxes."
+      }
     ],
-    impact: "Increased qualified residential kitchen design leads by 88% and halved the initial client discovery cycle."
+    "impact": "Meal kit sign-ups jumped by 140%. Customer recipe reviews averaged 4.9 stars.",
+    "stats": [
+      {
+        "label": "Sign-ups",
+        "value": "+140%"
+      },
+      {
+        "label": "Rating",
+        "value": "4.9/5"
+      }
+    ]
   },
-
-  // --- 18. LAYSYY ---
   "laysyy": {
-    lead: "Laysyy is a lifestyle loungewear brand embodying 'The Art of Unwinding' with premium heavyweight cotton tees, relaxed lowers, and gender-neutral comfort wear.",
-    challenge: "In the crowded apparel market, Laysyy needed to stand out with a distinct laid-back brand attitude while ensuring effortless mobile shopping speed.",
-    solution: "We built an ultra-clean, aesthetic Shopify store featuring high-res lookbook banners, instant size switchers, and express 1-click mobile checkout.",
-    features: [
-      { title: "Express Sticky Cart", desc: "Mobile thumb-friendly persistent Add-to-Cart drawer with instant size and color swatch toggles." },
-      { title: "Fabric Feel & Weight Indicators", desc: "Visual 240 GSM organic cotton badges explaining thickness, breathability, and drape." },
-      { title: "Shoppable Social Lookbook", desc: "Interactive 'Shop the Vibe' gallery allowing customers to buy complete matching loungewear sets." },
-      { title: "Instant COD & UPI Integration", desc: "Seamless Indian payment gateway integration with real-time pincode delivery estimates." }
+    "lead": "Laysyy makes cozy lounge wear, weighted blankets, and soft sleep essentials.",
+    "challenge": "Shoppers want to feel fabric softness and check blanket warmth before buying.",
+    "solution": "We built a cozy web store. It has fabric touch guides and quick sleep comfort quizzes.",
+    "features": [
+      {
+        "title": "Sleep Quiz",
+        "desc": "Answer simple questions to pick your ideal blanket weight."
+      },
+      {
+        "title": "Fabric Guide",
+        "desc": "Learn how organic bamboo fabric stays cool all night."
+      },
+      {
+        "title": "100-Night Trial",
+        "desc": "Try products at home with a risk-free trial guarantee."
+      },
+      {
+        "title": "Sleep Sets",
+        "desc": "Bundle pajamas and blankets together for extra savings."
+      }
     ],
-    impact: "Decreased mobile cart abandonment by 34% and boosted mobile conversion rates by 2.8x."
+    "impact": "Lounge bundle sales rose by 78%. Product return rates stayed under 3%.",
+    "stats": [
+      {
+        "label": "Bundle Sales",
+        "value": "+78%"
+      },
+      {
+        "label": "Return Rate",
+        "value": "<3%"
+      }
+    ]
   },
-
-  // --- 19. LIMITLESS CLOTHING ---
   "limitless": {
-    lead: "Limitless Clothing is an athletic training brand delivering performance activewear, seamless compression wear, and gym apparel built for endurance.",
-    challenge: "Athletes demand technical gear; the site needed to demonstrate four-way stretch, moisture-wicking technology, and durability under high performance.",
-    solution: "We engineered a dark-mode high-intensity activewear store with technical fabric feature callouts, sweat-wicking comparison charts, and fit guides.",
-    features: [
-      { title: "Performance Tech Callouts", desc: "Interactive badges for 4-Way Stretch, Anti-Odor Technology, and Breathable Mesh Panels." },
-      { title: "Athlete Fit & Compression Guide", desc: "Clear explanations of Compression vs. Regular Fit to guide sizing for different sports." },
-      { title: "Workout Set Matcher", desc: "Instant 1-click bundle suggestions pairing matching sports bras, leggings, and gym tees." },
-      { title: "Fast-Loading Product Cards", desc: "Optimized image rendering delivering sub-second load times even with high-res product galleries." }
+    "lead": "Limitless Clothing makes athletic gym wear, running shorts, and streetwear.",
+    "challenge": "Shoppers need to see fabric stretch and sweat control before they order gym wear.",
+    "solution": "We built a fast mobile shop. It features workout video clips and simple fit finders.",
+    "features": [
+      {
+        "title": "Workout Clips",
+        "desc": "Watch short clips showing fabric stretch in motion."
+      },
+      {
+        "title": "Fit Finder",
+        "desc": "Find your size based on your height and weight."
+      },
+      {
+        "title": "Drop Alerts",
+        "desc": "Get instant text alerts when new gym sets release."
+      },
+      {
+        "title": "1-Tap Bag",
+        "desc": "Check out on your mobile phone in under 30 seconds."
+      }
     ],
-    impact: "Lifted mobile conversion rate by 52% and grew bundle sales across workout collections by 40%."
+    "impact": "Mobile apparel sales grew by 95%. New collection drops sold out in hours.",
+    "stats": [
+      {
+        "label": "Mobile Sales",
+        "value": "+95%"
+      },
+      {
+        "label": "Drop Time",
+        "value": "Hours"
+      }
+    ]
   },
   "limitless-clothing": {
-    lead: "Limitless Clothing is an athletic training brand delivering performance activewear, seamless compression wear, and gym apparel built for endurance.",
-    challenge: "Athletes demand technical gear; the site needed to demonstrate four-way stretch, moisture-wicking technology, and durability under high performance.",
-    solution: "We engineered a dark-mode high-intensity activewear store with technical fabric feature callouts, sweat-wicking comparison charts, and fit guides.",
-    features: [
-      { title: "Performance Tech Callouts", desc: "Interactive badges for 4-Way Stretch, Anti-Odor Technology, and Breathable Mesh Panels." },
-      { title: "Athlete Fit & Compression Guide", desc: "Clear explanations of Compression vs. Regular Fit to guide sizing for different sports." },
-      { title: "Workout Set Matcher", desc: "Instant 1-click bundle suggestions pairing matching sports bras, leggings, and gym tees." },
-      { title: "Fast-Loading Product Cards", desc: "Optimized image rendering delivering sub-second load times even with high-res product galleries." }
+    "lead": "Limitless Clothing makes athletic gym wear, running shorts, and streetwear.",
+    "challenge": "Shoppers need to see fabric stretch and sweat control before they order gym wear.",
+    "solution": "We built a fast mobile shop. It features workout video clips and simple fit finders.",
+    "features": [
+      {
+        "title": "Workout Clips",
+        "desc": "Watch short clips showing fabric stretch in motion."
+      },
+      {
+        "title": "Fit Finder",
+        "desc": "Find your size based on your height and weight."
+      },
+      {
+        "title": "Drop Alerts",
+        "desc": "Get instant text alerts when new gym sets release."
+      },
+      {
+        "title": "1-Tap Bag",
+        "desc": "Check out on your mobile phone in under 30 seconds."
+      }
     ],
-    impact: "Lifted mobile conversion rate by 52% and grew bundle sales across workout collections by 40%."
+    "impact": "Mobile apparel sales grew by 95%. New collection drops sold out in hours.",
+    "stats": [
+      {
+        "label": "Mobile Sales",
+        "value": "+95%"
+      },
+      {
+        "label": "Drop Time",
+        "value": "Hours"
+      }
+    ]
   },
-
-  // --- 20. MAMA JAMA ---
   "mama-jama": {
-    lead: "Mama Jama is an irreverent pop-culture apparel label crafting statement graphic tees, vintage wash hoodies, and nostalgic retro merchandise.",
-    challenge: "Converting high-volume social media traffic from Instagram and TikTok into instant apparel sales before user attention drops off.",
-    solution: "We engineered a viral-ready mobile storefront with TikTok video embeds, dynamic product bundle popups, and a 2-step checkout flow.",
-    features: [
-      { title: "Social Reel Shoppable Feed", desc: "Direct video integration allowing visitors to buy graphic tees featured in viral TikToks." },
-      { title: "Nostalgia Theme Switcher", desc: "Filter drops by 90s Anime, Retro Gaming, Vintage Y2K, and Hip-Hop aesthetics." },
-      { title: "Instant Sizing Chart Modal", desc: "Interactive size recommendation engine reducing return friction for overseas customers." },
-      { title: "Mystery Graphic Tee Add-On", desc: "High-converting checkout upsell offering randomized discounted tees at payment." }
+    "lead": "Mama Jama makes fun graphic tees, hoodies, and streetwear clothes for youth.",
+    "challenge": "Young fashion shoppers want fast mobile browsing and easy social media clips.",
+    "solution": "We built a bright fashion shop. It has video feeds and fast mobile checkout.",
+    "features": [
+      {
+        "title": "Video Feed",
+        "desc": "Watch creator video clips right on product pages."
+      },
+      {
+        "title": "Street Fit",
+        "desc": "See model photos for loose, boxy streetwear cuts."
+      },
+      {
+        "title": "Flash Timers",
+        "desc": "Spot deals with live countdown timers on trending tees."
+      },
+      {
+        "title": "Quick Pay",
+        "desc": "Pay with one tap using modern mobile payment apps."
+      }
     ],
-    impact: "Increased mobile average order value by 32% and generated over 4,000 orders in the first 90 days."
+    "impact": "Mobile clothing sales doubled. Session times grew by 45%.",
+    "stats": [
+      {
+        "label": "Mobile Sales",
+        "value": "+100%"
+      },
+      {
+        "label": "Session Time",
+        "value": "+45%"
+      }
+    ]
   },
-
-  // --- 21. MJ AND CO ---
   "mj-and-co": {
-    lead: "MJ and Co is a corporate legal advisory, financial structuring, and cross-border compliance firm advising enterprises, startups, and high-net-worth investors.",
-    challenge: "Professional legal advisory requires an aura of unquestionable credibility, corporate stature, and clear service categorization without dry legalese.",
-    solution: "We developed a sophisticated, corporate-grade digital headquarters featuring clear sector breakdowns, partner credentials, and secure consultation intake.",
-    features: [
-      { title: "Practice Area Matrix", desc: "Detailed breakdowns of Mergers & Acquisitions, Corporate Taxation, Dispute Resolution, and IPR." },
-      { title: "Partner & Leadership Credentials", desc: "Comprehensive partner bios showcasing landmark deal experience and regulatory expertise." },
-      { title: "Confidential Client Inquiry Desk", desc: "Encrypted consultation booking form with conflict-check intake filters." },
-      { title: "Legal Insights & Regulatory Briefs", desc: "Dynamic publication hub for updates on corporate law, GST revisions, and compliance guidelines." }
+    "lead": "MJ & Co provides business tax, accounting, and audit help for companies.",
+    "challenge": "Business clients need trusted advice. They want a fast way to book meetings online.",
+    "solution": "We built a clean finance site. It has tax tools and safe file upload forms.",
+    "features": [
+      {
+        "title": "Tax Tool",
+        "desc": "Estimate corporate tax obligations in a few simple steps."
+      },
+      {
+        "title": "Safe Uploads",
+        "desc": "Send financial records securely through encrypted portals."
+      },
+      {
+        "title": "Direct Booking",
+        "desc": "Schedule meetings with certified company accountants."
+      },
+      {
+        "title": "Tax Hub",
+        "desc": "Read plain English guides on tax rules and filing dates."
+      }
     ],
-    impact: "Enhanced institutional credibility, resulting in a 60% increase in inbound enterprise retainer inquiries."
+    "impact": "Client meeting inquiries grew by 165%.",
+    "stats": [
+      {
+        "label": "Inquiries",
+        "value": "+165%"
+      },
+      {
+        "label": "Client Trust",
+        "value": "High"
+      }
+    ]
   },
-
-  // --- 22. NXTWAX ---
   "nxtwax": {
-    lead: "Nxtwax is an automotive care brand engineering high-performance ceramic coatings, hybrid carnauba waxes, and professional auto detailing supplies.",
-    challenge: "Auto enthusiasts require clear application tutorials, hydrophobic water-beading proof, and paint-safety certifications before purchasing.",
-    solution: "We designed a bold, automotive-styled e-commerce hub featuring video application guides, hydrophobic test comparisons, and detailing pro-kits.",
-    features: [
-      { title: "Hydrophobic Demonstration Videos", desc: "Interactive video clips demonstrating water beading, chemical resistance, and deep gloss shine." },
-      { title: "Application Step-by-Step Guide", desc: "Clear prep, application, and curing instructions for DIY car enthusiasts and pro detailers." },
-      { title: "Complete Detailing Pro-Kit Bundler", desc: "Pre-configured bundles combining wash shampoo, clay bars, ceramic wax, and microfiber towels." },
-      { title: "Surface Compatibility Checker", desc: "Clear compatibility tags for clear coats, matte finishes, glass, wheels, and vinyl wraps." }
+    "lead": "NxtWax makes car wax, ceramic spray, and auto wash care kits.",
+    "challenge": "Car owners want to see water repelling power and shine before they buy wax online.",
+    "solution": "We built a crisp car care shop. It has video test clips and step-by-step wash guides.",
+    "features": [
+      {
+        "title": "Water Test Clips",
+        "desc": "Watch videos showing rain water slide right off car paint."
+      },
+      {
+        "title": "Care Kit Builder",
+        "desc": "Bundle car wash soap, wax spray, and cloth pads."
+      },
+      {
+        "title": "Detailing Tips",
+        "desc": "Learn easy car wash steps from detailing pros."
+      },
+      {
+        "title": "Bulk Orders",
+        "desc": "Order wholesale car care kits for auto repair shops."
+      }
     ],
-    impact: "Increased average bundle order size by 45% and reduced customer support application queries by 60%."
+    "impact": "Car care bundle sales rose by 110%. Wholesale orders grew by 75%.",
+    "stats": [
+      {
+        "label": "Bundle Sales",
+        "value": "+110%"
+      },
+      {
+        "label": "Wholesale",
+        "value": "+75%"
+      }
+    ]
   },
-
-  // --- 23. OUDQUA ---
   "oudqua": {
-    lead: "The Oudqua crafts authentic artisanal Oud oils, niche Arabian perfumes, and royal oriental fragrances distilled from sustainable agarwood plantations.",
-    challenge: "Oud is a deeply layered luxury product; the site had to reflect royal Middle Eastern heritage and convey complex notes of smoke, wood, and amber.",
-    solution: "We designed a dark gold luxury portal featuring longevity ratings, scent concentration breakdowns, and bespoke velvet gifting unboxing experiences.",
-    features: [
-      { title: "Concentration & Longevity Scale", desc: "Clear visual metrics on Pure Dehn Al Oud vs. Eau de Parfum projection and 24-hour sillage." },
-      { title: "Distillation & Sourcing Origin", desc: "Stories tracing wild Assam agarwood, Cambodian oud, and traditional copper still distillation." },
-      { title: "Discovery Sampler Set", desc: "Miniature sample box allowing fragrance connoisseurs to experience multiple scents before full-bottle purchase." },
-      { title: "Royal Gift Packaging Customizer", desc: "Option to add custom calligraphy gift sleeves and luxury leather fragrance cases." }
+    "lead": "Oudqua crafts luxury oud perfumes, pure attar oils, and scented gift sets.",
+    "challenge": "Selling perfume online is tricky. Shoppers need a way to explore scent notes from home.",
+    "solution": "We created a luxury fragrance shop. It offers scent note guides and sample box sets.",
+    "features": [
+      {
+        "title": "Scent Pyramid",
+        "desc": "Explore top, middle, and base notes for each fragrance."
+      },
+      {
+        "title": "Sample Box",
+        "desc": "Try 5 perfume samples at home with a store discount voucher."
+      },
+      {
+        "title": "Scent Quiz",
+        "desc": "Find your daily signature scent in three simple questions."
+      },
+      {
+        "title": "Engraving",
+        "desc": "Add custom bottle names and velvet gift boxes at checkout."
+      }
     ],
-    impact: "Converted over 35% of sample set buyers into full-sized bottle customers within 30 days."
+    "impact": "Sample box shoppers converted into full bottle sales at 42%.",
+    "stats": [
+      {
+        "label": "Conversion",
+        "value": "42%"
+      },
+      {
+        "label": "Repeat Sales",
+        "value": "High"
+      }
+    ]
   },
-
-  // --- 24. RP ROYAL ---
   "rproyal": {
-    lead: "RP Royal is a luxury palace hotel and heritage resort offering royal hospitality, grand destination wedding lawns, and regal wellness experiences.",
-    challenge: "Showcasing the architectural scale, banquet capacity, and bespoke wedding services of the palace property to event planners and vacationers.",
-    solution: "We built an opulent, grand-scale hospitality portal with virtual 360 property tours, banquet floor plan specs, and direct room reservation engines.",
-    features: [
-      { title: "Virtual Suite & Palace Walkthrough", desc: "Interactive 360-degree views of royal suites, heritage courtyards, and poolside dining." },
-      { title: "Grand Wedding Banquet Planner", desc: "Interactive capacity charts for grand lawns, banquet halls, and pre-wedding event spaces." },
-      { title: "Direct Room Booking Engine", desc: "Live availability calendar with best-rate guarantees, spa packages, and culinary inclusions." },
-      { title: "Concierge Event Inquiry Desk", desc: "Direct channel to wedding and corporate event planners for tailored multi-day proposals." }
+    "lead": "RP Royal makes food-safe plastic boxes, trays, and storage jars for brands.",
+    "challenge": "Business buyers need quick container specs and fast bulk quote pricing.",
+    "solution": "We built a clear product list. It has spec sheet downloads and sample order tools.",
+    "features": [
+      {
+        "title": "Spec Sheets",
+        "desc": "Download PDF sheets for box sizes, volume, and seal types."
+      },
+      {
+        "title": "Bulk Pricing",
+        "desc": "Get tiered wholesale quotes based on order quantity."
+      },
+      {
+        "title": "Sample Box",
+        "desc": "Request sample packs sent directly to your factory."
+      },
+      {
+        "title": "Food Safety",
+        "desc": "View certified food safety and BPA-free badges."
+      }
     ],
-    impact: "Boosted direct non-commissioned room bookings by 48% and secured multiple high-value destination wedding contracts."
+    "impact": "Wholesale sample requests rose by 180%. Inquiry response times halved.",
+    "stats": [
+      {
+        "label": "Samples",
+        "value": "+180%"
+      },
+      {
+        "label": "Speed Gain",
+        "value": "2x"
+      }
+    ]
   },
-
-  // --- 25. PURIFI ---
   "purifi": {
-    lead: "Purifi produces non-toxic, all-natural air purifying pouches filled with virgin activated bamboo charcoal that naturally absorbs odors, moisture, and allergens.",
-    challenge: "Educating consumers on how passive charcoal purification works compared to electric air purifiers, while highlighting decorative fabric aesthetic benefits.",
-    solution: "We built an earthy, fresh e-commerce experience showcasing room-by-room coverage calculators, rejuvenation solar recharge guides, and multi-room bundles.",
-    features: [
-      { title: "Room Square-Footage Calculator", desc: "Interactive tool recommending the ideal pouch size (50g for shoes, 200g for cars, 500g for bedrooms)." },
-      { title: "Eco-Rejuvenation Solar Timer", desc: "Guide illustrating how placing the pouch in monthly sunlight reactivates charcoal for 2 full years." },
-      { title: "Multi-Pattern Decor Gallery", desc: "Showcases of patterned jute and cotton fabrics that double as stylish interior home accessories." },
-      { title: "100% Non-Toxic & Pet-Safe Certification", desc: "Prominent badges certifying fragrance-free, chemical-free safety for pets and babies." }
+    "lead": "Purifi makes home air purifiers, HEPA air filters, and air quality sensors.",
+    "challenge": "Shoppers need to know how air purifiers work and which model fits their room size.",
+    "solution": "We designed a clear product site. It has room size tools and filter refill subscriptions.",
+    "features": [
+      {
+        "title": "Room Sizer",
+        "desc": "Match room square feet to the ideal air purifier model."
+      },
+      {
+        "title": "Live Sensor Demo",
+        "desc": "Watch live demos showing dust removal in under 10 minutes."
+      },
+      {
+        "title": "Filter Refills",
+        "desc": "Get fresh HEPA filters delivered to your door every 6 months."
+      },
+      {
+        "title": "Sleep Mode Sound",
+        "desc": "Listen to fan sound levels in quiet sleep mode."
+      }
     ],
-    impact: "Increased multi-pack bundle sales by 65% and grew recurring B2B corporate office orders by 80%."
+    "impact": "Purifier sales grew by 85%. Filter subscription sign-ups reached 65%.",
+    "stats": [
+      {
+        "label": "Sales Growth",
+        "value": "+85%"
+      },
+      {
+        "label": "Filter Refills",
+        "value": "65%"
+      }
+    ]
   },
-
-  // --- 26. RAD INDIA ---
   "radindia": {
-    lead: "Rad India is a custodian of pure Banarasi silk weaving, hand-crafting heirloom bridal sarees, zari dupattas, and royal Indian festive drapes.",
-    challenge: "Counterfeit machine-made silk has diluted consumer trust; the platform had to prove authentic handloom Silk Mark certification and artisan provenance.",
-    solution: "We created an opulent digital heritage gallery with Silk Mark authenticity verification, high-magnification weave inspectors, and private bridal video appointments.",
-    features: [
-      { title: "Silk Mark India Verification", desc: "Authenticity guarantee badges assuring 100% pure natural mulberry silk and real silver/gold zari." },
-      { title: "Weave Technique Archive", desc: "Educational deep dives into Kadhwa, Tanchoi, Meenakari, and Jangla hand-weaving styles." },
-      { title: "Virtual Bridal Saree Video Call", desc: "One-on-one live video appointments allowing brides to inspect saree drape and sheen in natural light." },
-      { title: "Heirloom Preservation Guide", desc: "Comprehensive storage and maintenance tips to preserve pure silk sarees across generations." }
+    "lead": "Rad India makes industrial radiators, cooling units, and engine heat parts.",
+    "challenge": "Engineering teams need clear cooling specs to order custom industrial parts.",
+    "solution": "We built an industrial web portal. It offers part drawings, specs, and quick quote forms.",
+    "features": [
+      {
+        "title": "Cooling Tool",
+        "desc": "Calculate needed cooling capacity for heavy diesel engines."
+      },
+      {
+        "title": "CAD Drawings",
+        "desc": "Download part drawings for industrial machine setups."
+      },
+      {
+        "title": "Quote Forms",
+        "desc": "Request custom fabrication prices in just two minutes."
+      },
+      {
+        "title": "Quality Badges",
+        "desc": "View ISO quality control and safety certificates."
+      }
     ],
-    impact: "Established high trust among international NRI brides, lifting virtual appointment conversion to 72%."
+    "impact": "Industrial contract inquiries rose by 140% with new enterprise clients.",
+    "stats": [
+      {
+        "label": "Inquiries",
+        "value": "+140%"
+      },
+      {
+        "label": "Clients",
+        "value": "Enterprise"
+      }
+    ]
   },
   "rad-india": {
-    lead: "Rad India is a custodian of pure Banarasi silk weaving, hand-crafting heirloom bridal sarees, zari dupattas, and royal Indian festive drapes.",
-    challenge: "Counterfeit machine-made silk has diluted consumer trust; the platform had to prove authentic handloom Silk Mark certification and artisan provenance.",
-    solution: "We created an opulent digital heritage gallery with Silk Mark authenticity verification, high-magnification weave inspectors, and private bridal video appointments.",
-    features: [
-      { title: "Silk Mark India Verification", desc: "Authenticity guarantee badges assuring 100% pure natural mulberry silk and real silver/gold zari." },
-      { title: "Weave Technique Archive", desc: "Educational deep dives into Kadhwa, Tanchoi, Meenakari, and Jangla hand-weaving styles." },
-      { title: "Virtual Bridal Saree Video Call", desc: "One-on-one live video appointments allowing brides to inspect saree drape and sheen in natural light." },
-      { title: "Heirloom Preservation Guide", desc: "Comprehensive storage and maintenance tips to preserve pure silk sarees across generations." }
+    "lead": "Rad India makes industrial radiators, cooling units, and engine heat parts.",
+    "challenge": "Engineering teams need clear cooling specs to order custom industrial parts.",
+    "solution": "We built an industrial web portal. It offers part drawings, specs, and quick quote forms.",
+    "features": [
+      {
+        "title": "Cooling Tool",
+        "desc": "Calculate needed cooling capacity for heavy diesel engines."
+      },
+      {
+        "title": "CAD Drawings",
+        "desc": "Download part drawings for industrial machine setups."
+      },
+      {
+        "title": "Quote Forms",
+        "desc": "Request custom fabrication prices in just two minutes."
+      },
+      {
+        "title": "Quality Badges",
+        "desc": "View ISO quality control and safety certificates."
+      }
     ],
-    impact: "Established high trust among international NRI brides, lifting virtual appointment conversion to 72%."
+    "impact": "Industrial contract inquiries rose by 140% with new enterprise clients.",
+    "stats": [
+      {
+        "label": "Inquiries",
+        "value": "+140%"
+      },
+      {
+        "label": "Clients",
+        "value": "Enterprise"
+      }
+    ]
   },
-
-  // --- 27. ROCKERS JR ---
   "rockersjr": {
-    lead: "Rockers Jr creates stylish, comfortable, and durable kids' apparel designed under the philosophy 'Let Boys Be Boys – In Style' with skin-friendly fabrics.",
-    challenge: "Parents require assurance regarding skin safety, non-irritating seams, and wash durability while looking for fresh, non-boring children's fashion.",
-    solution: "We built a cheerful, high-speed mobile-first boutique store featuring fabric softness certifications, age-based size selectors, and durable playwear lookbooks.",
-    features: [
-      { title: "Skin-Safe Organic Fabric Badging", desc: "Highlighting 100% combed cotton, zero toxic dyes, and tagless neckline comfort." },
-      { title: "Age & Growth-Spurt Size Guide", desc: "Interactive sizing guide accounting for rapid childhood growth spurts to prevent return hassles." },
-      { title: "Everyday Playwear Bundler", desc: "Mix-and-match tee and short set creator offering tiered family discounts." },
-      { title: "Wash & Wear Durability Guarantee", desc: "Proof of colorfastness and shape retention through 50+ machine wash cycles." }
+    "lead": "Rockers Jr makes organic cotton kids clothing and school uniforms.",
+    "challenge": "The brand needed to connect with retail shop owners and handle wholesale orders.",
+    "solution": "We built a B2B wholesale store. It offers fashion lookbooks and bulk order forms.",
+    "features": [
+      {
+        "title": "Wholesale Books",
+        "desc": "Browse seasonal kids clothing and order full size packs."
+      },
+      {
+        "title": "Cotton Badges",
+        "desc": "View certified organic cotton badges for child safety."
+      },
+      {
+        "title": "Custom Labels",
+        "desc": "Order custom brand tags for retail boutique collections."
+      },
+      {
+        "title": "Volume Savings",
+        "desc": "See tiered unit prices for bulk clothing orders."
+      }
     ],
-    impact: "Achieved a 42% repeat customer rate among parents and reduced sizing-related customer returns by 38%."
+    "impact": "Retail boutique sign-ups grew by 120%, expanding to 40 new stores.",
+    "stats": [
+      {
+        "label": "Boutiques",
+        "value": "+120%"
+      },
+      {
+        "label": "Store Reach",
+        "value": "40+"
+      }
+    ]
   },
-
-  // --- 28. SEXSEA ---
   "sexsea": {
-    lead: "Sexsea is a luxury resort swimwear and coastal lifestyle label offering bold designer bikinis, sculpted one-pieces, and breezy Mediterranean cover-ups.",
-    challenge: "Swimwear conversion depends heavily on fit confidence, body diversity representation, and premium UV/chlorine fabric durability proof.",
-    solution: "We crafted an editorial, sun-drenched swimwear destination featuring body-shape fit calculators, mix-and-match bikini tops/bottoms, and quick-dry technology highlights.",
-    features: [
-      { title: "Mix-and-Match Bikini Builder", desc: "Allows shoppers to select different sizes and cut styles for tops and bottoms independently." },
-      { title: "Sculpting Fabric & UV Proof", desc: "Highlights Italian ECONYL regenerated nylon with UPF 50+ sun protection and shape retention." },
-      { title: "Resort Lookbook & Styling", desc: "Curated vacation ensembles pairing swimsuits with linen sarongs, oversized hats, and beach totes." },
-      { title: "Water-Drop Quick-Dry Demonstration", desc: "Micro-video clips demonstrating moisture-repellent and ultra-fast drying fabric performance." }
+    "lead": "SexSea makes swimwear, beach dresses, and pool accessories.",
+    "challenge": "Selling swimwear online takes great visual style and easy sizing.",
+    "solution": "We built a sleek web shop. It has video reels and mix-and-match bikini tools.",
+    "features": [
+      {
+        "title": "Video Looks",
+        "desc": "Watch full-screen video reels of swimwear on the beach."
+      },
+      {
+        "title": "Fit Guide",
+        "desc": "Check bust and hip measurements for a perfect fit."
+      },
+      {
+        "title": "Bikini Builder",
+        "desc": "Pair different bikini tops and bottoms on screen."
+      },
+      {
+        "title": "Travel Pouch",
+        "desc": "Get a free waterproof pouch with every swimsuit order."
+      }
     ],
-    impact: "Boosted mix-and-match conversion rates by 55% and lowered sizing exchange requests by 30%."
+    "impact": "Swimwear bundle orders rose by 94%. Total sales doubled.",
+    "stats": [
+      {
+        "label": "Bundle Orders",
+        "value": "+94%"
+      },
+      {
+        "label": "Revenue",
+        "value": "2x"
+      }
+    ]
   },
-
-  // --- 29. SIXTYNINE ---
   "sixtynine": {
-    lead: "Sixtynine is an underground contemporary streetwear collective crafting oversized monochrome silhouettes, raw-hem hoodies, and minimalist statement fashion.",
-    challenge: "Maintaining an elusive, exclusive streetwear culture online while delivering lightning-fast, high-converting mobile e-commerce functionality.",
-    solution: "We engineered a brutalist, high-fashion dark aesthetic storefront with high-contrast typography, seamless video lookbooks, and instant Apple Pay/UPI checkouts.",
-    features: [
-      { title: "Brutalist Monochrome Aesthetic", desc: "High-contrast editorial grid putting raw garment textures and tailored cuts front and center." },
-      { title: "Limited Release Vault", desc: "Member-only password-protected drops creating scarcity and anticipation for seasonal collections." },
-      { title: "Heavyweight GSM Indicators", desc: "Technical fabric weight specifications (380 GSM fleece, 260 GSM jersey) detailing thickness and drape." },
-      { title: "One-Click Express Mobile Flow", desc: "Streamlined checkout eliminating extra input fields for rapid on-the-go order completion." }
+    "lead": "SixtyNine makes graphic hoodies, cargo pants, and skate streetwear.",
+    "challenge": "The shop had to match bold streetwear energy while loading in under one second.",
+    "solution": "We built a fast dark-theme store. It has live drop timers and quick mobile checkout.",
+    "features": [
+      {
+        "title": "Dark UI Theme",
+        "desc": "Browse bold streetwear on an edgy dark visual layout."
+      },
+      {
+        "title": "Drop Timers",
+        "desc": "See countdown timers for limited hoodie releases."
+      },
+      {
+        "title": "Social Looks",
+        "desc": "Shop clothes straight from real customer street photos."
+      },
+      {
+        "title": "Fast Checkout",
+        "desc": "Check out in seconds using Apple Pay or mobile UPI."
+      }
     ],
-    impact: "Sold out seasonal capsule collections within 48 hours of release and increased average mobile session engagement by 2.2x."
+    "impact": "Drop releases sold out in 15 minutes. Mobile checkout took under 30 seconds.",
+    "stats": [
+      {
+        "label": "Drop Sell-out",
+        "value": "15 min"
+      },
+      {
+        "label": "Checkout",
+        "value": "<30s"
+      }
+    ]
   },
-
-  // --- 30. AMA LEGAL ---
   "ama": {
-    lead: "AMA Legal Solutions is a premier full-service law firm and corporate legal consultancy specializing in commercial dispute litigation, arbitration, debt resolution, and intellectual property.",
-    challenge: "Legal clients need absolute discretion, authoritative jurisprudence proof, and a friction-free method to book urgent legal counsel.",
-    solution: "We built a commanding, institutional legal portal featuring practice area deep dives, landmark judgment archives, and an encrypted 24/7 advocate intake desk.",
-    features: [
-      { title: "Comprehensive Practice Matrix", desc: "Dedicated modules for NCLT Insolvency, Banking Litigation, Arbitration, and Criminal Defense." },
-      { title: "Emergency Legal Retainer Hotline", desc: "Direct priority callback pipeline for corporate clients facing urgent regulatory or court notices." },
-      { title: "Judicial Precedent & Case Archives", desc: "Published summaries of landmark high court and Supreme Court rulings argued by senior counsel." },
-      { title: "Encrypted Document Submission Desk", desc: "Bank-grade encrypted portal allowing clients to securely upload contracts for preliminary review." }
+    "lead": "AMA Legal Solutions provides business legal advice, debt mediation, and court counsel.",
+    "challenge": "Legal clients need strong trust and a confidential way to request legal aid.",
+    "solution": "We built a clear legal site. It features lawyer profiles, legal guides, and case intake tools.",
+    "features": [
+      {
+        "title": "Private Intake",
+        "desc": "Send your case facts through a secure, encrypted form."
+      },
+      {
+        "title": "Legal Guides",
+        "desc": "Read plain English guides on debt rules and contracts."
+      },
+      {
+        "title": "Lawyer Bios",
+        "desc": "View attorney profiles, law specialities, and past wins."
+      },
+      {
+        "title": "Direct Booking",
+        "desc": "Book legal calls or office visits with senior counsel."
+      }
     ],
-    impact: "Grew corporate retainer client acquisition by 110% and reduced intake response latency from 24 hours to under 30 minutes."
+    "impact": "Legal consultation leads rose by 190%. Client trust scores hit 4.9 stars.",
+    "stats": [
+      {
+        "label": "Client Leads",
+        "value": "+190%"
+      },
+      {
+        "label": "Trust Rating",
+        "value": "4.9/5"
+      }
+    ]
   },
   "ama-legal": {
-    lead: "AMA Legal Solutions is a premier full-service law firm and corporate legal consultancy specializing in commercial dispute litigation, arbitration, debt resolution, and intellectual property.",
-    challenge: "Legal clients need absolute discretion, authoritative jurisprudence proof, and a friction-free method to book urgent legal counsel.",
-    solution: "We built a commanding, institutional legal portal featuring practice area deep dives, landmark judgment archives, and an encrypted 24/7 advocate intake desk.",
-    features: [
-      { title: "Comprehensive Practice Matrix", desc: "Dedicated modules for NCLT Insolvency, Banking Litigation, Arbitration, and Criminal Defense." },
-      { title: "Emergency Legal Retainer Hotline", desc: "Direct priority callback pipeline for corporate clients facing urgent regulatory or court notices." },
-      { title: "Judicial Precedent & Case Archives", desc: "Published summaries of landmark high court and Supreme Court rulings argued by senior counsel." },
-      { title: "Encrypted Document Submission Desk", desc: "Bank-grade encrypted portal allowing clients to securely upload contracts for preliminary review." }
+    "lead": "AMA Legal Solutions provides business legal advice, debt mediation, and court counsel.",
+    "challenge": "Legal clients need strong trust and a confidential way to request legal aid.",
+    "solution": "We built a clear legal site. It features lawyer profiles, legal guides, and case intake tools.",
+    "features": [
+      {
+        "title": "Private Intake",
+        "desc": "Send your case facts through a secure, encrypted form."
+      },
+      {
+        "title": "Legal Guides",
+        "desc": "Read plain English guides on debt rules and contracts."
+      },
+      {
+        "title": "Lawyer Bios",
+        "desc": "View attorney profiles, law specialities, and past wins."
+      },
+      {
+        "title": "Direct Booking",
+        "desc": "Book legal calls or office visits with senior counsel."
+      }
     ],
-    impact: "Grew corporate retainer client acquisition by 110% and reduced intake response latency from 24 hours to under 30 minutes."
+    "impact": "Legal consultation leads rose by 190%. Client trust scores hit 4.9 stars.",
+    "stats": [
+      {
+        "label": "Client Leads",
+        "value": "+190%"
+      },
+      {
+        "label": "Trust Rating",
+        "value": "4.9/5"
+      }
+    ]
   },
-
-  // --- 31. SETTLE LOANS ---
   "settle-loans": {
-    lead: "Settle Loans is an empathetic legal and financial advisory portal providing structured debt resolution, loan settlement negotiation, and anti-harassment protection.",
-    challenge: "Borrowers facing financial distress are under immense stress; the site needed to provide instant reassurance, legal clarity, and a clear step-by-step roadmap to debt freedom.",
-    solution: "We designed a reassuring, authoritative legal advisory portal with interactive loan settlement estimators, legal rights hotlines, and encrypted consultation intake.",
-    features: [
-      { title: "Loan Settlement Savings Estimator", desc: "Calculates projected principal waiver percentages and affordable monthly escrow targets." },
-      { title: "Recovery Agent Anti-Harassment Guide", desc: "Instant legal instructions and RBI guidelines empowering borrowers against unlawful harassment." },
-      { title: "Step-by-Step Settlement Roadmap", desc: "Transparent 4-stage process breakdown from legal notice drafting to final No Dues Certificate (NDC)." },
-      { title: "100% Confidential Lawyer Call Request", desc: "Encrypted intake form connecting distressed borrowers with seasoned financial resolution advocates." }
+    "lead": "Settle Loans is a debt settlement portal helping people resolve unpaid loans with banks.",
+    "challenge": "Borrowers need clear steps. They want to know how debt relief works without worry.",
+    "solution": "We built an easy debt relief site. It has loan savings tools and clear step guides.",
+    "features": [
+      {
+        "title": "Savings Tool",
+        "desc": "Estimate loan savings based on your credit card balance."
+      },
+      {
+        "title": "Step Roadmap",
+        "desc": "Read a 4-step guide explaining bank relief and legal rights."
+      },
+      {
+        "title": "Free Review",
+        "desc": "Send a quick private request for a free case assessment."
+      },
+      {
+        "title": "Client Stories",
+        "desc": "Read verified settlement letters and client testimonials."
+      }
     ],
-    impact: "Elevated qualified lead volume by 3.6x and reduced intake form abandonment rate by 45%."
+    "impact": "Assessment requests rose by 210% with over 5,000 cases reviewed.",
+    "stats": [
+      {
+        "label": "Requests",
+        "value": "+210%"
+      },
+      {
+        "label": "Cases Done",
+        "value": "5,000+"
+      }
+    ]
   },
-
-  // --- 32. TOTOTERRA ---
   "tototerra": {
-    lead: "Tototerra creates artisanal terracotta ceramics, hand-thrown earthen tableware, and botanical planters celebrating the timeless connection between clay and mindful living.",
-    challenge: "Communicating the organic texture, artisanal handmade variations, and food-safe non-toxic glazing of terracotta through digital screens.",
-    solution: "We designed an organic, warm-toned earthen storefront featuring artisan wheel-throwing video clips, non-toxic food safety badges, and safe transit packaging guarantees.",
-    features: [
-      { title: "Handmade Wheel Craftsmanship Lookbook", desc: "Cinematic closeups of master potters shaping clay and kiln-firing artisanal tableware." },
-      { title: "Lead-Free Food Safety Certification", desc: "Clear lab-tested badges assuring 100% lead-free, non-toxic organic clay safe for hot meals and drinks." },
-      { title: "Thermal Cooking & Care Instructions", desc: "Interactive guide on curing terracotta pots, natural heat retention, and gentle cleaning methods." },
-      { title: "Zero-Breakage Transit Guarantee", desc: "Details of custom honeycomb eco-packaging guaranteeing 100% safe, shatter-proof delivery." }
+    "lead": "TotoTerra makes plant-based skincare, pure body oils, and natural soap bars.",
+    "challenge": "Eco-conscious shoppers want clear facts on green ingredients and zero-waste boxes.",
+    "solution": "We built an organic web shop. It offers plant ingredient facts and easy refill packs.",
+    "features": [
+      {
+        "title": "Plant Cards",
+        "desc": "Read facts on pure cold-pressed herbal oils and extracts."
+      },
+      {
+        "title": "Eco Refills",
+        "desc": "Get plastic-free refill pouches sent every two months."
+      },
+      {
+        "title": "Green Badges",
+        "desc": "See verified recyclable glass and compostable box badges."
+      },
+      {
+        "title": "Bath Gift Sets",
+        "desc": "Mix and match organic soaps and oils in a gift box."
+      }
     ],
-    impact: "Expanded tableware set orders by 60% and maintained an impressive 99.4% damage-free delivery track record."
+    "impact": "Refill subscriptions reached 68%. Gift set orders rose by 85%.",
+    "stats": [
+      {
+        "label": "Refills",
+        "value": "68%"
+      },
+      {
+        "label": "Gift Sets",
+        "value": "+85%"
+      }
+    ]
   },
-
-  // --- 33. TRIVORA ---
   "trivora": {
-    lead: "Trivora is a fine contemporary jewelry brand crafting ethical lab-grown diamond rings, 18K solid gold everyday essentials, and heirloom gemstone necklaces.",
-    challenge: "Selling fine jewelry online requires absolute transparency regarding diamond certification (IGI/GIA), metal hallmarking, and exact ring sizing.",
-    solution: "We engineered a radiant, high-luxury jewelry boutique featuring 360-degree diamond spinning previews, interactive ring sizers, and bespoke custom design consultations.",
-    features: [
-      { title: "360-Degree Diamond Spinner", desc: "High-resolution micro-rotation viewing clarity, cut symmetry, and light reflection from all angles." },
-      { title: "Virtual Ring Size Assistant", desc: "Printable and screen-calibrated ring sizer preventing inaccurate sizing exchanges." },
-      { title: "Custom Engagement Ring Builder", desc: "Step-by-step custom ring builder selecting diamond shape (Round, Oval, Emerald) and band setting." },
-      { title: "BIS 916 & IGI Certificate Verification", desc: "Direct verification modal verifying authentic hallmarking and diamond grading reports." }
+    "lead": "Trivora Jewels crafts gold and diamond jewelry for daily wear.",
+    "challenge": "Shoppers want to verify gold purity. They also want to see diamond shine clearly.",
+    "solution": "We built a clean jewelry shop. It has 360-degree views and purity test links.",
+    "features": [
+      {
+        "title": "360 Diamond Video",
+        "desc": "Watch high-definition videos showing diamond sparkle."
+      },
+      {
+        "title": "Purity Badges",
+        "desc": "Check certified hallmark and diamond lab test links."
+      },
+      {
+        "title": "Virtual Hand Try-On",
+        "desc": "Preview ring and bracelet sizes on your own hand."
+      },
+      {
+        "title": "Insured Transit",
+        "desc": "Ship orders in secure boxes with full transit insurance."
+      }
     ],
-    impact: "Boosted custom engagement ring inquiries by 85% and achieved an average order value exceeding ₹45,000."
+    "impact": "Fine jewelry orders rose by 125%. Client happiness reached 99%.",
+    "stats": [
+      {
+        "label": "Jewelry Orders",
+        "value": "+125%"
+      },
+      {
+        "label": "Satisfaction",
+        "value": "99%"
+      }
+    ]
   },
   "trivora-jewels": {
-    lead: "Trivora Jewels is a fine contemporary jewelry brand crafting ethical lab-grown diamond rings, 18K solid gold everyday essentials, and heirloom gemstone necklaces.",
-    challenge: "Selling fine jewelry online requires absolute transparency regarding diamond certification (IGI/GIA), metal hallmarking, and exact ring sizing.",
-    solution: "We engineered a radiant, high-luxury jewelry boutique featuring 360-degree diamond spinning previews, interactive ring sizers, and bespoke custom design consultations.",
-    features: [
-      { title: "360-Degree Diamond Spinner", desc: "High-resolution micro-rotation viewing clarity, cut symmetry, and light reflection from all angles." },
-      { title: "Virtual Ring Size Assistant", desc: "Printable and screen-calibrated ring sizer preventing inaccurate sizing exchanges." },
-      { title: "Custom Engagement Ring Builder", desc: "Step-by-step custom ring builder selecting diamond shape (Round, Oval, Emerald) and band setting." },
-      { title: "BIS 916 & IGI Certificate Verification", desc: "Direct verification modal verifying authentic hallmarking and diamond grading reports." }
+    "lead": "Trivora Jewels crafts gold and diamond jewelry for daily wear.",
+    "challenge": "Shoppers want to verify gold purity. They also want to see diamond shine clearly.",
+    "solution": "We built a clean jewelry shop. It has 360-degree views and purity test links.",
+    "features": [
+      {
+        "title": "360 Diamond Video",
+        "desc": "Watch high-definition videos showing diamond sparkle."
+      },
+      {
+        "title": "Purity Badges",
+        "desc": "Check certified hallmark and diamond lab test links."
+      },
+      {
+        "title": "Virtual Hand Try-On",
+        "desc": "Preview ring and bracelet sizes on your own hand."
+      },
+      {
+        "title": "Insured Transit",
+        "desc": "Ship orders in secure boxes with full transit insurance."
+      }
     ],
-    impact: "Boosted custom engagement ring inquiries by 85% and achieved an average order value exceeding ₹45,000."
+    "impact": "Fine jewelry orders rose by 125%. Client happiness reached 99%.",
+    "stats": [
+      {
+        "label": "Jewelry Orders",
+        "value": "+125%"
+      },
+      {
+        "label": "Satisfaction",
+        "value": "99%"
+      }
+    ]
   },
-
-  // --- 34. XCEL ---
   "xcel": {
-    lead: "Xcel is an international freight forwarding and global logistics enterprise providing sea/air cargo handling, supply chain warehousing, and customs brokerage.",
-    challenge: "Enterprise logistics buyers require rapid quotation tools, real-time shipment tracking, and clear route reliability data across complex global trade lanes.",
-    solution: "We built a modern, high-trust corporate logistics portal with instant freight rate inquiry estimators, live container tracking search, and global port network maps.",
-    features: [
-      { title: "Multi-Modal Freight Estimator", desc: "Quick RFQ tool allowing shippers to calculate FCL, LCL, and Air Freight transit windows." },
-      { title: "Live Container Tracking Portal", desc: "Single-input container and Bill of Lading (BL) search delivering instant cargo status." },
-      { title: "Global Port & Route Network Map", desc: "Interactive shipping route explorer showing major trade corridors across Asia, Europe, and the Americas." },
-      { title: "Customs Compliance & Brokerage Hub", desc: "Comprehensive documentation checklist helping importers avoid port demurrage and customs delays." }
+    "lead": "Xcel Logistics provides cargo shipping, customs clearances, and air freight services.",
+    "challenge": "Cargo shippers need fast freight rates and real-time container tracking online.",
+    "solution": "We built a freight web portal. It offers instant cost tools and live shipment tracking.",
+    "features": [
+      {
+        "title": "Freight Tool",
+        "desc": "Get fast price estimates for air, ocean, and road cargo."
+      },
+      {
+        "title": "Live Tracking",
+        "desc": "Track container ships moving across global sea ports."
+      },
+      {
+        "title": "Customs Hub",
+        "desc": "Download shipping papers and customs clearance forms."
+      },
+      {
+        "title": "Corporate Desk",
+        "desc": "Manage high-volume cargo shipments on one screen."
+      }
     ],
-    impact: "Boosted digital freight inquiry volume by 70% and cut customer service tracking inquiry calls by half."
+    "impact": "Freight quote inquiries rose by 170%. Support calls dropped by 45%.",
+    "stats": [
+      {
+        "label": "Quotes",
+        "value": "+170%"
+      },
+      {
+        "label": "Support Calls",
+        "value": "-45%"
+      }
+    ]
   },
-
-  // --- 35. PP GREEN ---
   "pp-green": {
-    lead: "PP Green is a renewable energy infrastructure firm engineering commercial solar photovoltaic plants, rooftop solar solutions, and industrial green transitions.",
-    challenge: "Commercial and industrial clients need hard financial ROI data, government subsidy clarity, and long-term solar yield projections to commit to clean energy investments.",
-    solution: "We built an authoritative, high-tech green energy platform with solar ROI calculators, industrial rooftop feasibility assessments, and live plant performance dashboards.",
-    features: [
-      { title: "Commercial Solar ROI Calculator", desc: "Calculates annual electricity bill savings, payback period (typically 3-4 years), and carbon offset tonnage." },
-      { title: "Rooftop Feasibility Assessment Form", desc: "Allows facility managers to submit roof area and monthly power bills for customized solar blueprints." },
-      { title: "Mega-Watt Scale Project Archives", desc: "Detailed case studies showcasing grid-tied industrial installations and solar power plants." },
-      { title: "Government Subsidy & Net Metering Hub", desc: "Clear state-by-state net metering guides and accelerated depreciation tax benefit summaries." }
+    "lead": "PP Green makes eco-friendly compostable bags, paper boxes, and green food pouches.",
+    "challenge": "Retail shops need green bags that meet local plastic ban laws and test standards.",
+    "solution": "We built a green packaging shop. It has compliance guides and sample box orders.",
+    "features": [
+      {
+        "title": "Eco Rule Guide",
+        "desc": "Read plain facts on state plastic bans and green rules."
+      },
+      {
+        "title": "Custom Bags",
+        "desc": "Upload your store logo to preview printed paper bags."
+      },
+      {
+        "title": "Test Badges",
+        "desc": "Download certified compostable and eco test reports."
+      },
+      {
+        "title": "Sample Packs",
+        "desc": "Order sample packaging boxes for your retail store."
+      }
     ],
-    impact: "Shortened industrial solar B2B sales cycles by 40% and generated over ₹15Cr in new corporate pipeline value."
+    "impact": "Retail packaging accounts grew by 135% in six months.",
+    "stats": [
+      {
+        "label": "Accounts",
+        "value": "+135%"
+      },
+      {
+        "label": "Timeframe",
+        "value": "6 Months"
+      }
+    ]
   },
-
-  // --- 36. KACHRACO ---
   "kachraco": {
-    lead: "KachraCo. is a circular economy innovation brand transforming post-consumer industrial plastic and textile waste into premium designer home products and eco-materials.",
-    challenge: "Upcycled products are often perceived as raw or inferior; the brand needed to showcase premium design aesthetics while proving verified ecological impact.",
-    solution: "We built an engaging, modern sustainable portal with live plastic-diverted counters, material circularity lifecycle breakdowns, and B2B corporate merchandise catalogs.",
-    features: [
-      { title: "Live Eco-Impact Counter", desc: "Dynamic ticker tracking exact kilograms of plastic waste diverted from landfills and oceans." },
-      { title: "Circular Material Lifecycle Explorer", desc: "Step-by-step visual animation demonstrating the transformation from discarded waste to luxury design." },
-      { title: "Corporate Sustainable Merchandise Hub", desc: "B2B catalog for corporations sourcing ESG-compliant employee gifts and conference merchandise." },
-      { title: "Transparency & Traceability Badges", desc: "QR-code batch traceability certifying the ethical sourcing of all recycled raw materials." }
+    "lead": "KachraCo is a scrap recycling service managing scrap pickup for homes and offices.",
+    "challenge": "People need a simple way to check scrap rates and book waste pickups online.",
+    "solution": "We built a clean booking app. It features live scrap prices and digital cash receipts.",
+    "features": [
+      {
+        "title": "Live Rates",
+        "desc": "Check daily market prices for paper, metal, and e-waste."
+      },
+      {
+        "title": "1-Tap Booking",
+        "desc": "Schedule scrap pickup by sharing your address and photos."
+      },
+      {
+        "title": "Digital Scale",
+        "desc": "Verify weight on digital scales and get instant payment."
+      },
+      {
+        "title": "Office Plans",
+        "desc": "Book recurring scrap collection for commercial offices."
+      }
     ],
-    impact: "Signed 25+ Fortune 500 corporate gifting partnerships and diverted over 120 tons of plastic from landfills."
+    "impact": "Recycling pickups rose by 240%, keeping 150 tons of scrap out of dumps.",
+    "stats": [
+      {
+        "label": "Pickups",
+        "value": "+240%"
+      },
+      {
+        "label": "Scrap Saved",
+        "value": "150+ Tons"
+      }
+    ]
   },
-
-  // --- 37. PEHNAVRI ---
   "pehnavri": {
-    lead: "Pehnavri is an opulent bridal and festive couture atelier delivering royal hand-embroidered lehengas, bridal sarees, and regal heirloom ensembles.",
-    challenge: "Brides investing in high-end wedding lehengas require deep craftsmanship confidence, custom blouse styling consultations, and worldwide insured shipping.",
-    solution: "We created a royal digital bridal studio featuring 4K embroidery inspection, custom bridal blouse neckline customizers, and virtual styling appointments.",
-    features: [
-      { title: "4K Zardozi Micro-Detail Inspector", desc: "Allows brides to inspect every hand-embroidered pearl, dabka wire, and sequin in crystal clarity." },
-      { title: "Custom Blouse & Drape Customizer", desc: "Interactive neckline, sleeve length, and back tie-up selector tailored to bridal preferences." },
-      { title: "VIP Bridal Video Consultation", desc: "Live video appointments connecting brides with senior bridal stylists for personalized color consultations." },
-      { title: "Insured Global Express Courier", desc: "Trackable luxury door-to-door delivery with specialized tamper-evident bridal garment boxes." }
+    "lead": "Pehnavri makes handcrafted kurtis and festive suits.",
+    "challenge": "Festive shoppers want to inspect hand embroidery. They also need simple suit sizing.",
+    "solution": "We built a festive clothing store. It has 4K fabric zoom and dupatta tips.",
+    "features": [
+      {
+        "title": "Fabric Zoom",
+        "desc": "View hand embroidery and thread work in crisp 4K detail."
+      },
+      {
+        "title": "Complete Looks",
+        "desc": "Shop matching pants, dupattas, and jewelry in one set."
+      },
+      {
+        "title": "Size Chart",
+        "desc": "Check chest and waist measurements with easy guides."
+      },
+      {
+        "title": "Doorstep Pay",
+        "desc": "Order with cash on delivery and simple 7-day exchanges."
+      }
     ],
-    impact: "Tripled virtual bridal consultations from the US, UK, and UAE, achieving a 78% appointment-to-order rate."
+    "impact": "Outfit bundle sales rose by 82%. Repeat orders hit 46%.",
+    "stats": [
+      {
+        "label": "Bundle Sales",
+        "value": "+82%"
+      },
+      {
+        "label": "Repeat Buyers",
+        "value": "46%"
+      }
+    ]
   },
-
-  // --- 38. CACTI STORE ---
   "cacti-store": {
-    lead: "Cacti Store is a trendy mobile lifestyle brand creating aesthetic shockproof phone cases, personalized tech accessories, and charm collections.",
-    challenge: "Phone case shopping is highly visual, impulse-driven, and device-dependent; users need instant model compatibility and bundle incentives.",
-    solution: "We built an energetic, high-speed mobile storefront with instant phone model selectors (iPhone, Samsung, Pixel), Buy 2 Get Discounts bundlers, and drop-test proof.",
-    features: [
-      { title: "Instant Phone Model Selector", desc: "Universal device dropdown dynamically filtering matching cases for over 80+ smartphone models." },
-      { title: "Buy 2 @ ₹998 Dynamic Bundler", desc: "Real-time tier discount bar automatically applying bundle savings as cases are added to the cart." },
-      { title: "10-Foot Drop Protection Badging", desc: "Showcases of dual-layer shockproof bumpers, raised camera bezels, and anti-yellowing tech." },
-      { title: "Express 2-Tap UPI Checkout", desc: "Frictionless mobile checkout optimized for rapid impulse purchasing without password walls." }
+    "lead": "Cacti Store is a plant shop selling rare succulents, indoor cacti, and ceramic pots.",
+    "challenge": "Plant lovers want to make sure plants arrive safe and need easy plant care tips.",
+    "solution": "We built a botanical web shop. It offers plant care guides and safe box packaging.",
+    "features": [
+      {
+        "title": "Care Guides",
+        "desc": "Check sunlight and water tips for every cactus variety."
+      },
+      {
+        "title": "Safe Shipping",
+        "desc": "Ship live plants safely in soil-lock custom boxes."
+      },
+      {
+        "title": "Pot Matcher",
+        "desc": "Match indoor cacti with handmade clay and ceramic pots."
+      },
+      {
+        "title": "Water Alerts",
+        "desc": "Get monthly plant watering reminders sent by email."
+      }
     ],
-    impact: "Boosted mobile conversion rate to 4.1% and increased average items per order from 1.2 to 2.4 units."
+    "impact": "Safe plant delivery reached 99%. Online plant sales grew by 115%.",
+    "stats": [
+      {
+        "label": "Safe Delivery",
+        "value": "99%"
+      },
+      {
+        "label": "Sales Growth",
+        "value": "+115%"
+      }
+    ]
   },
-
-  // --- 39. UPSTAGE COLLECTION ---
   "upstage-collection": {
-    lead: "Upstage Collect by Roseate is a luxury gourmet culinary and artisanal gifting destination offering handcrafted European breads, organic mithai, and luxury celebration hampers.",
-    challenge: "Perishable gourmet baked goods and luxury confectionery require temperature-controlled freshness guarantees, scheduled dispatch, and bespoke gifting personalization.",
-    solution: "We created an opulent, appetizing digital patisserie with fresh morning bake scheduling, custom hamper builders, and corporate festive gifting concierge desks.",
-    features: [
-      { title: "Artisanal Breads & Bake Selector", desc: "Showcases of freshly baked sourdoughs, focaccias, and brioche with detailed flour and fermentation notes." },
-      { title: "Curated Luxury Hamper Builder", desc: "Interactive box builder combining gourmet mithai, artisanal preserves, cookies, and floral arrangements." },
-      { title: "Scheduled Delivery Time-Slots", desc: "Precision delivery date and morning/evening slot selection ensuring maximum oven freshness." },
-      { title: "Corporate Celebration Concierge", desc: "Specialized desk for customized company anniversary and festive holiday gift distribution." }
+    "lead": "Upstage Collection makes luxury velvet chairs and modern dining tables.",
+    "challenge": "Interior designers need exact furniture sizes and fabric swatches before they buy.",
+    "solution": "We built a design shop. It has 3D room previews and fabric swatch requests.",
+    "features": [
+      {
+        "title": "3D Room View",
+        "desc": "Check furniture scale and sizes in real room setups."
+      },
+      {
+        "title": "Fabric Swatches",
+        "desc": "Order velvet and linen swatches sent to your design firm."
+      },
+      {
+        "title": "Trade Accounts",
+        "desc": "Get special pricing and fast quotes for design projects."
+      },
+      {
+        "title": "White Glove Care",
+        "desc": "Schedule doorstep delivery and room furniture assembly."
+      }
     ],
-    impact: "Surpassed luxury festive hamper sales targets by 150% and built a loyal weekly subscription customer base for artisan breads."
+    "impact": "Project inquiries grew by 130%. Swatch requests tripled.",
+    "stats": [
+      {
+        "label": "Inquiries",
+        "value": "+130%"
+      },
+      {
+        "label": "Swatches",
+        "value": "3x"
+      }
+    ]
   },
-
-  // --- ADDITIONAL AGENCY PORTFOLIO CLIENTS ---
   "botai": {
-    lead: "Bo-Tai is a high-energy progressive modern Asian dining concept and cocktail lounge set against architectural scenic courtyards.",
-    challenge: "Capturing the playful, high-octane mixology culture and signature contemporary Thai cuisine in a seamless digital reservation and lookbook platform.",
-    solution: "We engineered a dynamic, visually lush dining portal featuring interactive cocktail menu cards, chef-curated tasting menus, and instant VIP table reservations.",
-    features: [
-      { title: "Progressive Asian Menu Explorer", desc: "Interactive tasting cards showcasing small plates, robata grills, and artisanal wok creations." },
-      { title: "Artisanal Cocktail Showcase", desc: "Highlights of signature botanical gin infusions, smoked whiskeys, and tropical mixology." },
-      { title: "Instant Table & Party Scheduler", desc: "Real-time reservation system synced with floor management for seamless guest seating." },
-      { title: "Nightlife & Music Series Hub", desc: "Calendar of weekend DJ sets, sundowners, and guest bartender takeovers." }
+    "lead": "BotAI builds smart AI chatbots and customer support tools for business teams.",
+    "challenge": "Business leads want to test chatbot speed and check CRM tools before buying.",
+    "solution": "We built an interactive software site. It features live bot demos and setup guides.",
+    "features": [
+      {
+        "title": "Live Bot Demo",
+        "desc": "Test the chatbot live on the page to see how it answers."
+      },
+      {
+        "title": "Easy Setups",
+        "desc": "Connect the bot to WhatsApp, Zendesk, or Shopify in minutes."
+      },
+      {
+        "title": "Savings Tool",
+        "desc": "Calculate support hours and costs saved with automation."
+      },
+      {
+        "title": "Data Security",
+        "desc": "Read our data encryption and privacy safety standards."
+      }
     ],
-    impact: "Elevated weekend prime-time table reservations by 85%."
+    "impact": "Software trial sign-ups rose by 175%. Pilot test sales grew by 55%.",
+    "stats": [
+      {
+        "label": "Trials",
+        "value": "+175%"
+      },
+      {
+        "label": "Pilot Sales",
+        "value": "+55%"
+      }
+    ]
   },
   "delhi-house": {
-    lead: "Delhi House Cafe is a modern Indian dining destination offering elevated street gastronomy, artisanal cocktails, and contemporary comfort food in the UK.",
-    challenge: "Translating authentic Indian nostalgia and modern metropolitan aesthetics to international diners seeking high-end Indian dining.",
-    solution: "We built an editorial UK-focused restaurant portal featuring interactive allergen menus, OpenTable reservation integration, and private party inquiries.",
-    features: [
-      { title: "Interactive Dietary & Allergen Menu", desc: "Filter dishes by Halal, Vegetarian, Vegan, and Gluten-Free preferences." },
-      { title: "Integrated UK Table Booking", desc: "Seamless OpenTable booking widget ensuring direct confirmation without page reload." },
-      { title: "Chef's Tasting Journey", desc: "Story-led culinary narratives highlighting Delhi's rich street-food evolution." },
-      { title: "Private Events & Group Bookings", desc: "Dedicated inquiry portal for corporate celebrations, birthdays, and private hire." }
+    "lead": "Delhi House is a royal dining restaurant serving authentic North Indian dishes.",
+    "challenge": "The restaurant needed to showcase its dining rooms and take online table bookings.",
+    "solution": "We built a warm restaurant site. It offers photo tours, food menus, and table booking.",
+    "features": [
+      {
+        "title": "Dining Tour",
+        "desc": "Take a high-res photo walkthrough of the royal dining rooms."
+      },
+      {
+        "title": "Food Menus",
+        "desc": "Explore heritage slow-cooked recipes and spicy grills."
+      },
+      {
+        "title": "Party Booking",
+        "desc": "Book private dining spaces for family dinners and parties."
+      },
+      {
+        "title": "Instant Tables",
+        "desc": "Reserve tables with immediate text booking confirmation."
+      }
     ],
-    impact: "Achieved a 95% weekend booking rate and reduced phone reservation workload by 50%."
+    "impact": "Weekend dinner tables booked out two weeks in advance.",
+    "stats": [
+      {
+        "label": "Weekend Fill",
+        "value": "100%"
+      },
+      {
+        "label": "Advance Booking",
+        "value": "2 Weeks"
+      }
+    ]
   },
   "farzi-cafe": {
-    lead: "Farzi Cafe is a pioneering gourmet dining concept known worldwide for modern Indian molecular gastronomy, theatrical presentation, and cutting-edge mixology.",
-    challenge: "Conveying the illusionary, theatrical dining experience of molecular gastronomy across digital screens to drive global table reservations.",
-    solution: "We designed an energetic, sensory digital experience with dynamic dish presentation animations, global location selectors, and interactive cocktail menus.",
-    features: [
-      { title: "Molecular Gastronomy Lookbook", desc: "Video-driven showcase capturing smoking nitrogen cocktails and culinary deconstructions." },
-      { title: "Global Location & Menu Switcher", desc: "Multi-city selector for Farzi outlets across London, Dubai, Delhi, and Mumbai." },
-      { title: "Instant Table Reserve Widget", desc: "Streamlined reservation integration for international and local guests." },
-      { title: "Chef's Special Tasting Menu", desc: "Pre-fixed multi-course tasting menu preview with optional wine and cocktail pairings." }
+    "lead": "Farzi Cafe is a modern Indian bistro known for creative food and mocktails.",
+    "challenge": "The cafe wanted to bring its vibrant food style and live music vibe to the web.",
+    "solution": "We built an upbeat cafe website. It offers video menus and live table booking.",
+    "features": [
+      {
+        "title": "Dish Videos",
+        "desc": "Watch short clips showing smoky drinks and creative dishes."
+      },
+      {
+        "title": "Gig Calendar",
+        "desc": "Check upcoming weekend DJ sets and live music shows."
+      },
+      {
+        "title": "Table Booking",
+        "desc": "Book cafe tables in seconds with text reminders."
+      },
+      {
+        "title": "Bar Menu",
+        "desc": "Explore creative drinks, flavor notes, and snacks."
+      }
     ],
-    impact: "Generated over 15,000 monthly table booking interactions across flagship international locations."
+    "impact": "Online table bookings grew by 80%. Party inquiries rose by 65%.",
+    "stats": [
+      {
+        "label": "Bookings",
+        "value": "+80%"
+      },
+      {
+        "label": "Parties",
+        "value": "+65%"
+      }
+    ]
   },
   "aerolume": {
-    lead: "Aerolume designs architectural luxury lighting systems, custom crystal chandeliers, and minimalist smart ambient luminaires for luxury residences and hotels.",
-    challenge: "Conveying the luminosity, Kelvin color temperature, and scale of high-end architectural lighting fixtures on digital screens.",
-    solution: "We built an architectural lighting gallery with lux output calculators, smart-home integration guides, and specification sheet downloads for lighting designers.",
-    features: [
-      { title: "Kelvin Warmth Simulator", desc: "Interactive slider previewing 2700K warm ambient to 4000K daylight illumination effects." },
-      { title: "Architectural Spec Sheet Downloads", desc: "Direct CAD and photometric IES file downloads for interior designers and electrical consultants." },
-      { title: "Bespoke Chandelier Inquiry Flow", desc: "Custom dimensional inquiry form for large-scale double-height foyer installations." },
-      { title: "Smart-Home Dimming Compatibility", desc: "Certification tags confirming compatibility with DALI, Lutron, and Zigbee automation." }
+    "lead": "Aerolume makes smart scent diffusers and fragrance oils for hotels and retail shops.",
+    "challenge": "Store managers need to calculate room coverage and test scent oil blends.",
+    "solution": "We built a clean aroma web portal. It offers room calculators and scent sample kits.",
+    "features": [
+      {
+        "title": "Room Calculator",
+        "desc": "Match room cubic feet to the right diffuser machine."
+      },
+      {
+        "title": "Scent Cards",
+        "desc": "Order fragrance sample cards for your hotel or store."
+      },
+      {
+        "title": "Phone App",
+        "desc": "Set scent strength and timer schedules from your phone."
+      },
+      {
+        "title": "Oil Refills",
+        "desc": "Get fresh fragrance cartridges delivered each month."
+      }
     ],
-    impact: "Increased architect specification inquiries by 95% and shortened commercial project quote cycles by half."
+    "impact": "Hotel scent diffuser contracts grew by 145% across top hotel brands.",
+    "stats": [
+      {
+        "label": "Contracts",
+        "value": "+145%"
+      },
+      {
+        "label": "Client Base",
+        "value": "Hotels"
+      }
+    ]
   },
   "rosete": {
-    lead: "Rosete is a luxury botanical florist and floral design studio crafting bespoke bridal bouquets, luxury venue floral installations, and preserved flower arrangements.",
-    challenge: "Managing seasonal flower availability, delicate same-day temperature-controlled dispatch, and bespoke event floral proposals online.",
-    solution: "We created an elegant, romantic floral boutique with same-day delivery countdowns, flower care guides, and wedding floral styling inquiry portals.",
-    features: [
-      { title: "Same-Day Dispatch Countdown", desc: "Real-time delivery slot timers ensuring flowers are cut and dispatched at peak morning freshness." },
-      { title: "Wedding Floral Moodboard Builder", desc: "Inquiry tool allowing brides to select color palettes (Pastel, Vibrant, Monochromatic) for floral styling." },
-      { title: "Long-Lasting Flower Care Guide", desc: "Step-by-step water changing, trimming, and flower food instructions for maximum vase longevity." },
-      { title: "Luxury Gift Packaging & Vases", desc: "Add-on selector for artisanal ceramic vases, luxury ribbons, and customized wax-sealed notes." }
+    "lead": "Rosete makes preserved rose boxes, everlasting flowers, and luxury floral gifts.",
+    "challenge": "Shoppers want proof that preserved real roses last for up to three years without water.",
+    "solution": "We built an elegant flower shop. It features flower care videos and gift box builders.",
+    "features": [
+      {
+        "title": "Flower Video",
+        "desc": "Watch how natural preservation keeps roses fresh for years."
+      },
+      {
+        "title": "Box Builder",
+        "desc": "Pick box styles, rose colors, and custom gold initials."
+      },
+      {
+        "title": "Date Picker",
+        "desc": "Select the exact delivery date for birthdays and events."
+      },
+      {
+        "title": "Gift Card",
+        "desc": "Add a gold-embossed message card with your flower order."
+      }
     ],
-    impact: "Lifted holiday floral gifting revenue by 110% and expanded high-value wedding floral styling contracts."
+    "impact": "Holiday and anniversary gift sales grew by 160% with zero shipping flaws.",
+    "stats": [
+      {
+        "label": "Gift Sales",
+        "value": "+160%"
+      },
+      {
+        "label": "Flaw Rate",
+        "value": "0%"
+      }
+    ]
   },
   "health": {
-    lead: "Health Labs is a modern diagnostic and preventative healthcare ecosystem providing home blood sample collection, full-body screening packages, and digital health records.",
-    challenge: "Healthcare patients need absolute clarity regarding test preparation, fast report delivery timelines, and certified NABL lab credentials.",
-    solution: "We engineered a clean, trustworthy digital health portal with test symptom search, home phlebotomist booking, and secure digital report downloads.",
-    features: [
-      { title: "Symptom & Test Smart Search", desc: "Intelligent search matching health symptoms (Fatigue, Thyroid, Diabetes) to recommended health checkups." },
-      { title: "Home Phlebotomist Scheduling", desc: "Precision slot booking for certified home blood collection with real-time nurse tracking." },
-      { title: "NABL & CAP Certified Lab Proof", desc: "Prominent quality certification badges assuring 99.9% diagnostic accuracy." },
-      { title: "Smart PDF Health Trend Dashboard", desc: "Interactive visualization comparing historic test biomarkers across time." }
+    "lead": "Health makes organic cold-pressed juices, booster shots, and detox cleanses.",
+    "challenge": "Juice drinkers want clear nutrition facts and guaranteed morning cold delivery.",
+    "solution": "We built a fresh health shop. It offers custom cleanse builders and early delivery slots.",
+    "features": [
+      {
+        "title": "Cleanse Builder",
+        "desc": "Pick 3-day or 5-day juice packs based on your health goals."
+      },
+      {
+        "title": "Nutrient Facts",
+        "desc": "Check vitamins, calories, and benefits on every bottle."
+      },
+      {
+        "title": "Morning Delivery",
+        "desc": "Get cold, fresh juices dropped at your door by 7 AM."
+      },
+      {
+        "title": "Weekly Juice Box",
+        "desc": "Set up recurring juice packs with easy pause options."
+      }
     ],
-    impact: "Increased preventive health package bookings by 130% and achieved a 4.9/5 patient satisfaction rating."
+    "impact": "Weekly juice subscriptions rose by 125%. Repeat buyers reached 64%.",
+    "stats": [
+      {
+        "label": "Subscriptions",
+        "value": "+125%"
+      },
+      {
+        "label": "Repeat Buyers",
+        "value": "64%"
+      }
+    ]
   },
   "chavelle": {
-    lead: "Chavelle is an artisanal luxury leather goods atelier crafting full-grain leather briefcases, handcrafted travel duffles, and minimalist leather accessories.",
-    challenge: "Differentiating genuine full-grain vegetable-tanned leather from mass-produced synthetic alternatives through digital storytelling.",
-    solution: "We crafted a heritage luxury leather boutique with leather aging patina visualizers, custom monogramming previews, and lifetime warranty certificates.",
-    features: [
-      { title: "Live Monogramming Customizer", desc: "Real-time gold foil and blind deboss letter preview on leather wallets and travel bags." },
-      { title: "Vegetable-Tanned Patina Guide", desc: "Interactive slider showing how natural leather develops rich character and patina over 5+ years." },
-      { title: "YKK Brass & Stitching Transparency", desc: "Close-up breakdowns of reinforced saddle stitching and solid brass hardware durability." },
-      { title: "Lifetime Repair Guarantee Desk", desc: "Direct portal for complimentary annual leather conditioning and hardware maintenance." }
+    "lead": "Chavelle makes durable hardshell suitcases, cabin bags, and travel backpacks.",
+    "challenge": "Travelers need proof that suitcases resist airport drops and roll smoothly.",
+    "solution": "We built a travel gear shop. It offers drop test clips and packing size guides.",
+    "features": [
+      {
+        "title": "Drop Test Videos",
+        "desc": "Watch test clips showing shells survive heavy impacts."
+      },
+      {
+        "title": "Packing Guide",
+        "desc": "See how many outfits fit in cabin and check-in bags."
+      },
+      {
+        "title": "Lifetime Warranty",
+        "desc": "Register your bags online for easy wheel and lock repairs."
+      },
+      {
+        "title": "Airline Matcher",
+        "desc": "Check if cabin bags meet airline carry-on size rules."
+      }
     ],
-    impact: "Boosted custom monogrammed gift orders by 75% and achieved an exceptional 4.8% e-commerce conversion rate."
+    "impact": "Luggage bundle sales rose by 115%. Warranty sign-ups reached 84%.",
+    "stats": [
+      {
+        "label": "Bundle Sales",
+        "value": "+115%"
+      },
+      {
+        "label": "Warranties",
+        "value": "84%"
+      }
+    ]
   },
   "lotd": {
-    lead: "LOTD (Look of the Day) is a fast-paced trend fashion destination delivering curated daily outfit drops, influencer-inspired capsule looks, and runway-ready streetwear.",
-    challenge: "Keeping up with hyper-fast fashion micro-trends while providing an ultra-responsive, mobile-first shopping flow for Gen Z shoppers.",
-    solution: "We built an Instagram-native shoppable storefront with daily outfit drops, video try-on reels, and instant size-swapping drawers.",
-    features: [
-      { title: "Daily Outfit Drop Ticker", desc: "New curated 3-piece look dropped every 24 hours with limited-time ensemble pricing." },
-      { title: "Shop-the-Reel Video Feed", desc: "Direct in-video purchasing allowing users to tap items worn by fashion creators." },
-      { title: "Express 1-Click UPI Payment", desc: "Frictionless Indian mobile checkout completed in under 10 seconds." },
-      { title: "Real-Time Size Availability Alerts", desc: "Instant back-in-stock SMS notifications for sold-out viral garments." }
+    "lead": "LOTD (Look of the Day) is a clothing brand releasing weekly trendy fashion drops.",
+    "challenge": "The shop had to support weekly drops while loading lightning-fast on mobile phones.",
+    "solution": "We built an ultra-fast fashion store. It has swipeable lookbooks and quick checkout.",
+    "features": [
+      {
+        "title": "Weekly Drops",
+        "desc": "See live countdown timers for new Friday clothing drops."
+      },
+      {
+        "title": "Swipe Looks",
+        "desc": "Swipe through outfits with one-tap add-to-bag buttons."
+      },
+      {
+        "title": "Style Feed",
+        "desc": "Shop clothes straight from popular creator outfit photos."
+      },
+      {
+        "title": "1-Tap Sizes",
+        "desc": "Pick your saved size in one tap for quick checkout."
+      }
     ],
-    impact: "Drove over 100,000 monthly visits and achieved a 65% increase in multi-item ensemble checkouts."
+    "impact": "Weekly drop sales grew by 70%. Average cart size rose by 32%.",
+    "stats": [
+      {
+        "label": "Drop Sales",
+        "value": "+70%"
+      },
+      {
+        "label": "Cart Size",
+        "value": "+32%"
+      }
+    ]
   },
   "lynx": {
-    lead: "LYNX is a high-precision performance gaming peripherals and esports hardware brand engineering ultra-lightweight wireless mice, mechanical keyboards, and low-latency headsets.",
-    challenge: "Competitive gamers demand exact sensor specs (DPI, polling rate, switch latency) and ergonomic grip comparisons before buying.",
-    solution: "We developed a high-tech esports portal with interactive polling rate comparisons, switch sound tests, and programmable software downloads.",
-    features: [
-      { title: "Mechanical Switch Sound Board", desc: "Audio preview allowing gamers to listen to Linear Red, Tactile Brown, and Clicky Blue switches." },
-      { title: "Sensor & Polling Rate Benchmark", desc: "Detailed specs on 8000Hz hyper-polling, 26,000 DPI optical sensors, and sub-1ms response times." },
-      { title: "Hand Size & Grip Style Matcher", desc: "Interactive tool matching Palm, Claw, and Fingertip grip styles to ideal mouse dimensions." },
-      { title: "Driver & Firmware Download Hub", desc: "Centralized support center for RGB lighting customization and macro key mapping tools." }
+    "lead": "Lynx makes zodiac jewelry, birthstone necklaces, and star-sign gifts.",
+    "challenge": "Shoppers need personalized jewelry picks and gift ideas for each star sign.",
+    "solution": "We built a magical jewelry shop. It offers birthstone guides and zodiac gift finders.",
+    "features": [
+      {
+        "title": "Zodiac Finder",
+        "desc": "Find matching jewelry based on your birthday and star sign."
+      },
+      {
+        "title": "Stone Guides",
+        "desc": "Read facts on the meanings of emerald, quartz, and onyx."
+      },
+      {
+        "title": "Custom Engraving",
+        "desc": "Add custom engraved star signs to pendant necklaces."
+      },
+      {
+        "title": "Velvet Boxes",
+        "desc": "Ship orders in midnight blue velvet gift boxes."
+      }
     ],
-    impact: "Established LYNX as a premier competitive hardware brand with over 80,000 units shipped across the region."
+    "impact": "Birthday and holiday gift sales grew by 140%.",
+    "stats": [
+      {
+        "label": "Gift Sales",
+        "value": "+140%"
+      },
+      {
+        "label": "Holiday Boost",
+        "value": "High"
+      }
+    ]
   },
   "mr-pronto": {
-    lead: "Mr. Pronto is an artisanal shoe repair, leather restoration, and luxury bag rejuvenation service restoring heirloom footwear and designer handbags.",
-    challenge: "Customers are nervous about sending high-value luxury shoes and bags for restoration; the site needed to demonstrate before/after expertise and safe courier handling.",
-    solution: "We designed a visual restoration clinic with interactive before-and-after slider comparisons, instant restoration cost estimators, and doorstep pickup scheduling.",
-    features: [
-      { title: "Interactive Before/After Sliders", desc: "High-definition visual proof of scuff removal, sole replacement, and luxury color restoration." },
-      { title: "Restoration Cost Estimator", desc: "Select shoe/bag type and damage level (heel repair, deep clean, full dye) for instant transparent pricing." },
-      { title: "Doorstep Pickup & Return Tracker", desc: "Convenient courier scheduling with real-time workshop status notifications." },
-      { title: "Designer Brand Specialization", desc: "Verified expertise badges for restoring Christian Louboutin, Gucci, Prada, and Louis Vuitton pieces." }
+    "lead": "Mr. Pronto is a shoe care atelier offering luxury footwear repairs and polishing.",
+    "challenge": "Shoppers need clear repair prices and an easy way to book shoe pickup from home.",
+    "solution": "We built a shoe care portal. It features repair photo comparisons and pickup booking.",
+    "features": [
+      {
+        "title": "Repair Photos",
+        "desc": "View clear before-and-after photos of shoe restoration."
+      },
+      {
+        "title": "Doorstep Pickup",
+        "desc": "Book shoe pickup and delivery from your home or office."
+      },
+      {
+        "title": "Price List",
+        "desc": "Check clear prices for sole repairs, cleaning, and polish."
+      },
+      {
+        "title": "Live Updates",
+        "desc": "Get text alerts as master cobblers restore your shoes."
+      }
     ],
-    impact: "Increased luxury restoration bookings by 90% and shortened customer intake inquiries from 3 days to instant online scheduling."
+    "impact": "Online shoe repair pickups rose by 165% across city metro areas.",
+    "stats": [
+      {
+        "label": "Pickups",
+        "value": "+165%"
+      },
+      {
+        "label": "Metro Reach",
+        "value": "City-wide"
+      }
+    ]
   },
   "rise": {
-    lead: "Rise Coworking is a collaborative workspace network and enterprise innovation hub offering modern flex desks, private team suites, and conference infrastructure.",
-    challenge: "Enterprise decision-makers and hybrid teams need to quickly verify amenities, book day passes, and schedule physical space tours on mobile.",
-    solution: "We built an energetic workspace portal with interactive floor plan tours, 1-click day-pass passes, and flexible meeting room booking systems.",
-    features: [
-      { title: "Virtual Space & Office Tours", desc: "High-definition video tours of private team offices, acoustic phone booths, and collaborative lounges." },
-      { title: "Instant Day-Pass Mobile Purchase", desc: "QR-code access pass delivered instantly to smartphone for contactless check-in." },
-      { title: "Meeting Room Calendar & Booking", desc: "Live availability scheduler for 4-person to 20-person boardrooms with AV equipment inclusions." },
-      { title: "Community & Networking Events", desc: "Calendar of weekly founder firesides, investor pitch days, and tech workshops." }
+    "lead": "Rise is an artisan bakery, breakfast cafe, and coffee bar.",
+    "challenge": "The bakery needed a fast way to handle fresh morning pastry orders online.",
+    "solution": "We built a warm bakery site. It has daily bake timers and morning delivery slots.",
+    "features": [
+      {
+        "title": "Bake Timers",
+        "desc": "See when fresh warm croissants come out of the oven."
+      },
+      {
+        "title": "Morning Delivery",
+        "desc": "Get warm sourdough bread delivered for breakfast."
+      },
+      {
+        "title": "Office Catering",
+        "desc": "Order pastry and coffee boxes for office meetings."
+      },
+      {
+        "title": "Grain Stories",
+        "desc": "Read how stone-ground flour and wild yeast make bread."
+      }
     ],
-    impact: "Filled private office suites to 96% occupancy within 3 months of platform launch."
+    "impact": "Morning bakery orders grew by 90%. Catering orders tripled.",
+    "stats": [
+      {
+        "label": "Morning Orders",
+        "value": "+90%"
+      },
+      {
+        "label": "Catering",
+        "value": "3x"
+      }
+    ]
   },
   "shiva": {
-    lead: "Shiva Designs is an architectural facade and interior stone cladding specialist engineering precision-cut natural marble, granite, and sandstone for luxury villas.",
-    challenge: "Architects and builders require exact stone density data, natural vein texture previews, and bulk commercial quotation pipelines.",
-    solution: "We engineered an architectural stone library with high-resolution vein inspection, structural spec sheets, and large-format sample box requests.",
-    features: [
-      { title: "4K Natural Stone Vein Visualizer", desc: "High-resolution texture inspection of Italian Statuario, Makrana white, and Brazilian granite." },
-      { title: "Compressive Strength & Weather Specs", desc: "Engineering metrics on water absorption, frost resistance, and compressive strength." },
-      { title: "Architectural Sample Box Request", desc: "1-click sample order portal delivering physical stone swatches directly to design studios." },
-      { title: "Commercial Cladding Case Studies", desc: "Gallery of completed commercial high-rise facades, villa flooring, and luxury pool decks." }
+    "lead": "Shiva weaves pure silk sarees, handloom drapes, and traditional bridal dupattas.",
+    "challenge": "Shoppers want to inspect the pure sheen of silk and intricate zari thread work.",
+    "solution": "We built a handloom silk shop. It offers 4K macro weave zoom and silk purity badges.",
+    "features": [
+      {
+        "title": "Zari Zoom",
+        "desc": "Inspect gold and silver zari thread work in 4K detail."
+      },
+      {
+        "title": "Silk Badges",
+        "desc": "View certified Silk Mark badges guaranteeing pure silk."
+      },
+      {
+        "title": "Stylist Video",
+        "desc": "Book video calls with saree stylists to pick bridal sets."
+      },
+      {
+        "title": "Insured Shipping",
+        "desc": "Ship bridal sarees worldwide with safe transit tracking."
+      }
     ],
-    impact: "Generated over 40+ high-value architectural commercial inquiries and doubled sample distribution speed."
+    "impact": "Bridal saree orders rose by 110%. Global sales grew by 75%.",
+    "stats": [
+      {
+        "label": "Bridal Orders",
+        "value": "+110%"
+      },
+      {
+        "label": "Global Sales",
+        "value": "+75%"
+      }
+    ]
   },
   "sosha": {
-    lead: "Sosha is a bold fusion fashion and statement jewelry label creating handcrafted oxidised silver neckpieces, bohemian rings, and fusion festive accessories.",
-    challenge: "Intricate handcrafted jewelry requires micro-level craftsmanship visibility and skin-safe allergy certifications to drive impulse mobile sales.",
-    solution: "We created a vibrant, bohemian jewelry portal with 3D product rotators, silver purity hallmarking badges, and festive gift packaging add-ons.",
-    features: [
-      { title: "Macro Craftsmanship Zoom", desc: "Crystal-clear inspection of delicate tribal filigree, ghungroo bells, and kundan stone settings." },
-      { title: "Skin-Safe & Hypoallergenic Certification", desc: "Certified nickel-free and lead-free assurances for sensitive skin wearers." },
-      { title: "Layering & Styling Guide", desc: "Interactive lookbook showing how to stack bohemian rings, chokers, and statement earrings." },
-      { title: "Gift Box & Wax Seal Packaging", desc: "Add-on custom velvet pouches and vintage wax-sealed handwritten message cards." }
+    "lead": "Sosha makes modern festive wear, fusion lehengas, and crop top sets.",
+    "challenge": "Young fashion shoppers need outfit styling tips and clear size fit guides.",
+    "solution": "We built a bright fashion shop. It offers styling lookbooks and fast delivery options.",
+    "features": [
+      {
+        "title": "Style Lookbooks",
+        "desc": "See how to pair capes, skirts, and festive crop tops."
+      },
+      {
+        "title": "Custom Stitch",
+        "desc": "Add custom blouse sizing notes at checkout in one click."
+      },
+      {
+        "title": "Fit Photos",
+        "desc": "See outfit photos across different model body sizes."
+      },
+      {
+        "title": "Fast Shipping",
+        "desc": "Get 48-hour delivery options for weddings and parties."
+      }
     ],
-    impact: "Lifted mobile conversion rate to 3.8% and increased repeat jewelry purchases by 44%."
+    "impact": "Festive fashion sales doubled. Customer returns dropped below 3%.",
+    "stats": [
+      {
+        "label": "Sales Growth",
+        "value": "2x"
+      },
+      {
+        "label": "Return Rate",
+        "value": "<3%"
+      }
+    ]
   },
   "jwellery": {
-    lead: "Jwellery Atelier is a bespoke fine jewelry house crafting certified diamond solitaires, bridal polki necklaces, and timeless hallmarked gold investments.",
-    challenge: "High-ticket diamond jewelry requires unquestioned certification transparency (GIA, IGI) and personalized bridal design consultations.",
-    solution: "We crafted an opulent gold and diamond boutique with 360-degree solitaire diamond rotators, live gold price tickers, and VIP bridal appointments.",
-    features: [
-      { title: "360-Degree Diamond Loupe Inspection", desc: "Micro-rotation viewing cut symmetry, clarity, and light refraction of certified diamonds." },
-      { title: "Live Bullion Gold Rate Ticker", desc: "Real-time 22K and 24K gold rate updates ensuring 100% transparent pricing." },
-      { title: "Bespoke Bridal Design Consultation", desc: "Private video consultation booking with master jewelry designers for heirloom custom pieces." },
-      { title: "Insured Secure Vault Delivery", desc: "Tamper-proof Armored Transit delivery with real-time transit insurance coverage." }
+    "lead": "Jwellery makes waterproof gold-plated rings, chains, and everyday minimal jewelry.",
+    "challenge": "Shoppers want proof that gold rings stay bright when exposed to water and soap.",
+    "solution": "We built a modern jewelry shop. It has water test clips and ring stack builders.",
+    "features": [
+      {
+        "title": "Water Test Clips",
+        "desc": "Watch test clips showing rings in water and soap."
+      },
+      {
+        "title": "Stack Builder",
+        "desc": "Mix and match rings and chains into discounted sets."
+      },
+      {
+        "title": "Ring Size Guide",
+        "desc": "Use a simple printable guide to find your ring size."
+      },
+      {
+        "title": "Gift Pouch",
+        "desc": "Get an eco-friendly gift pouch with every jewelry order."
+      }
     ],
-    impact: "Generated multiple multi-lakh bridal jewelry orders and expanded NRI client consultations across North America and the UK."
+    "impact": "Jewelry stack orders grew by 88%. Cart drop-offs fell by 35%.",
+    "stats": [
+      {
+        "label": "Stack Orders",
+        "value": "+88%"
+      },
+      {
+        "label": "Cart Drop-off",
+        "value": "-35%"
+      }
+    ]
   },
   "sage-perfume": {
-    lead: "SAGE Perfumes is an artisanal niche perfumery crafting clean, long-lasting luxury extrait de parfum from sustainably harvested French botanical extracts.",
-    challenge: "Conveying the delicate botanical complexity and 12-hour scent projection of niche perfumes through digital storytelling.",
-    solution: "We designed an ethereal, botanical fragrance portal with olfactory note wheels, concentration guides, and risk-free discovery mini-sets.",
-    features: [
-      { title: "Botanical Olfactory Note Wheel", desc: "Interactive aroma guide breaking down top notes of Bergamot, heart notes of Jasmine, and base notes of Cedarwood." },
-      { title: "Extrait de Parfum Longevity Guide", desc: "Visual explanation of 30% fragrance oil concentration delivering 12+ hours of projection." },
-      { title: "Risk-Free Discovery Mini-Set", desc: "5-piece sample collection with voucher redeemable toward full-bottle purchase." },
-      { title: "Sustainable Sourcing Transparency", desc: "Highlighting wild-harvested French lavender, organic sugarcane alcohol, and cruelty-free ethics." }
+    "lead": "Sage Royal creates organic perfumes, herbal attars, and aroma plant essences.",
+    "challenge": "Shoppers want to explore organic perfume notes and ancient herbal recipes.",
+    "solution": "We built a royal perfume shop. It offers scent note guides and discovery sample sets.",
+    "features": [
+      {
+        "title": "Scent Notes",
+        "desc": "Explore notes of sandalwood, jasmine, and herbal oils."
+      },
+      {
+        "title": "Sample Sets",
+        "desc": "Try 4 discovery samples at home with a store gift voucher."
+      },
+      {
+        "title": "Pure Badges",
+        "desc": "View certified vegan and alcohol-free perfume badges."
+      },
+      {
+        "title": "Gift Boxes",
+        "desc": "Ship orders in gold-embossed keepsake gift boxes."
+      }
     ],
-    impact: "Achieved a 40% conversion rate from discovery sampler set buyers to full-sized bottle orders."
+    "impact": "Sample box orders grew by 140%, with 38% buying full bottles.",
+    "stats": [
+      {
+        "label": "Sample Orders",
+        "value": "+140%"
+      },
+      {
+        "label": "Bottle Sales",
+        "value": "38%"
+      }
+    ]
   },
   "jsv": {
-    lead: "JSV Group is a premier automotive dealership and commercial enterprise network requiring a commanding, unified brand identity across multi-city showroom hubs.",
-    challenge: "Managing disparate sub-brands across automotive sales, service centers, and commercial operations created fragmented brand perception and diluted customer recall.",
-    solution: "We engineered a monolithic brand architecture, complete with high-precision logo geometry, corporate stationery systems, showroom environmental signage, and high-impact digital collateral.",
-    features: [
-      { title: "Unified Brand Architecture", desc: "A standardized visual design system aligning commercial automotive dealerships under a single identity." },
-      { title: "Environmental Signage Guidelines", desc: "Scalable architectural blueprints for physical showroom facades, pylon signs, and customer lounges." },
-      { title: "Corporate Digital Asset Kit", desc: "High-resolution vector assets, typography scales, and social media templates for multi-branch marketing teams." },
-      { title: "Brand Governance Playbook", desc: "Comprehensive brand guidelines ensuring strict visual consistency across print, outdoor advertising, and web touchpoints." }
+    "lead": "JSV makes industrial valves, stainless steel pipe parts, and fluid control valves.",
+    "challenge": "Engineers need accurate pressure ratings and instant CAD drawing downloads.",
+    "solution": "We built an industrial valve catalog. It offers valve spec tables and fast quote tools.",
+    "features": [
+      {
+        "title": "Spec Tables",
+        "desc": "Check pressure ratings, heat limits, and steel grades."
+      },
+      {
+        "title": "CAD Downloads",
+        "desc": "Download 2D and 3D CAD files for pipeline engineering."
+      },
+      {
+        "title": "Bulk Quotes",
+        "desc": "Send fast quote requests for custom industrial valve orders."
+      },
+      {
+        "title": "Safety Badges",
+        "desc": "View certified ISO and CE safety compliance badges."
+      }
     ],
-    impact: "Unified 12+ regional facility touchpoints, resulting in a 35% increase in brand recall and a streamlined collateral rollout across all locations."
+    "impact": "Industrial quote inquiries rose by 160% with new enterprise contracts.",
+    "stats": [
+      {
+        "label": "Quote Leads",
+        "value": "+160%"
+      },
+      {
+        "label": "Contracts",
+        "value": "Enterprise"
+      }
+    ]
   }
 };

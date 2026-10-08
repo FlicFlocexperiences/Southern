@@ -31,41 +31,41 @@ export default function Refund() {
         <h1 className="text-4xl md:text-5xl font-bold text-[#0f0f0f] mb-6">Refund Policy</h1>
         
         <p className="text-lg text-[#828282] mb-12">
-          Read the terms and conditions regarding cancellations, returns, and refunds for our digital marketing and development services. Last revised: May 19, 2026.
+          Review our terms for cancellations, returns, and refunds for our digital marketing and development services. Last revised: May 19, 2026.
         </p>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">1. General Policy</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            At <span className="font-bold">Southern Edge Marketing</span>, we strive to deliver the highest quality of service. Because our products are digital services (software development, design, and marketing campaigns), significant time and resources are committed from the moment a project begins. Therefore, all sales are considered final once the initial deposit or retainer is paid, unless otherwise explicitly stated in your custom service agreement.
+            At <span className="font-bold">Southern Edge Marketing</span>, we focus on delivering high-quality digital work. Our offerings include custom software, website design, and marketing campaigns. Because our team commits time and resources right from the project kickoff, all sales are final once you pay your initial deposit or retainer. Any exceptions must be agreed upon in writing in your custom service contract.
           </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">2. Non-Refundable Retainers & Deposits</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            To reserve engineering and design bandwidth, we require an upfront deposit or retainer fee. These fees are strictly non-refundable under any circumstances. Once work commences, we allocate resources that cannot be recovered.
+            We require an upfront deposit or retainer fee to reserve our design and engineering team. These fees are strictly non-refundable. Once work begins, we dedicate team hours and project tools that cannot be recovered.
           </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">3. Milestone Payments</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            For project-based work, milestone payments are tied to the delivery of specific, agreed-upon objectives. Once a milestone is approved by the client and payment is processed, that payment is non-refundable. If a project is cancelled mid-milestone, the client is responsible for paying for the hours or resources utilized up to the point of cancellation.
+            For project work, milestone payments connect to agreed project goals. When you approve a milestone and process payment, that fee is non-refundable. If you cancel a project mid-milestone, you must pay for all hours worked and resources used up to the date of cancellation.
           </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">4. Subscriptions and Retainer Contracts</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            For ongoing services (e.g., SEO, Social Media Management), clients may cancel their subscription or retainer contract with a 30-day written notice. You will continue to be billed for services provided during this 30-day notice period. No pro-rated refunds will be issued for partially unused months.
+            For ongoing monthly services like SEO or Social Media Management, you can cancel your contract with a 30-day written notice. We will continue to provide services and bill you through the end of this 30-day notice window. We do not provide partial or pro-rated refunds for unused days within a month.
           </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#0f0f0f] mb-4">5. Exceptions and Disagreements</h2>
           <p className="text-[#555] leading-relaxed mb-4">
-            We value our client relationships. If you are dissatisfied with our service, we ask that you contact us immediately at info@southernedgemarketing.com so we can address your concerns. We will make reasonable efforts to revise the deliverables within the scope of the original agreement. However, subjective dissatisfaction does not qualify for a refund.
+            We value our client relationships. If you are unhappy with our work, please email us right away at info@southernedgemarketing.com. Our team will review your feedback and make reasonable revisions within your original project scope. However, subjective personal preferences do not qualify for a cash refund.
           </p>
         </section>
 

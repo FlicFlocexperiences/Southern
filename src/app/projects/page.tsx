@@ -23,19 +23,19 @@ export const metadata: Metadata = {
 const projectsFaqs = [
   {
     question: "How long does a typical project take to complete?",
-    answer: "Project timelines vary based on scope and complexity. A standard website might take 4-6 weeks, while comprehensive web apps or full branding packages can take 8-12 weeks. We establish clear milestones before starting."
+    answer: "Project timelines depend on features and scope. A standard website takes 4 to 6 weeks. Larger web apps and full branding projects take 8 to 12 weeks. We set clear milestones before starting."
   },
   {
     question: "Can we see examples of your previous work?",
-    answer: "Absolutely! The projects displayed on this page are just a selection of our portfolio. If you want to see work specific to your industry, please reach out and we can share more relevant case studies."
+    answer: "Yes! The projects on this page show a preview of our work. If you need examples from your specific vertical, contact us and we will share tailored case studies."
   },
   {
     question: "What is your process for collaborating with clients during a project?",
-    answer: "We believe in transparent communication. You'll be involved at every major phase—from initial wireframes and design mockups to development and final testing—with regular progress updates and feedback sessions."
+    answer: "We believe in clear updates. You stay involved at every step—from wireframes and design proofs to coding and launch testing—with regular check-ins."
   },
   {
     question: "Do you provide ongoing support after a project is launched?",
-    answer: "Yes, we offer post-launch support and maintenance packages. Whether you need regular updates, security monitoring, or new feature additions, our team ensures your digital assets continue to perform optimally."
+    answer: "Yes, we offer ongoing maintenance packages. We handle software updates, speed checks, and new features so your digital platform keeps running smoothly."
   }
 ];
 
