@@ -40,9 +40,9 @@ const tableOfContents = [
   { id: "tech-central-generative-engine-optimization", title: "3. GEO & AI Citations for Tech Central Innovators" },
   { id: "greater-sydney-programmatic-local-seo", title: "4. Programmatic Local SEO Across Greater Sydney" },
   { id: "western-sydney-macquarie-park-b2b-seo", title: "5. B2B Industrial Search Capture for Western Sydney and Macquarie Park" },
-  { id: "oaic-privacy-and-accc-compliance", title: "6. OAIC Privacy Compliance & Ethical SEO" },
+  { id: "oaic-privacy-and-accc-compliance", title: "6. Sydney OAIC Privacy & Ethical SEO Governance" },
   { id: "nsw-ix-peering-core-web-vitals", title: "7. NSW-IX Alexandria Peering & Core Web Vitals" },
-  { id: "closed-loop-crm-attribution-governance", title: "8. Closed-Loop CRM Attribution and Multi-Quarter Search Governance" },
+  { id: "closed-loop-crm-attribution-governance", title: "8. Sydney Closed-Loop CRM Attribution & Search Governance" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -357,7 +357,7 @@ export default function SydneySeoPage() {
 
         {/* SECTION 6 */}
         <h2 id="oaic-privacy-and-accc-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              6. OAIC Privacy Compliance & Ethical SEO
+              6. Sydney OAIC Privacy & Ethical SEO Governance
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Operating an enterprise digital presence in Sydney mandates strict compliance</strong> with Australian regulatory statutes and consumer protection laws. Our organic marketing practices adhere strictly to the Privacy Act 1988 and the Australian Privacy Principles overseen by the Office of the Australian Information Commissioner. We engineer privacy-first analytics infrastructures that eliminate unvetted tracking scripts, secure user consent dynamically, and prevent sensitive data leakage across public search engine telemetry conduits.
@@ -379,7 +379,7 @@ export default function SydneySeoPage() {
 
         {/* SECTION 8 */}
         <h2 id="closed-loop-crm-attribution-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Closed-Loop CRM Attribution and Multi-Quarter Search Governance
+          8. Sydney Closed-Loop CRM Attribution & Search Governance
         </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise marketing leaders require precise commercial validation</strong> rather than speculative traffic estimates. Our <strong className="font-semibold text-[#de5e18] tracking-tight">organic search strategy in Sydney</strong> integrates closed-loop revenue attribution connecting organic touchpoints directly with enterprise customer relationship management platforms like Salesforce, HubSpot, and Microsoft Dynamics. We deploy first-party server-side telemetry that tracks buyer journeys from initial query discovery through multi-month evaluation cycles to signed contract agreements. This granular visibility reveals the exact revenue yield of every commercial search cluster and localized landing page.

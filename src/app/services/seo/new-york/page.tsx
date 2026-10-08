@@ -39,7 +39,7 @@ const tableOfContents = [
   { id: "wall-street-fintech-sec-compliance-and-entity-authority-graphs", title: "2. Wall Street FinTech, SEC Compliance, and Entity Authority Graphs" },
   { id: "madison-avenue-luxury-prestige-and-high-intent-organic-capture", title: "3. Madison Avenue Luxury Prestige and High-Intent Organic Capture" },
   { id: "silicon-alley-saas-geo-vectoring-and-llm-search-engine-optimization", title: "4. Silicon Alley SaaS, GEO Vectoring & LLM SEO" },
-  { id: "enterprise-knowledge-graphs-wikidata-and-semantic-schema-governance", title: "5. Knowledge Graphs, Wikidata & Semantic Schema" },
+  { id: "enterprise-knowledge-graphs-wikidata-and-semantic-schema-governance", title: "5. NYC Knowledge Graphs, Wikidata & Semantic Schema" },
   { id: "statutory-ada-title-iii-sdny-precedent-and-accessible-search-signals", title: "6. ADA Title III, SDNY Precedent & Search Signals" },
   { id: "sub-millisecond-edge-caching-60-hudson-carrier-hotels-and-core-web-vitals", title: "7. 60 Hudson Edge Caching & Core Web Vitals" },
   { id: "five-borough-local-pack-dominance-and-enterprise-scaling-retainers", title: "8. Five-Borough Local Pack Dominance and Enterprise Scaling Retainers" },
@@ -329,7 +329,7 @@ export default function NewYorkSeoPage() {
 
         {/* SECTION 5 */}
         <h2 id="enterprise-knowledge-graphs-wikidata-and-semantic-schema-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              5. Knowledge Graphs, Wikidata & Semantic Schema
+              5. NYC Knowledge Graphs, Wikidata & Semantic Schema
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern search engines operate as semantic knowledge engines interpreting relationships between real-world entities rather than analyzing isolated string queries. For New York enterprises, establishing an authoritative knowledge graph footprint is essential to monopolizing branded search engine results pages, rich snippets, and Google Knowledge Panels. We engineer interconnected schema markup architectures that map corporate executives, physical headquarters, patents, subsidiaries, and product catalogs directly into Wikidata and the global Semantic Web.

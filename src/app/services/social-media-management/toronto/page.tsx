@@ -43,7 +43,7 @@ const tableOfContents = [
   },
   {
     "id": "enterprise-analytics-multi-touch-attribution-and-roas",
-    "title": "Attribution Modeling & CAC Optimization in Quebec"
+    "title": "Attribution Modeling & CAC Optimization in Ontario"
   },
   {
     "id": "reviews",
@@ -116,7 +116,7 @@ export default function TorontoSocialMediaManagementPage() {
         </p>
 
         <h2 id="enterprise-analytics-multi-touch-attribution-and-roas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Attribution Modeling & CAC Optimization in Quebec
+              Attribution Modeling & CAC Optimization in Ontario
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise marketing leaders cannot afford</strong> to justify marketing investments using superficial vanity metrics such as likes, impressions, and follower counts. At Southern Edge Marketing, we deploy advanced full-funnel tracking architectures and server-side Conversions API (CAPI) integrations to measure exact commercial contribution and lead attribution. We implement multi-touch attribution models that reveal how social interactions across LinkedIn, Meta, and TikTok influence pipeline creation, deal velocity, and customer lifetime value. Our media buyers continuously run algorithmic bid optimizations, creative split-tests, and audience pruning to aggressively lower your Customer Acquisition Cost (CAC) and maximize Return on Ad Spend (ROAS). Every enterprise partnership is supported by custom real-time analytics dashboards and monthly executive strategy sessions, providing total visibility into campaign performance and revenue generation. <strong className="font-semibold text-[#de5e18] tracking-tight">When you are ready to scale your brand with the leading social media company in Toronto</strong>, <Link href="/contact" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">contact our social media strategists</Link> to schedule an in-depth digital audit and strategic consultation.

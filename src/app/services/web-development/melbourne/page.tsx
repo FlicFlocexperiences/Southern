@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 const tableOfContents = [
   { id: "melbourne-commercial-landscape-and-enterprise-web-architecture", title: "1. The Melbourne Commercial Landscape and Enterprise Web Architecture" },
   { id: "enterprise-nextjs-and-composable-headless-systems-for-victorian-scale-ups", title: "2. Next.js & Composable Headless for Victoria" },
-  { id: "regulatory-compliance-privacy-act-1988-apps-and-essential-eight-security", title: "3. Privacy Act 1988 & Essential Eight Security" },
-  { id: "high-concurrency-transaction-systems-graphql-gateways-and-microservices", title: "4. High-Concurrency Web Systems & GraphQL APIs" },
-  { id: "statutory-accessibility-dda-section-24-and-wcag-22-level-aa-engineering", title: "5. DDA Section 24 & WCAG 2.2 Level AA Standards" },
+  { id: "regulatory-compliance-privacy-act-1988-apps-and-essential-eight-security", title: "3. Melbourne Privacy Act & Essential Eight Defense" },
+  { id: "high-concurrency-transaction-systems-graphql-gateways-and-microservices", title: "4. Melbourne High-Concurrency Web Architecture" },
+  { id: "statutory-accessibility-dda-section-24-and-wcag-22-level-aa-engineering", title: "5. Melbourne DDA Section 24 & WCAG Standards" },
   { id: "cremorne-tech-precinct-docklands-and-enterprise-b2b-custom-portals", title: "6. Cremorne Tech Precinct & B2B Custom Portals" },
   { id: "vic-ix-peering-equinix-me-data-centers-and-regional-edge-performance", title: "7. VIC-IX Peering & Melbourne Edge Performance" },
   { id: "agile-sprint-engineering-victorian-support-slas-and-strategic-growth", title: "8. Agile Sprint Engineering & Victorian SLAs" },
@@ -236,7 +236,7 @@ export default function MelbourneWebDevelopmentPage() {
 
         {/* SECTION 3 */}
         <h2 id="regulatory-compliance-privacy-act-1988-apps-and-essential-eight-security" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              3. Privacy Act 1988 & Essential Eight Security
+              3. Melbourne Privacy Act & Essential Eight Defense
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Operating within Victoria demands robust cyber defense and adherence to federal statutory standards. Our development lifecycle incorporates data governance measures aligned with the Australian Privacy Act 1988 and Australian Privacy Principles enforced by the <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Office of the Australian Information Commissioner</a>. For financial institutions and legal partnerships situated on Collins Street, we integrate cyber mitigation strategies defined by the <a href="https://www.cyber.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Australian Cyber Security Centre</a> Essential Eight framework, incorporating multi-factor authentication, cryptographic tokenization, and end-to-end TLS 1.3 encryption.
@@ -282,7 +282,7 @@ export default function MelbourneWebDevelopmentPage() {
 
         {/* SECTION 4 */}
         <h2 id="high-concurrency-transaction-systems-graphql-gateways-and-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              4. High-Concurrency Web Systems & GraphQL APIs
+              4. Melbourne High-Concurrency Web Architecture
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Melbourne serves as the national center for major retailers and high-frequency digital commerce across Australia. We develop resilient transactional engines, GraphQL gateways, and microservices architectures capable of processing thousands of concurrent checkouts without performance degradation. Our checkout workflows integrate with leading payment gateways including Stripe, Adyen, Apple Pay, and trusted Australian rails like BPAY. These transaction paths feature automated Goods and Services Tax calculations compliant with Australian Taxation Office standards, delivering effortless purchasing experiences.
@@ -335,7 +335,7 @@ export default function MelbourneWebDevelopmentPage() {
 
         {/* SECTION 5 */}
         <h2 id="statutory-accessibility-dda-section-24-and-wcag-22-level-aa-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              5. DDA Section 24 & WCAG 2.2 Level AA Standards
+              5. Melbourne DDA Section 24 & WCAG Standards
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility represents an essential statutory obligation and commitment for Australian organizations. Under Section 24 of the federal Disability Discrimination Act 1992 and guidance from the Australian Human Rights Commission, commercial web properties must offer equal access to all users. Australian enterprises face formal discrimination complaints and legal liabilities if their websites fail to achieve <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> benchmarks. Rather than using superficial accessibility overlays that fail technical audits, our team builds inclusive access directly into source code.

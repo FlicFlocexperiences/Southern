@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 const tableOfContents = [
   { id: "sydney-commercial-landscape-and-enterprise-web-architecture", title: "1. The Sydney Commercial Landscape and Enterprise Web Architecture" },
   { id: "enterprise-nextjs-and-composable-headless-systems-for-australian-scale-ups", title: "2. Next.js & Composable Headless for Sydney" },
-  { id: "regulatory-compliance-privacy-act-1988-apps-and-essential-eight-security", title: "3. Privacy Act 1988 & Essential Eight Security" },
-  { id: "high-concurrency-transaction-systems-graphql-gateways-and-microservices", title: "4. High-Concurrency Web Systems & GraphQL APIs" },
-  { id: "statutory-accessibility-dda-section-24-and-wcag-22-level-aa-engineering", title: "5. DDA Section 24 & WCAG 2.2 Level AA Standards" },
+  { id: "regulatory-compliance-privacy-act-1988-apps-and-essential-eight-security", title: "3. Sydney Privacy Act & Essential Eight Cybersecurity" },
+  { id: "high-concurrency-transaction-systems-graphql-gateways-and-microservices", title: "4. Sydney High-Concurrency Web Systems & GraphQL" },
+  { id: "statutory-accessibility-dda-section-24-and-wcag-22-level-aa-engineering", title: "5. Sydney DDA Section 24 & WCAG 2.2 AA Standards" },
   { id: "tech-central-macquarie-park-and-enterprise-b2b-custom-portals", title: "6. Tech Central, Macquarie Park, and Enterprise B2B Custom Portals" },
   { id: "nsw-ix-peering-equinix-sy-data-centers-and-regional-edge-performance", title: "7. NSW-IX Peering & Sydney Edge Infrastructure" },
   { id: "agile-sprint-engineering-australian-support-slas-and-strategic-growth", title: "8. Agile Sprint Engineering & Australian SLAs" },
@@ -236,7 +236,7 @@ export default function SydneyWebDevelopmentPage() {
 
         {/* SECTION 3 */}
         <h2 id="regulatory-compliance-privacy-act-1988-apps-and-essential-eight-security" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              3. Privacy Act 1988 & Essential Eight Security
+              3. Sydney Privacy Act & Essential Eight Cybersecurity
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Operating within Sydney requires unwavering cyber defense and strict alignment with national digital mandates. Our engineering lifecycle implements data protection measures aligned with the Australian Privacy Act 1988 and the Australian Privacy Principles governed by the <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Office of the Australian Information Commissioner</a>. For asset managers, fintech firms, and corporate entities in Barangaroo, we implement cyber mitigation frameworks defined by the <a href="https://www.cyber.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Australian Cyber Security Centre</a>, incorporating multi-factor verification, cryptographic tokenization, and end-to-end TLS 1.3 encryption.
@@ -282,7 +282,7 @@ export default function SydneyWebDevelopmentPage() {
 
         {/* SECTION 4 */}
         <h2 id="high-concurrency-transaction-systems-graphql-gateways-and-microservices" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              4. High-Concurrency Web Systems & GraphQL APIs
+              4. Sydney High-Concurrency Web Systems & GraphQL
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Sydney stands as the corporate center for enterprise finance, transactional commerce, and high-volume business platforms across Australia. We develop resilient web systems, GraphQL gateways, and microservices architectures capable of processing thousands of simultaneous transactions without performance degradation. Our checkout architectures integrate smoothly with Australian and global payment networks, including Stripe, Adyen, Apple Pay, and local payment mechanisms like BPAY. These workflows incorporate automated GST calculation compliant with Australian Taxation Office standards, delivering a dependable payment journey for institutional and retail users.
@@ -335,7 +335,7 @@ export default function SydneyWebDevelopmentPage() {
 
         {/* SECTION 5 */}
         <h2 id="statutory-accessibility-dda-section-24-and-wcag-22-level-aa-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              5. DDA Section 24 & WCAG 2.2 Level AA Standards
+              5. Sydney DDA Section 24 & WCAG 2.2 AA Standards
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility represents an essential statutory obligation and commercial imperative for Australian organizations. Under Section 24 of the Disability Discrimination Act 1992 and Australian Human Rights Commission guidance, commercial websites must provide equal access. Australian organizations risk formal discrimination complaints and brand damage if their digital assets fail to meet <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> benchmarks. Rather than using superficial accessibility overlays that fail regulatory scrutiny, we build inclusive access directly into fundamental source code.

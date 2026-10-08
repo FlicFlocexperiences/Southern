@@ -37,10 +37,10 @@ export const metadata: Metadata = {
 const tableOfContents = [
   { id: "brisbane-enterprise-innovation-and-mobile-velocity", title: "1. Brisbane's Enterprise Innovation Ecosystem and Mobile Velocity" },
   { id: "bank-grade-mobile-engineering-eagle-street", title: "2. Bank-Grade Mobile Engineering for Eagle Street" },
-  { id: "privacy-act-apra-cps-234-and-data-sovereignty", title: "3. APRA CPS 234 & Sovereign Data Governance" },
+  { id: "privacy-act-apra-cps-234-and-data-sovereignty", title: "3. Brisbane APRA CPS 234 & Data Governance" },
   { id: "fortitude-valley-tech-hub-and-edge-ai-capabilities", title: "4. Fortitude Valley Tech Hub & Edge AI Solutions" },
-  { id: "native-swift-kotlin-and-react-native-strategy", title: "Swift, Kotlin & React Native Strategy" },
-  { id: "statutory-accessibility-dda-and-wcag-compliance", title: "6. Statutory Accessibility, DDA Section 24, and WCAG 2.2 Standards" },
+  { id: "native-swift-kotlin-and-react-native-strategy", title: "Brisbane Swift, Kotlin & React Native Strategy" },
+  { id: "statutory-accessibility-dda-and-wcag-compliance", title: "6. Brisbane DDA Section 24 & WCAG App Standards" },
   { id: "qld-ix-peering-nextdc-brisbane-and-5g-performance", title: "7. QLD-IX Peering, NEXTDC Brisbane Facilities, and 5G Edge Delivery" },
   { id: "offline-first-cross-river-rail-and-transit-sync", title: "8. Offline-First Transit Sync for Brisbane Metro" },
   { id: "reviews", title: "Reviews" },
@@ -256,7 +256,7 @@ export default function BrisbaneAppDevelopmentPage() {
 
         {/* SECTION 3 */}
         <h2 id="privacy-act-apra-cps-234-and-data-sovereignty" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              3. APRA CPS 234 & Sovereign Data Governance
+              3. Brisbane APRA CPS 234 & Data Governance
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Queensland enterprises navigate strict statutory requirements</strong> for user privacy, auditability, and sovereign data custody. Our mobile engineering embeds security-by-design principles aligned with the <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Privacy Act 1988</a> and Australian Privacy Principles enforced by the Office of the Australian Information Commissioner. For institutions subject to prudential supervision, we construct mobile software architectures that fulfill the cyber resilience standards established by the <a href="https://www.apra.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Australian Prudential Regulation Authority</a> under Prudential Standard CPS 234, protecting customer records against unauthorized exposure.
@@ -355,7 +355,7 @@ export default function BrisbaneAppDevelopmentPage() {
 
         {/* SECTION 5 */}
         <h2 id="native-swift-kotlin-and-react-native-strategy" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Swift, Kotlin & React Native Strategy
+              Brisbane Swift, Kotlin & React Native Strategy
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Selecting the optimal software foundation represents a decisive architectural milestone</strong> for any enterprise mobile project. When an application demands intensive hardware acceleration, sustained background execution threads, or low-level graphics shaders, our mobile engineers craft fully native applications using Apple Swift for iOS and modern Kotlin for Android. Pure native engineering guarantees unrestricted access to device sensors, eliminates abstraction overhead, and delivers seamless 120Hz ProMotion screen rendering across the newest generation of mobile hardware.
@@ -366,7 +366,7 @@ export default function BrisbaneAppDevelopmentPage() {
 
         {/* SECTION 6 */}
         <h2 id="statutory-accessibility-dda-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Statutory Accessibility, DDA Section 24, and WCAG 2.2 Standards
+          6. Brisbane DDA Section 24 & WCAG App Standards
         </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Under Section 24 of the Australian Disability Discrimination Act 1992</strong>, digital software deployed by Australian organizations must provide equitable access to individuals with visual, auditory, cognitive, or physical motor impairments. Australian regulatory bodies enforce stringent digital inclusion benchmarks, establishing accessibility as a core engineering responsibility. Every mobile application engineered by Southern Edge Marketing complies with <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> criteria, constructing semantic accessibility trees that integrate seamlessly with Apple VoiceOver and Android TalkBack screen readers.

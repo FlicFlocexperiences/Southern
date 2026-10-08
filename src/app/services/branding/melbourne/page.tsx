@@ -40,9 +40,9 @@ const tableOfContents = [
   { id: "collins-street-and-docklands-institutional-financial-branding", title: "3. Institutional Authority for Collins Street" },
   { id: "b2b-industrial-positioning-for-south-east-melbourne-and-parkville", title: "4. B2B Brand Positioning for Melbourne BioTech Hubs" },
   { id: "ip-australia-trademark-clearance-and-intellectual-property-governance", title: "5. IP Australia Trademark Clearance & IP" },
-  { id: "statutory-accessibility-dda-section-24-and-wcag-compliance", title: "6. DDA Section 24 & WCAG 2.2 Level AA Systems" },
+  { id: "statutory-accessibility-dda-section-24-and-wcag-compliance", title: "6. Melbourne DDA Section 24 & WCAG Brand Identity" },
   { id: "high-dpi-vector-assets-variable-fonts-and-vic-ix-peering", title: "7. High-DPI Vector Assets & VIC-IX Edge" },
-  { id: "environmental-placemaking-cbd-signage-and-multichannel-scale", title: "8. Environmental Signage & Multi-Channel Scale" },
+  { id: "environmental-placemaking-cbd-signage-and-multichannel-scale", title: "8. Melbourne Environmental Signage & Brand Scale" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -357,7 +357,7 @@ export default function MelbourneBrandingPage() {
 
         {/* SECTION 6 */}
         <h2 id="statutory-accessibility-dda-section-24-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              6. DDA Section 24 & WCAG 2.2 Level AA Systems
+              6. Melbourne DDA Section 24 & WCAG Brand Identity
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Commercial organizations in Australia must satisfy strict digital accessibility standards</strong> established under Section 24 of the Disability Discrimination Act 1992. Inaccessible brand interfaces invite legal scrutiny, administrative complaints, and public reputational damage. Modern enterprise visual identity must be engineered for universal access from the start. Our Melbourne design practice develops corporate color palettes audited against the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">W3C Web Content Accessibility Guidelines (WCAG 2.2 Level AA)</a>, maintaining minimum 4.5:1 contrast ratios across user interfaces.
@@ -379,7 +379,7 @@ export default function MelbourneBrandingPage() {
 
         {/* SECTION 8 */}
         <h2 id="environmental-placemaking-cbd-signage-and-multichannel-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              8. Environmental Signage & Multi-Channel Scale
+              8. Melbourne Environmental Signage & Brand Scale
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Melbourne is celebrated for its distinctive architectural heritage</strong>, from Victorian landmark facades along Flinders Street to sleek commercial skyscrapers on William Street. For corporate headquarters, customer experience centers, and commercial flagships, brand identity must extend gracefully into three-dimensional space. Our environmental design specialists translate digital identity systems into exterior architectural signage, interior lobby installations, and intuitive wayfinding systems. We specify durable materials, precision metal fabrication, custom backlighting, and sustainable architectural finishes.

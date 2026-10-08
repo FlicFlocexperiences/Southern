@@ -37,10 +37,10 @@ export const metadata: Metadata = {
 const tableOfContents = [
   { id: "melbourne-enterprise-innovation-and-mobile-velocity", title: "1. Melbourne Innovation & Mobile Velocity" },
   { id: "bank-grade-mobile-engineering-collins-street", title: "2. Bank-Grade Mobile Engineering for Collins St" },
-  { id: "privacy-act-apra-cps-234-and-data-sovereignty", title: "3. APRA CPS 234 & Sovereign Data Governance" },
+  { id: "privacy-act-apra-cps-234-and-data-sovereignty", title: "3. Melbourne APRA CPS 234 & Data Sovereignty" },
   { id: "cremorne-tech-hub-and-edge-ai-capabilities", title: "4. Cremorne Tech Hub, High-Growth Scale-Ups, and Edge AI Capabilities" },
-  { id: "native-swift-kotlin-and-react-native-strategy", title: "Swift, Kotlin & React Native Strategy" },
-  { id: "statutory-accessibility-dda-and-wcag-compliance", title: "6. Statutory Accessibility, DDA Section 24, and WCAG 2.2 Standards" },
+  { id: "native-swift-kotlin-and-react-native-strategy", title: "Melbourne Swift, Kotlin & React Native Strategy" },
+  { id: "statutory-accessibility-dda-and-wcag-compliance", title: "6. Melbourne DDA Section 24 & WCAG App Compliance" },
   { id: "vic-ix-peering-equinix-melbourne-and-5g-performance", title: "7. VIC-IX Peering, Equinix Melbourne Facilities, and 5G Edge Delivery" },
   { id: "offline-first-yarra-trams-and-metro-tunnel-sync", title: "8. Offline-First Transit Sync for Yarra Trams" },
   { id: "reviews", title: "Reviews" },
@@ -256,7 +256,7 @@ export default function MelbourneAppDevelopmentPage() {
 
         {/* SECTION 3 */}
         <h2 id="privacy-act-apra-cps-234-and-data-sovereignty" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              3. APRA CPS 234 & Sovereign Data Governance
+              3. Melbourne APRA CPS 234 & Data Sovereignty
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Victorian enterprises navigate strict requirements</strong> for user privacy, auditability, and domestic data custody. Our mobile engineering embeds security-by-design principles aligned with the <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Privacy Act 1988</a> and Australian Privacy Principles enforced by the Office of the Australian Information Commissioner. For institutions subject to prudential supervision, we construct mobile software architectures that fulfill the cyber resilience standards established by the <a href="https://www.apra.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Australian Prudential Regulation Authority</a> under Prudential Standard CPS 234.
@@ -355,7 +355,7 @@ export default function MelbourneAppDevelopmentPage() {
 
         {/* SECTION 5 */}
         <h2 id="native-swift-kotlin-and-react-native-strategy" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Swift, Kotlin & React Native Strategy
+              Melbourne Swift, Kotlin & React Native Strategy
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Choosing the appropriate software foundation represents a critical milestone</strong> in any enterprise mobile initiative. When a commercial application requires intensive computational power, background processing threads, or custom metal shaders, our software engineers build native applications using Apple Swift for iOS and modern Kotlin for Android. Native development guarantees complete access to device sensors, zero bridge overhead, and fluid 120Hz ProMotion animation rendering across modern smartphones.
@@ -366,7 +366,7 @@ export default function MelbourneAppDevelopmentPage() {
 
         {/* SECTION 6 */}
         <h2 id="statutory-accessibility-dda-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          6. Statutory Accessibility, DDA Section 24, and WCAG 2.2 Standards
+          6. Melbourne DDA Section 24 & WCAG App Compliance
         </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Under Section 24 of the Australian Disability Discrimination Act 1992</strong>, applications deployed in Victoria must provide equitable access to users with visual, auditory, or physical impairments. Australian regulatory bodies enforce digital accessibility standards, establishing inclusive engineering as an essential business requirement. Every mobile application built by Southern Edge Marketing adheres to <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> guidelines, incorporating semantic accessibility structures that connect directly with Apple VoiceOver and Android TalkBack screen readers.

@@ -43,7 +43,7 @@ const tableOfContents = [
   },
   {
     "id": "enterprise-analytics-multi-touch-attribution-and-roas",
-    "title": "Attribution Modeling & CAC Optimization in Quebec"
+    "title": "Attribution Modeling & CAC Optimization in BC"
   },
   {
     "id": "reviews",
@@ -116,7 +116,7 @@ export default function VancouverSocialMediaManagementPage() {
         </p>
 
         <h2 id="enterprise-analytics-multi-touch-attribution-and-roas" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Attribution Modeling & CAC Optimization in Quebec
+              Attribution Modeling & CAC Optimization in BC
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Enterprise marketing leadership requires definitive commercial verification</strong> rather than superficial vanity metrics such as follower counts or raw post impressions. At Southern Edge Marketing, we deploy advanced multi-touch attribution architectures to track exact lead trajectories, pipeline value, and customer acquisition costs. Our data analysts configure custom tracking models across LinkedIn, Meta, and Google Analytics 4, revealing how social touchpoints directly accelerate deal velocity and long-term customer lifetime value. We conduct continuous algorithmic bid optimizations, creative split testing, and audience refinement to maximize Return on Ad Spend across Canadian and international campaigns. Every enterprise partnership is backed by live interactive analytics dashboards and dedicated monthly strategic briefings led by senior growth directors operating on Pacific Time business hours. <strong className="font-semibold text-[#de5e18] tracking-tight">Our transparent, revenue-centric reporting</strong> ensures your marketing leadership maintains complete clarity on customer acquisition economics and commercial return. When you are ready to scale your brand with the leading <strong className="font-semibold text-[#de5e18] tracking-tight">social media management company in Vancouver</strong>, <Link href="/contact" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">contact our social media strategists</Link> to schedule a comprehensive digital audit and growth consultation.

@@ -19,7 +19,7 @@ const tableOfContents = [
     },
     {
       "id": "comprehensive-web-development-services",
-      "title": "Comprehensive Web Development Services"
+      "title": "Abu Dhabi Web Development & Engineering"
     },
     {
       "id": "advanced-technology-stack-and-integration",
@@ -43,7 +43,7 @@ const tableOfContents = [
     },
     {
       "id": "technical-seo-and-content-architecture",
-      "title": "Technical SEO and Content Architecture"
+      "title": "Abu Dhabi Technical SEO & Content Architecture"
     },
     {
       "id": "web-accessibility-and-inclusivity",
@@ -51,7 +51,7 @@ const tableOfContents = [
     },
     {
       "id": "conversion-rate-optimization-strategies",
-      "title": "Conversion Rate Optimization Strategies"
+      "title": "Abu Dhabi Conversion Rate Optimization (CRO)"
     },
     {
       "id": "reviews",
@@ -82,7 +82,7 @@ export default function AbudhabiWebdevelopmentPage() {
             </p>
 
             <h2 id="comprehensive-web-development-services" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Comprehensive Web Development Services
+              Abu Dhabi Web Development & Engineering
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">Building modern websites</strong> requires a deep understanding of user behavior, aesthetic design, and robust backend engineering. We offer an extensive suite of services for web development in Abu Dhabi, ensuring every aspect of your online presence is meticulously crafted. <strong className="font-semibold text-[#de5e18] tracking-tight">Custom website development</strong> is at the core of what we do, allowing us to build bespoke platforms that directly serve your specific business objectives. We do not rely on generic templates. Instead, we architect each site from the ground up to ensure maximum performance and scalability. <strong className="font-semibold text-[#de5e18] tracking-tight">Ecommerce web development Abu Dhabi</strong> is another critical area of our expertise. We help local retailers establish powerful online storefronts equipped with secure payment gateways that are popular in the UAE. Furthermore, our web development company in Abu Dhabi focuses heavily on mobile responsiveness, recognizing that a significant portion of local consumers access the internet primarily through their smartphones. Whether you need a corporate portal or a complex web application, our solutions are engineered for success. If you are looking to expand your digital footprint, you can explore our marketing services to complement your new platform.
@@ -124,7 +124,7 @@ export default function AbudhabiWebdevelopmentPage() {
             </p>
 
             <h2 id="technical-seo-and-content-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Technical SEO and Content Architecture
+              Abu Dhabi Technical SEO & Content Architecture
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">Visibility is just as important</strong> as design. A beautiful website that cannot be found by search engines is a wasted investment. Our web development in Abu Dhabi includes comprehensive technical SEO right from the initial wireframing phase. We architect your site structure, URL hierarchies, and metadata to be perfectly aligned with Google's latest algorithms. <strong className="font-semibold text-[#de5e18] tracking-tight">Content architecture</strong> is also a primary focus. We organize your digital assets so that both users and search engine crawlers can navigate your information effortlessly, maximizing your organic reach across the UAE capital.
@@ -138,7 +138,7 @@ export default function AbudhabiWebdevelopmentPage() {
             </p>
 
             <h2 id="conversion-rate-optimization-strategies" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Conversion Rate Optimization Strategies
+              Abu Dhabi Conversion Rate Optimization (CRO)
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">Driving traffic is only half the battle;</strong> converting that traffic is where true business value is generated. Our web development company in Abu Dhabi integrates advanced Conversion Rate Optimization (CRO) strategies into every design decision. We utilize heat mapping, A/B testing, and user session recording to analyze exactly how visitors interact with your platform. <strong className="font-semibold text-[#de5e18] tracking-tight">By continuously iterating</strong> on call-to-action placement, form design, and checkout flows, we systematically eliminate friction points, ensuring that your website acts as a highly efficient, 24/7 sales engine for your enterprise.

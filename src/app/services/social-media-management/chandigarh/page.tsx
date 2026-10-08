@@ -43,7 +43,7 @@ const tableOfContents = [
   },
   {
     id: "brand-reputation-management-enterprise-growth",
-    title: "Online Reputation Management and Strategic Brand Integrity"
+    title: "Chandigarh Online Reputation & Brand Integrity"
   },
   {
     id: "reviews",
@@ -115,7 +115,7 @@ export default function ChandigarhSocialmediamanagementPage() {
         </p>
 
         <h2 id="brand-reputation-management-enterprise-growth" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Online Reputation Management and Strategic Brand Integrity
+          Chandigarh Online Reputation & Brand Integrity
         </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           In the digital age, a single negative review or viral complaint can quickly damage a company&apos;s reputation and customer trust. For Chandigarh&apos;s corporate offices, private healthcare providers, and elite educational schools, maintaining a positive digital image is critical. We provide round-the-clock brand monitoring, social listening, and customer interaction management to protect your brand reputation. Our dedicated team tracks brand mentions in real-time and resolves customer inquiries before they escalate into larger issues. We handle all feedback with professionalism and speed, turning potentially negative reviews into opportunities to show your commitment to quality. By sharing authentic customer testimonials and highlights of your community work, we help you build long-term public trust. This proactive reputation management system ensures your business remains a trusted leader in Chandigarh&apos;s competitive market.

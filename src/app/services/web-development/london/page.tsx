@@ -35,7 +35,7 @@ const tableOfContents = [
   },
   {
     "id": "equality-act-and-wcag-accessible-web-standards",
-    "title": "Statutory Equality Act 2010 and WCAG 2.2 Accessible Web Architecture"
+    "title": "Statutory Equality Act & WCAG 2.2 Web Standards in London"
   },
   {
     "id": "linx-edge-peering-and-ultra-low-latency-london-hosting",
@@ -102,7 +102,7 @@ export default function LondonWebDevelopmentPage() {
             </p>
 
             <h2 id="equality-act-and-wcag-accessible-web-standards" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Statutory Equality Act 2010 and WCAG 2.2 Accessible Web Architecture
+              Statutory Equality Act & WCAG 2.2 Web Standards in London
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               In the United Kingdom, digital accessibility is both a statutory obligation under the <a href="https://www.legislation.gov.uk/ukpga/2010/15/contents" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Equality Act 2010</a> and an essential foundation of exceptional user experience engineering. Public sector organizations and commercial enterprises across London are legally mandated to maintain public digital interfaces meeting <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> accessibility criteria to prevent unlawful discrimination against disabled users. Our engineering practice integrates comprehensive accessibility standards into every component of the software development lifecycle, from initial wireframing to final production rollout. We author clean semantic HTML5 markup, programmatic ARIA landmark roles, logical keyboard tab sequences, and complete screen-reader compatibility for users relying on assistive technologies. <strong className="font-semibold text-[#de5e18] tracking-tight">Investing in inclusive web engineering</strong> expands your accessible customer base across the United Kingdom while safeguarding your organization from costly regulatory penalties and civil claims. Furthermore, our continuous deployment pipelines integrate automated accessibility testing linters that catch regressions before any code update reaches live production servers. We also conduct manual user testing with screen readers and keyboard-only navigation to ensure real-world usability for all demographic groups.

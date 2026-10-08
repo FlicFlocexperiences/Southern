@@ -43,7 +43,7 @@ const tableOfContents = [
   },
   {
     id: "closed-loop-crm-revenue-attribution",
-    title: "Closed-Loop CRM Attribution & Organic Search ROI"
+    title: "Montreal Closed-Loop CRM Attribution & Search ROI"
   },
   {
     id: "reviews",
@@ -116,7 +116,7 @@ export default function MontrealSeoPage() {
         </p>
 
         <h2 id="closed-loop-crm-revenue-attribution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Closed-Loop CRM Attribution & Organic Search ROI
+              Montreal Closed-Loop CRM Attribution & Search ROI
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Southern Edge Marketing rejects superficial vanity metrics</strong> such as raw search impressions in favor of verifiable pipeline revenue and bottom-line commercial expansion. We integrate your organic search analytics directly with enterprise customer relationship management platforms, including Salesforce, HubSpot, and Microsoft Dynamics 365. This closed-loop tracking configuration links specific keyword rankings and organic landing page visits directly to closed-won enterprise contracts and customer lifetime value. Our analytics engineers configure multi-touch attribution models that reveal how organic search touchpoints nurture prospective buyers across complex B2B procurement cycles. Every month, we deliver comprehensive executive reports detailing pipeline velocity, acquisition cost reductions, and net return on search investment. To discover our agency philosophy and technical standards, visit our <Link href="/about" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">about us</Link> page. When you are prepared to build an undeniable organic search presence in Quebec, <Link href="/contact" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">contact our Montreal SEO strategists</Link> to schedule a comprehensive discovery consultation.

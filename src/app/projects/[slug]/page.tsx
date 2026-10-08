@@ -153,16 +153,16 @@ function getProjectCaseStudyContent(project: Project): string {
     return `
       <p class="lead">${study.lead}</p>
       
-      <h2>The Strategic Challenge</h2>
+      <h2>The Strategic Challenge for ${project.title}</h2>
       <p>${study.challenge}</p>
       
-      <h2>The Southern Edge Solution</h2>
+      <h2>The Southern Edge Solution for ${project.title}</h2>
       <p>${study.solution}</p>
       
-      <h2>Key Features & Platform Innovations</h2>
+      <h2>Key Innovations for ${project.title}</h2>
       ${featuresList}
       
-      <h2>Measurable Business Impact</h2>
+      <h2>Measurable Impact for ${project.title}</h2>
       <p>${study.impact}</p>
     `;
   }
@@ -178,13 +178,13 @@ function getProjectCaseStudyContent(project: Project): string {
   return `
     <p class="lead">${project.title} is a premier ${category.toLowerCase()} platform engineered by Southern Edge to deliver a high-converting digital home tailored for ${project.client || project.title}.</p>
     
-    <h2>Project Objectives</h2>
+    <h2>Project Objectives for ${project.title}</h2>
     <p>${project.description || `Delivering an industry-leading digital presence with streamlined user journeys, lightning-fast rendering, and intuitive navigation.`}</p>
     
-    <h2>Delivered Architecture & Services</h2>
+    <h2>Delivered Architecture for ${project.title}</h2>
     <p>Our multidisciplinary team developed a customized technical stack including ${services}. Every layout and interactive flow was purpose-built to guide visitors seamlessly from initial curiosity to verified conversion.</p>
     
-    <h2>Key Highlights</h2>
+    <h2>Key Highlights for ${project.title}</h2>
     <div style="margin-bottom: 1.25rem;">
       <h3 style="font-size: 1.15rem; font-weight: 700; color: #3e2723; margin-bottom: 0.25rem;">✦ Custom Brand Aesthetic</h3>
       <p style="margin-top: 0; color: #5d4037;">A bespoke design language reflecting the distinct identity and premium stature of ${project.client || project.title}.</p>
@@ -194,7 +194,7 @@ function getProjectCaseStudyContent(project: Project): string {
       <p style="margin-top: 0; color: #5d4037;">Thumb-friendly UI patterns and minimal step transitions engineered for high mobile conversion rates.</p>
     </div>
     
-    <h2>Measurable Outcomes</h2>
+    <h2>Measurable Outcomes for ${project.title}</h2>
     <p>The platform achieved exceptional performance metrics with sub-second page loads, significant reductions in bounce rates, and a measurable increase in qualified client inquiries.</p>
   `;
 }
@@ -547,7 +547,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               <span>•</span>
             </div>
             <h2 className="text-[32px] lg:text-[46px] font-bold text-[#3e2723] mb-8 lg:mb-12 tracking-tight">
-              PROJECT GALLERY
+              Project Gallery: {project.title}
             </h2>
             <ProjectGalleryView title={project.title} images={galleryImages} />
           </div>

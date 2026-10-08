@@ -39,7 +39,7 @@ const tableOfContents = [
   { id: "fidi-fintech-venture-capital-and-sec-compliant-entity-graphs", title: "2. FiDi FinTech, Venture Capital, and SEC-Compliant Entity Graphs" },
   { id: "soma-ai-scaleups-geo-vectoring-and-llm-search-engine-optimization", title: "3. SoMa AI Scale-Ups, GEO Vectoring & LLM SEO" },
   { id: "mission-bay-life-sciences-b2b-portals-and-technical-knowledge-graphs", title: "4. Mission Bay Life Sciences & Knowledge Graphs" },
-  { id: "enterprise-knowledge-graphs-wikidata-and-semantic-schema-governance", title: "5. Knowledge Graphs, Wikidata & Semantic Schema" },
+  { id: "enterprise-knowledge-graphs-wikidata-and-semantic-schema-governance", title: "5. SF Knowledge Graphs, Wikidata & Semantic Schema" },
   { id: "statutory-ada-title-iii-california-unruh-act-and-wcag-accessibility", title: "6. ADA Title III, Unruh Act & WCAG Accessibility" },
   { id: "sub-millisecond-edge-caching-sfmix-200-paul-peering-and-core-web-vitals", title: "7. SFMIX 200 Paul Edge Caching & Core Web Vitals" },
   { id: "bay-area-multi-district-local-pack-dominance-and-dedicated-support-slas", title: "8. Bay Area Local Pack Dominance & Dedicated SLAs" },
@@ -329,7 +329,7 @@ export default function SanFranciscoSeoPage() {
 
         {/* SECTION 5 */}
         <h2 id="enterprise-knowledge-graphs-wikidata-and-semantic-schema-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              5. Knowledge Graphs, Wikidata & Semantic Schema
+              5. SF Knowledge Graphs, Wikidata & Semantic Schema
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Modern search engines function as semantic knowledge engines that evaluate relational graphs between real-world entities rather than analyzing isolated string keywords. For San Francisco technology enterprises, building an authoritative Knowledge Graph presence is vital for capturing branded search results, Google Knowledge Panels, and rich snippet features. We build interconnected JSON-LD schema networks that link your corporate leadership, registered headquarters, software patents, and subsidiary brands directly into Wikidata and the global Semantic Web.

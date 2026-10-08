@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 
 const tableOfContents = [
   { id: "california-enterprise-economy-and-strategic-brand-architecture", title: "1. The California Enterprise Economy and Strategic Brand Architecture" },
-  { id: "silicon-valley-category-creation-and-ai-narrative-engineering", title: "2. Silicon Valley Category Creation & AI Narrative" },
+  { id: "silicon-valley-category-creation-and-ai-narrative-engineering", title: "2. California Tech Category Creation & AI Narrative" },
   { id: "silicon-beach-direct-to-consumer-and-multimedia-lifestyle-branding", title: "3. Silicon Beach DTC & Media Brand Systems" },
   { id: "biotech-and-deep-tech-positioning-across-san-diego-and-the-bay-area", title: "4. Biotech & Deep Tech Positioning for CA Corridors" },
   { id: "uspto-multi-class-trademark-defense-and-intellectual-property-governance", title: "5. USPTO Multi-Class Trademark & IP Governance" },
@@ -247,7 +247,7 @@ export default function CaliforniaBrandingPage() {
 
         {/* SECTION 2 */}
         <h2 id="silicon-valley-category-creation-and-ai-narrative-engineering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              2. Silicon Valley Category Creation & AI Narrative
+              2. California Tech Category Creation & AI Narrative
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Silicon Valley remains the global engine of technological disruption</strong>, setting the benchmark for venture-backed innovation across artificial intelligence, enterprise software, cloud infrastructure, and autonomous systems. In an environment where competing technical architectures emerge weekly, strategic positioning and narrative clarity serve as the primary determinants of commercial valuation. Deep-tech founders frequently build exceptional algorithmic models yet struggle to translate complex technical capabilities into compelling enterprise narratives that resonate with institutional buyers and top-tier venture firms. Our California brand strategists bridge this divide by converting intricate software architectures into authoritative category narratives.

@@ -23,11 +23,11 @@ const tableOfContents = [
     },
     {
       "id": "advanced-b2b-lead-generation-on-linkedin",
-      "title": "Advanced B2B Lead Generation on LinkedIn"
+      "title": "B2B LinkedIn Lead Generation in Bengaluru"
     },
     {
       "id": "analytics-driven-content-optimization",
-      "title": "Analytics-Driven Content Optimization"
+      "title": "Data-Driven Content Optimization in Bengaluru"
     },
     {
       "id": "why-choose-our-bengaluru-social-media-agency",
@@ -35,11 +35,11 @@ const tableOfContents = [
     },
     {
       "id": "employer-branding-and-talent-acquisition",
-      "title": "Employer Branding and Talent Acquisition"
+      "title": "Bengaluru Employer Branding & Talent Acquisition"
     },
     {
       "id": "brand-reputation-and-crisis-management",
-      "title": "Brand Reputation and Crisis Management"
+      "title": "Brand Reputation & Crisis Strategy in Bengaluru"
     },
     {
       "id": "reviews",
@@ -77,14 +77,14 @@ export default function BengaluruSocialmediamanagementPage() {
             </p>
 
             <h2 id="advanced-b2b-lead-generation-on-linkedin" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Advanced B2B Lead Generation on LinkedIn
+              B2B LinkedIn Lead Generation in Bengaluru
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">In a city defined by B2B technology and SaaS,</strong> LinkedIn is the ultimate battleground. For tech startups in Koramangala or established IT service firms in Whitefield, LinkedIn is an invaluable asset for growth. Our social media management in Bengaluru includes highly aggressive B2B lead generation strategies specifically optimized for the LinkedIn platform. We optimize your corporate profile, publish authoritative technical thought-leadership content, and run precision-targeted InMail and sponsored content campaigns designed to connect you directly with key decision-makers, CTOs, and venture capitalists. <strong className="font-semibold text-[#de5e18] tracking-tight">This highly strategic approach</strong> establishes your brand as an undeniable industry authority and consistently fills your corporate sales pipeline with high-value, qualified leads.
             </p>
 
             <h2 id="analytics-driven-content-optimization" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Analytics-Driven Content Optimization
+              Data-Driven Content Optimization in Bengaluru
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">In the tech industry, data is everything.</strong> Our Bengaluru social media managers utilize advanced, enterprise-grade analytics software to track the precise performance of every single campaign we execute. <strong className="font-semibold text-[#de5e18] tracking-tight">We meticulously monitor complex KPIs</strong> such as audience growth velocity, engagement rates, click-through rates, and deep-funnel conversion metrics to understand exactly what resonates with your specific target demographic in the city. This rigorous, analytics-driven approach to social media management in Bengaluru allows us to continuously optimize your overarching content strategy. If a specific format—like highly technical educational carousels or behind-the-scenes engineering vlogs—is driving superior results, we aggressively pivot our resources to maximize that specific ROI. <strong className="font-semibold text-[#de5e18] tracking-tight">Transparent reporting</strong> ensures you are never in the dark. We provide comprehensive monthly performance reports, clearly outlining our strategic actions and exactly how they are contributing to your overarching business growth.
@@ -98,14 +98,14 @@ export default function BengaluruSocialmediamanagementPage() {
             </p>
 
             <h2 id="employer-branding-and-talent-acquisition" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Employer Branding and Talent Acquisition
+              Bengaluru Employer Branding & Talent Acquisition
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">The war for tech talent in Bengaluru is fierce.</strong> Attracting top-tier software engineers and product managers requires a compelling employer brand. Our social media management in Bengaluru includes specialized strategies designed specifically for talent acquisition. We highlight your company culture, showcase your engineering challenges, and promote employee success stories across platforms like LinkedIn and Instagram. <strong className="font-semibold text-[#de5e18] tracking-tight">By building a powerful employer narrative</strong>, we help you drastically reduce recruitment costs and attract the brightest minds in India's Silicon Valley to your organization.
             </p>
 
             <h2 id="brand-reputation-and-crisis-management" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Brand Reputation and Crisis Management
+              Brand Reputation & Crisis Strategy in Bengaluru
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">In the highly visible and often highly critical realm of tech Twitter and LinkedIn</strong>, protecting your brand's hard-earned reputation is paramount. Our social media management in Bengaluru includes proactive reputation monitoring and rapid crisis mitigation strategies. We actively listen to online sentiment surrounding your business, your products, and your executive team, ensuring positive feedback is amplified and negative comments or technical complaints are addressed immediately and professionally. <strong className="font-semibold text-[#de5e18] tracking-tight">Swift, empathetic customer service</strong> is a key pillar of our community management strategy. Our Bengaluru social media experts are highly trained to de-escalate sensitive situations publicly, proving to your users that you value product excellence and customer satisfaction above all else.

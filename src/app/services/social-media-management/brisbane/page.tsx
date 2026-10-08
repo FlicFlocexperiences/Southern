@@ -38,9 +38,9 @@ const tableOfContents = [
   { id: "brisbane-commercial-acceleration-and-enterprise-social-architecture", title: "1. Brisbane Commercial Acceleration and Enterprise Social Architecture" },
   { id: "executive-thought-leadership-linkedin-abm-golden-triangle", title: "2. LinkedIn ABM for Brisbane Golden Triangle" },
   { id: "tech-ecosystem-acquisition-fortitude-valley-newstead", title: "3. Tech Community Growth in Fortitude Valley" },
-  { id: "statutory-privacy-governance-australian-privacy-principles-server-side-capi", title: "4. Privacy Act Governance & Server-Side CAPI" },
+  { id: "statutory-privacy-governance-australian-privacy-principles-server-side-capi", title: "4. Brisbane Privacy Act Governance & CAPI" },
   { id: "broadcast-4k-vertical-video-accc-influencer-governance", title: "5. 4K Video & ACCC Creator Governance" },
-  { id: "disability-discrimination-act-wcag-universal-accessibility", title: "6. DDA Compliance & WCAG Social Accessibility" },
+  { id: "disability-discrimination-act-wcag-universal-accessibility", title: "6. Brisbane DDA & WCAG Social Accessibility" },
   { id: "qld-ix-edge-peering-nextdc-data-centers-5g-distribution", title: "7. QLD-IX Peering & 5G Media Delivery" },
   { id: "enterprise-attribution-data-lakehouses-brisbane-slas", title: "8. Multi-Touch Attribution & Brisbane Support SLAs" },
   { id: "reviews", title: "Reviews" },
@@ -302,7 +302,7 @@ export default function BrisbaneSocialMediaManagementPage() {
 
         {/* SECTION 4 */}
         <h2 id="statutory-privacy-governance-australian-privacy-principles-server-side-capi" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              4. Privacy Act Governance & Server-Side CAPI
+              4. Brisbane Privacy Act Governance & CAPI
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Executing digital marketing campaigns across Queensland requires rigorous adherence to federal privacy legislation and statutory consumer protections. The <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Office of the Australian Information Commissioner</a> actively enforces the Privacy Act 1988 alongside thirteen statutory Australian Privacy Principles, governing the collection, storage, and cross-border disclosure of personal information. In response to mobile browser cookie restrictions and heightened consumer privacy awareness, our marketing engineers deploy first-party server-side telemetry using the <a href="https://developers.facebook.com/docs/marketing-api/conversions-api/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Meta Conversions API</a>, LinkedIn Conversions API, and Google Tag Manager Server Container.
@@ -366,7 +366,7 @@ export default function BrisbaneSocialMediaManagementPage() {
 
         {/* SECTION 6 */}
         <h2 id="disability-discrimination-act-wcag-universal-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              6. DDA Compliance & WCAG Social Accessibility
+              6. Brisbane DDA & WCAG Social Accessibility
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility represents a critical legal obligation and ethical imperative for commercial enterprises operating throughout Queensland. Under the federal Disability Discrimination Act 1992, public-facing digital communications must provide equal access to individuals with auditory, cognitive, visual, or neurological impairments. Social media campaigns published without inclusive design principles alienate valuable audiences and create corporate regulatory exposure. Our production pipeline embeds accessibility protocols into every creative asset in accordance with global <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> guidelines.

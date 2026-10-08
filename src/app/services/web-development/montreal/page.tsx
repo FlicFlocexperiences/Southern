@@ -19,7 +19,7 @@ const tableOfContents = [
   },
   {
     "id": "nextjs-headless-architecture-and-high-velocity-performance",
-    "title": "Enterprise Next.js and Headless Architectures for High-Growth Brands"
+    "title": "Montreal Next.js & Headless Web Architectures"
   },
   {
     "id": "quebec-law-25-privacy-and-data-sovereignty",
@@ -74,7 +74,7 @@ export default function MontrealWebDevelopmentPage() {
             </p>
 
             <h2 id="nextjs-headless-architecture-and-high-velocity-performance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Enterprise Next.js and Headless Architectures for High-Growth Brands
+              Montreal Next.js & Headless Web Architectures
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               High-growth enterprises across Greater Montreal require modern, decoupled web architectures that deliver instantaneous page interactions and unwavering uptime during intense traffic spikes. We engineer decoupled digital platforms powered by React and Next.js, leveraging server-side rendering (SSR), static site generation (SSG), and incremental static regeneration (ISR) to eradicate rendering latency. By decoupling the frontend presentation layer from monolithic backend systems, we drastically shrink client-side bundle sizes and protect corporate infrastructure from common security vulnerabilities. This composable architecture allows marketing and product teams to update dynamic content via headless content management systems like Sanity and Contentful without touching core production code. <strong className="font-semibold text-[#de5e18] tracking-tight">Our precision frontend engineering</strong> guarantees perfect Google Core Web Vitals, sub-second Largest Contentful Paint (LCP), and optimal conversion rates across all mobile and desktop viewports. To understand our modern software development methodology and core technical standards, visit our <Link href="/about" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">about us</Link> page.

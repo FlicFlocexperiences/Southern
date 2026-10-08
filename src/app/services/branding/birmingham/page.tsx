@@ -39,7 +39,7 @@ const tableOfContents = [
   },
   {
     id: "ukipo-trademark-governance-asa-standards-and-brand-security",
-    title: "UKIPO Trademark Governance & IP Protection"
+    title: "Birmingham UKIPO Brand Governance & IP Protection"
   },
   {
     id: "esg-storytelling-wm2041-net-zero-and-measurable-brand-equity",
@@ -109,7 +109,7 @@ export default function BirminghamBrandingPage() {
         </p>
 
         <h2 id="ukipo-trademark-governance-asa-standards-and-brand-security" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              UKIPO Trademark Governance & IP Protection
+              Birmingham UKIPO Brand Governance & IP Protection
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">In a vibrant and fast-expanding commercial center like Birmingham</strong>, constructing an exceptional visual identity requires rigorous legal protection and strict intellectual property governance. Brand equity cannot compound safely if visual assets, company nomenclature, or signature design elements face trademark infringement challenges or competitor dilution. Our branding lifecycle incorporates forensic linguistic analysis and visual distinctiveness checks aligned with registration standards defined by the <a href="https://www.gov.uk/government/organisations/intellectual-property-office" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">UK Intellectual Property Office (UKIPO)</a>. We design proprietary typographic marks and distinctive trade dress elements engineered for seamless domestic registration and international filing under the Madrid Protocol. In addition, our copywriting and strategy teams ensure all commercial claims, sustainability statements, and comparative positioning adhere strictly to advertising codes enforced by the <a href="https://www.asa.org.uk/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Advertising Standards Authority (ASA)</a>. Following launch, we deliver exhaustive Brand Guidelines documents that strictly regulate typography licensing, clear space rules, color palettes, and digital asset distribution across internal teams and third-party vendors. By establishing bulletproof brand security from day one, your enterprise maintains absolute ownership over its market positioning and commercial goodwill.

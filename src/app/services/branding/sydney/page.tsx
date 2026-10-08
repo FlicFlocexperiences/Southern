@@ -42,7 +42,7 @@ const tableOfContents = [
   { id: "ip-australia-trademark-governance-and-brand-defense", title: "5. IP Australia Trademark Governance and Intellectual Property Defense" },
   { id: "statutory-accessibility-dda-section-24-and-wcag-compliance", title: "6. DDA Section 24 & WCAG Accessible Brand Systems" },
   { id: "high-dpi-vector-assets-variable-fonts-and-nsw-ix-peering", title: "7. High-DPI Vector Assets & NSW-IX Sub-Second Edge" },
-  { id: "environmental-placemaking-cbd-signage-and-multichannel-scale", title: "8. Environmental Signage & Multi-Channel Scale" },
+  { id: "environmental-placemaking-cbd-signage-and-multichannel-scale", title: "8. Sydney Environmental Signage & Physical Scale" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -379,7 +379,7 @@ export default function SydneyBrandingPage() {
 
         {/* SECTION 8 */}
         <h2 id="environmental-placemaking-cbd-signage-and-multichannel-scale" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              8. Environmental Signage & Multi-Channel Scale
+              8. Sydney Environmental Signage & Physical Scale
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">The architectural footprint of Sydney encompasses celebrated commercial landmarks</strong>, from waterfront corporate towers along Circular Quay to heritage brick conversions in Pyrmont. For corporate headquarters, client briefing centers, and commercial retail spaces, brand identity must transcend digital screens to command physical environments. Our environmental design specialists translate corporate visual systems into dimensional architectural signage, experiential lobby installations, and precision wayfinding systems. We specify durable materials, brushed architectural metals, custom illumination, and sustainable fabrication methods.

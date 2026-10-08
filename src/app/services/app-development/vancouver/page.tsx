@@ -19,7 +19,7 @@ const tableOfContents = [
   },
   {
     "id": "native-ios-android-and-react-native-cross-platform-architecture",
-    "title": "Native Swift, Kotlin, and React Native Cross-Platform Strategy"
+    "title": "Vancouver Swift, Kotlin & React Native Strategy"
   },
   {
     "id": "bc-pipa-compliance-and-canadian-cloud-data-residency",
@@ -74,7 +74,7 @@ export default function VancouverAppDevelopmentPage() {
         </p>
 
         <h2 id="native-ios-android-and-react-native-cross-platform-architecture" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Native Swift, Kotlin, and React Native Cross-Platform Strategy
+          Vancouver Swift, Kotlin & React Native Strategy
         </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Selecting the correct technical architecture</strong> is the most critical strategic decision in the mobile software development lifecycle. Our engineering consultants evaluate your product roadmap, performance requirements, and commercial objectives to determine whether native development or a unified cross-platform stack best serves your goals. When maximum computational throughput, hardware-level sensor access, or sophisticated 60fps animations are required, we engineer native solutions utilizing Swift for Apple iOS and Kotlin for Android. For high-growth startups and established brands seeking rapid simultaneous deployment across both ecosystems, our <strong className="font-semibold text-[#de5e18] tracking-tight">Vancouver app developers</strong> build robust, performant applications with React Native. This unified codebase strategy delivers near-native responsiveness while cutting development cycles and long-term maintenance overhead by up to 40%. Regardless of the framework chosen, our team implements modular component design, clean state management, and automated unit testing pipelines to guarantee flawless platform stability. If your organization also requires a high-performance web platform to accompany your mobile release, discover our enterprise <Link href="/services/web-development" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">web development</Link> services.

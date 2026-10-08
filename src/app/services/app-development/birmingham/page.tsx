@@ -39,7 +39,7 @@ const tableOfContents = [
   },
   {
     "id": "native-swift-kotlin-and-react-native-strategy",
-    "title": "Swift, Kotlin & React Native Strategy"
+    "title": "Birmingham Swift, Kotlin & React Native Strategy"
   },
   {
     "id": "west-midlands-transit-resilience-ix-birmingham-and-accessibility",
@@ -109,7 +109,7 @@ export default function BirminghamAppDevelopmentPage() {
         </p>
 
         <h2 id="native-swift-kotlin-and-react-native-strategy" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Swift, Kotlin & React Native Strategy
+              Birmingham Swift, Kotlin & React Native Strategy
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Selecting the optimal mobile framework</strong> represents one of the most consequential architectural decisions in your digital roadmap. Our senior technology architects conduct rigorous technical assessments to determine whether pure native engineering or a unified cross-platform architecture best serves your performance benchmarks and operational budget. When your product requires intensive hardware telemetry, complex continuous background processing, or specialized graphic rendering pipelines, we build native applications utilizing Swift for iOS and Kotlin for Android. For enterprises seeking simultaneous multi-platform release cycles and streamlined ongoing maintenance, we build production-ready mobile platforms with React Native. This unified codebase strategy delivers smooth 60fps native interface components while reducing initial development timelines and ongoing maintenance expenditure by up to forty percent. Whichever stack is selected, our <strong className="font-semibold text-[#de5e18] tracking-tight">Birmingham app developers</strong> enforce automated testing suites, static code security scans, and continuous deployment pipelines before publishing to the Apple App Store and Google Play Store. To learn more about our architectural standards and software philosophy, read our <Link href="/about" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">about us</Link> profile.

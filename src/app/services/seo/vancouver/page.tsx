@@ -43,7 +43,7 @@ const tableOfContents = [
   },
   {
     id: "closed-loop-crm-revenue-attribution",
-    title: "Closed-Loop CRM Attribution & Organic Search ROI"
+    title: "Vancouver Closed-Loop CRM Attribution & Search ROI"
   },
   {
     id: "reviews",
@@ -116,7 +116,7 @@ export default function VancouverSeoPage() {
         </p>
 
         <h2 id="closed-loop-crm-revenue-attribution" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Closed-Loop CRM Attribution & Organic Search ROI
+              Vancouver Closed-Loop CRM Attribution & Search ROI
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Southern Edge Marketing rejects superficial vanity metrics</strong> such as generic search impressions and unverified traffic volume in favor of measurable financial returns. We integrate your organic search analytics directly with enterprise customer relationship management platforms, including Salesforce, HubSpot, and Microsoft Dynamics 365. This closed-loop tracking architecture connects individual keyword rankings and landing page visits directly to closed-won enterprise contracts and customer lifetime values. Our analytics engineers track multi-touch attribution models, identifying exactly how organic search assets nurture prospects throughout long B2B procurement cycles. We deliver executive-level performance reports every month detailing pipeline velocity, conversion milestones, and net organic return on investment. Our transparent reporting provides your executive leadership with definitive proof of how search marketing accelerates top-line business expansion. When you are ready to engineer a dominant organic search presence in British Columbia, <Link href="/contact" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">contact our search strategy team</Link> to schedule an initial technical consultation.

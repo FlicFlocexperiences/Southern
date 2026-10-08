@@ -40,7 +40,7 @@ const tableOfContents = [
   { id: "golden-triangle-and-queen-street-institutional-corporate-authority", title: "3. Golden Triangle and Queen Street: Institutional Corporate Authority" },
   { id: "brisbane-2032-olympic-horizon-and-tradecoast-industrial-positioning", title: "4. Brisbane 2032 Olympic Horizon and TradeCoast Industrial Positioning" },
   { id: "ip-australia-trademark-clearance-and-multi-class-brand-governance", title: "5. IP Australia Trademark Clearance and Multi-Class Brand Governance" },
-  { id: "statutory-accessibility-dda-section-24-and-wcag-compliance", title: "6. DDA Section 24 & WCAG 2.2 Level AA Systems" },
+  { id: "statutory-accessibility-dda-section-24-and-wcag-compliance", title: "6. Brisbane DDA Section 24 & WCAG Brand Standards" },
   { id: "high-dpi-vector-assets-and-bne-ix-sub-millisecond-peering", title: "7. High-DPI Vector Asset Delivery and BNE-IX Sub-Millisecond Peering" },
   { id: "environmental-placemaking-commercial-signage-and-multichannel-scale", title: "8. Environmental Placemaking & Commercial Signage" },
   { id: "reviews", title: "Reviews" },
@@ -357,7 +357,7 @@ export default function BrisbaneBrandingPage() {
 
         {/* SECTION 6 */}
         <h2 id="statutory-accessibility-dda-section-24-and-wcag-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              6. DDA Section 24 & WCAG 2.2 Level AA Systems
+              6. Brisbane DDA Section 24 & WCAG Brand Standards
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Commercial enterprises operating across Australia must comply with digital accessibility mandates</strong> set forth under Section 24 of the Disability Discrimination Act 1992. Inaccessible brand interfaces exclude valuable user demographics while creating substantial legal vulnerabilities and reputational risks. Modern visual identities must incorporate universal accessibility from inception. Our Brisbane design practice formulates corporate color palettes audited against <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">W3C Web Content Accessibility Guidelines (WCAG 2.2 Level AA)</a>, ensuring minimum 4.5:1 contrast ratios across user interfaces and digital applications.

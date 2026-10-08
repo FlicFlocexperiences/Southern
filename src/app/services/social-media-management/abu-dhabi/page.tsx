@@ -43,7 +43,7 @@ const tableOfContents = [
     },
     {
       "id": "local-influencer-and-partnership-marketing",
-      "title": "Local Influencer and Partnership Marketing"
+      "title": "Abu Dhabi Influencer & Partnership Marketing"
     },
     {
       "id": "leveraging-social-commerce-capabilities",
@@ -124,7 +124,7 @@ export default function AbudhabiSocialmediamanagementPage() {
             </p>
 
             <h2 id="local-influencer-and-partnership-marketing" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Local Influencer and Partnership Marketing
+              Abu Dhabi Influencer & Partnership Marketing
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">Leveraging established voices</strong> is a highly effective way to rapidly expand your reach. Our social media management in Abu Dhabi includes strategic influencer marketing campaigns tailored to the UAE market. We meticulously identify and vet local influencers and micro-influencers whose audiences perfectly align with your target demographic. <strong className="font-semibold text-[#de5e18] tracking-tight">We handle the entire process,</strong> from initial outreach and contract negotiation to campaign execution and ROI tracking, ensuring your brand benefits from authentic endorsements that drive genuine consumer trust and high-volume sales.

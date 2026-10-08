@@ -39,7 +39,7 @@ const tableOfContents = [
   },
   {
     "id": "native-swift-kotlin-and-react-native-engineering-strategy",
-    "title": "Native Swift, Kotlin, and React Native Cross-Platform Strategy"
+    "title": "Montreal Swift, Kotlin & React Native Strategy"
   },
   {
     "id": "low-latency-cloud-infrastructure-and-post-launch-growth",
@@ -109,7 +109,7 @@ export default function MontrealAppdevelopmentPage() {
         </p>
 
         <h2 id="native-swift-kotlin-and-react-native-engineering-strategy" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          Native Swift, Kotlin, and React Native Cross-Platform Strategy
+          Montreal Swift, Kotlin & React Native Strategy
         </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Selecting the correct architectural framework</strong> is the cornerstone of long-term mobile product success. During our strategic discovery phase, our technical leads evaluate your application's computing requirements, release timelines, and scalability goals to architect the optimal development roadmap. For applications requiring intensive graphic throughput, low-level hardware communication, or proprietary audio processing, we build native applications leveraging Swift for iOS and Kotlin for Android. For commercial enterprises and fast-moving tech startups seeking concurrent deployment on iOS and Android from a unified codebase, our team builds high-velocity applications using React Native. This unified cross-platform methodology delivers genuine 60fps performance and native UI responsiveness while reducing engineering overhead and initial capital expenditure by up to 40%. Regardless of the technology stack chosen, our <strong className="font-semibold text-[#de5e18] tracking-tight">app development in Montreal</strong> adheres to strict clean-code standards and continuous integration protocols.

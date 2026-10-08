@@ -31,15 +31,15 @@ const tableOfContents = [
     },
     {
       "id": "uncompromising-security-and-local-compliance",
-      "title": "Uncompromising Security and Local Compliance"
+      "title": "Kolkata Web Security & Regulatory Compliance"
     },
     {
       "id": "technical-seo-and-organic-visibility",
-      "title": "Technical SEO and Organic Visibility"
+      "title": "Kolkata Technical SEO & Search Visibility"
     },
     {
       "id": "web-accessibility-and-inclusive-design",
-      "title": "Web Accessibility and Inclusive Design"
+      "title": "Kolkata Accessible & Inclusive Web Design"
     },
     {
       "id": "reviews",
@@ -91,21 +91,21 @@ export default function KolkataWebdevelopmentPage() {
             </p>
 
             <h2 id="uncompromising-security-and-local-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Uncompromising Security and Local Compliance
+              Kolkata Web Security & Regulatory Compliance
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">In an era of increasing digital threats</strong>, safeguarding your business data is absolutely paramount. Our web development in Kolkata incorporates robust, military-grade security protocols into every layer of your website's architecture. We implement advanced SSL encryption, automated threat detection systems, and comprehensive DDoS protection to defend against malicious attacks. <strong className="font-semibold text-[#de5e18] tracking-tight">Regulatory compliance</strong> is also a top priority for our engineering team. Our Kolkata web developers ensure that your new digital platform strictly adheres to all Indian data privacy regulations, including the latest IT Act mandates. <strong className="font-semibold text-[#de5e18] tracking-tight">Secure data handling</strong> and transparent cookie management systems are built directly into the user interface, protecting both your business liability and the privacy of your valuable customers. When you choose our custom website development Kolkata services, you are investing heavily in a secure, compliant, and highly resilient digital infrastructure.
             </p>
 
             <h2 id="technical-seo-and-organic-visibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Technical SEO and Organic Visibility
+              Kolkata Technical SEO & Search Visibility
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">A beautiful website is useless</strong> if it cannot be found by your target audience. Our web development in Kolkata includes comprehensive technical SEO right from the initial wireframing phase. We architect your site structure, URL hierarchies, and metadata to be perfectly aligned with Google's latest algorithm updates. <strong className="font-semibold text-[#de5e18] tracking-tight">Strategic content architecture</strong> is also a primary focus for our team. We organize your digital assets so that both users and search engine crawlers can navigate your complex information effortlessly, maximizing your organic reach across Kolkata and the broader Eastern Indian market. For a comprehensive strategy to drive highly qualified traffic to your new site, explore our advanced SEO solutions.
             </p>
 
             <h2 id="web-accessibility-and-inclusive-design" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              Web Accessibility and Inclusive Design
+              Kolkata Accessible & Inclusive Web Design
             </h2>
             <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
               <strong className="font-semibold text-[#de5e18] tracking-tight">Digital inclusivity</strong> is a core component of modern web engineering. We ensure that our custom website development Kolkata services adhere strictly to the Web Content Accessibility Guidelines (WCAG). This means designing digital platforms that are fully accessible to users with visual, auditory, or cognitive disabilities. <strong className="font-semibold text-[#de5e18] tracking-tight">Implementing features</strong> such as screen reader compatibility, high-contrast visual modes, and keyboard-only navigation not only broadens your potential audience but also clearly demonstrates your brand's commitment to social responsibility and global inclusivity standards.

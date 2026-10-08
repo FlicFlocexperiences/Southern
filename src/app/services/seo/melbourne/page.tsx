@@ -40,9 +40,9 @@ const tableOfContents = [
   { id: "cremorne-tech-generative-engine-optimization", title: "3. GEO & AI Citations for Cremorne Tech Scale-Ups" },
   { id: "greater-melbourne-programmatic-local-seo", title: "4. Programmatic Local SEO for Greater Melbourne" },
   { id: "melbourne-industrial-corridor-b2b-seo", title: "5. B2B Industrial Search for Melbourne Corridors" },
-  { id: "oaic-privacy-and-accc-compliance", title: "6. OAIC Privacy Compliance & Ethical SEO" },
+  { id: "oaic-privacy-and-accc-compliance", title: "6. Melbourne OAIC Privacy & Ethical SEO" },
   { id: "vic-ix-peering-core-web-vitals", title: "7. VIC-IX Peering, Sub-Second Edge & Web Vitals" },
-  { id: "closed-loop-crm-attribution-governance", title: "8. Closed-Loop CRM Attribution and Multi-Quarter Search Governance" },
+  { id: "closed-loop-crm-attribution-governance", title: "8. Melbourne Closed-Loop CRM Attribution & Governance" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
 ];
@@ -357,7 +357,7 @@ export default function MelbourneSeoPage() {
 
         {/* SECTION 6 */}
         <h2 id="oaic-privacy-and-accc-compliance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              6. OAIC Privacy Compliance & Ethical SEO
+              6. Melbourne OAIC Privacy & Ethical SEO
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Managing an enterprise digital presence across Melbourne requires rigorous adherence</strong> to statutory privacy protections and fair trading legislation. Our digital optimization methodologies comply strictly with the Privacy Act 1988 and the Australian Privacy Principles regulated by the Office of the Australian Information Commissioner. We engineer privacy-conscious tracking architectures removing unauthorized third-party telemetry, managing user consent dynamically, and preventing sensitive enterprise data leaks through commercial search engine conduits and analytics tracking scripts.
@@ -379,7 +379,7 @@ export default function MelbourneSeoPage() {
 
         {/* SECTION 8 */}
         <h2 id="closed-loop-crm-attribution-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-          8. Closed-Loop CRM Attribution and Multi-Quarter Search Governance
+          8. Melbourne Closed-Loop CRM Attribution & Governance
         </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Executive marketing directors demand verified commercial returns</strong> rather than speculative organic impression metrics. Our <strong className="font-semibold text-[#de5e18] tracking-tight">organic search strategy in Melbourne</strong> implements closed-loop revenue attribution connecting organic touchpoints directly with enterprise customer relationship management platforms including Salesforce, HubSpot, and Microsoft Dynamics. We deploy first-party tracking that traces enterprise buyer journeys from initial discovery through multi-month procurement cycles to completed contractual revenue. This data reveals the precise commercial yield of each search cluster and landing asset.

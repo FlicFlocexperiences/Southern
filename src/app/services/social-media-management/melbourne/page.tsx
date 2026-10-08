@@ -38,9 +38,9 @@ const tableOfContents = [
   { id: "melbourne-commercial-dynamics-and-enterprise-social-architecture", title: "1. Melbourne Commercial Dynamics and Enterprise Social Architecture" },
   { id: "executive-thought-leadership-linkedin-abm-collins-street-docklands", title: "2. LinkedIn ABM for Collins St & Docklands" },
   { id: "high-growth-tech-product-acquisition-developer-advocacy-cremorne", title: "3. Tech Acquisition & Advocacy in Cremorne" },
-  { id: "data-privacy-governance-privacy-act-1988-meta-capi", title: "4. Privacy Act Governance & Server-Side CAPI" },
-  { id: "cinematic-4k-video-production-accc-creator-governance", title: "5. 4K Video Production & ACCC Creator Rules" },
-  { id: "disability-discrimination-act-wcag-social-accessibility", title: "6. DDA Compliance & WCAG Social Accessibility" },
+  { id: "data-privacy-governance-privacy-act-1988-meta-capi", title: "4. Melbourne Privacy Act Governance & CAPI" },
+  { id: "cinematic-4k-video-production-accc-creator-governance", title: "5. Melbourne 4K Video Production & ACCC Rules" },
+  { id: "disability-discrimination-act-wcag-social-accessibility", title: "6. Melbourne DDA & WCAG Social Accessibility" },
   { id: "vic-ix-peering-equinix-port-melbourne-5g-distribution", title: "7. VIC-IX Peering & 5G Media Delivery in Victoria" },
   { id: "enterprise-attribution-data-lakehouses-melbourne-slas", title: "8. Multi-Touch Attribution & Melbourne SLAs" },
   { id: "reviews", title: "Reviews" },
@@ -298,7 +298,7 @@ export default function MelbourneSocialMediaManagementPage() {
 
         {/* SECTION 4 */}
         <h2 id="data-privacy-governance-privacy-act-1988-meta-capi" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              4. Privacy Act Governance & Server-Side CAPI
+              4. Melbourne Privacy Act Governance & CAPI
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Executing digital marketing campaigns across Australia requires strict compliance with federal privacy legislation and statutory consumer protections. The <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Office of the Australian Information Commissioner</a> enforces the Privacy Act 1988 alongside thirteen Australian Privacy Principles, governing the collection, processing, and storage of customer personal information. In response to mobile browser cookie limitations and heightened consumer privacy standards, our marketing engineers deploy first-party server-side telemetry using the <a href="https://developers.facebook.com/docs/marketing-api/conversions-api/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">Meta Conversions API</a>, LinkedIn Conversions API, and Google Tag Manager Server Container.
@@ -351,7 +351,7 @@ export default function MelbourneSocialMediaManagementPage() {
 
         {/* SECTION 5 */}
         <h2 id="cinematic-4k-video-production-accc-creator-governance" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              5. 4K Video Production & ACCC Creator Rules
+              5. Melbourne 4K Video Production & ACCC Rules
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Algorithmic feeds across TikTok, Instagram Reels, and YouTube Shorts make vertical short-form video the most effective medium for rapid brand recall and customer acquisition. Generic stock video and low-fidelity smartphone footage fail to resonate with discerning Victorian consumers and executive buyers. Our in-house creative production studio oversees every phase of production, from commercial scripting and on-location 4K cinematography across Melbourne landmarks to color grading, sound design, and kinetic typography optimized for muted mobile viewing.
@@ -362,7 +362,7 @@ export default function MelbourneSocialMediaManagementPage() {
 
         {/* SECTION 6 */}
         <h2 id="disability-discrimination-act-wcag-social-accessibility" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              6. DDA Compliance & WCAG Social Accessibility
+              6. Melbourne DDA & WCAG Social Accessibility
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           Digital accessibility represents a critical legal obligation and ethical imperative for commercial enterprises across Victoria. Under the federal Disability Discrimination Act 1992, public-facing digital communications must provide equal access to individuals with auditory, cognitive, visual, or neurological impairments. Social media campaigns published without inclusive design principles alienate valuable audiences and create corporate regulatory exposure. Our production pipeline embeds accessibility protocols into every creative asset in accordance with global <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">WCAG 2.2 Level AA</a> guidelines.

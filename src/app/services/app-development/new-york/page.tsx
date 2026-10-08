@@ -41,7 +41,7 @@ const tableOfContents = [
   { id: "omnichannel-luxury-retail-and-madison-avenue-mobility", title: "Omnichannel Commerce & Clienteling for NYC Retail" },
   { id: "enterprise-proptech-and-smart-building-iot-conduits", title: "PropTech & Smart Building IoT for Manhattan" },
   { id: "ada-title-iii-wcag-accessibility-and-sdny-compliance", title: "ADA Title III, SDNY Precedents & WCAG 2.2" },
-  { id: "low-latency-edge-routing-and-carrier-hotel-peering", title: "NYIIX Peering & 60 Hudson Low-Latency Hosting" },
+  { id: "low-latency-edge-routing-and-carrier-hotel-peering", title: "New York App Peering & Low-Latency Infrastructure" },
   { id: "offline-first-mta-subway-architecture-and-push-pipelines", title: "Offline-First MTA Subway Transit Architecture" },
   { id: "reviews", title: "Reviews" },
   { id: "faq", title: "FAQ" },
@@ -351,7 +351,7 @@ export default function NewYorkAppDevelopmentPage() {
 
         {/* SECTION 7 */}
         <h2 id="low-latency-edge-routing-and-carrier-hotel-peering" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
-              NYIIX Peering & 60 Hudson Low-Latency Hosting
+              New York App Peering & Low-Latency Infrastructure
             </h2>
         <p className="text-[17px] md:text-[18px] leading-[1.75] text-[#432d1c]/90 my-5 font-normal font-sans tracking-[0.01em]">
           <strong className="font-semibold text-[#de5e18] tracking-tight">Delivering instantaneous mobile interaction speeds across the Tri-State area</strong> requires edge caching infrastructure tuned specifically to regional telecommunications carriers, including Verizon 5G Ultra Wideband, AT&amp;T Fiber, and T-Mobile. We deploy cloud backends with direct edge peering at the <a href="https://www.nyiix.net/" target="_blank" rel="noopener noreferrer" className="text-[#de5e18] hover:underline font-semibold transition-colors duration-200">New York International Internet Exchange (NYIIX)</a> and major Manhattan carrier hotels located at 60 Hudson Street and 111 8th Avenue. This localized edge routing guarantees that API payloads and media assets execute within single-digit milliseconds of local end users.
