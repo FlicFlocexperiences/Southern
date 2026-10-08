@@ -58,9 +58,9 @@ export const MobileFooter = () => {
         { label: "Schedule a Meeting", href: "/contact" },
         { label: "info@southernedgemarketing.com", href: "mailto:info@southernedgemarketing.com" },
         { label: "+91 87009 01769", href: "tel:+918700901769" },
-        { label: "Instagram", href: "https://www.instagram.com/southernedgemarketing?igsh=MXF2bTlpNHZpbzlt&utm_source=qr", external: true },
-        { label: "LinkedIn", href: "https://www.linkedin.com/company/southernedgemarketing/?viewAsMember=true", external: true },
-        { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61590949122507#", external: true },
+        { label: "Instagram", href: "https://www.instagram.com/southernedgemarketing/", external: true },
+        { label: "LinkedIn", href: "https://www.linkedin.com/company/southernedgemarketing/", external: true },
+        { label: "Facebook", href: "https://www.facebook.com/southernedgemarketing", external: true },
         { label: "Offices: Delhi & Dubai", href: "/about" },
       ],
     },
@@ -183,7 +183,7 @@ export const MobileFooter = () => {
                         key={link.label}
                         href={link.href}
                         target={link.href.startsWith("http") ? "_blank" : "_self"}
-                        rel={link.href.startsWith("http") ? "noopener noreferrer" : ""}
+                        rel={link.href.startsWith("http") ? "nofollow noopener noreferrer" : ""}
                         className={`text-[14px] text-black/80 hover:text-black transition-colors ${
                           link.highlight ? "font-semibold text-[#c43e00]" : ""
                         }`}

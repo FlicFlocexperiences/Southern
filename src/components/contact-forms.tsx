@@ -438,9 +438,9 @@ export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string })
         {/* Social Icons at the bottom */}
         <div className="flex items-center gap-6 mt-6 pt-4 border-t border-black/5 w-full justify-center">
           <a 
-            href="https://www.linkedin.com/company/southernedgemarketing/?viewAsMember=true" 
+            href="https://www.linkedin.com/company/southernedgemarketing/" 
             target="_blank" 
-            rel="noopener noreferrer" 
+            rel="nofollow noopener noreferrer" 
             className="text-black/50 hover:text-[#de5e18] transition-all transform hover:scale-110" 
             aria-label="LinkedIn"
           >
@@ -449,16 +449,16 @@ export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string })
           <a 
             href="https://www.facebook.com/southernedgemarketing" 
             target="_blank" 
-            rel="noopener noreferrer" 
+            rel="nofollow noopener noreferrer" 
             className="text-black/50 hover:text-[#de5e18] transition-all transform hover:scale-110" 
             aria-label="Facebook"
           >
             <FacebookIcon />
           </a>
           <a 
-            href="https://www.instagram.com/southernedgemarketing?igsh=MXF2bTlpNHZpbzlt&utm_source=qr" 
+            href="https://www.instagram.com/southernedgemarketing/" 
             target="_blank" 
-            rel="noopener noreferrer" 
+            rel="nofollow noopener noreferrer" 
             className="text-black/50 hover:text-[#de5e18] transition-all transform hover:scale-110" 
             aria-label="Instagram"
           >

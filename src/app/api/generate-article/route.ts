@@ -1,6 +1,7 @@
 
 import { NextResponse } from 'next/server';
 import OpenAI from 'openai';
+import { calibrateMetaDescription, calibrateMetaTitle } from '@/lib/seo-utils';
 
 export const dynamic = "force-dynamic";
 
@@ -213,8 +214,8 @@ Return ONLY a JSON object with this exact structure:
         const finalResult = {
             title: step1Result.title,
             subtitle: step1Result.subtitle,
-            metaTitle: step1Result.metaTitle,
-            metaDescription: step1Result.metaDescription,
+            metaTitle: calibrateMetaTitle(step1Result.metaTitle || step1Result.title, primaryKeyword),
+            metaDescription: calibrateMetaDescription(step1Result.metaDescription || step1Result.subtitle, step1Result.title || primaryKeyword),
             slug: step1Result.slug,
             description: cleanedDescription,
             faqs: faqs,

@@ -7,6 +7,7 @@ import { collection, getDocs, addDoc, updateDoc, deleteDoc, doc, getDoc } from '
 import { ref, uploadBytes, getDownloadURL, deleteObject } from 'firebase/storage';
 import { signOut, onAuthStateChanged } from 'firebase/auth';
 import { db, auth, storage } from '../../../lib/firebase'; // adjust the path as needed
+import { calibrateMetaDescription, calibrateMetaTitle } from '@/lib/seo-utils';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 
@@ -582,9 +583,11 @@ const BlogsDashboard = () => {
         if (isSubmitting) return;
         setIsSubmitting(true);
         try {
-            // Add timestamp and format the date
+            // Add timestamp, format the date, and enforce Screaming Frog metadata standards
             const blogWithMetadata = {
                 ...newBlog,
+                metaTitle: calibrateMetaTitle(newBlog.metaTitle || newBlog.title, newBlog.title),
+                metaDescription: calibrateMetaDescription(newBlog.metaDescription || newBlog.subtitle, newBlog.title),
                 created: formMode === 'add' ? Date.now() : newBlog.created,
                 date: new Date(newBlog.date).toISOString().split('T')[0] // Ensure date is in YYYY-MM-DD format
             };

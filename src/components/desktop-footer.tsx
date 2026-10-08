@@ -112,25 +112,25 @@ export const DesktopFooter = () => {
                 +91 87009 01769
               </a>
               <a 
-                href="https://www.instagram.com/southernedgemarketing?igsh=MXF2bTlpNHZpbzlt&utm_source=qr" 
+                href="https://www.instagram.com/southernedgemarketing/" 
                 target="_blank" 
-                rel="noopener noreferrer" 
+                rel="nofollow noopener noreferrer" 
                 className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit"
               >
                 Instagram
               </a>
               <a 
-                href="https://www.linkedin.com/company/southernedgemarketing/?viewAsMember=true" 
+                href="https://www.linkedin.com/company/southernedgemarketing/" 
                 target="_blank" 
-                rel="noopener noreferrer" 
+                rel="nofollow noopener noreferrer" 
                 className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit"
               >
                 LinkedIn
               </a>
               <a 
-                href="https://www.facebook.com/profile.php?id=61590949122507#" 
+                href="https://www.facebook.com/southernedgemarketing" 
                 target="_blank" 
-                rel="noopener noreferrer" 
+                rel="nofollow noopener noreferrer" 
                 className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit"
               >
                 Facebook

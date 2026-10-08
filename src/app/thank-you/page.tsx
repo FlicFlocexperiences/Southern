@@ -158,7 +158,7 @@ export default function ThankYouPage() {
               </Link>
 
               {/* Card 3 */}
-              <Link href="https://www.instagram.com/southernedgemarketing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 bg-[#f6efe7] rounded-[24px] hover:bg-white transition-colors group">
+              <a href="https://www.instagram.com/southernedgemarketing/" target="_blank" rel="nofollow noopener noreferrer" className="flex items-center justify-between p-4 bg-[#f6efe7] rounded-[24px] hover:bg-white transition-colors group">
                 <div className="flex items-center gap-5">
                   <div className="w-14 h-14 rounded-[18px] bg-[#eb4a75] flex items-center justify-center">
                     <InstagramCardIcon />
@@ -169,7 +169,7 @@ export default function ThankYouPage() {
                   </div>
                 </div>
                 <div className="text-[#d46d3e] pr-4 group-hover:translate-x-1 transition-transform">→</div>
-              </Link>
+              </a>
             </div>
           </div>
         </main>

@@ -25,7 +25,7 @@ const TeamCard = ({ name, role1, role2, image, linkedinUrl, heightClass = "h-[32
       <a 
         href={linkedinUrl}
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         aria-label={`${name} LinkedIn Profile`}
         className="absolute top-6 right-6 z-20 w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center opacity-0 transform translate-y-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:scale-110"
       >

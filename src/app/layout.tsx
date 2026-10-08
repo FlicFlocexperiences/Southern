@@ -5,7 +5,6 @@ import "./globals.css";
 const onestSans = Onest({
   variable: "--font-onest-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
 const geistMono = Geist_Mono({

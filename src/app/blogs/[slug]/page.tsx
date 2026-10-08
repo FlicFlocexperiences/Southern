@@ -11,7 +11,7 @@ import { Metadata } from "next";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 
-import { cleanInternalNofollow } from "@/lib/seo-utils";
+import { cleanInternalNofollow, calibrateMetaDescription, calibrateMetaTitle } from "@/lib/seo-utils";
 
 export const revalidate = 60; // Revalidate every 60 seconds
 
@@ -52,10 +52,15 @@ const getLiveBlog = cache(async (slug: string): Promise<Blog | null> => {
       const faqs = faqsSnapshot.docs.map(faqDoc => faqDoc.data() as any);
       const reviews = reviewsSnapshot.docs.map(reviewDoc => reviewDoc.data() as any);
 
+      const rawDescription = data.metaDescription || data.excerpt || data.subtitle || "";
+      const cleanedExcerpt = stripHtml(rawDescription);
+
       return {
         slug: data.slug || docSnap.id,
         title: data.title || "Untitled",
-        excerpt: stripHtml(data.subtitle || data.metaDescription || data.excerpt || ""),
+        metaTitle: data.metaTitle,
+        metaDescription: data.metaDescription,
+        excerpt: cleanedExcerpt,
         content: cleanInternalNofollow(data.description || ""), // Clean internal nofollow links
         publishedAt: data.date || new Date().toISOString().split('T')[0],
         category: data.category || "MARKETING",
@@ -82,10 +87,14 @@ const getLiveBlog = cache(async (slug: string): Promise<Blog | null> => {
 });
 
 const blogMetaTitleMap: Record<string, string> = {
+  "chatgpt-ads-india-guide": "ChatGPT Ads in India: Full Guide",
   "on-page-seo-vs-off-page-seo-guide": "On-Page vs Off-Page SEO: 2026 Guide",
   "best-shopify-agencies-uae": "Best Shopify Agencies in UAE (2026)",
   "understanding-color-theory-in-digital-branding": "Color Theory in Digital Branding",
   "the-importance-of-mobile-first-design-in-2025": "Importance of Mobile Design in 2025",
+  "how-ux-writing-shapes-user-behavior": "How UX Writing Shapes Conversion",
+  "the-rise-of-minimalist-web-design": "Minimalist Web Design & Speed",
+  "essential-typography-rules-for-readability": "Typography Rules for Readability",
   "best-website-developer-in-uk": "Best Website Developer in the UK",
   "shopify-website-vs-custom-coded-website": "Shopify vs Custom Coded Websites",
   "website-maintenance-cost-in-india-monthly": "Website Maintenance Cost in India",
@@ -94,6 +103,34 @@ const blogMetaTitleMap: Record<string, string> = {
   "best-digital-marketing-company-gurgaon-gurugram": "Digital Marketing Company in Gurgaon",
   "wordpress-vs-shopify-delhi-small-businesses": "WordPress vs Shopify: Delhi Businesses",
 };
+
+const blogMetaDescriptionMap: Record<string, string> = {
+  "chatgpt-ads-india-guide": "Discover how to leverage ChatGPT Ads for Indian markets. Master AI ad formats, audience targeting, ROI metrics, and conversion tactics to scale in India.",
+  "on-page-seo-vs-off-page-seo-guide": "Learn the key differences between on-page and off-page SEO with actionable checklists, ranking factors, and proven strategies to increase search traffic.",
+  "best-shopify-agencies-uae": "Discover the top-rated Shopify and Shopify Plus agencies in UAE for 2026. Compare features, pricing, luxury design expertise, and custom app capabilities.",
+  "understanding-color-theory-in-digital-branding": "Discover how color choices affect human psychology, brand recognition, and conversions across digital storefronts and web apps. Explore our guide.",
+  "the-importance-of-mobile-first-design-in-2025": "Explore why designing for mobile screens first revolutionized user experience, Core Web Vitals speed, and organic search engine rankings in 2026.",
+  "how-ux-writing-shapes-user-behavior": "Discover how microcopy on buttons, labels, and forms guides user decisions, eliminates interface friction, and increases website conversion rates.",
+  "the-rise-of-minimalist-web-design": "Learn how minimalist web design eliminates visual clutter, boosts Core Web Vitals page speed, and keeps visitors focused on high-value conversions.",
+  "essential-typography-rules-for-readability": "Master line heights, letter spacing, and font hierarchies to ensure maximum content readability, lower bounce rates, and improve user engagement.",
+  "best-website-developer-in-uk": "Looking for the best website developer in the UK? Discover top custom web design, Next.js engineering, and high-converting e-commerce development.",
+  "shopify-website-vs-custom-coded-website": "Shopify vs custom coded website: Compare costs, scalability, performance, SEO flexibility, and maintenance to choose the best option for your brand.",
+  "website-maintenance-cost-in-india-monthly": "Explore monthly website maintenance costs in India for 2026. Learn about security updates, server upkeep, CMS patches, and support pricing packages.",
+  "how-to-build-a-shopify-website": "Step-by-step guide on how to build a high-converting Shopify website in 2026. Learn theme setup, product catalog optimization, and payment gateways.",
+  "top-15-shopify-clothing-stores-in-india": "Explore the top 15 Shopify clothing and fashion stores in India. Discover modern UI/UX design, mobile commerce tactics, and brand growth strategies.",
+  "best-digital-marketing-company-gurgaon-gurugram": "Discover the best digital marketing company in Gurgaon (Gurugram). Drive scalable business growth with forensic SEO, paid performance, and web design.",
+  "wordpress-vs-shopify-delhi-small-businesses": "WordPress vs Shopify for Delhi small businesses: Compare setup costs, ease of use, e-commerce features, and SEO capabilities to make the best choice.",
+};
+
+function getCalibratedBlogMeta(slug: string, blog: Blog) {
+  const metaTitleCandidate = blogMetaTitleMap[slug] || blog.metaTitle || blog.title;
+  const cleanTitle = calibrateMetaTitle(metaTitleCandidate, blog.title);
+
+  const rawDescCandidate = blogMetaDescriptionMap[slug] || blog.metaDescription || blog.excerpt;
+  const cleanDescription = calibrateMetaDescription(rawDescCandidate, blog.title);
+
+  return { cleanTitle, cleanDescription };
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -109,12 +146,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     ? `https://www.southernedgemarketing.com${blog.image.startsWith("/") ? "" : "/"}${blog.image}`
     : "https://www.southernedgemarketing.com/photoshoot.jpg";
 
-  // Clean title: check metaTitle, slug map, or remove pre-existing agency brand suffix
-  const cleanTitle = blog.metaTitle || blogMetaTitleMap[slug] || blog.title.replace(/\s*\|\s*Southern Edge.*$/i, '').trim();
+  const { cleanTitle, cleanDescription } = getCalibratedBlogMeta(slug, blog);
 
   return {
     title: cleanTitle,
-    description: blog.excerpt,
+    description: cleanDescription,
     alternates: {
       canonical: `/blogs/${slug}`,
     },
@@ -131,7 +167,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     },
     openGraph: {
       title: cleanTitle,
-      description: blog.excerpt,
+      description: cleanDescription,
       url: `https://www.southernedgemarketing.com/blogs/${slug}`,
       type: "article",
       publishedTime: blog.publishedAt,
@@ -148,7 +184,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     twitter: {
       card: "summary_large_image",
       title: cleanTitle,
-      description: blog.excerpt,
+      description: cleanDescription,
       images: [blogImage],
     },
   };
@@ -168,13 +204,15 @@ export default async function BlogSlugPage({ params }: { params: Promise<{ slug:
     ? `https://www.southernedgemarketing.com${blog.image.startsWith("/") ? "" : "/"}${blog.image}`
     : "https://www.southernedgemarketing.com/photoshoot.jpg";
 
+  const { cleanDescription } = getCalibratedBlogMeta(slug, blog);
+
   const blogJsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "BlogPosting",
         headline: blog.title,
-        description: blog.excerpt,
+        description: cleanDescription,
         image: blogImage,
         datePublished: blog.publishedAt,
         author: {

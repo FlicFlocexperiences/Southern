@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { calibrateMetaDescription, calibrateMetaTitle } from '@/lib/seo-utils';
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 120; // 2 minutes max execution duration on Vercel
@@ -334,19 +335,8 @@ EXHAUSTIVE SCREAMING FROG SEO AUDIT ISSUE CHECKS & MANDATORY PREVENTION RULES:
         const parsedData = JSON.parse(sanitizeText(rawJsonText));
 
         // Enforce Screaming Frog character constraints programmatically as defense-in-depth:
-        let metaTitle = (parsedData.metaTitle || "").trim();
-        if (metaTitle.length > 60) {
-            // Trim to last space before 57 chars and append brand or ellipsis
-            metaTitle = metaTitle.substring(0, 57).replace(/\s+\S*$/, "") + " | Southern";
-        }
-        if (metaTitle.length < 30) {
-            metaTitle = `${metaTitle} | Southern Edge Marketing`;
-        }
-
-        let metaDescription = (parsedData.metaDescription || "").trim();
-        if (metaDescription.length > 155) {
-            metaDescription = metaDescription.substring(0, 152).replace(/\s+\S*$/, "") + "...";
-        }
+        let metaTitle = calibrateMetaTitle(parsedData.metaTitle || parsedData.title, primaryKeyword);
+        let metaDescription = calibrateMetaDescription(parsedData.metaDescription || parsedData.subtitle, parsedData.title || primaryKeyword);
 
         let slug = (parsedData.slug || "")
             .toLowerCase()

@@ -119,18 +119,18 @@ export function MobileNav() {
             </div>
             <div className="flex gap-2.5 items-center">
               <a 
-                href="https://www.instagram.com/southernedgemarketing?igsh=MXF2bTlpNHZpbzlt&utm_source=qr" 
+                href="https://www.instagram.com/southernedgemarketing/" 
                 target="_blank" 
-                rel="noopener noreferrer" 
+                rel="nofollow noopener noreferrer" 
                 aria-label="Southern Edge Marketing Instagram"
                 className="flex items-center justify-center rounded-full size-10 bg-[#de5e18] text-white hover:bg-[#de5e18]/90 hover:scale-105 transition-all shadow-sm"
               >
                 <FontAwesomeIcon icon={faInstagram} className="text-lg" />
               </a>
               <a 
-                href="https://www.linkedin.com/company/southernedgemarketing/?viewAsMember=true" 
+                href="https://www.linkedin.com/company/southernedgemarketing/" 
                 target="_blank" 
-                rel="noopener noreferrer" 
+                rel="nofollow noopener noreferrer" 
                 aria-label="Southern Edge Marketing LinkedIn"
                 className="flex items-center justify-center rounded-full size-10 bg-[#de5e18] text-white hover:bg-[#de5e18]/90 hover:scale-105 transition-all shadow-sm"
               >

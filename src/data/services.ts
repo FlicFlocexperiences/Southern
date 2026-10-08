@@ -24,7 +24,7 @@ export const services: Service[] = [
     h1Title: "Website Development Services That Turn Visitors Into Customers",
     tagline: "Convert, not just impress.",
     metaTitle: "Custom Website Development Company",
-    metaDescription: "Build fast, conversion-driven websites with Southern Edge Marketing. We engineer secure Next.js platforms, headless web apps, and custom digital systems.",
+    metaDescription: "Build fast, conversion-driven websites with Southern Edge. We engineer secure Next.js platforms, headless web apps, and custom digital systems.",
     trustBadges: [
       { title: "100+ Launches", subtitle: "Enterprise Web Platforms" },
       { title: "Sub-50ms TTFB", subtitle: "Page Speed Guarantee" },
@@ -113,7 +113,7 @@ Our customized web solutions have successfully empowered businesses across Healt
     h1Title: "Custom Mobile App Development Services",
     tagline: "Native experiences, global reach.",
     metaTitle: "Native Mobile App Development Services",
-    metaDescription: "Build custom iOS and Android apps with Southern Edge. Expert native mobile app development company delivering fast, secure, and scalable mobile products.",
+    metaDescription: "Build custom iOS and Android apps with Southern Edge. Expert native mobile app development delivering fast, secure, and scalable mobile solutions.",
     trustBadges: [
       { title: "iOS & Android", subtitle: "Native Swift & Kotlin Precision" },
       { title: "4.8★ Rating", subtitle: "Average App Store Score" },
@@ -184,7 +184,7 @@ We have delivered robust mobile applications across E-commerce & Retail, Healthc
     h1Title: "Social Media Management That Builds Communities",
     tagline: "Be talked about, not just scrolled past.",
     metaTitle: "Social Media Management & Paid Ads",
-    metaDescription: "Grow your brand presence with data-driven social media management. We engineer targeted paid social campaigns, creative video assets, and community growth.",
+    metaDescription: "Grow your brand with data-driven social media management. We create targeted paid social campaigns, creative video assets, and community growth.",
     trustBadges: [
       { title: "6.8x Growth", subtitle: "Average Engagement Surge" },
       { title: "Multi-Channel", subtitle: "Meta, TikTok & LinkedIn" },
@@ -247,7 +247,7 @@ In today's hyper-connected digital ecosystem, simply maintaining a social media 
     h1Title: "Top-Rated SEO Services",
     tagline: "Rank higher. Drive traffic. Increase revenue.",
     metaTitle: "ROI-Focused Search Engine Optimization",
-    metaDescription: "Dominate organic search rankings with Southern Edge Marketing. We deliver forensic technical SEO, high-authority link building, and local search dominance.",
+    metaDescription: "Dominate organic search rankings with Southern Edge. We deliver forensic technical SEO, high-authority link building, and local search dominance.",
     trustBadges: [
       { title: "#1 Rank Focus", subtitle: "Dominating Competitive SERPs" },
       { title: "3.2x Organic ROI", subtitle: "Compounding Traffic & Leads" },
@@ -326,7 +326,7 @@ We believe in results, not promises. Our portfolio includes scaling local busine
     h1Title: "Comprehensive Branding Strategies",
     tagline: "Build a brand that commands attention.",
     metaTitle: "Branding & Creative Strategy Agency",
-    metaDescription: "Transform your business into a recognizable brand. We offer comprehensive branding services, from visual identity and logos to strategic brand messaging.",
+    metaDescription: "Transform your business into a recognizable brand. We craft bespoke visual identities, logo systems, and strategic brand messaging.",
     trustBadges: [
       { title: "100% Bespoke", subtitle: "Zero Generic Stock Templates" },
       { title: "Luxury Appeal", subtitle: "High-End Visual Identity" },
@@ -586,7 +586,7 @@ We configure seamless multi-currency purchasing across AED, SAR, QAR, KWD, BHD, 
     h1Title: "Native iOS Mobile App Development Company",
     tagline: "Fluid 60fps native iOS experiences engineered in Swift.",
     metaTitle: "Custom iOS App Development Company",
-    metaDescription: "Leading iOS mobile app development company. We build native Swift & SwiftUI applications engineered for fluid 60fps performance and enterprise security.",
+    metaDescription: "Leading iOS app development company. We build native Swift & SwiftUI applications engineered for fluid 60fps performance and enterprise security.",
     statValue: "60 FPS",
     statLabel: "FLUID NATIVE APPLE ECOSYSTEM PERFORMANCE",
     tags: ["SwiftUI", "iOS 18", "Apple Pay", "Biometrics", "App Store Optimization"],
