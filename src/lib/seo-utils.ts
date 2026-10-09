@@ -11,6 +11,41 @@
  * @param html The raw HTML string (e.g., from Firestore blog/article content)
  * @returns Sanitized HTML string with nofollow removed from internal links
  */
+const INTERNAL_REDIRECT_MAP: Record<string, string> = {
+  "/services/website-and-app-development": "/services/web-development",
+  "/services/custom-website-and-app-development": "/services/web-development",
+  "/services/custom-software-development": "/services/web-development",
+  "/services/ui-ux-planning": "/services/web-development",
+  "/services/website-development": "/services/web-development",
+  "/services/branding-and-creative-strategy": "/services/branding",
+  "/services/strategic-branding-and-creative-strategy": "/services/branding",
+  "/services/branding-strategy": "/services/branding",
+  "/services/photography-and-videography": "/services/social-media-management",
+  "/services/commercial-photography-and-videography": "/services/social-media-management",
+  "/services/targeted-social-media-management": "/services/social-media-management",
+  "/services/lead-generation-sales-campaigns": "/services/social-media-management",
+  "/services/social-media": "/services/social-media-management",
+  "/services/application-development": "/services/app-development",
+  "/services/scalable-application-development-solutions": "/services/app-development",
+  "/services/advanced-search-engine-optimization-services": "/services/seo",
+  "/services/seo-services": "/services/seo",
+  "/digital-marketing-agency-dubai": "/services/web-development/dubai",
+  "/author": "/authors/ameet-nangia",
+  "/author/": "/authors/ameet-nangia",
+  "/author/ameet-nangia": "/authors/ameet-nangia",
+  "/authors": "/authors/ameet-nangia",
+  "/projects/jewellery": "/projects/jwellery",
+  "/projects/roseate": "/projects/upstage-collection",
+  "/projects/oud": "/projects/oudqua",
+};
+
+/**
+ * Strips 'nofollow' from internal outlinks and normalizes legacy or redirecting internal URLs.
+ * Internal links must NEVER have rel="nofollow" or redirect hops according to Section 7 of Screaming Frog SEO guidelines.
+ *
+ * @param html The raw HTML string (e.g., from Firestore blog/article content)
+ * @returns Sanitized HTML string with nofollow removed and internal links pointing directly to 200 OK canonical routes
+ */
 export function cleanInternalNofollow(html: string): string {
   if (!html) return "";
 
@@ -34,8 +69,38 @@ export function cleanInternalNofollow(html: string): string {
        !href.startsWith("//"));
 
     if (isInternal) {
+      let newAttrs = attrs;
+
+      // Normalize internal href: enforce www domain, remove non-root trailing slash, and rewrite redirected paths
+      if (!href.startsWith("#") && !href.startsWith("mailto:") && !href.startsWith("tel:")) {
+        let cleanHref = href.replace(/^https?:\/\/southernedgemarketing\.com/i, "https://www.southernedgemarketing.com");
+        let urlPath = cleanHref;
+        let origin = "";
+
+        if (/^https?:\/\//i.test(cleanHref)) {
+          try {
+            const parsed = new URL(cleanHref);
+            origin = parsed.origin;
+            urlPath = parsed.pathname;
+          } catch {}
+        }
+
+        // Strip trailing slash if longer than 1 character
+        if (urlPath.length > 1 && urlPath.endsWith("/")) {
+          urlPath = urlPath.slice(0, -1);
+        }
+
+        const lowerPath = urlPath.toLowerCase();
+        if (INTERNAL_REDIRECT_MAP[lowerPath]) {
+          urlPath = INTERNAL_REDIRECT_MAP[lowerPath];
+        }
+
+        const finalHref = origin ? `${origin}${urlPath}` : urlPath;
+        newAttrs = newAttrs.replace(/\bhref=(?:"[^"]*"|'[^']*'|[^\s>]+)/i, `href="${finalHref}"`);
+      }
+
       // Remove 'nofollow' from rel attribute
-      let newAttrs = attrs.replace(
+      newAttrs = newAttrs.replace(
         /\brel=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/i,
         (_relMatch: string, p1?: string, p2?: string, p3?: string) => {
           const rawRel = p1 || p2 || p3 || "";
