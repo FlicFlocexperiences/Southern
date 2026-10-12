@@ -78,7 +78,10 @@ export const KNOWN_IMAGE_DIMENSIONS: Record<string, ImageSize> = {
 
   // General & CTA Graphics
   "/SemBeige.svg": { width: 1000, height: 1000 },
-  "/SEM.svg": { width: 793, height: 793 },
+  "/SEM.svg": { width: 1200, height: 630 },
+  "/SEM.png": { width: 1200, height: 630 },
+  "/og-image.png": { width: 1200, height: 630 },
+  "/og-image.svg": { width: 1200, height: 630 },
   "/SEM LOGO.svg": { width: 777, height: 777 },
   "/SEMBadge.svg": { width: 600, height: 600 },
   "/SEMBadgeNew.svg": { width: 900, height: 900 },
