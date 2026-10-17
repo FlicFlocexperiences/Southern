@@ -80,6 +80,7 @@ export const KNOWN_IMAGE_DIMENSIONS: Record<string, ImageSize> = {
   "/SemBeige.svg": { width: 1000, height: 1000 },
   "/SEM.svg": { width: 1200, height: 630 },
   "/SEM.png": { width: 1200, height: 630 },
+  "/og-image.jpg": { width: 1200, height: 630 },
   "/og-image.png": { width: 1200, height: 630 },
   "/og-image.svg": { width: 1200, height: 630 },
   "/SEM LOGO.svg": { width: 777, height: 777 },
