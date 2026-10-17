@@ -41,13 +41,24 @@ export const metadata: Metadata = {
     description: "Southern Edge Marketing drives business with strategy, design, development, and marketing. Trusted by 100+ businesses across India. 5.0 rated.",
     url: "https://www.southernedgemarketing.com",
     siteName: "Southern Edge Marketing",
-    images: [{
-      url: "/og-image.png",
-      width: 1200,
-      height: 630,
-      alt: "Southern Edge Marketing",
-      type: "image/png",
-    }],
+    images: [
+      {
+        url: "https://www.southernedgemarketing.com/og-image.jpg",
+        secureUrl: "https://www.southernedgemarketing.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Southern Edge Marketing",
+        type: "image/jpeg",
+      },
+      {
+        url: "https://www.southernedgemarketing.com/og-image.png",
+        secureUrl: "https://www.southernedgemarketing.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Southern Edge Marketing",
+        type: "image/png",
+      },
+    ],
     locale: "en_IN",
     type: "website",
   },
@@ -60,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Digital Marketing Agency Delhi | Southern Edge",
     description: "Southern Edge Marketing drives business with strategy, design, development, and marketing. Trusted by 100+ businesses across India. 5.0 rated.",
-    images: ["/og-image.png"],
+    images: ["https://www.southernedgemarketing.com/og-image.jpg"],
   },
 };
 
