@@ -1,50 +1,42 @@
 # Southern Edge Marketing
 
-> A comprehensive knowledge base of Southern Edge Marketing for LLMs, AI agents, and search crawlers.
+> Delhi and Dubai digital marketing agency: SEO, Meta and Google Ads, Shopify and Next.js websites, app development, branding and social media for Indian and UAE businesses.
 
-## Company Overview
-Southern Edge Marketing is a premier digital marketing and technology agency. We specialize in building high-converting digital experiences, scalable mobile applications, and data-driven social media communities. We operate globally with a strong physical presence in Delhi (India) and Dubai (UAE), empowering brands to accelerate their digital growth.
+## Services
 
-## Core Services
+- [SEO Services](https://www.southernedgemarketing.com/services/seo): Technical SEO, Core Web Vitals, on-page content, link building, local SEO and AI search optimization (AEO/GEO).
+- [Website Development](https://www.southernedgemarketing.com/services/web-development): Custom Next.js, React, Shopify and WooCommerce websites built for speed and conversion.
+- [Shopify Agency Dubai](https://www.southernedgemarketing.com/services/shopify-agency-dubai): Shopify store builds, migrations and conversion optimization for UAE e-commerce brands.
+- [Luxury Shopify Agency UAE](https://www.southernedgemarketing.com/services/luxury-shopify-agency-uae): Premium Shopify builds for luxury and fashion brands in the UAE.
+- [App Development](https://www.southernedgemarketing.com/services/app-development): Cross-platform and native iOS and Android apps in React Native, Flutter, Swift and Kotlin.
+- [iOS App Development](https://www.southernedgemarketing.com/services/ios-app-development): Native Swift apps for iPhone and iPad.
+- [Social Media Management](https://www.southernedgemarketing.com/services/social-media-management): Organic content plus paid Meta, LinkedIn and TikTok campaigns.
+- [Branding](https://www.southernedgemarketing.com/services/branding): Brand identity systems, logos, guidelines and creative strategy.
+- [Influencer Marketing](https://www.southernedgemarketing.com/services/influencer-marketing): Creator sourcing, campaign management and reporting.
+- [All services](https://www.southernedgemarketing.com/services): Overview of every service, including performance marketing on Meta and Google Ads.
 
-### 1. Custom Website Development
-- **Overview:** High-performance, SEO-friendly, and conversion-optimized websites engineered for measurable results.
-- **Technology Stack:** Next.js, React, Tailwind CSS, Headless CMS, Shopify, WooCommerce.
-- **Key Offerings:** Corporate websites, high-converting landing pages, eCommerce storefronts, bespoke web applications, scalable cloud infrastructure, and continuous Conversion Rate Optimization (CRO).
+## Proof
 
-### 2. Mobile App Development
-- **Overview:** Scalable iOS and Android applications focused on native performance, seamless usability, and business growth.
-- **Technology Stack:** React Native, Flutter, Swift (iOS), Kotlin (Android), Cloud Integration (AWS, Google Cloud, Azure).
-- **Key Offerings:** Cross-platform applications, native app development, secure backend APIs, app modernization, and App Store Optimization (ASO).
+- [Projects and case studies](https://www.southernedgemarketing.com/projects): Client work across legal services, restaurants, jewellery, fragrance and e-commerce.
+- [About Southern Edge](https://www.southernedgemarketing.com/about): The team, approach and offices in Delhi and Dubai.
+- [Ameet Nangia, Founder](https://www.southernedgemarketing.com/authors/ameet-nangia): Founder and lead digital strategist; SEO, Google Ads and PPC, B2B lead generation and digital strategy.
 
-### 3. Social Media Management
-- **Overview:** Data-driven organic and paid social media strategies that dramatically increase brand awareness, engagement, and customer loyalty.
-- **Platforms:** Instagram, Facebook (Meta), TikTok, LinkedIn, X (Twitter), Pinterest, YouTube.
-- **Key Offerings:** Strategic content creation (Short-form video, graphics, copywriting), proactive community management, influencer & creator collaborations, and integrated paid social advertising.
+## Resources
 
-## Industries Served
-We provide customized digital solutions across a wide spectrum of highly competitive sectors, including:
-- Healthcare & Telemedicine
-- Law Firms & Legal Services
-- SaaS Companies & Tech Startups
-- Real Estate
-- Education
-- eCommerce & Retail
-- FinTech & Finance
+- [Blog](https://www.southernedgemarketing.com/blogs): Guides on Meta Ads, Shopify, SEO, WordPress and web development, written by Ameet Nangia.
+- [Mastering Meta Ads for Business](https://www.southernedgemarketing.com/blogs/meta-ads-for-business-scaling-guide): Targeting, Conversions API setup, creative frameworks and budget allocation by funnel stage.
+- [WooCommerce to Shopify Migration](https://www.southernedgemarketing.com/blogs/woocommerce-to-shopify-migration-services): Steps, risks and SEO preservation when moving a store to Shopify.
 
-## Key Service Locations
-While we partner with clients globally, we have dedicated, geo-targeted solutions for the following major cities:
-- **India:** New Delhi, Gurgaon, Noida, Lucknow, Mumbai, Bengaluru, Chennai, Kolkata, Pune, Hyderabad, Jaipur, Surat.
-- **UAE:** Abu Dhabi, Sharjah, Dubai.
+## Key Facts
 
-## Why Choose Southern Edge Marketing?
-- **Mobile-First & Performance Driven:** We build on robust, SEO-ready architectures with clean, scalable code that guarantees lightning-fast load times.
-- **Data-Backed Decisions:** We move past vanity metrics and measure success by bottom-line impact: Cost Per Acquisition (CPA), Return On Ad Spend (ROAS), and high-quality lead generation.
-- **End-to-End Solutions:** We handle the entire digital lifecycle—from initial strategy, UI/UX design, and agile development, to rigorous QA testing, launch, and ongoing post-launch maintenance.
+- Founded by Ameet Nangia
+- Offices: Delhi, India and Dubai, United Arab Emirates
+- Serves clients in India, the UAE, the UK, the US and Australia
+- Industries: legal, healthcare, SaaS, real estate, education, e-commerce, fintech and hospitality
 
-## Official Links
-- **Website:** https://www.southernedgemarketing.com
-- **Services:** https://www.southernedgemarketing.com/services
-- **Portfolio & Projects:** https://www.southernedgemarketing.com/projects
-- **Digital Marketing Blog:** https://www.southernedgemarketing.com/blogs
-- **Contact:** https://www.southernedgemarketing.com/contact
+## Contact
+
+- Website: https://www.southernedgemarketing.com
+- Email: info@southernedgemarketing.com
+- Phone and WhatsApp: +91 87009 01769
+- Contact page: https://www.southernedgemarketing.com/contact

@@ -78,13 +78,6 @@ export default function BrisbaneAppDevelopmentPage() {
           "@type": "GeoCoordinates",
           "latitude": "-27.4698",
           "longitude": "153.0251"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "142",
-          "bestRating": "5",
-          "worstRating": "1"
         }
       },
       {

@@ -66,7 +66,7 @@ const BlogsDashboard = () => {
         slug: '', // Initialize the slug field
         faqs: [], // Initialize empty FAQs array
         reviews: [], // Initialize empty Reviews array
-        author: 'Southern Marketing Team'
+        author: 'Ameet Nangia'
     });
     const [uploading, setUploading] = useState(false);
     const [uploadProgress, setUploadProgress] = useState(0);
@@ -169,7 +169,7 @@ const BlogsDashboard = () => {
                         slug: docData.slug || '',
                         faqs: docData.faqs || [],
                         reviews: docData.reviews || [],
-                        author: docData.author || 'Southern Marketing Team'
+                        author: docData.author || 'Ameet Nangia'
                     };
                 });
                 // Sort blogs by created timestamp in descending order (newest first)
@@ -668,7 +668,7 @@ const BlogsDashboard = () => {
                     slug: docData.slug || '', // Get the slug from database
                     faqs: [], // Initialize empty faqs array
                     reviews: [], // Initialize empty reviews array
-                    author: docData.author || 'Southern Marketing Team'
+                    author: docData.author || 'Ameet Nangia'
                 };
             });
             // Sort updated blogs by created timestamp in descending order
@@ -815,7 +815,7 @@ const BlogsDashboard = () => {
             slug: '', // Reset slug field
             faqs: [], // Reset FAQs array
             reviews: [], // Reset Reviews array
-            author: 'Southern Marketing Team' // Default author changed from 'Team AMA'
+            author: 'Ameet Nangia' // Default author changed from 'Team AMA'
         });
         setFormMode('add');
         setShowBlogForm(false);
@@ -1309,7 +1309,7 @@ const BlogsDashboard = () => {
                                     onChange={handleInputChange}
                                     className="p-3.5 border border-black/20 rounded-xl focus:border-[#de5e18] focus:ring-1 focus:ring-[#de5e18] focus:outline-none text-xs sm:text-sm font-semibold text-black/80 bg-white"
                                 >
-                                    <option value="Southern Marketing Team">Southern Marketing Team</option>
+                                    <option value="Ameet Nangia">Ameet Nangia</option>
                                     <option value="Content Marketing Team">Content Marketing Team</option>
                                     <option value="SEO Team">SEO Team</option>
                                 </select>

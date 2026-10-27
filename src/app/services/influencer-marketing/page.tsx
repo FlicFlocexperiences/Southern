@@ -71,12 +71,7 @@ export default function InfluencerMarketingPage() {
       { "@type": "Country", "name": "India" },
       { "@type": "AdministrativeArea", "name": "GCC" }
     ],
-    "description": "Data-driven influencer marketing agency in Dubai & UAE. We connect brands with vetted creators, manage campaigns, and maximize paid social ROI.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "142"
-    }
+    "description": "Data-driven influencer marketing agency in Dubai & UAE. We connect brands with vetted creators, manage campaigns, and maximize paid social ROI."
   };
 
   return (

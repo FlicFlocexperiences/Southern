@@ -69,12 +69,7 @@ export default function ShopifyAgencyDubaiPage() {
       { "@type": "Country", "name": "United Arab Emirates" },
       { "@type": "AdministrativeArea", "name": "GCC" }
     ],
-    "description": "Premier Shopify Plus agency in Dubai & UAE. We build custom high-converting Shopify stores, bespoke apps, and ERP integrations for top brands.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "120"
-    }
+    "description": "Premier Shopify Plus agency in Dubai & UAE. We build custom high-converting Shopify stores, bespoke apps, and ERP integrations for top brands."
   };
 
   return (

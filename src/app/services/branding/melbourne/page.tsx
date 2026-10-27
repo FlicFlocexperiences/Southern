@@ -73,13 +73,6 @@ export default function MelbourneBrandingPage() {
           "latitude": "-37.8136",
           "longitude": "144.9708"
         },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "142",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
         "founder": {
           "@type": "Person",
           "name": "Ameet Nangia",

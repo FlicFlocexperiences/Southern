@@ -80,33 +80,64 @@ import { AuthProvider } from "@/components/AuthProvider";
 import { WhatsappWidget } from "@/components/whatsapp-widget";
 import { Analytics } from "@/components/Analytics";
 
+const SITE_URL = "https://www.southernedgemarketing.com";
+
 const jsonLdSchema = {
   "@context": "https://schema.org",
-  "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
-  "name": "Southern Edge Marketing",
-  "url": "https://www.southernedgemarketing.com",
-  "logo": "https://www.southernedgemarketing.com/logo.png",
-  "image": "https://www.southernedgemarketing.com/logo.png",
-  "telephone": "+918700901769",
-  "email": "info@southernedgemarketing.com",
-  "priceRange": "$$",
-  "address": [
+  "@graph": [
     {
-      "@type": "PostalAddress",
-      "addressLocality": "Delhi",
-      "addressCountry": "IN"
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": `${SITE_URL}/#organization`,
+      "name": "Southern Edge Marketing",
+      "url": SITE_URL,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${SITE_URL}/logo.png`
+      },
+      "image": `${SITE_URL}/logo.png`,
+      "description": "Digital marketing and web development agency in Delhi and Dubai offering SEO, Meta and Google Ads, Shopify and Next.js websites, mobile app development, branding and social media management.",
+      "founder": { "@id": `${SITE_URL}/authors/ameet-nangia#person` },
+      "telephone": "+918700901769",
+      "email": "info@southernedgemarketing.com",
+      "priceRange": "$$",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Delhi",
+          "addressCountry": "IN"
+        },
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Dubai",
+          "addressCountry": "AE"
+        }
+      ],
+      "areaServed": ["IN", "AE"],
+      "knowsAbout": [
+        "Search engine optimization",
+        "Generative engine optimization",
+        "Meta Ads",
+        "Google Ads",
+        "Shopify development",
+        "Next.js web development",
+        "Mobile app development",
+        "Branding",
+        "Social media management"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/southernedgemarketing/",
+        "https://www.instagram.com/southernedgemarketing/",
+        "https://www.facebook.com/southernedgemarketing"
+      ]
     },
     {
-      "@type": "PostalAddress",
-      "addressLocality": "Dubai",
-      "addressCountry": "AE"
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      "name": "Southern Edge Marketing",
+      "url": SITE_URL,
+      "publisher": { "@id": `${SITE_URL}/#organization` }
     }
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "100"
-  }
+  ]
 };
 
 export default function RootLayout({

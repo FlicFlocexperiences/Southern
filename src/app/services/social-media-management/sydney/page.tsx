@@ -78,13 +78,6 @@ export default function SydneySocialMediaManagementPage() {
           "@type": "GeoCoordinates",
           "latitude": "-33.8642",
           "longitude": "151.2016"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "142",
-          "bestRating": "5",
-          "worstRating": "1"
         }
       },
       {

@@ -89,13 +89,6 @@ export default function CaliforniaAppDevelopmentPage() {
           "@type": "GeoCoordinates",
           "latitude": "37.4241",
           "longitude": "-122.2198"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "142",
-          "bestRating": "5",
-          "worstRating": "1"
         }
       },
       {

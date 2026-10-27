@@ -4,6 +4,7 @@ import React, { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { Blog } from "@/data/blogs";
 import { AuthorCard } from "@/components/AuthorCard";
+import { resolveAuthor, DEFAULT_AUTHOR, DEFAULT_AUTHOR_URL } from "@/lib/author";
 import { cleanInternalNofollow, simplifyHtmlReadability, simplifyReadabilityText } from "@/lib/seo-utils";
 
 interface BlogContentProps {
@@ -179,7 +180,14 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
           )}
           
           <div className="text-white/50 text-[14px] font-medium mb-10">
-            {blog.publishedAt || "March 2026"} &nbsp;&nbsp;&bull;&nbsp;&nbsp; {blog.author || "Southern Marketing Team"}
+            {blog.publishedAt ? <time dateTime={blog.publishedAt}>{blog.publishedAt}</time> : "March 2026"} &nbsp;&nbsp;&bull;&nbsp;&nbsp; By{" "}
+            {resolveAuthor(blog.author) === DEFAULT_AUTHOR ? (
+              <Link href={DEFAULT_AUTHOR_URL} rel="author" className="underline underline-offset-2 hover:text-white">
+                {DEFAULT_AUTHOR}
+              </Link>
+            ) : (
+              resolveAuthor(blog.author)
+            )}
           </div>
 
           <div className="flex justify-center">

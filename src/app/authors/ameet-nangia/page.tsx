@@ -46,10 +46,12 @@ export default function AmeetNangiaAuthorPage() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://www.southernedgemarketing.com/authors/ameet-nangia#person",
     "name": "Ameet Nangia",
     "jobTitle": "Founder & Lead Digital Strategist",
     "worksFor": {
       "@type": "Organization",
+      "@id": "https://www.southernedgemarketing.com/#organization",
       "name": "Southern Edge Marketing",
       "url": "https://www.southernedgemarketing.com"
     },
@@ -57,6 +59,15 @@ export default function AmeetNangiaAuthorPage() {
     "image": "https://www.southernedgemarketing.com/assets/team/ameet.png",
     "sameAs": [
       "https://www.linkedin.com/in/ameet-nangia-b231b864/"
+    ],
+    "knowsAbout": [
+      "Search engine optimization",
+      "Google Ads",
+      "Meta Ads",
+      "Performance marketing",
+      "Digital strategy",
+      "Influencer marketing",
+      "B2B lead generation"
     ],
     "description": "A Digital Marketer with hands-on Business Development Management with a demonstrated history of working in the construction industry. Skilled in Digital Strategy, Search Engine Optimization (SEO), Communication, Influencer Marketing, and Lead Generation."
   };

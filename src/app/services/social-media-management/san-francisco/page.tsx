@@ -72,13 +72,6 @@ export default function SanFranciscoSocialMediaManagementPage() {
           "@type": "GeoCoordinates",
           "latitude": "37.7897",
           "longitude": "-122.3972"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "142",
-          "bestRating": "5",
-          "worstRating": "1"
         }
       },
       {

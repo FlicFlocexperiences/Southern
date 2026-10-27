@@ -64,12 +64,7 @@ export default function IosAppDevelopmentPage() {
       "name": "Southern Edge Marketing",
       "url": "https://www.southernedgemarketing.com"
     },
-    "description": "Leading iOS mobile app development company. We build native Swift & SwiftUI applications engineered for fluid 60fps performance and enterprise security.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "128"
-    }
+    "description": "Leading iOS mobile app development company. We build native Swift & SwiftUI applications engineered for fluid 60fps performance and enterprise security."
   };
 
   return (

@@ -73,13 +73,6 @@ export default function SydneySeoPage() {
           "latitude": "-33.8642",
           "longitude": "151.2010"
         },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "142",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
         "founder": {
           "@type": "Person",
           "name": "Ameet Nangia",
