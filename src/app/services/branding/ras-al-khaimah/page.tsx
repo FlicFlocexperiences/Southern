@@ -72,13 +72,6 @@ export default function RasAlKhaimahBrandingPage() {
           "@type": "GeoCoordinates",
           "latitude": "25.7895",
           "longitude": "55.9432"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "142",
-          "bestRating": "5",
-          "worstRating": "1"
         }
       },
       {

@@ -70,12 +70,7 @@ export default function LuxuryShopifyAgencyUaePage() {
       { "@type": "Country", "name": "United Arab Emirates" },
       { "@type": "AdministrativeArea", "name": "GCC" }
     ],
-    "description": "Award-winning luxury fashion & beauty Shopify agency in UAE. We design bespoke, ultra-fast digital boutiques tailored for high-end GCC consumers.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "96"
-    }
+    "description": "Award-winning luxury fashion & beauty Shopify agency in UAE. We design bespoke, ultra-fast digital boutiques tailored for high-end GCC consumers."
   };
 
   return (

@@ -301,13 +301,6 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({ service }) => {
         },
         "serviceType": service.title,
         "areaServed": "Global",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "124",
-          "bestRating": "5",
-          "worstRating": "1",
-        },
       },
       {
         "@type": "BreadcrumbList",

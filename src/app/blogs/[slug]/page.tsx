@@ -5,6 +5,7 @@ import { DesktopNav } from "@/components/desktop-nav";
 import { DesktopFooter } from "@/components/desktop-footer";
 import { Cta } from "@/components/cta";
 import { Blog, blogs as staticBlogs, getBlogBySlug } from "@/data/blogs";
+import { resolveAuthor, authorSchema } from "@/lib/author";
 import { BlogContent } from "./BlogContent";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
@@ -67,7 +68,7 @@ const getLiveBlog = cache(async (slug: string): Promise<Blog | null> => {
         image: data.image || "/photoshoot.jpg",
         faqs,
         reviews,
-        author: data.author || "Southern Marketing Team"
+        author: resolveAuthor(data.author)
       };
     }
   } catch (e) {
@@ -79,6 +80,7 @@ const getLiveBlog = cache(async (slug: string): Promise<Blog | null> => {
   if (staticBlog) {
     return {
       ...staticBlog,
+      author: resolveAuthor(staticBlog.author),
       content: cleanInternalNofollow(staticBlog.content || ""),
     };
   }
@@ -173,7 +175,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url: `https://www.southernedgemarketing.com/blogs/${slug}`,
       type: "article",
       publishedTime: blog.publishedAt,
-      authors: [blog.author || "Southern Marketing Team"],
+      authors: [resolveAuthor(blog.author)],
       images: [
         {
           url: blogImage,
@@ -217,12 +219,11 @@ export default async function BlogSlugPage({ params }: { params: Promise<{ slug:
         description: cleanDescription,
         image: blogImage,
         datePublished: blog.publishedAt,
-        author: {
-          "@type": "Person",
-          name: blog.author || "Southern Marketing Team",
-        },
+        dateModified: blog.publishedAt,
+        author: authorSchema(resolveAuthor(blog.author)),
         publisher: {
           "@type": "Organization",
+          "@id": "https://www.southernedgemarketing.com/#organization",
           name: "Southern Edge Marketing",
           logo: {
             "@type": "ImageObject",

@@ -69,12 +69,7 @@ export default function AbuDhabiSeoPage() {
       { "@type": "Country", "name": "United Arab Emirates" },
       { "@type": "AdministrativeArea", "name": "GCC" }
     ],
-    "description": "Dominate search rankings in Abu Dhabi & UAE. We deliver technical SEO, local Maps optimization, and digital PR for compounding organic leads.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "118"
-    }
+    "description": "Dominate search rankings in Abu Dhabi & UAE. We deliver technical SEO, local Maps optimization, and digital PR for compounding organic leads."
   };
 
   return (

@@ -72,13 +72,6 @@ export default function SanFranciscoAppDevelopmentPage() {
           "@type": "GeoCoordinates",
           "latitude": "37.7925",
           "longitude": "-122.4042"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "142",
-          "bestRating": "5",
-          "worstRating": "1"
         }
       },
       {
