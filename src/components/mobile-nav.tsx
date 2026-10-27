@@ -6,6 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,21 +38,32 @@ export function MobileNav() {
           />
         </Link>
         
-        <button 
-          type="button"
-          className="flex items-center justify-center gap-4 cursor-pointer group p-3 -mr-3"
-          onClick={() => setIsOpen(true)}
-          aria-label="Open Menu"
-        >
-          <p className="font-semibold text-[15px] tracking-widest text-[#ffffff] pointer-events-none">
-            MENU
-          </p>
-          {/* Burger Icon */}
-          <div className="flex flex-col gap-[4px] w-8 pointer-events-none">
-            <div className="h-[2px] w-full bg-[#ffffff]" />
-            <div className="h-[2px] w-3/4 self-end bg-[#ffffff] transition-all group-hover:w-full" />
-          </div>
-        </button>
+        <div className="flex items-center gap-3">
+          <a
+            href="tel:+918700901769"
+            aria-label="Call +91 87009 01769"
+            title="Call +91 87009 01769"
+            className="flex items-center justify-center size-9 rounded-full bg-white/20 text-white hover:bg-white hover:text-[#e07243] active:scale-95 transition-all shadow-sm"
+          >
+            <FontAwesomeIcon icon={faPhone} className="w-3.5 h-3.5 text-sm" />
+          </a>
+
+          <button 
+            type="button"
+            className="flex items-center justify-center gap-4 cursor-pointer group p-3 -mr-3"
+            onClick={() => setIsOpen(true)}
+            aria-label="Open Menu"
+          >
+            <p className="font-semibold text-[15px] tracking-widest text-[#ffffff] pointer-events-none">
+              MENU
+            </p>
+            {/* Burger Icon */}
+            <div className="flex flex-col gap-[4px] w-8 pointer-events-none">
+              <div className="h-[2px] w-full bg-[#ffffff]" />
+              <div className="h-[2px] w-3/4 self-end bg-[#ffffff] transition-all group-hover:w-full" />
+            </div>
+          </button>
+        </div>
       </div>
 
       <div 
@@ -74,21 +86,32 @@ export function MobileNav() {
               />
             </Link>
             
-            <button 
-              type="button"
-              className="flex items-center justify-center gap-4 cursor-pointer group p-3 -mr-3"
-              onClick={() => setIsOpen(false)}
-              aria-label="Close Menu"
-            >
-              <p className="font-bold text-[15px] tracking-widest text-[#de5e18] pointer-events-none">
-                MENU
-              </p>
-              {/* Brand Color Burger Icon */}
-              <div className="flex flex-col gap-[4px] w-8 pointer-events-none">
-                <div className="h-[2px] w-full bg-[#de5e18]" />
-                <div className="h-[2px] w-full bg-[#de5e18] transition-all" />
-              </div>
-            </button>
+            <div className="flex items-center gap-3">
+              <a
+                href="tel:+918700901769"
+                aria-label="Call +91 87009 01769"
+                title="Call +91 87009 01769"
+                className="flex items-center justify-center size-9 rounded-full bg-[#de5e18]/10 text-[#de5e18] hover:bg-[#de5e18] hover:text-white active:scale-95 transition-all shadow-sm"
+              >
+                <FontAwesomeIcon icon={faPhone} className="w-3.5 h-3.5 text-sm" />
+              </a>
+
+              <button 
+                type="button"
+                className="flex items-center justify-center gap-4 cursor-pointer group p-3 -mr-3"
+                onClick={() => setIsOpen(false)}
+                aria-label="Close Menu"
+              >
+                <p className="font-bold text-[15px] tracking-widest text-[#de5e18] pointer-events-none">
+                  MENU
+                </p>
+                {/* Brand Color Burger Icon */}
+                <div className="flex flex-col gap-[4px] w-8 pointer-events-none">
+                  <div className="h-[2px] w-full bg-[#de5e18]" />
+                  <div className="h-[2px] w-full bg-[#de5e18] transition-all" />
+                </div>
+              </button>
+            </div>
           </div>
 
           {/* Links Section */}

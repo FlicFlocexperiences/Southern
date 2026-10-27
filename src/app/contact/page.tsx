@@ -5,6 +5,7 @@ import { MobileNav } from "@/components/mobile-nav";
 import { MobileFooter } from "@/components/mobile-footer";
 import { MobileFaq } from "@/components/mobile-faq";
 import { ContactUsWidget } from "@/components/contact-forms";
+import { OfficeLocation } from "@/components/office-location";
 import { ContactDebugLogger } from "@/components/contact-debug-logger";
 import { Metadata } from "next";
 
@@ -90,6 +91,11 @@ export default function Contact() {
 
           <div className="w-full mb-8 md:mb-16">
             <ContactUsWidget idPrefix="contact" />
+          </div>
+
+          {/* Office Location Section */}
+          <div className="w-full">
+            <OfficeLocation />
           </div>
 
           {/* Description and Tagline (Mobile) */}
