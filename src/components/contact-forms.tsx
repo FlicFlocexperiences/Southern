@@ -267,27 +267,30 @@ export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string })
             />
           </div>
 
-          {/* Privacy notice + consent (DPDP Act 2023) */}
-          <div className="text-[12.5px] text-black/65 leading-relaxed mt-2 px-1 text-left">
-            <p className="mb-2">
-              <strong className="text-black/80">How we use your details:</strong> Southern Edge Marketing will use your name, phone, email and message only to reply to your enquiry and send you a quote.
-              We keep enquiries for up to 24 months after our last contact, then delete them. You can withdraw consent, or ask us to access, correct or delete your data, at any time by emailing{" "}
-              <a href="mailto:info@southernedgemarketing.com" className="text-[#de5e18] hover:underline">info@southernedgemarketing.com</a>.
-              You may also complain to the Data Protection Board of India. Details in our{" "}
-              <Link href="/privacy" className="text-[#de5e18] hover:underline font-medium">Privacy Policy</Link>.
-            </p>
+          {/* Consent + short privacy notice (DPDP Act 2023); full notice opens on tap */}
+          <div className="text-[13px] text-black/70 leading-relaxed mt-2 px-1 text-left">
             <label className="flex items-start gap-2.5 mb-1.5 cursor-pointer">
               <input type="checkbox" name="consent" value="yes" required className="mt-[3px] h-4 w-4 shrink-0 accent-[#de5e18]" />
-              <span>I agree to Southern Edge Marketing using my details to respond to this enquiry. <span className="text-[#de5e18]">*</span></span>
+              <span>I agree to Southern Edge Marketing using my details to reply to this enquiry. <span className="text-[#de5e18]">*</span></span>
             </label>
             <label className="flex items-start gap-2.5 cursor-pointer">
               <input type="checkbox" name="marketingConsent" value="yes" className="mt-[3px] h-4 w-4 shrink-0 accent-[#de5e18]" />
-              <span>Optional: send me occasional marketing tips and offers by email or WhatsApp.</span>
+              <span>Optional: send me marketing tips and offers by email or WhatsApp.</span>
             </label>
-            <p className="mt-2 text-black/50">
-              See also our <Link href="/terms" className="text-[#de5e18] hover:underline">Terms & Conditions</Link> and{" "}
-              <Link href="/refund" className="text-[#de5e18] hover:underline">Refund Policy</Link>.
-            </p>
+            <details className="mt-2 text-[12.5px] text-black/55 group">
+              <summary className="cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                We use your details only to reply, and you can withdraw anytime.{" "}
+                <span className="text-[#de5e18] font-semibold">How we use your details <span className="inline-block transition-transform group-open:rotate-180">▾</span></span>
+                {" "}·{" "}
+                <Link href="/privacy" className="text-[#de5e18] hover:underline font-semibold">Privacy Policy</Link>
+              </summary>
+              <div className="mt-2 rounded-xl border border-black/10 bg-white px-3.5 py-3 leading-relaxed">
+                We use your name, phone, email and message only to reply to your enquiry and send a quote. We keep enquiries for up to 24 months after our last contact, then delete them.
+                To withdraw consent or to access, correct or delete your data, email{" "}
+                <a href="mailto:info@southernedgemarketing.com" className="text-[#de5e18] hover:underline">info@southernedgemarketing.com</a>.
+                You may also complain to the Data Protection Board of India.
+              </div>
+            </details>
           </div>
           <div className="text-[11px] text-black/40 text-center mb-2 leading-relaxed px-2">
             This site is protected by reCAPTCHA and the Google{" "}
@@ -335,6 +338,16 @@ export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string })
             <div className="w-2.5 h-2.5 rounded-full bg-[#22c55e] shrink-0 shadow-[0_0_8px_#22c55e] animate-pulse" />
             Approximately 30-min.
           </div>
+
+          {/* Call button (same style idea as the mobile header) */}
+          <a
+            href="tel:+918700901769"
+            aria-label="Call +91 87009 01769"
+            title="Call +91 87009 01769"
+            className="pointer-events-auto ml-2 mr-auto flex items-center justify-center size-10 md:size-12 rounded-full bg-gradient-to-b from-[#ffa479] to-[#de5e18] text-white shadow-[0px_6px_16px_rgba(222,94,24,0.35)] hover:shadow-[0px_8px_20px_rgba(222,94,24,0.5)] active:scale-95 transition-all"
+          >
+            <svg className="w-4 h-4 md:w-[18px] md:h-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+          </a>
 
           {/* Floating SEM Badge Logo */}
           <div className="flex items-center justify-center pointer-events-auto shrink-0">
