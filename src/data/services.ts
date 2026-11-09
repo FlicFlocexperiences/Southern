@@ -735,7 +735,7 @@ For tech apps and high-value products, we create detailed YouTube reviews and vi
     title: "Meta Ads Agency",
     h1Title: "Meta Ads Agency for Leads & Sales",
     tagline: "Facebook & Instagram ads that bring enquiries, not just likes.",
-    metaTitle: "Meta Ads Agency in Delhi & Dubai | Facebook & Instagram Ads",
+    metaTitle: "Meta Ads Agency in Delhi & Dubai",
     metaDescription: "Meta Ads agency running Facebook & Instagram campaigns for leads and sales. Lead forms, WhatsApp ads, pixel & CAPI tracking. Free ad account audit.",
     tags: ["Facebook Ads", "Instagram Ads", "Lead Generation", "WhatsApp Ads", "Pixel & CAPI", "Retargeting"],
     image: "/services/performance-marketing.png",
