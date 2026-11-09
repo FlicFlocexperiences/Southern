@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { GooglePreferredSourceButton } from "./google-preferred-source-button";
 
 interface FooterLink {
   label: string;
@@ -224,6 +225,7 @@ export const MobileFooter = () => {
             Refund Policy
           </Link>
         </div>
+        <GooglePreferredSourceButton variant="compact" />
         <p>© {new Date().getFullYear()} Southern Edge Marketing. All rights reserved.</p>
       </div>
 

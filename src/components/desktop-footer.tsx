@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { GooglePreferredSourceButton } from "./google-preferred-source-button";
 
 export const DesktopFooter = () => {
   return (
@@ -284,7 +285,10 @@ export const DesktopFooter = () => {
 
       {/* Bottom Bar */}
       <div className="w-full max-w-[1400px] mx-auto pt-6 border-t border-black/20 flex flex-col md:flex-row items-center justify-between gap-4 text-[13.5px] text-black/85">
-        <p>© {new Date().getFullYear()} Southern Edge Marketing. All rights reserved.</p>
+        <div className="flex flex-col md:flex-row items-center gap-4">
+          <p>© {new Date().getFullYear()} Southern Edge Marketing. All rights reserved.</p>
+          <GooglePreferredSourceButton variant="compact" />
+        </div>
         
         <div className="flex items-center gap-6">
           <Link href="/privacy" className="hover:text-white transition-colors duration-200">

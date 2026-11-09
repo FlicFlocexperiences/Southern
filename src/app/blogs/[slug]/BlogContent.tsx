@@ -4,6 +4,7 @@ import React, { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { Blog } from "@/data/blogs";
 import { AuthorCard } from "@/components/AuthorCard";
+import { GooglePreferredSourceButton } from "@/components/google-preferred-source-button";
 import { resolveAuthor, DEFAULT_AUTHOR, DEFAULT_AUTHOR_URL } from "@/lib/author";
 import { cleanInternalNofollow, simplifyHtmlReadability, simplifyReadabilityText } from "@/lib/seo-utils";
 
@@ -394,6 +395,14 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
                   </svg>
                 </button>
               </div>
+            </div>
+
+            {/* Google Preferred Source */}
+            <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+              <span className="text-[14px] md:text-[16px] font-regular text-black/70 text-left">
+                See more of our insights on Google:
+              </span>
+              <GooglePreferredSourceButton />
             </div>
           </article>
         </div>
