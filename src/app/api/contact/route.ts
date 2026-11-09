@@ -13,6 +13,14 @@ export async function POST(request: Request) {
     const data = await request.json();
     const { recaptchaToken, ...formData } = data;
 
+    // DPDP: only store enquiries where the visitor gave consent on the form
+    if (formData.consent !== true) {
+      return NextResponse.json(
+        { success: false, error: "Please tick the consent box so we can respond to your enquiry." },
+        { status: 400 }
+      );
+    }
+
     if (!RECAPTCHA_SECRET_KEY) {
       console.error("🚨 [API /api/contact] RECAPTCHA_SECRET_KEY environment variable is missing.");
       return NextResponse.json(
@@ -75,6 +83,11 @@ export async function POST(request: Request) {
       ...formData,
       captchaScore: score,
       captchaStatus,
+      // Consent record (DPDP Act 2023): what was agreed, to which notice, and when
+      consent: true,
+      marketingConsent: formData.marketingConsent === true,
+      consentNoticeVersion: "2026-11-09",
+      consentAt: new Date().toISOString(),
       status: formData.status || "New",
       createdAt: serverTimestamp(),
     };

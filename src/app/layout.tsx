@@ -71,6 +71,7 @@ import Script from "next/script";
 import { AuthProvider } from "@/components/AuthProvider";
 import { WhatsappWidget } from "@/components/whatsapp-widget";
 import { Analytics } from "@/components/Analytics";
+import { ConsentBanner } from "@/components/consent-banner";
 
 const SITE_URL = "https://www.southernedgemarketing.com";
 
@@ -156,6 +157,7 @@ export default function RootLayout({
           />
         )}
         <Analytics />
+        <ConsentBanner />
         <AuthProvider>
           {children}
           <WhatsappWidget />

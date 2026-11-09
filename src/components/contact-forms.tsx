@@ -110,6 +110,8 @@ function useContactForm() {
       email: formData.get("email"),
       service: formData.get("service"),
       projectDetails: formData.get("projectDetails"),
+      consent: formData.get("consent") === "yes",
+      marketingConsent: formData.get("marketingConsent") === "yes",
       recaptchaToken,
     };
 
@@ -119,7 +121,7 @@ function useContactForm() {
       name: data.name,
       code: data.code,
       phone: data.phone ? `***${String(data.phone).slice(-4)}` : "empty",
-      email: data.email,
+      hasEmail: !!data.email,
       service: data.service,
       hasProjectDetails: !!data.projectDetails,
       hasRecaptchaToken: !!recaptchaToken,
@@ -265,12 +267,27 @@ export const ContactUsWidget = ({ idPrefix = "contact" }: { idPrefix?: string })
             />
           </div>
 
-          {/* Disclaimer */}
-          <div className="text-[13px] text-black/60 text-center mt-2 mb-1 leading-relaxed px-2">
-            By clicking submit, you agree to share these details with us for the purpose of contacting you regarding our services. Please read our{" "}
-            <Link href="/privacy" className="text-[#de5e18] hover:underline font-medium">Privacy Policy</Link> and{" "}
-            <Link href="/terms" className="text-[#de5e18] hover:underline font-medium">Terms & Conditions</Link>{" "}
-            (including our <Link href="/terms" className="text-[#de5e18] hover:underline font-medium">Refund Policy</Link>) for more details.
+          {/* Privacy notice + consent (DPDP Act 2023) */}
+          <div className="text-[12.5px] text-black/65 leading-relaxed mt-2 px-1 text-left">
+            <p className="mb-2">
+              <strong className="text-black/80">How we use your details:</strong> Southern Edge Marketing will use your name, phone, email and message only to reply to your enquiry and send you a quote.
+              We keep enquiries for up to 24 months after our last contact, then delete them. You can withdraw consent, or ask us to access, correct or delete your data, at any time by emailing{" "}
+              <a href="mailto:info@southernedgemarketing.com" className="text-[#de5e18] hover:underline">info@southernedgemarketing.com</a>.
+              You may also complain to the Data Protection Board of India. Details in our{" "}
+              <Link href="/privacy" className="text-[#de5e18] hover:underline font-medium">Privacy Policy</Link>.
+            </p>
+            <label className="flex items-start gap-2.5 mb-1.5 cursor-pointer">
+              <input type="checkbox" name="consent" value="yes" required className="mt-[3px] h-4 w-4 shrink-0 accent-[#de5e18]" />
+              <span>I agree to Southern Edge Marketing using my details to respond to this enquiry. <span className="text-[#de5e18]">*</span></span>
+            </label>
+            <label className="flex items-start gap-2.5 cursor-pointer">
+              <input type="checkbox" name="marketingConsent" value="yes" className="mt-[3px] h-4 w-4 shrink-0 accent-[#de5e18]" />
+              <span>Optional: send me occasional marketing tips and offers by email or WhatsApp.</span>
+            </label>
+            <p className="mt-2 text-black/50">
+              See also our <Link href="/terms" className="text-[#de5e18] hover:underline">Terms & Conditions</Link> and{" "}
+              <Link href="/refund" className="text-[#de5e18] hover:underline">Refund Policy</Link>.
+            </p>
           </div>
           <div className="text-[11px] text-black/40 text-center mb-2 leading-relaxed px-2">
             This site is protected by reCAPTCHA and the Google{" "}

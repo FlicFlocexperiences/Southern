@@ -2,16 +2,27 @@
 
 import { usePathname } from "next/navigation";
 import Script from "next/script";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { CONSENT_EVENT, readConsent, type Consent } from "@/lib/consent";
 
 export function Analytics() {
   const pathname = usePathname();
   const isAdminRoute = pathname?.startsWith("/authority") || pathname?.startsWith("/nullify");
   const isFirstMount = useRef(true);
+  // Trackers load only after the visitor consents (DPDP). See components/consent-banner.tsx
+  const [consent, setConsent] = useState<Consent | null>(null);
+  useEffect(() => {
+    setConsent(readConsent());
+    const onChange = (e: Event) => setConsent((e as CustomEvent<Consent>).detail);
+    window.addEventListener(CONSENT_EVENT, onChange);
+    return () => window.removeEventListener(CONSENT_EVENT, onChange);
+  }, []);
+  const allowAnalytics = !!consent?.analytics;
+  const allowMarketing = !!consent?.marketing;
 
   useEffect(() => {
     // Only initialize Microsoft Clarity on public customer-facing routes
-    if (!isAdminRoute && typeof window !== "undefined") {
+    if (!isAdminRoute && allowAnalytics && typeof window !== "undefined" && !(window as any).clarity) {
       (function (c: any, l: any, a: any, r: any, i: any, t?: any, y?: any) {
         c[a] =
           c[a] ||
@@ -25,7 +36,7 @@ export function Analytics() {
         y.parentNode.insertBefore(t, y);
       })(window, document, "clarity", "script", "y6wutbd2rw");
     }
-  }, [isAdminRoute]);
+  }, [isAdminRoute, allowAnalytics]);
 
   // Track PageView on SPA route changes for Meta Pixel & Google Analytics (skips initial mount to avoid duplicate)
   useEffect(() => {
@@ -53,6 +64,7 @@ export function Analytics() {
 
   return (
     <>
+      {allowAnalytics && (<>
       {/* Google Analytics */}
       <Script
         strategy="afterInteractive"
@@ -71,6 +83,9 @@ export function Analytics() {
         }}
       />
 
+      </>)}
+
+      {allowMarketing && (<>
       {/* Meta Event Setup Tool (iwl.js) Compatibility Shim */}
       <Script
         id="meta-iwl-compat"
@@ -145,15 +160,8 @@ export function Analytics() {
           `,
         }}
       />
-      <noscript>
-        <img
-          height="1"
-          width="1"
-          style={{ display: "none" }}
-          src="https://www.facebook.com/tr?id=2511912949279933&ev=PageView&noscript=1"
-          alt=""
-        />
-      </noscript>
+      </>)}
+      {/* No <noscript> pixel: without JavaScript we can't ask for consent first. */}
     </>
   );
 }

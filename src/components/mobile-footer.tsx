@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { GooglePreferredSourceButton } from "./google-preferred-source-button";
+import { openConsentSettings } from "@/lib/consent";
 
 interface FooterLink {
   label: string;
@@ -225,6 +226,10 @@ export const MobileFooter = () => {
           <Link href="/refund" className="hover:text-white transition-colors">
             Refund Policy
           </Link>
+          <span>•</span>
+          <button type="button" onClick={openConsentSettings} className="hover:text-white transition-colors cursor-pointer">
+            Cookie Settings
+          </button>
         </div>
         <GooglePreferredSourceButton variant="compact" />
         <p>© {new Date().getFullYear()} Southern Edge Marketing. All rights reserved.</p>

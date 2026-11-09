@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { GooglePreferredSourceButton } from "./google-preferred-source-button";
+import { openConsentSettings } from "@/lib/consent";
 
 export const DesktopFooter = () => {
   return (
@@ -305,6 +306,10 @@ export const DesktopFooter = () => {
           <Link href="/refund" className="hover:text-white transition-colors duration-200">
             Refund Policy
           </Link>
+          <span className="text-black/30">•</span>
+          <button type="button" onClick={openConsentSettings} className="hover:text-white transition-colors duration-200 cursor-pointer">
+            Cookie Settings
+          </button>
         </div>
       </div>
 
