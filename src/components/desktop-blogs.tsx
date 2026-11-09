@@ -65,7 +65,7 @@ export const DesktopBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
             SOUTHERN EDGE MARKETING BLOGS
           </span>
           <h1 className="text-[52px] md:text-[70px] lg:text-[65px] font-medium text-black leading-[1.05] tracking-tight mb-8">
-            Ideas that build<br />
+            Ideas that build{" "}<br />
             better digital experiences
           </h1>
           <p className="text-black/60 text-[16px] md:text-[18px] lg:text-[20px] leading-relaxed max-w-[500px]">

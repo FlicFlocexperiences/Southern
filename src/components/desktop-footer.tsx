@@ -82,6 +82,9 @@ export const DesktopFooter = () => {
               <Link href="/services/branding" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
                 Branding & Creative Strategy
               </Link>
+              <Link href="/services/meta-ads" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Meta Ads Management
+              </Link>
               <Link href="/services/web-development" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
                 UI/UX & Conversion Design
               </Link>
@@ -216,8 +219,8 @@ export const DesktopFooter = () => {
               <Link href="/services/seo" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
                 Local SEO & Maps Ranking
               </Link>
-              <Link href="/explore-more/maximizing-roas-on-meta-ads" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
-                Meta & Google Paid Ads (ROAS)
+              <Link href="/services/meta-ads" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
+                Meta Ads Agency (Facebook & Instagram)
               </Link>
               <Link href="/explore-more/optimizing-page-speed-for-conversion" className="hover:text-black hover:translate-x-1 transition-all duration-200 w-fit">
                 Speed & Core Web Vitals

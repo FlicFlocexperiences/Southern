@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Blog } from "@/data/blogs";
 import { AuthorCard } from "@/components/AuthorCard";
 import { GooglePreferredSourceButton } from "@/components/google-preferred-source-button";
+import { RelatedService } from "@/components/related-service";
 import { resolveAuthor, DEFAULT_AUTHOR, DEFAULT_AUTHOR_URL } from "@/lib/author";
 import { cleanInternalNofollow, simplifyHtmlReadability, simplifyReadabilityText } from "@/lib/seo-utils";
 
@@ -58,7 +59,13 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
     let content = cleanInternalNofollow(blog.content || "");
 
     // Normalize markdown headings (### or ##) to <h2> tags if plain markdown was provided
-    content = content.replace(/^###?\s+(.+)$/gm, '<h2>$1</h2>');
+    // Keep the heading hierarchy: when a post uses both ## and ###, ### stays an H3.
+    // Posts written only with ### keep them as H2 (their top-level sections).
+    if (/^##\s+/m.test(content)) {
+      content = content.replace(/^###\s+(.+)$/gm, '<h3>$1</h3>').replace(/^##\s+(.+)$/gm, '<h2>$1</h2>');
+    } else {
+      content = content.replace(/^###\s+(.+)$/gm, '<h2>$1</h2>');
+    }
 
     // Replace h2 and h3 tags, injecting an ID for scroll tracking
     const headingRegex = /(<h[23][^>]*>)(.*?)(<\/h[23]>)/gi;
@@ -360,6 +367,8 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
                 </div>
               </div>
             )}
+
+            <RelatedService text={`${blog.slug} ${blog.title}`} />
 
             {/* Share Post */}
             <div className="border-t border-black/10 mt-12 pt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">

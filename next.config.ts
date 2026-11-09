@@ -54,6 +54,17 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Duplicate-topic consolidation (SEO): merged into the stronger page
+      {
+        source: "/blogs/on-page-seo-vs-off-page-seo",
+        destination: "/blogs/on-page-seo-vs-off-page-seo-guide",
+        permanent: true,
+      },
+      {
+        source: "/blogs/top-social-media-marketing-agency-delhi",
+        destination: "/blogs/social-media-marketing-agency-delhi",
+        permanent: true,
+      },
       {
         source: "/services/website-development",
         destination: "/services/web-development",

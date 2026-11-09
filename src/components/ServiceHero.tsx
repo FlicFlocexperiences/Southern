@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { simplifyReadabilityText } from '@/lib/seo-utils';
+import { CityServiceSchema } from "./city-service-schema";
 
 interface ServiceHeroProps {
   title: string;
@@ -11,6 +12,7 @@ interface ServiceHeroProps {
 export function ServiceHero({ title, tagline, breadcrumbTitle }: ServiceHeroProps) {
   return (
     <>
+      <CityServiceSchema title={title} />
       {/* Top Hero Section - Full Width */}
       <div className="w-full bg-[#432d1c] text-white pt-[120px] lg:pt-[160px] pb-14 px-4 sm:px-6 lg:px-12 relative overflow-hidden text-center flex flex-col items-center">
         <div className="text-[11px] sm:text-[12px] tracking-[0.2em] font-bold text-[#de5e18] uppercase mb-2">

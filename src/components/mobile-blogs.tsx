@@ -56,7 +56,7 @@ export const MobileBlogs = ({ blogs = [] }: { blogs?: BlogItem[] }) => {
         </span>
         
         <p className="text-[36px] leading-[1.1] font-bold text-black tracking-tight mt-1">
-          Ideas that build<br />
+          Ideas that build{" "}<br />
           better digital experiences
         </p>
         

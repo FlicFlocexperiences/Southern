@@ -4,6 +4,7 @@ import React, { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { Article } from "@/data/articles";
 import { AuthorCard } from "@/components/AuthorCard";
+import { RelatedService } from "@/components/related-service";
 import { cleanInternalNofollow } from "@/lib/seo-utils";
 
 interface ArticleContentProps {
@@ -349,6 +350,8 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
                 </div>
               </div>
             )}
+
+            <RelatedService text={`${article.slug} ${article.title}`} />
 
             {/* Share Post */}
             <div className="border-t border-black/10 mt-12 pt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">

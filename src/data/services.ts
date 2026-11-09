@@ -21,10 +21,10 @@ export const services: Service[] = [
   {
     slug: "web-development",
     title: "Custom Website Design Solutions",
-    h1Title: "Website Development Services That Turn Visitors Into Customers",
+    h1Title: "Custom Website Development Company Built to Generate Leads",
     tagline: "Convert, not just impress.",
-    metaTitle: "Custom Website Development Company",
-    metaDescription: "Build fast, conversion-driven websites with Southern Edge. We engineer secure Next.js platforms, headless web apps, and custom digital systems.",
+    metaTitle: "Custom Website Development Company | Delhi & Dubai",
+    metaDescription: "Custom Next.js, Shopify & business websites built for speed, SEO and lead capture. Get a free consultation and project quote from our Delhi & Dubai team.",
     trustBadges: [
       { title: "100+ Launches", subtitle: "Enterprise Web Platforms" },
       { title: "Sub-50ms TTFB", subtitle: "Page Speed Guarantee" },
@@ -110,10 +110,10 @@ Our web solutions help brands across Healthcare, Legal, SaaS, Real Estate, E-Com
   {
     slug: "app-development",
     title: "Mobile App Development Services",
-    h1Title: "Custom Mobile App Development Services",
+    h1Title: "Native Mobile App Development Services",
     tagline: "Native experiences, global reach.",
     metaTitle: "Native Mobile App Development Services",
-    metaDescription: "Build custom iOS and Android apps with Southern Edge. Expert native mobile app development delivering fast, secure, and scalable mobile solutions.",
+    metaDescription: "Native iOS & Android app development services, from MVP to App Store launch. Clear timelines, fixed milestones and a free consultation with our app team.",
     trustBadges: [
       { title: "iOS & Android", subtitle: "Native Swift & Kotlin Precision" },
       { title: "4.8★ Rating", subtitle: "Average App Store Score" },
@@ -567,8 +567,8 @@ We configure seamless multi-currency purchasing across AED, SAR, QAR, KWD, BHD, 
     title: "Custom iOS App Development Company",
     h1Title: "Native iOS Mobile App Development Company",
     tagline: "Fluid 60fps native iOS experiences engineered in Swift.",
-    metaTitle: "Custom iOS App Development Company",
-    metaDescription: "Leading iOS app development company. We build native Swift & SwiftUI applications engineered for fluid 60fps performance and enterprise security.",
+    metaTitle: "iOS Mobile App Development Company",
+    metaDescription: "iOS mobile app development company building native Swift & SwiftUI apps for iPhone and iPad. MVP in 8–12 weeks. Book a free consultation today.",
     statValue: "60 FPS",
     statLabel: "FLUID NATIVE APPLE ECOSYSTEM PERFORMANCE",
     tags: ["SwiftUI", "iOS 18", "Apple Pay", "Biometrics", "App Store Optimization"],
@@ -727,6 +727,95 @@ For tech apps and high-value products, we create detailed YouTube reviews and vi
       {
         question: "Can creator content be repurposed across our website and paid advertising?",
         answer: "Yes. We secure full digital usage rights so you can run creator videos in paid ads, on your website, and in email campaigns."
+      }
+    ]
+  },
+  {
+    slug: "meta-ads",
+    title: "Meta Ads Agency",
+    h1Title: "Meta Ads Agency for Leads & Sales",
+    tagline: "Facebook & Instagram ads that bring enquiries, not just likes.",
+    metaTitle: "Meta Ads Agency in Delhi & Dubai | Facebook & Instagram Ads",
+    metaDescription: "Meta Ads agency running Facebook & Instagram campaigns for leads and sales. Lead forms, WhatsApp ads, pixel & CAPI tracking. Free ad account audit.",
+    tags: ["Facebook Ads", "Instagram Ads", "Lead Generation", "WhatsApp Ads", "Pixel & CAPI", "Retargeting"],
+    image: "/services/performance-marketing.png",
+    trustBadges: [
+      { title: "6+ Years", subtitle: "Hands-On Meta Ads Experience" },
+      { title: "Lead & Sales Focus", subtitle: "Optimised for CPL and ROAS" },
+      { title: "Full Tracking Setup", subtitle: "Pixel, CAPI & Custom Conversions" },
+      { title: "India & UAE", subtitle: "Delhi and Dubai Campaigns" },
+    ],
+    description1: "We plan, build and manage Facebook and Instagram ad campaigns that bring real enquiries and sales. Every campaign starts from your cost-per-lead or ROAS target, not from vanity metrics like reach and likes.",
+    description2: "From instant lead forms and WhatsApp click-to-chat ads to catalog sales and retargeting, we set up the tracking first, test creatives fast, and move budget to what is converting.",
+    callout: "Most Meta ad accounts don't fail on targeting. They fail on tracking and creative. We fix both before we spend more of your budget.",
+    content: `### Meta Ads Management Built Around Leads and Sales
+Facebook and Instagram are where your customers spend hours every day. Meta Ads let you reach them by location, interest and behaviour, and turn that attention into calls, form fills, WhatsApp chats and purchases. But boosting posts and running broad campaigns burns budget fast.
+
+At Southern Edge Marketing, our Meta Ads team runs campaigns with one goal: profitable enquiries and sales. We set a clear target for cost per lead (CPL) or return on ad spend (ROAS) before launch, and we report against that number every week.
+
+### Lead Generation Ads for Service Businesses
+**Instant lead forms:** Meta's built-in lead forms let people enquire without leaving Instagram or Facebook. We write qualifying questions so your sales team gets fewer junk leads, and we connect forms to your CRM, Google Sheets or WhatsApp so every lead is followed up in minutes.
+
+**WhatsApp and Messenger ads:** For businesses that close deals in conversation, click-to-WhatsApp ads start a chat directly with your team. This works well for real estate, loan and legal services, clinics, salons and high-ticket services.
+
+**Website conversion campaigns:** When your website converts well, we send traffic to dedicated landing pages and optimise for the conversion event that matters, such as a form submit, call or booking. Need a faster landing page? Our [custom website development](/services/web-development) team builds them.
+
+### Sales Campaigns for E-Commerce and D2C Brands
+For online stores we run Advantage+ shopping and catalog campaigns, dynamic product ads, and retargeting for people who viewed products or abandoned their cart. We structure campaigns so the algorithm gets enough conversion data to learn, instead of splitting budget across dozens of tiny ad sets. This pairs well with a fast store from our [Shopify agency](/services/shopify-agency-dubai).
+
+### Tracking Setup: Pixel, Conversions API and Custom Conversions
+Meta can only optimise for what it can measure. Before we scale any budget, we audit and fix your tracking:
+
+- Meta Pixel installed and firing the right standard events
+- Conversions API (CAPI) for server-side tracking, so iOS privacy limits don't hide your conversions
+- Custom conversions for thank-you pages, lead forms and purchases
+- Event deduplication and domain verification
+
+Without this, you are optimising blind and paying for the wrong audience.
+
+### Creative Testing That Finds Winning Ads Fast
+Creative is the biggest lever in Meta Ads today. We test several hooks, formats and offers at once: Reels, static images, carousels and user-generated-style videos. Then we keep the winners and refresh tired ads before costs rise. Regional-language creatives help when your audience is outside the metros. For ongoing content, see our [social media management](/services/social-media-management) and [influencer marketing](/services/influencer-marketing) services.
+
+### Meta Ads in Delhi, Gurgaon and Dubai
+We run campaigns for restaurants and cafes, hotels and homestays, real estate, legal and financial services, fashion, food and D2C brands across India and the UAE. Local targeting, local offers and local-language creative make a measurable difference to cost per lead. See examples of our lead generation work for [Credsettle](/projects/credsettle) and [Kamal Motors](/projects/kamal-motors).
+
+### What You Get Every Month
+- Campaign strategy and budget plan tied to your CPL or ROAS target
+- Ad creatives and copy, with new tests every week
+- Audience setup: lookalikes, retargeting and exclusions
+- Weekly performance report with leads, cost per lead and next actions
+- A direct line to the person running your ad account
+
+### Related Solutions
+**Get more from your ad spend with:**
+- [Custom Website Development](/services/web-development)
+- [Social Media Management](/services/social-media-management)
+- [Search Engine Optimization (SEO)](/services/seo)
+- [Influencer Marketing](/services/influencer-marketing)`,
+    faqs: [
+      {
+        question: "How much budget do I need for Meta Ads?",
+        answer: "For lead generation in India, most businesses start with ₹500–₹2,000 per day in ad spend; in the UAE, AED 100–300 per day. That gives Meta enough data to learn within the first 2–3 weeks. Our management fee is separate from your ad spend, and we share a quote after a free audit."
+      },
+      {
+        question: "How soon will I get leads from Facebook and Instagram ads?",
+        answer: "Most campaigns start getting leads within the first few days of launch. Cost per lead usually improves over the first 2–4 weeks as we test creatives and audiences and the algorithm learns."
+      },
+      {
+        question: "Do you work with businesses outside Delhi and Dubai?",
+        answer: "Yes. We manage Meta ad accounts for businesses across India and the UAE and can target any city, state or country your customers are in."
+      },
+      {
+        question: "Will I own my ad account and data?",
+        answer: "Yes. Campaigns run in your own Business Manager and ad account. We get partner access, and you keep full ownership of your pixel, audiences and data."
+      },
+      {
+        question: "What is the difference between boosting a post and running Meta Ads?",
+        answer: "Boosting is a quick way to show a post to more people, but it has limited targeting and optimisation. Ads Manager campaigns let us optimise for leads or purchases, test multiple creatives, retarget visitors and track results properly."
+      },
+      {
+        question: "Can you fix an ad account that is already running?",
+        answer: "Yes. We start with a free audit of your current account: tracking, campaign structure, audiences and creatives. Then we share what to fix first and what results to expect."
       }
     ]
   }

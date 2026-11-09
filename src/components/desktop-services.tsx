@@ -17,6 +17,7 @@ const services = [
   {
     num: "01",
     title: "Website Platforms",
+    href: "/services/web-development",
     desc: "High-performance websites engineered to turn visitors into customers. We combine editorial craft with conversion science to build digital experiences that compound in value.",
     time: "1 to 4 weeks",
     icon: <img src="/74c0af15118c1b2a2c39e1511c12af1dfd68bbda.svg" alt="Website Platforms" width={52} height={52} className="w-[60px] h-[60px] object-contain" />
@@ -24,6 +25,7 @@ const services = [
   {
     num: "02",
     title: "Branding & Strategy",
+    href: "/services/branding",
     desc: "We build cohesive, memorable identities that stand out in crowded markets, combining strategic positioning with visual storytelling to define who you are and why you matter.",
     time: "2 to 4 weeks",
     icon: <img src="/7b6d1a31b01642571f2ba8ae197279b79c46ed00.svg" alt="Branding & Strategy" width={60} height={60} className="w-[60px] h-[60px] object-contain" />
@@ -31,6 +33,7 @@ const services = [
   {
     num: "03",
     title: "Shopify Development",
+    href: "/services/shopify-agency-dubai",
     desc: "Fully customized, conversion-focused e-commerce storefronts designed to scale with your sales. We build on Liquid and headless APIs to make checkout frictionless and fast.",
     time: "2 to 4 weeks",
     icon: <img src="/0d1c43af53df1d13a18cab9909507ae5e5ee1faf.svg" alt="Shopify Development" width={100} height={100} className="w-[60px] h-[60px] object-contain" />
@@ -38,6 +41,7 @@ const services = [
   {
     num: "04",
     title: "App Development",
+    href: "/services/app-development",
     desc: "We engineer robust, high-performance mobile applications that deliver native-like user experiences on iOS and Android, connected to secure, scalable backend APIs.",
     time: "5 to 6 weeks",
     icon: <img src="/dbb2cc477667c1535fbdfc2c6aa1ca82913f633a.svg" alt="App Development" width={50} height={68} className="w-[60px] h-[60px] object-contain" />
@@ -45,20 +49,23 @@ const services = [
   {
     num: "05",
     title: "Proven SEO Services in Delhi",
+    href: "/services/seo",
     desc: "Visibility on search engines is the foundation of online success. We are recognized as a leading SEO company in Delhi, helping businesses climb the rankings and stay there. Our SEO services in Delhi focus on technical optimization, high quality content, and authoritative link building.",
     time: "3 to 4 weeks",
     icon: <img src="/6d024c7b5b7156400997ad06258dcf9946364743.svg" alt="SEO Solutions" width={52} height={58} className="w-[60px] h-[60px] object-contain" />
   },
   {
     num: "06",
-    title: "PPC Services in Delhi",
-    desc: "When organic growth needs a boost, our targeted paid advertising campaigns step in. We craft highly optimized ads that put your brand directly in front of active buyers. By leveraging our PPC services in Delhi, you maximize your return on investment.",
+    title: "Meta Ads & PPC Services in Delhi",
+    href: "/services/meta-ads",
+    desc: "When organic growth needs a boost, our Meta Ads (Facebook & Instagram) and Google Ads campaigns step in. We craft highly optimized ads that put your brand directly in front of active buyers. By leveraging our PPC services in Delhi, you maximize your return on investment.",
     time: "2 to 4 weeks",
     icon: <img src="/00cd375964412dedc26595d780eebba9baf9a5c4.svg" alt="Performance Marketing" width={58} height={58} className="w-[60px] h-[60px] object-contain" />
   },
   {
     num: "07",
     title: "Social Media Management",
+    href: "/services/social-media-management",
     desc: "We create high-engagement content strategies that build active communities and transform passive followers into active brand advocates.",
     time: "1 to 2 weeks",
     icon: <img src="/fbf3bb63c485c87731f72b92377c293b49debc58.svg" alt="Social Media Management" width={60} height={58} className="w-[60px] h-[60px] object-contain" />
@@ -123,7 +130,7 @@ export const DesktopServices = () => {
 
                 {/* Content */}
                 <div className="flex flex-col flex-1 py-2">
-                  <h3 className="text-[28px] font-medium text-black mb-3 leading-tight">{service.title}</h3>
+                  <h3 className="text-[28px] font-medium text-black mb-3 leading-tight"><Link href={service.href} className="hover:text-[#de5e18] transition-colors">{service.title}</Link></h3>
                   <p className="text-[20px] text-black/60 leading-[1.4] mb-6 pr-4">{service.desc}</p>
 
                 </div>

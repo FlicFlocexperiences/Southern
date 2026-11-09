@@ -48,6 +48,7 @@ export const MobileFooter = () => {
         { label: "Search Engine Optimization", href: "/services/seo" },
         { label: "Social Media Management", href: "/services/social-media-management" },
         { label: "Branding & Creative Strategy", href: "/services/branding" },
+        { label: "Meta Ads Management", href: "/services/meta-ads" },
         { label: "UI/UX & Conversion Design", href: "/services/web-development" },
         { label: "Performance Marketing & Ads", href: "/services" },
       ],
@@ -96,7 +97,7 @@ export const MobileFooter = () => {
       links: [
         { label: "Technical SEO & Core Audits", href: "/services/seo" },
         { label: "Local SEO & Maps Ranking", href: "/services/seo" },
-        { label: "Meta & Google Paid Ads (ROAS)", href: "/explore-more/maximizing-roas-on-meta-ads" },
+        { label: "Meta Ads Agency (Facebook & Instagram)", href: "/services/meta-ads" },
         { label: "Speed & Core Web Vitals", href: "/explore-more/optimizing-page-speed-for-conversion" },
         { label: "E-Commerce Email Scaling", href: "/explore-more/scaling-e-commerce-with-email-marketing" },
         { label: "Organic Search Growth Engine", href: "/explore-more/role-of-seo-in-digital-growth" },
