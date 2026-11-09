@@ -41,8 +41,16 @@ export const OfficeLocation = () => {
             <div className="mb-6">
               <h3 className="text-[15px] font-bold text-black mb-1.5">Office Address</h3>
               <p className="text-[15px] text-black/75 leading-relaxed">
-                Sector 57, Sushant Lok 2, Gurugram, Haryana 122003
+                Sector 57, Sushant Lok 2, Gurugram, Haryana 122011
               </p>
+            </div>
+
+            {/* Phone */}
+            <div className="mb-6">
+              <h3 className="text-[15px] font-bold text-black mb-1.5">Phone</h3>
+              <a href="tel:+918700901769" className="text-[15px] text-[#de5e18] font-semibold hover:underline">
+                +91 87009 01769
+              </a>
             </div>
 
             {/* Office Hours */}
@@ -54,15 +62,31 @@ export const OfficeLocation = () => {
             </div>
           </div>
 
-          {/* Directions Button */}
-          <div>
+          {/* Action Buttons: Call, WhatsApp, Directions */}
+          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3">
+            <a
+              href="tel:+918700901769"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-white font-medium bg-[#de5e18] hover:bg-[#c24f12] shadow-sm hover:shadow-md transition-all duration-300 text-[15px]"
+            >
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+              Call Now
+            </a>
+            <a
+              href="https://wa.me/918700901769"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-white font-medium bg-[#25d366] hover:bg-[#1fb857] shadow-sm hover:shadow-md transition-all duration-300 text-[15px]"
+            >
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>
+              WhatsApp Us
+            </a>
             <a
               href={mapShareUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-7 py-3.5 rounded-full text-white font-medium bg-[#de5e18] hover:bg-[#c24f12] shadow-sm hover:shadow-md transition-all duration-300 w-full sm:w-auto text-[15px] tracking-wide"
+              className="inline-flex items-center justify-center px-6 py-3.5 rounded-full text-[#de5e18] font-semibold border-[1.5px] border-[#de5e18] hover:bg-[#de5e18]/5 transition-all duration-300 text-[15px]"
             >
-              Get Directions on Google Maps
+              Get Directions
             </a>
           </div>
         </div>
