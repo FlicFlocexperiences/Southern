@@ -398,8 +398,8 @@ export const BlogContent: React.FC<BlogContentProps> = ({ blog }) => {
             </div>
 
             {/* Google Preferred Source */}
-            <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-              <span className="text-[14px] md:text-[16px] font-regular text-black/70 text-left">
+            <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+              <span className="text-[14px] md:text-[16px] font-regular text-black/70 text-left whitespace-nowrap">
                 See more of our insights on Google:
               </span>
               <GooglePreferredSourceButton />
