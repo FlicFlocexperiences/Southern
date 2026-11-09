@@ -1,3 +1,5 @@
+import { newBlogs } from "./new-blogs";
+
 export interface FAQ {
   id?: string;
   question: string;
@@ -431,6 +433,10 @@ export const blogs: Blog[] = [
     ]
   }
 ];
+
+// New posts maintained in code (see src/data/new-blogs.ts)
+blogs.push(...newBlogs);
+
 
 export const getBlogBySlug = (slug: string): Blog | undefined => {
   return blogs.find(blog => blog.slug === slug);

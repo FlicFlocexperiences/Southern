@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { REDIRECTED_BLOG_SLUGS } from '@/lib/blog-redirects';
 import { services } from '@/data/services';
 import { projects } from '@/data/projects';
 import { blogs as staticBlogs } from '@/data/blogs';
@@ -9,10 +10,7 @@ import { db } from '@/lib/firebase';
 // Real "last changed" dates instead of the build time, so Google trusts lastmod.
 // Bump SITE_CONTENT_UPDATED when service/static page content changes.
 const SITE_CONTENT_UPDATED = new Date('2026-11-09');
-const REDIRECTED_BLOG_SLUGS = new Set([
-  'on-page-seo-vs-off-page-seo',
-  'top-social-media-marketing-agency-delhi',
-]);
+
 const parseDate = (value: unknown): Date | undefined => {
   if (!value) return undefined;
   if (typeof value === 'object' && value !== null && 'toDate' in value && typeof (value as { toDate: unknown }).toDate === 'function') {

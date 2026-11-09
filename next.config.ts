@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { BLOG_REDIRECTS } from "./src/lib/blog-redirects";
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -54,17 +55,8 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      // Duplicate-topic consolidation (SEO): merged into the stronger page
-      {
-        source: "/blogs/on-page-seo-vs-off-page-seo",
-        destination: "/blogs/on-page-seo-vs-off-page-seo-guide",
-        permanent: true,
-      },
-      {
-        source: "/blogs/top-social-media-marketing-agency-delhi",
-        destination: "/blogs/social-media-marketing-agency-delhi",
-        permanent: true,
-      },
+      // Merged blog posts (SEO consolidation) — list lives in src/lib/blog-redirects.ts
+      ...BLOG_REDIRECTS.map((r) => ({ source: `/blogs/${r.from}`, destination: r.to, permanent: true })),
       {
         source: "/services/website-development",
         destination: "/services/web-development",

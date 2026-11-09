@@ -10,6 +10,8 @@ import { Cta } from "@/components/cta";
 
 import { Metadata } from "next";
 import { collection, getDocs, query, orderBy } from "firebase/firestore";
+import { REDIRECTED_BLOG_SLUGS } from "@/lib/blog-redirects";
+import { newBlogs } from "@/data/new-blogs";
 import { db } from "@/lib/firebase";
 
 export const metadata: Metadata = {
@@ -98,6 +100,15 @@ export default async function BlogsPage() {
   } catch (error) {
     console.error("Error fetching blogs:", error);
   }
+
+  // Hide merged (redirected) posts and add posts that live in src/data/new-blogs.ts
+  const firestoreSlugs = new Set(fetchedBlogs.map((b) => b.slug));
+  fetchedBlogs = [
+    ...newBlogs
+      .filter((b) => !firestoreSlugs.has(b.slug))
+      .map((b) => ({ title: b.title, category: b.category, excerpt: b.excerpt, slug: b.slug, image: b.image, date: b.publishedAt })),
+    ...fetchedBlogs.filter((b) => !REDIRECTED_BLOG_SLUGS.has(b.slug)),
+  ];
 
   return (
     <div className="w-full min-h-screen bg-[#f2decc]">
