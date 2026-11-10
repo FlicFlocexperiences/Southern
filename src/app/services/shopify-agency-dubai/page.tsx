@@ -217,6 +217,9 @@ export default function ShopifyAgencyDubaiPage() {
                 Grow your brand across the Middle East with our full suite of digital services:
               </p>
               <div className="flex flex-wrap gap-2.5">
+                <Link href="/services/luxury-shopify-agency-uae" className="inline-flex items-center px-3.5 py-1.5 rounded-lg bg-white border border-black/10 text-[13px] font-semibold text-[#432d1c] hover:text-[#de5e18] hover:border-[#de5e18] transition-colors">
+                  Luxury Shopify UAE &rarr;
+                </Link>
                 <Link href="/services/web-development" className="inline-flex items-center px-3.5 py-1.5 rounded-lg bg-white border border-black/10 text-[13px] font-semibold text-[#432d1c] hover:text-[#de5e18] hover:border-[#de5e18] transition-colors">
                   Custom Web Development &rarr;
                 </Link>

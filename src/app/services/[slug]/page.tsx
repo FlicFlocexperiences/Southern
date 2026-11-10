@@ -17,6 +17,7 @@ const staticFolderSlugs = new Set([
   "seo",
   "branding",
   "shopify-agency-dubai",
+  "luxury-shopify-agency-uae",
   "ios-app-development",
   "influencer-marketing",
 ]);

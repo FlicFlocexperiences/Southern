@@ -58,11 +58,6 @@ const nextConfig: NextConfig = {
       // Merged blog posts (SEO consolidation) — list lives in src/lib/blog-redirects.ts
       ...BLOG_REDIRECTS.map((r) => ({ source: `/blogs/${r.from}`, destination: r.to, permanent: true })),
       {
-        source: "/services/luxury-shopify-agency-uae",
-        destination: "/services/shopify-agency-dubai",
-        permanent: true,
-      },
-      {
         source: "/services/website-development",
         destination: "/services/web-development",
         permanent: true,
