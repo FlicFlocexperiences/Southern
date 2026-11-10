@@ -413,7 +413,7 @@ At Southern Edge Marketing, we create complete brand identities that stand out. 
       { title: "100+ Stores Built", subtitle: "Enterprise & High-Growth Brands" },
       { title: "Official Partner", subtitle: "Shopify Plus & Hydrogen Certified" },
       { title: "Sub-1s Checkout", subtitle: "Mobile Speed Optimization" },
-      { title: "Payment & ERP Integrations", subtitle: "Razorpay, Tabby, Tamara & ERP Automation" },
+      { title: "Payment & ERP Integrations", subtitle: "BNPL, Payment Gateways & ERP Automation" },
     ],
     description1: "Certified Shopify Plus & Hydrogen agency. We build custom high-converting Shopify stores, bespoke apps, and ERP integrations for growing brands.",
     description2: "From headless Shopify architectures with Next.js Hydrogen to native Arabic RTL localization and Tamara/Tabby BNPL integrations, we build high-converting e-commerce systems.",
