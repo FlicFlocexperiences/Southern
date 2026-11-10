@@ -79,9 +79,9 @@ export default function ShopifyAgencyDubaiPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
       />
       <ServiceHero 
-        title={"Shopify Web Development Agency in Dubai & UAE"}
-        tagline={"High-converting storefronts engineered for the Middle East."}
-        breadcrumbTitle={"Shopify Agency Dubai"}
+        title={"Shopify & Shopify Plus Web Development Agency"}
+        tagline={"High-converting storefronts engineered to sell."}
+        breadcrumbTitle={"Shopify Development"}
       />
       
       <ServiceLayout sections={tableOfContents}>
@@ -101,7 +101,7 @@ export default function ShopifyAgencyDubaiPage() {
               <div className="bg-white/90 border border-black/10 rounded-xl p-4 text-center shadow-xs">
                 <p className="text-[20px] md:text-[24px] font-black text-[#de5e18] tracking-tight">&lt; 1.0s</p>
                 <p className="text-[12px] md:text-[13px] font-bold text-[#432d1c] uppercase tracking-wide mt-1">Checkout Speed</p>
-                <p className="text-[11px] text-black/60 hidden sm:block mt-0.5">GCC Mobile Tuned</p>
+                <p className="text-[11px] text-black/60 hidden sm:block mt-0.5">Mobile Tuned</p>
               </div>
               <div className="bg-white/90 border border-black/10 rounded-xl p-4 text-center shadow-xs">
                 <p className="text-[20px] md:text-[24px] font-black text-[#de5e18] tracking-tight">4.2x</p>

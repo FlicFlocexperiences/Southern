@@ -401,23 +401,23 @@ At Southern Edge Marketing, we create complete brand identities that stand out. 
   {
     slug: "shopify-agency-dubai",
     title: "Shopify Web Development Agency",
-    h1Title: "Shopify Web Development Agency in Dubai & UAE",
-    tagline: "High-converting storefronts engineered for the Middle East.",
+    h1Title: "Shopify & Shopify Plus Web Development Agency",
+    tagline: "High-converting storefronts engineered to sell.",
     metaTitle: "Shopify Agency Dubai & UAE (2026)",
     metaDescription: "Premier Shopify Plus agency in Dubai & UAE. We build custom high-converting Shopify stores, bespoke apps, and ERP integrations for top brands.",
     statValue: "4.2x",
     statLabel: "AVERAGE REVENUE & CONVERSION MULTIPLIER",
-    tags: ["Shopify Plus", "Dubai E-Commerce", "Headless Hydrogen", "Tabby & Tamara", "Arabic UX"],
+    tags: ["Shopify Plus", "Custom Themes", "Headless Hydrogen", "Payment Integrations", "Store Migrations"],
     image: "/services/website-development.png",
     trustBadges: [
       { title: "100+ Stores Built", subtitle: "Enterprise & High-Growth Brands" },
       { title: "Official Partner", subtitle: "Shopify Plus & Hydrogen Certified" },
-      { title: "Sub-1s Checkout", subtitle: "GCC Mobile Speed Optimization" },
-      { title: "Local Integrations", subtitle: "Tamara, Tabby & ERP Automation" },
+      { title: "Sub-1s Checkout", subtitle: "Mobile Speed Optimization" },
+      { title: "Payment & ERP Integrations", subtitle: "Razorpay, Tabby, Tamara & ERP Automation" },
     ],
-    description1: "Premier Shopify Plus agency in Dubai & UAE. We build custom high-converting Shopify stores, bespoke apps, and ERP integrations for top brands.",
+    description1: "Certified Shopify Plus & Hydrogen agency. We build custom high-converting Shopify stores, bespoke apps, and ERP integrations for growing brands.",
     description2: "From headless Shopify architectures with Next.js Hydrogen to native Arabic RTL localization and Tamara/Tabby BNPL integrations, we build high-converting e-commerce systems.",
-    callout: "Engineered for maximum GCC e-commerce revenue with sub-second page loads and seamless regional payment integrations.",
+    callout: "Engineered for maximum e-commerce revenue with sub-second page loads and seamless local payment integrations.",
     content: `### Enterprise Shopify & Shopify Plus Store Development
 The United Arab Emirates is the premier e-commerce capital of the Middle East, propelled by the Dubai Economic Agenda D33 and dedicated logistics hubs like Dubai CommerCity and Dubai Internet City. In a market where high-net-worth consumers in Downtown Dubai, Business Bay, and Dubai Marina demand effortless digital shopping experiences, standard off-the-shelf templates simply do not suffice. As a leading Shopify agency in Dubai, Southern Edge Marketing engineers custom Shopify and Shopify Plus storefronts tailored specifically for high-growth direct-to-consumer (D2C) and omnichannel enterprise brands. We build bespoke Liquid themes and modular architectures from the ground up, ensuring your digital storefront reflects the luxury, sophistication, and speed that GCC consumers expect.
 
