@@ -409,7 +409,7 @@ export const newBlogs: Blog[] = [
 </ul>
 
 <h2>Conclusion</h2>
-<p>Luxury and fashion brands in Dubai can launch a premium Shopify store by getting the fundamentals right: payments, bilingual content, VAT and shipping, editorial design, and concierge-style service. For hands-on help, see our ${a("/services/luxury-shopify-agency-uae", "luxury and fashion Shopify agency in the UAE")} or compare options in our list of ${a("/blogs/best-shopify-agencies-uae", "the best Shopify agencies in the UAE")}.</p>`,
+<p>Luxury and fashion brands in Dubai can launch a premium Shopify store by getting the fundamentals right: payments, bilingual content, VAT and shipping, editorial design, and concierge-style service. For hands-on help, see our ${a("/services/shopify-agency-dubai", "Shopify development agency")} or compare options in our list of ${a("/blogs/best-shopify-agencies-uae", "the best Shopify agencies in the UAE")}.</p>`,
     faqs: [
       { question: "Is Shopify good for luxury brands?", answer: "Yes. With a custom theme or headless setup, Shopify supports premium editorial design while providing a fast, secure checkout, multi-currency selling and a large app ecosystem." },
       { question: "Can a Shopify store be in Arabic and English?", answer: "Yes. Shopify supports multiple languages, and themes can be built for right-to-left Arabic layouts with proper Arabic typography." },
