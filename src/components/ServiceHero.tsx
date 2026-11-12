@@ -7,12 +7,14 @@ interface ServiceHeroProps {
   title: string;
   tagline?: string;
   breadcrumbTitle: string;
+  parent?: { href: string; label: string };
+  skipSchema?: boolean;
 }
 
-export function ServiceHero({ title, tagline, breadcrumbTitle }: ServiceHeroProps) {
+export function ServiceHero({ title, tagline, breadcrumbTitle, parent, skipSchema }: ServiceHeroProps) {
   return (
     <>
-      <CityServiceSchema title={title} />
+      {!skipSchema && <CityServiceSchema title={title} />}
       {/* Top Hero Section - Full Width */}
       <div className="w-full bg-[#432d1c] text-white pt-[120px] lg:pt-[160px] pb-14 px-4 sm:px-6 lg:px-12 relative overflow-hidden text-center flex flex-col items-center">
         <div className="text-[11px] sm:text-[12px] tracking-[0.2em] font-bold text-[#de5e18] uppercase mb-2">
@@ -55,6 +57,12 @@ export function ServiceHero({ title, tagline, breadcrumbTitle }: ServiceHeroProp
           <span>/</span>
           <Link href="/services" className="hover:text-[#de5e18] transition-colors">Services</Link>
           <span>/</span>
+          {parent && (
+            <>
+              <Link href={parent.href} className="hover:text-[#de5e18] transition-colors">{parent.label}</Link>
+              <span>/</span>
+            </>
+          )}
           <span className="text-[#de5e18] font-semibold truncate max-w-[200px] sm:max-w-none">{breadcrumbTitle}</span>
         </div>
       </div>

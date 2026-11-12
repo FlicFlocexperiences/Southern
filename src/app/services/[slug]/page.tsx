@@ -20,6 +20,7 @@ const staticFolderSlugs = new Set([
   "luxury-shopify-agency-uae",
   "ios-app-development",
   "influencer-marketing",
+  "meta-ads",
 ]);
 
 export function generateStaticParams() {

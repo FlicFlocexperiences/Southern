@@ -4,12 +4,13 @@ import { services } from '@/data/services';
 import { projects } from '@/data/projects';
 import { blogs as staticBlogs } from '@/data/blogs';
 import { articles } from '@/data/articles';
+import { seoPages } from '@/data/seo-pages';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 
 // Real "last changed" dates instead of the build time, so Google trusts lastmod.
 // Bump SITE_CONTENT_UPDATED when service/static page content changes.
-const SITE_CONTENT_UPDATED = new Date('2026-11-09');
+const SITE_CONTENT_UPDATED = new Date('2026-11-13');
 
 const parseDate = (value: unknown): Date | undefined => {
   if (!value) return undefined;
@@ -147,6 +148,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...allCities.map(city => `/services/social-media-management/${city}`),
     ...allCities.filter(city => city !== 'chandigarh').map(city => `/services/branding/${city}`),
     ...allCities.map(city => `/services/seo/${city}`),
+    ...seoPages.map((p) => `/services/${p.service}/${p.slug}`),
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: SITE_CONTENT_UPDATED,

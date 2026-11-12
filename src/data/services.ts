@@ -735,7 +735,7 @@ For tech apps and high-value products, we create detailed YouTube reviews and vi
     title: "Meta Ads Agency",
     h1Title: "Meta Ads Agency for Leads & Sales",
     tagline: "Facebook & Instagram ads that bring enquiries, not just likes.",
-    metaTitle: "Meta Ads Agency in Delhi & Dubai",
+    metaTitle: "Meta Ads Agency | Facebook & Instagram Ads Management",
     metaDescription: "Meta Ads agency running Facebook & Instagram campaigns for leads and sales. Lead forms, WhatsApp ads, pixel & CAPI tracking. Free ad account audit.",
     tags: ["Facebook Ads", "Instagram Ads", "Lead Generation", "WhatsApp Ads", "Pixel & CAPI", "Retargeting"],
     image: "/services/performance-marketing.png",
@@ -777,7 +777,7 @@ Without this, you are optimising blind and paying for the wrong audience.
 Creative is the biggest lever in Meta Ads today. We test several hooks, formats and offers at once: Reels, static images, carousels and user-generated-style videos. Then we keep the winners and refresh tired ads before costs rise. Regional-language creatives help when your audience is outside the metros. For ongoing content, see our [social media management](/services/social-media-management) and [influencer marketing](/services/influencer-marketing) services.
 
 ### Meta Ads in Delhi, Gurgaon and Dubai
-We run campaigns for restaurants and cafes, hotels and homestays, real estate, legal and financial services, fashion, food and D2C brands across India and the UAE. Local targeting, local offers and local-language creative make a measurable difference to cost per lead. See examples of our lead generation work for [Credsettle](/projects/credsettle) and [Kamal Motors](/projects/kamal-motors).
+We run campaigns in [Delhi](/services/meta-ads/delhi), [Gurgaon](/services/meta-ads/gurgaon), [Noida](/services/meta-ads/noida), [Mumbai](/services/meta-ads/mumbai), [Bengaluru](/services/meta-ads/bengaluru) and [Dubai](/services/meta-ads/dubai), and we run campaigns for restaurants and cafes, hotels and homestays, real estate, legal and financial services, fashion, food and D2C brands across India and the UAE. Local targeting, local offers and local-language creative make a measurable difference to cost per lead. See examples of our lead generation work for [Credsettle](/projects/credsettle) and [Kamal Motors](/projects/kamal).
 
 ### What You Get Every Month
 - Campaign strategy and budget plan tied to your CPL or ROAS target
