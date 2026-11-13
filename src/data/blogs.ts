@@ -118,7 +118,7 @@ export const blogs: Blog[] = [
     title: "Essential Typography Rules for Readability",
     metaTitle: "Digital Typography Rules 2026",
     excerpt: "Master line heights, letter spacing, and font hierarchies to ensure maximum content readability and lower bounce rates across devices.",
-    publishedAt: "June 22, 2001",
+    publishedAt: "2026-07-08",
     category: "TYPOGRAPHY",
     image: "/casestudies/11.jpg",
     content: `<p>Typography dictates how users read your content. Poor spacing, sizing, or font choices make long-form content tiring to read, causing users to leave your site. Discover how our <a href="/services/branding" class="text-[#de5e18] hover:underline font-semibold">branding and creative team</a> crafts high-impact typography systems.</p>
