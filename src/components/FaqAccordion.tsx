@@ -6,9 +6,10 @@ import { simplifyReadabilityText } from "@/lib/seo-utils";
 interface FaqAccordionProps {
   faqs: { question: string; answer: string }[];
   headingTag?: "h2" | "h3";
+  simplify?: boolean;
 }
 
-export function FaqAccordion({ faqs, headingTag = "h2" }: FaqAccordionProps) {
+export function FaqAccordion({ faqs, headingTag = "h2", simplify = true }: FaqAccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   if (!faqs || faqs.length === 0) return null;
@@ -28,7 +29,7 @@ export function FaqAccordion({ faqs, headingTag = "h2" }: FaqAccordionProps) {
               name: faq.question,
               acceptedAnswer: {
                 "@type": "Answer",
-                text: simplifyReadabilityText(faq.answer),
+                text: simplify ? simplifyReadabilityText(faq.answer) : faq.answer,
               },
             })),
           }),
@@ -40,7 +41,7 @@ export function FaqAccordion({ faqs, headingTag = "h2" }: FaqAccordionProps) {
       <div className="flex flex-col gap-3">
         {faqs.map((faq, index) => {
           const isOpen = openIndex === index;
-          const displayAnswer = simplifyReadabilityText(faq.answer);
+          const displayAnswer = simplify ? simplifyReadabilityText(faq.answer) : faq.answer;
           return (
             <div 
               key={index} 

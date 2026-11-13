@@ -116,10 +116,11 @@ export function SeoLandingPage({ page }: { page: SeoPage }) {
         breadcrumbTitle={page.label}
         parent={{ href: service.href, label: service.name }}
         skipSchema
+        simplify={false}
         trustBadges={badges}
       />
 
-      <ServiceLayout sections={toc}>
+      <ServiceLayout sections={toc} simplify={false}>
         {page.sections.map((section, idx) => (
           <section key={section.id}>
             <h2 id={section.id} className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
@@ -175,7 +176,7 @@ export function SeoLandingPage({ page }: { page: SeoPage }) {
           </div>
         </section>
 
-        <FaqAccordion faqs={page.faqs} />
+        <FaqAccordion faqs={page.faqs} simplify={false} />
       </ServiceLayout>
 
       <SeoHubLinks

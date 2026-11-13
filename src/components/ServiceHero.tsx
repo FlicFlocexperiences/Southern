@@ -10,9 +10,10 @@ interface ServiceHeroProps {
   parent?: { href: string; label: string };
   skipSchema?: boolean;
   trustBadges?: { title: string; subtitle: string }[];
+  simplify?: boolean;
 }
 
-export function ServiceHero({ title, tagline, breadcrumbTitle, parent, skipSchema, trustBadges }: ServiceHeroProps) {
+export function ServiceHero({ title, tagline, breadcrumbTitle, parent, skipSchema, trustBadges, simplify = true }: ServiceHeroProps) {
   return (
     <>
       {!skipSchema && <CityServiceSchema title={title} />}
@@ -27,7 +28,7 @@ export function ServiceHero({ title, tagline, breadcrumbTitle, parent, skipSchem
         </h1>
 
         <p className="text-[13px] sm:text-[15px] text-white/70 max-w-[600px] leading-relaxed mb-5 font-light">
-          {simplifyReadabilityText(tagline || "Engineered to convert visitors into customers, not just look good. High-performance, mobile-first growth systems.")}
+          {(simplify ? simplifyReadabilityText : (t: string) => t)(tagline || "Engineered to convert visitors into customers, not just look good. High-performance, mobile-first growth systems.")}
         </p>
 
         <Link href="/contact" className="inline-block">

@@ -47,9 +47,11 @@ export interface Section {
 interface ServiceLayoutProps {
   sections: Section[];
   children: React.ReactNode;
+  /** Set false for copy already written in plain language (keeps product terms like "Conversions API" intact). */
+  simplify?: boolean;
 }
 
-export function ServiceLayout({ sections, children }: ServiceLayoutProps) {
+export function ServiceLayout({ sections, children, simplify = true }: ServiceLayoutProps) {
   const [currentUrl, setCurrentUrl] = useState("");
   const [activeId, setActiveId] = useState("");
   const sidebarRef = useRef<HTMLElement>(null);
@@ -240,7 +242,7 @@ export function ServiceLayout({ sections, children }: ServiceLayoutProps) {
         {/* Article Content Container */}
         <article className="w-full bg-white border border-black/8 rounded-xl p-6 md:p-8 lg:p-10 shadow-sm">
           <div className="prose prose-lg max-w-none text-[#432d1c] font-sans text-left">
-            {processChildren(children)}
+            {simplify ? processChildren(children) : children}
           </div>
 
           {/* Share Post */}
