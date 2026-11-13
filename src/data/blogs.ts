@@ -56,7 +56,7 @@ export const blogs: Blog[] = [
     title: "Understanding Color Theory in Digital Branding",
     metaTitle: "Color Theory in Digital Branding 2026",
     excerpt: "Discover how color choices affect human psychology, brand recognition, and conversions across digital storefronts and web apps.",
-    publishedAt: "March 12, 2001",
+    publishedAt: "2026-07-08",
     category: "BRANDING",
     image: "/casestudies/2.jpg",
     content: `<p>Colors trigger subconscious responses and shape how customers perceive your brand value. Choosing a cohesive digital palette is key to building consumer trust and brand authority with our <a href="/services/branding" class="text-[#de5e18] hover:underline font-semibold">branding and creative strategy</a> team.</p>
@@ -80,7 +80,7 @@ export const blogs: Blog[] = [
     title: "How UX Writing Shapes User Behavior",
     metaTitle: "UX Writing & Conversion Optimization",
     excerpt: "Discover how microcopy on buttons, labels, and forms guides user decisions, eliminates interface friction, and increases conversions.",
-    publishedAt: "April 5, 2001",
+    publishedAt: "2026-07-08",
     category: "STRATEGY",
     image: "/casestudies/5.jpg",
     content: `<p>UX writing is the practice of crafting the copy that guides users through a product interface. Clear, concise, and useful microcopy reduces cognitive load and directs conversions on <a href="/services/web-development" class="text-[#de5e18] hover:underline font-semibold">custom web applications</a>.</p>
@@ -99,7 +99,7 @@ export const blogs: Blog[] = [
     title: "The Rise of Minimalist Web Design",
     metaTitle: "Minimalist Web Design & Speed 2026",
     excerpt: "Learn how minimalist web design eliminates visual clutter, boosts Core Web Vitals page speed, and keeps visitors focused on conversions.",
-    publishedAt: "May 18, 2001",
+    publishedAt: "2026-07-08",
     category: "DESIGN",
     image: "/casestudies/8.jpg",
     content: `<p>Minimalism is not about empty space—it is about the intentional removal of distraction to focus attention on essential visual elements. Integrated with our <a href="/services/web-development" class="text-[#de5e18] hover:underline font-semibold">custom website development services</a>, it delivers unparalleled conversion rates.</p>

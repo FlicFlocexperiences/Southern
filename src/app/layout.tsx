@@ -97,7 +97,10 @@ const jsonLdSchema = {
       "address": [
         {
           "@type": "PostalAddress",
-          "addressLocality": "Delhi",
+          "streetAddress": "Block G, Sushant Lok 2, Sector 57",
+          "addressLocality": "Gurugram",
+          "addressRegion": "Haryana",
+          "postalCode": "122011",
           "addressCountry": "IN"
         },
         {
@@ -114,6 +117,18 @@ const jsonLdSchema = {
         { "@type": "Country", "name": "Australia" },
         { "@type": "Country", "name": "Canada" }
       ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 28.439158,
+        "longitude": 77.0909696
+      },
+      "hasMap": "https://share.google/93z22o6RCevNs5X8T",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "10:00",
+        "closes": "19:00"
+      },
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+918700901769",
@@ -153,7 +168,8 @@ const jsonLdSchema = {
       "sameAs": [
         "https://www.linkedin.com/company/southernedgemarketing/",
         "https://www.instagram.com/southernedgemarketing/",
-        "https://www.facebook.com/southernedgemarketing"
+        "https://www.facebook.com/southernedgemarketing",
+        "https://share.google/93z22o6RCevNs5X8T"
       ]
     },
     {
