@@ -1,6 +1,6 @@
 import { getServiceBySlug } from "@/data/services";
 import { ServiceContent } from "@/components/ServiceContent";
-import { SeoHubLinks } from "@/components/seo-landing-page";
+import { SeoHubLinks } from "@/components/seo-hub";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 

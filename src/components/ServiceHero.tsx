@@ -9,9 +9,10 @@ interface ServiceHeroProps {
   breadcrumbTitle: string;
   parent?: { href: string; label: string };
   skipSchema?: boolean;
+  trustBadges?: { title: string; subtitle: string }[];
 }
 
-export function ServiceHero({ title, tagline, breadcrumbTitle, parent, skipSchema }: ServiceHeroProps) {
+export function ServiceHero({ title, tagline, breadcrumbTitle, parent, skipSchema, trustBadges }: ServiceHeroProps) {
   return (
     <>
       {!skipSchema && <CityServiceSchema title={title} />}
@@ -48,6 +49,20 @@ export function ServiceHero({ title, tagline, breadcrumbTitle, parent, skipSchem
             </div>
           </button>
         </Link>
+
+        {trustBadges && trustBadges.length > 0 && (
+          <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-[840px] w-full px-2">
+            {trustBadges.map((badge, idx) => (
+              <div
+                key={idx}
+                className="bg-white/5 border border-white/10 rounded-xl p-3 sm:p-3.5 backdrop-blur-sm flex flex-col items-center justify-center text-center transition-all duration-300 hover:border-[#de5e18]/40 hover:bg-white/10"
+              >
+                <span className="text-[#ffa479] font-extrabold text-[14px] sm:text-[16px] tracking-tight">{badge.title}</span>
+                <span className="text-white/70 text-[11px] sm:text-[12px] font-light mt-0.5">{badge.subtitle}</span>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Breadcrumb Navigation - Moved outside the dark hero */}

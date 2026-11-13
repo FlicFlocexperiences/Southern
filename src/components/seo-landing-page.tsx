@@ -3,7 +3,10 @@ import Link from "next/link";
 import { ServiceHero } from "@/components/ServiceHero";
 import { ServiceLayout } from "@/components/ServiceLayout";
 import { FaqAccordion } from "@/components/FaqAccordion";
-import { getSeoPagesFor, type SeoPage } from "@/data/seo-pages";
+import { type SeoPage } from "@/data/seo-pages";
+import { getServiceBySlug } from "@/data/services";
+import { ConsultButton, ArrowCircle } from "@/components/consult-button";
+import { SeoHubLinks } from "@/components/seo-hub";
 
 const BASE = "https://www.southernedgemarketing.com";
 
@@ -12,7 +15,16 @@ const SERVICE_META: Record<SeoPage["service"], { name: string; href: string }> =
   "web-development": { name: "Website Development", href: "/services/web-development" },
 };
 
-const linkClass = "text-[#de5e18] font-semibold underline underline-offset-2 hover:text-[#432d1c]";
+// Hero badges. Meta Ads reuses the main service page's badges; web development
+// uses claims that hold for every industry page.
+const WEB_DEV_BADGES = [
+  { title: "Shopify Plus", subtitle: "& Hydrogen Certified" },
+  { title: "Custom Builds", subtitle: "Next.js, Shopify & Headless" },
+  { title: "SEO-Ready", subtitle: "Schema, Speed & Clean URLs" },
+  { title: "India & UAE", subtitle: "Delhi and Dubai Team" },
+];
+
+const linkClass = "text-[#de5e18] hover:underline font-semibold transition-colors duration-200";
 const strongClass = "font-semibold text-[#de5e18] tracking-tight";
 
 // Renders **bold** and [text](/href) inside copy strings.
@@ -85,7 +97,9 @@ function PageSchema({ page }: { page: SeoPage }) {
 
 export function SeoLandingPage({ page }: { page: SeoPage }) {
   const service = SERVICE_META[page.service];
-  const siblings = getSeoPagesFor(page.service, page.kind).filter((p) => p.slug !== page.slug);
+  const badges =
+    page.service === "meta-ads" ? getServiceBySlug("meta-ads")?.trustBadges ?? [] : WEB_DEV_BADGES;
+  const where = page.kind === "city" ? `in ${page.label}` : `for ${page.label}`;
 
   const toc = [
     ...page.sections.map((s) => ({ id: s.id, title: s.h2 })),
@@ -102,10 +116,11 @@ export function SeoLandingPage({ page }: { page: SeoPage }) {
         breadcrumbTitle={page.label}
         parent={{ href: service.href, label: service.name }}
         skipSchema
+        trustBadges={badges}
       />
 
       <ServiceLayout sections={toc}>
-        {page.sections.map((section) => (
+        {page.sections.map((section, idx) => (
           <section key={section.id}>
             <h2 id={section.id} className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mt-8 mb-4 font-sans scroll-mt-28">
               {section.h2}
@@ -116,92 +131,59 @@ export function SeoLandingPage({ page }: { page: SeoPage }) {
               </p>
             ))}
             {section.bullets && (
-              <ul className="list-disc pl-6 my-5 space-y-2 text-[17px] md:text-[18px] leading-[1.7] text-[#432d1c]/90 font-sans">
+              <ul className="list-disc pl-6 mb-6 text-[#432d1c]/80 space-y-2 text-[16px] md:text-[18px] font-normal font-sans">
                 {section.bullets.map((b, i) => (
                   <li key={i}>{renderInline(b, `${section.id}-li${i}`)}</li>
                 ))}
               </ul>
             )}
+
+            {idx === 1 && (
+              <div className="not-prose my-10 w-full rounded-2xl bg-[#432d1c] px-6 py-8 md:px-10 text-center flex flex-col items-center">
+                <div className="text-[11px] sm:text-[12px] tracking-[0.2em] font-bold text-[#de5e18] uppercase mb-2">[ FREE AUDIT ]</div>
+                <p className="text-[20px] md:text-[24px] font-bold text-white leading-snug mb-2 max-w-[520px]">
+                  {page.service === "meta-ads"
+                    ? `Want better Meta Ads results ${where}?`
+                    : `Planning a website ${where}?`}
+                </p>
+                <p className="text-[14px] md:text-[15px] text-white/70 font-light mb-6 max-w-[480px]">
+                  {page.service === "meta-ads"
+                    ? "Share your ad account and goals. We'll show you what's wasting budget and what to test first."
+                    : "Tell us what you need. We'll suggest the right platform, features and a fixed quote."}
+                </p>
+                <ConsultButton />
+              </div>
+            )}
           </section>
         ))}
 
-        <section className="w-full bg-white border border-black/10 rounded-2xl p-6 md:p-8 shadow-sm mt-10 mb-6">
-          <h2 id="related" className="text-[20px] md:text-[22px] font-bold text-[#432d1c] mb-4 scroll-mt-28">
+        <section className="not-prose w-full mt-10 mb-6">
+          <h2 id="related" className="text-[22px] md:text-[28px] font-bold text-[#432d1c] mb-4 scroll-mt-28">
             Related Reading
           </h2>
-          <ul className="space-y-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {page.related.map((r) => (
-              <li key={r.href}>
-                <Link href={r.href} className={linkClass}>{r.label}</Link>
-              </li>
+              <Link
+                key={r.href}
+                href={r.href}
+                className="group flex items-center justify-between bg-[#fbf8f5] hover:bg-white transition-all duration-300 rounded-xl p-4 border border-black/5 hover:border-[#e6d0bb] hover:-translate-y-0.5 no-underline"
+              >
+                <span className="text-[15px] font-bold text-[#3b2b23] leading-snug">{r.label}</span>
+                <ArrowCircle />
+              </Link>
             ))}
-          </ul>
+          </div>
         </section>
 
         <FaqAccordion faqs={page.faqs} />
-
-        <section className="mt-12">
-          <h2 className="text-[20px] md:text-[22px] font-bold text-[#432d1c] mb-4">
-            {page.kind === "city" ? `${service.name} in Other Cities` : `${service.name} for Other Industries`}
-          </h2>
-          <div className="flex flex-wrap gap-2">
-            {siblings.map((s) => (
-              <Link
-                key={s.slug}
-                href={`${service.href}/${s.slug}`}
-                className="px-4 py-2 rounded-full bg-[#fbf8f5] border border-[#e6d0bb] text-[14px] text-[#432d1c] hover:border-[#de5e18] hover:text-[#de5e18] transition-colors"
-              >
-                {s.kind === "city" ? `${service.name} in ${s.label}` : `${service.name} for ${s.label}`}
-              </Link>
-            ))}
-            <Link
-              href={service.href}
-              className="px-4 py-2 rounded-full bg-[#432d1c] text-white text-[14px] hover:bg-[#de5e18] transition-colors"
-            >
-              All {service.name} Services
-            </Link>
-          </div>
-        </section>
       </ServiceLayout>
+
+      <SeoHubLinks
+        service={page.service}
+        excludeSlug={page.slug}
+        title={page.kind === "city" ? `${service.name} Across Our Markets` : `More ${service.name} Solutions`}
+        intro={`Looking beyond ${page.label}? Explore how we run ${service.name.toLowerCase()} for other cities and industries.`}
+      />
     </div>
-  );
-}
-
-// Hub block for the parent service pages: links to every city/industry page.
-export function SeoHubLinks({ service }: { service: SeoPage["service"] }) {
-  const meta = SERVICE_META[service];
-  const cities = getSeoPagesFor(service, "city");
-  const industries = getSeoPagesFor(service, "industry");
-  const group = (title: string, items: SeoPage[], prefix: string) =>
-    items.length > 0 && (
-      <div className="mb-8">
-        <h3 className="text-[18px] md:text-[20px] font-bold text-[#3b2b23] mb-4">{title}</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {items.map((p) => (
-            <Link
-              key={p.slug}
-              href={`${meta.href}/${p.slug}`}
-              className="block rounded-xl bg-[#fbf8f5] border border-[#e6d0bb]/70 px-5 py-4 text-[#432d1c] hover:border-[#de5e18] hover:text-[#de5e18] transition-colors"
-            >
-              <span className="font-semibold">{prefix} {p.label}</span>
-            </Link>
-          ))}
-        </div>
-      </div>
-    );
-
-  return (
-    <section className="w-full max-w-[1200px] mx-auto px-4 md:px-8 py-16 border-t border-[#e6d0bb]/50">
-      <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-[#3b2b23] mb-3">
-          {meta.name} by {cities.length > 0 ? "City and Industry" : "Industry"}
-        </h2>
-        <p className="text-lg text-[#554238] max-w-3xl mx-auto">
-          Every market and industry needs a different approach. Find the page that fits your business.
-        </p>
-      </div>
-      {group(`${meta.name} by City`, cities, `${meta.name} in`)}
-      {group(`${meta.name} by Industry`, industries, `${meta.name} for`)}
-    </section>
   );
 }
