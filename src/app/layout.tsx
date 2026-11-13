@@ -85,7 +85,8 @@ const jsonLdSchema = {
       "url": SITE_URL,
       "logo": {
         "@type": "ImageObject",
-        "url": `${SITE_URL}/logo.png`
+        "url": `${SITE_URL}/logo.png`,
+        "caption": "Southern Edge Marketing logo"
       },
       "image": `${SITE_URL}/logo.png`,
       "description": "Digital marketing and web development agency in Delhi and Dubai offering SEO, Meta and Google Ads, Shopify and Next.js websites, mobile app development, branding and social media management.",
@@ -105,7 +106,39 @@ const jsonLdSchema = {
           "addressCountry": "AE"
         }
       ],
-      "areaServed": ["IN", "AE"],
+      "areaServed": [
+        { "@type": "Country", "name": "India" },
+        { "@type": "Country", "name": "United Arab Emirates" },
+        { "@type": "Country", "name": "United Kingdom" },
+        { "@type": "Country", "name": "United States" },
+        { "@type": "Country", "name": "Australia" },
+        { "@type": "Country", "name": "Canada" }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+918700901769",
+        "email": "info@southernedgemarketing.com",
+        "contactType": "sales",
+        "availableLanguage": ["English", "Hindi"],
+        "url": `${SITE_URL}/contact`
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Digital marketing and development services",
+        "itemListElement": [
+          ["SEO and AI search optimization", "/services/seo"],
+          ["Meta Ads management", "/services/meta-ads"],
+          ["Website development", "/services/web-development"],
+          ["Shopify development", "/services/shopify-agency-dubai"],
+          ["Mobile app development", "/services/app-development"],
+          ["Social media management", "/services/social-media-management"],
+          ["Branding", "/services/branding"],
+          ["Influencer marketing", "/services/influencer-marketing"]
+        ].map(([name, path]) => ({
+          "@type": "Offer",
+          "itemOffered": { "@type": "Service", "name": name, "url": `${SITE_URL}${path}` }
+        }))
+      },
       "knowsAbout": [
         "Search engine optimization",
         "Generative engine optimization",
@@ -128,7 +161,8 @@ const jsonLdSchema = {
       "@id": `${SITE_URL}/#website`,
       "name": "Southern Edge Marketing",
       "url": SITE_URL,
-      "publisher": { "@id": `${SITE_URL}/#organization` }
+      "publisher": { "@id": `${SITE_URL}/#organization` },
+      "inLanguage": "en"
     }
   ]
 };

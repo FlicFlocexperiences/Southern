@@ -10,7 +10,17 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         // Explicitly invite AI crawlers and LLM agents
-        userAgent: ['GPTBot', 'ChatGPT-User', 'ClaudeBot', 'Google-Extended', 'PerplexityBot', 'anthropic-ai'],
+        // Search/answer engines: OpenAI, Anthropic, Perplexity, Google Gemini, Apple Intelligence, Amazon, Meta AI, Bing Copilot
+        userAgent: [
+          'GPTBot', 'OAI-SearchBot', 'ChatGPT-User',
+          'ClaudeBot', 'Claude-SearchBot', 'Claude-User', 'anthropic-ai',
+          'PerplexityBot', 'Perplexity-User',
+          'Google-Extended', 'GoogleOther',
+          'Applebot', 'Applebot-Extended',
+          'Amazonbot',
+          'FacebookBot', 'meta-externalagent',
+          'bingbot', 'DuckAssistBot', 'MistralAI-User',
+        ],
         allow: '/',
       }
     ],

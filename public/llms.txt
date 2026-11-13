@@ -4,6 +4,9 @@
 
 ## Services
 
+- [Meta Ads Management](https://www.southernedgemarketing.com/services/meta-ads): Facebook and Instagram ad campaigns for lead generation, WhatsApp enquiries and e-commerce sales, with Pixel and Conversions API tracking.
+- [Meta Ads for Real Estate](https://www.southernedgemarketing.com/services/meta-ads/real-estate): Lead ads and qualification flows for builders, brokers and property developers.
+- [Meta Ads for Restaurants](https://www.southernedgemarketing.com/services/meta-ads/restaurants): Footfall, reservation and catering-lead campaigns for restaurants, cafes and nightlife venues.
 - [SEO Services](https://www.southernedgemarketing.com/services/seo): Technical SEO, Core Web Vitals, on-page content, link building, local SEO and AI search optimization (AEO/GEO).
 - [Website Development](https://www.southernedgemarketing.com/services/web-development): Custom Next.js, React, Shopify and WooCommerce websites built for speed and conversion.
 - [Shopify Agency Dubai](https://www.southernedgemarketing.com/services/shopify-agency-dubai): Shopify store builds, migrations and conversion optimization for UAE e-commerce brands.
@@ -13,6 +16,8 @@
 - [Social Media Management](https://www.southernedgemarketing.com/services/social-media-management): Organic content plus paid Meta, LinkedIn and TikTok campaigns.
 - [Branding](https://www.southernedgemarketing.com/services/branding): Brand identity systems, logos, guidelines and creative strategy.
 - [Influencer Marketing](https://www.southernedgemarketing.com/services/influencer-marketing): Creator sourcing, campaign management and reporting.
+- [Website Development for Restaurants](https://www.southernedgemarketing.com/services/web-development/restaurants): Custom restaurant websites with menus, reservations and local SEO.
+- [Website Development for Law Firms](https://www.southernedgemarketing.com/services/web-development/law-firms): Lead-focused websites for legal practices and law firms.
 - [All services](https://www.southernedgemarketing.com/services): Overview of every service, including performance marketing on Meta and Google Ads.
 
 ## Proof
@@ -25,11 +30,19 @@
 
 - [Blog](https://www.southernedgemarketing.com/blogs): Guides on Meta Ads, Shopify, SEO, WordPress and web development, written by Ameet Nangia.
 - [Mastering Meta Ads for Business](https://www.southernedgemarketing.com/blogs/meta-ads-for-business-scaling-guide): Targeting, Conversions API setup, creative frameworks and budget allocation by funnel stage.
+- [Shopify Development Cost in India](https://www.southernedgemarketing.com/blogs/shopify-development-cost-in-india-delhi-ncr): Price ranges for Shopify store builds in Delhi NCR, by store size and feature set.
+- [Mobile App Development Cost in India](https://www.southernedgemarketing.com/blogs/mobile-app-development-cost-india): What drives app development cost in India, by platform and complexity.
+- [SEO Packages and Pricing in Gurgaon](https://www.southernedgemarketing.com/blogs/seo-packages-pricing-gurgaon): What monthly SEO packages include and cost for Gurgaon businesses.
+- [Meta Ads Cost in Dubai and UAE](https://www.southernedgemarketing.com/blogs/meta-ads-cost-dubai-uae-2026-budget): Budget planning for Facebook and Instagram ads in the UAE.
+- [Google Ads vs Meta Ads](https://www.southernedgemarketing.com/blogs/google-ads-vs-meta-ads-roi-guide): When each ad platform delivers better ROI, by business type.
+- [SEO, AEO and GEO Explained](https://www.southernedgemarketing.com/blogs/impact-seo-aeo-geo-business): How traditional SEO differs from answer-engine and generative-engine optimization.
+- [Next.js vs WordPress for SEO](https://www.southernedgemarketing.com/blogs/nextjs-vs-wordpress-seo-comparison): Speed, crawlability and SEO comparison of the two platforms.
 - [WooCommerce to Shopify Migration](https://www.southernedgemarketing.com/blogs/woocommerce-to-shopify-migration-services): Steps, risks and SEO preservation when moving a store to Shopify.
 
 ## Key Facts
 
 - Founded by Ameet Nangia
+- Shopify Plus and Hydrogen certified agency
 - Offices: Delhi, India and Dubai, United Arab Emirates
 - Serves clients in India, the UAE, the UK, the US and Australia
 - Industries: legal, healthcare, SaaS, real estate, education, e-commerce, fintech and hospitality

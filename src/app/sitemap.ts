@@ -64,7 +64,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error('Error fetching projects for sitemap:', error);
   }
 
-  const projectRoutes = Array.from(allProjectSlugs).map((slug) => ({
+  // Firestore slugs that 301 elsewhere (see next.config.ts) must not be listed:
+  // a redirecting URL in the sitemap wastes crawl budget and confuses AI crawlers.
+  const REDIRECTED_PROJECT_SLUGS = new Set(['jewellery', 'Jewellery', 'roseate', 'Roseate', 'oud']);
+
+  const projectRoutes = Array.from(allProjectSlugs).filter((slug) => !REDIRECTED_PROJECT_SLUGS.has(slug)).map((slug) => ({
     url: `${baseUrl}/projects/${slug}`,
     lastModified: SITE_CONTENT_UPDATED,
     changeFrequency: 'monthly' as const,

@@ -63,7 +63,8 @@ const getLiveBlog = cache(async (slug: string): Promise<Blog | null> => {
         metaDescription: data.metaDescription,
         excerpt: cleanedExcerpt,
         content: cleanInternalNofollow(data.description || ""), // Clean internal nofollow links
-        publishedAt: data.date || new Date().toISOString().split('T')[0],
+        publishedAt: data.date || data.publishedAt || firestoreDate(data.createdAt) || new Date().toISOString().split('T')[0],
+        updatedAt: firestoreDate(data.updatedAt) || data.updatedAt || undefined,
         category: data.category || "MARKETING",
         image: data.image || "/photoshoot.jpg",
         faqs,
@@ -194,6 +195,22 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+// Firestore Timestamp | string -> "YYYY-MM-DD" (undefined if missing)
+function firestoreDate(value: unknown): string | undefined {
+  if (!value) return undefined;
+  if (typeof value === "object" && value !== null && "toDate" in value && typeof (value as { toDate: unknown }).toDate === "function") {
+    return (value as { toDate: () => Date }).toDate().toISOString().split("T")[0];
+  }
+  return typeof value === "string" ? value : undefined;
+}
+
+// Schema.org needs ISO 8601 dates ("2026-11-13"), not "Feb 26, 2025".
+function toIsoDate(value?: string): string | undefined {
+  if (!value) return undefined;
+  const d = new Date(value);
+  return isNaN(d.getTime()) ? undefined : d.toISOString().split("T")[0];
+}
+
 export default async function BlogSlugPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const blog = await getLiveBlog(slug);
@@ -218,8 +235,8 @@ export default async function BlogSlugPage({ params }: { params: Promise<{ slug:
         headline: blog.title,
         description: cleanDescription,
         image: blogImage,
-        datePublished: blog.publishedAt,
-        dateModified: blog.publishedAt,
+        datePublished: toIsoDate(blog.publishedAt),
+        dateModified: toIsoDate((blog as { updatedAt?: string }).updatedAt) || toIsoDate(blog.publishedAt),
         author: authorSchema(resolveAuthor(blog.author)),
         publisher: {
           "@type": "Organization",
@@ -227,12 +244,18 @@ export default async function BlogSlugPage({ params }: { params: Promise<{ slug:
           name: "Southern Edge Marketing",
           logo: {
             "@type": "ImageObject",
-            url: "https://www.southernedgemarketing.com/LOGO_Final.svg",
+            url: "https://www.southernedgemarketing.com/logo.png",
           },
         },
         mainEntityOfPage: {
           "@type": "WebPage",
           "@id": `https://www.southernedgemarketing.com/blogs/${slug}`,
+        },
+        isPartOf: { "@id": "https://www.southernedgemarketing.com/#website" },
+        inLanguage: "en",
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: ["h1", "article p:first-of-type"],
         },
       },
       {
